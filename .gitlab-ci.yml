@@ -13,7 +13,7 @@ sync_to_github:
     - git fetch origin
     - git fetch github
     - git checkout -B $CI_COMMIT_REF_NAME origin/$CI_COMMIT_REF_NAME
-    - git push github $CI_COMMIT_REF_NAME --force-with-lease
+    - git push github $CI_COMMIT_REF_NAME --force
   only:
     - main
     - develop
