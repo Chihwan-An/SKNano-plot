@@ -11,7 +11,7 @@ deploy-plots:
   before_script:
     - apt-get update -qq && apt-get install -y -qq openssh-client rsync
     - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-    - echo "$LXPLUS_SSH_KEY" | tr -d '\r' > ~/.ssh/id_ed25519
+    - echo "$LXPLUS_SSH_KEY_B64" | base64 -d > ~/.ssh/id_ed25519  # ← base64 디코딩
     - chmod 600 ~/.ssh/id_ed25519
     - ssh-keyscan -H lxplus.cern.ch >> ~/.ssh/known_hosts
 
