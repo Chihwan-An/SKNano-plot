@@ -1,23 +1,64 @@
 stages:
-  - deploy
+  - sync
 
-deploy-plots:
-  stage: deploy
-  image: python:3.11-slim
 
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
-
+# GitLab → GitHub 동기화 (GitLab에서 push될 때마다)
+sync_to_github:
+  stage: sync
+  image: alpine/git:latest
   before_script:
-    - apt-get update -qq && apt-get install -y -qq openssh-client rsync
-    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-    - echo "$LXPLUS_SSH_KEY_B64" | base64 -d > ~/.ssh/id_ed25519  # ← base64 디코딩
-    - chmod 600 ~/.ssh/id_ed25519
-    - ssh-keyscan -H lxplus.cern.ch >> ~/.ssh/known_hosts
-
+    - apk add --no-cache git
   script:
-    - |
-      rsync -avz --delete \
-        -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
-        ./ \
-        achihwan@lxplus.cern.ch:/eos/user/a/achihwan/www/plots/
+    - git remote add github https://$GITHUB_TOKEN@github.com/Chihwan-An/SKNano-plot.git || true
+    - git fetch origin
+    - git fetch github
+    - git checkout -B $CI_COMMIT_REF_NAME origin/$CI_COMMIT_REF_NAME
+    - git push github $CI_COMMIT_REF_NAME --force-with-lease
+  only:
+    - main
+    - develop
+  when: on_success
+  after_script:
+  - apk add --no-cache curl
+  - |
+    if [ "$CI_JOB_STATUS" = "success" ]; then
+      curl -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$chat_id" \
+        -d "text=CI/CD 성공: $CI_PROJECT_NAME - $CI_COMMIT_REF_NAME"
+    else
+      curl -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$chat_id" \
+        -d "text=CI/CD 실패: $CI_PROJECT_NAME - $CI_COMMIT_REF_NAME"
+    fi
+
+# 원본 레포에서 변경사항 가져오기 (수동 트리거 또는 스케줄)
+sync_from_upstream:
+  stage: sync
+  image: alpine/git:latest
+  before_script:
+    - apk add --no-cache git
+    - git config --global user.email "ci@gitlab.com"
+    - git config --global user.name "GitLab CI"
+  script:
+    - git remote add upstream https://github.com/choij1589/SKNanoAnalyzer.git || true
+    - git fetch upstream
+    - git checkout main
+    - git merge upstream/main --no-edit || echo "No changes to merge"
+    - git push origin main
+  only:
+    - schedules
+    - web
+  when: manual
+  after_script:
+  - apk add --no-cache curl
+  - |
+    if [ "$CI_JOB_STATUS" = "success" ]; then
+      curl -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$chat_id" \
+        -d "text=CI/CD 성공: $CI_PROJECT_NAME - $CI_COMMIT_REF_NAME"
+    else
+      curl -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$chat_id" \
+        -d "text=CI/CD 실패: $CI_PROJECT_NAME - $CI_COMMIT_REF_NAME"
+    fi
+
