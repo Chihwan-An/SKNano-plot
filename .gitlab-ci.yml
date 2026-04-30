@@ -1,7 +1,7 @@
 stages:
   - sync
 
-
+####
 # GitLab → GitHub 동기화 (GitLab에서 push될 때마다)
 sync_to_github:
   stage: sync
