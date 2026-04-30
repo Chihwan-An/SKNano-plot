@@ -1,0 +1,1 @@
+python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_DYCR_Resolved_EE_mlljj" --ymin 3 --ymax 1e4 --output ResolveDYEE_mlljj --xmin 800 --xmax 8000 --xlabel "m(lljj) (GeV)" --bins "800,1000,1200,1400,1600,2000,2400,2800,3200,8000" --rmin 0.7 --rmax 1.3

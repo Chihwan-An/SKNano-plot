@@ -1,0 +1,2 @@
+python EEbackup.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_mlljj" --ymin 1e-1 --ymax 5e3 --output ResolveSREE_mlljj --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)" --rebin 100 --rmin 0.7 --rmax 1.3
+python MMbackup.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_MM_mlljj" --ymin 1e-1 --ymax 5e3 --output ResolveSRMM_mlljj --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)" --rebin 100 --rmin 0.7 --rmax 1.3

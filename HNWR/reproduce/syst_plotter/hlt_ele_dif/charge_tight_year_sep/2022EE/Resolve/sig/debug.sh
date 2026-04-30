@@ -1,0 +1,2 @@
+python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_SS_2e_tight_mlljj" --ymin 1 --ymax 1e5 --output ResolveSREE_SS_2e_tight_mlljj --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)"  --rmin 0 --rmax 2.0 --rebin 100
+python MM.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_MM_SS_tight_mlljj" --ymin 1 --ymax 1e5 --output ResolveSRMM_SS_tight_mlljj --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)"  --rmin 0 --rmax 2.0 --rebin 100

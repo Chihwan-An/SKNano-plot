@@ -1,0 +1,2 @@
+Bin	BinLow	BinHigh	MC_Total	Data	DYJets	TT	Nonprompt	Others	Stat_pct	SystUp_pct	SystDn_pct	TotalUp_pct	TotalDn_pct	Pileup_pct	ElectronID_pct	ElectronReco_pct	ElectronTrig_pct	MuonID_pct	MuonReco_pct	MuonTrig_pct	MuonIso_pct	JER_pct	JES_pct
+145	720.0000	725.0000	0.0491	0.0000	0	0.0491	0	0	100.0000	16.3397	14.5484	101.3261	101.0527	12.3131	0.0000	0.0000	0.0000	5.4000	0.0000	7.6583	5.2500	0.0000	0.0000

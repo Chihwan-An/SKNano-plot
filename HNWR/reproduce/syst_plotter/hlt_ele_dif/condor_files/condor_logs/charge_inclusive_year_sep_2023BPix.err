@@ -1,0 +1,14 @@
+Info in <TCanvas::Print>: png file BoostDYEE_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file BoostDYMM_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file BoostFLVEMJ_mlljj_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostFLVMEJ_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_WRMass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file ResolveDYEE_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file ResolveDYMM_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file ResolveFLVEM_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file ResolveSREE_mlljj_plot.png has been created
+Info in <TCanvas::Print>: png file ResolveSRMM_mlljj_plot.png has been created

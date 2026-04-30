@@ -1,0 +1,109 @@
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_dilepton_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_dilepton_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_fatjet_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_fatjet_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_fatjet_SDM_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_WR_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_WR_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_WR_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_leading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_leading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_subleading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_subleading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_fatjet_lsf3_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_deltaR_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_dphi_leadlep_fatjet_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_punum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_jetnum_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_Dilepton_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_LeadingLepPt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_SubLeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_tight_dilepton_mass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_dilepton_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_dilepton_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_fatjet_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_fatjet_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_fatjet_SDM_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_WR_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_WR_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_WR_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_leading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_leading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_subleading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_subleading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_fatjet_lsf3_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_deltaR_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_dphi_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_punum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_jetnum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_Dilepton_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_LeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_SubLeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_not_tight_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_dilepton_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_dilepton_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_fatjet_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_fatjet_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_fatjet_SDM_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_WR_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_WR_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_WR_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_leading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_leading_lep_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_subleading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_subleading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_fatjet_lsf3_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_deltaR_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_dphi_leadlep_fatjet_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_punum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_jetnum_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_WRMass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_Dilepton_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_LeadingLepPt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_SubLeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_tight_dilepton_mass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_dilepton_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_dilepton_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_fatjet_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_fatjet_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_fatjet_SDM_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_WR_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_WR_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_WR_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_leading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_leading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_subleading_lep_eta_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_subleading_lep_phi_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_fatjet_lsf3_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_deltaR_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_dphi_leadlep_fatjet_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_punum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_jetnum_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_Dilepton_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_LeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_SubLeadingLepPt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_not_tight_dilepton_mass_plot.png has been created

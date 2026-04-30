@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_SS_2e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjss2e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb     
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_SS_1e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjss1e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_SS_0e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjss0e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+python EE.py --signal-scale 1.0 --hist "Obj_PU_boosted_WRMass_ee_SS" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjss --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+python EE.py --signal-scale 1.0 --hist "Obj_PU_boosted_WRMass_ee" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljj --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+
+
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_OS_2e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjos2e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_OS_1e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjos1e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+#python EE.py --signal-scale 1.0 --hist "Obj_PU_Corr_SR_Resolved_EE_OS_0e_tight_mlljj" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjos0e --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb    
+python EE.py --signal-scale 1.0 --hist "Obj_PU_boosted_WRMass_ee_OS" --ymin 1 --ymax 1e6 --output BoostDYEE_mlljjos --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb
+
+# ─── MM ───────────────────────────────────────────────────────────────────────
+python MM.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu_SS_tight"     --ymin 1 --ymax 1e6 --output BoostSRMM_mlljjss_tight     --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb
+python MM.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu_SS_not_tight" --ymin 1 --ymax 1e6 --output BoostSRMM_mlljjss_not_tight --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb
+python MM.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu_OS_tight"     --ymin 1 --ymax 1e6 --output BoostSRMM_mlljjos_tight     --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb
+python MM.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu_OS_not_tight" --ymin 1 --ymax 1e6 --output BoostSRMM_mlljjos_not_tight --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1500,1800,8000" --rmin 0.5 --rmax 1.5 --show-sb

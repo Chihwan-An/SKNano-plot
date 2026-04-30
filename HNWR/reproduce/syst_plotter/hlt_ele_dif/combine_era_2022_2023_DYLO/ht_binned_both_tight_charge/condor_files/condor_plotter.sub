@@ -1,0 +1,27 @@
+universe = vanilla
+executable = $(exec_script)
+arguments =
+
+# Working directory (where plotter.sh is located)
+initialdir = $(work_dir)
+
+# Logs
+output = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned_both_tight_charge/condor_files/condor_logs/$(jobname).out
+error = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned_both_tight_charge/condor_files/condor_logs/$(jobname).err
+log = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned_both_tight_charge/condor_files/condor_logs/condor.log
+
+# Environment
+getenv = True
+
+# Resource requests
+request_memory = 4GB
+request_cpus = 1
+request_disk = 2GB
+
+# No email notification
+notification = Never
+
+# Transfer settings
+should_transfer_files = NO
+
+queue

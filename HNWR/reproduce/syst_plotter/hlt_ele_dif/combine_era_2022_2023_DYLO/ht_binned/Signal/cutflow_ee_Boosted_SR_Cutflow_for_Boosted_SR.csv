@@ -1,0 +1,13 @@
+Bin,Cut,Events,% of Total,Reduction (%),Survival (%)
+1,Total,68000,100.0,0.0,100.0
+2,Met filter,68000,100.0,0.0,100.0
+3,! 4 object resolved,64035,94.2,5.8,94.2
+4,"Lead lep tight, pt, eta, id, iso",50258,73.9,21.5,78.5
+5,Trigger,50149,73.7,0.2,99.8
+6,! m(ll) 60~150,50134,73.7,0.0,100.0
+7,"fatjet pt eta sdm, dphi",21143,31.1,57.8,42.2
+8,no more tight lep,21126,31.1,0.1,99.9
+9,loose lep in fatjet pt eta pt eta ,4744,7.0,77.5,22.5
+10,no of loose lep in fatjet ,4711,6.9,0.7,99.3
+11,m(ll)> 200,4710,6.9,0.0,100.0
+12,M(llJ) > 800,4410,6.5,6.4,93.6

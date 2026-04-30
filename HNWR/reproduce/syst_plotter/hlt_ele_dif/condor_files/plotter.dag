@@ -1,0 +1,51 @@
+# Auto-generated DAG file for parallel plotting
+
+JOB charge_tight_year_sep_2022 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_tight_year_sep_2022 jobname="charge_tight_year_sep_2022"
+VARS charge_tight_year_sep_2022 exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_tight_year_sep_2022 work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_tight_year_sep/2022"
+
+JOB charge_tight_year_sep_2022EE /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_tight_year_sep_2022EE jobname="charge_tight_year_sep_2022EE"
+VARS charge_tight_year_sep_2022EE exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_tight_year_sep_2022EE work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_tight_year_sep/2022EE"
+
+JOB charge_tight_year_sep_2023 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_tight_year_sep_2023 jobname="charge_tight_year_sep_2023"
+VARS charge_tight_year_sep_2023 exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_tight_year_sep_2023 work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_tight_year_sep/2023"
+
+JOB charge_tight_year_sep_2023BPix /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_tight_year_sep_2023BPix jobname="charge_tight_year_sep_2023BPix"
+VARS charge_tight_year_sep_2023BPix exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_tight_year_sep_2023BPix work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_tight_year_sep/2023BPix"
+
+JOB charge_inclusive_year_sep_2022 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_inclusive_year_sep_2022 jobname="charge_inclusive_year_sep_2022"
+VARS charge_inclusive_year_sep_2022 exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_inclusive_year_sep_2022 work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_inclusive_year_sep/2022"
+
+JOB charge_inclusive_year_sep_2022EE /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_inclusive_year_sep_2022EE jobname="charge_inclusive_year_sep_2022EE"
+VARS charge_inclusive_year_sep_2022EE exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_inclusive_year_sep_2022EE work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_inclusive_year_sep/2022EE"
+
+JOB charge_inclusive_year_sep_2023 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_inclusive_year_sep_2023 jobname="charge_inclusive_year_sep_2023"
+VARS charge_inclusive_year_sep_2023 exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_inclusive_year_sep_2023 work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_inclusive_year_sep/2023"
+
+JOB charge_inclusive_year_sep_2023BPix /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/condor_plot.sub
+VARS charge_inclusive_year_sep_2023BPix jobname="charge_inclusive_year_sep_2023BPix"
+VARS charge_inclusive_year_sep_2023BPix exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/condor_files/run_plot.sh"
+VARS charge_inclusive_year_sep_2023BPix work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_inclusive_year_sep/2023BPix"
+
+# Retry failed jobs up to 2 times
+RETRY charge_tight_year_sep_2022 2
+RETRY charge_tight_year_sep_2022EE 2
+RETRY charge_tight_year_sep_2023 2
+RETRY charge_tight_year_sep_2023BPix 2
+RETRY charge_inclusive_year_sep_2022 2
+RETRY charge_inclusive_year_sep_2022EE 2
+RETRY charge_inclusive_year_sep_2023 2
+RETRY charge_inclusive_year_sep_2023BPix 2

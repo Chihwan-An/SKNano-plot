@@ -1,0 +1,12 @@
+cd ./Boost/DY
+source debug.sh
+cd ../FLV
+source debug.sh
+cd ../sig
+source debug.sh
+cd ../../Resolve/DY
+source debug.sh
+cd ../FLV
+source debug.sh
+cd ../sig
+source debug.sh 

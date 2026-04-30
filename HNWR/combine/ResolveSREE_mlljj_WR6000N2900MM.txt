@@ -1,0 +1,26 @@
+imax 1
+jmax 4
+kmax *
+--------------------------------------------------------------------------------
+shapes * SR_Resolved_EE ResolveSREE_mlljj_combine.root $PROCESS $PROCESS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          SR_Resolved_EE
+observation  -1
+--------------------------------------------------------------------------------
+bin                 SR_Resolved_EE            SR_Resolved_EE            SR_Resolved_EE            SR_Resolved_EE            SR_Resolved_EE            
+process             WR6000N2900MM             DYJets                    TT                        Nonprompt                 Others                    
+process             0                         1                         2                         3                         4                         
+rate                -1                        -1                        -1                        -1                        -1                        
+--------------------------------------------------------------------------------
+Lumi    lnN         1.018                     1.018                     1.018                     1.018                     1.018                     
+Pileup    shapeN2   1                         1                         1                         1                         1                         
+ElectronIDshapeN2   1                         1                         1                         1                         1                         
+ElectronRecoshapeN2 1                         1                         1                         1                         1                         
+ElectronTrigshapeN2 1                         1                         1                         1                         1                         
+MuonID    shapeN2   1                         1                         1                         1                         1                         
+MuonReco  shapeN2   1                         1                         1                         1                         1                         
+MuonTrig  shapeN2   1                         1                         1                         1                         1                         
+MuonIso   shapeN2   1                         1                         1                         1                         1                         
+JER       shapeN2   1                         1                         1                         1                         1                         
+JES       shapeN2   1                         1                         1                         1                         1                         
+* autoMCStats 0

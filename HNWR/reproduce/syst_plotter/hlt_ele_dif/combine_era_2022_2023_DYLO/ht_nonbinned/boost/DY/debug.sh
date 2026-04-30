@@ -1,0 +1,11 @@
+python EE.py --signal-scale 1.0 --hist "Obj_PU_m(lljj)_boosted_DY_CR_EE" --ymin 3 --ymax 1e6 --output BoostDYEE_mlljj --xmin 800 --xmax 4000 --xlabel "m(lJ) (GeV)" --rebin 100 --rmin 0 --rmax 2.0
+python EE.py  --hist "Obj_PU_mll_boosted_DY_CR_EE" --ymin 3 --ymax 1e6 --output BoostDYEE_dilepton_mass --xmin 0 --xmax 200 --xlabel "m(ll) (GeV)" --rebin 1 --rmin 0 --rmax 2.0
+python EE.py  --hist "Obj_PU_leading_fatjet_pt_boosted_DY_CR_EE" --ymin 3 --ymax 3e5 --output BoostDYEE_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel "Leading Fat Jet p_{T} (GeV)" --rebin 100 --rmin 0 --rmax 2.0
+python EE.py  --hist "Obj_PU_leading_lep_pt_boosted_DY_CR_EE" --ymin 3 --ymax 3e5 --output BoostDYEE_leading_lep_pt --xmin 0 --xmax 1000 --xlabel "Leading Lepton p_{T} (GeV)" --rebin 50 --rmin 0 --rmax 2.0
+python EE.py  --hist "Obj_PU_subleading_lep_pt_boosted_DY_CR_EE" --ymin 3 --ymax 3e5 --output BoostDYEE_subleading_lep_pt --xmin 0 --xmax 500 --xlabel "Subleading Lepton p_{T} (GeV)" --rebin 50 --rmin 0 --rmax 2.0
+
+python MM.py --signal-scale 1.0 --hist "Obj_PU_m(lljj)_boosted_DY_CR_MM" --ymin 3 --ymax 1e6 --output BoostDYMM_mlljj --xmin 800 --xmax 4000 --xlabel "m(lJ) (GeV)" --rebin 100 --rmin 0 --rmax 2.0
+python MM.py  --hist "Obj_PU_mll_boosted_DY_CR_MM" --ymin 3 --ymax 1e6 --output BoostDYMM_dilepton_mass --xmin 0 --xmax 200 --xlabel "m(ll) (GeV)" --rebin 1 --rmin 0 --rmax 2.0
+python MM.py  --hist "Obj_PU_leading_fatjet_pt_boosted_DY_CR_MM" --ymin 3 --ymax 3e5 --output BoostDYMM_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel "Leading Fat Jet p_{T} (GeV)" --rebin 100 --rmin 0 --rmax 2.0
+python MM.py  --hist "Obj_PU_leading_lep_pt_boosted_DY_CR_MM" --ymin 3 --ymax 3e5 --output BoostDYMM_leading_lep_pt --xmin 0 --xmax 1000 --xlabel "Leading Lepton p_{T} (GeV)" --rebin 50 --rmin 0 --rmax 2.0
+python MM.py  --hist "Obj_PU_subleading_lep_pt_boosted_DY_CR_MM" --ymin 3 --ymax 3e5 --output BoostDYMM_subleading_lep_pt --xmin 0 --xmax 500 --xlabel "Subleading Lepton p_{T} (GeV)" --rebin 50 --rmin 0 --rmax 2.0

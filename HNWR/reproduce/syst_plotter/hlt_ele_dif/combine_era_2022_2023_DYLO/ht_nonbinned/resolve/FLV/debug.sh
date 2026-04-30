@@ -1,0 +1,7 @@
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_ll_pt" --ymin 1 --ymax 1e5 --output ResolveFLVEM_dilepton_pt --xmin 0 --xmax 1000 --xlabel "Dilepton p_{T} (GeV)" --rebin 50 --rmin 0 --rmax 2.0
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_leading_jet_pt" --ymin 1 --ymax 1e5 --output ResolveFLVEM_leading_jet_pt --xmin 0 --xmax 2000 --xlabel "Leading Jet p_{T} (GeV)"  --rmin 0 --rmax 2.0 --rebin 50
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_subleading_jet_pt" --ymin 1 --ymax 1e5 --output ResolveFLVEM_subleading_jet_pt --xmin 0 --xmax 500 --xlabel "Subleading Jet p_{T} (GeV)" --rmin 0 --rmax 2.0 --rebin 20
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_mlljj" --ymin 1 --ymax 1e5 --output ResolveFLVEM_mlljj --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)"  --rmin 0 --rmax 2.0 --rebin 100
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_leading_lep_pt" --ymin 1 --ymax 1e5 --output ResolveFLVEM_leading_lep_pt --xmin 0 --xmax 1000 --xlabel "Leading Lepton p_{T} (GeV)"  --rmin 0 --rmax 2.0 --rebin 50
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_subleading_lep_pt" --ymin 1 --ymax 1e5 --output ResolveFLVEM_subleading_lep_pt --xmin 0 --xmax 500 --xlabel "Subleading Lepton p_{T} (GeV)" --rmin 0 --rmax 2.0 --rebin 20 
+python MM.py --ymin 1 --hist "Obj_PU_Corr_Flav_CR_Resolved_EM_mass" --ymin 1 --ymax 1e5 --output ResolveFLVEM_dilepton_mass --xmin 300 --xmax 800 --xlabel "m(ll) (GeV)" --rebin 1 --rmin 0 --rmax 2.0 

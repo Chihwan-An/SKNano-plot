@@ -1,0 +1,2547 @@
+=== Running plot in: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/charge_inclusive_year_sep/2022 ===
+=== Start time: Thu Apr 16 08:15:02 PM KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python
+ROOT: /data6/Users/achihwan/micromamba/envs/Nano/bin/root
+
+>> Loading Central histograms for: Obj_PU_m(lljj)_boosted_DY_CR_EE
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         1.37 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.06 events
+  [MC  ] DYMLL120HT2500.root                     :         0.01 events
+  [MC  ] DYMLL120HT400to800.root                 :         2.39 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.61 events
+  [MC  ] DYMLL50to120HT100to400.root             :        51.47 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         3.05 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.23 events
+  [MC  ] DYMLL50to120HT400to800.root             :       141.44 events
+  [MC  ] DYMLL50to120HT800to1500.root            :        31.05 events
+  [DATA] EGamma_C.root                           :       143.00 events
+  [DATA] EGamma_D.root                           :        96.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         0.15 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.26 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.13 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.21 events
+  [MC  ] TTLJ_powheg.root                        :         4.40 events
+  [MC  ] TTLL_powheg.root                        :         3.20 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.19 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.05 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         2.24 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.76 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.02 events
+  [MC  ] WJetM120HT800to1500.root                :         0.01 events
+  [SIG ] WR2000N100EE.root                       :         0.21 events  (will be x1.0)
+  [SIG ] WR2000N1100EE.root                      :         1.25 events  (will be x1.0)
+  [SIG ] WR2000N1300EE.root                      :         0.77 events  (will be x1.0)
+  [SIG ] WR2000N1500EE.root                      :         0.85 events  (will be x1.0)
+  [SIG ] WR2000N1700EE.root                      :         0.48 events  (will be x1.0)
+  [SIG ] WR2000N1900EE.root                      :         0.11 events  (will be x1.0)
+  [SIG ] WR2000N300EE.root                       :         0.05 events  (will be x1.0)
+  [SIG ] WR2000N500EE.root                       :         0.29 events  (will be x1.0)
+  [SIG ] WR2000N700EE.root                       :         0.93 events  (will be x1.0)
+  [SIG ] WR2000N900EE.root                       :         1.36 events  (will be x1.0)
+  [SIG ] WR4000N100EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1100EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N300EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N700EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N900EE.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N100EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N300EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N900EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N100EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N3900EE.root                      : histogram not found, will write zero TSV
+  [MC  ] WWto2L2Nu.root                          :         0.48 events
+  [MC  ] WWtoLNu2Q.root                          :         0.13 events
+  [MC  ] WZto2L2Q.root                           :         2.42 events
+  [MC  ] WZto3LNu.root                           :         2.00 events
+  [MC  ] ZZto2L2Nu.root                          :         0.84 events
+  [MC  ] ZZto2L2Q.root                           :         7.20 events
+  [MC  ] ZZto4L.root                             :         0.30 events
+  [MC  ] ttWtoLNu.root                           :         0.03 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.00 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         1.29 events
+  [MC  ] ttZtoNuNu.root                          :         0.00 events
+  [MC  ] ttZtoQQ.root                            :         0.06 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       66.3 |       65.0 |     3.0% |      4.7% |      3.1% |      5.6% |      4.3%
+10   | [900, 1000]        |       49.0 |       53.0 |     3.4% |      3.5% |      3.2% |      4.9% |      4.7%
+11   | [1000, 1100]       |       40.6 |       45.0 |     3.7% |      3.0% |      3.1% |      4.8% |      4.8%
+12   | [1100, 1200]       |       28.7 |       13.0 |     4.5% |      2.7% |      3.0% |      5.2% |      5.4%
+13   | [1200, 1300]       |       20.7 |       13.0 |     4.9% |      2.9% |      3.1% |      5.7% |      5.8%
+14   | [1300, 1400]       |       14.3 |       16.0 |     5.6% |      3.1% |      3.5% |      6.4% |      6.6%
+15   | [1400, 1500]       |       10.1 |       10.0 |     6.6% |      2.5% |      2.6% |      7.0% |      7.1%
+16   | [1500, 1600]       |        7.2 |        5.0 |     7.4% |      3.2% |      4.6% |      8.1% |      8.8%
+17   | [1600, 1700]       |        4.7 |        3.0 |     8.4% |      2.9% |      2.3% |      8.9% |      8.7%
+18   | [1700, 1800]       |        4.3 |        4.0 |     9.5% |      2.2% |      3.0% |      9.8% |     10.0%
+19   | [1800, 1900]       |        2.6 |        4.0 |    10.5% |      5.1% |      3.8% |     11.7% |     11.2%
+20   | [1900, 2000]       |        2.2 |        2.0 |    13.2% |      3.8% |      3.5% |     13.7% |     13.7%
+21   | [2000, 2100]       |        1.9 |        3.0 |    14.2% |      2.6% |      2.5% |     14.4% |     14.4%
+22   | [2100, 2200]       |        0.9 |        1.0 |    17.5% |      3.3% |      3.7% |     17.8% |     17.9%
+23   | [2200, 2300]       |        1.1 |        0.0 |    16.9% |      3.4% |      3.2% |     17.2% |     17.2%
+24   | [2300, 2400]       |        0.8 |        1.0 |    19.8% |      4.9% |      3.7% |     20.4% |     20.2%
+25   | [2400, 2500]       |        0.6 |        0.0 |    20.8% |      3.5% |      4.2% |     21.1% |     21.3%
+26   | [2500, 2600]       |        0.4 |        0.0 |    24.1% |      3.7% |      4.8% |     24.3% |     24.5%
+27   | [2600, 2700]       |        0.3 |        0.0 |    23.8% |      3.7% |      4.5% |     24.1% |     24.2%
+28   | [2700, 2800]       |        0.3 |        0.0 |    35.4% |      6.2% |      5.8% |     36.0% |     35.9%
+29   | [2800, 2900]       |        0.3 |        0.0 |    23.8% |      4.7% |      6.9% |     24.3% |     24.8%
+30   | [2900, 3000]       |        0.3 |        0.0 |    42.7% |      2.0% |      2.1% |     42.8% |     42.8%
+31   | [3000, 3100]       |        0.1 |        0.0 |    50.0% |     14.1% |     12.3% |     51.9% |     51.5%
+32   | [3100, 3200]       |        0.0 |        0.0 |    23.1% |      4.7% |      2.1% |     23.6% |     23.2%
+33   | [3200, 3300]       |        0.1 |        0.0 |    47.3% |     18.0% |     19.0% |     50.6% |     51.0%
+34   | [3300, 3400]       |        0.0 |        0.0 |    25.6% |      8.3% |      8.9% |     26.9% |     27.1%
+35   | [3400, 3500]       |        0.0 |        0.0 |    30.4% |      7.8% |      4.0% |     31.4% |     30.7%
+36   | [3500, 3600]       |        0.0 |        0.0 |    38.9% |      4.0% |      4.0% |     39.1% |     39.1%
+37   | [3600, 3700]       |        0.0 |        0.0 |    43.4% |      2.2% |      3.0% |     43.4% |     43.5%
+38   | [3700, 3800]       |        0.0 |        0.0 |    35.7% |      6.4% |      6.1% |     36.3% |     36.2%
+39   | [3800, 3900]       |        0.1 |        0.0 |    87.7% |     11.4% |     12.5% |     88.5% |     88.6%
+40   | [3900, 4000]       |        0.1 |        1.0 |    22.4% |      6.7% |      6.5% |     23.4% |     23.4%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     4.20%
+  ElectronID     :     0.44%
+  ElectronReco   :     2.07%
+  ElectronTrig   :     0.61%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.11%
+  JES            :     0.80%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     4.20%
+   2. ElectronReco   :     2.07%
+   3. JES            :     0.80%
+   4. ElectronTrig   :     0.61%
+   5. ElectronID     :     0.44%
+   6. JER            :     0.11%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostDYEE_mlljj.tsv
+>> Integrated TSV saved as BoostDYEE_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR2000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR4000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N4100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N4300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N4500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N4700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N4900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N5100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N5300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N5500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N5700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N5900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR6000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyEE_2022_WR8000N100EE_integrated.tsv
+>> Signal TSV (zero) saved as ./signal/BoostDyEE_2022_WR8000N3900EE_integrated.tsv
+>> Plot saved as BoostDYEE_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_m(lljj)_boosted_DY_CR_MM
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         1.15 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.09 events
+  [MC  ] DYMLL120HT2500.root                     :         0.01 events
+  [MC  ] DYMLL120HT400to800.root                 :         2.08 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.64 events
+  [MC  ] DYMLL50to120HT100to400.root             :        51.99 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         5.53 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.47 events
+  [MC  ] DYMLL50to120HT400to800.root             :       145.41 events
+  [MC  ] DYMLL50to120HT800to1500.root            :        43.51 events
+  [DATA] Muon_C.root                             :       169.00 events
+  [DATA] Muon_D.root                             :       115.00 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.04 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         0.30 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         1.03 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.34 events
+  [MC  ] ST_tW_top_Semilep.root                  :         1.09 events
+  [MC  ] ST_tch_antitop.root                     :         0.27 events
+  [MC  ] ST_tch_top.root                         :         0.16 events
+  [MC  ] TTLJ_powheg.root                        :        38.90 events
+  [MC  ] TTLL_powheg.root                        :        11.77 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.72 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.01 events
+  [MC  ] WJetM0_120HT400to800.root               :         1.34 events
+  [MC  ] WJetM0_120HT800to1500.root              :         3.01 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.01 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.01 events
+  [MC  ] WJetM120HT800to1500.root                :         0.03 events
+  [SIG ] WR2000N100MM.root                       :         0.03 events  (will be x1.0)
+  [SIG ] WR2000N1100MM.root                      :         1.05 events  (will be x1.0)
+  [SIG ] WR2000N1300MM.root                      :         0.99 events  (will be x1.0)
+  [SIG ] WR2000N1500MM.root                      :         0.94 events  (will be x1.0)
+  [SIG ] WR2000N1700MM.root                      :         0.53 events  (will be x1.0)
+  [SIG ] WR2000N1900MM.root                      :         0.14 events  (will be x1.0)
+  [SIG ] WR2000N300MM.root                       :         0.07 events  (will be x1.0)
+  [SIG ] WR2000N500MM.root                       :         0.27 events  (will be x1.0)
+  [SIG ] WR2000N700MM.root                       :         0.94 events  (will be x1.0)
+  [SIG ] WR2000N900MM.root                       :         1.17 events  (will be x1.0)
+  [SIG ] WR4000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1100MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1300MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1500MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1700MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N300MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N700MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N900MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N300MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N900MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         0.48 events
+  [MC  ] WWtoLNu2Q.root                          :         0.10 events
+  [MC  ] WZto2L2Q.root                           :         2.61 events
+  [MC  ] WZto3LNu.root                           :         2.38 events
+  [MC  ] WZtoLNu2Q.root                          :         0.18 events
+  [MC  ] ZZto2L2Nu.root                          :         1.01 events
+  [MC  ] ZZto2L2Q.root                           :         6.91 events
+  [MC  ] ZZto4L.root                             :         0.32 events
+  [MC  ] ttWtoLNu.root                           :         0.16 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.01 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.02 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         1.48 events
+  [MC  ] ttZtoNuNu.root                          :         0.02 events
+  [MC  ] ttZtoQQ.root                            :         0.22 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       86.7 |       71.0 |     2.5% |      4.3% |      3.4% |      5.0% |      4.2%
+10   | [900, 1000]        |       60.8 |       53.0 |     2.9% |      2.3% |      2.9% |      3.7% |      4.1%
+11   | [1000, 1100]       |       48.6 |       42.0 |     3.3% |      2.1% |      1.9% |      3.9% |      3.8%
+12   | [1100, 1200]       |       38.6 |       30.0 |     3.6% |      2.7% |      2.0% |      4.5% |      4.1%
+13   | [1200, 1300]       |       25.6 |       23.0 |     4.3% |      2.9% |      3.1% |      5.1% |      5.3%
+14   | [1300, 1400]       |       19.5 |       18.0 |     4.8% |      3.2% |      3.1% |      5.7% |      5.7%
+15   | [1400, 1500]       |       11.8 |       12.0 |     5.7% |      3.4% |      3.4% |      6.6% |      6.6%
+16   | [1500, 1600]       |        8.3 |        9.0 |     6.4% |      4.4% |      3.7% |      7.8% |      7.4%
+17   | [1600, 1700]       |        6.5 |        9.0 |     8.2% |      5.9% |      4.7% |     10.1% |      9.5%
+18   | [1700, 1800]       |        4.9 |        4.0 |     8.1% |      3.8% |      3.7% |      9.0% |      8.9%
+19   | [1800, 1900]       |        3.3 |        3.0 |     9.7% |      4.3% |      3.9% |     10.6% |     10.4%
+20   | [1900, 2000]       |        2.2 |        2.0 |    10.9% |      5.9% |      5.8% |     12.4% |     12.4%
+21   | [2000, 2100]       |        1.9 |        2.0 |    13.0% |      4.8% |      4.9% |     13.9% |     13.9%
+22   | [2100, 2200]       |        1.6 |        0.0 |    14.8% |      5.1% |      5.1% |     15.6% |     15.6%
+23   | [2200, 2300]       |        0.9 |        2.0 |    17.3% |      4.6% |      4.6% |     17.9% |     17.9%
+24   | [2300, 2400]       |        1.1 |        2.0 |    17.4% |      4.5% |      4.8% |     18.0% |     18.1%
+25   | [2400, 2500]       |        0.9 |        0.0 |    21.2% |      6.7% |      6.5% |     22.3% |     22.2%
+26   | [2500, 2600]       |        0.5 |        0.0 |    20.0% |      4.2% |      5.2% |     20.4% |     20.6%
+27   | [2600, 2700]       |        0.3 |        1.0 |    18.6% |      5.2% |      5.3% |     19.4% |     19.4%
+28   | [2700, 2800]       |        0.2 |        0.0 |    11.5% |      7.3% |      7.3% |     13.6% |     13.6%
+29   | [2800, 2900]       |        0.3 |        0.0 |    33.2% |      4.8% |      5.9% |     33.5% |     33.7%
+30   | [2900, 3000]       |        0.2 |        0.0 |    20.7% |      8.8% |      8.7% |     22.5% |     22.5%
+31   | [3000, 3100]       |        0.1 |        0.0 |    15.1% |      6.9% |      6.7% |     16.5% |     16.5%
+32   | [3100, 3200]       |        0.2 |        0.0 |    49.9% |      4.4% |      4.8% |     50.1% |     50.1%
+33   | [3200, 3300]       |        0.1 |        1.0 |    18.6% |      6.9% |      7.0% |     19.9% |     19.9%
+34   | [3300, 3400]       |        0.2 |        0.0 |    44.6% |     17.4% |     15.1% |     47.9% |     47.1%
+35   | [3400, 3500]       |        0.1 |        0.0 |    67.1% |      5.3% |      7.1% |     67.4% |     67.5%
+36   | [3500, 3600]       |        0.1 |        0.0 |    25.1% |     10.0% |      9.7% |     27.1% |     27.0%
+37   | [3600, 3700]       |        0.0 |        0.0 |    25.3% |     10.6% |      8.6% |     27.5% |     26.8%
+38   | [3700, 3800]       |        0.0 |        0.0 |    35.0% |      7.8% |      7.6% |     35.8% |     35.8%
+39   | [3800, 3900]       |        0.0 |        0.0 |    33.3% |      6.7% |      6.0% |     34.0% |     33.9%
+40   | [3900, 4000]       |        0.1 |        0.0 |    14.4% |      9.5% |      9.2% |     17.3% |     17.1%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     2.97%
+  ElectronID     :     0.00%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     1.76%
+  MuonReco       :     0.00%
+  MuonTrig       :     3.86%
+  MuonIso        :     1.69%
+  JER            :     0.06%
+  JES            :     0.80%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. MuonTrig       :     3.86%
+   2. Pileup         :     2.97%
+   3. MuonID         :     1.76%
+   4. MuonIso        :     1.69%
+   5. JES            :     0.80%
+   6. JER            :     0.06%
+   7. ElectronID     :     0.00%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostDYMM_mlljj.tsv
+>> Integrated TSV saved as BoostDYMM_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostDyMM_2022_WR8000N3900MM_integrated.tsv
+>> Plot saved as BoostDYMM_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_m(lljj)_boosted_e_mujet_Flavor_CR
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.01 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.01 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.00 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.22 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.02 events
+  [DATA] EGamma_C.root                           :        13.00 events
+  [DATA] EGamma_D.root                           :        13.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         1.10 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.27 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.69 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.41 events
+  [MC  ] ST_tch_top.root                         :         0.13 events
+  [MC  ] TTLJ_powheg.root                        :         2.74 events
+  [MC  ] TTLL_powheg.root                        :        16.25 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.01 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.64 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.27 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.06 events
+  [MC  ] WJetM120HT800to1500.root                :         0.00 events
+  [SIG ] WR2000N100EE.root                       :         3.93 events  (will be x1.0)
+  [SIG ] WR2000N1100EE.root                      :         0.39 events  (will be x1.0)
+  [SIG ] WR2000N1300EE.root                      :         0.24 events  (will be x1.0)
+  [SIG ] WR2000N1500EE.root                      :         0.23 events  (will be x1.0)
+  [SIG ] WR2000N1700EE.root                      :         0.11 events  (will be x1.0)
+  [SIG ] WR2000N1900EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR2000N300EE.root                       :         1.10 events  (will be x1.0)
+  [SIG ] WR2000N500EE.root                       :         1.08 events  (will be x1.0)
+  [SIG ] WR2000N700EE.root                       :         0.76 events  (will be x1.0)
+  [SIG ] WR2000N900EE.root                       :         0.45 events  (will be x1.0)
+  [SIG ] WR4000N100EE.root                       :         0.08 events  (will be x1.0)
+  [SIG ] WR4000N1100EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR4000N1300EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR4000N1500EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR4000N1700EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1900EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR4000N2100EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2300EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2500EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2700EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2900EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N300EE.root                       :         0.05 events  (will be x1.0)
+  [SIG ] WR4000N3100EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N3300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500EE.root                       :         0.05 events  (will be x1.0)
+  [SIG ] WR4000N700EE.root                       :         0.03 events  (will be x1.0)
+  [SIG ] WR4000N900EE.root                       :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N100EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N300EE.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N3100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N900EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N100EE.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         0.44 events
+  [MC  ] WWtoLNu2Q.root                          :         0.03 events
+  [MC  ] WZto3LNu.root                           :         0.21 events
+  [MC  ] WZtoLNu2Q.root                          :         0.02 events
+  [MC  ] ZZto2L2Nu.root                          :         0.00 events
+  [MC  ] ZZto2L2Q.root                           :         0.01 events
+  [MC  ] ZZto4L.root                             :         0.02 events
+  [MC  ] ttWtoLNu.root                           :         0.15 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.00 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.04 events
+  [MC  ] ttZtoNuNu.root                          :         0.00 events
+  [MC  ] ttZtoQQ.root                            :         0.03 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |        8.3 |        9.0 |     7.2% |      3.1% |      3.0% |      7.8% |      7.8%
+10   | [900, 1000]        |        5.8 |        5.0 |     8.4% |      3.1% |      3.3% |      8.9% |      9.0%
+11   | [1000, 1100]       |        4.0 |        4.0 |    10.4% |      3.1% |      3.1% |     10.8% |     10.8%
+12   | [1100, 1200]       |        1.6 |        3.0 |    15.9% |      3.0% |      3.1% |     16.1% |     16.2%
+13   | [1200, 1300]       |        1.4 |        1.0 |    17.8% |      6.6% |      5.0% |     19.0% |     18.5%
+14   | [1300, 1400]       |        0.9 |        0.0 |    21.2% |      7.7% |      6.6% |     22.6% |     22.2%
+15   | [1400, 1500]       |        0.7 |        1.0 |    25.0% |      8.5% |      2.3% |     26.4% |     25.1%
+16   | [1500, 1600]       |        0.5 |        0.0 |    31.1% |      4.9% |      7.2% |     31.5% |     32.0%
+17   | [1600, 1700]       |        0.2 |        1.0 |    50.8% |      5.4% |      5.4% |     51.1% |     51.1%
+18   | [1700, 1800]       |        0.2 |        1.0 |    47.4% |     10.3% |     12.6% |     48.5% |     49.1%
+19   | [1800, 1900]       |        0.1 |        0.0 |   113.5% |     15.5% |     17.3% |    114.6% |    114.8%
+20   | [1900, 2000]       |        0.1 |        0.0 |    58.2% |      3.0% |      3.4% |     58.3% |     58.3%
+21   | [2000, 2100]       |        0.0 |        1.0 |   123.6% |      2.2% |     48.3% |    123.7% |    132.7%
+22   | [2100, 2200]       |        0.0 |        0.0 |    81.7% |     61.6% |     45.7% |    102.4% |     93.7%
+23   | [2200, 2300]       |        0.0 |        0.0 |    99.2% |     18.8% |     19.7% |    100.9% |    101.1%
+24   | [2300, 2400]       |        0.0 |        0.0 |    72.5% |      6.9% |      9.2% |     72.8% |     73.1%
+25   | [2400, 2500]       |        0.0 |        0.0 |    79.5% |     31.7% |     15.0% |     85.6% |     80.9%
+26   | [2500, 2600]       |        0.0 |        0.0 |    85.7% |    122.8% |     60.0% |    149.8% |    104.7%
+27   | [2600, 2700]       |        0.0 |        0.0 |    97.2% |     10.6% |     12.3% |     97.7% |     98.0%
+28   | [2700, 2800]       |        0.0 |        0.0 |    61.9% |     14.5% |     15.1% |     63.6% |     63.7%
+29   | [2800, 2900]       |        0.0 |        0.0 |    99.2% |     23.4% |     22.9% |    101.9% |    101.8%
+30   | [2900, 3000]       |        0.0 |        0.0 |    99.8% |     18.4% |     21.8% |    101.5% |    102.2%
+31   | [3000, 3100]       |        0.0 |        0.0 |    98.9% |      5.4% |      8.1% |     99.1% |     99.2%
+32   | [3100, 3200]       |        0.0 |        0.0 |   100.0% |    126.3% |     64.3% |    161.1% |    118.9%
+33   | [3200, 3300]       |        0.0 |        0.0 |    85.5% |      5.8% |      4.7% |     85.7% |     85.6%
+34   | [3300, 3400]       |        0.0 |        0.0 |   100.0% |     53.2% |     45.2% |    113.3% |    109.7%
+35   | [3400, 3500]       |        0.0 |        0.0 |   100.0% |     42.9% |     34.1% |    108.8% |    105.6%
+36   | [3500, 3600]       |        0.0 |        0.0 |   100.0% |     30.5% |     26.3% |    104.5% |    103.4%
+37   | [3600, 3700]       |        0.0 |        0.0 |   100.0% |     37.6% |     37.0% |    106.8% |    106.6%
+38   | [3700, 3800]       |        0.0 |        0.0 |   100.0% |     30.2% |     26.0% |    104.4% |    103.3%
+39   | [3800, 3900]       |        0.0 |        0.0 |   100.0% |      4.3% |      7.8% |    100.1% |    100.3%
+40   | [3900, 4000]       |        0.0 |        0.0 |    78.3% |     43.9% |     38.3% |     89.7% |     87.2%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :    25.35%
+  ElectronID     :     0.42%
+  ElectronReco   :     2.40%
+  ElectronTrig   :     0.52%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.31%
+  JES            :     0.33%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :    25.35%
+   2. ElectronReco   :     2.40%
+   3. ElectronTrig   :     0.52%
+   4. ElectronID     :     0.42%
+   5. JES            :     0.33%
+   6. JER            :     0.31%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVEMJ_mlljj.tsv
+>> Integrated TSV saved as BoostFLVEMJ_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR2000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR4000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N4100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N4300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N4500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N4700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N4900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N5100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N5300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N5500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N5700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N5900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR6000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR8000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvEE_2022_WR8000N3900EE_integrated.tsv
+>> Plot saved as BoostFLVEMJ_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_m(lljj)_boosted_mu_ejets_Flavor_CR
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.02 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.04 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.01 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.37 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.02 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.58 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.22 events
+  [DATA] Muon_C.root                             :        36.00 events
+  [DATA] Muon_D.root                             :        13.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.03 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.04 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         1.50 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.38 events
+  [MC  ] ST_tW_top_Lep.root                      :         1.40 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.22 events
+  [MC  ] TTLJ_powheg.root                        :         5.68 events
+  [MC  ] TTLL_powheg.root                        :        30.10 events
+  [MC  ] WJetM0_120HT100to400.root               :         1.12 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.12 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         4.28 events
+  [MC  ] WJetM0_120HT800to1500.root              :         1.31 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.07 events
+  [MC  ] WJetM120HT800to1500.root                :         0.03 events
+  [SIG ] WR2000N100MM.root                       :         0.20 events  (will be x1.0)
+  [SIG ] WR2000N1100MM.root                      :         0.29 events  (will be x1.0)
+  [SIG ] WR2000N1300MM.root                      :         0.20 events  (will be x1.0)
+  [SIG ] WR2000N1500MM.root                      :         0.07 events  (will be x1.0)
+  [SIG ] WR2000N1700MM.root                      :         0.06 events  (will be x1.0)
+  [SIG ] WR2000N1900MM.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR2000N300MM.root                       :         0.62 events  (will be x1.0)
+  [SIG ] WR2000N500MM.root                       :         0.54 events  (will be x1.0)
+  [SIG ] WR2000N700MM.root                       :         0.59 events  (will be x1.0)
+  [SIG ] WR2000N900MM.root                       :         0.24 events  (will be x1.0)
+  [SIG ] WR4000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1100MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N1300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N1900MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2100MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N2300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N2900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N300MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N3100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N700MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N900MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N1900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N2900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N300MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N900MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N100MM.root                       :         0.00 events  (will be x1.0)
+  [SIG ] WR8000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         0.76 events
+  [MC  ] WWtoLNu2Q.root                          :         0.64 events
+  [MC  ] WZto2L2Q.root                           :         0.02 events
+  [MC  ] WZto3LNu.root                           :         0.36 events
+  [MC  ] WZtoLNu2Q.root                          :         0.26 events
+  [MC  ] ZZto2L2Nu.root                          :         0.01 events
+  [MC  ] ZZto2L2Q.root                           :         0.07 events
+  [MC  ] ZZto4L.root                             :         0.04 events
+  [MC  ] ttWtoLNu.root                           :         0.11 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.01 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.07 events
+  [MC  ] ttZtoNuNu.root                          :         0.00 events
+  [MC  ] ttZtoQQ.root                            :        -0.20 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       18.5 |       17.0 |     5.2% |      1.0% |      1.1% |      5.3% |      5.4%
+10   | [900, 1000]        |       11.4 |        8.0 |     6.7% |      1.1% |      1.2% |      6.7% |      6.8%
+11   | [1000, 1100]       |        7.6 |        5.0 |     7.8% |      2.7% |      2.7% |      8.3% |      8.3%
+12   | [1100, 1200]       |        4.0 |        5.0 |    11.3% |      2.3% |      2.5% |     11.5% |     11.6%
+13   | [1200, 1300]       |        2.7 |        5.0 |    12.1% |      2.7% |      3.3% |     12.4% |     12.5%
+14   | [1300, 1400]       |        2.1 |        3.0 |    14.4% |      3.8% |      3.7% |     14.9% |     14.9%
+15   | [1400, 1500]       |        1.0 |        2.0 |    20.9% |      4.8% |      3.9% |     21.5% |     21.3%
+16   | [1500, 1600]       |        0.8 |        1.0 |    21.5% |      4.4% |      4.8% |     22.0% |     22.1%
+17   | [1600, 1700]       |        0.5 |        1.0 |    29.4% |     10.8% |      9.9% |     31.3% |     31.0%
+18   | [1700, 1800]       |        0.3 |        1.0 |    49.5% |      5.7% |      5.6% |     49.9% |     49.9%
+19   | [1800, 1900]       |        0.2 |        0.0 |    48.0% |      6.7% |      6.6% |     48.4% |     48.4%
+20   | [1900, 2000]       |        0.2 |        0.0 |    45.7% |      4.1% |      5.7% |     45.9% |     46.0%
+21   | [2000, 2100]       |        0.2 |        1.0 |    48.3% |     11.7% |     12.3% |     49.7% |     49.8%
+22   | [2100, 2200]       |        0.0 |        0.0 |    65.9% |     19.9% |      8.5% |     68.8% |     66.4%
+23   | [2200, 2300]       |        0.0 |        0.0 |    78.0% |     22.7% |     21.3% |     81.2% |     80.8%
+24   | [2300, 2400]       |        0.0 |        0.0 |    75.0% |     33.8% |     28.2% |     82.3% |     80.1%
+25   | [2400, 2500]       |        0.0 |        0.0 |    51.4% |     49.4% |     35.2% |     71.3% |     62.3%
+27   | [2600, 2700]       |        0.0 |        0.0 |    95.5% |     35.1% |     34.1% |    101.8% |    101.4%
+28   | [2700, 2800]       |        0.0 |        0.0 |   100.0% |      6.3% |      9.3% |    100.2% |    100.4%
+29   | [2800, 2900]       |        0.0 |        0.0 |    63.8% |      2.1% |      4.1% |     63.8% |     63.9%
+30   | [2900, 3000]       |        0.0 |        0.0 |    99.5% |     16.7% |     17.9% |    100.9% |    101.1%
+34   | [3300, 3400]       |        0.0 |        0.0 |    84.1% |     33.9% |     34.0% |     90.7% |     90.7%
+37   | [3600, 3700]       |        0.0 |        0.0 |    97.1% |     86.4% |     44.4% |    130.0% |    106.8%
+39   | [3800, 3900]       |        0.0 |        0.0 |    99.8% |      2.0% |      3.6% |     99.8% |     99.8%
+40   | [3900, 4000]       |        0.0 |        0.0 |    78.1% |     10.4% |     11.4% |     78.8% |     78.9%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :    14.16%
+  ElectronID     :     0.01%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     2.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     3.81%
+  MuonIso        :     1.86%
+  JER            :     0.01%
+  JES            :     0.20%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :    14.16%
+   2. MuonTrig       :     3.81%
+   3. MuonID         :     2.00%
+   4. MuonIso        :     1.86%
+   5. JES            :     0.20%
+   6. JER            :     0.01%
+   7. ElectronID     :     0.01%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVMEJ_mlljj.tsv
+>> Integrated TSV saved as BoostFLVMEJ_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostFlvMM_2022_WR8000N3900MM_integrated.tsv
+>> Plot saved as BoostFLVMEJ_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_boosted_WRMass_ee
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         2.88 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.01 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.77 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.34 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.24 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.12 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.03 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.49 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.12 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         1.56 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.28 events
+  [MC  ] ST_tW_top_Lep.root                      :         1.29 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.21 events
+  [MC  ] ST_tch_top.root                         :         0.64 events
+  [MC  ] TTLJ_powheg.root                        :         3.81 events
+  [MC  ] TTLL_powheg.root                        :        23.68 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.94 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.09 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         2.30 events
+  [MC  ] WJetM0_120HT800to1500.root              :         1.02 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.08 events
+  [MC  ] WJetM120HT800to1500.root                :         0.02 events
+  [SIG ] WR2000N100EE.root                       :       247.05 events  (will be x1.0)
+  [SIG ] WR2000N1100EE.root                      :        19.22 events  (will be x1.0)
+  [SIG ] WR2000N1300EE.root                      :        13.94 events  (will be x1.0)
+  [SIG ] WR2000N1500EE.root                      :         8.39 events  (will be x1.0)
+  [SIG ] WR2000N1700EE.root                      :         3.34 events  (will be x1.0)
+  [SIG ] WR2000N1900EE.root                      :         0.41 events  (will be x1.0)
+  [SIG ] WR2000N300EE.root                       :       180.44 events  (will be x1.0)
+  [SIG ] WR2000N500EE.root                       :        75.46 events  (will be x1.0)
+  [SIG ] WR2000N700EE.root                       :        40.95 events  (will be x1.0)
+  [SIG ] WR2000N900EE.root                       :        24.86 events  (will be x1.0)
+  [SIG ] WR4000N100EE.root                       :         1.24 events  (will be x1.0)
+  [SIG ] WR4000N1100EE.root                      :         0.70 events  (will be x1.0)
+  [SIG ] WR4000N1300EE.root                      :         0.54 events  (will be x1.0)
+  [SIG ] WR4000N1500EE.root                      :         0.41 events  (will be x1.0)
+  [SIG ] WR4000N1700EE.root                      :         0.35 events  (will be x1.0)
+  [SIG ] WR4000N1900EE.root                      :         0.29 events  (will be x1.0)
+  [SIG ] WR4000N2100EE.root                      :         0.25 events  (will be x1.0)
+  [SIG ] WR4000N2300EE.root                      :         0.23 events  (will be x1.0)
+  [SIG ] WR4000N2500EE.root                      :         0.19 events  (will be x1.0)
+  [SIG ] WR4000N2700EE.root                      :         0.16 events  (will be x1.0)
+  [SIG ] WR4000N2900EE.root                      :         0.13 events  (will be x1.0)
+  [SIG ] WR4000N300EE.root                       :         4.34 events  (will be x1.0)
+  [SIG ] WR4000N3100EE.root                      :         0.09 events  (will be x1.0)
+  [SIG ] WR4000N3300EE.root                      :         0.06 events  (will be x1.0)
+  [SIG ] WR4000N3500EE.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR4000N3700EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500EE.root                       :         2.74 events  (will be x1.0)
+  [SIG ] WR4000N700EE.root                       :         1.61 events  (will be x1.0)
+  [SIG ] WR4000N900EE.root                       :         1.04 events  (will be x1.0)
+  [SIG ] WR6000N100EE.root                       :         0.11 events  (will be x1.0)
+  [SIG ] WR6000N1100EE.root                      :         0.06 events  (will be x1.0)
+  [SIG ] WR6000N1300EE.root                      :         0.04 events  (will be x1.0)
+  [SIG ] WR6000N1500EE.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N1700EE.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N1900EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N2100EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N2300EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N2500EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2700EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2900EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N300EE.root                       :         0.18 events  (will be x1.0)
+  [SIG ] WR6000N3100EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N3300EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N3500EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N3700EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N3900EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N4100EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N4300EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N4500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500EE.root                       :         0.18 events  (will be x1.0)
+  [SIG ] WR6000N5100EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700EE.root                       :         0.13 events  (will be x1.0)
+  [SIG ] WR6000N900EE.root                       :         0.09 events  (will be x1.0)
+  [SIG ] WR8000N100EE.root                       :         0.03 events  (will be x1.0)
+  [SIG ] WR8000N3900EE.root                      :         0.00 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         0.84 events
+  [MC  ] WWtoLNu2Q.root                          :         0.38 events
+  [MC  ] WZto2L2Q.root                           :         0.18 events
+  [MC  ] WZto3LNu.root                           :         0.24 events
+  [MC  ] WZtoLNu2Q.root                          :         0.26 events
+  [MC  ] ZZto2L2Nu.root                          :         0.05 events
+  [MC  ] ZZto2L2Q.root                           :         0.33 events
+  [MC  ] ZZto4L.root                             :         0.04 events
+  [MC  ] ttWtoLNu.root                           :         0.01 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.01 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.00 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.06 events
+  [MC  ] ttZtoNuNu.root                          :         0.01 events
+  [MC  ] ttZtoQQ.root                            :         0.15 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [800, 1000]        |       26.3 |         -1 |     4.7% |      2.9% |      2.8% |      5.6% |      5.5%
+2    | [1000, 1200]       |       10.0 |         -1 |     6.5% |      2.5% |      2.6% |      7.0% |      7.0%
+3    | [1200, 1400]       |        4.1 |         -1 |     9.8% |      2.5% |      2.4% |     10.2% |     10.1%
+4    | [1400, 1600]       |        1.9 |         -1 |    14.3% |      2.2% |      2.4% |     14.5% |     14.5%
+5    | [1600, 2000]       |        0.9 |         -1 |    22.5% |      3.3% |      2.2% |     22.7% |     22.6%
+6    | [2000, 2400]       |        0.2 |         -1 |    40.1% |     16.4% |     20.1% |     43.3% |     44.9%
+7    | [2400, 2800]       |        0.1 |         -1 |    57.5% |      6.8% |      8.8% |     57.9% |     58.2%
+8    | [2800, 3200]       |        0.1 |         -1 |    64.5% |      2.0% |      3.3% |     64.5% |     64.6%
+9    | [3200, 8000]       |        0.0 |         -1 |    92.9% |      9.9% |     11.5% |     93.4% |     93.6%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     5.25%
+  ElectronID     :     0.42%
+  ElectronReco   :     2.57%
+  ElectronTrig   :     0.51%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.09%
+  JES            :     0.31%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     5.25%
+   2. ElectronReco   :     2.57%
+   3. ElectronTrig   :     0.51%
+   4. ElectronID     :     0.42%
+   5. JES            :     0.31%
+   6. JER            :     0.09%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostSREE_WRMass.tsv
+>> Integrated TSV saved as BoostSREE_WRMass_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR2000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR4000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N4100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N4300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N4500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N4700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N4900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N5100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N5300EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N5500EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N5700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N5900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR6000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR8000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigEE_2022_WR8000N3900EE_integrated.tsv
+>> Plot saved as BoostSREE_WRMass_plot.png
+
+>> Loading Central histograms for: Obj_PU_SR_boosted_WRMass_mumu
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         1.61 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.01 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.59 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.02 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.10 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.09 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.39 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.08 events
+  [DATA] Muon_C.root                             :        15.00 events
+  [DATA] Muon_D.root                             :        11.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.01 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         1.09 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.27 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.79 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.34 events
+  [MC  ] TTLJ_powheg.root                        :         3.15 events
+  [MC  ] TTLL_powheg.root                        :        19.53 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.26 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.12 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.61 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.30 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.01 events
+  [SIG ] WR2000N100MM.root                       :       565.49 events  (will be x1.0)
+  [SIG ] WR2000N1100MM.root                      :         7.61 events  (will be x1.0)
+  [SIG ] WR2000N1300MM.root                      :         6.58 events  (will be x1.0)
+  [SIG ] WR2000N1500MM.root                      :         4.58 events  (will be x1.0)
+  [SIG ] WR2000N1700MM.root                      :         2.10 events  (will be x1.0)
+  [SIG ] WR2000N1900MM.root                      :         0.31 events  (will be x1.0)
+  [SIG ] WR2000N300MM.root                       :       121.03 events  (will be x1.0)
+  [SIG ] WR2000N500MM.root                       :        38.72 events  (will be x1.0)
+  [SIG ] WR2000N700MM.root                       :        18.33 events  (will be x1.0)
+  [SIG ] WR2000N900MM.root                       :        10.66 events  (will be x1.0)
+  [SIG ] WR4000N100MM.root                       :         8.23 events  (will be x1.0)
+  [SIG ] WR4000N1100MM.root                      :         0.33 events  (will be x1.0)
+  [SIG ] WR4000N1300MM.root                      :         0.25 events  (will be x1.0)
+  [SIG ] WR4000N1500MM.root                      :         0.18 events  (will be x1.0)
+  [SIG ] WR4000N1700MM.root                      :         0.14 events  (will be x1.0)
+  [SIG ] WR4000N1900MM.root                      :         0.13 events  (will be x1.0)
+  [SIG ] WR4000N2100MM.root                      :         0.11 events  (will be x1.0)
+  [SIG ] WR4000N2300MM.root                      :         0.10 events  (will be x1.0)
+  [SIG ] WR4000N2500MM.root                      :         0.09 events  (will be x1.0)
+  [SIG ] WR4000N2700MM.root                      :         0.07 events  (will be x1.0)
+  [SIG ] WR4000N2900MM.root                      :         0.06 events  (will be x1.0)
+  [SIG ] WR4000N300MM.root                       :         4.56 events  (will be x1.0)
+  [SIG ] WR4000N3100MM.root                      :         0.05 events  (will be x1.0)
+  [SIG ] WR4000N3300MM.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR4000N3500MM.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR4000N3700MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR4000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR4000N500MM.root                       :         1.94 events  (will be x1.0)
+  [SIG ] WR4000N700MM.root                       :         0.89 events  (will be x1.0)
+  [SIG ] WR4000N900MM.root                       :         0.51 events  (will be x1.0)
+  [SIG ] WR6000N100MM.root                       :         0.47 events  (will be x1.0)
+  [SIG ] WR6000N1100MM.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N1300MM.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N1500MM.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N1700MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N1900MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2100MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2300MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2500MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2700MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N2900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N300MM.root                       :         0.29 events  (will be x1.0)
+  [SIG ] WR6000N3100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N4900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N500MM.root                       :         0.16 events  (will be x1.0)
+  [SIG ] WR6000N5100MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5300MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5500MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5700MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700MM.root                       :         0.09 events  (will be x1.0)
+  [SIG ] WR6000N900MM.root                       :         0.05 events  (will be x1.0)
+  [SIG ] WR8000N100MM.root                       :         0.07 events  (will be x1.0)
+  [SIG ] WR8000N3900MM.root                      :         0.00 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         0.54 events
+  [MC  ] WWtoLNu2Q.root                          :         0.01 events
+  [MC  ] WZto2L2Q.root                           :         0.08 events
+  [MC  ] WZto3LNu.root                           :         0.22 events
+  [MC  ] WZtoLNu2Q.root                          :         0.11 events
+  [MC  ] ZZto2L2Nu.root                          :         0.02 events
+  [MC  ] ZZto2L2Q.root                           :         0.13 events
+  [MC  ] ZZto4L.root                             :         0.03 events
+  [MC  ] ttWtoLNu.root                           :         0.24 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.01 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.05 events
+  [MC  ] ttZtoNuNu.root                          :         0.02 events
+  [MC  ] ttZtoQQ.root                            :         0.00 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [800, 1000]        |       18.8 |    Blinded |     4.7% |      1.7% |      1.7% |      5.0% |      5.0%
+2    | [1000, 1200]       |        6.6 |    Blinded |     7.9% |      3.4% |      3.3% |      8.6% |      8.5%
+3    | [1200, 1400]       |        2.9 |    Blinded |    11.4% |      4.1% |      3.9% |     12.1% |     12.1%
+4    | [1400, 1600]       |        1.2 |    Blinded |    18.6% |      5.6% |      5.6% |     19.5% |     19.5%
+5    | [1600, 2000]       |        1.0 |    Blinded |    19.3% |      7.3% |      7.1% |     20.6% |     20.6%
+6    | [2000, 2400]       |        0.1 |    Blinded |    62.3% |     11.2% |     12.7% |     63.3% |     63.6%
+7    | [2400, 2800]       |        0.1 |    Blinded |    78.1% |     17.8% |     18.7% |     80.1% |     80.3%
+8    | [2800, 3200]       |        0.0 |    Blinded |    34.2% |     16.1% |     16.3% |     37.8% |     37.9%
+9    | [3200, 8000]       |        0.0 |    Blinded |    31.1% |     12.4% |     11.9% |     33.5% |     33.3%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     5.00%
+  ElectronID     :     0.00%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     2.12%
+  MuonReco       :     0.00%
+  MuonTrig       :     5.88%
+  MuonIso        :     2.05%
+  JER            :     0.27%
+  JES            :     0.68%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. MuonTrig       :     5.88%
+   2. Pileup         :     5.00%
+   3. MuonID         :     2.12%
+   4. MuonIso        :     2.05%
+   5. JES            :     0.68%
+   6. JER            :     0.27%
+   7. ElectronID     :     0.00%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostSRMM_WRMass.tsv
+>> Integrated TSV saved as BoostSRMM_WRMass_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/BoostSigMM_2022_WR8000N3900MM_integrated.tsv
+>> Plot saved as BoostSRMM_WRMass_plot.png
+
+>> Loading Central histograms for: Obj_PU_Corr_DYCR_Resolved_EE_mlljj
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        10.66 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.39 events
+  [MC  ] DYMLL120HT2500.root                     :         0.03 events
+  [MC  ] DYMLL120HT400to800.root                 :        22.49 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.01 events
+  [MC  ] DYMLL120HT800to1500.root                :         4.56 events
+  [MC  ] DYMLL50to120HT100to400.root             :       424.99 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :        14.33 events
+  [MC  ] DYMLL50to120HT2500.root                 :         1.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :       957.99 events
+  [MC  ] DYMLL50to120HT70to100.root              :         0.16 events
+  [MC  ] DYMLL50to120HT800to1500.root            :       179.64 events
+  [DATA] EGamma_C.root                           :      1176.00 events
+  [DATA] EGamma_D.root                           :       708.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         2.02 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.04 events
+  [MC  ] ST_tW_top_Lep.root                      :         2.19 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.07 events
+  [MC  ] TTLJ_powheg.root                        :         0.82 events
+  [MC  ] TTLL_powheg.root                        :        32.52 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.79 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.04 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.83 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.32 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.01 events
+  [SIG ] WR2000N100EE.root                       :         0.03 events  (will be x10.0)
+  [SIG ] WR2000N1100EE.root                      :         2.40 events  (will be x10.0)
+  [SIG ] WR2000N1300EE.root                      :         2.00 events  (will be x10.0)
+  [SIG ] WR2000N1500EE.root                      :         1.94 events  (will be x10.0)
+  [SIG ] WR2000N1700EE.root                      :         1.71 events  (will be x10.0)
+  [SIG ] WR2000N1900EE.root                      :         0.67 events  (will be x10.0)
+  [SIG ] WR2000N300EE.root                       :         0.04 events  (will be x10.0)
+  [SIG ] WR2000N500EE.root                       :         0.64 events  (will be x10.0)
+  [SIG ] WR2000N700EE.root                       :         2.24 events  (will be x10.0)
+  [SIG ] WR2000N900EE.root                       :         2.32 events  (will be x10.0)
+  [SIG ] WR4000N100EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1100EE.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N1300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N300EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N500EE.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N700EE.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N900EE.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR6000N100EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N300EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N500EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5100EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5300EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5500EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5700EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5900EE.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N700EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N900EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N100EE.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N3900EE.root                      : histogram not found, will write zero TSV
+  [MC  ] WWto2L2Nu.root                          :         3.09 events
+  [MC  ] WWtoLNu2Q.root                          :         0.10 events
+  [MC  ] WZto2L2Q.root                           :        15.61 events
+  [MC  ] WZto3LNu.root                           :         7.46 events
+  [MC  ] WZtoLNu2Q.root                          :         0.03 events
+  [MC  ] ZZto2L2Nu.root                          :         5.02 events
+  [MC  ] ZZto2L2Q.root                           :        35.71 events
+  [MC  ] ZZto4L.root                             :         0.58 events
+  [MC  ] ttWtoLNu.root                           :         0.15 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.02 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         4.36 events
+  [MC  ] ttZtoQQ.root                            :         0.07 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+5    | [800, 1000]        |      788.2 |      862.0 |     0.9% |      6.9% |      6.7% |      6.9% |      6.8%
+6    | [1000, 1200]       |      420.1 |      435.0 |     1.2% |      6.6% |      6.6% |      6.7% |      6.7%
+7    | [1200, 1400]       |      217.3 |      248.0 |     1.5% |      7.1% |      7.6% |      7.2% |      7.8%
+8    | [1400, 1600]       |      125.3 |      140.0 |     1.9% |      7.4% |      7.4% |      7.6% |      7.6%
+9    | [1600, 1800]       |       67.8 |       74.0 |     2.4% |      6.6% |      6.9% |      7.0% |      7.3%
+10   | [1800, 2000]       |       41.8 |       49.0 |     3.0% |      8.9% |      8.8% |      9.4% |      9.3%
+11   | [2000, 2200]       |       24.4 |       27.0 |     3.6% |      9.4% |      6.5% |     10.1% |      7.4%
+12   | [2200, 2400]       |       15.6 |       16.0 |     4.2% |      9.4% |      4.7% |     10.3% |      6.3%
+13   | [2400, 2600]       |        9.5 |        8.0 |     5.3% |      8.0% |      8.5% |      9.6% |     10.0%
+14   | [2600, 2800]       |        6.3 |        4.0 |     6.3% |      6.2% |     12.3% |      8.8% |     13.8%
+15   | [2800, 3000]       |        4.0 |        6.0 |     7.0% |     11.3% |      6.0% |     13.3% |      9.2%
+16   | [3000, 3200]       |        2.7 |        5.0 |     8.4% |      8.5% |     13.8% |     11.9% |     16.1%
+17   | [3200, 3400]       |        1.8 |        3.0 |     9.8% |      5.9% |      9.9% |     11.4% |     13.9%
+18   | [3400, 3600]       |        1.0 |        2.0 |     9.2% |     12.9% |      8.3% |     15.9% |     12.4%
+19   | [3600, 3800]       |        0.7 |        0.0 |     8.8% |     17.7% |      7.4% |     19.7% |     11.5%
+20   | [3800, 4000]       |        1.7 |        5.0 |     9.0% |      6.5% |     13.9% |     11.1% |     16.6%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     0.72%
+  ElectronID     :     0.89%
+  ElectronReco   :     4.07%
+  ElectronTrig   :     0.59%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     1.23%
+  JES            :     9.07%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. JES            :     9.07%
+   2. ElectronReco   :     4.07%
+   3. JER            :     1.23%
+   4. ElectronID     :     0.89%
+   5. Pileup         :     0.72%
+   6. ElectronTrig   :     0.59%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as ResolveDYEE_mlljj.tsv
+>> Integrated TSV saved as ResolveDYEE_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR2000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR4000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N4100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N4300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N4500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N4700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N4900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N5100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N5300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N5500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N5700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N5900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR6000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyEE_2022_WR8000N100EE_integrated.tsv
+>> Signal TSV (zero) saved as ./signal/ResolveDyEE_2022_WR8000N3900EE_integrated.tsv
+>> Plot saved as ResolveDYEE_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_Corr_DYCR_Resolved_MM_mlljj
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        24.19 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.73 events
+  [MC  ] DYMLL120HT2500.root                     :         0.05 events
+  [MC  ] DYMLL120HT400to800.root                 :        38.18 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.11 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.22 events
+  [MC  ] DYMLL120HT800to1500.root                :         8.57 events
+  [MC  ] DYMLL50to120HT100to400.root             :       893.42 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :        27.57 events
+  [MC  ] DYMLL50to120HT2500.root                 :         1.92 events
+  [MC  ] DYMLL50to120HT400to800.root             :      1572.35 events
+  [MC  ] DYMLL50to120HT40to70.root               :         0.09 events
+  [MC  ] DYMLL50to120HT70to100.root              :         0.91 events
+  [MC  ] DYMLL50to120HT800to1500.root            :       338.65 events
+  [DATA] Muon_C.root                             :      2132.00 events
+  [DATA] Muon_D.root                             :      1364.00 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.03 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         5.27 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.15 events
+  [MC  ] ST_tW_top_Lep.root                      :         4.66 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.22 events
+  [MC  ] ST_tch_antitop.root                     :         0.61 events
+  [MC  ] ST_tch_top.root                         :         0.14 events
+  [MC  ] TTLJ_powheg.root                        :         9.33 events
+  [MC  ] TTLL_powheg.root                        :       125.26 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.02 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.15 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.39 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.00 events
+  [SIG ] WR2000N100MM.root                       : histogram not found, will write zero TSV
+  [SIG ] WR2000N1100MM.root                      :         3.29 events  (will be x10.0)
+  [SIG ] WR2000N1300MM.root                      :         3.08 events  (will be x10.0)
+  [SIG ] WR2000N1500MM.root                      :         2.60 events  (will be x10.0)
+  [SIG ] WR2000N1700MM.root                      :         2.25 events  (will be x10.0)
+  [SIG ] WR2000N1900MM.root                      :         1.06 events  (will be x10.0)
+  [SIG ] WR2000N300MM.root                       :         0.02 events  (will be x10.0)
+  [SIG ] WR2000N500MM.root                       :         0.66 events  (will be x10.0)
+  [SIG ] WR2000N700MM.root                       :         3.29 events  (will be x10.0)
+  [SIG ] WR2000N900MM.root                       :         2.85 events  (will be x10.0)
+  [SIG ] WR4000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1100MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N1300MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N1500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N2900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N300MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N500MM.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N700MM.root                       :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N900MM.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR6000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N300MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N500MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N700MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N900MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [MC  ] WWto2L2Nu.root                          :         5.78 events
+  [MC  ] WWtoLNu2Q.root                          :         0.03 events
+  [MC  ] WZto2L2Q.root                           :        25.07 events
+  [MC  ] WZto3LNu.root                           :        11.03 events
+  [MC  ] WZtoLNu2Q.root                          :         0.12 events
+  [MC  ] ZZto2L2Nu.root                          :         7.67 events
+  [MC  ] ZZto2L2Q.root                           :        51.79 events
+  [MC  ] ZZto4L.root                             :         0.93 events
+  [MC  ] ttWtoLNu.root                           :         0.34 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.05 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.03 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         6.36 events
+  [MC  ] ttZtoNuNu.root                          :         0.05 events
+  [MC  ] ttZtoQQ.root                            :         0.27 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+5    | [800, 1000]        |     1533.1 |     1704.0 |     0.6% |      5.6% |      5.5% |      5.7% |      5.5%
+6    | [1000, 1200]       |      759.2 |      841.0 |     0.8% |      6.2% |      6.3% |      6.3% |      6.3%
+7    | [1200, 1400]       |      380.6 |      433.0 |     1.1% |      6.9% |      6.2% |      6.9% |      6.3%
+8    | [1400, 1600]       |      197.5 |      211.0 |     1.5% |      7.0% |      5.2% |      7.2% |      5.4%
+9    | [1600, 1800]       |      117.5 |      121.0 |     1.8% |      5.1% |      6.4% |      5.5% |      6.7%
+10   | [1800, 2000]       |       66.9 |       80.0 |     2.2% |      6.8% |      8.6% |      7.2% |      8.9%
+11   | [2000, 2200]       |       40.6 |       43.0 |     2.8% |      6.9% |      6.7% |      7.4% |      7.3%
+12   | [2200, 2400]       |       23.6 |       23.0 |     3.2% |     10.1% |      5.2% |     10.6% |      6.2%
+13   | [2400, 2600]       |       15.8 |       17.0 |     4.0% |      8.4% |      9.0% |      9.3% |      9.9%
+14   | [2600, 2800]       |        9.0 |        9.0 |     4.5% |     10.2% |      9.2% |     11.1% |     10.2%
+15   | [2800, 3000]       |        6.4 |        9.0 |     5.4% |      2.4% |      7.4% |      5.9% |      9.2%
+16   | [3000, 3200]       |        4.0 |        2.0 |     5.6% |     12.9% |     10.4% |     14.1% |     11.9%
+17   | [3200, 3400]       |        2.8 |        1.0 |     8.1% |      3.2% |      8.8% |      8.7% |     11.9%
+18   | [3400, 3600]       |        1.8 |        1.0 |     5.6% |     18.4% |     10.1% |     19.2% |     11.6%
+19   | [3600, 3800]       |        1.2 |        0.0 |     6.6% |      8.6% |      4.3% |     10.9% |      7.9%
+20   | [3800, 4000]       |        2.7 |        1.0 |     5.3% |     12.2% |     13.0% |     13.3% |     14.0%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     0.72%
+  ElectronID     :     0.00%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.58%
+  MuonReco       :     0.00%
+  MuonTrig       :     1.41%
+  MuonIso        :     0.65%
+  JER            :     0.59%
+  JES            :     8.92%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. JES            :     8.92%
+   2. MuonTrig       :     1.41%
+   3. Pileup         :     0.72%
+   4. MuonIso        :     0.65%
+   5. JER            :     0.59%
+   6. MuonID         :     0.58%
+   7. ElectronID     :     0.00%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as ResolveDYMM_mlljj.tsv
+>> Integrated TSV saved as ResolveDYMM_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveDyMM_2022_WR8000N3900MM_integrated.tsv
+>> Signal TSV (zero) saved as ./signal/ResolveDyMM_2022_WR2000N100MM_integrated.tsv
+>> Plot saved as ResolveDYMM_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_Corr_Flav_CR_Resolved_EM_mlljj
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.28 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.07 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.01 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.02 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.14 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.02 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.49 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.16 events
+  [DATA] Muon_C.root                             :       153.00 events
+  [DATA] Muon_D.root                             :        95.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :        12.80 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.57 events
+  [MC  ] ST_tW_top_Lep.root                      :        12.19 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.10 events
+  [MC  ] TTLJ_powheg.root                        :         3.85 events
+  [MC  ] TTLL_powheg.root                        :       220.98 events
+  [MC  ] WJetM0_120HT100to400.root               :         1.99 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.08 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         2.72 events
+  [MC  ] WJetM0_120HT800to1500.root              :         1.20 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.02 events
+  [MC  ] WJetM120HT800to1500.root                :         0.02 events
+  [SIG ] WR2000N100MM.root                       :         0.04 events  (will be x10.0)
+  [SIG ] WR2000N1100MM.root                      :         0.96 events  (will be x10.0)
+  [SIG ] WR2000N1300MM.root                      :         0.59 events  (will be x10.0)
+  [SIG ] WR2000N1500MM.root                      :         0.38 events  (will be x10.0)
+  [SIG ] WR2000N1700MM.root                      :         0.15 events  (will be x10.0)
+  [SIG ] WR2000N1900MM.root                      :         0.03 events  (will be x10.0)
+  [SIG ] WR2000N300MM.root                       :         0.56 events  (will be x10.0)
+  [SIG ] WR2000N500MM.root                       :         1.07 events  (will be x10.0)
+  [SIG ] WR2000N700MM.root                       :         1.33 events  (will be x10.0)
+  [SIG ] WR2000N900MM.root                       :         1.27 events  (will be x10.0)
+  [SIG ] WR4000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N1100MM.root                      :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N1300MM.root                      :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N1500MM.root                      :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N1700MM.root                      :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N1900MM.root                      :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N2100MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N2300MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N2500MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N2700MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N2900MM.root                      :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N300MM.root                       :         0.01 events  (will be x10.0)
+  [SIG ] WR4000N3100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR4000N500MM.root                       :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N700MM.root                       :         0.02 events  (will be x10.0)
+  [SIG ] WR4000N900MM.root                       :         0.02 events  (will be x10.0)
+  [SIG ] WR6000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N1900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N2900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N300MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N4900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N500MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5100MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5300MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5500MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5700MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N700MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR6000N900MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N100MM.root                       :         0.00 events  (will be x10.0)
+  [SIG ] WR8000N3900MM.root                      :         0.00 events  (will be x10.0)
+  [MC  ] WWto2L2Nu.root                          :         9.23 events
+  [MC  ] WWtoLNu2Q.root                          :         0.20 events
+  [MC  ] WZto2L2Q.root                           :         0.03 events
+  [MC  ] WZto3LNu.root                           :         2.71 events
+  [MC  ] WZtoLNu2Q.root                          :         0.26 events
+  [MC  ] ZZto2L2Q.root                           :         0.05 events
+  [MC  ] ZZto4L.root                             :         0.30 events
+  [MC  ] ttWtoLNu.root                           :         1.07 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.13 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.08 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.56 events
+  [MC  ] ttZtoNuNu.root                          :         0.02 events
+  [MC  ] ttZtoQQ.root                            :         1.03 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       71.1 |       59.0 |     2.4% |      4.0% |      4.1% |      4.6% |      4.8%
+10   | [900, 1000]        |       54.7 |       57.0 |     2.7% |      4.5% |      5.2% |      5.2% |      5.9%
+11   | [1000, 1100]       |       40.8 |       42.0 |     3.1% |      4.0% |      4.6% |      5.1% |      5.5%
+12   | [1100, 1200]       |       29.6 |       33.0 |     3.7% |      6.5% |      6.3% |      7.5% |      7.3%
+13   | [1200, 1300]       |       20.0 |        9.0 |     4.3% |      8.6% |      4.1% |      9.6% |      6.0%
+14   | [1300, 1400]       |       14.9 |       10.0 |     5.2% |      3.4% |      8.9% |      6.2% |     10.2%
+15   | [1400, 1500]       |       10.0 |       11.0 |     6.1% |     13.5% |      3.4% |     14.8% |      7.0%
+16   | [1500, 1600]       |        8.3 |        8.0 |     6.9% |      5.5% |      4.4% |      8.8% |      8.2%
+17   | [1600, 1700]       |        6.9 |        3.0 |     7.4% |      5.5% |     12.7% |      9.3% |     14.7%
+18   | [1700, 1800]       |        4.0 |        4.0 |     9.7% |     12.3% |      9.1% |     15.7% |     13.3%
+19   | [1800, 1900]       |        3.0 |        2.0 |    10.9% |      6.8% |      5.4% |     12.8% |     12.1%
+20   | [1900, 2000]       |        2.2 |        6.0 |    13.0% |     17.8% |      4.7% |     22.1% |     13.8%
+21   | [2000, 2100]       |        1.9 |        0.0 |    14.3% |     11.3% |     21.2% |     18.2% |     25.5%
+22   | [2100, 2200]       |        1.4 |        0.0 |    16.0% |      3.9% |     20.8% |     16.4% |     26.2%
+23   | [2200, 2300]       |        0.8 |        0.0 |    19.8% |     19.4% |      5.8% |     27.7% |     20.7%
+24   | [2300, 2400]       |        1.0 |        2.0 |    19.5% |      7.9% |     26.4% |     21.1% |     32.9%
+25   | [2400, 2500]       |        0.6 |        1.0 |    23.0% |     13.3% |      3.2% |     26.6% |     23.3%
+26   | [2500, 2600]       |        0.7 |        0.0 |    22.6% |     14.9% |      7.5% |     27.1% |     23.8%
+27   | [2600, 2700]       |        0.5 |        0.0 |    29.1% |     21.2% |     39.4% |     36.0% |     49.0%
+28   | [2700, 2800]       |        0.2 |        0.0 |    36.1% |     49.2% |      2.9% |     61.0% |     36.2%
+29   | [2800, 2900]       |        0.2 |        0.0 |    55.9% |     37.6% |     83.1% |     67.4% |    100.1%
+30   | [2900, 3000]       |        0.1 |        1.0 |    53.0% |     15.8% |     72.4% |     55.4% |     89.8%
+31   | [3000, 3100]       |        0.1 |        0.0 |    49.4% |     15.5% |     23.1% |     51.7% |     54.5%
+32   | [3100, 3200]       |        0.0 |        0.0 |    47.0% |    122.3% |     11.1% |    131.0% |     48.3%
+33   | [3200, 3300]       |        0.1 |        0.0 |    48.6% |     60.0% |      6.9% |     77.2% |     49.1%
+34   | [3300, 3400]       |        0.1 |        0.0 |    45.9% |     14.8% |     95.5% |     48.2% |    105.9%
+35   | [3400, 3500]       |        0.0 |        0.0 |    69.9% |    699.8% |     68.5% |    703.3% |     97.9%
+36   | [3500, 3600]       |        0.1 |        0.0 |    64.5% |      3.9% |     76.0% |     64.6% |     99.7%
+37   | [3600, 3700]       |        0.0 |        0.0 |    67.1% |   4622.5% |     34.3% |   4623.0% |     75.4%
+38   | [3700, 3800]       |        0.0 |        0.0 |    93.2% |     78.3% |     95.0% |    121.7% |    133.0%
+39   | [3800, 3900]       |        0.0 |        0.0 |    96.0% |     28.3% |     27.1% |    100.1% |     99.7%
+40   | [3900, 4000]       |        0.1 |        0.0 |    65.5% |     40.3% |     34.6% |     76.8% |     74.0%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     5.35%
+  ElectronID     :     0.44%
+  ElectronReco   :     2.46%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     1.19%
+  MuonIso        :     0.52%
+  JER            :   112.80%
+  JES            :   152.07%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. JES            :   152.07%
+   2. JER            :   112.80%
+   3. Pileup         :     5.35%
+   4. ElectronReco   :     2.46%
+   5. MuonTrig       :     1.19%
+   6. MuonIso        :     0.52%
+   7. ElectronID     :     0.44%
+   8. ElectronTrig   :     0.00%
+   9. MuonID         :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as ResolveFLVEM_mlljj.tsv
+>> Integrated TSV saved as ResolveFLVEM_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveFlvMM_2022_WR8000N3900MM_integrated.tsv
+>> Plot saved as ResolveFLVEM_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_Corr_SR_Resolved_EE_mlljj
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        27.71 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.21 events
+  [MC  ] DYMLL120HT2500.root                     :         0.02 events
+  [MC  ] DYMLL120HT400to800.root                 :        11.47 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.62 events
+  [MC  ] DYMLL120HT70to100.root                  :         1.16 events
+  [MC  ] DYMLL120HT800to1500.root                :         2.29 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.22 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.23 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.08 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         5.89 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.11 events
+  [MC  ] ST_tW_top_Lep.root                      :         5.30 events
+  [MC  ] TTLJ_powheg.root                        :         1.79 events
+  [MC  ] TTLL_powheg.root                        :        88.95 events
+  [MC  ] WJetM0_120HT100to400.root               :         1.09 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.07 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         1.61 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.57 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.01 events
+  [MC  ] WJetM120HT800to1500.root                :         0.01 events
+  [SIG ] WR2000N100EE.root                       :        19.10 events  (will be x1.0)
+  [SIG ] WR2000N1100EE.root                      :       342.35 events  (will be x1.0)
+  [SIG ] WR2000N1300EE.root                      :       244.13 events  (will be x1.0)
+  [SIG ] WR2000N1500EE.root                      :       138.81 events  (will be x1.0)
+  [SIG ] WR2000N1700EE.root                      :        51.27 events  (will be x1.0)
+  [SIG ] WR2000N1900EE.root                      :         4.75 events  (will be x1.0)
+  [SIG ] WR2000N300EE.root                       :       335.27 events  (will be x1.0)
+  [SIG ] WR2000N500EE.root                       :       459.07 events  (will be x1.0)
+  [SIG ] WR2000N700EE.root                       :       472.12 events  (will be x1.0)
+  [SIG ] WR2000N900EE.root                       :       423.83 events  (will be x1.0)
+  [SIG ] WR4000N100EE.root                       :         0.13 events  (will be x1.0)
+  [SIG ] WR4000N1100EE.root                      :         6.43 events  (will be x1.0)
+  [SIG ] WR4000N1300EE.root                      :         6.27 events  (will be x1.0)
+  [SIG ] WR4000N1500EE.root                      :         5.95 events  (will be x1.0)
+  [SIG ] WR4000N1700EE.root                      :         5.50 events  (will be x1.0)
+  [SIG ] WR4000N1900EE.root                      :         4.99 events  (will be x1.0)
+  [SIG ] WR4000N2100EE.root                      :         4.49 events  (will be x1.0)
+  [SIG ] WR4000N2300EE.root                      :         3.87 events  (will be x1.0)
+  [SIG ] WR4000N2500EE.root                      :         3.27 events  (will be x1.0)
+  [SIG ] WR4000N2700EE.root                      :         2.63 events  (will be x1.0)
+  [SIG ] WR4000N2900EE.root                      :         2.07 events  (will be x1.0)
+  [SIG ] WR4000N300EE.root                       :         1.95 events  (will be x1.0)
+  [SIG ] WR4000N3100EE.root                      :         1.47 events  (will be x1.0)
+  [SIG ] WR4000N3300EE.root                      :         0.95 events  (will be x1.0)
+  [SIG ] WR4000N3500EE.root                      :         0.50 events  (will be x1.0)
+  [SIG ] WR4000N3700EE.root                      :         0.19 events  (will be x1.0)
+  [SIG ] WR4000N3900EE.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR4000N500EE.root                       :         4.38 events  (will be x1.0)
+  [SIG ] WR4000N700EE.root                       :         5.80 events  (will be x1.0)
+  [SIG ] WR4000N900EE.root                       :         6.36 events  (will be x1.0)
+  [SIG ] WR6000N100EE.root                       :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N1100EE.root                      :         0.32 events  (will be x1.0)
+  [SIG ] WR6000N1300EE.root                      :         0.32 events  (will be x1.0)
+  [SIG ] WR6000N1500EE.root                      :         0.30 events  (will be x1.0)
+  [SIG ] WR6000N1700EE.root                      :         0.29 events  (will be x1.0)
+  [SIG ] WR6000N1900EE.root                      :         0.28 events  (will be x1.0)
+  [SIG ] WR6000N2100EE.root                      :         0.27 events  (will be x1.0)
+  [SIG ] WR6000N2300EE.root                      :         0.25 events  (will be x1.0)
+  [SIG ] WR6000N2500EE.root                      :         0.24 events  (will be x1.0)
+  [SIG ] WR6000N2700EE.root                      :         0.22 events  (will be x1.0)
+  [SIG ] WR6000N2900EE.root                      :         0.21 events  (will be x1.0)
+  [SIG ] WR6000N300EE.root                       :         0.15 events  (will be x1.0)
+  [SIG ] WR6000N3100EE.root                      :         0.19 events  (will be x1.0)
+  [SIG ] WR6000N3300EE.root                      :         0.17 events  (will be x1.0)
+  [SIG ] WR6000N3500EE.root                      :         0.16 events  (will be x1.0)
+  [SIG ] WR6000N3700EE.root                      :         0.14 events  (will be x1.0)
+  [SIG ] WR6000N3900EE.root                      :         0.12 events  (will be x1.0)
+  [SIG ] WR6000N4100EE.root                      :         0.11 events  (will be x1.0)
+  [SIG ] WR6000N4300EE.root                      :         0.09 events  (will be x1.0)
+  [SIG ] WR6000N4500EE.root                      :         0.07 events  (will be x1.0)
+  [SIG ] WR6000N4700EE.root                      :         0.06 events  (will be x1.0)
+  [SIG ] WR6000N4900EE.root                      :         0.04 events  (will be x1.0)
+  [SIG ] WR6000N500EE.root                       :         0.23 events  (will be x1.0)
+  [SIG ] WR6000N5100EE.root                      :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N5300EE.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N5500EE.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N5700EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N5900EE.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700EE.root                       :         0.28 events  (will be x1.0)
+  [SIG ] WR6000N900EE.root                       :         0.31 events  (will be x1.0)
+  [SIG ] WR8000N100EE.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR8000N3900EE.root                      :         0.01 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         4.06 events
+  [MC  ] WWtoLNu2Q.root                          :         0.10 events
+  [MC  ] WZto2L2Q.root                           :         1.01 events
+  [MC  ] WZto3LNu.root                           :         1.61 events
+  [MC  ] WZtoLNu2Q.root                          :         0.23 events
+  [MC  ] ZZto2L2Nu.root                          :         0.42 events
+  [MC  ] ZZto2L2Q.root                           :         3.09 events
+  [MC  ] ZZto4L.root                             :         0.20 events
+  [MC  ] ttWtoLNu.root                           :         0.59 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.07 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.31 events
+  [MC  ] ttZtoNuNu.root                          :         0.05 events
+  [MC  ] ttZtoQQ.root                            :         0.16 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       39.7 |    Blinded |     3.1% |      5.6% |      5.8% |      6.4% |      6.6%
+10   | [900, 1000]        |       31.6 |    Blinded |     3.4% |      7.4% |      7.4% |      8.1% |      8.1%
+11   | [1000, 1100]       |       20.9 |    Blinded |     4.1% |      7.3% |      6.6% |      8.4% |      7.7%
+12   | [1100, 1200]       |       16.5 |    Blinded |     4.4% |      6.4% |      8.1% |      7.7% |      9.2%
+13   | [1200, 1300]       |       12.7 |    Blinded |     4.9% |      9.8% |      7.3% |     11.0% |      8.9%
+14   | [1300, 1400]       |        9.1 |    Blinded |     5.7% |      6.4% |     11.1% |      8.5% |     12.5%
+15   | [1400, 1500]       |        6.7 |    Blinded |     6.5% |      8.2% |      4.9% |     10.5% |      8.1%
+16   | [1500, 1600]       |        5.5 |    Blinded |     7.3% |      4.7% |      5.3% |      8.7% |      9.0%
+17   | [1600, 1700]       |        4.4 |    Blinded |     8.4% |      6.5% |      5.6% |     10.6% |     10.1%
+18   | [1700, 1800]       |        3.4 |    Blinded |     8.9% |     15.3% |     17.0% |     17.7% |     19.2%
+19   | [1800, 1900]       |        2.1 |    Blinded |     9.9% |      9.9% |      5.6% |     14.0% |     11.4%
+20   | [1900, 2000]       |        2.0 |    Blinded |    10.7% |      5.4% |     13.9% |     12.0% |     17.6%
+21   | [2000, 2100]       |        1.5 |    Blinded |    11.6% |     24.0% |     12.6% |     26.7% |     17.1%
+22   | [2100, 2200]       |        1.0 |    Blinded |    15.0% |     14.7% |      6.9% |     21.0% |     16.5%
+23   | [2200, 2300]       |        0.9 |    Blinded |    13.9% |      7.1% |     10.6% |     15.6% |     17.5%
+24   | [2300, 2400]       |        0.7 |    Blinded |    18.2% |     30.4% |     12.8% |     35.4% |     22.2%
+25   | [2400, 2500]       |        0.6 |    Blinded |    21.3% |      8.7% |     17.5% |     23.0% |     27.6%
+26   | [2500, 2600]       |        0.3 |    Blinded |    18.9% |     27.3% |     17.4% |     33.1% |     25.7%
+27   | [2600, 2700]       |        0.3 |    Blinded |    22.6% |     11.1% |     26.4% |     25.2% |     34.8%
+28   | [2700, 2800]       |        0.3 |    Blinded |    24.6% |      6.3% |     20.2% |     25.4% |     31.9%
+29   | [2800, 2900]       |        0.1 |    Blinded |    37.9% |     83.9% |      9.2% |     92.1% |     39.0%
+30   | [2900, 3000]       |        0.3 |    Blinded |    27.4% |     10.6% |     46.1% |     29.3% |     53.6%
+31   | [3000, 3100]       |        0.1 |    Blinded |    28.0% |     99.0% |     28.9% |    102.9% |     40.2%
+32   | [3100, 3200]       |        0.1 |    Blinded |    13.3% |     12.2% |     15.7% |     18.1% |     20.6%
+33   | [3200, 3300]       |        0.1 |    Blinded |    20.5% |      5.2% |     14.4% |     21.2% |     25.0%
+34   | [3300, 3400]       |        0.0 |    Blinded |     9.5% |     30.9% |     12.8% |     32.3% |     16.0%
+35   | [3400, 3500]       |        0.0 |    Blinded |     9.4% |    168.7% |      7.6% |    169.0% |     12.0%
+36   | [3500, 3600]       |        0.1 |    Blinded |    46.3% |     40.9% |     33.9% |     61.7% |     57.3%
+37   | [3600, 3700]       |        0.1 |    Blinded |    53.7% |     51.7% |     53.8% |     74.5% |     76.0%
+38   | [3700, 3800]       |        0.0 |    Blinded |    11.9% |     62.5% |      9.3% |     63.6% |     15.1%
+39   | [3800, 3900]       |        0.0 |    Blinded |    55.2% |     24.0% |     48.8% |     60.2% |     73.7%
+40   | [3900, 4000]       |        0.2 |    Blinded |    34.0% |      5.8% |      7.7% |     34.5% |     34.9%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     3.56%
+  ElectronID     :     0.85%
+  ElectronReco   :     4.81%
+  ElectronTrig   :     0.52%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     6.96%
+  JES            :    26.58%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. JES            :    26.58%
+   2. JER            :     6.96%
+   3. ElectronReco   :     4.81%
+   4. Pileup         :     3.56%
+   5. ElectronID     :     0.85%
+   6. ElectronTrig   :     0.52%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as ResolveSREE_mlljj.tsv
+>> Integrated TSV saved as ResolveSREE_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR2000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR4000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N1100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N1300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N1500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N1700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N1900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N2100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N2300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N2500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N2700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N2900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N3100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N3300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N3500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N3700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N3900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N4100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N4300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N4500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N4700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N4900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N5100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N5300EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N5500EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N5700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N5900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N700EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR6000N900EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR8000N100EE_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigEE_2022_WR8000N3900EE_integrated.tsv
+>> Plot saved as ResolveSREE_mlljj_plot.png
+
+>> Loading Central histograms for: Obj_PU_Corr_SR_Resolved_MM_mlljj
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        32.73 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.27 events
+  [MC  ] DYMLL120HT2500.root                     :         0.02 events
+  [MC  ] DYMLL120HT400to800.root                 :        14.40 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.92 events
+  [MC  ] DYMLL120HT70to100.root                  :         1.49 events
+  [MC  ] DYMLL120HT800to1500.root                :         2.79 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.02 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.09 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.06 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         7.64 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.34 events
+  [MC  ] ST_tW_top_Lep.root                      :         7.82 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.39 events
+  [MC  ] TTLJ_powheg.root                        :         1.87 events
+  [MC  ] TTLL_powheg.root                        :       142.44 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.19 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.78 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.70 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.03 events
+  [MC  ] WJetM120HT800to1500.root                :         0.01 events
+  [SIG ] WR2000N100MM.root                       :        36.43 events  (will be x1.0)
+  [SIG ] WR2000N1100MM.root                      :       420.12 events  (will be x1.0)
+  [SIG ] WR2000N1300MM.root                      :       296.36 events  (will be x1.0)
+  [SIG ] WR2000N1500MM.root                      :       172.36 events  (will be x1.0)
+  [SIG ] WR2000N1700MM.root                      :        62.94 events  (will be x1.0)
+  [SIG ] WR2000N1900MM.root                      :         5.83 events  (will be x1.0)
+  [SIG ] WR2000N300MM.root                       :       446.43 events  (will be x1.0)
+  [SIG ] WR2000N500MM.root                       :       581.72 events  (will be x1.0)
+  [SIG ] WR2000N700MM.root                       :       580.88 events  (will be x1.0)
+  [SIG ] WR2000N900MM.root                       :       525.88 events  (will be x1.0)
+  [SIG ] WR4000N100MM.root                       :         0.27 events  (will be x1.0)
+  [SIG ] WR4000N1100MM.root                      :         8.07 events  (will be x1.0)
+  [SIG ] WR4000N1300MM.root                      :         7.70 events  (will be x1.0)
+  [SIG ] WR4000N1500MM.root                      :         7.31 events  (will be x1.0)
+  [SIG ] WR4000N1700MM.root                      :         6.75 events  (will be x1.0)
+  [SIG ] WR4000N1900MM.root                      :         6.08 events  (will be x1.0)
+  [SIG ] WR4000N2100MM.root                      :         5.41 events  (will be x1.0)
+  [SIG ] WR4000N2300MM.root                      :         4.68 events  (will be x1.0)
+  [SIG ] WR4000N2500MM.root                      :         3.99 events  (will be x1.0)
+  [SIG ] WR4000N2700MM.root                      :         3.22 events  (will be x1.0)
+  [SIG ] WR4000N2900MM.root                      :         2.48 events  (will be x1.0)
+  [SIG ] WR4000N300MM.root                       :         3.08 events  (will be x1.0)
+  [SIG ] WR4000N3100MM.root                      :         1.79 events  (will be x1.0)
+  [SIG ] WR4000N3300MM.root                      :         1.16 events  (will be x1.0)
+  [SIG ] WR4000N3500MM.root                      :         0.62 events  (will be x1.0)
+  [SIG ] WR4000N3700MM.root                      :         0.24 events  (will be x1.0)
+  [SIG ] WR4000N3900MM.root                      :         0.04 events  (will be x1.0)
+  [SIG ] WR4000N500MM.root                       :         6.17 events  (will be x1.0)
+  [SIG ] WR4000N700MM.root                       :         7.78 events  (will be x1.0)
+  [SIG ] WR4000N900MM.root                       :         8.14 events  (will be x1.0)
+  [SIG ] WR6000N100MM.root                       :         0.03 events  (will be x1.0)
+  [SIG ] WR6000N1100MM.root                      :         0.41 events  (will be x1.0)
+  [SIG ] WR6000N1300MM.root                      :         0.40 events  (will be x1.0)
+  [SIG ] WR6000N1500MM.root                      :         0.38 events  (will be x1.0)
+  [SIG ] WR6000N1700MM.root                      :         0.36 events  (will be x1.0)
+  [SIG ] WR6000N1900MM.root                      :         0.35 events  (will be x1.0)
+  [SIG ] WR6000N2100MM.root                      :         0.33 events  (will be x1.0)
+  [SIG ] WR6000N2300MM.root                      :         0.31 events  (will be x1.0)
+  [SIG ] WR6000N2500MM.root                      :         0.29 events  (will be x1.0)
+  [SIG ] WR6000N2700MM.root                      :         0.27 events  (will be x1.0)
+  [SIG ] WR6000N2900MM.root                      :         0.25 events  (will be x1.0)
+  [SIG ] WR6000N300MM.root                       :         0.21 events  (will be x1.0)
+  [SIG ] WR6000N3100MM.root                      :         0.23 events  (will be x1.0)
+  [SIG ] WR6000N3300MM.root                      :         0.21 events  (will be x1.0)
+  [SIG ] WR6000N3500MM.root                      :         0.19 events  (will be x1.0)
+  [SIG ] WR6000N3700MM.root                      :         0.17 events  (will be x1.0)
+  [SIG ] WR6000N3900MM.root                      :         0.15 events  (will be x1.0)
+  [SIG ] WR6000N4100MM.root                      :         0.13 events  (will be x1.0)
+  [SIG ] WR6000N4300MM.root                      :         0.11 events  (will be x1.0)
+  [SIG ] WR6000N4500MM.root                      :         0.09 events  (will be x1.0)
+  [SIG ] WR6000N4700MM.root                      :         0.07 events  (will be x1.0)
+  [SIG ] WR6000N4900MM.root                      :         0.05 events  (will be x1.0)
+  [SIG ] WR6000N500MM.root                       :         0.33 events  (will be x1.0)
+  [SIG ] WR6000N5100MM.root                      :         0.04 events  (will be x1.0)
+  [SIG ] WR6000N5300MM.root                      :         0.02 events  (will be x1.0)
+  [SIG ] WR6000N5500MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N5700MM.root                      :         0.01 events  (will be x1.0)
+  [SIG ] WR6000N5900MM.root                      :         0.00 events  (will be x1.0)
+  [SIG ] WR6000N700MM.root                       :         0.39 events  (will be x1.0)
+  [SIG ] WR6000N900MM.root                       :         0.41 events  (will be x1.0)
+  [SIG ] WR8000N100MM.root                       :         0.01 events  (will be x1.0)
+  [SIG ] WR8000N3900MM.root                      :         0.02 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         6.02 events
+  [MC  ] WWtoLNu2Q.root                          :         0.01 events
+  [MC  ] WZto2L2Q.root                           :         1.24 events
+  [MC  ] WZto3LNu.root                           :         1.68 events
+  [MC  ] ZZto2L2Nu.root                          :         0.45 events
+  [MC  ] ZZto2L2Q.root                           :         3.73 events
+  [MC  ] ZZto4L.root                             :         0.20 events
+  [MC  ] ttWtoLNu.root                           :         1.08 events
+  [MC  ] ttWtoLNu_EWK.root                       :         0.10 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.05 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.40 events
+  [MC  ] ttZtoNuNu.root                          :        -0.01 events
+  [MC  ] ttZtoQQ.root                            :         0.65 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+9    | [800, 900]         |       54.5 |    Blinded |     2.5% |      6.1% |      6.3% |      6.6% |      6.7%
+10   | [900, 1000]        |       43.9 |    Blinded |     2.7% |      3.6% |      4.5% |      4.5% |      5.2%
+11   | [1000, 1100]       |       36.2 |    Blinded |     3.0% |      4.7% |      3.3% |      5.6% |      4.4%
+12   | [1100, 1200]       |       25.3 |    Blinded |     3.5% |      6.6% |      7.4% |      7.5% |      8.2%
+13   | [1200, 1300]       |       18.2 |    Blinded |     4.1% |      6.4% |      5.9% |      7.6% |      7.2%
+14   | [1300, 1400]       |       13.4 |    Blinded |     4.7% |      4.4% |      6.9% |      6.5% |      8.3%
+15   | [1400, 1500]       |        9.0 |    Blinded |     5.6% |      9.2% |      2.9% |     10.7% |      6.3%
+16   | [1500, 1600]       |        7.6 |    Blinded |     6.1% |      7.4% |     10.7% |      9.6% |     12.3%
+17   | [1600, 1700]       |        5.2 |    Blinded |     7.2% |      4.0% |      8.6% |      8.3% |     11.2%
+18   | [1700, 1800]       |        3.4 |    Blinded |     8.9% |     18.3% |      4.8% |     20.4% |     10.1%
+19   | [1800, 1900]       |        3.2 |    Blinded |    10.0% |      4.8% |     13.9% |     11.1% |     17.1%
+20   | [1900, 2000]       |        2.1 |    Blinded |    10.3% |     13.6% |      6.4% |     17.1% |     12.1%
+21   | [2000, 2100]       |        1.7 |    Blinded |    11.9% |      9.2% |     12.3% |     15.0% |     17.1%
+22   | [2100, 2200]       |        1.4 |    Blinded |    12.2% |     17.7% |      6.2% |     21.5% |     13.7%
+23   | [2200, 2300]       |        1.2 |    Blinded |    17.1% |     10.0% |     18.5% |     19.8% |     25.2%
+24   | [2300, 2400]       |        0.8 |    Blinded |    16.5% |      6.0% |      8.3% |     17.5% |     18.5%
+25   | [2400, 2500]       |        0.7 |    Blinded |    16.2% |      5.4% |     10.3% |     17.1% |     19.2%
+26   | [2500, 2600]       |        0.6 |    Blinded |    16.5% |      8.7% |      6.3% |     18.6% |     17.7%
+27   | [2600, 2700]       |        0.4 |    Blinded |    21.1% |     18.6% |     32.4% |     28.1% |     38.6%
+28   | [2700, 2800]       |        0.3 |    Blinded |    20.2% |     15.6% |      8.0% |     25.5% |     21.7%
+29   | [2800, 2900]       |        0.3 |    Blinded |    20.4% |     41.8% |      9.8% |     46.6% |     22.7%
+30   | [2900, 3000]       |        0.3 |    Blinded |    26.6% |      6.5% |     50.5% |     27.3% |     57.1%
+31   | [3000, 3100]       |        0.2 |    Blinded |    30.0% |     11.0% |     11.7% |     32.0% |     32.2%
+32   | [3100, 3200]       |        0.2 |    Blinded |    27.0% |     19.0% |     13.8% |     33.0% |     30.4%
+33   | [3200, 3300]       |        0.1 |    Blinded |    34.0% |     46.9% |     18.7% |     58.0% |     38.8%
+34   | [3300, 3400]       |        0.2 |    Blinded |    39.3% |      9.5% |     35.3% |     40.5% |     52.8%
+35   | [3400, 3500]       |        0.1 |    Blinded |    32.8% |     22.0% |     18.3% |     39.5% |     37.6%
+36   | [3500, 3600]       |        0.0 |    Blinded |    36.6% |    102.0% |     15.1% |    108.3% |     39.6%
+37   | [3600, 3700]       |        0.0 |    Blinded |   254.1% |     49.6% |     66.8% |    258.9% |    262.7%
+38   | [3700, 3800]       |        0.0 |    Blinded |    49.5% |      9.5% |     58.5% |     50.4% |     76.6%
+39   | [3800, 3900]       |        0.0 |    Blinded |    13.5% |    111.3% |      9.1% |    112.1% |     16.3%
+40   | [3900, 4000]       |        0.2 |    Blinded |    21.8% |     13.4% |     21.6% |     25.6% |     30.7%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     4.53%
+  ElectronID     :     0.00%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     2.50%
+  MuonReco       :     0.00%
+  MuonTrig       :     4.73%
+  MuonIso        :     2.42%
+  JER            :     3.93%
+  JES            :    22.73%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. JES            :    22.73%
+   2. MuonTrig       :     4.73%
+   3. Pileup         :     4.53%
+   4. JER            :     3.93%
+   5. MuonID         :     2.50%
+   6. MuonIso        :     2.42%
+   7. ElectronID     :     0.00%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as ResolveSRMM_mlljj.tsv
+>> Integrated TSV saved as ResolveSRMM_mlljj_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR2000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR4000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N1100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N1300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N1500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N1700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N1900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N2100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N2300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N2500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N2700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N2900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N3100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N3300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N3500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N3700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N3900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N4100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N4300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N4500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N4700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N4900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N5100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N5300MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N5500MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N5700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N5900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N700MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR6000N900MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR8000N100MM_integrated.tsv
+>> Signal TSV saved as ./signal/ResolveSigMM_2022_WR8000N3900MM_integrated.tsv
+>> Plot saved as ResolveSRMM_mlljj_plot.png
+=== End time: Thu Apr 16 08:21:25 PM KST 2026 ===
+=== Exit code: 0 ===

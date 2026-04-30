@@ -1,0 +1,2 @@
+python EEbackup.py --signal-scale 1.0 --hist "Obj_PU_boosted_WRMass_ee" --ymin 1 --ymax 2e3 --output BoostSREE_WRMass --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)" --rebin 100 --rmin 0 --rmax 2.0
+python MMbackup.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu" --ymin 1 --ymax 2e3 --output BoostSRMM_WRMass --xmin 800 --xmax 4000 --xlabel "m(lljj) (GeV)" --rebin 100 --rmin 0 --rmax 2.0
