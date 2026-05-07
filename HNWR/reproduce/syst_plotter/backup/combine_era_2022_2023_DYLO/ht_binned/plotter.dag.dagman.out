@@ -1,0 +1,123 @@
+03/31/26 10:59:37 ERROR: log file /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag.nodes.log has been deleted. Aborting.
+03/31/26 10:59:37 MultiLogFiles: detected error, cleaning up all log monitors
+Caught signal 6: si_code=4294967290, si_pid=306354, si_uid=5596, si_addr=0x4ACB2
+Stack dump for process 306354 at timestamp 1774922377 (19 frames)
+/lib64/libcondor_utils_24_0_14.so(_Z18dprintf_dump_stackv+0x28)[0x7f4588e24458]
+/lib64/libcondor_utils_24_0_14.so(_Z17unix_sig_coredumpiP9siginfo_tPv+0x6f)[0x7f4588fc6e7f]
+/lib64/libc.so.6(+0x3fc30)[0x7f458843fc30]
+/lib64/libc.so.6(+0x8d02c)[0x7f458848d02c]
+/lib64/libc.so.6(raise+0x16)[0x7f458843fb86]
+/lib64/libc.so.6(abort+0xd3)[0x7f4588429873]
+/lib64/libstdc++.so.6(+0xa1b21)[0x7f45888a1b21]
+/lib64/libstdc++.so.6(+0xad53c)[0x7f45888ad53c]
+/lib64/libstdc++.so.6(+0xad5a7)[0x7f45888ad5a7]
+/lib64/libstdc++.so.6(+0xad809)[0x7f45888ad809]
+/lib64/libstdc++.so.6(+0xa5dcb)[0x7f45888a5dcb]
+condor_scheduniv_exec.13770015.0(_ZN3Dag18GetCondorLogStatusEl+0x49)[0x55cb7a3b80b9]
+condor_scheduniv_exec.13770015.0(_Z18condor_event_timeri+0xb8)[0x55cb7a3cf928]
+/lib64/libcondor_utils_24_0_14.so(_ZN12TimerManager7TimeoutEPiPd+0x5dd)[0x7f4588fe0afd]
+/lib64/libcondor_utils_24_0_14.so(_ZN10DaemonCore6DriverEv+0x2a8)[0x7f4588fb2878]
+/lib64/libcondor_utils_24_0_14.so(_Z7dc_mainiPPc+0x134e)[0x7f4588fd57de]
+/lib64/libc.so.6(+0x2a610)[0x7f458842a610]
+/lib64/libc.so.6(__libc_start_main+0x80)[0x7f458842a6c0]
+condor_scheduniv_exec.13770015.0(_start+0x25)[0x55cb7a3b42b5]
+03/31/26 10:59:41 ******************************************************
+03/31/26 10:59:41 ** condor_scheduniv_exec.13770015.0 (CONDOR_DAGMAN) STARTING UP
+03/31/26 10:59:41 ** /usr/bin/condor_dagman
+03/31/26 10:59:41 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+03/31/26 10:59:41 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+03/31/26 10:59:41 ** $CondorVersion: 24.0.14 2025-10-31 BuildID: 847283 PackageID: 24.0.14-1 GitSHA: 2c5be6a1 $
+03/31/26 10:59:41 ** $CondorPlatform: x86_64_AlmaLinux9 $
+03/31/26 10:59:41 ** PID = 306922 RealUID = 5596
+03/31/26 10:59:41 ** Log last touched 3/31 10:59:37
+03/31/26 10:59:41 ******************************************************
+03/31/26 10:59:41 Using config source: /etc/condor/condor_config
+03/31/26 10:59:41 Using local config sources: 
+03/31/26 10:59:41    /etc/condor/config.d/00-security
+03/31/26 10:59:41    /etc/condor/config.d/10-stash-plugin.conf
+03/31/26 10:59:41    /etc/condor/config.d/concurrency.config
+03/31/26 10:59:41    /etc/condor/config.d/tamsa2master.config
+03/31/26 10:59:41    /etc/condor/condor_config.local
+03/31/26 10:59:41 config Macros = 1103, Sorted = 1103, StringBytes = 38113, TablesBytes = 39780
+03/31/26 10:59:41 CLASSAD_CACHING is ENABLED
+03/31/26 10:59:41 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+03/31/26 10:59:41 DaemonCore: No command port requested.
+03/31/26 10:59:41 DAGMAN_USE_STRICT setting: 1
+03/31/26 10:59:41 DAGMAN_VERBOSITY setting: 3
+03/31/26 10:59:41 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+03/31/26 10:59:41 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+03/31/26 10:59:41 DAGMAN_SUBMIT_DELAY setting: 0
+03/31/26 10:59:41 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+03/31/26 10:59:41 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+03/31/26 10:59:41 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+03/31/26 10:59:41 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+03/31/26 10:59:41 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+03/31/26 10:59:41 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+03/31/26 10:59:41 DAGMAN_DEFAULT_PRIORITY setting: 0
+03/31/26 10:59:41 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+03/31/26 10:59:41 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+03/31/26 10:59:41 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+03/31/26 10:59:41 DAGMAN_RETRY_NODE_FIRST setting: False
+03/31/26 10:59:41 DAGMAN_MAX_JOBS_IDLE setting: 1000
+03/31/26 10:59:41 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+03/31/26 10:59:41 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+03/31/26 10:59:41 DAGMAN_MAX_POST_SCRIPTS setting: 20
+03/31/26 10:59:41 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+03/31/26 10:59:41 DAGMAN_MUNGE_NODE_NAMES setting: True
+03/31/26 10:59:41 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+03/31/26 10:59:41 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+03/31/26 10:59:41 DAGMAN_ALWAYS_RUN_POST setting: False
+03/31/26 10:59:41 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+03/31/26 10:59:41 DAGMAN_CONDOR_RM_EXE setting: /usr/bin/condor_rm
+03/31/26 10:59:41 DAGMAN_USE_DIRECT_SUBMIT setting: True
+03/31/26 10:59:41 DAGMAN_PRODUCE_JOB_CREDENTIALS setting: True
+03/31/26 10:59:41 DAGMAN_DEFAULT_APPEND_VARS setting: False
+03/31/26 10:59:41 DAGMAN_INHERIT_ATTRS_PREFIX setting: 
+03/31/26 10:59:41 DAGMAN_INHERIT_ATTRS setting: 
+03/31/26 10:59:41 DAGMAN_ABORT_DUPLICATES setting: True
+03/31/26 10:59:41 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+03/31/26 10:59:41 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+03/31/26 10:59:41 DAGMAN_CHECK_QUEUE_INTERVAL setting: 28800
+03/31/26 10:59:41 DAGMAN_AUTO_RESCUE setting: True
+03/31/26 10:59:41 DAGMAN_MAX_RESCUE_NUM setting: 100
+03/31/26 10:59:41 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+03/31/26 10:59:41 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+03/31/26 10:59:41 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+03/31/26 10:59:41 DAGMAN_MAX_JOB_HOLDS setting: 100
+03/31/26 10:59:41 DAGMAN_HOLD_CLAIM_TIME setting: 20
+03/31/26 10:59:41 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+03/31/26 10:59:41 DAGMAN_REMOVE_NODE_JOBS setting: True
+03/31/26 10:59:41 DAGMAN_REMOVE_JOBS_AFTER_LIMIT_CHANGE setting: False
+03/31/26 10:59:41 DAGMAN will adjust edges after parsing
+03/31/26 10:59:41 argv[0] == "condor_scheduniv_exec.13770015.0"
+03/31/26 10:59:41 argv[1] == "-Lockfile"
+03/31/26 10:59:41 argv[2] == "/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag.lock"
+03/31/26 10:59:41 argv[3] == "-Dag"
+03/31/26 10:59:41 argv[4] == "/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag"
+03/31/26 10:59:41 argv[5] == "-CsdVersion"
+03/31/26 10:59:41 argv[6] == "$CondorVersion: 24.0.14 2025-10-31 BuildID: 847283 PackageID: 24.0.14-1 GitSHA: 2c5be6a1 $"
+03/31/26 10:59:41 argv[7] == "-dagman"
+03/31/26 10:59:41 argv[8] == "/usr/bin/condor_dagman"
+03/31/26 10:59:41 argv[9] == "-AutoRescue"
+03/31/26 10:59:41 argv[10] == "1"
+03/31/26 10:59:41 argv[11] == "-DoRescueFrom"
+03/31/26 10:59:41 argv[12] == "0"
+03/31/26 10:59:41 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/31/26 10:59:41 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/31/26 10:59:41 Workflow batch-id: <13770015.0>
+03/31/26 10:59:41 Workflow batch-name: <plotter.dag+13770015>
+03/31/26 10:59:41 Workflow accounting_group: <>
+03/31/26 10:59:41 Workflow accounting_group_user: <>
+03/31/26 10:59:41 Warning: failed to get attribute DAGNodeName
+03/31/26 10:59:41 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+03/31/26 10:59:41 Default node log file is: </data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag.nodes.log>
+03/31/26 10:59:41 DAG Lockfile will be written to /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag.lock
+03/31/26 10:59:41 DAG Input file is /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag
+03/31/26 10:59:41 Parsing 1 dagfiles
+03/31/26 10:59:41 Parsing /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag ...
+03/31/26 10:59:41 ERROR: Could not open file /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag for input (cwd /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned) (errno 2, No such file or directory)
+03/31/26 10:59:41 Removing any/all submitted HTCondor jobs...
+03/31/26 10:59:41 Running: /usr/bin/condor_rm -const DAGManJobId==13770015 -reason Startup' 'Error:' 'DAGMan' 'failed' 'to' 'parse' 'DAG' 'file' '(/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag).' 'Was' 'likely' 'in' 'recovery' 'mode.
+03/31/26 10:59:41 Disabling log line cache.
+03/31/26 10:59:41 Failed to parse /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/plotter.dag
+03/31/26 10:59:41 **** condor_scheduniv_exec.13770015.0 (condor_DAGMAN) pid 306922 EXITING WITH STATUS 1
