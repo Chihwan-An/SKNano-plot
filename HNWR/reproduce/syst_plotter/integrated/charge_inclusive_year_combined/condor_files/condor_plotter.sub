@@ -6,9 +6,9 @@ arguments =
 initialdir = $(work_dir)
 
 # Logs
-output = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_logs/$(jobname).out
-error = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_logs/$(jobname).err
-log = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_logs/condor.log
+output = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_logs/$(jobname).out
+error = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_logs/$(jobname).err
+log = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_logs/condor.log
 
 # Environment
 getenv = True

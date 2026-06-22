@@ -1,40 +1,40 @@
 # Auto-generated DAG file for parallel plotting
 
-JOB boost_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB boost_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS boost_DY jobname="boost_DY"
-VARS boost_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS boost_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/boost/DY"
+VARS boost_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS boost_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/boost/DY"
 
-JOB boost_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB boost_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS boost_FLV jobname="boost_FLV"
-VARS boost_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS boost_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/boost/FLV"
+VARS boost_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS boost_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/boost/FLV"
 
-JOB boost_sr /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB boost_sr /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS boost_sr jobname="boost_sr"
-VARS boost_sr exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS boost_sr work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/boost/sr"
+VARS boost_sr exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS boost_sr work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/boost/sr"
 
-JOB resolve_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB resolve_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS resolve_DY jobname="resolve_DY"
-VARS resolve_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS resolve_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/resolve/DY"
+VARS resolve_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS resolve_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/resolve/DY"
 
-JOB resolve_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB resolve_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS resolve_FLV jobname="resolve_FLV"
-VARS resolve_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS resolve_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/resolve/FLV"
+VARS resolve_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS resolve_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/resolve/FLV"
 
-JOB resolve_sr /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB resolve_sr /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS resolve_sr jobname="resolve_sr"
-VARS resolve_sr exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_plotter.sh"
-VARS resolve_sr work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/resolve/sr"
+VARS resolve_sr exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_plotter.sh"
+VARS resolve_sr work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/resolve/sr"
 
 # Organize files after all plotters complete
-JOB organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/condor_plotter.sub
+JOB organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/condor_plotter.sub
 VARS organize jobname="organize"
-VARS organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned/condor_files/run_organize.sh"
-VARS organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned"
+VARS organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/run_organize.sh"
+VARS organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined"
 
 PARENT boost_DY boost_FLV boost_sr resolve_DY resolve_FLV resolve_sr CHILD organize
 

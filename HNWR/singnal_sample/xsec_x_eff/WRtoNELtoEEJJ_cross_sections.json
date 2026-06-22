@@ -1,0 +1,4106 @@
+{
+  "WRtoNELtoEEJJ_WR10000_N100.out": {
+    "cross_section_pb": 1.419e-05,
+    "uncertainty_pb": 4.251e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N1000.out": {
+    "cross_section_pb": 2.871e-06,
+    "uncertainty_pb": 1.162e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N1100.out": {
+    "cross_section_pb": 2.458e-06,
+    "uncertainty_pb": 9.919e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1200.out": {
+    "cross_section_pb": 2.103e-06,
+    "uncertainty_pb": 5.922e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1300.out": {
+    "cross_section_pb": 1.804e-06,
+    "uncertainty_pb": 5.075e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1400.out": {
+    "cross_section_pb": 1.553e-06,
+    "uncertainty_pb": 4.262e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1500.out": {
+    "cross_section_pb": 1.343e-06,
+    "uncertainty_pb": 3.706e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1600.out": {
+    "cross_section_pb": 1.169e-06,
+    "uncertainty_pb": 3.246e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1700.out": {
+    "cross_section_pb": 1.018e-06,
+    "uncertainty_pb": 2.824e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1800.out": {
+    "cross_section_pb": 8.865e-07,
+    "uncertainty_pb": 2.405e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N1900.out": {
+    "cross_section_pb": 7.792e-07,
+    "uncertainty_pb": 2.085e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N200.out": {
+    "cross_section_pb": 1.157e-05,
+    "uncertainty_pb": 3.417e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N2000.out": {
+    "cross_section_pb": 6.858e-07,
+    "uncertainty_pb": 1.8e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2100.out": {
+    "cross_section_pb": 6.068e-07,
+    "uncertainty_pb": 1.586e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2200.out": {
+    "cross_section_pb": 5.377e-07,
+    "uncertainty_pb": 2.04e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2300.out": {
+    "cross_section_pb": 4.796e-07,
+    "uncertainty_pb": 2.397e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2400.out": {
+    "cross_section_pb": 4.308e-07,
+    "uncertainty_pb": 1.562e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2500.out": {
+    "cross_section_pb": 3.877e-07,
+    "uncertainty_pb": 1.435e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2600.out": {
+    "cross_section_pb": 3.5e-07,
+    "uncertainty_pb": 2.457e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2700.out": {
+    "cross_section_pb": 3.187e-07,
+    "uncertainty_pb": 2.006e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2800.out": {
+    "cross_section_pb": 2.912e-07,
+    "uncertainty_pb": 2.563e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N2900.out": {
+    "cross_section_pb": 2.677e-07,
+    "uncertainty_pb": 3.054e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N300.out": {
+    "cross_section_pb": 9.535e-06,
+    "uncertainty_pb": 2.724e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N3000.out": {
+    "cross_section_pb": 2.451e-07,
+    "uncertainty_pb": 7.959e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3100.out": {
+    "cross_section_pb": 2.267e-07,
+    "uncertainty_pb": 6.687e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3200.out": {
+    "cross_section_pb": 2.091e-07,
+    "uncertainty_pb": 5.775e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3300.out": {
+    "cross_section_pb": 1.918e-07,
+    "uncertainty_pb": 1.264e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3400.out": {
+    "cross_section_pb": 1.796e-07,
+    "uncertainty_pb": 2.175e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3500.out": {
+    "cross_section_pb": 1.681e-07,
+    "uncertainty_pb": 1.941e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3600.out": {
+    "cross_section_pb": 1.572e-07,
+    "uncertainty_pb": 1.762e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3700.out": {
+    "cross_section_pb": 1.471e-07,
+    "uncertainty_pb": 1.543e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3800.out": {
+    "cross_section_pb": 1.379e-07,
+    "uncertainty_pb": 1.446e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N3900.out": {
+    "cross_section_pb": 1.3e-07,
+    "uncertainty_pb": 8.131e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N400.out": {
+    "cross_section_pb": 7.868e-06,
+    "uncertainty_pb": 3.681e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N4000.out": {
+    "cross_section_pb": 1.221e-07,
+    "uncertainty_pb": 1.088e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N4100.out": {
+    "cross_section_pb": 1.157e-07,
+    "uncertainty_pb": 1.012e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N4200.out": {
+    "cross_section_pb": 1.1e-07,
+    "uncertainty_pb": 1.228e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N4300.out": {
+    "cross_section_pb": 1.037e-07,
+    "uncertainty_pb": 1.039e-09
+  },
+  "WRtoNELtoEEJJ_WR10000_N4400.out": {
+    "cross_section_pb": 9.787e-08,
+    "uncertainty_pb": 8.904e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N4500.out": {
+    "cross_section_pb": 9.269e-08,
+    "uncertainty_pb": 9.327e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N4600.out": {
+    "cross_section_pb": 8.758e-08,
+    "uncertainty_pb": 4.65e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N4700.out": {
+    "cross_section_pb": 8.266e-08,
+    "uncertainty_pb": 4.199e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N4800.out": {
+    "cross_section_pb": 7.854e-08,
+    "uncertainty_pb": 6.227e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N4900.out": {
+    "cross_section_pb": 7.425e-08,
+    "uncertainty_pb": 5.312e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N500.out": {
+    "cross_section_pb": 6.636e-06,
+    "uncertainty_pb": 2.922e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N5000.out": {
+    "cross_section_pb": 7.055e-08,
+    "uncertainty_pb": 4.993e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5100.out": {
+    "cross_section_pb": 6.789e-08,
+    "uncertainty_pb": 5.125e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5200.out": {
+    "cross_section_pb": 6.433e-08,
+    "uncertainty_pb": 4.706e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5300.out": {
+    "cross_section_pb": 6.095e-08,
+    "uncertainty_pb": 4.377e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5400.out": {
+    "cross_section_pb": 5.794e-08,
+    "uncertainty_pb": 4.218e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5500.out": {
+    "cross_section_pb": 5.499e-08,
+    "uncertainty_pb": 7.081e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5600.out": {
+    "cross_section_pb": 5.228e-08,
+    "uncertainty_pb": 6.323e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5700.out": {
+    "cross_section_pb": 4.944e-08,
+    "uncertainty_pb": 6.026e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5800.out": {
+    "cross_section_pb": 4.766e-08,
+    "uncertainty_pb": 5.729e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N5900.out": {
+    "cross_section_pb": 4.438e-08,
+    "uncertainty_pb": 5.122e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N600.out": {
+    "cross_section_pb": 5.525e-06,
+    "uncertainty_pb": 2.6e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N6000.out": {
+    "cross_section_pb": 4.226e-08,
+    "uncertainty_pb": 4.724e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6100.out": {
+    "cross_section_pb": 3.986e-08,
+    "uncertainty_pb": 4.288e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6200.out": {
+    "cross_section_pb": 3.791e-08,
+    "uncertainty_pb": 3.938e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6300.out": {
+    "cross_section_pb": 3.558e-08,
+    "uncertainty_pb": 3.605e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6400.out": {
+    "cross_section_pb": 3.4e-08,
+    "uncertainty_pb": 3.38e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6500.out": {
+    "cross_section_pb": 3.224e-08,
+    "uncertainty_pb": 3.182e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6600.out": {
+    "cross_section_pb": 3.034e-08,
+    "uncertainty_pb": 3.078e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6700.out": {
+    "cross_section_pb": 2.815e-08,
+    "uncertainty_pb": 2.551e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6800.out": {
+    "cross_section_pb": 2.681e-08,
+    "uncertainty_pb": 2.465e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N6900.out": {
+    "cross_section_pb": 2.487e-08,
+    "uncertainty_pb": 2.131e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N700.out": {
+    "cross_section_pb": 4.678e-06,
+    "uncertainty_pb": 1.981e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N7000.out": {
+    "cross_section_pb": 2.353e-08,
+    "uncertainty_pb": 2.223e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7100.out": {
+    "cross_section_pb": 2.197e-08,
+    "uncertainty_pb": 2.041e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7200.out": {
+    "cross_section_pb": 2.03e-08,
+    "uncertainty_pb": 1.695e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7300.out": {
+    "cross_section_pb": 1.89e-08,
+    "uncertainty_pb": 1.543e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7400.out": {
+    "cross_section_pb": 1.754e-08,
+    "uncertainty_pb": 1.387e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7500.out": {
+    "cross_section_pb": 1.625e-08,
+    "uncertainty_pb": 1.258e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7600.out": {
+    "cross_section_pb": 1.525e-08,
+    "uncertainty_pb": 1.294e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7700.out": {
+    "cross_section_pb": 1.383e-08,
+    "uncertainty_pb": 1.011e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7800.out": {
+    "cross_section_pb": 1.29e-08,
+    "uncertainty_pb": 1.082e-10
+  },
+  "WRtoNELtoEEJJ_WR10000_N7900.out": {
+    "cross_section_pb": 1.179e-08,
+    "uncertainty_pb": 9.774e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N800.out": {
+    "cross_section_pb": 3.971e-06,
+    "uncertainty_pb": 1.865e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N8000.out": {
+    "cross_section_pb": 1.073e-08,
+    "uncertainty_pb": 8.005e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8100.out": {
+    "cross_section_pb": 9.704e-09,
+    "uncertainty_pb": 7.685e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8200.out": {
+    "cross_section_pb": 8.783e-09,
+    "uncertainty_pb": 6.755e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8300.out": {
+    "cross_section_pb": 7.786e-09,
+    "uncertainty_pb": 5.64e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8400.out": {
+    "cross_section_pb": 6.869e-09,
+    "uncertainty_pb": 5.081e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8500.out": {
+    "cross_section_pb": 6.163e-09,
+    "uncertainty_pb": 4.572e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8600.out": {
+    "cross_section_pb": 5.334e-09,
+    "uncertainty_pb": 3.941e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8700.out": {
+    "cross_section_pb": 4.617e-09,
+    "uncertainty_pb": 3.386e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8800.out": {
+    "cross_section_pb": 3.942e-09,
+    "uncertainty_pb": 2.92e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N8900.out": {
+    "cross_section_pb": 3.307e-09,
+    "uncertainty_pb": 2.706e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N900.out": {
+    "cross_section_pb": 3.379e-06,
+    "uncertainty_pb": 1.53e-08
+  },
+  "WRtoNELtoEEJJ_WR10000_N9000.out": {
+    "cross_section_pb": 2.742e-09,
+    "uncertainty_pb": 2.411e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N9100.out": {
+    "cross_section_pb": 2.226e-09,
+    "uncertainty_pb": 2.001e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N9200.out": {
+    "cross_section_pb": 1.757e-09,
+    "uncertainty_pb": 1.246e-11
+  },
+  "WRtoNELtoEEJJ_WR10000_N9300.out": {
+    "cross_section_pb": 1.353e-09,
+    "uncertainty_pb": 9.6e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9400.out": {
+    "cross_section_pb": 1.002e-09,
+    "uncertainty_pb": 7.094e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9500.out": {
+    "cross_section_pb": 7.145e-10,
+    "uncertainty_pb": 5.161e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9600.out": {
+    "cross_section_pb": 4.714e-10,
+    "uncertainty_pb": 4.002e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9700.out": {
+    "cross_section_pb": 2.874e-10,
+    "uncertainty_pb": 1.226e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9800.out": {
+    "cross_section_pb": 1.602e-10,
+    "uncertainty_pb": 1.224e-12
+  },
+  "WRtoNELtoEEJJ_WR10000_N9900.out": {
+    "cross_section_pb": 7.639e-11,
+    "uncertainty_pb": 5.397e-13
+  },
+  "WRtoNELtoEEJJ_WR1000_N100.out": {
+    "cross_section_pb": 3.612,
+    "uncertainty_pb": 0.05243
+  },
+  "WRtoNELtoEEJJ_WR1000_N200.out": {
+    "cross_section_pb": 3.509,
+    "uncertainty_pb": 0.04951
+  },
+  "WRtoNELtoEEJJ_WR1000_N300.out": {
+    "cross_section_pb": 3.206,
+    "uncertainty_pb": 0.02867
+  },
+  "WRtoNELtoEEJJ_WR1000_N400.out": {
+    "cross_section_pb": 2.804,
+    "uncertainty_pb": 0.03602
+  },
+  "WRtoNELtoEEJJ_WR1000_N500.out": {
+    "cross_section_pb": 2.324,
+    "uncertainty_pb": 0.01882
+  },
+  "WRtoNELtoEEJJ_WR1000_N600.out": {
+    "cross_section_pb": 1.808,
+    "uncertainty_pb": 0.02075
+  },
+  "WRtoNELtoEEJJ_WR1000_N700.out": {
+    "cross_section_pb": 1.214,
+    "uncertainty_pb": 0.008515
+  },
+  "WRtoNELtoEEJJ_WR1000_N800.out": {
+    "cross_section_pb": 0.659,
+    "uncertainty_pb": 0.005733
+  },
+  "WRtoNELtoEEJJ_WR1000_N900.out": {
+    "cross_section_pb": 0.213,
+    "uncertainty_pb": 0.002207
+  },
+  "WRtoNELtoEEJJ_WR1500_N100.out": {
+    "cross_section_pb": 0.6409,
+    "uncertainty_pb": 0.01025
+  },
+  "WRtoNELtoEEJJ_WR1500_N1000.out": {
+    "cross_section_pb": 0.2377,
+    "uncertainty_pb": 0.001708
+  },
+  "WRtoNELtoEEJJ_WR1500_N1100.out": {
+    "cross_section_pb": 0.172,
+    "uncertainty_pb": 0.001193
+  },
+  "WRtoNELtoEEJJ_WR1500_N1200.out": {
+    "cross_section_pb": 0.1099,
+    "uncertainty_pb": 0.0008079
+  },
+  "WRtoNELtoEEJJ_WR1500_N1300.out": {
+    "cross_section_pb": 0.05598,
+    "uncertainty_pb": 0.0005414
+  },
+  "WRtoNELtoEEJJ_WR1500_N1400.out": {
+    "cross_section_pb": 0.01841,
+    "uncertainty_pb": 0.0001879
+  },
+  "WRtoNELtoEEJJ_WR1500_N200.out": {
+    "cross_section_pb": 0.625,
+    "uncertainty_pb": 0.009401
+  },
+  "WRtoNELtoEEJJ_WR1500_N300.out": {
+    "cross_section_pb": 0.6021,
+    "uncertainty_pb": 0.008809
+  },
+  "WRtoNELtoEEJJ_WR1500_N400.out": {
+    "cross_section_pb": 0.5676,
+    "uncertainty_pb": 0.007994
+  },
+  "WRtoNELtoEEJJ_WR1500_N500.out": {
+    "cross_section_pb": 0.5167,
+    "uncertainty_pb": 0.004562
+  },
+  "WRtoNELtoEEJJ_WR1500_N600.out": {
+    "cross_section_pb": 0.4815,
+    "uncertainty_pb": 0.006344
+  },
+  "WRtoNELtoEEJJ_WR1500_N700.out": {
+    "cross_section_pb": 0.4301,
+    "uncertainty_pb": 0.005455
+  },
+  "WRtoNELtoEEJJ_WR1500_N800.out": {
+    "cross_section_pb": 0.3624,
+    "uncertainty_pb": 0.002814
+  },
+  "WRtoNELtoEEJJ_WR1500_N900.out": {
+    "cross_section_pb": 0.3062,
+    "uncertainty_pb": 0.003545
+  },
+  "WRtoNELtoEEJJ_WR2000_N100.out": {
+    "cross_section_pb": 0.1549,
+    "uncertainty_pb": 0.00165
+  },
+  "WRtoNELtoEEJJ_WR2000_N1000.out": {
+    "cross_section_pb": 0.09359,
+    "uncertainty_pb": 0.0008294
+  },
+  "WRtoNELtoEEJJ_WR2000_N1100.out": {
+    "cross_section_pb": 0.08239,
+    "uncertainty_pb": 0.0007411
+  },
+  "WRtoNELtoEEJJ_WR2000_N1200.out": {
+    "cross_section_pb": 0.07109,
+    "uncertainty_pb": 0.0008059
+  },
+  "WRtoNELtoEEJJ_WR2000_N1300.out": {
+    "cross_section_pb": 0.05984,
+    "uncertainty_pb": 0.0007208
+  },
+  "WRtoNELtoEEJJ_WR2000_N1400.out": {
+    "cross_section_pb": 0.04801,
+    "uncertainty_pb": 0.0003778
+  },
+  "WRtoNELtoEEJJ_WR2000_N1500.out": {
+    "cross_section_pb": 0.03647,
+    "uncertainty_pb": 0.0002644
+  },
+  "WRtoNELtoEEJJ_WR2000_N1600.out": {
+    "cross_section_pb": 0.02562,
+    "uncertainty_pb": 0.0002628
+  },
+  "WRtoNELtoEEJJ_WR2000_N1700.out": {
+    "cross_section_pb": 0.01585,
+    "uncertainty_pb": 9.866e-05
+  },
+  "WRtoNELtoEEJJ_WR2000_N1800.out": {
+    "cross_section_pb": 0.008066,
+    "uncertainty_pb": 5.079e-05
+  },
+  "WRtoNELtoEEJJ_WR2000_N1900.out": {
+    "cross_section_pb": 0.002704,
+    "uncertainty_pb": 2.797e-05
+  },
+  "WRtoNELtoEEJJ_WR2000_N200.out": {
+    "cross_section_pb": 0.1511,
+    "uncertainty_pb": 0.002416
+  },
+  "WRtoNELtoEEJJ_WR2000_N300.out": {
+    "cross_section_pb": 0.1497,
+    "uncertainty_pb": 0.002318
+  },
+  "WRtoNELtoEEJJ_WR2000_N400.out": {
+    "cross_section_pb": 0.1448,
+    "uncertainty_pb": 0.002246
+  },
+  "WRtoNELtoEEJJ_WR2000_N500.out": {
+    "cross_section_pb": 0.1386,
+    "uncertainty_pb": 0.002067
+  },
+  "WRtoNELtoEEJJ_WR2000_N600.out": {
+    "cross_section_pb": 0.1286,
+    "uncertainty_pb": 0.001327
+  },
+  "WRtoNELtoEEJJ_WR2000_N700.out": {
+    "cross_section_pb": 0.1195,
+    "uncertainty_pb": 0.001125
+  },
+  "WRtoNELtoEEJJ_WR2000_N800.out": {
+    "cross_section_pb": 0.1139,
+    "uncertainty_pb": 0.001518
+  },
+  "WRtoNELtoEEJJ_WR2000_N900.out": {
+    "cross_section_pb": 0.1046,
+    "uncertainty_pb": 0.001349
+  },
+  "WRtoNELtoEEJJ_WR2500_N100.out": {
+    "cross_section_pb": 0.04534,
+    "uncertainty_pb": 0.000883
+  },
+  "WRtoNELtoEEJJ_WR2500_N1000.out": {
+    "cross_section_pb": 0.03157,
+    "uncertainty_pb": 0.0004178
+  },
+  "WRtoNELtoEEJJ_WR2500_N1100.out": {
+    "cross_section_pb": 0.02952,
+    "uncertainty_pb": 0.0003814
+  },
+  "WRtoNELtoEEJJ_WR2500_N1200.out": {
+    "cross_section_pb": 0.02688,
+    "uncertainty_pb": 0.0002952
+  },
+  "WRtoNELtoEEJJ_WR2500_N1300.out": {
+    "cross_section_pb": 0.02461,
+    "uncertainty_pb": 0.0001881
+  },
+  "WRtoNELtoEEJJ_WR2500_N1400.out": {
+    "cross_section_pb": 0.0224,
+    "uncertainty_pb": 0.0001675
+  },
+  "WRtoNELtoEEJJ_WR2500_N1500.out": {
+    "cross_section_pb": 0.01974,
+    "uncertainty_pb": 0.0002291
+  },
+  "WRtoNELtoEEJJ_WR2500_N1600.out": {
+    "cross_section_pb": 0.01716,
+    "uncertainty_pb": 0.0001874
+  },
+  "WRtoNELtoEEJJ_WR2500_N1700.out": {
+    "cross_section_pb": 0.01463,
+    "uncertainty_pb": 9.546e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N1800.out": {
+    "cross_section_pb": 0.01204,
+    "uncertainty_pb": 7.232e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N1900.out": {
+    "cross_section_pb": 0.009569,
+    "uncertainty_pb": 0.0001019
+  },
+  "WRtoNELtoEEJJ_WR2500_N200.out": {
+    "cross_section_pb": 0.04326,
+    "uncertainty_pb": 0.0004609
+  },
+  "WRtoNELtoEEJJ_WR2500_N2000.out": {
+    "cross_section_pb": 0.007088,
+    "uncertainty_pb": 7.234e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N2100.out": {
+    "cross_section_pb": 0.004899,
+    "uncertainty_pb": 3.109e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N2200.out": {
+    "cross_section_pb": 0.00298,
+    "uncertainty_pb": 1.824e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N2300.out": {
+    "cross_section_pb": 0.001495,
+    "uncertainty_pb": 1.437e-05
+  },
+  "WRtoNELtoEEJJ_WR2500_N2400.out": {
+    "cross_section_pb": 0.0005387,
+    "uncertainty_pb": 5.608e-06
+  },
+  "WRtoNELtoEEJJ_WR2500_N300.out": {
+    "cross_section_pb": 0.04349,
+    "uncertainty_pb": 0.0007172
+  },
+  "WRtoNELtoEEJJ_WR2500_N400.out": {
+    "cross_section_pb": 0.04228,
+    "uncertainty_pb": 0.0006771
+  },
+  "WRtoNELtoEEJJ_WR2500_N500.out": {
+    "cross_section_pb": 0.0408,
+    "uncertainty_pb": 0.0006634
+  },
+  "WRtoNELtoEEJJ_WR2500_N600.out": {
+    "cross_section_pb": 0.03928,
+    "uncertainty_pb": 0.0006085
+  },
+  "WRtoNELtoEEJJ_WR2500_N700.out": {
+    "cross_section_pb": 0.03772,
+    "uncertainty_pb": 0.000579
+  },
+  "WRtoNELtoEEJJ_WR2500_N800.out": {
+    "cross_section_pb": 0.03545,
+    "uncertainty_pb": 0.0003227
+  },
+  "WRtoNELtoEEJJ_WR2500_N900.out": {
+    "cross_section_pb": 0.03423,
+    "uncertainty_pb": 0.0004718
+  },
+  "WRtoNELtoEEJJ_WR3000_N100.out": {
+    "cross_section_pb": 0.01484,
+    "uncertainty_pb": 0.0003315
+  },
+  "WRtoNELtoEEJJ_WR3000_N1000.out": {
+    "cross_section_pb": 0.0108,
+    "uncertainty_pb": 0.0001199
+  },
+  "WRtoNELtoEEJJ_WR3000_N1100.out": {
+    "cross_section_pb": 0.01032,
+    "uncertainty_pb": 0.0001397
+  },
+  "WRtoNELtoEEJJ_WR3000_N1200.out": {
+    "cross_section_pb": 0.009699,
+    "uncertainty_pb": 0.0001261
+  },
+  "WRtoNELtoEEJJ_WR3000_N1300.out": {
+    "cross_section_pb": 0.009194,
+    "uncertainty_pb": 0.0001175
+  },
+  "WRtoNELtoEEJJ_WR3000_N1400.out": {
+    "cross_section_pb": 0.008486,
+    "uncertainty_pb": 9.659e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N1500.out": {
+    "cross_section_pb": 0.007923,
+    "uncertainty_pb": 9.35e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N1600.out": {
+    "cross_section_pb": 0.007316,
+    "uncertainty_pb": 5.553e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N1700.out": {
+    "cross_section_pb": 0.006732,
+    "uncertainty_pb": 3.843e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N1800.out": {
+    "cross_section_pb": 0.006037,
+    "uncertainty_pb": 4.461e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N1900.out": {
+    "cross_section_pb": 0.005373,
+    "uncertainty_pb": 5.943e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N200.out": {
+    "cross_section_pb": 0.01381,
+    "uncertainty_pb": 9.849e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2000.out": {
+    "cross_section_pb": 0.004735,
+    "uncertainty_pb": 3.615e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2100.out": {
+    "cross_section_pb": 0.004055,
+    "uncertainty_pb": 2.397e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2200.out": {
+    "cross_section_pb": 0.003391,
+    "uncertainty_pb": 1.958e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2300.out": {
+    "cross_section_pb": 0.002742,
+    "uncertainty_pb": 2.384e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2400.out": {
+    "cross_section_pb": 0.002147,
+    "uncertainty_pb": 2.119e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N2500.out": {
+    "cross_section_pb": 0.001586,
+    "uncertainty_pb": 9.887e-06
+  },
+  "WRtoNELtoEEJJ_WR3000_N2600.out": {
+    "cross_section_pb": 0.001086,
+    "uncertainty_pb": 9.93e-06
+  },
+  "WRtoNELtoEEJJ_WR3000_N2700.out": {
+    "cross_section_pb": 0.000656,
+    "uncertainty_pb": 5.176e-06
+  },
+  "WRtoNELtoEEJJ_WR3000_N2800.out": {
+    "cross_section_pb": 0.0003354,
+    "uncertainty_pb": 3.132e-06
+  },
+  "WRtoNELtoEEJJ_WR3000_N2900.out": {
+    "cross_section_pb": 0.000126,
+    "uncertainty_pb": 1.372e-06
+  },
+  "WRtoNELtoEEJJ_WR3000_N300.out": {
+    "cross_section_pb": 0.0136,
+    "uncertainty_pb": 9.383e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N400.out": {
+    "cross_section_pb": 0.01326,
+    "uncertainty_pb": 0.0001562
+  },
+  "WRtoNELtoEEJJ_WR3000_N500.out": {
+    "cross_section_pb": 0.01286,
+    "uncertainty_pb": 9.257e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N600.out": {
+    "cross_section_pb": 0.01245,
+    "uncertainty_pb": 8.224e-05
+  },
+  "WRtoNELtoEEJJ_WR3000_N700.out": {
+    "cross_section_pb": 0.01236,
+    "uncertainty_pb": 0.0002072
+  },
+  "WRtoNELtoEEJJ_WR3000_N800.out": {
+    "cross_section_pb": 0.01185,
+    "uncertainty_pb": 0.0001863
+  },
+  "WRtoNELtoEEJJ_WR3000_N900.out": {
+    "cross_section_pb": 0.01137,
+    "uncertainty_pb": 0.0001699
+  },
+  "WRtoNELtoEEJJ_WR3500_N100.out": {
+    "cross_section_pb": 0.005108,
+    "uncertainty_pb": 6.574e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1000.out": {
+    "cross_section_pb": 0.003894,
+    "uncertainty_pb": 5.994e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1100.out": {
+    "cross_section_pb": 0.003668,
+    "uncertainty_pb": 3.432e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1200.out": {
+    "cross_section_pb": 0.003521,
+    "uncertainty_pb": 3.907e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1300.out": {
+    "cross_section_pb": 0.003401,
+    "uncertainty_pb": 3.521e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1400.out": {
+    "cross_section_pb": 0.003177,
+    "uncertainty_pb": 2.612e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1500.out": {
+    "cross_section_pb": 0.003019,
+    "uncertainty_pb": 3.75e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1600.out": {
+    "cross_section_pb": 0.002893,
+    "uncertainty_pb": 1.636e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1700.out": {
+    "cross_section_pb": 0.002657,
+    "uncertainty_pb": 3.05e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1800.out": {
+    "cross_section_pb": 0.002511,
+    "uncertainty_pb": 1.883e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N1900.out": {
+    "cross_section_pb": 0.00233,
+    "uncertainty_pb": 1.923e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N200.out": {
+    "cross_section_pb": 0.004938,
+    "uncertainty_pb": 2.502e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2000.out": {
+    "cross_section_pb": 0.002154,
+    "uncertainty_pb": 1.531e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2100.out": {
+    "cross_section_pb": 0.001967,
+    "uncertainty_pb": 2.112e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2200.out": {
+    "cross_section_pb": 0.001785,
+    "uncertainty_pb": 1.902e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2300.out": {
+    "cross_section_pb": 0.001602,
+    "uncertainty_pb": 1.687e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2400.out": {
+    "cross_section_pb": 0.001431,
+    "uncertainty_pb": 1.467e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N2500.out": {
+    "cross_section_pb": 0.001217,
+    "uncertainty_pb": 7.722e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N2600.out": {
+    "cross_section_pb": 0.001037,
+    "uncertainty_pb": 7.529e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N2700.out": {
+    "cross_section_pb": 0.0008624,
+    "uncertainty_pb": 8.179e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N2800.out": {
+    "cross_section_pb": 0.0006934,
+    "uncertainty_pb": 6.463e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N2900.out": {
+    "cross_section_pb": 0.000539,
+    "uncertainty_pb": 2.455e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N300.out": {
+    "cross_section_pb": 0.004727,
+    "uncertainty_pb": 2.361e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N3000.out": {
+    "cross_section_pb": 0.0003895,
+    "uncertainty_pb": 3.367e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N3100.out": {
+    "cross_section_pb": 0.0002688,
+    "uncertainty_pb": 2.396e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N3200.out": {
+    "cross_section_pb": 0.0001643,
+    "uncertainty_pb": 1.465e-06
+  },
+  "WRtoNELtoEEJJ_WR3500_N3300.out": {
+    "cross_section_pb": 8.326e-05,
+    "uncertainty_pb": 8.419e-07
+  },
+  "WRtoNELtoEEJJ_WR3500_N3400.out": {
+    "cross_section_pb": 3.327e-05,
+    "uncertainty_pb": 2.59e-07
+  },
+  "WRtoNELtoEEJJ_WR3500_N400.out": {
+    "cross_section_pb": 0.00458,
+    "uncertainty_pb": 3.209e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N500.out": {
+    "cross_section_pb": 0.004489,
+    "uncertainty_pb": 3.17e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N600.out": {
+    "cross_section_pb": 0.004369,
+    "uncertainty_pb": 4.504e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N700.out": {
+    "cross_section_pb": 0.004211,
+    "uncertainty_pb": 2.742e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N800.out": {
+    "cross_section_pb": 0.004052,
+    "uncertainty_pb": 2.518e-05
+  },
+  "WRtoNELtoEEJJ_WR3500_N900.out": {
+    "cross_section_pb": 0.003972,
+    "uncertainty_pb": 3.898e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N100.out": {
+    "cross_section_pb": 0.002074,
+    "uncertainty_pb": 1.787e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1000.out": {
+    "cross_section_pb": 0.001463,
+    "uncertainty_pb": 1.431e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1100.out": {
+    "cross_section_pb": 0.001397,
+    "uncertainty_pb": 1.376e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1200.out": {
+    "cross_section_pb": 0.001357,
+    "uncertainty_pb": 1.314e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1300.out": {
+    "cross_section_pb": 0.001286,
+    "uncertainty_pb": 1.799e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1400.out": {
+    "cross_section_pb": 0.00123,
+    "uncertainty_pb": 1.037e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1500.out": {
+    "cross_section_pb": 0.001198,
+    "uncertainty_pb": 1.466e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1600.out": {
+    "cross_section_pb": 0.001146,
+    "uncertainty_pb": 1.422e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1700.out": {
+    "cross_section_pb": 0.001094,
+    "uncertainty_pb": 1.338e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1800.out": {
+    "cross_section_pb": 0.001015,
+    "uncertainty_pb": 1.114e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N1900.out": {
+    "cross_section_pb": 0.0009663,
+    "uncertainty_pb": 1.03e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N200.out": {
+    "cross_section_pb": 0.001956,
+    "uncertainty_pb": 7.901e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2000.out": {
+    "cross_section_pb": 0.0009157,
+    "uncertainty_pb": 6.604e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2100.out": {
+    "cross_section_pb": 0.0008684,
+    "uncertainty_pb": 4.309e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2200.out": {
+    "cross_section_pb": 0.000809,
+    "uncertainty_pb": 5.495e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2300.out": {
+    "cross_section_pb": 0.0007535,
+    "uncertainty_pb": 5.057e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2400.out": {
+    "cross_section_pb": 0.0006917,
+    "uncertainty_pb": 6.676e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2500.out": {
+    "cross_section_pb": 0.0006398,
+    "uncertainty_pb": 6.273e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2600.out": {
+    "cross_section_pb": 0.0005883,
+    "uncertainty_pb": 5.754e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2700.out": {
+    "cross_section_pb": 0.0005247,
+    "uncertainty_pb": 4.963e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2800.out": {
+    "cross_section_pb": 0.0004666,
+    "uncertainty_pb": 4.412e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N2900.out": {
+    "cross_section_pb": 0.0004067,
+    "uncertainty_pb": 3.684e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N300.out": {
+    "cross_section_pb": 0.001873,
+    "uncertainty_pb": 7.35e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N3000.out": {
+    "cross_section_pb": 0.0003504,
+    "uncertainty_pb": 3.101e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N3100.out": {
+    "cross_section_pb": 0.0002961,
+    "uncertainty_pb": 2.596e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N3200.out": {
+    "cross_section_pb": 0.0002449,
+    "uncertainty_pb": 2.116e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N3300.out": {
+    "cross_section_pb": 0.0001968,
+    "uncertainty_pb": 1.141e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N3400.out": {
+    "cross_section_pb": 0.0001491,
+    "uncertainty_pb": 8.006e-07
+  },
+  "WRtoNELtoEEJJ_WR4000_N3500.out": {
+    "cross_section_pb": 0.0001095,
+    "uncertainty_pb": 9.761e-07
+  },
+  "WRtoNELtoEEJJ_WR4000_N3600.out": {
+    "cross_section_pb": 7.46e-05,
+    "uncertainty_pb": 6.347e-07
+  },
+  "WRtoNELtoEEJJ_WR4000_N3700.out": {
+    "cross_section_pb": 4.6e-05,
+    "uncertainty_pb": 3.89e-07
+  },
+  "WRtoNELtoEEJJ_WR4000_N3800.out": {
+    "cross_section_pb": 2.4e-05,
+    "uncertainty_pb": 2.109e-07
+  },
+  "WRtoNELtoEEJJ_WR4000_N3900.out": {
+    "cross_section_pb": 1.003e-05,
+    "uncertainty_pb": 9.734e-08
+  },
+  "WRtoNELtoEEJJ_WR4000_N400.out": {
+    "cross_section_pb": 0.00178,
+    "uncertainty_pb": 9.813e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N500.out": {
+    "cross_section_pb": 0.001715,
+    "uncertainty_pb": 8.439e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N600.out": {
+    "cross_section_pb": 0.001653,
+    "uncertainty_pb": 7.868e-06
+  },
+  "WRtoNELtoEEJJ_WR4000_N700.out": {
+    "cross_section_pb": 0.001591,
+    "uncertainty_pb": 1.083e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N800.out": {
+    "cross_section_pb": 0.001548,
+    "uncertainty_pb": 1.02e-05
+  },
+  "WRtoNELtoEEJJ_WR4000_N900.out": {
+    "cross_section_pb": 0.001494,
+    "uncertainty_pb": 1.519e-05
+  },
+  "WRtoNELtoEEJJ_WR4500_N100.out": {
+    "cross_section_pb": 0.0009478,
+    "uncertainty_pb": 6.129e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1000.out": {
+    "cross_section_pb": 0.0006075,
+    "uncertainty_pb": 5.193e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1100.out": {
+    "cross_section_pb": 0.0005855,
+    "uncertainty_pb": 5.136e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1200.out": {
+    "cross_section_pb": 0.0005648,
+    "uncertainty_pb": 3.669e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1300.out": {
+    "cross_section_pb": 0.0005443,
+    "uncertainty_pb": 6.241e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1400.out": {
+    "cross_section_pb": 0.0005149,
+    "uncertainty_pb": 7.318e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1500.out": {
+    "cross_section_pb": 0.0005027,
+    "uncertainty_pb": 5.941e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1600.out": {
+    "cross_section_pb": 0.0004836,
+    "uncertainty_pb": 5.609e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1700.out": {
+    "cross_section_pb": 0.0004706,
+    "uncertainty_pb": 5.6e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1800.out": {
+    "cross_section_pb": 0.0004522,
+    "uncertainty_pb": 5.217e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N1900.out": {
+    "cross_section_pb": 0.0004336,
+    "uncertainty_pb": 4.935e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N200.out": {
+    "cross_section_pb": 0.0008737,
+    "uncertainty_pb": 2.393e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2000.out": {
+    "cross_section_pb": 0.0004019,
+    "uncertainty_pb": 4.017e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2100.out": {
+    "cross_section_pb": 0.0003871,
+    "uncertainty_pb": 2.881e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2200.out": {
+    "cross_section_pb": 0.0003701,
+    "uncertainty_pb": 3.709e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2300.out": {
+    "cross_section_pb": 0.0003514,
+    "uncertainty_pb": 2.331e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2400.out": {
+    "cross_section_pb": 0.0003321,
+    "uncertainty_pb": 2.192e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2500.out": {
+    "cross_section_pb": 0.0003138,
+    "uncertainty_pb": 3.002e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2600.out": {
+    "cross_section_pb": 0.0002909,
+    "uncertainty_pb": 1.804e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2700.out": {
+    "cross_section_pb": 0.0002708,
+    "uncertainty_pb": 2.382e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2800.out": {
+    "cross_section_pb": 0.0002517,
+    "uncertainty_pb": 2.215e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N2900.out": {
+    "cross_section_pb": 0.0002312,
+    "uncertainty_pb": 1.995e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N300.out": {
+    "cross_section_pb": 0.0008224,
+    "uncertainty_pb": 2.241e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3000.out": {
+    "cross_section_pb": 0.0002133,
+    "uncertainty_pb": 1.888e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3100.out": {
+    "cross_section_pb": 0.000193,
+    "uncertainty_pb": 1.683e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3200.out": {
+    "cross_section_pb": 0.0001718,
+    "uncertainty_pb": 1.451e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3300.out": {
+    "cross_section_pb": 0.000152,
+    "uncertainty_pb": 1.263e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3400.out": {
+    "cross_section_pb": 0.0001329,
+    "uncertainty_pb": 1.106e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N3500.out": {
+    "cross_section_pb": 0.0001137,
+    "uncertainty_pb": 9.229e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N3600.out": {
+    "cross_section_pb": 9.538e-05,
+    "uncertainty_pb": 7.514e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N3700.out": {
+    "cross_section_pb": 7.831e-05,
+    "uncertainty_pb": 6.892e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N3800.out": {
+    "cross_section_pb": 6.196e-05,
+    "uncertainty_pb": 4.571e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N3900.out": {
+    "cross_section_pb": 4.771e-05,
+    "uncertainty_pb": 3.541e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N400.out": {
+    "cross_section_pb": 0.0007774,
+    "uncertainty_pb": 2.989e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N4000.out": {
+    "cross_section_pb": 3.497e-05,
+    "uncertainty_pb": 2.652e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N4100.out": {
+    "cross_section_pb": 2.375e-05,
+    "uncertainty_pb": 1.824e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N4200.out": {
+    "cross_section_pb": 1.474e-05,
+    "uncertainty_pb": 1.149e-07
+  },
+  "WRtoNELtoEEJJ_WR4500_N4300.out": {
+    "cross_section_pb": 7.873e-06,
+    "uncertainty_pb": 6.746e-08
+  },
+  "WRtoNELtoEEJJ_WR4500_N4400.out": {
+    "cross_section_pb": 3.541e-06,
+    "uncertainty_pb": 3.642e-08
+  },
+  "WRtoNELtoEEJJ_WR4500_N500.out": {
+    "cross_section_pb": 0.0007431,
+    "uncertainty_pb": 2.779e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N600.out": {
+    "cross_section_pb": 0.0007105,
+    "uncertainty_pb": 2.601e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N700.out": {
+    "cross_section_pb": 0.0006818,
+    "uncertainty_pb": 3.681e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N800.out": {
+    "cross_section_pb": 0.0006547,
+    "uncertainty_pb": 3.388e-06
+  },
+  "WRtoNELtoEEJJ_WR4500_N900.out": {
+    "cross_section_pb": 0.0006295,
+    "uncertainty_pb": 4.671e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N100.out": {
+    "cross_section_pb": 0.0004937,
+    "uncertainty_pb": 2.103e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1000.out": {
+    "cross_section_pb": 0.0002869,
+    "uncertainty_pb": 1.563e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1100.out": {
+    "cross_section_pb": 0.0002771,
+    "uncertainty_pb": 1.424e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1200.out": {
+    "cross_section_pb": 0.0002666,
+    "uncertainty_pb": 1.342e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1300.out": {
+    "cross_section_pb": 0.000254,
+    "uncertainty_pb": 2.422e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1400.out": {
+    "cross_section_pb": 0.0002452,
+    "uncertainty_pb": 1.66e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1500.out": {
+    "cross_section_pb": 0.0002349,
+    "uncertainty_pb": 2.576e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1600.out": {
+    "cross_section_pb": 0.0002291,
+    "uncertainty_pb": 2.874e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1700.out": {
+    "cross_section_pb": 0.0002174,
+    "uncertainty_pb": 2.7e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1800.out": {
+    "cross_section_pb": 0.000214,
+    "uncertainty_pb": 1.806e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N1900.out": {
+    "cross_section_pb": 0.0002057,
+    "uncertainty_pb": 1.684e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N200.out": {
+    "cross_section_pb": 0.0004518,
+    "uncertainty_pb": 3.307e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2000.out": {
+    "cross_section_pb": 0.0001995,
+    "uncertainty_pb": 2.089e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2100.out": {
+    "cross_section_pb": 0.0001902,
+    "uncertainty_pb": 2.1e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2200.out": {
+    "cross_section_pb": 0.0001797,
+    "uncertainty_pb": 1.83e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2300.out": {
+    "cross_section_pb": 0.0001735,
+    "uncertainty_pb": 1.634e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2400.out": {
+    "cross_section_pb": 0.0001659,
+    "uncertainty_pb": 1.611e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2500.out": {
+    "cross_section_pb": 0.0001587,
+    "uncertainty_pb": 1.37e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2600.out": {
+    "cross_section_pb": 0.00015,
+    "uncertainty_pb": 9.451e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N2700.out": {
+    "cross_section_pb": 0.0001425,
+    "uncertainty_pb": 8.727e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N2800.out": {
+    "cross_section_pb": 0.0001336,
+    "uncertainty_pb": 1.312e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N2900.out": {
+    "cross_section_pb": 0.0001263,
+    "uncertainty_pb": 1.168e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N300.out": {
+    "cross_section_pb": 0.0004138,
+    "uncertainty_pb": 1.231e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N3000.out": {
+    "cross_section_pb": 0.0001175,
+    "uncertainty_pb": 1.033e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N3100.out": {
+    "cross_section_pb": 0.0001099,
+    "uncertainty_pb": 8.836e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3200.out": {
+    "cross_section_pb": 0.0001019,
+    "uncertainty_pb": 7.955e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3300.out": {
+    "cross_section_pb": 9.49e-05,
+    "uncertainty_pb": 6.439e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3400.out": {
+    "cross_section_pb": 8.684e-05,
+    "uncertainty_pb": 7.014e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3500.out": {
+    "cross_section_pb": 7.888e-05,
+    "uncertainty_pb": 6.514e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3600.out": {
+    "cross_section_pb": 7.105e-05,
+    "uncertainty_pb": 5.479e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3700.out": {
+    "cross_section_pb": 6.336e-05,
+    "uncertainty_pb": 5.051e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3800.out": {
+    "cross_section_pb": 5.585e-05,
+    "uncertainty_pb": 4.27e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N3900.out": {
+    "cross_section_pb": 4.862e-05,
+    "uncertainty_pb": 3.617e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N400.out": {
+    "cross_section_pb": 0.0003859,
+    "uncertainty_pb": 1.09e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N4000.out": {
+    "cross_section_pb": 4.15e-05,
+    "uncertainty_pb": 3.017e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N4100.out": {
+    "cross_section_pb": 3.473e-05,
+    "uncertainty_pb": 2.508e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N4200.out": {
+    "cross_section_pb": 2.833e-05,
+    "uncertainty_pb": 1.981e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N4300.out": {
+    "cross_section_pb": 2.27e-05,
+    "uncertainty_pb": 1.693e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N4400.out": {
+    "cross_section_pb": 1.734e-05,
+    "uncertainty_pb": 1.237e-07
+  },
+  "WRtoNELtoEEJJ_WR5000_N4500.out": {
+    "cross_section_pb": 1.27e-05,
+    "uncertainty_pb": 9.225e-08
+  },
+  "WRtoNELtoEEJJ_WR5000_N4600.out": {
+    "cross_section_pb": 8.59e-06,
+    "uncertainty_pb": 6.393e-08
+  },
+  "WRtoNELtoEEJJ_WR5000_N4700.out": {
+    "cross_section_pb": 5.356e-06,
+    "uncertainty_pb": 4.271e-08
+  },
+  "WRtoNELtoEEJJ_WR5000_N4800.out": {
+    "cross_section_pb": 2.946e-06,
+    "uncertainty_pb": 2.407e-08
+  },
+  "WRtoNELtoEEJJ_WR5000_N4900.out": {
+    "cross_section_pb": 1.401e-06,
+    "uncertainty_pb": 1.3e-08
+  },
+  "WRtoNELtoEEJJ_WR5000_N500.out": {
+    "cross_section_pb": 0.000363,
+    "uncertainty_pb": 1.501e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N600.out": {
+    "cross_section_pb": 0.0003435,
+    "uncertainty_pb": 1.346e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N700.out": {
+    "cross_section_pb": 0.0003266,
+    "uncertainty_pb": 1.236e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N800.out": {
+    "cross_section_pb": 0.0003113,
+    "uncertainty_pb": 1.271e-06
+  },
+  "WRtoNELtoEEJJ_WR5000_N900.out": {
+    "cross_section_pb": 0.0002993,
+    "uncertainty_pb": 1.685e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N100.out": {
+    "cross_section_pb": 0.0002823,
+    "uncertainty_pb": 1.258e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N1000.out": {
+    "cross_section_pb": 0.0001473,
+    "uncertainty_pb": 5.656e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1100.out": {
+    "cross_section_pb": 0.0001411,
+    "uncertainty_pb": 8.341e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1200.out": {
+    "cross_section_pb": 0.0001365,
+    "uncertainty_pb": 7.717e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1300.out": {
+    "cross_section_pb": 0.0001306,
+    "uncertainty_pb": 7.228e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1400.out": {
+    "cross_section_pb": 0.0001251,
+    "uncertainty_pb": 8.859e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1500.out": {
+    "cross_section_pb": 0.0001205,
+    "uncertainty_pb": 9.059e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1600.out": {
+    "cross_section_pb": 0.0001163,
+    "uncertainty_pb": 1.1e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N1700.out": {
+    "cross_section_pb": 0.0001117,
+    "uncertainty_pb": 1.074e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N1800.out": {
+    "cross_section_pb": 0.000108,
+    "uncertainty_pb": 9.76e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N1900.out": {
+    "cross_section_pb": 0.0001049,
+    "uncertainty_pb": 1.204e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N200.out": {
+    "cross_section_pb": 0.0002537,
+    "uncertainty_pb": 1.162e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N2000.out": {
+    "cross_section_pb": 0.0001024,
+    "uncertainty_pb": 1.228e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N2100.out": {
+    "cross_section_pb": 9.808e-05,
+    "uncertainty_pb": 7.613e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2200.out": {
+    "cross_section_pb": 9.52e-05,
+    "uncertainty_pb": 1.042e-06
+  },
+  "WRtoNELtoEEJJ_WR5500_N2300.out": {
+    "cross_section_pb": 9.056e-05,
+    "uncertainty_pb": 9.408e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2400.out": {
+    "cross_section_pb": 8.625e-05,
+    "uncertainty_pb": 8.483e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2500.out": {
+    "cross_section_pb": 8.389e-05,
+    "uncertainty_pb": 7.304e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2600.out": {
+    "cross_section_pb": 8.034e-05,
+    "uncertainty_pb": 6.974e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2700.out": {
+    "cross_section_pb": 7.704e-05,
+    "uncertainty_pb": 6.234e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2800.out": {
+    "cross_section_pb": 7.384e-05,
+    "uncertainty_pb": 7.188e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N2900.out": {
+    "cross_section_pb": 7.008e-05,
+    "uncertainty_pb": 4.395e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N300.out": {
+    "cross_section_pb": 0.0002306,
+    "uncertainty_pb": 7.68e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3000.out": {
+    "cross_section_pb": 6.666e-05,
+    "uncertainty_pb": 3.894e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3100.out": {
+    "cross_section_pb": 6.352e-05,
+    "uncertainty_pb": 5.318e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3200.out": {
+    "cross_section_pb": 5.973e-05,
+    "uncertainty_pb": 5.846e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3300.out": {
+    "cross_section_pb": 5.628e-05,
+    "uncertainty_pb": 5.364e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3400.out": {
+    "cross_section_pb": 5.279e-05,
+    "uncertainty_pb": 4.164e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3500.out": {
+    "cross_section_pb": 4.955e-05,
+    "uncertainty_pb": 3.904e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3600.out": {
+    "cross_section_pb": 4.634e-05,
+    "uncertainty_pb": 4.21e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3700.out": {
+    "cross_section_pb": 4.307e-05,
+    "uncertainty_pb": 3.558e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3800.out": {
+    "cross_section_pb": 3.918e-05,
+    "uncertainty_pb": 3.398e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N3900.out": {
+    "cross_section_pb": 3.592e-05,
+    "uncertainty_pb": 2.855e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N400.out": {
+    "cross_section_pb": 0.0002111,
+    "uncertainty_pb": 6.507e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4000.out": {
+    "cross_section_pb": 3.252e-05,
+    "uncertainty_pb": 2.54e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4100.out": {
+    "cross_section_pb": 2.921e-05,
+    "uncertainty_pb": 2.228e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4200.out": {
+    "cross_section_pb": 2.595e-05,
+    "uncertainty_pb": 1.939e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4300.out": {
+    "cross_section_pb": 2.278e-05,
+    "uncertainty_pb": 1.678e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4400.out": {
+    "cross_section_pb": 1.975e-05,
+    "uncertainty_pb": 1.399e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4500.out": {
+    "cross_section_pb": 1.682e-05,
+    "uncertainty_pb": 1.207e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4600.out": {
+    "cross_section_pb": 1.413e-05,
+    "uncertainty_pb": 1.035e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N4700.out": {
+    "cross_section_pb": 1.143e-05,
+    "uncertainty_pb": 8.266e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N4800.out": {
+    "cross_section_pb": 9.109e-06,
+    "uncertainty_pb": 6.435e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N4900.out": {
+    "cross_section_pb": 6.994e-06,
+    "uncertainty_pb": 7.151e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N500.out": {
+    "cross_section_pb": 0.0001961,
+    "uncertainty_pb": 5.839e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N5000.out": {
+    "cross_section_pb": 5.095e-06,
+    "uncertainty_pb": 3.647e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N5100.out": {
+    "cross_section_pb": 3.505e-06,
+    "uncertainty_pb": 2.735e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N5200.out": {
+    "cross_section_pb": 2.174e-06,
+    "uncertainty_pb": 1.689e-08
+  },
+  "WRtoNELtoEEJJ_WR5500_N5300.out": {
+    "cross_section_pb": 1.225e-06,
+    "uncertainty_pb": 7.266e-09
+  },
+  "WRtoNELtoEEJJ_WR5500_N5400.out": {
+    "cross_section_pb": 5.918e-07,
+    "uncertainty_pb": 5.454e-09
+  },
+  "WRtoNELtoEEJJ_WR5500_N600.out": {
+    "cross_section_pb": 0.0001837,
+    "uncertainty_pb": 5.442e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N700.out": {
+    "cross_section_pb": 0.0001723,
+    "uncertainty_pb": 7.104e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N800.out": {
+    "cross_section_pb": 0.000163,
+    "uncertainty_pb": 6.526e-07
+  },
+  "WRtoNELtoEEJJ_WR5500_N900.out": {
+    "cross_section_pb": 0.0001546,
+    "uncertainty_pb": 6.078e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N100.out": {
+    "cross_section_pb": 0.0001742,
+    "uncertainty_pb": 8.026e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1000.out": {
+    "cross_section_pb": 8.119e-05,
+    "uncertainty_pb": 3.455e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1100.out": {
+    "cross_section_pb": 7.7e-05,
+    "uncertainty_pb": 3.182e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1200.out": {
+    "cross_section_pb": 7.355e-05,
+    "uncertainty_pb": 2.959e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1300.out": {
+    "cross_section_pb": 7.04e-05,
+    "uncertainty_pb": 2.703e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1400.out": {
+    "cross_section_pb": 6.781e-05,
+    "uncertainty_pb": 3.784e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1500.out": {
+    "cross_section_pb": 6.518e-05,
+    "uncertainty_pb": 3.522e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1600.out": {
+    "cross_section_pb": 6.271e-05,
+    "uncertainty_pb": 4.632e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1700.out": {
+    "cross_section_pb": 6.044e-05,
+    "uncertainty_pb": 4.211e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1800.out": {
+    "cross_section_pb": 5.827e-05,
+    "uncertainty_pb": 3.971e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N1900.out": {
+    "cross_section_pb": 5.566e-05,
+    "uncertainty_pb": 6.216e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N200.out": {
+    "cross_section_pb": 0.0001534,
+    "uncertainty_pb": 7.249e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2000.out": {
+    "cross_section_pb": 5.377e-05,
+    "uncertainty_pb": 5.548e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2100.out": {
+    "cross_section_pb": 5.21e-05,
+    "uncertainty_pb": 5.017e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2200.out": {
+    "cross_section_pb": 5.079e-05,
+    "uncertainty_pb": 4.662e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2300.out": {
+    "cross_section_pb": 4.943e-05,
+    "uncertainty_pb": 6.108e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2400.out": {
+    "cross_section_pb": 4.753e-05,
+    "uncertainty_pb": 4.61e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2500.out": {
+    "cross_section_pb": 4.559e-05,
+    "uncertainty_pb": 4.611e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2600.out": {
+    "cross_section_pb": 4.406e-05,
+    "uncertainty_pb": 3.752e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2700.out": {
+    "cross_section_pb": 4.251e-05,
+    "uncertainty_pb": 4.226e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2800.out": {
+    "cross_section_pb": 4.11e-05,
+    "uncertainty_pb": 3.551e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N2900.out": {
+    "cross_section_pb": 3.932e-05,
+    "uncertainty_pb": 3.643e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N300.out": {
+    "cross_section_pb": 0.0001374,
+    "uncertainty_pb": 4.465e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3000.out": {
+    "cross_section_pb": 3.774e-05,
+    "uncertainty_pb": 3.523e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3100.out": {
+    "cross_section_pb": 3.626e-05,
+    "uncertainty_pb": 2.372e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3200.out": {
+    "cross_section_pb": 3.443e-05,
+    "uncertainty_pb": 2.939e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3300.out": {
+    "cross_section_pb": 3.297e-05,
+    "uncertainty_pb": 2.915e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3400.out": {
+    "cross_section_pb": 3.135e-05,
+    "uncertainty_pb": 2.583e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3500.out": {
+    "cross_section_pb": 2.996e-05,
+    "uncertainty_pb": 2.558e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3600.out": {
+    "cross_section_pb": 2.826e-05,
+    "uncertainty_pb": 2.118e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3700.out": {
+    "cross_section_pb": 2.659e-05,
+    "uncertainty_pb": 2.078e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3800.out": {
+    "cross_section_pb": 2.512e-05,
+    "uncertainty_pb": 1.964e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N3900.out": {
+    "cross_section_pb": 2.373e-05,
+    "uncertainty_pb": 1.969e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N400.out": {
+    "cross_section_pb": 0.0001244,
+    "uncertainty_pb": 4e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4000.out": {
+    "cross_section_pb": 2.214e-05,
+    "uncertainty_pb": 1.816e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4100.out": {
+    "cross_section_pb": 2.055e-05,
+    "uncertainty_pb": 1.686e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4200.out": {
+    "cross_section_pb": 1.889e-05,
+    "uncertainty_pb": 1.546e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4300.out": {
+    "cross_section_pb": 1.735e-05,
+    "uncertainty_pb": 1.408e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4400.out": {
+    "cross_section_pb": 1.579e-05,
+    "uncertainty_pb": 1.264e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4500.out": {
+    "cross_section_pb": 1.427e-05,
+    "uncertainty_pb": 1.104e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N4600.out": {
+    "cross_section_pb": 1.281e-05,
+    "uncertainty_pb": 9.646e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N4700.out": {
+    "cross_section_pb": 1.132e-05,
+    "uncertainty_pb": 8.178e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N4800.out": {
+    "cross_section_pb": 9.911e-06,
+    "uncertainty_pb": 7.097e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N4900.out": {
+    "cross_section_pb": 8.586e-06,
+    "uncertainty_pb": 6.425e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N500.out": {
+    "cross_section_pb": 0.0001141,
+    "uncertainty_pb": 3.646e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N5000.out": {
+    "cross_section_pb": 7.292e-06,
+    "uncertainty_pb": 5.443e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5100.out": {
+    "cross_section_pb": 6.058e-06,
+    "uncertainty_pb": 4.736e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5200.out": {
+    "cross_section_pb": 4.974e-06,
+    "uncertainty_pb": 3.775e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5300.out": {
+    "cross_section_pb": 3.917e-06,
+    "uncertainty_pb": 2.961e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5400.out": {
+    "cross_section_pb": 3.01e-06,
+    "uncertainty_pb": 2.611e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5500.out": {
+    "cross_section_pb": 2.17e-06,
+    "uncertainty_pb": 1.637e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5600.out": {
+    "cross_section_pb": 1.506e-06,
+    "uncertainty_pb": 1.386e-08
+  },
+  "WRtoNELtoEEJJ_WR6000_N5700.out": {
+    "cross_section_pb": 9.491e-07,
+    "uncertainty_pb": 7.644e-09
+  },
+  "WRtoNELtoEEJJ_WR6000_N5800.out": {
+    "cross_section_pb": 5.324e-07,
+    "uncertainty_pb": 2.78e-09
+  },
+  "WRtoNELtoEEJJ_WR6000_N5900.out": {
+    "cross_section_pb": 2.674e-07,
+    "uncertainty_pb": 2.338e-09
+  },
+  "WRtoNELtoEEJJ_WR6000_N600.out": {
+    "cross_section_pb": 0.0001051,
+    "uncertainty_pb": 3.365e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N700.out": {
+    "cross_section_pb": 9.806e-05,
+    "uncertainty_pb": 3.243e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N800.out": {
+    "cross_section_pb": 9.159e-05,
+    "uncertainty_pb": 2.732e-07
+  },
+  "WRtoNELtoEEJJ_WR6000_N900.out": {
+    "cross_section_pb": 8.598e-05,
+    "uncertainty_pb": 4.411e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N100.out": {
+    "cross_section_pb": 0.0001129,
+    "uncertainty_pb": 3.377e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1000.out": {
+    "cross_section_pb": 4.66e-05,
+    "uncertainty_pb": 1.514e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1100.out": {
+    "cross_section_pb": 4.375e-05,
+    "uncertainty_pb": 1.893e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1200.out": {
+    "cross_section_pb": 4.147e-05,
+    "uncertainty_pb": 2.348e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1300.out": {
+    "cross_section_pb": 3.932e-05,
+    "uncertainty_pb": 1.703e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1400.out": {
+    "cross_section_pb": 3.748e-05,
+    "uncertainty_pb": 1.537e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1500.out": {
+    "cross_section_pb": 3.591e-05,
+    "uncertainty_pb": 2.027e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1600.out": {
+    "cross_section_pb": 3.437e-05,
+    "uncertainty_pb": 1.408e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1700.out": {
+    "cross_section_pb": 3.325e-05,
+    "uncertainty_pb": 1.795e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1800.out": {
+    "cross_section_pb": 3.194e-05,
+    "uncertainty_pb": 2.452e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N1900.out": {
+    "cross_section_pb": 3.058e-05,
+    "uncertainty_pb": 2.185e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N200.out": {
+    "cross_section_pb": 9.765e-05,
+    "uncertainty_pb": 4.754e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2000.out": {
+    "cross_section_pb": 2.957e-05,
+    "uncertainty_pb": 2.809e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2100.out": {
+    "cross_section_pb": 2.869e-05,
+    "uncertainty_pb": 3.009e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2200.out": {
+    "cross_section_pb": 2.753e-05,
+    "uncertainty_pb": 2.332e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2300.out": {
+    "cross_section_pb": 2.677e-05,
+    "uncertainty_pb": 3.243e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2400.out": {
+    "cross_section_pb": 2.581e-05,
+    "uncertainty_pb": 2.009e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2500.out": {
+    "cross_section_pb": 2.506e-05,
+    "uncertainty_pb": 2.566e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2600.out": {
+    "cross_section_pb": 2.424e-05,
+    "uncertainty_pb": 2.339e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2700.out": {
+    "cross_section_pb": 2.358e-05,
+    "uncertainty_pb": 2.378e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2800.out": {
+    "cross_section_pb": 2.266e-05,
+    "uncertainty_pb": 1.964e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N2900.out": {
+    "cross_section_pb": 2.176e-05,
+    "uncertainty_pb": 1.737e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N300.out": {
+    "cross_section_pb": 8.618e-05,
+    "uncertainty_pb": 2.962e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3000.out": {
+    "cross_section_pb": 2.118e-05,
+    "uncertainty_pb": 2.32e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3100.out": {
+    "cross_section_pb": 2.038e-05,
+    "uncertainty_pb": 1.755e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3200.out": {
+    "cross_section_pb": 1.961e-05,
+    "uncertainty_pb": 1.557e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3300.out": {
+    "cross_section_pb": 1.894e-05,
+    "uncertainty_pb": 1.446e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3400.out": {
+    "cross_section_pb": 1.8e-05,
+    "uncertainty_pb": 1.525e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3500.out": {
+    "cross_section_pb": 1.736e-05,
+    "uncertainty_pb": 1.47e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3600.out": {
+    "cross_section_pb": 1.66e-05,
+    "uncertainty_pb": 1.373e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3700.out": {
+    "cross_section_pb": 1.581e-05,
+    "uncertainty_pb": 1.293e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3800.out": {
+    "cross_section_pb": 1.508e-05,
+    "uncertainty_pb": 1.219e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N3900.out": {
+    "cross_section_pb": 1.439e-05,
+    "uncertainty_pb": 1.008e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N400.out": {
+    "cross_section_pb": 7.685e-05,
+    "uncertainty_pb": 2.557e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N4000.out": {
+    "cross_section_pb": 1.364e-05,
+    "uncertainty_pb": 1.068e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N4100.out": {
+    "cross_section_pb": 1.287e-05,
+    "uncertainty_pb": 9.951e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4200.out": {
+    "cross_section_pb": 1.209e-05,
+    "uncertainty_pb": 1.028e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N4300.out": {
+    "cross_section_pb": 1.144e-05,
+    "uncertainty_pb": 9.632e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4400.out": {
+    "cross_section_pb": 1.069e-05,
+    "uncertainty_pb": 8.871e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4500.out": {
+    "cross_section_pb": 9.936e-06,
+    "uncertainty_pb": 8.169e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4600.out": {
+    "cross_section_pb": 9.195e-06,
+    "uncertainty_pb": 7.453e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4700.out": {
+    "cross_section_pb": 8.456e-06,
+    "uncertainty_pb": 6.766e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4800.out": {
+    "cross_section_pb": 7.736e-06,
+    "uncertainty_pb": 6.059e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N4900.out": {
+    "cross_section_pb": 7.025e-06,
+    "uncertainty_pb": 5.429e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N500.out": {
+    "cross_section_pb": 6.931e-05,
+    "uncertainty_pb": 2.306e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N5000.out": {
+    "cross_section_pb": 6.342e-06,
+    "uncertainty_pb": 4.671e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5100.out": {
+    "cross_section_pb": 5.661e-06,
+    "uncertainty_pb": 4.357e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5200.out": {
+    "cross_section_pb": 5.013e-06,
+    "uncertainty_pb": 3.698e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5300.out": {
+    "cross_section_pb": 4.355e-06,
+    "uncertainty_pb": 3.198e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5400.out": {
+    "cross_section_pb": 3.754e-06,
+    "uncertainty_pb": 2.735e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5500.out": {
+    "cross_section_pb": 3.163e-06,
+    "uncertainty_pb": 2.197e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5600.out": {
+    "cross_section_pb": 2.662e-06,
+    "uncertainty_pb": 2.083e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5700.out": {
+    "cross_section_pb": 2.166e-06,
+    "uncertainty_pb": 1.624e-08
+  },
+  "WRtoNELtoEEJJ_WR6500_N5800.out": {
+    "cross_section_pb": 1.708e-06,
+    "uncertainty_pb": 8.1e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N5900.out": {
+    "cross_section_pb": 1.3e-06,
+    "uncertainty_pb": 9.514e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N600.out": {
+    "cross_section_pb": 6.308e-05,
+    "uncertainty_pb": 2.082e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N6000.out": {
+    "cross_section_pb": 9.445e-07,
+    "uncertainty_pb": 7.312e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N6100.out": {
+    "cross_section_pb": 6.504e-07,
+    "uncertainty_pb": 4.884e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N6200.out": {
+    "cross_section_pb": 4.1e-07,
+    "uncertainty_pb": 3.088e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N6300.out": {
+    "cross_section_pb": 2.326e-07,
+    "uncertainty_pb": 1.229e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N6400.out": {
+    "cross_section_pb": 1.174e-07,
+    "uncertainty_pb": 1.038e-09
+  },
+  "WRtoNELtoEEJJ_WR6500_N700.out": {
+    "cross_section_pb": 5.79e-05,
+    "uncertainty_pb": 1.804e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N800.out": {
+    "cross_section_pb": 5.35e-05,
+    "uncertainty_pb": 1.615e-07
+  },
+  "WRtoNELtoEEJJ_WR6500_N900.out": {
+    "cross_section_pb": 4.978e-05,
+    "uncertainty_pb": 1.746e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N100.out": {
+    "cross_section_pb": 7.585e-05,
+    "uncertainty_pb": 2.316e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N1000.out": {
+    "cross_section_pb": 2.74e-05,
+    "uncertainty_pb": 8.286e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N1100.out": {
+    "cross_section_pb": 2.541e-05,
+    "uncertainty_pb": 7.792e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N1200.out": {
+    "cross_section_pb": 2.368e-05,
+    "uncertainty_pb": 1.023e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N1300.out": {
+    "cross_section_pb": 2.221e-05,
+    "uncertainty_pb": 9.369e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N1400.out": {
+    "cross_section_pb": 2.101e-05,
+    "uncertainty_pb": 8.763e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N1500.out": {
+    "cross_section_pb": 1.99e-05,
+    "uncertainty_pb": 8.211e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N1600.out": {
+    "cross_section_pb": 1.883e-05,
+    "uncertainty_pb": 1.066e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N1700.out": {
+    "cross_section_pb": 1.815e-05,
+    "uncertainty_pb": 1.191e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N1800.out": {
+    "cross_section_pb": 1.737e-05,
+    "uncertainty_pb": 1.104e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N1900.out": {
+    "cross_section_pb": 1.665e-05,
+    "uncertainty_pb": 1.078e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N200.out": {
+    "cross_section_pb": 6.491e-05,
+    "uncertainty_pb": 1.928e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2000.out": {
+    "cross_section_pb": 1.603e-05,
+    "uncertainty_pb": 1.221e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2100.out": {
+    "cross_section_pb": 1.546e-05,
+    "uncertainty_pb": 1.556e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2200.out": {
+    "cross_section_pb": 1.483e-05,
+    "uncertainty_pb": 1.408e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2300.out": {
+    "cross_section_pb": 1.436e-05,
+    "uncertainty_pb": 1.324e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2400.out": {
+    "cross_section_pb": 1.393e-05,
+    "uncertainty_pb": 1.255e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2500.out": {
+    "cross_section_pb": 1.358e-05,
+    "uncertainty_pb": 1.852e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2600.out": {
+    "cross_section_pb": 1.302e-05,
+    "uncertainty_pb": 1.237e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2700.out": {
+    "cross_section_pb": 1.261e-05,
+    "uncertainty_pb": 1.145e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2800.out": {
+    "cross_section_pb": 1.23e-05,
+    "uncertainty_pb": 1.269e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N2900.out": {
+    "cross_section_pb": 1.187e-05,
+    "uncertainty_pb": 1.17e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N300.out": {
+    "cross_section_pb": 5.606e-05,
+    "uncertainty_pb": 2.68e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N3000.out": {
+    "cross_section_pb": 1.137e-05,
+    "uncertainty_pb": 1.008e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N3100.out": {
+    "cross_section_pb": 1.109e-05,
+    "uncertainty_pb": 7.555e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3200.out": {
+    "cross_section_pb": 1.072e-05,
+    "uncertainty_pb": 1.084e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N3300.out": {
+    "cross_section_pb": 1.038e-05,
+    "uncertainty_pb": 9.672e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3400.out": {
+    "cross_section_pb": 9.985e-06,
+    "uncertainty_pb": 7.549e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3500.out": {
+    "cross_section_pb": 9.627e-06,
+    "uncertainty_pb": 7.524e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3600.out": {
+    "cross_section_pb": 9.218e-06,
+    "uncertainty_pb": 8.886e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3700.out": {
+    "cross_section_pb": 8.96e-06,
+    "uncertainty_pb": 7.946e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3800.out": {
+    "cross_section_pb": 8.587e-06,
+    "uncertainty_pb": 5.741e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N3900.out": {
+    "cross_section_pb": 8.219e-06,
+    "uncertainty_pb": 6.99e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N400.out": {
+    "cross_section_pb": 4.936e-05,
+    "uncertainty_pb": 1.624e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N4000.out": {
+    "cross_section_pb": 7.855e-06,
+    "uncertainty_pb": 6.841e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4100.out": {
+    "cross_section_pb": 7.51e-06,
+    "uncertainty_pb": 6.367e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4200.out": {
+    "cross_section_pb": 7.152e-06,
+    "uncertainty_pb": 6.275e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4300.out": {
+    "cross_section_pb": 6.815e-06,
+    "uncertainty_pb": 5.366e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4400.out": {
+    "cross_section_pb": 6.458e-06,
+    "uncertainty_pb": 5.675e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4500.out": {
+    "cross_section_pb": 6.104e-06,
+    "uncertainty_pb": 5.786e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4600.out": {
+    "cross_section_pb": 5.829e-06,
+    "uncertainty_pb": 4.93e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4700.out": {
+    "cross_section_pb": 5.461e-06,
+    "uncertainty_pb": 4.572e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4800.out": {
+    "cross_section_pb": 5.114e-06,
+    "uncertainty_pb": 4.246e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N4900.out": {
+    "cross_section_pb": 4.761e-06,
+    "uncertainty_pb": 3.682e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N500.out": {
+    "cross_section_pb": 4.386e-05,
+    "uncertainty_pb": 1.472e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N5000.out": {
+    "cross_section_pb": 4.416e-06,
+    "uncertainty_pb": 3.609e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5100.out": {
+    "cross_section_pb": 4.072e-06,
+    "uncertainty_pb": 3.288e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5200.out": {
+    "cross_section_pb": 3.732e-06,
+    "uncertainty_pb": 2.729e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5300.out": {
+    "cross_section_pb": 3.409e-06,
+    "uncertainty_pb": 2.63e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5400.out": {
+    "cross_section_pb": 3.088e-06,
+    "uncertainty_pb": 2.378e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5500.out": {
+    "cross_section_pb": 2.772e-06,
+    "uncertainty_pb": 1.977e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5600.out": {
+    "cross_section_pb": 2.467e-06,
+    "uncertainty_pb": 1.758e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5700.out": {
+    "cross_section_pb": 2.167e-06,
+    "uncertainty_pb": 1.55e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5800.out": {
+    "cross_section_pb": 1.897e-06,
+    "uncertainty_pb": 1.394e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N5900.out": {
+    "cross_section_pb": 1.62e-06,
+    "uncertainty_pb": 1.196e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N600.out": {
+    "cross_section_pb": 3.937e-05,
+    "uncertainty_pb": 1.322e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N6000.out": {
+    "cross_section_pb": 1.379e-06,
+    "uncertainty_pb": 1.042e-08
+  },
+  "WRtoNELtoEEJJ_WR7000_N6100.out": {
+    "cross_section_pb": 1.143e-06,
+    "uncertainty_pb": 8.514e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6200.out": {
+    "cross_section_pb": 9.273e-07,
+    "uncertainty_pb": 6.696e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6300.out": {
+    "cross_section_pb": 7.305e-07,
+    "uncertainty_pb": 6.237e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6400.out": {
+    "cross_section_pb": 5.556e-07,
+    "uncertainty_pb": 4.029e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6500.out": {
+    "cross_section_pb": 4.053e-07,
+    "uncertainty_pb": 3.669e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6600.out": {
+    "cross_section_pb": 2.746e-07,
+    "uncertainty_pb": 2.089e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6700.out": {
+    "cross_section_pb": 1.739e-07,
+    "uncertainty_pb": 1.386e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6800.out": {
+    "cross_section_pb": 1.002e-07,
+    "uncertainty_pb": 1.045e-09
+  },
+  "WRtoNELtoEEJJ_WR7000_N6900.out": {
+    "cross_section_pb": 4.985e-08,
+    "uncertainty_pb": 4.359e-10
+  },
+  "WRtoNELtoEEJJ_WR7000_N700.out": {
+    "cross_section_pb": 3.556e-05,
+    "uncertainty_pb": 1.314e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N800.out": {
+    "cross_section_pb": 3.241e-05,
+    "uncertainty_pb": 1.007e-07
+  },
+  "WRtoNELtoEEJJ_WR7000_N900.out": {
+    "cross_section_pb": 2.969e-05,
+    "uncertainty_pb": 9.106e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N100.out": {
+    "cross_section_pb": 5.325e-05,
+    "uncertainty_pb": 1.601e-07
+  },
+  "WRtoNELtoEEJJ_WR7500_N1000.out": {
+    "cross_section_pb": 1.666e-05,
+    "uncertainty_pb": 5.238e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1100.out": {
+    "cross_section_pb": 1.523e-05,
+    "uncertainty_pb": 4.807e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1200.out": {
+    "cross_section_pb": 1.403e-05,
+    "uncertainty_pb": 4.345e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1300.out": {
+    "cross_section_pb": 1.3e-05,
+    "uncertainty_pb": 4.016e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1400.out": {
+    "cross_section_pb": 1.209e-05,
+    "uncertainty_pb": 5.444e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1500.out": {
+    "cross_section_pb": 1.13e-05,
+    "uncertainty_pb": 4.678e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1600.out": {
+    "cross_section_pb": 1.064e-05,
+    "uncertainty_pb": 4.353e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1700.out": {
+    "cross_section_pb": 1.004e-05,
+    "uncertainty_pb": 3.908e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1800.out": {
+    "cross_section_pb": 9.522e-06,
+    "uncertainty_pb": 7.15e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N1900.out": {
+    "cross_section_pb": 9.044e-06,
+    "uncertainty_pb": 5.625e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N200.out": {
+    "cross_section_pb": 4.478e-05,
+    "uncertainty_pb": 1.281e-07
+  },
+  "WRtoNELtoEEJJ_WR7500_N2000.out": {
+    "cross_section_pb": 8.606e-06,
+    "uncertainty_pb": 5.394e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2100.out": {
+    "cross_section_pb": 8.294e-06,
+    "uncertainty_pb": 6.881e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2200.out": {
+    "cross_section_pb": 7.796e-06,
+    "uncertainty_pb": 8.249e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2300.out": {
+    "cross_section_pb": 7.637e-06,
+    "uncertainty_pb": 5.158e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2400.out": {
+    "cross_section_pb": 7.319e-06,
+    "uncertainty_pb": 7.504e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2500.out": {
+    "cross_section_pb": 7.17e-06,
+    "uncertainty_pb": 7.005e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2600.out": {
+    "cross_section_pb": 6.884e-06,
+    "uncertainty_pb": 6.249e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2700.out": {
+    "cross_section_pb": 6.723e-06,
+    "uncertainty_pb": 8.419e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2800.out": {
+    "cross_section_pb": 6.498e-06,
+    "uncertainty_pb": 7.698e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N2900.out": {
+    "cross_section_pb": 6.298e-06,
+    "uncertainty_pb": 7.175e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N300.out": {
+    "cross_section_pb": 3.834e-05,
+    "uncertainty_pb": 1.831e-07
+  },
+  "WRtoNELtoEEJJ_WR7500_N3000.out": {
+    "cross_section_pb": 6.065e-06,
+    "uncertainty_pb": 6.419e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3100.out": {
+    "cross_section_pb": 5.901e-06,
+    "uncertainty_pb": 6.446e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3200.out": {
+    "cross_section_pb": 5.646e-06,
+    "uncertainty_pb": 4.148e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3300.out": {
+    "cross_section_pb": 5.452e-06,
+    "uncertainty_pb": 5.416e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3400.out": {
+    "cross_section_pb": 5.294e-06,
+    "uncertainty_pb": 3.71e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3500.out": {
+    "cross_section_pb": 5.126e-06,
+    "uncertainty_pb": 4.79e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3600.out": {
+    "cross_section_pb": 4.955e-06,
+    "uncertainty_pb": 3.941e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3700.out": {
+    "cross_section_pb": 4.796e-06,
+    "uncertainty_pb": 3.722e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3800.out": {
+    "cross_section_pb": 4.625e-06,
+    "uncertainty_pb": 3.677e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N3900.out": {
+    "cross_section_pb": 4.45e-06,
+    "uncertainty_pb": 4.035e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N400.out": {
+    "cross_section_pb": 3.315e-05,
+    "uncertainty_pb": 1.094e-07
+  },
+  "WRtoNELtoEEJJ_WR7500_N4000.out": {
+    "cross_section_pb": 4.29e-06,
+    "uncertainty_pb": 3.098e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4100.out": {
+    "cross_section_pb": 4.146e-06,
+    "uncertainty_pb": 3.265e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4200.out": {
+    "cross_section_pb": 3.938e-06,
+    "uncertainty_pb": 3.392e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4300.out": {
+    "cross_section_pb": 3.779e-06,
+    "uncertainty_pb": 3.157e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4400.out": {
+    "cross_section_pb": 3.62e-06,
+    "uncertainty_pb": 2.943e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4500.out": {
+    "cross_section_pb": 3.452e-06,
+    "uncertainty_pb": 2.784e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4600.out": {
+    "cross_section_pb": 3.307e-06,
+    "uncertainty_pb": 2.549e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4700.out": {
+    "cross_section_pb": 3.132e-06,
+    "uncertainty_pb": 2.37e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4800.out": {
+    "cross_section_pb": 2.973e-06,
+    "uncertainty_pb": 2.293e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N4900.out": {
+    "cross_section_pb": 2.841e-06,
+    "uncertainty_pb": 2.292e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N500.out": {
+    "cross_section_pb": 2.894e-05,
+    "uncertainty_pb": 9.427e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5000.out": {
+    "cross_section_pb": 2.664e-06,
+    "uncertainty_pb": 1.964e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5100.out": {
+    "cross_section_pb": 2.532e-06,
+    "uncertainty_pb": 2.001e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5200.out": {
+    "cross_section_pb": 2.371e-06,
+    "uncertainty_pb": 1.847e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5300.out": {
+    "cross_section_pb": 2.218e-06,
+    "uncertainty_pb": 1.773e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5400.out": {
+    "cross_section_pb": 2.058e-06,
+    "uncertainty_pb": 1.658e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5500.out": {
+    "cross_section_pb": 1.906e-06,
+    "uncertainty_pb": 1.516e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5600.out": {
+    "cross_section_pb": 1.753e-06,
+    "uncertainty_pb": 1.383e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5700.out": {
+    "cross_section_pb": 1.603e-06,
+    "uncertainty_pb": 1.255e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5800.out": {
+    "cross_section_pb": 1.458e-06,
+    "uncertainty_pb": 1.13e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N5900.out": {
+    "cross_section_pb": 1.316e-06,
+    "uncertainty_pb": 1.013e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N600.out": {
+    "cross_section_pb": 2.552e-05,
+    "uncertainty_pb": 8.188e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N6000.out": {
+    "cross_section_pb": 1.181e-06,
+    "uncertainty_pb": 8.571e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6100.out": {
+    "cross_section_pb": 1.045e-06,
+    "uncertainty_pb": 7.583e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6200.out": {
+    "cross_section_pb": 9.204e-07,
+    "uncertainty_pb": 6.602e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6300.out": {
+    "cross_section_pb": 7.942e-07,
+    "uncertainty_pb": 5.815e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6400.out": {
+    "cross_section_pb": 6.857e-07,
+    "uncertainty_pb": 5.133e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6500.out": {
+    "cross_section_pb": 5.794e-07,
+    "uncertainty_pb": 4.264e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6600.out": {
+    "cross_section_pb": 4.782e-07,
+    "uncertainty_pb": 3.592e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6700.out": {
+    "cross_section_pb": 3.877e-07,
+    "uncertainty_pb": 3.665e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6800.out": {
+    "cross_section_pb": 3.041e-07,
+    "uncertainty_pb": 2.152e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N6900.out": {
+    "cross_section_pb": 2.295e-07,
+    "uncertainty_pb": 1.527e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N700.out": {
+    "cross_section_pb": 2.273e-05,
+    "uncertainty_pb": 6.986e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N7000.out": {
+    "cross_section_pb": 1.673e-07,
+    "uncertainty_pb": 1.399e-09
+  },
+  "WRtoNELtoEEJJ_WR7500_N7100.out": {
+    "cross_section_pb": 1.133e-07,
+    "uncertainty_pb": 8.301e-10
+  },
+  "WRtoNELtoEEJJ_WR7500_N7200.out": {
+    "cross_section_pb": 7.207e-08,
+    "uncertainty_pb": 5.931e-10
+  },
+  "WRtoNELtoEEJJ_WR7500_N7300.out": {
+    "cross_section_pb": 4.098e-08,
+    "uncertainty_pb": 2.25e-10
+  },
+  "WRtoNELtoEEJJ_WR7500_N7400.out": {
+    "cross_section_pb": 2.083e-08,
+    "uncertainty_pb": 1.751e-10
+  },
+  "WRtoNELtoEEJJ_WR7500_N800.out": {
+    "cross_section_pb": 2.038e-05,
+    "uncertainty_pb": 6.44e-08
+  },
+  "WRtoNELtoEEJJ_WR7500_N900.out": {
+    "cross_section_pb": 1.836e-05,
+    "uncertainty_pb": 5.771e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N100.out": {
+    "cross_section_pb": 3.852e-05,
+    "uncertainty_pb": 1.154e-07
+  },
+  "WRtoNELtoEEJJ_WR8000_N1000.out": {
+    "cross_section_pb": 1.059e-05,
+    "uncertainty_pb": 3.154e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1100.out": {
+    "cross_section_pb": 9.509e-06,
+    "uncertainty_pb": 2.914e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1200.out": {
+    "cross_section_pb": 8.6e-06,
+    "uncertainty_pb": 2.606e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1300.out": {
+    "cross_section_pb": 7.818e-06,
+    "uncertainty_pb": 2.331e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1400.out": {
+    "cross_section_pb": 7.157e-06,
+    "uncertainty_pb": 2.078e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1500.out": {
+    "cross_section_pb": 6.589e-06,
+    "uncertainty_pb": 2.797e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1600.out": {
+    "cross_section_pb": 6.113e-06,
+    "uncertainty_pb": 2.667e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1700.out": {
+    "cross_section_pb": 5.68e-06,
+    "uncertainty_pb": 2.332e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1800.out": {
+    "cross_section_pb": 5.319e-06,
+    "uncertainty_pb": 3.231e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N1900.out": {
+    "cross_section_pb": 4.989e-06,
+    "uncertainty_pb": 1.963e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N200.out": {
+    "cross_section_pb": 3.213e-05,
+    "uncertainty_pb": 9.877e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2000.out": {
+    "cross_section_pb": 4.685e-06,
+    "uncertainty_pb": 2.564e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2100.out": {
+    "cross_section_pb": 4.454e-06,
+    "uncertainty_pb": 2.513e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2200.out": {
+    "cross_section_pb": 4.275e-06,
+    "uncertainty_pb": 4.025e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2300.out": {
+    "cross_section_pb": 4.061e-06,
+    "uncertainty_pb": 3.258e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2400.out": {
+    "cross_section_pb": 3.854e-06,
+    "uncertainty_pb": 2.829e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2500.out": {
+    "cross_section_pb": 3.731e-06,
+    "uncertainty_pb": 4.101e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2600.out": {
+    "cross_section_pb": 3.577e-06,
+    "uncertainty_pb": 3.499e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2700.out": {
+    "cross_section_pb": 3.445e-06,
+    "uncertainty_pb": 3.322e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2800.out": {
+    "cross_section_pb": 3.327e-06,
+    "uncertainty_pb": 5.292e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N2900.out": {
+    "cross_section_pb": 3.202e-06,
+    "uncertainty_pb": 2.625e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N300.out": {
+    "cross_section_pb": 2.713e-05,
+    "uncertainty_pb": 1.219e-07
+  },
+  "WRtoNELtoEEJJ_WR8000_N3000.out": {
+    "cross_section_pb": 3.096e-06,
+    "uncertainty_pb": 2.475e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3100.out": {
+    "cross_section_pb": 2.987e-06,
+    "uncertainty_pb": 2.292e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3200.out": {
+    "cross_section_pb": 2.888e-06,
+    "uncertainty_pb": 2.109e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3300.out": {
+    "cross_section_pb": 2.781e-06,
+    "uncertainty_pb": 3.406e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3400.out": {
+    "cross_section_pb": 2.722e-06,
+    "uncertainty_pb": 2.904e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3500.out": {
+    "cross_section_pb": 2.645e-06,
+    "uncertainty_pb": 2.727e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3600.out": {
+    "cross_section_pb": 2.53e-06,
+    "uncertainty_pb": 1.507e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3700.out": {
+    "cross_section_pb": 2.446e-06,
+    "uncertainty_pb": 1.434e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3800.out": {
+    "cross_section_pb": 2.38e-06,
+    "uncertainty_pb": 1.427e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N3900.out": {
+    "cross_section_pb": 2.304e-06,
+    "uncertainty_pb": 1.433e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N400.out": {
+    "cross_section_pb": 2.318e-05,
+    "uncertainty_pb": 8.842e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4000.out": {
+    "cross_section_pb": 2.228e-06,
+    "uncertainty_pb": 1.348e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4100.out": {
+    "cross_section_pb": 2.139e-06,
+    "uncertainty_pb": 2.041e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4200.out": {
+    "cross_section_pb": 2.062e-06,
+    "uncertainty_pb": 1.187e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4300.out": {
+    "cross_section_pb": 1.988e-06,
+    "uncertainty_pb": 1.77e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4400.out": {
+    "cross_section_pb": 1.906e-06,
+    "uncertainty_pb": 1.554e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4500.out": {
+    "cross_section_pb": 1.828e-06,
+    "uncertainty_pb": 1.523e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4600.out": {
+    "cross_section_pb": 1.752e-06,
+    "uncertainty_pb": 1.419e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4700.out": {
+    "cross_section_pb": 1.672e-06,
+    "uncertainty_pb": 1.333e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4800.out": {
+    "cross_section_pb": 1.599e-06,
+    "uncertainty_pb": 1.258e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N4900.out": {
+    "cross_section_pb": 1.53e-06,
+    "uncertainty_pb": 1.169e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N500.out": {
+    "cross_section_pb": 1.996e-05,
+    "uncertainty_pb": 6.546e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N5000.out": {
+    "cross_section_pb": 1.455e-06,
+    "uncertainty_pb": 1.119e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N5100.out": {
+    "cross_section_pb": 1.384e-06,
+    "uncertainty_pb": 1.059e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N5200.out": {
+    "cross_section_pb": 1.316e-06,
+    "uncertainty_pb": 9.744e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5300.out": {
+    "cross_section_pb": 1.251e-06,
+    "uncertainty_pb": 9.473e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5400.out": {
+    "cross_section_pb": 1.181e-06,
+    "uncertainty_pb": 8.809e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5500.out": {
+    "cross_section_pb": 1.12e-06,
+    "uncertainty_pb": 9.236e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5600.out": {
+    "cross_section_pb": 1.053e-06,
+    "uncertainty_pb": 8.439e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5700.out": {
+    "cross_section_pb": 9.849e-07,
+    "uncertainty_pb": 8.01e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5800.out": {
+    "cross_section_pb": 9.144e-07,
+    "uncertainty_pb": 7.395e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N5900.out": {
+    "cross_section_pb": 8.487e-07,
+    "uncertainty_pb": 6.685e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N600.out": {
+    "cross_section_pb": 1.729e-05,
+    "uncertainty_pb": 5.562e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N6000.out": {
+    "cross_section_pb": 7.852e-07,
+    "uncertainty_pb": 6.104e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6100.out": {
+    "cross_section_pb": 7.175e-07,
+    "uncertainty_pb": 5.523e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6200.out": {
+    "cross_section_pb": 6.557e-07,
+    "uncertainty_pb": 5.044e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6300.out": {
+    "cross_section_pb": 5.949e-07,
+    "uncertainty_pb": 4.542e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6400.out": {
+    "cross_section_pb": 5.367e-07,
+    "uncertainty_pb": 4.079e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6500.out": {
+    "cross_section_pb": 4.785e-07,
+    "uncertainty_pb": 3.633e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6600.out": {
+    "cross_section_pb": 4.243e-07,
+    "uncertainty_pb": 3.087e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6700.out": {
+    "cross_section_pb": 3.681e-07,
+    "uncertainty_pb": 2.611e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6800.out": {
+    "cross_section_pb": 3.21e-07,
+    "uncertainty_pb": 2.367e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N6900.out": {
+    "cross_section_pb": 2.753e-07,
+    "uncertainty_pb": 2.01e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N700.out": {
+    "cross_section_pb": 1.513e-05,
+    "uncertainty_pb": 4.511e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N7000.out": {
+    "cross_section_pb": 2.307e-07,
+    "uncertainty_pb": 1.642e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N7100.out": {
+    "cross_section_pb": 1.913e-07,
+    "uncertainty_pb": 1.353e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N7200.out": {
+    "cross_section_pb": 1.543e-07,
+    "uncertainty_pb": 1.069e-09
+  },
+  "WRtoNELtoEEJJ_WR8000_N7300.out": {
+    "cross_section_pb": 1.207e-07,
+    "uncertainty_pb": 8.315e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7400.out": {
+    "cross_section_pb": 9.089e-08,
+    "uncertainty_pb": 6.906e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7500.out": {
+    "cross_section_pb": 6.582e-08,
+    "uncertainty_pb": 4.727e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7600.out": {
+    "cross_section_pb": 4.473e-08,
+    "uncertainty_pb": 3.28e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7700.out": {
+    "cross_section_pb": 2.823e-08,
+    "uncertainty_pb": 2.106e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7800.out": {
+    "cross_section_pb": 1.59e-08,
+    "uncertainty_pb": 1.192e-10
+  },
+  "WRtoNELtoEEJJ_WR8000_N7900.out": {
+    "cross_section_pb": 8.083e-09,
+    "uncertainty_pb": 6.427e-11
+  },
+  "WRtoNELtoEEJJ_WR8000_N800.out": {
+    "cross_section_pb": 1.334e-05,
+    "uncertainty_pb": 4.037e-08
+  },
+  "WRtoNELtoEEJJ_WR8000_N900.out": {
+    "cross_section_pb": 1.184e-05,
+    "uncertainty_pb": 3.691e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N100.out": {
+    "cross_section_pb": 2.898e-05,
+    "uncertainty_pb": 8.243e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1000.out": {
+    "cross_section_pb": 7.065e-06,
+    "uncertainty_pb": 2.134e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1100.out": {
+    "cross_section_pb": 6.238e-06,
+    "uncertainty_pb": 1.875e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1200.out": {
+    "cross_section_pb": 5.537e-06,
+    "uncertainty_pb": 1.677e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1300.out": {
+    "cross_section_pb": 4.947e-06,
+    "uncertainty_pb": 1.424e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1400.out": {
+    "cross_section_pb": 4.438e-06,
+    "uncertainty_pb": 1.265e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1500.out": {
+    "cross_section_pb": 4.008e-06,
+    "uncertainty_pb": 1.694e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1600.out": {
+    "cross_section_pb": 3.652e-06,
+    "uncertainty_pb": 1.559e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1700.out": {
+    "cross_section_pb": 3.345e-06,
+    "uncertainty_pb": 1.377e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1800.out": {
+    "cross_section_pb": 3.074e-06,
+    "uncertainty_pb": 1.248e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N1900.out": {
+    "cross_section_pb": 2.834e-06,
+    "uncertainty_pb": 1.086e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N200.out": {
+    "cross_section_pb": 2.389e-05,
+    "uncertainty_pb": 7.041e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2000.out": {
+    "cross_section_pb": 2.627e-06,
+    "uncertainty_pb": 1.045e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2100.out": {
+    "cross_section_pb": 2.45e-06,
+    "uncertainty_pb": 9.242e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N2200.out": {
+    "cross_section_pb": 2.295e-06,
+    "uncertainty_pb": 1.301e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2300.out": {
+    "cross_section_pb": 2.161e-06,
+    "uncertainty_pb": 1.851e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2400.out": {
+    "cross_section_pb": 2.052e-06,
+    "uncertainty_pb": 2.173e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2500.out": {
+    "cross_section_pb": 1.932e-06,
+    "uncertainty_pb": 1.67e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2600.out": {
+    "cross_section_pb": 1.835e-06,
+    "uncertainty_pb": 2.174e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2700.out": {
+    "cross_section_pb": 1.746e-06,
+    "uncertainty_pb": 1.872e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2800.out": {
+    "cross_section_pb": 1.703e-06,
+    "uncertainty_pb": 3.537e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N2900.out": {
+    "cross_section_pb": 1.648e-06,
+    "uncertainty_pb": 3.109e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N300.out": {
+    "cross_section_pb": 1.995e-05,
+    "uncertainty_pb": 5.743e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3000.out": {
+    "cross_section_pb": 1.573e-06,
+    "uncertainty_pb": 2.66e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3100.out": {
+    "cross_section_pb": 1.519e-06,
+    "uncertainty_pb": 2.479e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3200.out": {
+    "cross_section_pb": 1.463e-06,
+    "uncertainty_pb": 2.291e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3300.out": {
+    "cross_section_pb": 1.395e-06,
+    "uncertainty_pb": 2.093e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3400.out": {
+    "cross_section_pb": 1.354e-06,
+    "uncertainty_pb": 1.944e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N3500.out": {
+    "cross_section_pb": 1.287e-06,
+    "uncertainty_pb": 9.478e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N3600.out": {
+    "cross_section_pb": 1.246e-06,
+    "uncertainty_pb": 8.183e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N3700.out": {
+    "cross_section_pb": 1.199e-06,
+    "uncertainty_pb": 7.849e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N3800.out": {
+    "cross_section_pb": 1.16e-06,
+    "uncertainty_pb": 7.34e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N3900.out": {
+    "cross_section_pb": 1.12e-06,
+    "uncertainty_pb": 6.996e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N400.out": {
+    "cross_section_pb": 1.689e-05,
+    "uncertainty_pb": 5.134e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N4000.out": {
+    "cross_section_pb": 1.082e-06,
+    "uncertainty_pb": 6.608e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4100.out": {
+    "cross_section_pb": 1.049e-06,
+    "uncertainty_pb": 6.153e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4200.out": {
+    "cross_section_pb": 1.011e-06,
+    "uncertainty_pb": 5.801e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4300.out": {
+    "cross_section_pb": 9.771e-07,
+    "uncertainty_pb": 8.699e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4400.out": {
+    "cross_section_pb": 9.405e-07,
+    "uncertainty_pb": 5.489e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4500.out": {
+    "cross_section_pb": 9.061e-07,
+    "uncertainty_pb": 7.657e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4600.out": {
+    "cross_section_pb": 8.724e-07,
+    "uncertainty_pb": 7.225e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4700.out": {
+    "cross_section_pb": 8.377e-07,
+    "uncertainty_pb": 6.929e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4800.out": {
+    "cross_section_pb": 8.046e-07,
+    "uncertainty_pb": 6.652e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N4900.out": {
+    "cross_section_pb": 7.714e-07,
+    "uncertainty_pb": 6.259e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N500.out": {
+    "cross_section_pb": 1.432e-05,
+    "uncertainty_pb": 4.449e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N5000.out": {
+    "cross_section_pb": 7.4e-07,
+    "uncertainty_pb": 5.92e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5100.out": {
+    "cross_section_pb": 7.079e-07,
+    "uncertainty_pb": 5.618e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5200.out": {
+    "cross_section_pb": 6.725e-07,
+    "uncertainty_pb": 5.373e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5300.out": {
+    "cross_section_pb": 6.41e-07,
+    "uncertainty_pb": 5.062e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5400.out": {
+    "cross_section_pb": 6.104e-07,
+    "uncertainty_pb": 4.771e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5500.out": {
+    "cross_section_pb": 5.784e-07,
+    "uncertainty_pb": 4.663e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5600.out": {
+    "cross_section_pb": 5.483e-07,
+    "uncertainty_pb": 4.218e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5700.out": {
+    "cross_section_pb": 5.198e-07,
+    "uncertainty_pb": 3.844e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5800.out": {
+    "cross_section_pb": 4.978e-07,
+    "uncertainty_pb": 4.091e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N5900.out": {
+    "cross_section_pb": 4.703e-07,
+    "uncertainty_pb": 3.816e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N600.out": {
+    "cross_section_pb": 1.227e-05,
+    "uncertainty_pb": 3.657e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N6000.out": {
+    "cross_section_pb": 4.406e-07,
+    "uncertainty_pb": 3.532e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6100.out": {
+    "cross_section_pb": 4.111e-07,
+    "uncertainty_pb": 3.335e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6200.out": {
+    "cross_section_pb": 3.794e-07,
+    "uncertainty_pb": 2.821e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6300.out": {
+    "cross_section_pb": 3.568e-07,
+    "uncertainty_pb": 2.797e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6400.out": {
+    "cross_section_pb": 3.292e-07,
+    "uncertainty_pb": 2.526e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6500.out": {
+    "cross_section_pb": 3.029e-07,
+    "uncertainty_pb": 2.312e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6600.out": {
+    "cross_section_pb": 2.767e-07,
+    "uncertainty_pb": 2.105e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6700.out": {
+    "cross_section_pb": 2.512e-07,
+    "uncertainty_pb": 1.889e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6800.out": {
+    "cross_section_pb": 2.276e-07,
+    "uncertainty_pb": 1.698e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N6900.out": {
+    "cross_section_pb": 2.042e-07,
+    "uncertainty_pb": 1.52e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N700.out": {
+    "cross_section_pb": 1.06e-05,
+    "uncertainty_pb": 3.12e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N7000.out": {
+    "cross_section_pb": 1.829e-07,
+    "uncertainty_pb": 1.348e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N7100.out": {
+    "cross_section_pb": 1.594e-07,
+    "uncertainty_pb": 1.13e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N7200.out": {
+    "cross_section_pb": 1.41e-07,
+    "uncertainty_pb": 1.095e-09
+  },
+  "WRtoNELtoEEJJ_WR8500_N7300.out": {
+    "cross_section_pb": 1.211e-07,
+    "uncertainty_pb": 8.707e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7400.out": {
+    "cross_section_pb": 1.033e-07,
+    "uncertainty_pb": 7.255e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7500.out": {
+    "cross_section_pb": 8.702e-08,
+    "uncertainty_pb": 6.183e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7600.out": {
+    "cross_section_pb": 7.13e-08,
+    "uncertainty_pb": 5.709e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7700.out": {
+    "cross_section_pb": 5.753e-08,
+    "uncertainty_pb": 3.95e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7800.out": {
+    "cross_section_pb": 4.463e-08,
+    "uncertainty_pb": 3.057e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N7900.out": {
+    "cross_section_pb": 3.374e-08,
+    "uncertainty_pb": 2.474e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N800.out": {
+    "cross_section_pb": 9.201e-06,
+    "uncertainty_pb": 2.786e-08
+  },
+  "WRtoNELtoEEJJ_WR8500_N8000.out": {
+    "cross_section_pb": 2.409e-08,
+    "uncertainty_pb": 1.698e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N8100.out": {
+    "cross_section_pb": 1.653e-08,
+    "uncertainty_pb": 1.16e-10
+  },
+  "WRtoNELtoEEJJ_WR8500_N8200.out": {
+    "cross_section_pb": 1.023e-08,
+    "uncertainty_pb": 7.495e-11
+  },
+  "WRtoNELtoEEJJ_WR8500_N8300.out": {
+    "cross_section_pb": 5.819e-09,
+    "uncertainty_pb": 4.467e-11
+  },
+  "WRtoNELtoEEJJ_WR8500_N8400.out": {
+    "cross_section_pb": 2.907e-09,
+    "uncertainty_pb": 2.18e-11
+  },
+  "WRtoNELtoEEJJ_WR8500_N900.out": {
+    "cross_section_pb": 8.036e-06,
+    "uncertainty_pb": 2.491e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N100.out": {
+    "cross_section_pb": 2.236e-05,
+    "uncertainty_pb": 6.589e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N1000.out": {
+    "cross_section_pb": 4.993e-06,
+    "uncertainty_pb": 1.424e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N1100.out": {
+    "cross_section_pb": 4.333e-06,
+    "uncertainty_pb": 1.224e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N1200.out": {
+    "cross_section_pb": 3.791e-06,
+    "uncertainty_pb": 1.031e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N1300.out": {
+    "cross_section_pb": 3.331e-06,
+    "uncertainty_pb": 9.131e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1400.out": {
+    "cross_section_pb": 2.939e-06,
+    "uncertainty_pb": 8.367e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1500.out": {
+    "cross_section_pb": 2.61e-06,
+    "uncertainty_pb": 7.385e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1600.out": {
+    "cross_section_pb": 2.326e-06,
+    "uncertainty_pb": 6.444e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1700.out": {
+    "cross_section_pb": 2.087e-06,
+    "uncertainty_pb": 6.033e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1800.out": {
+    "cross_section_pb": 1.879e-06,
+    "uncertainty_pb": 8.118e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N1900.out": {
+    "cross_section_pb": 1.709e-06,
+    "uncertainty_pb": 7.163e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N200.out": {
+    "cross_section_pb": 1.832e-05,
+    "uncertainty_pb": 5.323e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N2000.out": {
+    "cross_section_pb": 1.554e-06,
+    "uncertainty_pb": 6.263e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2100.out": {
+    "cross_section_pb": 1.424e-06,
+    "uncertainty_pb": 5.991e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2200.out": {
+    "cross_section_pb": 1.311e-06,
+    "uncertainty_pb": 8.485e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2300.out": {
+    "cross_section_pb": 1.204e-06,
+    "uncertainty_pb": 8.255e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2400.out": {
+    "cross_section_pb": 1.122e-06,
+    "uncertainty_pb": 6.854e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2500.out": {
+    "cross_section_pb": 1.052e-06,
+    "uncertainty_pb": 6.141e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2600.out": {
+    "cross_section_pb": 9.872e-07,
+    "uncertainty_pb": 5.717e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2700.out": {
+    "cross_section_pb": 9.255e-07,
+    "uncertainty_pb": 9.128e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2800.out": {
+    "cross_section_pb": 8.66e-07,
+    "uncertainty_pb": 9.745e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N2900.out": {
+    "cross_section_pb": 8.31e-07,
+    "uncertainty_pb": 1.729e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N300.out": {
+    "cross_section_pb": 1.521e-05,
+    "uncertainty_pb": 4.135e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N3000.out": {
+    "cross_section_pb": 7.825e-07,
+    "uncertainty_pb": 6.632e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3100.out": {
+    "cross_section_pb": 7.463e-07,
+    "uncertainty_pb": 7.253e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3200.out": {
+    "cross_section_pb": 7.173e-07,
+    "uncertainty_pb": 6.694e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3300.out": {
+    "cross_section_pb": 6.966e-07,
+    "uncertainty_pb": 1.324e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N3400.out": {
+    "cross_section_pb": 6.452e-07,
+    "uncertainty_pb": 5.922e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3500.out": {
+    "cross_section_pb": 6.203e-07,
+    "uncertainty_pb": 5.141e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3600.out": {
+    "cross_section_pb": 5.958e-07,
+    "uncertainty_pb": 4.727e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3700.out": {
+    "cross_section_pb": 5.727e-07,
+    "uncertainty_pb": 4.293e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3800.out": {
+    "cross_section_pb": 5.52e-07,
+    "uncertainty_pb": 3.795e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N3900.out": {
+    "cross_section_pb": 5.436e-07,
+    "uncertainty_pb": 7.834e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N400.out": {
+    "cross_section_pb": 1.276e-05,
+    "uncertainty_pb": 3.924e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N4000.out": {
+    "cross_section_pb": 5.147e-07,
+    "uncertainty_pb": 3.613e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4100.out": {
+    "cross_section_pb": 4.927e-07,
+    "uncertainty_pb": 3.031e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4200.out": {
+    "cross_section_pb": 4.748e-07,
+    "uncertainty_pb": 3.176e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4300.out": {
+    "cross_section_pb": 4.576e-07,
+    "uncertainty_pb": 3.024e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4400.out": {
+    "cross_section_pb": 4.411e-07,
+    "uncertainty_pb": 2.749e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4500.out": {
+    "cross_section_pb": 4.251e-07,
+    "uncertainty_pb": 2.638e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4600.out": {
+    "cross_section_pb": 4.117e-07,
+    "uncertainty_pb": 2.881e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4700.out": {
+    "cross_section_pb": 3.94e-07,
+    "uncertainty_pb": 2.25e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4800.out": {
+    "cross_section_pb": 3.828e-07,
+    "uncertainty_pb": 3.677e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N4900.out": {
+    "cross_section_pb": 3.667e-07,
+    "uncertainty_pb": 3.543e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N500.out": {
+    "cross_section_pb": 1.076e-05,
+    "uncertainty_pb": 3.256e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N5000.out": {
+    "cross_section_pb": 3.487e-07,
+    "uncertainty_pb": 3.144e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5100.out": {
+    "cross_section_pb": 3.35e-07,
+    "uncertainty_pb": 2.831e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5200.out": {
+    "cross_section_pb": 3.236e-07,
+    "uncertainty_pb": 2.897e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5300.out": {
+    "cross_section_pb": 3.064e-07,
+    "uncertainty_pb": 2.478e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5400.out": {
+    "cross_section_pb": 2.921e-07,
+    "uncertainty_pb": 2.413e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5500.out": {
+    "cross_section_pb": 2.787e-07,
+    "uncertainty_pb": 2.272e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5600.out": {
+    "cross_section_pb": 2.669e-07,
+    "uncertainty_pb": 2.179e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5700.out": {
+    "cross_section_pb": 2.537e-07,
+    "uncertainty_pb": 2.03e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5800.out": {
+    "cross_section_pb": 2.412e-07,
+    "uncertainty_pb": 1.919e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N5900.out": {
+    "cross_section_pb": 2.285e-07,
+    "uncertainty_pb": 1.819e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N600.out": {
+    "cross_section_pb": 9.114e-06,
+    "uncertainty_pb": 2.62e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N6000.out": {
+    "cross_section_pb": 2.172e-07,
+    "uncertainty_pb": 1.707e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6100.out": {
+    "cross_section_pb": 2.041e-07,
+    "uncertainty_pb": 1.604e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6200.out": {
+    "cross_section_pb": 1.923e-07,
+    "uncertainty_pb": 1.747e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6300.out": {
+    "cross_section_pb": 1.803e-07,
+    "uncertainty_pb": 1.347e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6400.out": {
+    "cross_section_pb": 1.7e-07,
+    "uncertainty_pb": 1.287e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6500.out": {
+    "cross_section_pb": 1.591e-07,
+    "uncertainty_pb": 1.212e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6600.out": {
+    "cross_section_pb": 1.488e-07,
+    "uncertainty_pb": 1.114e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6700.out": {
+    "cross_section_pb": 1.376e-07,
+    "uncertainty_pb": 1.015e-09
+  },
+  "WRtoNELtoEEJJ_WR9000_N6800.out": {
+    "cross_section_pb": 1.284e-07,
+    "uncertainty_pb": 9.734e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N6900.out": {
+    "cross_section_pb": 1.184e-07,
+    "uncertainty_pb": 9.05e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N700.out": {
+    "cross_section_pb": 7.777e-06,
+    "uncertainty_pb": 2.296e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N7000.out": {
+    "cross_section_pb": 1.086e-07,
+    "uncertainty_pb": 8.282e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7100.out": {
+    "cross_section_pb": 9.888e-08,
+    "uncertainty_pb": 7.409e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7200.out": {
+    "cross_section_pb": 9.001e-08,
+    "uncertainty_pb": 6.72e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7300.out": {
+    "cross_section_pb": 8.086e-08,
+    "uncertainty_pb": 6.287e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7400.out": {
+    "cross_section_pb": 7.288e-08,
+    "uncertainty_pb": 5.338e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7500.out": {
+    "cross_section_pb": 6.395e-08,
+    "uncertainty_pb": 4.208e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7600.out": {
+    "cross_section_pb": 5.637e-08,
+    "uncertainty_pb": 3.748e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7700.out": {
+    "cross_section_pb": 4.936e-08,
+    "uncertainty_pb": 3.508e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7800.out": {
+    "cross_section_pb": 4.264e-08,
+    "uncertainty_pb": 2.978e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N7900.out": {
+    "cross_section_pb": 3.625e-08,
+    "uncertainty_pb": 2.526e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N800.out": {
+    "cross_section_pb": 6.666e-06,
+    "uncertainty_pb": 1.834e-08
+  },
+  "WRtoNELtoEEJJ_WR9000_N8000.out": {
+    "cross_section_pb": 3.011e-08,
+    "uncertainty_pb": 2.082e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N8100.out": {
+    "cross_section_pb": 2.488e-08,
+    "uncertainty_pb": 1.705e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N8200.out": {
+    "cross_section_pb": 1.983e-08,
+    "uncertainty_pb": 1.353e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N8300.out": {
+    "cross_section_pb": 1.529e-08,
+    "uncertainty_pb": 1.042e-10
+  },
+  "WRtoNELtoEEJJ_WR9000_N8400.out": {
+    "cross_section_pb": 1.156e-08,
+    "uncertainty_pb": 8.158e-11
+  },
+  "WRtoNELtoEEJJ_WR9000_N8500.out": {
+    "cross_section_pb": 8.189e-09,
+    "uncertainty_pb": 5.6e-11
+  },
+  "WRtoNELtoEEJJ_WR9000_N8600.out": {
+    "cross_section_pb": 5.535e-09,
+    "uncertainty_pb": 3.903e-11
+  },
+  "WRtoNELtoEEJJ_WR9000_N8700.out": {
+    "cross_section_pb": 3.448e-09,
+    "uncertainty_pb": 3.181e-11
+  },
+  "WRtoNELtoEEJJ_WR9000_N8800.out": {
+    "cross_section_pb": 1.952e-09,
+    "uncertainty_pb": 1.431e-11
+  },
+  "WRtoNELtoEEJJ_WR9000_N8900.out": {
+    "cross_section_pb": 9.695e-10,
+    "uncertainty_pb": 7.499e-12
+  },
+  "WRtoNELtoEEJJ_WR9000_N900.out": {
+    "cross_section_pb": 5.746e-06,
+    "uncertainty_pb": 1.688e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N100.out": {
+    "cross_section_pb": 1.762e-05,
+    "uncertainty_pb": 5.213e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N1000.out": {
+    "cross_section_pb": 3.709e-06,
+    "uncertainty_pb": 1.047e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N1100.out": {
+    "cross_section_pb": 3.183e-06,
+    "uncertainty_pb": 8.277e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1200.out": {
+    "cross_section_pb": 2.749e-06,
+    "uncertainty_pb": 7.181e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1300.out": {
+    "cross_section_pb": 2.383e-06,
+    "uncertainty_pb": 6.741e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1400.out": {
+    "cross_section_pb": 2.076e-06,
+    "uncertainty_pb": 5.808e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1500.out": {
+    "cross_section_pb": 1.811e-06,
+    "uncertainty_pb": 5.424e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1600.out": {
+    "cross_section_pb": 1.597e-06,
+    "uncertainty_pb": 5.308e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1700.out": {
+    "cross_section_pb": 1.406e-06,
+    "uncertainty_pb": 4.035e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1800.out": {
+    "cross_section_pb": 1.244e-06,
+    "uncertainty_pb": 3.471e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N1900.out": {
+    "cross_section_pb": 1.107e-06,
+    "uncertainty_pb": 2.907e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N200.out": {
+    "cross_section_pb": 1.442e-05,
+    "uncertainty_pb": 4.173e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N2000.out": {
+    "cross_section_pb": 9.875e-07,
+    "uncertainty_pb": 3.969e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2100.out": {
+    "cross_section_pb": 8.89e-07,
+    "uncertainty_pb": 3.536e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2200.out": {
+    "cross_section_pb": 8.055e-07,
+    "uncertainty_pb": 3.18e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2300.out": {
+    "cross_section_pb": 7.262e-07,
+    "uncertainty_pb": 4.454e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2400.out": {
+    "cross_section_pb": 6.645e-07,
+    "uncertainty_pb": 3.971e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2500.out": {
+    "cross_section_pb": 6.098e-07,
+    "uncertainty_pb": 3.682e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2600.out": {
+    "cross_section_pb": 5.534e-07,
+    "uncertainty_pb": 4.671e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2700.out": {
+    "cross_section_pb": 5.151e-07,
+    "uncertainty_pb": 4.398e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2800.out": {
+    "cross_section_pb": 4.826e-07,
+    "uncertainty_pb": 3.983e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N2900.out": {
+    "cross_section_pb": 4.457e-07,
+    "uncertainty_pb": 6.191e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N300.out": {
+    "cross_section_pb": 1.192e-05,
+    "uncertainty_pb": 3.429e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N3000.out": {
+    "cross_section_pb": 4.14e-07,
+    "uncertainty_pb": 1.039e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N3100.out": {
+    "cross_section_pb": 3.95e-07,
+    "uncertainty_pb": 9.721e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3200.out": {
+    "cross_section_pb": 3.705e-07,
+    "uncertainty_pb": 7.846e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3300.out": {
+    "cross_section_pb": 3.505e-07,
+    "uncertainty_pb": 3.694e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3400.out": {
+    "cross_section_pb": 3.286e-07,
+    "uncertainty_pb": 3.254e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3500.out": {
+    "cross_section_pb": 3.23e-07,
+    "uncertainty_pb": 7.292e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3600.out": {
+    "cross_section_pb": 3.069e-07,
+    "uncertainty_pb": 6.82e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3700.out": {
+    "cross_section_pb": 2.818e-07,
+    "uncertainty_pb": 2.514e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3800.out": {
+    "cross_section_pb": 2.66e-07,
+    "uncertainty_pb": 2.108e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N3900.out": {
+    "cross_section_pb": 2.555e-07,
+    "uncertainty_pb": 2.43e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N400.out": {
+    "cross_section_pb": 9.901e-06,
+    "uncertainty_pb": 4.572e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N4000.out": {
+    "cross_section_pb": 2.524e-07,
+    "uncertainty_pb": 4.717e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4100.out": {
+    "cross_section_pb": 2.309e-07,
+    "uncertainty_pb": 1.793e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4200.out": {
+    "cross_section_pb": 2.21e-07,
+    "uncertainty_pb": 2.132e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4300.out": {
+    "cross_section_pb": 2.118e-07,
+    "uncertainty_pb": 1.616e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4400.out": {
+    "cross_section_pb": 2.032e-07,
+    "uncertainty_pb": 1.674e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4500.out": {
+    "cross_section_pb": 1.947e-07,
+    "uncertainty_pb": 1.482e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4600.out": {
+    "cross_section_pb": 1.862e-07,
+    "uncertainty_pb": 1.388e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4700.out": {
+    "cross_section_pb": 1.782e-07,
+    "uncertainty_pb": 1.282e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4800.out": {
+    "cross_section_pb": 1.721e-07,
+    "uncertainty_pb": 1.194e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N4900.out": {
+    "cross_section_pb": 1.64e-07,
+    "uncertainty_pb": 1.024e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N500.out": {
+    "cross_section_pb": 8.327e-06,
+    "uncertainty_pb": 2.481e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N5000.out": {
+    "cross_section_pb": 1.574e-07,
+    "uncertainty_pb": 1.097e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5100.out": {
+    "cross_section_pb": 1.503e-07,
+    "uncertainty_pb": 1.023e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5200.out": {
+    "cross_section_pb": 1.44e-07,
+    "uncertainty_pb": 9.697e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N5300.out": {
+    "cross_section_pb": 1.374e-07,
+    "uncertainty_pb": 1.559e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5400.out": {
+    "cross_section_pb": 1.32e-07,
+    "uncertainty_pb": 1.383e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5500.out": {
+    "cross_section_pb": 1.26e-07,
+    "uncertainty_pb": 1.28e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5600.out": {
+    "cross_section_pb": 1.202e-07,
+    "uncertainty_pb": 7.277e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N5700.out": {
+    "cross_section_pb": 1.145e-07,
+    "uncertainty_pb": 1.073e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5800.out": {
+    "cross_section_pb": 1.098e-07,
+    "uncertainty_pb": 1.014e-09
+  },
+  "WRtoNELtoEEJJ_WR9500_N5900.out": {
+    "cross_section_pb": 1.044e-07,
+    "uncertainty_pb": 9.748e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N600.out": {
+    "cross_section_pb": 6.995e-06,
+    "uncertainty_pb": 1.973e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N6000.out": {
+    "cross_section_pb": 9.918e-08,
+    "uncertainty_pb": 8.836e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6100.out": {
+    "cross_section_pb": 9.396e-08,
+    "uncertainty_pb": 8.785e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6200.out": {
+    "cross_section_pb": 8.933e-08,
+    "uncertainty_pb": 7.759e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6300.out": {
+    "cross_section_pb": 8.406e-08,
+    "uncertainty_pb": 7.368e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6400.out": {
+    "cross_section_pb": 7.95e-08,
+    "uncertainty_pb": 6.664e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6500.out": {
+    "cross_section_pb": 7.403e-08,
+    "uncertainty_pb": 6.186e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6600.out": {
+    "cross_section_pb": 6.958e-08,
+    "uncertainty_pb": 5.854e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6700.out": {
+    "cross_section_pb": 6.547e-08,
+    "uncertainty_pb": 6.119e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6800.out": {
+    "cross_section_pb": 6.109e-08,
+    "uncertainty_pb": 4.83e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N6900.out": {
+    "cross_section_pb": 5.735e-08,
+    "uncertainty_pb": 4.503e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N700.out": {
+    "cross_section_pb": 5.935e-06,
+    "uncertainty_pb": 1.727e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N7000.out": {
+    "cross_section_pb": 5.355e-08,
+    "uncertainty_pb": 4.137e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7100.out": {
+    "cross_section_pb": 4.989e-08,
+    "uncertainty_pb": 3.787e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7200.out": {
+    "cross_section_pb": 4.615e-08,
+    "uncertainty_pb": 3.446e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7300.out": {
+    "cross_section_pb": 4.283e-08,
+    "uncertainty_pb": 3.262e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7400.out": {
+    "cross_section_pb": 3.937e-08,
+    "uncertainty_pb": 2.997e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7500.out": {
+    "cross_section_pb": 3.575e-08,
+    "uncertainty_pb": 2.681e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7600.out": {
+    "cross_section_pb": 3.264e-08,
+    "uncertainty_pb": 2.543e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7700.out": {
+    "cross_section_pb": 2.932e-08,
+    "uncertainty_pb": 2.027e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7800.out": {
+    "cross_section_pb": 2.664e-08,
+    "uncertainty_pb": 1.964e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N7900.out": {
+    "cross_section_pb": 2.35e-08,
+    "uncertainty_pb": 1.629e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N800.out": {
+    "cross_section_pb": 5.068e-06,
+    "uncertainty_pb": 2.17e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N8000.out": {
+    "cross_section_pb": 2.085e-08,
+    "uncertainty_pb": 1.448e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N8100.out": {
+    "cross_section_pb": 1.836e-08,
+    "uncertainty_pb": 1.294e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N8200.out": {
+    "cross_section_pb": 1.589e-08,
+    "uncertainty_pb": 1.108e-10
+  },
+  "WRtoNELtoEEJJ_WR9500_N8300.out": {
+    "cross_section_pb": 1.367e-08,
+    "uncertainty_pb": 9.394e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8400.out": {
+    "cross_section_pb": 1.155e-08,
+    "uncertainty_pb": 7.986e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8500.out": {
+    "cross_section_pb": 9.558e-09,
+    "uncertainty_pb": 6.498e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8600.out": {
+    "cross_section_pb": 7.809e-09,
+    "uncertainty_pb": 5.258e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8700.out": {
+    "cross_section_pb": 6.183e-09,
+    "uncertainty_pb": 4.054e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8800.out": {
+    "cross_section_pb": 4.825e-09,
+    "uncertainty_pb": 3.233e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N8900.out": {
+    "cross_section_pb": 3.6e-09,
+    "uncertainty_pb": 2.519e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N900.out": {
+    "cross_section_pb": 4.319e-06,
+    "uncertainty_pb": 1.241e-08
+  },
+  "WRtoNELtoEEJJ_WR9500_N9000.out": {
+    "cross_section_pb": 2.545e-09,
+    "uncertainty_pb": 1.704e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N9100.out": {
+    "cross_section_pb": 1.7e-09,
+    "uncertainty_pb": 1.155e-11
+  },
+  "WRtoNELtoEEJJ_WR9500_N9200.out": {
+    "cross_section_pb": 1.054e-09,
+    "uncertainty_pb": 4.613e-12
+  },
+  "WRtoNELtoEEJJ_WR9500_N9300.out": {
+    "cross_section_pb": 5.908e-10,
+    "uncertainty_pb": 4.447e-12
+  },
+  "WRtoNELtoEEJJ_WR9500_N9400.out": {
+    "cross_section_pb": 2.873e-10,
+    "uncertainty_pb": 2.121e-12
+  }
+}

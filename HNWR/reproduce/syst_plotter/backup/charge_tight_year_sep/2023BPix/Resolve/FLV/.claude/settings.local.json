@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep \"EEMM$\")",
+      "Bash(conda run:*)",
+      "Read(//usr/bin/**)",
+      "Bash(/usr/bin/python3.6:*)",
+      "Bash(chmod +x /home/achihwan/HiggsAnalysis/CombinedLimit/data/HNWR/inclusive_sign/era_combined/run_combine.sh)",
+      "Bash(mkdir -p /home/achihwan/HiggsAnalysis/CombinedLimit/data/HNWR/same_sign/era_combined/datacards)",
+      "Bash(mkdir -p /home/achihwan/HiggsAnalysis/CombinedLimit/data/HNWR/same_sign/era_combined/logs)",
+      "Bash(chmod +x /home/achihwan/HiggsAnalysis/CombinedLimit/data/HNWR/same_sign/era_combined/run_combine.sh)",
+      "Bash(sed 's|inclusive_sign|same_sign|g' /home/achihwan/HiggsAnalysis/CombinedLimit/data/HNWR/inclusive_sign/make_era_combined.py)"
+    ]
+  }
+}

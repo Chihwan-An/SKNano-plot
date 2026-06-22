@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh)",
+      "Bash(chmod +x /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_tight_year_sep/condor_files/run_plotter.sh)",
+      "Bash(condor_version)",
+      "Read(//data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacards_chargesplit_EE/SS/combined/**)",
+      "Read(//data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacards_chargesplit_EE/SS+OS/combined/**)",
+      "Bash(condor_q --version)",
+      "Bash(condor_submit --version)",
+      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsEE/combined/impact_plot/dag/step*.sh)",
+      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsMM/combined/impact/dag/step*.sh)",
+      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsMM/combined/impact/dag/submit.sh)",
+      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsEE/combined/impact_plot/dag/submit.sh)"
+    ]
+  }
+}

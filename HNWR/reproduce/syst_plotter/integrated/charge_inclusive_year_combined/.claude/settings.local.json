@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(condor_version)",
+      "Bash(chmod +x:*)",
+      "Bash(python submit_condor.py:*)",
+      "Bash(ls:*)",
+      "Bash(micromamba info:*)",
+      "Bash(singularity exec --bind /data6:/data6 /data6/Users/achihwan/private-el9.sif bash -c '\n    export PATH=\"\"/data6/Users/achihwan/micromamba/bin:${PATH}\"\"\n    export MAMBA_ROOT_PREFIX=\"\"/data6/Users/achihwan/micromamba\"\"\n    eval \"\"$\\(micromamba shell hook -s bash\\)\"\"\n    micromamba activate Nano\n    echo \"\"Python: $\\(which python\\)\"\"\n    echo \"\"ROOT: $\\(which root\\)\"\"\n    python --version\n')",
+      "Bash(env:*)",
+      "Bash(singularity exec:*)"
+    ]
+  }
+}

@@ -1,3 +1,9 @@
+Info in <TCanvas::Print>: png file BoostSREE_Dilepton_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_leading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSREE_subleading_lep_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSREE_dilepton_eta_plot.png has been created
@@ -5,6 +11,7 @@ Info in <TCanvas::Print>: png file BoostSREE_dilepton_phi_plot.png has been crea
 Info in <TCanvas::Print>: png file BoostSREE_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_fatjet_SDM_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_WR_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_WR_phi_plot.png has been created
@@ -18,91 +25,28 @@ Info in <TCanvas::Print>: png file BoostSREE_dphi_leadlep_fatjet_plot.png has be
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSREE_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_jetnum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_WRMass_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_Dilepton_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_leading_lep_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_subleading_lep_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_dilepton_mass_plot.png has been created
-usage: EE.py [-h] [--hist HIST] [--rebin REBIN] [--output OUTPUT]
-             [--ymin YMIN] [--ymax YMAX] [--xmin XMIN] [--xmax XMAX]
-             [--bins BINS] [--xlabel XLABEL] [--logy] [--rmin RMIN]
-             [--rmax RMAX] [--signal-scale SIGNAL_SCALE]
-EE.py: error: unrecognized arguments: 0
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_dilepton_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_dilepton_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_fatjet_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_fatjet_SDM_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_WR_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_WR_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_WR_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_leading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_leading_lep_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_subleading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_subleading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_fatjet_lsf3_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_deltaR_leadlep_fatjet_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_punum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_jetnum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_SS_WRMass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_SS_Dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_leading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_SS_dilepton_mass_plot.png has been created
-usage: EE.py [-h] [--hist HIST] [--rebin REBIN] [--output OUTPUT]
-             [--ymin YMIN] [--ymax YMAX] [--xmin XMIN] [--xmax XMAX]
-             [--bins BINS] [--xlabel XLABEL] [--logy] [--rmin RMIN]
-             [--rmax RMAX] [--signal-scale SIGNAL_SCALE]
-EE.py: error: unrecognized arguments: 0
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_OS_dilepton_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_dilepton_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_fatjet_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_fatjet_SDM_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_OS_WR_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_WR_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_WR_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_leading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_leading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_subleading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_subleading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_fatjet_lsf3_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_deltaR_leadlep_fatjet_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_OS_punum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_jetnum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_WRMass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_SS_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_SS_WRMass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_OS_Dilepton_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_leading_lep_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_OS_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSREE_OS_WRMass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSREE_OS_subleading_lep_pt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSREE_OS_dilepton_mass_plot.png has been created
-usage: EE.py [-h] [--hist HIST] [--rebin REBIN] [--output OUTPUT]
-             [--ymin YMIN] [--ymax YMAX] [--xmin XMIN] [--xmax XMAX]
-             [--bins BINS] [--xlabel XLABEL] [--logy] [--rmin RMIN]
-             [--rmax RMAX] [--signal-scale SIGNAL_SCALE]
-EE.py: error: unrecognized arguments: 0
+Info in <TCanvas::Print>: png file BoostSRMM_Dilepton_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_WRMass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_leading_lep_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSRMM_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_SDM_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostSRMM_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSRMM_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_WR_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_WR_phi_plot.png has been created
@@ -118,77 +62,13 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostSRMM_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_jetnum_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_WRMass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_Dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_LeadingLepPt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SubLeadingLepPt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_dilepton_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_dilepton_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_fatjet_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_fatjet_SDM_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_WR_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_WR_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_WR_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_leading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_leading_lep_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_subleading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_subleading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_fatjet_lsf3_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_deltaR_leadlep_fatjet_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_punum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_jetnum_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_WRMass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSRMM_SS_Dilepton_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_SS_WRMass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_LeadingLepPt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_SS_SubLeadingLepPt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_SS_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_dilepton_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_dilepton_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_fatjet_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_fatjet_SDM_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_WR_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_WR_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_WR_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_leading_lep_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_leading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_subleading_lep_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_subleading_lep_phi_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_fatjet_lsf3_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_deltaR_leadlep_fatjet_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_punum_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_jetnum_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_WRMass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_OS_Dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_LeadingLepPt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostSRMM_OS_SubLeadingLepPt_plot.png has been created
-Info in <TCanvas::Print>: png file BoostSRMM_OS_dilepton_mass_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_leading_fatjet_pt_plot.png has been created
+Info in <TCanvas::Print>: png file BoostSRMM_OS_WRMass_plot.png has been created

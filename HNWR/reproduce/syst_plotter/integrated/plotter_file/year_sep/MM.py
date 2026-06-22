@@ -36,8 +36,8 @@ SAMPLE_MAP = {
     "ST_sch": "Nonprompt"
 }
 
-DATA_FILES = ["EGamma"]
-EXCLUDE_SAMPLES = ["Skim", "Muon", "SingleMuon"]
+DATA_FILES = ["Muon", "SingleMuon"]
+EXCLUDE_SAMPLES = ["EGamma"]
 SYST_LIST = ["Pileup", "ElectronID", "ElectronReco", "ElectronTrig",
              "MuonID", "MuonReco", "MuonTrig", "MuonIso", "JER", "JES"]
 
@@ -131,7 +131,12 @@ def run_plot():
     parser.add_argument("--rmax",         type=float, default=1.5,               help="Ratio 패널 Y축 최대값")
     parser.add_argument("--signal-scale", type=float, default=10.0,              help="Signal(WR) 히스토그램에 곱할 스케일 팩터 (기본값: 10)")
     parser.add_argument("--show-sb",      action="store_true", default=False,    help="빈별 S/sqrt(B) 비율 TSV 출력")
+    parser.add_argument("--year",         type=str,   default=None, choices=["2022","2022EE","2023","2023BPix"], help="데이터 연도 (설정 시 해당 연도 경로 사용)")
+    parser.add_argument("--label1",       type=str,   default=None,              help="채널 라벨 (기본값: 'ee')")
+    parser.add_argument("--label2",       type=str,   default=None,              help="영역 라벨 (기본값: IS_BLIND에 따라 자동)")
     args = parser.parse_args()
+
+    DATA_PATH = f"/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/{args.year}/" if args.year else DEFAULT_DATA_PATH
 
     HIST_NAME    = args.hist
     IS_BLIND     = "SR" in HIST_NAME.upper()
@@ -152,7 +157,7 @@ def run_plot():
     group_hists  = {g: None for g in BACKGROUND_GROUPS}
     signal_hists = {}   # { fname_base: TH1 }
     all_wr_for_channel = set()   # 채널에 해당하는 모든 WR mass point (히스토그램 로드 성공 여부 무관)
-    all_files    = sorted([f for f in os.listdir(DEFAULT_DATA_PATH) if f.endswith(".root")])
+    all_files    = sorted([f for f in os.listdir(DATA_PATH) if f.endswith(".root")])
 
     print(f"\n>> Loading Central histograms for: {HIST_NAME}")
     if IS_BLIND:
@@ -166,7 +171,7 @@ def run_plot():
             continue
 
         fname_base = fname.replace(".root", "")
-        path       = os.path.join(DEFAULT_DATA_PATH, fname)
+        path       = os.path.join(DATA_PATH, fname)
 
         # ── WR 시그널 파일 처리 ──────────────────────────────────────────
         if fname_base.startswith("WR"):
@@ -282,7 +287,7 @@ def run_plot():
             for key, group in SAMPLE_MAP.items():
                 if key in fname: matched_group = group; break
 
-            path = os.path.join(DEFAULT_DATA_PATH, fname)
+            path = os.path.join(DATA_PATH, fname)
             u = get_hist_from_file(path, f"{syst}_Up",   HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
             d = get_hist_from_file(path, f"{syst}_Down", HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
 
@@ -311,7 +316,7 @@ def run_plot():
                 continue
             if fname_base not in signal_hists:
                 continue
-            path = os.path.join(DEFAULT_DATA_PATH, fname)
+            path = os.path.join(DATA_PATH, fname)
             u = get_hist_from_file(path, f"{syst}_Up",   HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
             d = get_hist_from_file(path, f"{syst}_Down", HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
             if u: h_sig_up_d[fname_base] = u
@@ -759,9 +764,9 @@ def run_plot():
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
     latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
-    latex.DrawLatex(0.18, 0.82, "ee")
+    latex.DrawLatex(0.18, 0.82, args.label1 if args.label1 else "mumu")
     latex.SetTextFont(42); latex.SetTextSize(0.060)
-    latex.DrawLatex(0.18, 0.75, "Resolved SR" if IS_BLIND else "Boosted DY CR")
+    latex.DrawLatex(0.18, 0.75, args.label2 if args.label2 else ("Resolved SR" if IS_BLIND else "Boosted DY CR"))
     p1.RedrawAxis()
 
     # --- Ratio pad ---

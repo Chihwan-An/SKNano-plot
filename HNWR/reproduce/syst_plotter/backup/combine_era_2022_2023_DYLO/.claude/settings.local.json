@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ln -s ../../ht_binned/boost/sr/MM.py /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/hlt_ele_dif/combine_era_2022_2023_DYLO/ht_binned_tight_charge/boost/sr/MM.py)",
+      "Bash(chmod +x:*)"
+    ]
+  }
+}
