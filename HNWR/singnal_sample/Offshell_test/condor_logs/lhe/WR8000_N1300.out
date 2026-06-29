@@ -1,0 +1,13 @@
+=== WR8000 N1300 | Mon Jun 22 19:58:24 KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python3
+Found 7 file(s) for WR8000 N1300
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/1a8c7b76-0398-48c2-9f52-0c1f2432eda3.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/38f11a48-bace-40f5-8854-33e1ae22868a.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/92cacb08-6b08-41cd-a6b2-3faf50bfe727.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/a8b8cb20-617f-45c7-869b-77883fba074d.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/c03a1e77-a395-4047-92a3-55166c6feb36.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/c7a16c20-05b2-404e-ad12-acf8595c0632.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N1300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/ceec046e-9f69-4449-8c5d-b38085737596.root
+Saved 70000 events → /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/lhe_cache/WR8000_N1300.npz
+LHE < 800 GeV: 0/70000 = 0.00%
+=== Exit code: 0 | Mon Jun 22 19:58:36 KST 2026 ===

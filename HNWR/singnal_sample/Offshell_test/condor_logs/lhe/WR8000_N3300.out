@@ -1,0 +1,15 @@
+=== WR8000 N3300 | Mon Jun 22 19:57:28 KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python3
+Found 9 file(s) for WR8000 N3300
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/2d50778a-69b0-466f-8be5-1c461c40d1ca.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/2f28cedf-0477-4b59-9232-9e821daf3b74.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/34037f1d-3c7a-4cce-9548-90a6eb264b3b.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/99f6628e-bb4f-48a6-840d-faa28f360420.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/ae120e28-c9b8-4851-aea2-0be94aa0a080.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/b453acf9-48d5-43ad-b847-2177e426d877.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/b547d987-211c-4100-a944-c42bdfe165b6.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/c4329e9e-3d1f-4e23-b357-0562e5abfc82.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N3300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/d886ae01-add3-40d0-ab44-0010c01925f8.root
+Saved 70000 events → /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/lhe_cache/WR8000_N3300.npz
+LHE < 800 GeV: 0/70000 = 0.00%
+=== Exit code: 0 | Mon Jun 22 19:57:49 KST 2026 ===

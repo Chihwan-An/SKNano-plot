@@ -1,0 +1,9 @@
+=== cutflow job: WR=6000 N=4900 ===
+=== Start: Thu Jun 25 07:41:35 PM KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_WR6000N4900.png
+[INFO] Loaded background cutflows from 24 MC files
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_Z_WR6000N4900.png
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_Z_WR6000N4900.csv
+=== End: Thu Jun 25 07:41:44 PM KST 2026 ===
+=== Exit code: 0 ===

@@ -121,6 +121,33 @@ VARS 2023BPix_Resolve_sig jobname="2023BPix_Resolve_sig"
 VARS 2023BPix_Resolve_sig exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
 VARS 2023BPix_Resolve_sig work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2023BPix/Resolve/sig"
 
+# Organize jobs (run after all plotting jobs per year)
+JOB 2022_organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2022_organize jobname="2022_organize"
+VARS 2022_organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_organize.sh"
+VARS 2022_organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2022"
+
+JOB 2022EE_organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2022EE_organize jobname="2022EE_organize"
+VARS 2022EE_organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_organize.sh"
+VARS 2022EE_organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2022EE"
+
+JOB 2023_organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2023_organize jobname="2023_organize"
+VARS 2023_organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_organize.sh"
+VARS 2023_organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2023"
+
+JOB 2023BPix_organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2023BPix_organize jobname="2023BPix_organize"
+VARS 2023BPix_organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_organize.sh"
+VARS 2023BPix_organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2023BPix"
+
+# Dependency: organize runs after all plotting jobs for that year
+PARENT 2022_Boost_DY 2022_Boost_FLV 2022_Boost_sig 2022_Resolve_DY 2022_Resolve_FLV 2022_Resolve_sig CHILD 2022_organize
+PARENT 2022EE_Boost_DY 2022EE_Boost_FLV 2022EE_Boost_sig 2022EE_Resolve_DY 2022EE_Resolve_FLV 2022EE_Resolve_sig CHILD 2022EE_organize
+PARENT 2023_Boost_DY 2023_Boost_FLV 2023_Boost_sig 2023_Resolve_DY 2023_Resolve_FLV 2023_Resolve_sig CHILD 2023_organize
+PARENT 2023BPix_Boost_DY 2023BPix_Boost_FLV 2023BPix_Boost_sig 2023BPix_Resolve_DY 2023BPix_Resolve_FLV 2023BPix_Resolve_sig CHILD 2023BPix_organize
+
 # Retry failed jobs up to 2 times
 RETRY 2022_Boost_DY 2
 RETRY 2022_Boost_FLV 2
@@ -146,3 +173,7 @@ RETRY 2023BPix_Boost_sig 2
 RETRY 2023BPix_Resolve_DY 2
 RETRY 2023BPix_Resolve_FLV 2
 RETRY 2023BPix_Resolve_sig 2
+RETRY 2022_organize 2
+RETRY 2022EE_organize 2
+RETRY 2023_organize 2
+RETRY 2023BPix_organize 2

@@ -1,12 +1,11 @@
 Info in <TCanvas::Print>: png file ResolveSREE_dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_leading_jet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_subleading_jet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_leading_jet_eta_plot.png has been created
@@ -25,7 +24,6 @@ Info in <TCanvas::Print>: png file ResolveSREE_l2j1j2_mass_plot.png has been cre
 Info in <TCanvas::Print>: png file ResolveSREE_l2j1j2_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_l2j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_l2j1j2_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_mlljj_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_mlljj_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_mlljj_phi_plot.png has been created
@@ -35,45 +33,51 @@ Info in <TCanvas::Print>: png file ResolveSREE_subleading_lep_eta_plot.png has b
 Info in <TCanvas::Print>: png file ResolveSREE_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_jetnum_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_punum_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_jet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_jet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_mlljj_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_jet_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_jet_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_jet_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l2j1j2_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l2j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l2j1j2_eta_plot.png has been created
-Info in <TCanvas::Print>: png file ResolveSREE_SS_l2j1j2_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file ResolveSREE_SS_l2j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_mlljj_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_mlljj_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_mlljj_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_leading_lep_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_lep_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_jetnum_plot.png has been created
@@ -85,6 +89,7 @@ Info in <TCanvas::Print>: png file ResolveSREE_OS_mlljj_plot.png has been create
 Info in <TCanvas::Print>: png file ResolveSREE_OS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_OS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_leading_jet_eta_plot.png has been created
@@ -93,19 +98,16 @@ Info in <TCanvas::Print>: png file ResolveSREE_OS_subleading_jet_eta_plot.png ha
 Info in <TCanvas::Print>: png file ResolveSREE_OS_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_OS_j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l1j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l1j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l1j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l1j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l2j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l2j1j2_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l2j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_l2j1j2_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_OS_mlljj_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_mlljj_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_OS_mlljj_phi_plot.png has been created
@@ -120,30 +122,31 @@ Info in <TCanvas::Print>: png file ResolveSRMM_leading_jet_pt_plot.png has been 
 Info in <TCanvas::Print>: png file ResolveSRMM_subleading_jet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_leading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_subleading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_dilepton_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_leading_jet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_leading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_subleading_jet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_l1j1j2_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_l1j1j2_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_l1j1j2_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_l1j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_l2j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_l2j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_l2j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_l2j1j2_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_mlljj_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_mlljj_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_mlljj_phi_plot.png has been created
@@ -153,64 +156,58 @@ Info in <TCanvas::Print>: png file ResolveSRMM_subleading_lep_eta_plot.png has b
 Info in <TCanvas::Print>: png file ResolveSRMM_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_jetnum_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_punum_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_dilepton_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_jet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_jet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_mlljj_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_dilepton_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_jet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_jet_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_jet_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_j1j2_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_j1j2_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_j1j2_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l1j1j2_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l1j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l1j1j2_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l1j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l2j1j2_mass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l2j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_l2j1j2_eta_plot.png has been created
-Info in <TCanvas::Print>: png file ResolveSRMM_SS_l2j1j2_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file ResolveSRMM_SS_l2j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_mlljj_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_mlljj_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_mlljj_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_lep_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_leading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_jetnum_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_SS_punum_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_dilepton_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_leading_jet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_subleading_jet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_leading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_subleading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_dilepton_phi_plot.png has been created
@@ -220,7 +217,6 @@ Info in <TCanvas::Print>: png file ResolveSRMM_OS_subleading_jet_eta_plot.png ha
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l1j1j2_mass_plot.png has been created
@@ -229,7 +225,6 @@ Info in <TCanvas::Print>: png file ResolveSRMM_OS_l1j1j2_eta_plot.png has been c
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l1j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l2j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l2j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l2j1j2_eta_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_l2j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSRMM_OS_mlljj_pt_plot.png has been created

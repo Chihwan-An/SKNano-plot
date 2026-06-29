@@ -1,0 +1,15 @@
+universe            = vanilla
+executable          = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/wrapper_lhe.sh
+arguments           = $(WR) $(N)
+
+initialdir          = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test
+output              = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/condor_logs/lhe/WR$(WR)_N$(N).out
+error               = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/condor_logs/lhe/WR$(WR)_N$(N).err
+log                 = /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/condor_logs/lhe/condor.log
+
+should_transfer_files = NO
+request_memory      = 3GB
+request_cpus        = 1
+notification        = Never
+
+queue WR,N from /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/wr_n_pairs.txt

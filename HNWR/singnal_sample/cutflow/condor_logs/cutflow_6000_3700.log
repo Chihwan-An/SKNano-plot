@@ -1,0 +1,72 @@
+000 (15175592.049.000) 2026-06-22 22:32:52 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+...
+001 (15175592.049.000) 2026-06-22 22:32:59 Job executing on host: <172.30.1.214:9618?addrs=172.30.1.214-9618&alias=node-w14.localdomain&noUDP&sock=startd_4407_69f6>
+	SlotName: slot1_42@node-w14.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_280883"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (15175592.049.000) 2026-06-22 22:33:12 Image size of job updated: 145176
+	142  -  MemoryUsage of job (MB)
+	145176  -  ResidentSetSize of job (KB)
+...
+005 (15175592.049.000) 2026-06-22 22:33:12 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:04, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:04, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :        1  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      142     2048      2048 
+	   TimeExecute (s)      :       13                    
+	   TimeSlotBusy (s)     :       15                    
+
+	Job terminated of its own accord at 2026-06-22T13:33:12Z with exit-code 0.
+...
+000 (15331938.049.000) 2026-06-25 19:41:24 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+...
+001 (15331938.049.000) 2026-06-25 19:41:27 Job executing on host: <172.30.1.213:9618?addrs=172.30.1.213-9618&alias=node-w13.localdomain&noUDP&sock=startd_4483_8b29>
+	SlotName: slot1_25@node-w13.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_2500320"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 2048
+...
+006 (15331938.049.000) 2026-06-25 19:41:41 Image size of job updated: 93552
+	92  -  MemoryUsage of job (MB)
+	93552  -  ResidentSetSize of job (KB)
+...
+006 (15331938.049.000) 2026-06-25 19:41:46 Image size of job updated: 128736
+	92  -  MemoryUsage of job (MB)
+	93564  -  ResidentSetSize of job (KB)
+...
+005 (15331938.049.000) 2026-06-25 19:41:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       92     2048      2048 
+	   TimeExecute (s)      :       19                    
+	   TimeSlotBusy (s)     :       19                    
+
+	Job terminated of its own accord at 2026-06-25T10:41:46Z with exit-code 0.
+...

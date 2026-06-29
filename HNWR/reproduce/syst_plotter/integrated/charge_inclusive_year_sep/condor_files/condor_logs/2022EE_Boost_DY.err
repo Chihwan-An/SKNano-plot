@@ -1,10 +1,11 @@
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_leading_fatjet_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_leading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_phi_plot.png has been created
@@ -30,30 +31,127 @@ Info in <TCanvas::Print>: png file BoostDYEE_jetnum_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_mass_plot.png has been created
-Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_fatjet_pt_plot.png has been created
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x000014767ccdcafa in wait4 () from /lib64/libc.so.6
+#1  0x000014767cc4f283 in do_system () from /lib64/libc.so.6
+#2  0x000014767c129c0a in TUnixSystem::StackTrace() () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#3  0x000014767c280630 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libcppyy_backend.so
+#4  0x000014767c1293e1 in TUnixSystem::DispatchSignals(ESignals) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#5  <signal handler called>
+#6  0x000014767c009b15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x000014767b8ce59e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x000014767b8cfd92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x000014767b8d3e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x000014765110a05f in ?? ()
+#11 0x0000556677cc9f70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x000014767c009b15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x000014767b8ce59e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x000014767b8cfd92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x000014767b8d3e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x000014765110a05f in ?? ()
+#11 0x0000556677cc9f70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x000014767ccdcafa in wait4 () from /lib64/libc.so.6
+#1  0x000014767cc4f283 in do_system () from /lib64/libc.so.6
+#2  0x000014767c129c0a in TUnixSystem::StackTrace() () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#3  0x000014767c2804a5 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libcppyy_backend.so
+#4  0x000014767c1293e1 in TUnixSystem::DispatchSignals(ESignals) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#5  <signal handler called>
+#6  0x000014767c009b15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x000014767b8ce59e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x000014767b8cfd92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x000014767b8d3e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x000014765110a05f in ?? ()
+#11 0x0000556677cc9f70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x000014767c009b15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x000014767b8ce59e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x000014767b8cfd92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x000014767b8d3e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x000014765110a05f in ?? ()
+#11 0x0000556677cc9f70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_eta_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-413859840
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_lsf3_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-Info in <TCanvas::Print>: png file BoostDYEE_SS_deltaR_leadlep_fatjet_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TCanvas::Print>: png file BoostDYEE_SS_deltaR_leadlep_fatjet_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dphi_leadlep_fatjet_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_punum_plot.png has been created
@@ -61,17 +159,20 @@ Info in <TCanvas::Print>: png file BoostDYEE_SS_jetnum_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_fatjet_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_lep_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_eta_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-598190848
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_lep_eta_plot.png has been created
@@ -91,40 +192,141 @@ Info in <TCanvas::Print>: png file BoostDYMM_dilepton_mass_plot.png has been cre
 Info in <TCanvas::Print>: png file BoostDYMM_leading_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_eta_plot.png has been created
-Info in <TCanvas::Print>: png file BoostDYMM_fatjet_phi_plot.png has been created
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00001505e777fafa in wait4 () from /lib64/libc.so.6
+#1  0x00001505e76f2283 in do_system () from /lib64/libc.so.6
+#2  0x00001505e6bccc0a in TUnixSystem::StackTrace() () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#3  0x00001505e6d23630 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libcppyy_backend.so
+#4  0x00001505e6bcc3e1 in TUnixSystem::DispatchSignals(ESignals) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#5  <signal handler called>
+#6  0x00001505e6aacb15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x00001505e637159e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x00001505e6372d92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x00001505e6376e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x00001505bbbad05f in ?? ()
+#11 0x000055ff87ceff70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00001505e6aacb15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x00001505e637159e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x00001505e6372d92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x00001505e6376e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x00001505bbbad05f in ?? ()
+#11 0x000055ff87ceff70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00001505e777fafa in wait4 () from /lib64/libc.so.6
+#1  0x00001505e76f2283 in do_system () from /lib64/libc.so.6
+#2  0x00001505e6bccc0a in TUnixSystem::StackTrace() () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#3  0x00001505e6d234a5 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libcppyy_backend.so
+#4  0x00001505e6bcc3e1 in TUnixSystem::DispatchSignals(ESignals) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#5  <signal handler called>
+#6  0x00001505e6aacb15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x00001505e637159e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x00001505e6372d92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x00001505e6376e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x00001505bbbad05f in ?? ()
+#11 0x000055ff87ceff70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00001505e6aacb15 in TString::ReadBuffer(char*&) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/python3.12/lib-dynload/../../libCore.so.6.34
+#7  0x00001505e637159e in TFile::Init(bool) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#8  0x00001505e6372d92 in TFile::TFile(char const*, char const*, char const*, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#9  0x00001505e6376e1d in TFile::Open(char const*, char const*, char const*, int, int) () from /data6/Users/achihwan/micromamba/envs/Nano/lib/libRIO.so
+#10 0x00001505bbbad05f in ?? ()
+#11 0x000055ff87ceff70 in _PyRuntime ()
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_WR_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_leading_lep_eta_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-16
 Info in <TCanvas::Print>: png file BoostDYMM_leading_lep_phi_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
 Info in <TCanvas::Print>: png file BoostDYMM_subleading_lep_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_lsf3_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_deltaR_leadlep_fatjet_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_jetnum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_mlljj_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_leading_fatjet_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_WR_pt_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-65536
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_WR_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_leading_lep_eta_plot.png has been created
@@ -132,6 +334,7 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostDYMM_SS_leading_lep_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_subleading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_subleading_lep_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_lsf3_plot.png has been created
@@ -144,8 +347,27 @@ Info in <TCanvas::Print>: png file BoostDYMM_OS_dilepton_mass_plot.png has been 
 Info in <TCanvas::Print>: png file BoostDYMM_OS_leading_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_OS_dilepton_eta_plot.png has been created
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1263451138
 Info in <TCanvas::Print>: png file BoostDYMM_OS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_fatjet_phi_plot.png has been created
@@ -161,6 +383,5 @@ Info in <TCanvas::Print>: png file BoostDYMM_OS_subleading_lep_phi_plot.png has 
 Info in <TCanvas::Print>: png file BoostDYMM_OS_fatjet_lsf3_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_deltaR_leadlep_fatjet_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_dphi_leadlep_fatjet_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_OS_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_jetnum_plot.png has been created
