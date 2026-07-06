@@ -16,7 +16,7 @@ import re
 import subprocess
 import sys
 
-SIG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/2023/sig/"
+SIG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/sig/"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTDIR     = os.path.join(SCRIPT_DIR, "cutflow_output")
 LOG_DIR    = os.path.join(SCRIPT_DIR, "condor_logs")

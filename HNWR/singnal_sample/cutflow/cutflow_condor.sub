@@ -42,6 +42,11 @@ WR=2000
 N=900
 queue
 
+arguments = 2000 1000 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
+WR=2000
+N=1000
+queue
+
 arguments = 2000 1100 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
 WR=2000
 N=1100
@@ -70,6 +75,11 @@ queue
 arguments = 4000 100 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
 WR=4000
 N=100
+queue
+
+arguments = 4000 200 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
+WR=4000
+N=200
 queue
 
 arguments = 4000 300 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
@@ -115,6 +125,11 @@ queue
 arguments = 4000 1900 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
 WR=4000
 N=1900
+queue
+
+arguments = 4000 2000 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
+WR=4000
+N=2000
 queue
 
 arguments = 4000 2100 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
@@ -170,6 +185,11 @@ queue
 arguments = 6000 100 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
 WR=6000
 N=100
+queue
+
+arguments = 6000 200 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
+WR=6000
+N=200
 queue
 
 arguments = 6000 300 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
@@ -320,6 +340,11 @@ queue
 arguments = 8000 100 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
 WR=8000
 N=100
+queue
+
+arguments = 8000 200 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output
+WR=8000
+N=200
 queue
 
 arguments = 8000 300 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output

@@ -23,8 +23,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import uproot
 
-SIG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/2023/sig/"
-BKG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/2023/skim/"
+SIG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/sig/"
+BKG_DIR = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023"
 DATA_SAMPLE_TOKENS = ("EGamma", "Muon")
 
 BOOSTED_HIST = "Cutflow_for_Boosted_SR"
@@ -71,6 +71,21 @@ COLORS = {
     "boost_ee":   "#DD8452",
     "resolve_mm": "#55A868",
     "resolve_ee": "#C44E52",
+}
+
+# mlljj (reconstructed WR mass) histograms, split by region/flavor.
+MLLJJ_HISTS = {
+    ("Boost",   "EE"): "SR_Boosted_EE_mlljj",
+    ("Boost",   "MM"): "SR_Boosted_MM_mlljj",
+    ("Resolve", "EE"): "SR_Resolved_EE_mlljj",
+    ("Resolve", "MM"): "SR_Resolved_MM_mlljj",
+}
+
+# Integration window on the mlljj axis for each WR mass point.
+MASS_WINDOWS = {
+    2000: (1500.0, 2500.0),
+    4000: (3500.0, 4500.0),
+    6000: (5200.0, 6800.0),
 }
 
 
@@ -406,6 +421,173 @@ def make_significance_plot(wr, n, outdir, signal_cutflows, background_cutflows, 
     )
 
 
+def load_hist_from_file(fname, histname):
+    """Return (values, edges) of one named histogram inside 'Central', or (None, None)."""
+    try:
+        with uproot.open(fname) as f:
+            if "Central" not in f:
+                return None, None
+            central = f["Central"]
+            if histname not in central:
+                return None, None
+            values, edges = central[histname].to_numpy()
+            return np.asarray(values, dtype=float), np.asarray(edges, dtype=float)
+    except Exception as e:
+        print(f"[WARN] Failed to read {histname} from {fname}: {e}")
+        return None, None
+
+
+def load_background_hist(bkg_dir, histname):
+    """Sum one named histogram over all MC background files. Returns (values, edges)."""
+    total = None
+    edges = None
+    used = 0
+    for fname in list_background_files(bkg_dir):
+        vals, ed = load_hist_from_file(fname, histname)
+        if vals is None:
+            continue
+        if total is None:
+            total = np.zeros_like(vals)
+            edges = ed
+        if len(vals) != len(total):
+            print(f"[WARN] Skip {histname} with mismatched bins: {fname}")
+            continue
+        total += vals
+        used += 1
+    if used == 0:
+        print(f"[WARN] No background '{histname}' loaded from {bkg_dir}")
+        return None, None
+    return total, edges
+
+
+def integrate_window(values, edges, lo, hi):
+    """Sum bin contents whose bin center falls within [lo, hi)."""
+    centers = 0.5 * (edges[:-1] + edges[1:])
+    mask = (centers >= lo) & (centers < hi)
+    return float(np.sum(np.asarray(values)[mask]))
+
+
+def asimov_z_scalar(s, b):
+    """Asimov median discovery significance for a single (S, B) pair."""
+    if s <= 0.0 or b <= 0.0:
+        return 0.0
+    return float(np.sqrt(2.0 * ((s + b) * np.log1p(s / b) - s)))
+
+
+def draw_mass_panel(ax, sig_vals, bkg_vals, edges, window, title, color):
+    """Draw signal/background mlljj distributions, shade the window, annotate Z."""
+    if edges is None or (sig_vals is None and bkg_vals is None):
+        ax.text(0.5, 0.5, "No data", ha="center", va="center", transform=ax.transAxes)
+        ax.set_title(title, fontsize=11, fontweight="bold")
+        return None
+
+    lo, hi = window
+
+    if bkg_vals is not None:
+        ax.stairs(bkg_vals, edges, fill=True, color="#9E9E9E", alpha=0.55,
+                  label="Background (MC)")
+    if sig_vals is not None:
+        ax.stairs(sig_vals, edges, fill=False, color=color, linewidth=1.8,
+                  label="Signal")
+
+    ax.axvspan(lo, hi, color="gold", alpha=0.18, zorder=0)
+
+    s = integrate_window(sig_vals, edges, lo, hi) if sig_vals is not None else 0.0
+    b = integrate_window(bkg_vals, edges, lo, hi) if bkg_vals is not None else 0.0
+    z = asimov_z_scalar(s, b)
+
+    ax.set_yscale("log")
+    ax.set_xlabel(r"$M_{\ell\ell jj}$ [GeV]", fontsize=10)
+    ax.set_ylabel("Events", fontsize=10)
+    ax.set_title(title, fontsize=11, fontweight="bold")
+    ax.grid(axis="y", linestyle="--", alpha=0.35)
+    ax.legend(loc="upper left", fontsize=9)
+
+    txt = (
+        f"$Z = {z:.3f}$\n"
+        f"$S = {s:.3g}$\n"
+        f"$B = {b:.3g}$\n"
+        f"window [{lo:.0f}, {hi:.0f}]"
+    )
+    ax.text(
+        0.97, 0.95, txt,
+        transform=ax.transAxes, ha="right", va="top", fontsize=9.5,
+        bbox=dict(boxstyle="round", facecolor="white", edgecolor="black", alpha=0.85),
+    )
+    return {"signal": s, "background": b, "z": z, "window": window}
+
+
+def write_mass_z_csv(wr, n, outdir, rows):
+    outpath = os.path.join(outdir, f"masswindow_Z_WR{wr}N{n}.csv")
+    with open(outpath, "w", newline="") as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow([
+            "region", "flavor", "window_lo", "window_hi",
+            "signal", "background", "asimov_z",
+        ])
+        for region, flavor, info in rows:
+            if info is None:
+                continue
+            lo, hi = info["window"]
+            writer.writerow([
+                region, flavor, f"{lo:.0f}", f"{hi:.0f}",
+                f"{info['signal']:.8g}", f"{info['background']:.8g}",
+                f"{info['z']:.8g}",
+            ])
+    print(f"Saved: {outpath}")
+
+
+def make_masswindow_plot(wr, n, outdir, bkg_dir):
+    """mlljj distribution (signal vs background) with the WR mass window and Asimov Z."""
+    if wr not in MASS_WINDOWS:
+        print(f"[WARN] No mass window defined for WR{wr}. Skipping mlljj plot.")
+        return
+    window = MASS_WINDOWS[wr]
+
+    panels = [
+        ("Boost",   "EE"),
+        ("Boost",   "MM"),
+        ("Resolve", "EE"),
+        ("Resolve", "MM"),
+    ]
+
+    os.makedirs(outdir, exist_ok=True)
+    fig, axes = plt.subplots(2, 2, figsize=(18, 12))
+    fig.suptitle(
+        f"mlljj mass window Asimov Z: WR{wr} N{n}",
+        fontsize=16, fontweight="bold", y=1.01,
+    )
+    stamp_lumi(fig)
+
+    rows = []
+    for ax, (region, flavor) in zip(axes.flat, panels):
+        histname = MLLJJ_HISTS[(region, flavor)]
+        sig_file = os.path.join(SIG_DIR, f"WR{wr}N{n}{flavor}.root")
+        sig_vals, sig_edges = (None, None)
+        if os.path.exists(sig_file):
+            sig_vals, sig_edges = load_hist_from_file(sig_file, histname)
+        else:
+            print(f"[WARN] Signal file not found: {sig_file}")
+
+        bkg_vals, bkg_edges = load_background_hist(bkg_dir, histname)
+        edges = sig_edges if sig_edges is not None else bkg_edges
+
+        color = COLORS[f"{region.lower()}_{flavor.lower()}"]
+        info = draw_mass_panel(
+            ax, sig_vals, bkg_vals, edges, window,
+            f"{region} SR — {flavor}  (WR{wr}, N{n})", color,
+        )
+        rows.append((region, flavor, info))
+
+    plt.tight_layout(rect=[0.0, 0.0, 1.0, 1.0])
+    outpath = os.path.join(outdir, f"masswindow_Z_WR{wr}N{n}.png")
+    plt.savefig(outpath, dpi=200, bbox_inches="tight")
+    plt.close()
+    print(f"Saved: {outpath}")
+
+    write_mass_z_csv(wr, n, outdir, rows)
+
+
 def make_plot(wr, n, outdir, bkg_dir):
     boost_mm,   resolve_mm   = load_cutflows(wr, n, "MM")
     boost_ee,   resolve_ee   = load_cutflows(wr, n, "EE")
@@ -430,6 +612,8 @@ def make_plot(wr, n, outdir, bkg_dir):
     plt.savefig(outpath, dpi=200, bbox_inches="tight")
     plt.close()
     print(f"Saved: {outpath}")
+
+    make_masswindow_plot(wr, n, outdir, bkg_dir)
 
     bkg_boost, bkg_resolve, bkg_files = load_background_cutflows(bkg_dir)
     if bkg_boost is None or bkg_resolve is None:
