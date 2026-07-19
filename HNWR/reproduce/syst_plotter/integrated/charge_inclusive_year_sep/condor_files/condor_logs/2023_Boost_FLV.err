@@ -30,7 +30,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostFLVEMJ_dilepton_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_leading_fatjet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_fatjet_SDMass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_leading_lep_eta_plot.png has been created
@@ -85,7 +84,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_OS_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_OS_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_OS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_OS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_OS_WR_eta_plot.png has been created
@@ -137,7 +135,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostFLVMEJ_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_leading_fatjet_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_fatjet_SDMass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_leading_lep_eta_plot.png has been created
@@ -192,7 +189,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_OS_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_OS_dilepton_mass_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_OS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_OS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_OS_WR_eta_plot.png has been created

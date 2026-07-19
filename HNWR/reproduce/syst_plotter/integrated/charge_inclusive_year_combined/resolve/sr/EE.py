@@ -8,7 +8,7 @@ import ctypes
 import re
 
 # --- 1. 기본 설정 (인자가 없을 경우 사용됨) ---
-DEFAULT_DATA_PATH = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/merged/"
+DEFAULT_DATA_PATH = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23_24/merged/"
 DEFAULT_HIST_NAME = "Obj_PU_Corr_DYCR_Resolved_EE_pt"
 
 # 스크립트 이름으로 채널 자동 감지 (EE.py → "EE", MM.py → "MM")
@@ -32,6 +32,7 @@ SAMPLE_MAP = {
     "TTLJ": "Nonprompt",
     "ST": "TT",
     "WJet": "Nonprompt",
+    "WtoLNu": "Nonprompt",  # 2024 NanoAODv15 W+jets naming (WtoLNu_1J..4J)
     "ST_tch": "Nonprompt",
     "ST_sch": "Nonprompt"
 }
@@ -53,6 +54,17 @@ try:
     CMS_STYLE = True
 except:
     CMS_STYLE = False
+
+
+# 플롯에 사용할 WR 시그널 mass point (컨트롤 리전에서는 시그널을 쓰지 않는다)
+SIGNAL_MASS_POINTS = ("WR2000N200", "WR2000N1000", "WR4000N200", "WR4000N2000")
+
+
+def use_signal(fname_base, hist_name):
+    """CR 히스토그램이면 시그널 제외, SR이면 SIGNAL_MASS_POINTS 만 사용."""
+    if "CR" in hist_name.upper():
+        return False
+    return re.sub(r"(EE|MM)$", "", fname_base) in SIGNAL_MASS_POINTS
 
 
 def format_signal_label(fname_base, scale):
@@ -171,6 +183,8 @@ def run_plot():
             # 채널 필터: EE.py → WR...EE 만, MM.py → WR...MM 만 사용
             if SCRIPT_CHANNEL and not fname_base.endswith(SCRIPT_CHANNEL):
                 continue
+            if not use_signal(fname_base, HIST_NAME):
+                continue
             h = get_hist_from_file(path, "Central", HIST_NAME, X_MAX_REQ, CUSTOM_BINS, REBIN_FACTOR)
             if h:
                 print(f"  [SIG ] {fname:<40}: {h.Integral():12.2f} events  (will be x{args.signal_scale})")
@@ -264,6 +278,14 @@ def run_plot():
             path = os.path.join(DEFAULT_DATA_PATH, fname)
             u = get_hist_from_file(path, f"{syst}_Up",   HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
             d = get_hist_from_file(path, f"{syst}_Down", HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
+            # 변동 히스토그램이 없는 샘플(예: 2024 EE의 JES/JER 누락)은 Central로 대체.
+            # 대체하지 않으면 up/down 합에서 해당 샘플 수율이 통째로 빠져
+            # nominal과의 차이가 가짜 systematic으로 잡힌다.
+            if u is None or d is None:
+                _h_cen_fb = get_hist_from_file(path, "Central", HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
+                if _h_cen_fb:
+                    if u is None: u = _h_cen_fb
+                    if d is None: d = _h_cen_fb
 
             if u:
                 if h_mc_up is None: h_mc_up = u.Clone("h_up"); h_mc_up.SetDirectory(0)
@@ -471,7 +493,7 @@ def run_plot():
     latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
     latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
-    latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
+    latex.DrawLatex(0.90, 0.93, "172.13 fb^{-1} (13.6 TeV)")
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, "ee")
     latex.SetTextFont(42); latex.SetTextSize(0.060)

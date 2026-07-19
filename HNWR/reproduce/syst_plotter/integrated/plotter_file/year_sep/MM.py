@@ -32,6 +32,7 @@ SAMPLE_MAP = {
     "TTLJ": "Nonprompt",
     "ST": "TT",
     "WJet": "Nonprompt",
+    "WtoLNu": "Nonprompt",  # 2024 NanoAODv15 W+jets naming (WtoLNu_1J..4J), old naming was "WJet..."
     "ST_tch": "Nonprompt",
     "ST_sch": "Nonprompt"
 }
@@ -40,6 +41,28 @@ DATA_FILES = ["Muon", "SingleMuon"]
 EXCLUDE_SAMPLES = ["EGamma"]
 SYST_LIST = ["Pileup", "ElectronID", "ElectronReco", "ElectronTrig",
              "MuonID", "MuonReco", "MuonTrig", "MuonIso", "JER", "JES"]
+
+# Run3 2022+2023 (4 sub-eras) 합산 luminosity. --year를 안 주면 이 값을 사용.
+DEFAULT_LUMI_LABEL = "62.31 fb^{-1} (13.6 TeV)"
+
+# era별 데이터 경로/luminosity. 2024는 combined_22_23 트리에 들어있지 않고
+# 별도 raw merged 디렉토리를 사용하며(샘플명도 NanoAODv15 기준으로 바뀜),
+# luminosity는 LUMI_BY_YEAR에서 관리 (갱신 시 이 dict만 고치면 됨).
+RUN3_22_23_ERAS = ("2022", "2022EE", "2023", "2023BPix")
+DATA_PATH_BY_YEAR = {
+    "2022":     "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2022/",
+    "2022EE":   "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2022EE/",
+    "2023":     "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/",
+    "2023BPix": "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023BPix/",
+    "2024":     "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/2024/",
+}
+LUMI_BY_YEAR = {
+    "2022":     "7.99 fb^{-1} (13.6 TeV)",
+    "2022EE":   "26.68 fb^{-1} (13.6 TeV)",
+    "2023":     "17.96 fb^{-1} (13.6 TeV)",
+    "2023BPix": "9.68 fb^{-1} (13.6 TeV)",
+    "2024":     "109.82 fb^{-1} (13.6 TeV)",
+}
 
 # 시그널 선 색상 목록 (여러 WR 샘플 대응)
 SIGNAL_COLORS = [ROOT.kMagenta, ROOT.kCyan+1, ROOT.kOrange+7, ROOT.kSpring+5,
@@ -53,6 +76,17 @@ try:
     CMS_STYLE = True
 except:
     CMS_STYLE = False
+
+
+# 플롯에 사용할 WR 시그널 mass point (컨트롤 리전에서는 시그널을 쓰지 않는다)
+SIGNAL_MASS_POINTS = ("WR2000N200", "WR2000N1000", "WR4000N200", "WR4000N2000")
+
+
+def use_signal(fname_base, hist_name):
+    """CR 히스토그램이면 시그널 제외, SR이면 SIGNAL_MASS_POINTS 만 사용."""
+    if "CR" in hist_name.upper():
+        return False
+    return re.sub(r"(EE|MM)$", "", fname_base) in SIGNAL_MASS_POINTS
 
 
 def format_signal_label(fname_base, scale):
@@ -131,12 +165,22 @@ def run_plot():
     parser.add_argument("--rmax",         type=float, default=1.5,               help="Ratio 패널 Y축 최대값")
     parser.add_argument("--signal-scale", type=float, default=10.0,              help="Signal(WR) 히스토그램에 곱할 스케일 팩터 (기본값: 10)")
     parser.add_argument("--show-sb",      action="store_true", default=False,    help="빈별 S/sqrt(B) 비율 TSV 출력")
-    parser.add_argument("--year",         type=str,   default=None, choices=["2022","2022EE","2023","2023BPix"], help="데이터 연도 (설정 시 해당 연도 경로 사용)")
+    parser.add_argument("--year",         type=str,   default=None, choices=["2022","2022EE","2023","2023BPix","2024"], help="데이터 연도 (설정 시 해당 연도 경로 사용)")
     parser.add_argument("--label1",       type=str,   default=None,              help="채널 라벨 (기본값: 'ee')")
     parser.add_argument("--label2",       type=str,   default=None,              help="영역 라벨 (기본값: IS_BLIND에 따라 자동)")
     args = parser.parse_args()
 
-    DATA_PATH = f"/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/{args.year}/" if args.year else DEFAULT_DATA_PATH
+    DATA_PATH = DATA_PATH_BY_YEAR[args.year] if args.year else DEFAULT_DATA_PATH
+    LUMI_LABEL = LUMI_BY_YEAR[args.year] if args.year else DEFAULT_LUMI_LABEL
+
+    # 2024는 아직 자체 WR 시그널 샘플이 없어서, 2023 단독(17.96 fb^-1) 시그널을
+    # 2024 luminosity(109.82 fb^-1) 비율로 스케일링해서 대신 사용.
+    SIGNAL_DATA_PATH  = DATA_PATH
+    SIGNAL_LUMI_SCALE = 1.0
+    if args.year == "2024":
+        SIGNAL_DATA_PATH  = DATA_PATH_BY_YEAR["2023"]
+        SIGNAL_LUMI_SCALE = 109.82 / 17.96
+        print(f">> 2024: no WR signal samples yet — using 2023 signal scaled by x{SIGNAL_LUMI_SCALE:.4f} (109.82/17.96 fb^-1)")
 
     HIST_NAME    = args.hist
     IS_BLIND     = "SR" in HIST_NAME.upper()
@@ -158,6 +202,8 @@ def run_plot():
     signal_hists = {}   # { fname_base: TH1 }
     all_wr_for_channel = set()   # 채널에 해당하는 모든 WR mass point (히스토그램 로드 성공 여부 무관)
     all_files    = sorted([f for f in os.listdir(DATA_PATH) if f.endswith(".root")])
+    signal_files = sorted([f for f in os.listdir(SIGNAL_DATA_PATH)
+                            if f.endswith(".root") and f.replace(".root", "").startswith("WR")])
 
     print(f"\n>> Loading Central histograms for: {HIST_NAME}")
     if IS_BLIND:
@@ -166,6 +212,25 @@ def run_plot():
         print(f">> Channel filter active: only WR files ending with '{SCRIPT_CHANNEL}' will be loaded")
     print("="*85)
 
+    # ── WR 시그널 파일 로드 (SIGNAL_DATA_PATH 기준, 필요 시 SIGNAL_LUMI_SCALE 적용) ──
+    for fname in signal_files:
+        fname_base = fname.replace(".root", "")
+        # 채널 필터: EE.py → WR...EE 만, MM.py → WR...MM 만 사용
+        if SCRIPT_CHANNEL and not fname_base.endswith(SCRIPT_CHANNEL):
+            continue
+        if not use_signal(fname_base, HIST_NAME):
+            continue
+        all_wr_for_channel.add(fname_base)  # 히스토그램 로드 전에 등록
+        path = os.path.join(SIGNAL_DATA_PATH, fname)
+        h = get_hist_from_file(path, "Central", HIST_NAME, X_MAX_REQ, CUSTOM_BINS, REBIN_FACTOR)
+        if h:
+            if SIGNAL_LUMI_SCALE != 1.0:
+                h.Scale(SIGNAL_LUMI_SCALE)
+            print(f"  [SIG ] {fname:<40}: {h.Integral():12.2f} events  (will be x{args.signal_scale})")
+            signal_hists[fname_base] = h
+        else:
+            print(f"  [SIG ] {fname:<40}: histogram not found, will write zero TSV")
+
     for fname in all_files:
         if any(ex in fname for ex in EXCLUDE_SAMPLES):
             continue
@@ -173,20 +238,8 @@ def run_plot():
         fname_base = fname.replace(".root", "")
         path       = os.path.join(DATA_PATH, fname)
 
-        # ── WR 시그널 파일 처리 ──────────────────────────────────────────
         if fname_base.startswith("WR"):
-            # 채널 필터: EE.py → WR...EE 만, MM.py → WR...MM 만 사용
-            if SCRIPT_CHANNEL and not fname_base.endswith(SCRIPT_CHANNEL):
-                continue
-            all_wr_for_channel.add(fname_base)  # 히스토그램 로드 전에 등록
-            h = get_hist_from_file(path, "Central", HIST_NAME, X_MAX_REQ, CUSTOM_BINS, REBIN_FACTOR)
-            if h:
-                print(f"  [SIG ] {fname:<40}: {h.Integral():12.2f} events  (will be x{args.signal_scale})")
-                signal_hists[fname_base] = h
-            else:
-                print(f"  [SIG ] {fname:<40}: histogram not found, will write zero TSV")
-            continue   # 배경/데이터 처리로 넘어가지 않음
-        # ─────────────────────────────────────────────────────────────────
+            continue   # 시그널은 위에서 SIGNAL_DATA_PATH 기준으로 이미 처리함
 
         is_data_file = any(df in fname for df in DATA_FILES)
         tag = "[DATA]" if is_data_file else "[MC  ]"
@@ -306,21 +359,23 @@ def run_plot():
                 else:
                     h_group_dn[matched_group].Add(d)
 
-        # 시그널 up/dn 로드
+        # 시그널 up/dn 로드 (SIGNAL_DATA_PATH 기준, Central과 동일하게 SIGNAL_LUMI_SCALE 적용)
         h_sig_up_d, h_sig_dn_d = {}, {}
-        for fname in all_files:
+        for fname in signal_files:
             fname_base = fname.replace(".root", "")
-            if not fname_base.startswith("WR"):
-                continue
             if SCRIPT_CHANNEL and not fname_base.endswith(SCRIPT_CHANNEL):
                 continue
             if fname_base not in signal_hists:
                 continue
-            path = os.path.join(DATA_PATH, fname)
+            path = os.path.join(SIGNAL_DATA_PATH, fname)
             u = get_hist_from_file(path, f"{syst}_Up",   HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
             d = get_hist_from_file(path, f"{syst}_Down", HIST_NAME, X_MAX, CUSTOM_BINS, REBIN_FACTOR)
-            if u: h_sig_up_d[fname_base] = u
-            if d: h_sig_dn_d[fname_base] = d
+            if u:
+                if SIGNAL_LUMI_SCALE != 1.0: u.Scale(SIGNAL_LUMI_SCALE)
+                h_sig_up_d[fname_base] = u
+            if d:
+                if SIGNAL_LUMI_SCALE != 1.0: d.Scale(SIGNAL_LUMI_SCALE)
+                h_sig_dn_d[fname_base] = d
 
         if h_mc_up and h_mc_dn:
             for i in range(1, n_bins + 1):
@@ -762,7 +817,7 @@ def run_plot():
     latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
     latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
-    latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
+    latex.DrawLatex(0.90, 0.93, LUMI_LABEL)
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, args.label1 if args.label1 else "mumu")
     latex.SetTextFont(42); latex.SetTextSize(0.060)

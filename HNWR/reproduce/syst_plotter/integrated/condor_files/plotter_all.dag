@@ -1,0 +1,16 @@
+# Top-level DAG: every HNWR syst_plotter output in one submission.
+#
+#   sep_22_23   year_sep, 2022 / 2022EE / 2023 / 2023BPix   (24 plot + 4 organize)
+#   sep_2024    year_sep, 2024 only                          ( 6 plot + 1 organize)
+#   combined    year_combined, 2022+2023+2024 @ 172.13 fb-1  ( 6 plot + 1 organize)
+#
+# The three sub-DAGs are independent and run in parallel.
+# Each sub-DAG keeps its own node log (<dagfile>.nodes.log), so they do not
+# interfere even though they share condor_logs/condor.log.
+#
+# Submit from tamsa2:
+#   condor_submit_dag -force /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/condor_files/plotter_all.dag
+
+SUBDAG EXTERNAL sep_22_23 /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/plotter.dag
+SUBDAG EXTERNAL sep_2024  /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/plotter_2024.dag
+SUBDAG EXTERNAL combined  /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_combined/condor_files/plotter.dag

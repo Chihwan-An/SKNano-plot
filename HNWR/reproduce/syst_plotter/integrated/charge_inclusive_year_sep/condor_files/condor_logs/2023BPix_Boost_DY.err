@@ -3,23 +3,265 @@ Info in <TCanvas::Print>: png file BoostDYEE_dilepton_mass_plot.png has been cre
 Info in <TCanvas::Print>: png file BoostDYEE_leading_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT100to400_5ad3156e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_5ad8ab3c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_5b09f070 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_5b09f070 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_5b0a9980 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_5b0a9980 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_5b12ee28 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_5b12ee28 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_5b13b25e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_5b13b25e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_5b5a1fe6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_5b5a1fe6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_5b5addbe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_5b5addbe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_5b62c894 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_5b62c894 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_5b638be4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_5b638be4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_5bac1eb8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_5bac1eb8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_5bacc5ca (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_5bacc5ca (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_5bb4015a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_5bb4015a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_5bb4e03e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_5bb4e03e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_5bf63e44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_5bf63e44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_5bf7534c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_5bf7534c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_5bfe0e4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_5bfe0e4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_5bfef70a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_5bfef70a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_5c4d4392 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_5c4d4392 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_5c4fa164 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_5c4fa164 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_5c55c580 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_5c55c580 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_5c56ae96 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_5c56ae96 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_5ca72768 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_5ca72768 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_5ca7c88a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_5ca7c88a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_5caeb6cc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_5caeb6cc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_5caf8b2e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_5caf8b2e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_5cfabf68 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_5cfabf68 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_5cfb7ac0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_5cfb7ac0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_5d04d192 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_5d04d192 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_5d05f194 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_5d05f194 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_5d5293d2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_5d5293d2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_5d5340e8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_5d5340e8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_5d5d6dd4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_5d5d6dd4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_5d5e404c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_5d5e404c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_5daf180a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_5daf180a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_5db1eee0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_5db1eee0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_5dbba854 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_5dbba854 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_5dbea32e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_5dbea32e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_5e0ea90a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_5e0ea90a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_5e10aeb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_5e10aeb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_5e161564 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_5e161564 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_5e171d7e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_5e171d7e (50, -2.500000, 2.500000)
 Info in <TCanvas::Print>: png file BoostDYEE_fatjet_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_WR_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_WR_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_leading_lep_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_leading_lep_phi_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_subleading_lep_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_subleading_lep_phi_plot.png has been created
@@ -37,20 +279,274 @@ Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_pt_plot.png has been
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_phi_plot.png has been created
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT100to400_cea48914 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_cea74e92 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_cecbff80 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_cecbff80 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_cecc8842 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_cecc8842 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_ced0b854 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_ced0b854 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_ced4b6c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_ced4b6c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_cf133350 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_cf133350 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_cf13d0e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_cf13d0e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_cf19ac08 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_cf19ac08 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_cf1a8952 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_cf1a8952 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_cf5c977a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_cf5c977a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_cf5d2ece (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_cf5d2ece (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_cf61dc58 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_cf61dc58 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_cf62c348 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_cf62c348 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_cfa1ab08 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_cfa1ab08 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_cfa2503a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_cfa2503a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_cfa700a8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_cfa700a8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_cfa7cdda (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_cfa7cdda (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_cfe6b4aa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_cfe6b4aa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_cfe76800 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_cfe76800 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_cfec3394 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_cfec3394 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_cfecfc66 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_cfecfc66 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_d02d5bd0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_d02d5bd0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_d02df7f2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_d02df7f2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_d032a2c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_d032a2c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_d033998c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_d033998c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_d0729bc8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_d0729bc8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_d07342e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_d07342e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_d077f71c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_d077f71c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_d078ee24 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_d078ee24 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_d0b870f8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_d0b870f8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_d0b92232 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_d0b92232 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_d0be081a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_d0be081a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_d0bef360 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_d0bef360 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_d1010a3e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_d1010a3e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_d101c280 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_d101c280 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_d108fe56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_d108fe56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_d109da56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_d109da56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_d151cf96 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_d151cf96 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_d1526e92 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_d1526e92 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_d1575628 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_d1575628 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_d1582fee (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_d1582fee (50, -2.500000, 2.500000)
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dilepton_mass_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_pt_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_leading_lep_phi_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_eta_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_subleading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_fatjet_lsf3_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_deltaR_leadlep_fatjet_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_dphi_leadlep_fatjet_plot.png has been created
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_SS_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_SS_jetnum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_mlljj_plot.png has been created
@@ -58,20 +554,262 @@ Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_mass_plot.png has been 
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_subleading_lep_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_phi_plot.png has been created
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT100to400_3725cea8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_3728bd2a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_375163ce (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_375163ce (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_37545688 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_37545688 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_375a1ec4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_375a1ec4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_375acd88 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_375acd88 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_3795c46a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_3795c46a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_37967e46 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_37967e46 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_379b19f6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_379b19f6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_379bf7fe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_379bf7fe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_37d78684 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_37d78684 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_37d8528a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_37d8528a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_37dce28c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_37dce28c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_37ddac4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_37ddac4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_3823111c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_3823111c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_38266628 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_38266628 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_382aeba8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_382aeba8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_382bb0b0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_382bb0b0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_386973c8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_386973c8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_386a12c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_386a12c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_386eacd0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_386eacd0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_386f7a84 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_386f7a84 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_38aa957e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_38aa957e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_38ab4910 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_38ab4910 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_38b024b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_38b024b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_38b0f9dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_38b0f9dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_38ef1f5a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_38ef1f5a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_38efd4ea (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_38efd4ea (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_38f4bc6c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_38f4bc6c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_38f5bcf2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_38f5bcf2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_3933e5d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_3933e5d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_39349526 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_39349526 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_3939bb00 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_3939bb00 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_393a6dd4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_393a6dd4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_397be408 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_397be408 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_397e2416 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_397e2416 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_3982fe0a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_3982fe0a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_3983d0dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_3983d0dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_39c7574e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_39c7574e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_39c7fe1a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_39c7fe1a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_39ccedb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_39ccedb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_39cdcc3c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_39cdcc3c (50, -2.500000, 2.500000)
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_fatjet_SDM_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_WR_phi_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYEE_OS_leading_lep_eta_plot.png has been created
@@ -95,6 +833,375 @@ Info in <TCanvas::Print>: png file BoostDYMM_leading_lep_pt_plot.png has been cr
 Info in <TCanvas::Print>: png file BoostDYMM_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_dilepton_phi_plot.png has been created
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT100to400_9ee8b8ac (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_9eefacfc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT70to100_9ef0833e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_9f1c0392 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_9f1c0392 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_9f1cd0f6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_9f1cd0f6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_9f23467a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_9f23467a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_9f259cfe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_9f259cfe (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT70to100_9f26b40e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT70to100_9f26b40e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT70to100_9f271976 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT70to100_9f271976 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_9f6341bc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_9f6341bc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_9f640dcc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_9f640dcc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_9f695458 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_9f695458 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_9f6a2414 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_9f6a2414 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT70to100_9f6b3048 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT70to100_9f6b3048 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT70to100_9f6b9844 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT70to100_9f6b9844 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_9fa8b8e6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_9fa8b8e6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_9fa983d4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_9fa983d4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_9fae7524 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_9fae7524 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_9faf476a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_9faf476a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT70to100_9fb06492 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT70to100_9fb06492 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT70to100_9fb0d1c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT70to100_9fb0d1c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_9ff1a538 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_9ff1a538 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_9ff24132 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_9ff24132 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_9ff6fbfa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_9ff6fbfa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_9ff7e5a6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_9ff7e5a6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT70to100_9ff8f112 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT70to100_9ff8f112 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT70to100_9ff94c84 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT70to100_9ff94c84 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_a03d92d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_a03d92d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_a03e3786 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_a03e3786 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_a04304d2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_a04304d2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_a043edb6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_a043edb6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT70to100_a044ffb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT70to100_a044ffb2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT70to100_a0455ade (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT70to100_a0455ade (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_a08313c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_a08313c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_a083e81c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_a083e81c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_a08911de (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_a08911de (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_a089dee8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_a089dee8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT70to100_a08aeb4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT70to100_a08aeb4e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT70to100_a08b54ee (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT70to100_a08b54ee (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_a0c8af60 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_a0c8af60 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_a0c9558c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_a0c9558c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_a0ce244a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_a0ce244a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_a0cf1954 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_a0cf1954 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT70to100_a0d0317c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT70to100_a0d0317c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT70to100_a0d08ce4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT70to100_a0d08ce4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_a112b6c8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_a112b6c8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_a1135c4a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_a1135c4a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_a1189d68 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_a1189d68 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_a11973e6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_a11973e6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT70to100_a11a7dcc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT70to100_a11a7dcc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT70to100_a11ae5aa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT70to100_a11ae5aa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_a15a44c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_a15a44c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_a15aeb82 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_a15aeb82 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_a1619522 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_a1619522 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_a162758c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_a162758c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT70to100_a16386e8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT70to100_a16386e8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT70to100_a163dcb0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT70to100_a163dcb0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_a1a543b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_a1a543b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_a1a5fc44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_a1a5fc44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_a1ab3e20 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_a1ab3e20 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_a1ac367c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_a1ac367c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT70to100_a1ad6844 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT70to100_a1ad6844 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT70to100_a1adbd30 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT70to100_a1adbd30 (50, -2.500000, 2.500000)
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_fatjet_SDM_plot.png has been created
@@ -121,6 +1228,129 @@ Info in <TCanvas::Print>: png file BoostDYMM_SS_subleading_lep_pt_plot.png has b
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_SS_dilepton_phi_plot.png has been created
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_05f8d946 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_06201c36 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_06201c36 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_0620d18a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_0620d18a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_065a95b4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_065a95b4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_065b6642 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_065b6642 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_069a268e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_069a268e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_069ad9e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_069ad9e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_06daa8e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_06daa8e4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_06db7c56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_06db7c56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_07216464 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_07216464 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_07222e44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_07222e44 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_07635108 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_07635108 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_07641d4a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_07641d4a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_07a8bf2c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_07a8bf2c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_07a996c2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_07a996c2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_07ed4b06 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_07ed4b06 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_07ee19fa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_07ee19fa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_08321e2a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_08321e2a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_0832f76e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_0832f76e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_0876b486 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_0876b486 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_08779068 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_08779068 (50, -2.500000, 2.500000)
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_SS_fatjet_SDM_plot.png has been created
@@ -149,6 +1379,375 @@ Info in <TCanvas::Print>: png file BoostDYMM_OS_leading_lep_pt_plot.png has been
 Info in <TCanvas::Print>: png file BoostDYMM_OS_subleading_lep_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostDYMM_OS_dilepton_phi_plot.png has been created
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT100to400_684f4076 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT400to800_68526af8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_group_DYJets (50, -2.400000, 2.400000), second: h_Central_DYMLL50to120HT70to100_68531eee (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_6878bece (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT100to400_6878bece (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_68795ac8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT100to400_68795ac8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_687dbc9e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT400to800_687dbc9e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_687e8fc0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT400to800_687e8fc0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT70to100_687f9bf4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Up_DYMLL50to120HT70to100_687f9bf4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT70to100_68800508 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_Pileup_Down_DYMLL50to120HT70to100_68800508 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_68b8a868 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT100to400_68b8a868 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_68b93ada (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT100to400_68b93ada (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_68bd75dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT400to800_68bd75dc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_68be41ba (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT400to800_68be41ba (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT70to100_68bf32f0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Up_DYMLL50to120HT70to100_68bf32f0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT70to100_68bf938a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronID_Down_DYMLL50to120HT70to100_68bf938a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_68f92956 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT100to400_68f92956 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_68f9e7e2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT100to400_68f9e7e2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_68fe762c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT400to800_68fe762c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_68ff37ce (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT400to800_68ff37ce (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT70to100_69003282 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Up_DYMLL50to120HT70to100_69003282 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT70to100_690097a4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronReco_Down_DYMLL50to120HT70to100_690097a4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_6939d19a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT100to400_6939d19a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_693a7636 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT100to400_693a7636 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_693f057a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT400to800_693f057a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_693fd036 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT400to800_693fd036 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT70to100_6940d148 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Up_DYMLL50to120HT70to100_6940d148 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT70to100_69412b02 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_ElectronTrig_Down_DYMLL50to120HT70to100_69412b02 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_697b1768 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT100to400_697b1768 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_697bb36c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT100to400_697bb36c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_698036f8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT400to800_698036f8 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_6981013c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT400to800_6981013c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT70to100_69820e6a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Up_DYMLL50to120HT70to100_69820e6a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT70to100_698267f2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonID_Down_DYMLL50to120HT70to100_698267f2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_69bd44b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT100to400_69bd44b2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_69bddc6a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT100to400_69bddc6a (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_69c244d0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT400to800_69c244d0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_69c3012c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT400to800_69c3012c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT70to100_69c4172e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Up_DYMLL50to120HT70to100_69c4172e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT70to100_69c47dea (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonReco_Down_DYMLL50to120HT70to100_69c47dea (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_69fe11d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT100to400_69fe11d6 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_69feac18 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT100to400_69feac18 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_6a02e90e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT400to800_6a02e90e (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_6a03caa4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT400to800_6a03caa4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT70to100_6a04c332 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Up_DYMLL50to120HT70to100_6a04c332 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT70to100_6a052124 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonTrig_Down_DYMLL50to120HT70to100_6a052124 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_6a3efb56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT100to400_6a3efb56 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_6a3fa3bc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT100to400_6a3fa3bc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_6a442c16 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT400to800_6a442c16 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_6a44fbdc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT400to800_6a44fbdc (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT70to100_6a45f848 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Up_DYMLL50to120HT70to100_6a45f848 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT70to100_6a4652c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_MuonIso_Down_DYMLL50to120HT70to100_6a4652c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_6a8227a0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT100to400_6a8227a0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_6a82ce12 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT100to400_6a82ce12 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_6a879c94 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT400to800_6a879c94 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_6a886688 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT400to800_6a886688 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT70to100_6a897afa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JER_Up_DYMLL50to120HT70to100_6a897afa (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT70to100_6a89e97c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JER_Down_DYMLL50to120HT70to100_6a89e97c (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_6ac731c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT100to400_6ac731c4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_6ac7d8c2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT100to400_6ac7d8c2 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_6acca686 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT400to800_6acca686 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_6acd7ad4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT400to800_6acd7ad4 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT70to100_6ace8280 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_up_DYJets (50, -2.400000, 2.400000), second: h_JES_Up_DYMLL50to120HT70to100_6ace8280 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT70to100_6acef1c0 (50, -2.500000, 2.500000)
+Info in <TH1D::Add>: Histograms have different axis limits - trying to use TH1::Merge
+Error in <Merge>: Cannot merge histograms - limits are inconsistent:
+ first: h_dn_DYJets (50, -2.400000, 2.400000), second: h_JES_Down_DYMLL50to120HT70to100_6acef1c0 (50, -2.500000, 2.500000)
 Info in <TCanvas::Print>: png file BoostDYMM_OS_fatjet_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostDYMM_OS_fatjet_phi_plot.png has been created

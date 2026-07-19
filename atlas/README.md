@@ -35,4 +35,20 @@ python atlas_plotter.py \
 ```
 
 SR regions are blinded automatically when the histogram path contains `bSR` or
-`rSR`. The uncertainty band is MC statistical uncertainty only.
+`rSR`. The uncertainty band is MC statistical uncertainty only (no systematic
+band, unlike the HNWR `syst_plotter`).
+
+Each plot is written in three formats: `<output>.png`, `<output>.pdf`, and a
+per-bin yield table `<output>.tsv`.
+
+Useful tuning flags (all used by `run_atlas_plots.sh`):
+
+```bash
+python atlas_plotter.py \
+  --data-path ... --hist ... --output ... \
+  --bins 800,1000,1200,...,8000 \   # custom bin edges
+  --rebin N \                        # or simple rebin
+  --rmin 0 --rmax 2 \                # ratio pad range
+  --signal-scale 10                  # display-only signal scaling
+```
+

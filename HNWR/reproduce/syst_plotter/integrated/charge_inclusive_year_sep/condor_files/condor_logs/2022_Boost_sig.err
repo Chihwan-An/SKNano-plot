@@ -5,7 +5,6 @@ Info in <TCanvas::Print>: png file BoostSREE_leading_lep_pt_plot.png has been cr
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSREE_subleading_lep_pt_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSREE_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_fatjet_eta_plot.png has been created

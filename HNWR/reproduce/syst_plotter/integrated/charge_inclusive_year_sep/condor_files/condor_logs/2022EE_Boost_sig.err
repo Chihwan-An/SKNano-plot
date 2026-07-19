@@ -25,7 +25,6 @@ Info in <TCanvas::Print>: png file BoostSREE_dphi_leadlep_fatjet_plot.png has be
 Info in <TCanvas::Print>: png file BoostSREE_punum_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_jetnum_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSREE_SS_Dilepton_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_SS_leading_fatjet_pt_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSREE_SS_WRMass_plot.png has been created
@@ -49,8 +48,6 @@ Info in <TCanvas::Print>: png file BoostSRMM_dilepton_phi_plot.png has been crea
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_fatjet_SDM_plot.png has been created
-Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-9211807
-Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-9211807
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostSRMM_dilepton_mass_plot.png has been created
 Info in <TCanvas::Print>: png file BoostSRMM_WR_pt_plot.png has been created

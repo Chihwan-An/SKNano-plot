@@ -14,7 +14,6 @@ Info in <TCanvas::Print>: png file BoostFLVEMJ_dilepton_mass_plot.png has been c
 Info in <TCanvas::Print>: png file BoostFLVEMJ_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_leading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_subleading_lep_phi_plot.png has been created
@@ -47,7 +46,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_leading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVEMJ_SS_subleading_lep_phi_plot.png has been created
@@ -110,7 +108,6 @@ Info in <TCanvas::Print>: png file BoostFLVMEJ_dilepton_mass_plot.png has been c
 Info in <TCanvas::Print>: png file BoostFLVMEJ_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_leading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_subleading_lep_phi_plot.png has been created
@@ -143,7 +140,6 @@ THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may pr
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_dilepton_eta_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_dilepton_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_WR_eta_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_WR_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_leading_lep_phi_plot.png has been created
 Info in <TCanvas::Print>: png file BoostFLVMEJ_SS_subleading_lep_phi_plot.png has been created

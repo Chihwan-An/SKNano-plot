@@ -1,0 +1,217 @@
+000 (16315820.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Boost_DY
+...
+000 (16315821.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Boost_FLV
+...
+000 (16315822.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Boost_sig
+...
+000 (16315823.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Resolve_DY
+...
+000 (16315824.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Resolve_FLV
+...
+000 (16315825.000.000) 2026-07-10 10:09:00 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_Resolve_sig
+...
+001 (16315820.000.000) 2026-07-10 10:09:20 Job executing on host: <172.30.1.213:9618?addrs=172.30.1.213-9618&alias=node-w13.localdomain&noUDP&sock=startd_4483_8b29>
+	SlotName: slot1_27@node-w13.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_3892908"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+001 (16315821.000.000) 2026-07-10 10:09:20 Job executing on host: <172.30.1.213:9618?addrs=172.30.1.213-9618&alias=node-w13.localdomain&noUDP&sock=startd_4483_8b29>
+	SlotName: slot1_28@node-w13.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_3892909"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+001 (16315823.000.000) 2026-07-10 10:09:20 Job executing on host: <172.30.1.213:9618?addrs=172.30.1.213-9618&alias=node-w13.localdomain&noUDP&sock=startd_4483_8b29>
+	SlotName: slot1_30@node-w13.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_3892910"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+001 (16315822.000.000) 2026-07-10 10:09:20 Job executing on host: <172.30.1.213:9618?addrs=172.30.1.213-9618&alias=node-w13.localdomain&noUDP&sock=startd_4483_8b29>
+	SlotName: slot1_29@node-w13.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_3892911"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+001 (16315824.000.000) 2026-07-10 10:09:21 Job executing on host: <172.30.1.215:9618?addrs=172.30.1.215-9618&alias=node-w15.localdomain&noUDP&sock=startd_1576221_147d>
+	SlotName: slot1_36@node-w15.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_4140937"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+001 (16315825.000.000) 2026-07-10 10:09:21 Job executing on host: <172.30.1.215:9618?addrs=172.30.1.215-9618&alias=node-w15.localdomain&noUDP&sock=startd_1576221_147d>
+	SlotName: slot1_37@node-w15.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_4140938"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+005 (16315822.000.000) 2026-07-10 10:20:45 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:08:15, Sys 0 00:00:33  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:15, Sys 0 00:00:33  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.73        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   235        4096      4096 
+	   TimeExecute (s)      :   685                       
+	   TimeSlotBusy (s)     :   685                       
+
+	Job terminated of its own accord at 2026-07-10T01:20:45Z with exit-code 0.
+...
+005 (16315824.000.000) 2026-07-10 10:27:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:14:11, Sys 0 00:00:54  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:14:11, Sys 0 00:00:54  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.72        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   164        4096      4096 
+	   TimeExecute (s)      :  1088                       
+	   TimeSlotBusy (s)     :  1089                       
+
+	Job terminated of its own accord at 2026-07-10T01:27:29Z with exit-code 0.
+...
+005 (16315820.000.000) 2026-07-10 10:32:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:18:28, Sys 0 00:01:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:18:28, Sys 0 00:01:15  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.91        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   154        4096      4096 
+	   TimeExecute (s)      :  1413                       
+	   TimeSlotBusy (s)     :  1413                       
+
+	Job terminated of its own accord at 2026-07-10T01:32:53Z with exit-code 0.
+...
+005 (16315821.000.000) 2026-07-10 10:33:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:19:23, Sys 0 00:01:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:19:23, Sys 0 00:01:23  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.77        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   167        4096      4096 
+	   TimeExecute (s)      :  1478                       
+	   TimeSlotBusy (s)     :  1478                       
+
+	Job terminated of its own accord at 2026-07-10T01:33:58Z with exit-code 0.
+...
+005 (16315823.000.000) 2026-07-10 10:42:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:25:40, Sys 0 00:01:51  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:25:40, Sys 0 00:01:51  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.78        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   153        4096      4096 
+	   TimeExecute (s)      :  1981                       
+	   TimeSlotBusy (s)     :  1981                       
+
+	Job terminated of its own accord at 2026-07-10T01:42:21Z with exit-code 0.
+...
+005 (16315825.000.000) 2026-07-10 10:45:13 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:28:02, Sys 0 00:01:54  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:28:02, Sys 0 00:01:54  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.70        1         1 
+	   Disk (KB)            :     2     2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   158        4096      4096 
+	   TimeExecute (s)      :  2152                       
+	   TimeSlotBusy (s)     :  2153                       
+
+	Job terminated of its own accord at 2026-07-10T01:45:13Z with exit-code 0.
+...
+000 (16315833.000.000) 2026-07-10 10:45:22 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_2474_8965>
+    DAG Node: 2024_organize
+...
+001 (16315833.000.000) 2026-07-10 10:45:41 Job executing on host: <172.30.1.215:9618?addrs=172.30.1.215-9618&alias=node-w15.localdomain&noUDP&sock=startd_1576221_147d>
+	SlotName: slot1_36@node-w15.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_4155759"
+	Cpus = 1
+	Disk = 2098176
+	GPUs = 0
+	Memory = 4096
+...
+005 (16315833.000.000) 2026-07-10 10:45:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  2097152   2098176 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0     4096      4096 
+	   TimeExecute (s)      :        8                    
+	   TimeSlotBusy (s)     :        8                    
+
+	Job terminated of its own accord at 2026-07-10T01:45:49Z with exit-code 0.
+...

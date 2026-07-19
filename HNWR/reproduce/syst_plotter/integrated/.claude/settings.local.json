@@ -11,7 +11,27 @@
       "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsEE/combined/impact_plot/dag/step*.sh)",
       "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsMM/combined/impact/dag/step*.sh)",
       "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsMM/combined/impact/dag/submit.sh)",
-      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsEE/combined/impact_plot/dag/submit.sh)"
+      "Bash(chmod +x /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src/HiggsAnalysis/CombinedLimit/data/HNWR/datacardsEE/combined/impact_plot/dag/submit.sh)",
+      "Bash(condor_q:*)",
+      "Read(//gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/**)",
+      "Read(//gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/2024/**)",
+      "Bash(python3 -c \"import uproot; print\\('uproot', uproot.__version__\\)\")",
+      "Bash(singularity exec --bind /data6:/data6,/home/achihwan:/home/achihwan,/gv0:/gv0 /data6/Users/achihwan/private-el9.sif bash -c ' *)",
+      "Read(//data6/Users/achihwan/SKNanoAnalyzer-v13/**)",
+      "Bash(grep -vE \"zoxide|ajeetdsouza|persist|^$\")",
+      "Bash(condor_submit_dag -f plotter_2024.dag)",
+      "Bash(condor_submit_dag -f plotter.dag)",
+      "Bash(grep -vE \"zoxide|ajeet|Disable|http|^$\")",
+      "Bash(grep -vE \"^$\")",
+      "Bash(python3 -c ' *)",
+      "Read(//data6/Users/achihwan/miniconda3/**)",
+      "Read(//home/achihwan/miniconda3/**)",
+      "Read(//home/achihwan/micromamba/**)",
+      "Read(//opt/**)",
+      "Bash(find / -maxdepth 4 -name \"micromamba\" -type d)",
+      "Read(//data6/Users/achihwan/miniforge3/envs/**)",
+      "Bash(/data6/Users/achihwan/miniforge3/envs/Nano/bin/python -c \"import ROOT; print\\('ok'\\)\")",
+      "Bash(/data6/Users/achihwan/miniforge3/envs/Nano/bin/python -c ' *)"
     ]
   }
 }

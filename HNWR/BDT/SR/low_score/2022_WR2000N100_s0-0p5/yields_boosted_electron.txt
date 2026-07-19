@@ -1,0 +1,7 @@
+score in [0, 0.5]  theta=(mWR=2000, mN=100)  model=/data6/Users/achihwan/SKNanoAnalyzer-v13/BDT/SR/parameterized/2022/binned_model/WR2000_4000_Nlow
+group             yield_all yield_lowscore     frac
+DYJets               252.79         248.12    0.982
+TT                   236.90         236.06    0.996
+Nonprompt            266.24         265.50    0.997
+Others                42.27          40.68    0.962
+DATA                   1241           1216    0.980

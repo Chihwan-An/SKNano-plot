@@ -54,14 +54,12 @@ Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_jet_eta_plot.png ha
 Info in <TCanvas::Print>: png file ResolveSREE_SS_subleading_jet_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_mass_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_j1j2_phi_plot.png has been created
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_mass_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_pt_plot.png has been created
-THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_eta_plot.png has been created
 THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
 Info in <TCanvas::Print>: png file ResolveSREE_SS_l1j1j2_phi_plot.png has been created

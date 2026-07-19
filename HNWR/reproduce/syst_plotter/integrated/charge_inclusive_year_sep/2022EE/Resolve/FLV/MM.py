@@ -58,6 +58,17 @@ except:
     CMS_STYLE = False
 
 
+# 플롯에 사용할 WR 시그널 mass point (컨트롤 리전에서는 시그널을 쓰지 않는다)
+SIGNAL_MASS_POINTS = ("WR2000N200", "WR2000N1000", "WR4000N200", "WR4000N2000")
+
+
+def use_signal(fname_base, hist_name):
+    """CR 히스토그램이면 시그널 제외, SR이면 SIGNAL_MASS_POINTS 만 사용."""
+    if "CR" in hist_name.upper():
+        return False
+    return re.sub(r"(EE|MM)$", "", fname_base) in SIGNAL_MASS_POINTS
+
+
 def format_signal_label(fname_base, scale):
     """
     'WR4000N2100MM' -> 'WR 4.0 TeV N 2.1 TeV (x10)'
@@ -174,6 +185,8 @@ def run_plot():
         if fname_base.startswith("WR"):
             # 채널 필터: MM.py → WR...MM 만 사용
             if SCRIPT_CHANNEL and not fname_base.endswith(SCRIPT_CHANNEL):
+                continue
+            if not use_signal(fname_base, HIST_NAME):
                 continue
             all_wr_for_channel.add(fname_base)  # 히스토그램 로드 전에 등록
             h = get_hist_from_file(path, "Central", HIST_NAME, X_MAX_REQ, CUSTOM_BINS, REBIN_FACTOR)
