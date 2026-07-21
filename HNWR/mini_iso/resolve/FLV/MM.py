@@ -436,7 +436,7 @@ def run_plot():
     latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
     latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
-    latex.DrawLatex(0.90, 0.93, "172.13 fb^{-1} (13.6 TeV)")
+    latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, "E #mu")
     latex.SetTextFont(42); latex.SetTextSize(0.060)

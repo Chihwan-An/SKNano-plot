@@ -8,7 +8,7 @@ import ctypes
 import re
 
 # --- 1. 기본 설정 (인자가 없을 경우 사용됨) ---
-DEFAULT_DATA_PATH = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23_24/merged/"
+DEFAULT_DATA_PATH = "/gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/merged/"
 DEFAULT_HIST_NAME = "Obj_PU_Corr_DYCR_Resolved_EE_pt"
 
 # 스크립트 이름으로 채널 자동 감지 (EE.py → "EE", MM.py → "MM")
@@ -670,7 +670,7 @@ def run_plot():
     latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
     latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
-    latex.DrawLatex(0.90, 0.93, "172.13 fb^{-1} (13.6 TeV)")
+    latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, "ee")
     latex.SetTextFont(42); latex.SetTextSize(0.060)

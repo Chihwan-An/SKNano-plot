@@ -52,6 +52,9 @@ SIGNAL_COLORS = [ROOT.kMagenta, ROOT.kCyan+1, ROOT.kOrange+7, ROOT.kSpring+5,
 # 메모리 누수 방지용
 _KEEPER = []
 
+# --no-overflow 플래그 (run_plot에서 설정)
+NO_OVERFLOW = False
+
 try:
     import cmsstyle as CMS
     CMS_STYLE = True
@@ -112,19 +115,24 @@ def get_hist_from_file(file_path, sys_dir, hist_name, x_max, custom_bins=None, r
     f.Close()
 
     # 마지막 빈에 x_max 이후의 모든 값(오버플로우 포함) 합산
+    # --no-overflow 지정 시 합산하지 않고 xmax 이후 빈을 버림
     h_xmax = h.GetXaxis().GetXmax()
     actual_xmax = min(x_max, h_xmax)
 
     last_bin = h.FindBin(actual_xmax - 0.001)
     nbins = h.GetNbinsX()
-    cont, err_sq = 0, 0
-    for i in range(last_bin, nbins + 2):
-        cont += h.GetBinContent(i)
-        err_sq += h.GetBinError(i)**2
-        if i > last_bin:
+    if NO_OVERFLOW:
+        for i in range(last_bin + 1, nbins + 2):
             h.SetBinContent(i, 0); h.SetBinError(i, 0)
-    h.SetBinContent(last_bin, cont)
-    h.SetBinError(last_bin, math.sqrt(err_sq))
+    else:
+        cont, err_sq = 0, 0
+        for i in range(last_bin, nbins + 2):
+            cont += h.GetBinContent(i)
+            err_sq += h.GetBinError(i)**2
+            if i > last_bin:
+                h.SetBinContent(i, 0); h.SetBinError(i, 0)
+        h.SetBinContent(last_bin, cont)
+        h.SetBinError(last_bin, math.sqrt(err_sq))
 
     return h
 
@@ -145,7 +153,11 @@ def run_plot():
     parser.add_argument("--rmin",         type=float, default=0.5,               help="Ratio 패널 Y축 최소값")
     parser.add_argument("--rmax",         type=float, default=1.5,               help="Ratio 패널 Y축 최대값")
     parser.add_argument("--signal-scale", type=float, default=1.0,              help="Signal(WR) 히스토그램에 곱할 스케일 팩터 (기본값: 10)")
+    parser.add_argument("--no-overflow",  action="store_true", default=False,    help="xmax 이후 값을 마지막 빈에 합산하지 않고 버림")
     args = parser.parse_args()
+
+    global NO_OVERFLOW
+    NO_OVERFLOW = args.no_overflow
 
     HIST_NAME    = args.hist
     IS_BLIND     = False
@@ -436,7 +448,7 @@ def run_plot():
     latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
     latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
     latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
-    latex.DrawLatex(0.90, 0.93, "172.13 fb^{-1} (13.6 TeV)")
+    latex.DrawLatex(0.90, 0.93, "62.31 fb^{-1} (13.6 TeV)")
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, "#mu-E Jet")
     latex.SetTextFont(42); latex.SetTextSize(0.060)

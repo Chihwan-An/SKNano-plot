@@ -1,5 +1,5 @@
 === Running plotter in: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/mini_iso/boost/FLV ===
-=== Start time: Sun Jul 19 01:36:42 PM KST 2026 ===
+=== Start time: Sun Jul 19 04:18:50 PM KST 2026 ===
 Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python
 ROOT: /data6/Users/achihwan/micromamba/envs/Nano/bin/root
 
@@ -15683,38 +15683,135 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      143.2 |      110.0 |     1.8% |      3.8% |      3.7% |      4.2% |      4.1%
-2    | [0, 0]             |       12.8 |       10.0 |     6.2% |      4.1% |      4.7% |      7.4% |      7.7%
+1    | [0, 0]             |      116.8 |       93.0 |     2.0% |      3.8% |      3.7% |      4.3% |      4.2%
+2    | [0, 0]             |       10.6 |        6.0 |     6.6% |      4.0% |      3.8% |      7.8% |      7.6%
+3    | [0, 0]             |        6.9 |        7.0 |     8.1% |      3.7% |      3.6% |      8.9% |      8.9%
+4    | [0, 0]             |        4.8 |        4.0 |     9.6% |      3.6% |      3.9% |     10.3% |     10.4%
+5    | [0, 0]             |        4.0 |        0.0 |    11.1% |      3.9% |      3.5% |     11.8% |     11.7%
+6    | [0, 0]             |        3.3 |        2.0 |    11.8% |      4.3% |      4.0% |     12.6% |     12.5%
+7    | [0, 0]             |        2.2 |        1.0 |    15.4% |      7.0% |      5.7% |     16.9% |     16.4%
+8    | [0, 0]             |        2.7 |        1.0 |    13.0% |      5.7% |      7.2% |     14.2% |     14.9%
+9    | [0, 0]             |        2.6 |        3.0 |    13.2% |      5.3% |      5.5% |     14.2% |     14.3%
+10   | [0, 0]             |        1.9 |        3.0 |    17.3% |      3.8% |      7.5% |     17.7% |     18.8%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.84%
-  ElectronID     :     2.59%
-  ElectronReco   :     2.35%
+  Pileup         :     2.96%
+  ElectronID     :     2.61%
+  ElectronReco   :     2.31%
   ElectronTrig   :     0.35%
   MuonID         :     0.00%
   MuonReco       :     0.00%
   MuonTrig       :     0.00%
   MuonIso        :     0.00%
-  JER            :     0.33%
-  JES            :     0.79%
+  JER            :     0.35%
+  JES            :     0.86%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. ElectronID     :     2.59%
-   2. ElectronReco   :     2.35%
-   3. Pileup         :     1.84%
-   4. JES            :     0.79%
+   1. Pileup         :     2.96%
+   2. ElectronID     :     2.61%
+   3. ElectronReco   :     2.31%
+   4. JES            :     0.86%
    5. ElectronTrig   :     0.35%
-   6. JER            :     0.33%
+   6. JER            :     0.35%
    7. MuonID         :     0.00%
    8. MuonReco       :     0.00%
    9. MuonTrig       :     0.00%
   10. MuonIso        :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVEMJ_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVEMJ_subleadlep_miniiso_plot.png
+>> TSV saved as BoostFLVEMJ_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVEMJ_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_EMJ_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.08 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.03 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.01 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.03 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.02 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.52 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.04 events
+  [DATA] EGamma_merged.root                      :       120.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.01 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         7.73 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.27 events
+  [MC  ] ST_tW_top_Lep.root                      :         7.42 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.48 events
+  [MC  ] TTLJ_powheg.root                        :         4.31 events
+  [MC  ] TTLL_powheg.root                        :       125.36 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.21 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.12 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.89 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.85 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.00 events
+  [MC  ] WWto2L2Nu.root                          :         3.96 events
+  [MC  ] WWtoLNu2Q.root                          :         0.17 events
+  [MC  ] WZto2L2Q.root                           :         0.00 events
+  [MC  ] WZto3LNu.root                           :         1.30 events
+  [MC  ] WZtoLNu2Q.root                          :         0.07 events
+  [MC  ] ZZto2L2Nu.root                          :         0.00 events
+  [MC  ] ZZto2L2Q.root                           :         0.08 events
+  [MC  ] ZZto4L.root                             :         0.15 events
+  [MC  ] ttWtoLNu.root                           :         1.38 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.06 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.29 events
+  [MC  ] ttZtoNuNu.root                          :         0.09 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      116.8 |       93.0 |     2.0% |      3.8% |      3.7% |      4.3% |      4.2%
+2    | [0, 0]             |       10.6 |        6.0 |     6.6% |      4.0% |      3.8% |      7.8% |      7.6%
+3    | [0, 0]             |        6.9 |        7.0 |     8.1% |      3.7% |      3.6% |      8.9% |      8.9%
+4    | [0, 0]             |        4.8 |        4.0 |     9.6% |      3.6% |      3.9% |     10.3% |     10.4%
+5    | [0, 0]             |        4.0 |        0.0 |    11.1% |      3.9% |      3.5% |     11.8% |     11.7%
+6    | [0, 0]             |        3.3 |        2.0 |    11.8% |      4.3% |      4.0% |     12.6% |     12.5%
+7    | [0, 0]             |        2.2 |        1.0 |    15.4% |      7.0% |      5.7% |     16.9% |     16.4%
+8    | [0, 0]             |        2.7 |        1.0 |    13.0% |      5.7% |      7.2% |     14.2% |     14.9%
+9    | [0, 0]             |        2.6 |        3.0 |    13.2% |      5.3% |      5.5% |     14.2% |     14.3%
+10   | [0, 0]             |        1.9 |        3.0 |    17.3% |      3.8% |      7.5% |     17.7% |     18.8%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     2.96%
+  ElectronID     :     2.61%
+  ElectronReco   :     2.31%
+  ElectronTrig   :     0.35%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.35%
+  JES            :     0.86%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     2.96%
+   2. ElectronID     :     2.61%
+   3. ElectronReco   :     2.31%
+   4. JES            :     0.86%
+   5. ElectronTrig   :     0.35%
+   6. JER            :     0.35%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVEMJ_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVEMJ_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: FlavCR_Boosted_EMJ_SS_subleadlep_miniiso
 >> Channel filter active: only WR files ending with 'EE' will be loaded
@@ -15760,38 +15857,131 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |        6.0 |        6.0 |    10.1% |      6.1% |      4.8% |     11.8% |     11.2%
-2    | [0, 0]             |        2.6 |        3.0 |    15.1% |      4.1% |      4.8% |     15.6% |     15.8%
+1    | [0, 0]             |        4.6 |        6.0 |    11.5% |      6.0% |      5.0% |     12.9% |     12.5%
+2    | [0, 0]             |        0.6 |        0.0 |    30.3% |     12.0% |      7.9% |     32.6% |     31.3%
+3    | [0, 0]             |        0.3 |        0.0 |    49.7% |      6.0% |      3.6% |     50.0% |     49.8%
+4    | [0, 0]             |        0.3 |        0.0 |    35.4% |     11.4% |      7.9% |     37.2% |     36.2%
+5    | [0, 0]             |        0.3 |        0.0 |    55.5% |     16.6% |     11.6% |     58.0% |     56.7%
+6    | [0, 0]             |        0.3 |        1.0 |    40.9% |      2.4% |      6.0% |     40.9% |     41.3%
+7    | [0, 0]             |        0.5 |        0.0 |    33.1% |      6.0% |      3.6% |     33.7% |     33.3%
+8    | [0, 0]             |        0.7 |        0.0 |    26.6% |     13.7% |     12.9% |     30.0% |     29.6%
+9    | [0, 0]             |        0.5 |        2.0 |    30.0% |      6.2% |      6.6% |     30.6% |     30.7%
+10   | [0, 0]             |        0.6 |        0.0 |    38.7% |      5.4% |      8.8% |     39.0% |     39.7%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     3.64%
-  ElectronID     :     2.82%
-  ElectronReco   :     2.67%
-  ElectronTrig   :     0.39%
+  Pileup         :     7.54%
+  ElectronID     :     2.81%
+  ElectronReco   :     2.21%
+  ElectronTrig   :     0.40%
   MuonID         :     0.00%
   MuonReco       :     0.00%
   MuonTrig       :     0.00%
   MuonIso        :     0.00%
-  JER            :     0.06%
-  JES            :     1.09%
+  JER            :     0.28%
+  JES            :     1.71%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. Pileup         :     3.64%
-   2. ElectronID     :     2.82%
-   3. ElectronReco   :     2.67%
-   4. JES            :     1.09%
-   5. ElectronTrig   :     0.39%
-   6. JER            :     0.06%
+   1. Pileup         :     7.54%
+   2. ElectronID     :     2.81%
+   3. ElectronReco   :     2.21%
+   4. JES            :     1.71%
+   5. ElectronTrig   :     0.40%
+   6. JER            :     0.28%
    7. MuonID         :     0.00%
    8. MuonReco       :     0.00%
    9. MuonTrig       :     0.00%
   10. MuonIso        :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVEMJ_SS_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVEMJ_SS_subleadlep_miniiso_plot.png
+>> TSV saved as BoostFLVEMJ_SS_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVEMJ_SS_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_EMJ_SS_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.00 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.00 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.43 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.01 events
+  [DATA] EGamma_merged.root                      :         9.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         0.11 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.11 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.15 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.28 events
+  [MC  ] TTLJ_powheg.root                        :         2.99 events
+  [MC  ] TTLL_powheg.root                        :         2.17 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.21 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.07 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.38 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.17 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.00 events
+  [MC  ] WWto2L2Nu.root                          :         0.11 events
+  [MC  ] WWtoLNu2Q.root                          :         0.01 events
+  [MC  ] WZto2L2Q.root                           :         0.00 events
+  [MC  ] WZto3LNu.root                           :         0.69 events
+  [MC  ] WZtoLNu2Q.root                          :         0.03 events
+  [MC  ] ZZto2L2Nu.root                          :         0.00 events
+  [MC  ] ZZto2L2Q.root                           :         0.05 events
+  [MC  ] ZZto4L.root                             :         0.07 events
+  [MC  ] ttWtoLNu.root                           :         0.45 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.01 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.10 events
+  [MC  ] ttZtoNuNu.root                          :        -0.01 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |        4.6 |        6.0 |    11.5% |      6.0% |      5.0% |     12.9% |     12.5%
+2    | [0, 0]             |        0.6 |        0.0 |    30.3% |     12.0% |      7.9% |     32.6% |     31.3%
+3    | [0, 0]             |        0.3 |        0.0 |    49.7% |      6.0% |      3.6% |     50.0% |     49.8%
+4    | [0, 0]             |        0.3 |        0.0 |    35.4% |     11.4% |      7.9% |     37.2% |     36.2%
+5    | [0, 0]             |        0.3 |        0.0 |    55.5% |     16.6% |     11.6% |     58.0% |     56.7%
+6    | [0, 0]             |        0.3 |        1.0 |    40.9% |      2.4% |      6.0% |     40.9% |     41.3%
+7    | [0, 0]             |        0.5 |        0.0 |    33.1% |      6.0% |      3.6% |     33.7% |     33.3%
+8    | [0, 0]             |        0.7 |        0.0 |    26.6% |     13.7% |     12.9% |     30.0% |     29.6%
+9    | [0, 0]             |        0.5 |        2.0 |    30.0% |      6.2% |      6.6% |     30.6% |     30.7%
+10   | [0, 0]             |        0.6 |        0.0 |    38.7% |      5.4% |      8.8% |     39.0% |     39.7%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     7.54%
+  ElectronID     :     2.81%
+  ElectronReco   :     2.21%
+  ElectronTrig   :     0.40%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.28%
+  JES            :     1.71%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     7.54%
+   2. ElectronID     :     2.81%
+   3. ElectronReco   :     2.21%
+   4. JES            :     1.71%
+   5. ElectronTrig   :     0.40%
+   6. JER            :     0.28%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVEMJ_SS_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVEMJ_SS_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: FlavCR_Boosted_EMJ_OS_subleadlep_miniiso
 >> Channel filter active: only WR files ending with 'EE' will be loaded
@@ -15838,29 +16028,37 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      137.2 |      104.0 |     1.8% |      3.8% |      3.7% |      4.2% |      4.1%
-2    | [0, 0]             |       10.2 |        7.0 |     6.7% |      4.2% |      4.7% |      7.9% |      8.2%
+1    | [0, 0]             |      112.3 |       87.0 |     2.0% |      3.8% |      3.7% |      4.3% |      4.2%
+2    | [0, 0]             |       10.1 |        6.0 |     6.8% |      3.9% |      3.8% |      7.8% |      7.8%
+3    | [0, 0]             |        6.6 |        7.0 |     8.2% |      3.7% |      3.6% |      9.0% |      9.0%
+4    | [0, 0]             |        4.5 |        4.0 |    10.0% |      3.6% |      4.0% |     10.6% |     10.8%
+5    | [0, 0]             |        3.7 |        0.0 |    11.0% |      4.2% |      3.3% |     11.8% |     11.5%
+6    | [0, 0]             |        3.0 |        1.0 |    12.3% |      4.9% |      4.2% |     13.3% |     13.0%
+7    | [0, 0]             |        1.7 |        1.0 |    17.4% |      7.7% |      6.6% |     19.0% |     18.6%
+8    | [0, 0]             |        2.0 |        1.0 |    14.9% |      4.9% |      5.4% |     15.7% |     15.9%
+9    | [0, 0]             |        2.1 |        1.0 |    14.6% |      5.1% |      5.3% |     15.5% |     15.6%
+10   | [0, 0]             |        1.3 |        3.0 |    18.0% |      3.5% |      7.0% |     18.3% |     19.3%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.84%
-  ElectronID     :     2.59%
-  ElectronReco   :     2.36%
+  Pileup         :     2.92%
+  ElectronID     :     2.60%
+  ElectronReco   :     2.33%
   ElectronTrig   :     0.35%
   MuonID         :     0.00%
   MuonReco       :     0.00%
   MuonTrig       :     0.00%
   MuonIso        :     0.00%
-  JER            :     0.39%
-  JES            :     0.76%
+  JER            :     0.41%
+  JES            :     0.83%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. ElectronID     :     2.59%
-   2. ElectronReco   :     2.36%
-   3. Pileup         :     1.84%
-   4. JES            :     0.76%
-   5. JER            :     0.39%
+   1. Pileup         :     2.92%
+   2. ElectronID     :     2.60%
+   3. ElectronReco   :     2.33%
+   4. JES            :     0.83%
+   5. JER            :     0.41%
    6. ElectronTrig   :     0.35%
    7. MuonID         :     0.00%
    8. MuonReco       :     0.00%
@@ -15868,8 +16066,94 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
   10. MuonIso        :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVEMJ_OS_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVEMJ_OS_subleadlep_miniiso_plot.png
+>> TSV saved as BoostFLVEMJ_OS_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVEMJ_OS_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_EMJ_OS_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.08 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.02 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.01 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.03 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.01 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.09 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.02 events
+  [DATA] EGamma_merged.root                      :       111.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.01 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         7.62 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.17 events
+  [MC  ] ST_tW_top_Lep.root                      :         7.27 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.20 events
+  [MC  ] TTLJ_powheg.root                        :         1.32 events
+  [MC  ] TTLL_powheg.root                        :       123.19 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.05 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.51 events
+  [MC  ] WJetM0_120HT800to1500.root              :         0.69 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.00 events
+  [MC  ] WJetM120HT800to1500.root                :         0.00 events
+  [MC  ] WWto2L2Nu.root                          :         3.85 events
+  [MC  ] WWtoLNu2Q.root                          :         0.16 events
+  [MC  ] WZto3LNu.root                           :         0.62 events
+  [MC  ] WZtoLNu2Q.root                          :         0.04 events
+  [MC  ] ZZto2L2Q.root                           :         0.03 events
+  [MC  ] ZZto4L.root                             :         0.08 events
+  [MC  ] ttWtoLNu.root                           :         0.93 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.04 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.19 events
+  [MC  ] ttZtoNuNu.root                          :         0.10 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      112.3 |       87.0 |     2.0% |      3.8% |      3.7% |      4.3% |      4.2%
+2    | [0, 0]             |       10.1 |        6.0 |     6.8% |      3.9% |      3.8% |      7.8% |      7.8%
+3    | [0, 0]             |        6.6 |        7.0 |     8.2% |      3.7% |      3.6% |      9.0% |      9.0%
+4    | [0, 0]             |        4.5 |        4.0 |    10.0% |      3.6% |      4.0% |     10.6% |     10.8%
+5    | [0, 0]             |        3.7 |        0.0 |    11.0% |      4.2% |      3.3% |     11.8% |     11.5%
+6    | [0, 0]             |        3.0 |        1.0 |    12.3% |      4.9% |      4.2% |     13.3% |     13.0%
+7    | [0, 0]             |        1.7 |        1.0 |    17.4% |      7.7% |      6.6% |     19.0% |     18.6%
+8    | [0, 0]             |        2.0 |        1.0 |    14.9% |      4.9% |      5.4% |     15.7% |     15.9%
+9    | [0, 0]             |        2.1 |        1.0 |    14.6% |      5.1% |      5.3% |     15.5% |     15.6%
+10   | [0, 0]             |        1.3 |        3.0 |    18.0% |      3.5% |      7.0% |     18.3% |     19.3%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     2.92%
+  ElectronID     :     2.60%
+  ElectronReco   :     2.33%
+  ElectronTrig   :     0.35%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.41%
+  JES            :     0.83%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     2.92%
+   2. ElectronID     :     2.60%
+   3. ElectronReco   :     2.33%
+   4. JES            :     0.83%
+   5. JER            :     0.41%
+   6. ElectronTrig   :     0.35%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVEMJ_OS_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVEMJ_OS_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: FlavCR_Boosted_MEJ_subleadlep_miniiso
 >> Channel filter active: only WR files ending with 'MM' will be loaded
@@ -15923,38 +16207,139 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      272.5 |      274.0 |     1.4% |      1.2% |      1.3% |      1.8% |      1.9%
-2    | [0, 0]             |       27.9 |       22.0 |     4.8% |      1.4% |      1.6% |      5.0% |      5.0%
+1    | [0, 0]             |      218.3 |      217.0 |     1.5% |      1.3% |      1.5% |      2.0% |      2.1%
+2    | [0, 0]             |       22.3 |       15.0 |     5.1% |      1.0% |      1.1% |      5.2% |      5.2%
+3    | [0, 0]             |       13.3 |       25.0 |     6.4% |      1.7% |      1.3% |      6.7% |      6.6%
+4    | [0, 0]             |       10.9 |       12.0 |     8.6% |      3.5% |      3.0% |      9.3% |      9.1%
+5    | [0, 0]             |        7.7 |        5.0 |     8.3% |      1.3% |      1.5% |      8.4% |      8.5%
+6    | [0, 0]             |        8.4 |        7.0 |     9.3% |      2.7% |      4.4% |      9.7% |     10.3%
+7    | [0, 0]             |        6.7 |        5.0 |     9.0% |      1.8% |      2.1% |      9.1% |      9.2%
+8    | [0, 0]             |        5.2 |        6.0 |    11.6% |      3.2% |      2.4% |     12.0% |     11.8%
+9    | [0, 0]             |        4.3 |        3.0 |    12.3% |      1.6% |      1.9% |     12.4% |     12.5%
+10   | [0, 0]             |        3.2 |        1.0 |    12.5% |      0.9% |      0.9% |     12.5% |     12.5%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.03%
+  Pileup         :     1.75%
   ElectronID     :     0.03%
   ElectronReco   :     0.00%
   ElectronTrig   :     0.00%
-  MuonID         :     0.33%
+  MuonID         :     0.31%
   MuonReco       :     0.00%
-  MuonTrig       :     0.77%
-  MuonIso        :     0.32%
-  JER            :     0.19%
-  JES            :     0.46%
+  MuonTrig       :     0.74%
+  MuonIso        :     0.30%
+  JER            :     0.28%
+  JES            :     0.48%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. Pileup         :     1.03%
-   2. MuonTrig       :     0.77%
-   3. JES            :     0.46%
-   4. MuonID         :     0.33%
-   5. MuonIso        :     0.32%
-   6. JER            :     0.19%
+   1. Pileup         :     1.75%
+   2. MuonTrig       :     0.74%
+   3. JES            :     0.48%
+   4. MuonID         :     0.31%
+   5. MuonIso        :     0.30%
+   6. JER            :     0.28%
    7. ElectronID     :     0.03%
    8. ElectronReco   :     0.00%
    9. ElectronTrig   :     0.00%
   10. MuonReco       :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVMEJ_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVMEJ_subleadlep_miniiso_plot.png
+>> TSV saved as BoostFLVMEJ_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVMEJ_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_MEJ_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.11 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.15 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.03 events
+  [MC  ] DYMLL50to120HT100to400.root             :         1.63 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.08 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.01 events
+  [MC  ] DYMLL50to120HT400to800.root             :         2.50 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.62 events
+  [DATA] Muon_merged.root                        :       290.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.05 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.03 events
+  [MC  ] ST_tW_antitop_Lep.root                  :        10.36 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         1.41 events
+  [MC  ] ST_tW_top_Lep.root                      :        10.53 events
+  [MC  ] ST_tW_top_Semilep.root                  :         1.44 events
+  [MC  ] ST_tch_top.root                         :         0.82 events
+  [DATA] SingleMuon_merged.root                  :         6.00 events
+  [MC  ] TTLJ_powheg.root                        :        21.95 events
+  [MC  ] TTLL_powheg.root                        :       207.44 events
+  [MC  ] WJetM0_120HT100to400.root               :         7.27 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.35 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :        16.72 events
+  [MC  ] WJetM0_120HT800to1500.root              :         4.47 events
+  [MC  ] WJetM120HT100to400.root                 :         0.04 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.01 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.29 events
+  [MC  ] WJetM120HT800to1500.root                :         0.09 events
+  [MC  ] WWto2L2Nu.root                          :         4.80 events
+  [MC  ] WWtoLNu2Q.root                          :         1.51 events
+  [MC  ] WZto2L2Q.root                           :         0.06 events
+  [MC  ] WZto3LNu.root                           :         1.85 events
+  [MC  ] WZtoLNu2Q.root                          :         1.06 events
+  [MC  ] ZZto2L2Nu.root                          :         0.02 events
+  [MC  ] ZZto2L2Q.root                           :         0.24 events
+  [MC  ] ZZto4L.root                             :         0.27 events
+  [MC  ] ttWtoLNu.root                           :         1.44 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.11 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.41 events
+  [MC  ] ttZtoNuNu.root                          :         0.15 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      218.3 |      217.0 |     1.5% |      1.3% |      1.5% |      2.0% |      2.1%
+2    | [0, 0]             |       22.3 |       15.0 |     5.1% |      1.0% |      1.1% |      5.2% |      5.2%
+3    | [0, 0]             |       13.3 |       25.0 |     6.4% |      1.7% |      1.3% |      6.7% |      6.6%
+4    | [0, 0]             |       10.9 |       12.0 |     8.6% |      3.5% |      3.0% |      9.3% |      9.1%
+5    | [0, 0]             |        7.7 |        5.0 |     8.3% |      1.3% |      1.5% |      8.4% |      8.5%
+6    | [0, 0]             |        8.4 |        7.0 |     9.3% |      2.7% |      4.4% |      9.7% |     10.3%
+7    | [0, 0]             |        6.7 |        5.0 |     9.0% |      1.8% |      2.1% |      9.1% |      9.2%
+8    | [0, 0]             |        5.2 |        6.0 |    11.6% |      3.2% |      2.4% |     12.0% |     11.8%
+9    | [0, 0]             |        4.3 |        3.0 |    12.3% |      1.6% |      1.9% |     12.4% |     12.5%
+10   | [0, 0]             |        3.2 |        1.0 |    12.5% |      0.9% |      0.9% |     12.5% |     12.5%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     1.75%
+  ElectronID     :     0.03%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.31%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.74%
+  MuonIso        :     0.30%
+  JER            :     0.28%
+  JES            :     0.48%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     1.75%
+   2. MuonTrig       :     0.74%
+   3. JES            :     0.48%
+   4. MuonID         :     0.31%
+   5. MuonIso        :     0.30%
+   6. JER            :     0.28%
+   7. ElectronID     :     0.03%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVMEJ_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVMEJ_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: FlavCR_Boosted_MEJ_SS_subleadlep_miniiso
 >> Channel filter active: only WR files ending with 'MM' will be loaded
@@ -16007,38 +16392,138 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |       27.1 |       41.0 |     5.8% |      1.0% |      1.6% |      5.8% |      6.0%
-2    | [0, 0]             |       10.3 |        7.0 |     8.8% |      0.7% |      1.7% |      8.8% |      8.9%
+1    | [0, 0]             |       17.6 |       26.0 |     7.6% |      1.1% |      2.2% |      7.6% |      7.9%
+2    | [0, 0]             |        3.0 |        3.0 |    15.9% |      2.7% |      1.9% |     16.2% |     16.0%
+3    | [0, 0]             |        1.9 |        6.0 |    16.8% |     12.5% |      8.8% |     20.9% |     18.9%
+4    | [0, 0]             |        2.8 |        4.0 |    17.0% |      3.5% |      3.5% |     17.4% |     17.4%
+5    | [0, 0]             |        1.8 |        2.0 |    18.4% |      5.8% |      5.3% |     19.3% |     19.1%
+6    | [0, 0]             |        2.8 |        2.0 |    18.6% |      3.9% |      7.7% |     19.0% |     20.2%
+7    | [0, 0]             |        2.3 |        1.0 |    16.5% |      2.9% |      2.9% |     16.7% |     16.7%
+8    | [0, 0]             |        1.9 |        3.0 |    23.2% |      0.5% |      1.7% |     23.2% |     23.2%
+9    | [0, 0]             |        2.0 |        1.0 |    18.8% |      1.2% |      5.3% |     18.9% |     19.6%
+10   | [0, 0]             |        1.3 |        0.0 |    20.2% |      2.3% |      4.5% |     20.4% |     20.7%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.31%
+  Pileup         :     4.63%
   ElectronID     :     0.01%
   ElectronReco   :     0.00%
   ElectronTrig   :     0.00%
-  MuonID         :     0.30%
+  MuonID         :     0.27%
   MuonReco       :     0.00%
-  MuonTrig       :     0.70%
-  MuonIso        :     0.30%
-  JER            :     0.39%
-  JES            :     0.15%
+  MuonTrig       :     0.66%
+  MuonIso        :     0.27%
+  JER            :     0.42%
+  JES            :     0.36%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. Pileup         :     1.31%
-   2. MuonTrig       :     0.70%
-   3. JER            :     0.39%
-   4. MuonID         :     0.30%
-   5. MuonIso        :     0.30%
-   6. JES            :     0.15%
+   1. Pileup         :     4.63%
+   2. MuonTrig       :     0.66%
+   3. JER            :     0.42%
+   4. JES            :     0.36%
+   5. MuonID         :     0.27%
+   6. MuonIso        :     0.27%
    7. ElectronID     :     0.01%
    8. ElectronReco   :     0.00%
    9. ElectronTrig   :     0.00%
   10. MuonReco       :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVMEJ_SS_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVMEJ_SS_subleadlep_miniiso_plot.png
+>> TSV saved as BoostFLVMEJ_SS_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVMEJ_SS_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_MEJ_SS_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.04 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.06 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.01 events
+  [MC  ] DYMLL50to120HT100to400.root             :         0.51 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.04 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         1.15 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.23 events
+  [DATA] Muon_merged.root                        :        47.00 events
+  [MC  ] ST_sch_antitop_Lep.root                 :         0.05 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.03 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         0.30 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.41 events
+  [MC  ] ST_tW_top_Lep.root                      :         0.15 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.66 events
+  [MC  ] ST_tch_top.root                         :         0.82 events
+  [DATA] SingleMuon_merged.root                  :         1.00 events
+  [MC  ] TTLJ_powheg.root                        :         9.79 events
+  [MC  ] TTLL_powheg.root                        :         4.32 events
+  [MC  ] WJetM0_120HT100to400.root               :         4.62 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.24 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         7.88 events
+  [MC  ] WJetM0_120HT800to1500.root              :         2.36 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.11 events
+  [MC  ] WJetM120HT800to1500.root                :         0.03 events
+  [MC  ] WWto2L2Nu.root                          :         0.08 events
+  [MC  ] WWtoLNu2Q.root                          :         0.53 events
+  [MC  ] WZto2L2Q.root                           :         0.03 events
+  [MC  ] WZto3LNu.root                           :         0.96 events
+  [MC  ] WZtoLNu2Q.root                          :         0.70 events
+  [MC  ] ZZto2L2Nu.root                          :         0.01 events
+  [MC  ] ZZto2L2Q.root                           :         0.13 events
+  [MC  ] ZZto4L.root                             :         0.15 events
+  [MC  ] ttWtoLNu.root                           :         0.75 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.04 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.22 events
+  [MC  ] ttZtoNuNu.root                          :        -0.01 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |       17.6 |       26.0 |     7.6% |      1.1% |      2.2% |      7.6% |      7.9%
+2    | [0, 0]             |        3.0 |        3.0 |    15.9% |      2.7% |      1.9% |     16.2% |     16.0%
+3    | [0, 0]             |        1.9 |        6.0 |    16.8% |     12.5% |      8.8% |     20.9% |     18.9%
+4    | [0, 0]             |        2.8 |        4.0 |    17.0% |      3.5% |      3.5% |     17.4% |     17.4%
+5    | [0, 0]             |        1.8 |        2.0 |    18.4% |      5.8% |      5.3% |     19.3% |     19.1%
+6    | [0, 0]             |        2.8 |        2.0 |    18.6% |      3.9% |      7.7% |     19.0% |     20.2%
+7    | [0, 0]             |        2.3 |        1.0 |    16.5% |      2.9% |      2.9% |     16.7% |     16.7%
+8    | [0, 0]             |        1.9 |        3.0 |    23.2% |      0.5% |      1.7% |     23.2% |     23.2%
+9    | [0, 0]             |        2.0 |        1.0 |    18.8% |      1.2% |      5.3% |     18.9% |     19.6%
+10   | [0, 0]             |        1.3 |        0.0 |    20.2% |      2.3% |      4.5% |     20.4% |     20.7%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     4.63%
+  ElectronID     :     0.01%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.27%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.66%
+  MuonIso        :     0.27%
+  JER            :     0.42%
+  JES            :     0.36%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     4.63%
+   2. MuonTrig       :     0.66%
+   3. JER            :     0.42%
+   4. JES            :     0.36%
+   5. MuonID         :     0.27%
+   6. MuonIso        :     0.27%
+   7. ElectronID     :     0.01%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVMEJ_SS_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVMEJ_SS_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: FlavCR_Boosted_MEJ_OS_subleadlep_miniiso
 >> Channel filter active: only WR files ending with 'MM' will be loaded
@@ -16089,37 +16574,135 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      245.3 |      233.0 |     1.4% |      1.2% |      1.3% |      1.9% |      1.9%
-2    | [0, 0]             |       17.6 |       15.0 |     5.6% |      2.5% |      1.6% |      6.1% |      5.8%
+1    | [0, 0]             |      200.6 |      191.0 |     1.5% |      1.3% |      1.5% |      2.0% |      2.1%
+2    | [0, 0]             |       19.4 |       12.0 |     5.4% |      1.0% |      1.2% |      5.5% |      5.5%
+3    | [0, 0]             |       11.4 |       19.0 |     7.0% |      1.2% |      1.0% |      7.1% |      7.0%
+4    | [0, 0]             |        8.1 |        8.0 |     9.9% |      3.6% |      2.8% |     10.6% |     10.3%
+5    | [0, 0]             |        5.9 |        3.0 |     9.3% |      1.6% |      2.5% |      9.5% |      9.7%
+6    | [0, 0]             |        5.6 |        5.0 |    10.3% |      2.1% |      2.7% |     10.5% |     10.7%
+7    | [0, 0]             |        4.4 |        4.0 |    10.6% |      1.3% |      1.7% |     10.7% |     10.7%
+8    | [0, 0]             |        3.3 |        3.0 |    12.5% |      5.3% |      2.8% |     13.5% |     12.8%
+9    | [0, 0]             |        2.4 |        2.0 |    16.2% |      5.6% |      1.2% |     17.2% |     16.3%
+10   | [0, 0]             |        1.9 |        1.0 |    15.7% |      3.8% |      1.7% |     16.2% |     15.8%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.50%
-  ElectronID     :     0.04%
+  Pileup         :     2.57%
+  ElectronID     :     0.03%
   ElectronReco   :     0.00%
   ElectronTrig   :     0.00%
-  MuonID         :     0.34%
+  MuonID         :     0.33%
   MuonReco       :     0.00%
-  MuonTrig       :     0.79%
-  MuonIso        :     0.33%
-  JER            :     0.13%
-  JES            :     0.56%
+  MuonTrig       :     0.78%
+  MuonIso        :     0.32%
+  JER            :     0.14%
+  JES            :     0.62%
 ------------------------------------------------------------
 >> Ranked by contribution:
-   1. Pileup         :     1.50%
-   2. MuonTrig       :     0.79%
-   3. JES            :     0.56%
-   4. MuonID         :     0.34%
-   5. MuonIso        :     0.33%
-   6. JER            :     0.13%
-   7. ElectronID     :     0.04%
+   1. Pileup         :     2.57%
+   2. MuonTrig       :     0.78%
+   3. JES            :     0.62%
+   4. MuonID         :     0.33%
+   5. MuonIso        :     0.32%
+   6. JER            :     0.14%
+   7. ElectronID     :     0.03%
    8. ElectronReco   :     0.00%
    9. ElectronTrig   :     0.00%
   10. MuonReco       :     0.00%
 ============================================================
 
->> TSV saved as BoostFLVMEJ_OS_subleadlep_miniiso.tsv
->> Plot saved as BoostFLVMEJ_OS_subleadlep_miniiso_plot.png
-=== End time: Sun Jul 19 02:05:41 PM KST 2026 ===
+>> TSV saved as BoostFLVMEJ_OS_subleadlep_miniiso_to0p5.tsv
+>> Plot saved as BoostFLVMEJ_OS_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: FlavCR_Boosted_MEJ_OS_subleadlep_miniiso
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :         0.06 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.00 events
+  [MC  ] DYMLL120HT2500.root                     :         0.00 events
+  [MC  ] DYMLL120HT400to800.root                 :         0.09 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.02 events
+  [MC  ] DYMLL50to120HT100to400.root             :         1.12 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.04 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         1.35 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.39 events
+  [DATA] Muon_merged.root                        :       243.00 events
+  [MC  ] ST_tW_antitop_Lep.root                  :        10.06 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         1.00 events
+  [MC  ] ST_tW_top_Lep.root                      :        10.37 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.78 events
+  [DATA] SingleMuon_merged.root                  :         5.00 events
+  [MC  ] TTLJ_powheg.root                        :        12.16 events
+  [MC  ] TTLL_powheg.root                        :       203.11 events
+  [MC  ] WJetM0_120HT100to400.root               :         2.65 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.12 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         8.84 events
+  [MC  ] WJetM0_120HT800to1500.root              :         2.12 events
+  [MC  ] WJetM120HT100to400.root                 :         0.04 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.18 events
+  [MC  ] WJetM120HT800to1500.root                :         0.05 events
+  [MC  ] WWto2L2Nu.root                          :         4.71 events
+  [MC  ] WWtoLNu2Q.root                          :         0.98 events
+  [MC  ] WZto2L2Q.root                           :         0.03 events
+  [MC  ] WZto3LNu.root                           :         0.89 events
+  [MC  ] WZtoLNu2Q.root                          :         0.36 events
+  [MC  ] ZZto2L2Nu.root                          :         0.01 events
+  [MC  ] ZZto2L2Q.root                           :         0.11 events
+  [MC  ] ZZto4L.root                             :         0.12 events
+  [MC  ] ttWtoLNu.root                           :         0.69 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.07 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.20 events
+  [MC  ] ttZtoNuNu.root                          :         0.16 events
+>> Calculating Systematic Uncertainties (MC only)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      200.6 |      191.0 |     1.5% |      1.3% |      1.5% |      2.0% |      2.1%
+2    | [0, 0]             |       19.4 |       12.0 |     5.4% |      1.0% |      1.2% |      5.5% |      5.5%
+3    | [0, 0]             |       11.4 |       19.0 |     7.0% |      1.2% |      1.0% |      7.1% |      7.0%
+4    | [0, 0]             |        8.1 |        8.0 |     9.9% |      3.6% |      2.8% |     10.6% |     10.3%
+5    | [0, 0]             |        5.9 |        3.0 |     9.3% |      1.6% |      2.5% |      9.5% |      9.7%
+6    | [0, 0]             |        5.6 |        5.0 |    10.3% |      2.1% |      2.7% |     10.5% |     10.7%
+7    | [0, 0]             |        4.4 |        4.0 |    10.6% |      1.3% |      1.7% |     10.7% |     10.7%
+8    | [0, 0]             |        3.3 |        3.0 |    12.5% |      5.3% |      2.8% |     13.5% |     12.8%
+9    | [0, 0]             |        2.4 |        2.0 |    16.2% |      5.6% |      1.2% |     17.2% |     16.3%
+10   | [0, 0]             |        1.9 |        1.0 |    15.7% |      3.8% |      1.7% |     16.2% |     15.8%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     2.57%
+  ElectronID     :     0.03%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.33%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.78%
+  MuonIso        :     0.32%
+  JER            :     0.14%
+  JES            :     0.62%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. Pileup         :     2.57%
+   2. MuonTrig       :     0.78%
+   3. JES            :     0.62%
+   4. MuonID         :     0.33%
+   5. MuonIso        :     0.32%
+   6. JER            :     0.14%
+   7. ElectronID     :     0.03%
+   8. ElectronReco   :     0.00%
+   9. ElectronTrig   :     0.00%
+  10. MuonReco       :     0.00%
+============================================================
+
+>> TSV saved as BoostFLVMEJ_OS_subleadlep_miniiso_to0p1.tsv
+>> Plot saved as BoostFLVMEJ_OS_subleadlep_miniiso_to0p1_plot.png
+=== End time: Sun Jul 19 04:50:20 PM KST 2026 ===
 === Exit code: 0 ===

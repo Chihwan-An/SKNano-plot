@@ -1,5 +1,5 @@
 === Running plotter in: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/mini_iso/boost/sr ===
-=== Start time: Sun Jul 19 01:36:42 PM KST 2026 ===
+=== Start time: Sun Jul 19 04:18:50 PM KST 2026 ===
 Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python
 ROOT: /data6/Users/achihwan/micromamba/envs/Nano/bin/root
 
@@ -7092,42 +7092,145 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      241.5 |    Blinded |     1.5% |      3.8% |      3.7% |      4.1% |      4.0%
-2    | [0, 0]             |       23.6 |    Blinded |     4.6% |      3.5% |      3.4% |      5.8% |      5.7%
-3    | [0, 0]             |       15.5 |    Blinded |     5.8% |      3.5% |      3.7% |      6.8% |      6.9%
-4    | [0, 0]             |       10.8 |    Blinded |     9.7% |      4.1% |      3.7% |     10.5% |     10.4%
-5    | [0, 0]             |        8.6 |    Blinded |     8.5% |      3.3% |      3.4% |      9.1% |      9.1%
+1    | [0, 0]             |      219.6 |    Blinded |     1.6% |      3.8% |      3.7% |      4.1% |      4.1%
+2    | [0, 0]             |       21.9 |    Blinded |     4.6% |      3.9% |      3.9% |      6.0% |      6.0%
+3    | [0, 0]             |       14.1 |    Blinded |     6.0% |      3.8% |      3.7% |      7.1% |      7.1%
+4    | [0, 0]             |        9.6 |    Blinded |     7.1% |      3.5% |      3.3% |      7.9% |      7.8%
+5    | [0, 0]             |        8.3 |    Blinded |     7.8% |      3.6% |      3.7% |      8.6% |      8.6%
+6    | [0, 0]             |        7.2 |    Blinded |     8.7% |      4.1% |      3.8% |      9.7% |      9.5%
+7    | [0, 0]             |        5.4 |    Blinded |     9.7% |      5.0% |      5.3% |     10.9% |     11.0%
+8    | [0, 0]             |        5.3 |    Blinded |    17.0% |      3.5% |      3.2% |     17.3% |     17.3%
+9    | [0, 0]             |        4.5 |    Blinded |    12.4% |      6.1% |      5.4% |     13.9% |     13.6%
+10   | [0, 0]             |        4.1 |    Blinded |    11.4% |      4.0% |      5.3% |     12.1% |     12.6%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.14%
-  ElectronID     :     2.23%
+  Pileup         :     2.18%
+  ElectronID     :     2.24%
   ElectronReco   :     2.56%
   ElectronTrig   :     0.33%
   MuonID         :     0.00%
   MuonReco       :     0.00%
   MuonTrig       :     0.00%
   MuonIso        :     0.00%
-  JER            :     0.05%
-  JES            :     0.38%
+  JER            :     0.07%
+  JES            :     0.35%
 ------------------------------------------------------------
 >> Ranked by contribution:
    1. ElectronReco   :     2.56%
-   2. ElectronID     :     2.23%
-   3. Pileup         :     1.14%
-   4. JES            :     0.38%
+   2. ElectronID     :     2.24%
+   3. Pileup         :     2.18%
+   4. JES            :     0.35%
    5. ElectronTrig   :     0.33%
-   6. JER            :     0.05%
+   6. JER            :     0.07%
    7. MuonID         :     0.00%
    8. MuonReco       :     0.00%
    9. MuonTrig       :     0.00%
   10. MuonIso        :     0.00%
 ============================================================
 
->> TSV saved as BoostSREE_subleadlep_miniiso.tsv
->> Integrated TSV saved as BoostSREE_subleadlep_miniiso_integrated.tsv
->> Plot saved as BoostSREE_subleadlep_miniiso_plot.png
+>> TSV saved as BoostSREE_subleadlep_miniiso_to0p5.tsv
+>> Integrated TSV saved as BoostSREE_subleadlep_miniiso_to0p5_integrated.tsv
+>> Plot saved as BoostSREE_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: SR_Boosted_EE_subleadlep_miniiso
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'EE' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        20.95 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.10 events
+  [MC  ] DYMLL120HT2500.root                     :         0.01 events
+  [MC  ] DYMLL120HT400to800.root                 :         5.85 events
+  [MC  ] DYMLL120HT40to70.root                   :         1.92 events
+  [MC  ] DYMLL120HT70to100.root                  :         2.37 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.94 events
+  [MC  ] DYMLL50to120HT100to400.root             :         2.14 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.06 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.00 events
+  [MC  ] DYMLL50to120HT400to800.root             :         2.03 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.52 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.04 events
+  [MC  ] ST_tW_antitop_Lep.root                  :        10.42 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         1.21 events
+  [MC  ] ST_tW_top_Lep.root                      :         9.38 events
+  [MC  ] ST_tW_top_Semilep.root                  :         1.20 events
+  [MC  ] ST_tch_top.root                         :         2.57 events
+  [MC  ] TTLJ_powheg.root                        :        21.67 events
+  [MC  ] TTLL_powheg.root                        :       177.00 events
+  [MC  ] WJetM0_120HT100to400.root               :         4.72 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.40 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :        14.67 events
+  [MC  ] WJetM0_120HT800to1500.root              :         4.66 events
+  [MC  ] WJetM120HT100to400.root                 :         0.06 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.01 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.24 events
+  [MC  ] WJetM120HT800to1500.root                :         0.09 events
+  [SIG ] WR2000N1000EE.root                      :       160.49 events  (will be x1.0)
+  [SIG ] WR2000N200EE.root                       :      2048.37 events  (will be x1.0)
+  [SIG ] WR4000N2000EE.root                      :         1.65 events  (will be x1.0)
+  [SIG ] WR4000N200EE.root                       :        21.07 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         4.16 events
+  [MC  ] WWtoLNu2Q.root                          :         1.58 events
+  [MC  ] WZto2L2Q.root                           :         1.03 events
+  [MC  ] WZto3LNu.root                           :         2.20 events
+  [MC  ] WZtoLNu2Q.root                          :         0.58 events
+  [MC  ] ZZto2L2Nu.root                          :         0.41 events
+  [MC  ] ZZto2L2Q.root                           :         2.38 events
+  [MC  ] ZZto4L.root                             :         0.35 events
+  [MC  ] ttWtoLNu.root                           :         1.39 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.06 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.55 events
+  [MC  ] ttZtoNuNu.root                          :         0.09 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      219.6 |    Blinded |     1.6% |      3.8% |      3.7% |      4.1% |      4.1%
+2    | [0, 0]             |       21.9 |    Blinded |     4.6% |      3.9% |      3.9% |      6.0% |      6.0%
+3    | [0, 0]             |       14.1 |    Blinded |     6.0% |      3.8% |      3.7% |      7.1% |      7.1%
+4    | [0, 0]             |        9.6 |    Blinded |     7.1% |      3.5% |      3.3% |      7.9% |      7.8%
+5    | [0, 0]             |        8.3 |    Blinded |     7.8% |      3.6% |      3.7% |      8.6% |      8.6%
+6    | [0, 0]             |        7.2 |    Blinded |     8.7% |      4.1% |      3.8% |      9.7% |      9.5%
+7    | [0, 0]             |        5.4 |    Blinded |     9.7% |      5.0% |      5.3% |     10.9% |     11.0%
+8    | [0, 0]             |        5.3 |    Blinded |    17.0% |      3.5% |      3.2% |     17.3% |     17.3%
+9    | [0, 0]             |        4.5 |    Blinded |    12.4% |      6.1% |      5.4% |     13.9% |     13.6%
+10   | [0, 0]             |        4.1 |    Blinded |    11.4% |      4.0% |      5.3% |     12.1% |     12.6%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     2.18%
+  ElectronID     :     2.24%
+  ElectronReco   :     2.56%
+  ElectronTrig   :     0.33%
+  MuonID         :     0.00%
+  MuonReco       :     0.00%
+  MuonTrig       :     0.00%
+  MuonIso        :     0.00%
+  JER            :     0.07%
+  JES            :     0.35%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. ElectronReco   :     2.56%
+   2. ElectronID     :     2.24%
+   3. Pileup         :     2.18%
+   4. JES            :     0.35%
+   5. ElectronTrig   :     0.33%
+   6. JER            :     0.07%
+   7. MuonID         :     0.00%
+   8. MuonReco       :     0.00%
+   9. MuonTrig       :     0.00%
+  10. MuonIso        :     0.00%
+============================================================
+
+>> TSV saved as BoostSREE_subleadlep_miniiso_to0p1.tsv
+>> Integrated TSV saved as BoostSREE_subleadlep_miniiso_to0p1_integrated.tsv
+>> Plot saved as BoostSREE_subleadlep_miniiso_to0p1_plot.png
 
 >> Loading Central histograms for: SR_Boosted_MM_subleadlep_miniiso
 !! BLIND MODE ACTIVATED (SR detected in histogram name) !!
@@ -7183,41 +7286,142 @@ Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | Sys
 ================================================================================================================================================================
 Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1    | [0, 0]             |      170.9 |    Blinded |     1.6% |      2.0% |      1.9% |      2.5% |      2.4%
-2    | [0, 0]             |       14.4 |    Blinded |     5.7% |      1.9% |      1.5% |      6.0% |      5.8%
-3    | [0, 0]             |       10.3 |    Blinded |     6.7% |      4.2% |      2.7% |      8.0% |      7.3%
-4    | [0, 0]             |        6.4 |    Blinded |     8.0% |      1.9% |      1.5% |      8.2% |      8.1%
-5    | [0, 0]             |        5.7 |    Blinded |     9.1% |      2.5% |      1.7% |      9.4% |      9.2%
+1    | [0, 0]             |      157.6 |    Blinded |     1.6% |      2.0% |      1.9% |      2.6% |      2.5%
+2    | [0, 0]             |       13.3 |    Blinded |     5.7% |      2.5% |      2.6% |      6.2% |      6.2%
+3    | [0, 0]             |        7.8 |    Blinded |     7.6% |      4.9% |      3.1% |      9.0% |      8.2%
+4    | [0, 0]             |        6.5 |    Blinded |     8.5% |      5.7% |      5.1% |     10.2% |      9.9%
+5    | [0, 0]             |        5.3 |    Blinded |     9.3% |      6.9% |      3.4% |     11.6% |      9.9%
+6    | [0, 0]             |        5.0 |    Blinded |     9.7% |      1.8% |      2.2% |      9.9% |     10.0%
+7    | [0, 0]             |        3.9 |    Blinded |    10.1% |      3.2% |      2.3% |     10.6% |     10.4%
+8    | [0, 0]             |        2.5 |    Blinded |    13.1% |      5.6% |      3.1% |     14.3% |     13.5%
+9    | [0, 0]             |        2.8 |    Blinded |    12.8% |      1.6% |      1.2% |     12.9% |     12.9%
+10   | [0, 0]             |        2.9 |    Blinded |    12.9% |      3.7% |      3.4% |     13.4% |     13.3%
 ================================================================================================================================================================
 
 >> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
 ------------------------------------------------------------
-  Pileup         :     1.68%
+  Pileup         :     3.31%
   ElectronID     :     0.00%
   ElectronReco   :     0.00%
   ElectronTrig   :     0.00%
-  MuonID         :     0.45%
+  MuonID         :     0.44%
   MuonReco       :     0.00%
-  MuonTrig       :     1.31%
+  MuonTrig       :     1.29%
   MuonIso        :     0.42%
-  JER            :     0.17%
-  JES            :     0.51%
+  JER            :     0.19%
+  JES            :     0.54%
 ------------------------------------------------------------
 >> Ranked by contribution:
    1. ElectronID     :     0.00%
    2. ElectronReco   :     0.00%
    3. ElectronTrig   :     0.00%
    4. MuonReco       :     0.00%
-   5. JER            :     0.17%
+   5. JER            :     0.19%
    6. MuonIso        :     0.42%
-   7. MuonID         :     0.45%
-   8. JES            :     0.51%
-   9. MuonTrig       :     1.31%
-  10. Pileup         :     1.68%
+   7. MuonID         :     0.44%
+   8. JES            :     0.54%
+   9. MuonTrig       :     1.29%
+  10. Pileup         :     3.31%
 ============================================================
 
->> TSV saved as BoostSRMM_subleadlep_miniiso.tsv
->> Integrated TSV saved as BoostSRMM_subleadlep_miniiso_integrated.tsv
->> Plot saved as BoostSRMM_subleadlep_miniiso_plot.png
-=== End time: Sun Jul 19 01:47:34 PM KST 2026 ===
+>> TSV saved as BoostSRMM_subleadlep_miniiso_to0p5.tsv
+>> Integrated TSV saved as BoostSRMM_subleadlep_miniiso_to0p5_integrated.tsv
+>> Plot saved as BoostSRMM_subleadlep_miniiso_to0p5_plot.png
+
+>> Loading Central histograms for: SR_Boosted_MM_subleadlep_miniiso
+!! BLIND MODE ACTIVATED (SR detected in histogram name) !!
+>> Channel filter active: only WR files ending with 'MM' will be loaded
+=====================================================================================
+  [MC  ] DYMLL120HT100to400.root                 :        12.82 events
+  [MC  ] DYMLL120HT1500to2500.root               :         0.09 events
+  [MC  ] DYMLL120HT2500.root                     :         0.01 events
+  [MC  ] DYMLL120HT400to800.root                 :         5.13 events
+  [MC  ] DYMLL120HT40to70.root                   :         0.35 events
+  [MC  ] DYMLL120HT70to100.root                  :         0.54 events
+  [MC  ] DYMLL120HT800to1500.root                :         0.77 events
+  [MC  ] DYMLL50to120HT1500to2500.root           :         0.06 events
+  [MC  ] DYMLL50to120HT2500.root                 :         0.01 events
+  [MC  ] DYMLL50to120HT400to800.root             :         0.25 events
+  [MC  ] DYMLL50to120HT800to1500.root            :         0.21 events
+  [MC  ] ST_sch_antitop_Lep.root                 :        -0.00 events
+  [MC  ] ST_sch_top_Lep.root                     :         0.02 events
+  [MC  ] ST_tW_antitop_Lep.root                  :         7.59 events
+  [MC  ] ST_tW_antitop_Semilep.root              :         0.65 events
+  [MC  ] ST_tW_top_Lep.root                      :         8.06 events
+  [MC  ] ST_tW_top_Semilep.root                  :         0.63 events
+  [MC  ] TTLJ_powheg.root                        :         5.37 events
+  [MC  ] TTLL_powheg.root                        :       153.33 events
+  [MC  ] WJetM0_120HT100to400.root               :         0.26 events
+  [MC  ] WJetM0_120HT1500to2500.root             :         0.32 events
+  [MC  ] WJetM0_120HT2500.root                   :         0.00 events
+  [MC  ] WJetM0_120HT400to800.root               :         0.79 events
+  [MC  ] WJetM0_120HT800to1500.root              :         1.06 events
+  [MC  ] WJetM120HT1500to2500.root               :         0.00 events
+  [MC  ] WJetM120HT2500.root                     :         0.00 events
+  [MC  ] WJetM120HT400to800.root                 :         0.01 events
+  [MC  ] WJetM120HT800to1500.root                :         0.02 events
+  [SIG ] WR2000N1000MM.root                      :        86.38 events  (will be x1.0)
+  [SIG ] WR2000N200MM.root                       :      2276.97 events  (will be x1.0)
+  [SIG ] WR4000N2000MM.root                      :         0.55 events  (will be x1.0)
+  [SIG ] WR4000N200MM.root                       :        50.55 events  (will be x1.0)
+  [MC  ] WWto2L2Nu.root                          :         3.73 events
+  [MC  ] WWtoLNu2Q.root                          :         0.12 events
+  [MC  ] WZto2L2Q.root                           :         0.74 events
+  [MC  ] WZto3LNu.root                           :         1.89 events
+  [MC  ] WZtoLNu2Q.root                          :         0.16 events
+  [MC  ] ZZto2L2Nu.root                          :         0.19 events
+  [MC  ] ZZto2L2Q.root                           :         1.29 events
+  [MC  ] ZZto4L.root                             :         0.22 events
+  [MC  ] ttWtoLNu.root                           :         0.40 events
+  [MC  ] ttZtoLL_MLL4to50.root                   :         0.08 events
+  [MC  ] ttZtoLL_MLL50toInf.root                 :         0.38 events
+  [MC  ] ttZtoNuNu.root                          :         0.13 events
+>> Calculating Systematic Uncertainties (MC only, total + per-group)...
+
+>> Bin-by-bin Uncertainty & Data Summary
+================================================================================================================================================================
+Bin  | Range              | Yield(MC)  | Data       | Stat(%)  | SystUp(%) | SystDn(%) | TotalUp(%) | TotalDn(%)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    | [0, 0]             |      157.6 |    Blinded |     1.6% |      2.0% |      1.9% |      2.6% |      2.5%
+2    | [0, 0]             |       13.3 |    Blinded |     5.7% |      2.5% |      2.6% |      6.2% |      6.2%
+3    | [0, 0]             |        7.8 |    Blinded |     7.6% |      4.9% |      3.1% |      9.0% |      8.2%
+4    | [0, 0]             |        6.5 |    Blinded |     8.5% |      5.7% |      5.1% |     10.2% |      9.9%
+5    | [0, 0]             |        5.3 |    Blinded |     9.3% |      6.9% |      3.4% |     11.6% |      9.9%
+6    | [0, 0]             |        5.0 |    Blinded |     9.7% |      1.8% |      2.2% |      9.9% |     10.0%
+7    | [0, 0]             |        3.9 |    Blinded |    10.1% |      3.2% |      2.3% |     10.6% |     10.4%
+8    | [0, 0]             |        2.5 |    Blinded |    13.1% |      5.6% |      3.1% |     14.3% |     13.5%
+9    | [0, 0]             |        2.8 |    Blinded |    12.8% |      1.6% |      1.2% |     12.9% |     12.9%
+10   | [0, 0]             |        2.9 |    Blinded |    12.9% |      3.7% |      3.4% |     13.4% |     13.3%
+================================================================================================================================================================
+
+>> Per-Systematic Contribution Summary (averaged over bins with yield > 0):
+------------------------------------------------------------
+  Pileup         :     3.31%
+  ElectronID     :     0.00%
+  ElectronReco   :     0.00%
+  ElectronTrig   :     0.00%
+  MuonID         :     0.44%
+  MuonReco       :     0.00%
+  MuonTrig       :     1.29%
+  MuonIso        :     0.42%
+  JER            :     0.19%
+  JES            :     0.54%
+------------------------------------------------------------
+>> Ranked by contribution:
+   1. ElectronID     :     0.00%
+   2. ElectronReco   :     0.00%
+   3. ElectronTrig   :     0.00%
+   4. MuonReco       :     0.00%
+   5. JER            :     0.19%
+   6. MuonIso        :     0.42%
+   7. MuonID         :     0.44%
+   8. JES            :     0.54%
+   9. MuonTrig       :     1.29%
+  10. Pileup         :     3.31%
+============================================================
+
+>> TSV saved as BoostSRMM_subleadlep_miniiso_to0p1.tsv
+>> Integrated TSV saved as BoostSRMM_subleadlep_miniiso_to0p1_integrated.tsv
+>> Plot saved as BoostSRMM_subleadlep_miniiso_to0p1_plot.png
+=== End time: Sun Jul 19 04:29:10 PM KST 2026 ===
 === Exit code: 0 ===
