@@ -1,0 +1,19 @@
+=== MM offshell: sublead (highPtId==2) muon pT, events with tight lead ===
+WR4000N100MM: offshell N=16130, tight-lead 87.0%, sublead-in-[cut,53) gain: >20GeV +13.6%, >30GeV +9.0%, >40GeV +4.8%
+WR4000N300MM: offshell N=11714, tight-lead 95.8%, sublead-in-[cut,53) gain: >20GeV +11.8%, >30GeV +8.8%, >40GeV +5.2%
+WR6000N100MM: offshell N=42640, tight-lead 87.8%, sublead-in-[cut,53) gain: >20GeV +13.0%, >30GeV +8.9%, >40GeV +4.8%
+WR6000N300MM: offshell N=38498, tight-lead 96.0%, sublead-in-[cut,53) gain: >20GeV +10.2%, >30GeV +7.6%, >40GeV +4.5%
+
+=== EE trigger: OR + HLT_Ele35_WPTight_Gsf, lead pT > 60 ===
+WR4000N100EE off: HLT-fired 75.5% -> 89.8% (+14.3%); fired & lead>cut: 66.4% -> 77.1% (+10.8%)
+WR4000N300EE off: HLT-fired 88.0% -> 96.4% (+8.4%); fired & lead>cut: 80.5% -> 89.2% (+8.6%)
+WR6000N100EE off: HLT-fired 78.0% -> 90.4% (+12.5%); fired & lead>cut: 68.2% -> 77.5% (+9.3%)
+WR6000N300EE off: HLT-fired 89.6% -> 96.5% (+7.0%); fired & lead>cut: 81.6% -> 88.9% (+7.3%)
+
+=== EE 2nd-electron (pT>53, fails current loose) — alternative-ID pass fraction ===
+[off] cutBased Loose 0.0%, cutBased Medium 0.0%, cutBased Tight 0.0%, mvaIso WP80 1.5%, mvaIso WP90 3.8%, mvaNoIso WP80 7.4%, mvaNoIso WP90 10.7%
+[on] cutBased Loose 0.0%, cutBased Medium 0.0%, cutBased Tight 0.0%, mvaIso WP80 0.2%, mvaIso WP90 0.8%, mvaNoIso WP80 3.9%, mvaNoIso WP90 5.4%
+
+wrote /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample_test/Get_efficiency/BDT/modified/sublead_muon_pt_offshell.png
+wrote /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample_test/Get_efficiency/BDT/modified/electron_id_comparison.png
+wrote /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample_test/Get_efficiency/BDT/modified/results.txt

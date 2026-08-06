@@ -1,0 +1,26 @@
+--- WR6000 N100 MM  (offshell fraction 63.6%) ---
+now                          off  44.3%  on  68.6%  TOTAL  53.1%
+sublead > 40                 off  48.0%  on  69.5%  TOTAL  55.8%  (+2.7%)
+sublead > 30                 off  51.2%  on  70.3%  TOTAL  58.1%  (+5.0%)
+sublead > 20                 off  54.4%  on  71.1%  TOTAL  60.4%  (+7.3%)
+--- WR6000 N100 EE  (offshell fraction 63.6%) ---
+now                          off  23.5%  on   3.2%  TOTAL  16.1%
++Ele35, lead>60              off  26.0%  on   3.2%  TOTAL  17.7%  (+1.6%)
++mvaNoIsoWP90 only           off  27.1%  on   5.1%  TOTAL  19.1%  (+3.0%)
+sublead>20 only              off  30.9%  on   3.7%  TOTAL  21.0%  (+4.9%)
+Ele35+lead60+ID              off  29.8%  on   5.1%  TOTAL  20.8%  (+4.7%)
+Ele35+lead60+ID+sub20        off  40.2%  on   5.8%  TOTAL  27.7%  (+11.6%)
+
+--- WR6000 N300 MM  (offshell fraction 55.0%) ---
+now                          off  58.4%  on  72.6%  TOTAL  64.8%
+sublead > 40                 off  62.0%  on  73.5%  TOTAL  67.2%  (+2.4%)
+sublead > 30                 off  64.4%  on  74.2%  TOTAL  68.8%  (+4.0%)
+sublead > 20                 off  66.4%  on  75.0%  TOTAL  70.3%  (+5.5%)
+--- WR6000 N300 EE  (offshell fraction 54.5%) ---
+now                          off  45.0%  on  30.8%  TOTAL  38.5%
++Ele35, lead>60              off  47.5%  on  31.2%  TOTAL  40.1%  (+1.6%)
++mvaNoIsoWP90 only           off  46.4%  on  33.3%  TOTAL  40.4%  (+1.9%)
+sublead>20 only              off  50.7%  on  33.8%  TOTAL  43.1%  (+4.5%)
+Ele35+lead60+ID              off  49.1%  on  33.7%  TOTAL  42.1%  (+3.5%)
+Ele35+lead60+ID+sub20        off  56.0%  on  36.8%  TOTAL  47.3%  (+8.8%)
+
