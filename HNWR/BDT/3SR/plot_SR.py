@@ -1,0 +1,370 @@
+import ROOT
+import math
+import numpy as np
+import os
+import sys
+import argparse
+import re
+
+# ──────────────────────────────────────────────────────────────────────────────
+# presel_3SR BDT ntuple → SR background(stack) + signal(line) plotter.
+# Style mirrors plots/HNWR/reproduce/syst_plotter/integrated/plotter_file/year_sep/EE.py
+# but reads TTrees (Central/SR_*_BDTTree_*) instead of histograms.
+# MC weight: weight_Central (SF-included nominal, gen x lumi). SR is blinded → no data.
+# ──────────────────────────────────────────────────────────────────────────────
+
+DEFAULT_DATA_PATH = "/u/user/snu202527803/SKNanoOutput/presel_3SR/NoSyst/2022"
+
+BACKGROUND_GROUPS = {
+    "DYJets":    [ROOT.kYellow,   "Drell-Yan"],
+    "TT":        [ROOT.kRed,      "T#bar{T}+tW"],
+    "Nonprompt": [ROOT.kGreen+2,  "Nonprompt"],
+    "Others":    [ROOT.kBlue,     "Others"],
+}
+
+SAMPLE_MAP = {
+    "DY":     "DYJets",
+    "TTLL":   "TT",
+    "TTLJ":   "Nonprompt",
+    "ST":     "TT",
+    "WJet":   "Nonprompt",
+    "ST_tch": "Nonprompt",
+    "ST_sch": "Nonprompt",
+}
+
+DATA_FILES = ["EGamma", "Muon", "SingleMuon"]
+# inclusive W+jets는 HT-binned(WJetM*HT*)와 중복이므로 제외
+EXCLUDE_SAMPLES = ["WJets.root", "WJets_MG.root"]
+
+LUMI_BY_YEAR = {
+    "2022":     "7.99 fb^{-1} (13.6 TeV)",
+    "2022EE":   "26.68 fb^{-1} (13.6 TeV)",
+    "2023":     "17.96 fb^{-1} (13.6 TeV)",
+    "2023BPix": "9.68 fb^{-1} (13.6 TeV)",
+}
+
+SIGNAL_COLORS = [ROOT.kMagenta, ROOT.kCyan+1, ROOT.kOrange+7, ROOT.kSpring+5,
+                 ROOT.kViolet+2, ROOT.kTeal-1]
+
+# 기본으로 그릴 WR mass point (채널 접미사 EE/MM 은 region에서 자동 결정)
+DEFAULT_SIGNAL_POINTS = ["WR2000N100", "WR2000N1100", "WR4000N100", "WR4000N2100"]
+
+REGIONS = ["EE_resolved", "MM_resolved", "EE_boosted", "MM_boosted",
+           "EE_boosted_nolep", "MM_boosted_nolep"]
+
+_KEEPER = []
+
+
+def format_signal_label(fname_base, scale):
+    m = re.match(r"WR(\d+)N(\d+)(EE|MM)?", fname_base)
+    if m:
+        wr_tev = int(m.group(1)) / 1000.0
+        n_tev  = int(m.group(2)) / 1000.0
+        scale_str = f" (#times{int(scale)})" if scale != 1 else ""
+        return f"WR {wr_tev:.1f} TeV N {n_tev:.1f} TeV{scale_str}"
+    return fname_base
+
+
+def get_tree(tfile, tree_name):
+    """Central 디렉토리 안의 키 이름이 'Central/<tree>' 형태로 저장되어 있음."""
+    d = tfile.Get("Central")
+    if not d:
+        return None
+    for k in d.GetListOfKeys():
+        if k.GetName().endswith(tree_name):
+            return k.ReadObj()
+    return None
+
+
+def make_hist(tfile, tree_name, var, weight_expr, cut, bins, name):
+    """트리에서 변수 히스토그램 생성 (오버플로우/언더플로우를 양끝 빈에 합산)."""
+    t = get_tree(tfile, tree_name)
+    if not t:
+        return None
+    if isinstance(bins, np.ndarray):
+        h = ROOT.TH1D(name, "", len(bins) - 1, bins)
+    else:
+        nb, lo, hi = bins
+        h = ROOT.TH1D(name, "", nb, lo, hi)
+    h.Sumw2()
+    ROOT.SetOwnership(h, False)
+    # 일부 병합 파일의 저통계 트리에는 weight_Central 브랜치가 없음 → raw weight로 폴백
+    if re.fullmatch(r"\w+", weight_expr) and not t.GetBranch(weight_expr):
+        if t.GetBranch("weight"):
+            print(f"     (fallback: '{weight_expr}' missing in {name.split('_')[1]}, using 'weight')")
+            weight_expr = "weight"
+        else:
+            weight_expr = "1"
+    sel = f"({weight_expr})*({cut})" if cut else f"({weight_expr})"
+    # TTree::Draw는 gDirectory에서 이름으로 히스토그램을 찾으므로 Draw 후에 분리한다
+    t.Draw(f"{var}>>+{name}", sel, "goff")
+    h.SetDirectory(0)
+
+    nb = h.GetNbinsX()
+    # overflow → last bin
+    c = h.GetBinContent(nb) + h.GetBinContent(nb + 1)
+    e = math.hypot(h.GetBinError(nb), h.GetBinError(nb + 1))
+    h.SetBinContent(nb, c); h.SetBinError(nb, e)
+    h.SetBinContent(nb + 1, 0); h.SetBinError(nb + 1, 0)
+    # underflow → first bin
+    c = h.GetBinContent(1) + h.GetBinContent(0)
+    e = math.hypot(h.GetBinError(1), h.GetBinError(0))
+    h.SetBinContent(1, c); h.SetBinError(1, e)
+    h.SetBinContent(0, 0); h.SetBinError(0, 0)
+    return h
+
+
+def run_plot():
+    parser = argparse.ArgumentParser(description="presel_3SR BDT ntuple SR bkg+signal plotter")
+    parser.add_argument("--var",          type=str, required=True,  help="브랜치 이름 또는 수식 (예: mlljj)")
+    parser.add_argument("--region",       type=str, default="EE_resolved", choices=REGIONS,
+                        help="SR region (트리 SR_<region 앞부분>_BDTTree_<resolved/boosted> 사용)")
+    parser.add_argument("--input",        type=str, default=DEFAULT_DATA_PATH, help="ntuple 디렉토리")
+    parser.add_argument("--year",         type=str, default="2022", choices=list(LUMI_BY_YEAR), help="lumi 라벨용 연도")
+    parser.add_argument("--cut",          type=str, default="",     help="추가 selection (TTree::Draw 수식)")
+    parser.add_argument("--nbin",         type=int, default=40)
+    parser.add_argument("--xmin",         type=float, default=None)
+    parser.add_argument("--xmax",         type=float, default=None)
+    parser.add_argument("--bins",         type=str, default=None,   help="커스텀 빈 경계 (쉼표 구분, nbin/xmin/xmax 무시)")
+    parser.add_argument("--xlabel",       type=str, default=None)
+    parser.add_argument("--output",       type=str, default=None)
+    parser.add_argument("--ymin",         type=float, default=1e-3)
+    parser.add_argument("--ymax",         type=float, default=None)
+    parser.add_argument("--logy",         action="store_false", default=True, help="Y축 로그 해제")
+    parser.add_argument("--signal-scale", type=float, default=1.0,  help="시그널 라인 스케일 팩터")
+    parser.add_argument("--signals",      type=str, default=",".join(DEFAULT_SIGNAL_POINTS),
+                        help="쉼표 구분 WR mass point 목록, 'all'이면 채널의 모든 WR 파일")
+    parser.add_argument("--weight",       type=str, default="weight_Central", help="MC weight 브랜치/수식")
+    parser.add_argument("--show-sb",      action="store_true", default=False, help="빈별 S/sqrt(B) 출력")
+    args = parser.parse_args()
+
+    ROOT.gROOT.SetBatch(True)
+    ROOT.gStyle.SetOptStat(0)
+    ROOT.gErrorIgnoreLevel = ROOT.kWarning
+
+    channel   = args.region.split("_")[0]                      # EE / MM
+    tree_name = f"SR_{args.region.replace(channel + '_', channel + '_BDTTree_', 1)}"
+    # SR_EE_BDTTree_resolved / SR_MM_BDTTree_boosted_nolep 형태
+    LUMI_LABEL = LUMI_BY_YEAR[args.year]
+
+    if args.bins:
+        bins = np.array([float(x) for x in args.bins.split(",")], dtype=float)
+        x_min, x_max = bins[0], bins[-1]
+    else:
+        # 범위를 안 주면 배경 전체에서 자동 결정하기 어렵지 않게 필수로 요구
+        if args.xmin is None or args.xmax is None:
+            print("Error: --bins 또는 --xmin/--xmax 를 지정하세요.")
+            sys.exit(1)
+        bins = (args.nbin, args.xmin, args.xmax)
+        x_min, x_max = args.xmin, args.xmax
+
+    out_name = args.output if args.output else f"{args.region}_{re.sub(r'[^A-Za-z0-9_]', '_', args.var)}"
+
+    all_files = sorted(f for f in os.listdir(args.input)
+                       if f.endswith(".root") and os.path.isfile(os.path.join(args.input, f)))
+
+    sig_points = None if args.signals.strip().lower() == "all" else \
+        [s.strip() for s in args.signals.split(",") if s.strip()]
+
+    group_hists  = {g: None for g in BACKGROUND_GROUPS}
+    signal_hists = {}
+
+    print(f"\n>> Region: {args.region}  (tree: {tree_name}),  var: {args.var}")
+    print(f">> Input : {args.input}")
+    print("!! BLIND MODE: SR data is not drawn !!")
+    print("=" * 85)
+
+    for fname in all_files:
+        base = fname.replace(".root", "").replace("Skim_20002_", "")
+        path = os.path.join(args.input, fname)
+
+        if any(df in fname for df in DATA_FILES):
+            continue
+        if any(fname.endswith(ex) for ex in EXCLUDE_SAMPLES):
+            continue
+
+        is_signal = base.startswith("WR")
+        if is_signal:
+            if not base.endswith(channel):
+                continue
+            point = re.sub(r"(EE|MM)$", "", base)
+            if sig_points is not None and point not in sig_points:
+                continue
+
+        f = ROOT.TFile.Open(path)
+        if not f or f.IsZombie():
+            continue
+        hname = f"h_{base}_{ROOT.TUUID().AsString()[:8]}"
+        h = make_hist(f, tree_name, args.var, args.weight, args.cut, bins, hname)
+        f.Close()
+        if not h or h.GetEntries() == 0 and h.Integral() == 0:
+            continue
+
+        if is_signal:
+            print(f"  [SIG ] {base:<40}: {h.Integral():12.2f} events  (will be x{args.signal_scale})")
+            signal_hists[base] = h
+        else:
+            matched = "Others"
+            for key, grp in SAMPLE_MAP.items():
+                if key in fname:
+                    matched = grp; break
+            print(f"  [MC  ] {base:<40}: {h.Integral():12.2f} events  -> {matched}")
+            if group_hists[matched] is None:
+                group_hists[matched] = h.Clone(f"h_group_{matched}")
+                group_hists[matched].SetDirectory(0)
+                ROOT.SetOwnership(group_hists[matched], False)
+            else:
+                group_hists[matched].Add(h)
+
+    h_total_mc = None
+    for g in BACKGROUND_GROUPS:
+        if group_hists[g]:
+            if h_total_mc is None:
+                h_total_mc = group_hists[g].Clone("h_total_mc"); h_total_mc.SetDirectory(0)
+                ROOT.SetOwnership(h_total_mc, False)
+            else:
+                h_total_mc.Add(group_hists[g])
+    if h_total_mc is None:
+        print(f"\nError: no MC histograms loaded for '{args.var}' in {tree_name}")
+        return
+
+    print("-" * 85)
+    for g in BACKGROUND_GROUPS:
+        if group_hists[g]:
+            print(f"  [GRP ] {g:<12}: {group_hists[g].Integral():12.2f}")
+    print(f"  [GRP ] {'Total BKG':<12}: {h_total_mc.Integral():12.2f}")
+    print("=" * 85)
+
+    # Stack: yield 많은 순으로 아래에 쌓기
+    valid = [(g, group_hists[g].Integral()) for g in BACKGROUND_GROUPS if group_hists[g]]
+    sorted_for_stack = sorted(valid, key=lambda x: x[1], reverse=False)
+    stack = ROOT.THStack("stack", "")
+    for g, _ in sorted_for_stack:
+        h = group_hists[g]
+        h.SetFillColor(BACKGROUND_GROUPS[g][0])
+        h.SetLineColor(BACKGROUND_GROUPS[g][0])
+        stack.Add(h)
+    _KEEPER.extend([stack, h_total_mc])
+
+    # Stat unc. band
+    n_bins = h_total_mc.GetNbinsX()
+    g_stat = ROOT.TGraphAsymmErrors(n_bins)
+    for i in range(1, n_bins + 1):
+        x = h_total_mc.GetBinCenter(i); y = h_total_mc.GetBinContent(i)
+        w = h_total_mc.GetBinWidth(i) / 2.0; e = h_total_mc.GetBinError(i)
+        g_stat.SetPoint(i - 1, x, y); g_stat.SetPointError(i - 1, w, w, e, e)
+    _KEEPER.append(g_stat)
+
+    # ── S/sqrt(B) ──
+    if args.show_sb and signal_hists:
+        print("\n>> Bin-by-bin S/sqrt(B)")
+        print("-" * 100)
+        hdr = f"{'Bin range':<20}" + "".join(f" | {re.sub(r'(EE|MM)$','',s):>16}" for s in sorted(signal_hists))
+        print(hdr); print("-" * 100)
+        for i in range(1, n_bins + 1):
+            b = h_total_mc.GetBinContent(i)
+            if b <= 0:
+                continue
+            rng = f"[{h_total_mc.GetBinLowEdge(i):.0f},{h_total_mc.GetBinLowEdge(i+1):.0f}]"
+            line = f"{rng:<20}" + "".join(
+                f" | {signal_hists[s].GetBinContent(i)/math.sqrt(b):>16.4f}" for s in sorted(signal_hists))
+            print(line)
+        print("-" * 100)
+
+    # ── TSV ──
+    with open(f"{out_name}.tsv", "w") as tf:
+        hdr = "Bin\tBinLow\tBinHigh\tMC_Total\tDYJets\tTT\tNonprompt\tOthers"
+        for s in sorted(signal_hists):
+            hdr += f"\t{s}"
+        tf.write(hdr + "\n")
+        for i in range(1, n_bins + 1):
+            row = [i, h_total_mc.GetBinLowEdge(i), h_total_mc.GetBinLowEdge(i + 1),
+                   h_total_mc.GetBinContent(i)]
+            row += [(group_hists[g].GetBinContent(i) if group_hists[g] else 0.0) for g in BACKGROUND_GROUPS]
+            row += [signal_hists[s].GetBinContent(i) for s in sorted(signal_hists)]
+            tf.write("\t".join(f"{v:.4f}" if isinstance(v, float) else str(v) for v in row) + "\n")
+    print(f">> TSV saved as {out_name}.tsv")
+
+    # ── Draw ──
+    c  = ROOT.TCanvas("c", "c", 800, 900)
+    p1 = ROOT.TPad("p1", "p1", 0, 0.3, 1, 1)
+    p2 = ROOT.TPad("p2", "p2", 0, 0,   1, 0.3)
+    _KEEPER.extend([c, p1, p2])
+    p1.SetBottomMargin(0.02); p2.SetTopMargin(0.02); p2.SetBottomMargin(0.35)
+    p1.Draw(); p2.Draw()
+
+    p1.cd()
+    if args.logy:
+        p1.SetLogy()
+    sig_max = max((h.GetMaximum() * args.signal_scale for h in signal_hists.values()), default=0)
+    y_max = args.ymax if args.ymax else max(h_total_mc.GetMaximum(), sig_max) * (100 if args.logy else 1.5)
+
+    h_dummy = h_total_mc.Clone("h_dummy"); h_dummy.Reset()
+    ROOT.SetOwnership(h_dummy, False)
+    h_dummy.GetYaxis().SetTitle("Events / bin")
+    h_dummy.GetYaxis().SetTitleSize(0.05); h_dummy.GetYaxis().SetTitleOffset(1.1)
+    h_dummy.GetXaxis().SetLabelSize(0)
+    h_dummy.SetMinimum(args.ymin); h_dummy.SetMaximum(y_max)
+    h_dummy.GetXaxis().SetRangeUser(x_min, x_max)
+    h_dummy.Draw("HIST")
+
+    stack.Draw("HIST SAME")
+    g_stat.SetFillColorAlpha(ROOT.kGray + 2, 0.8); g_stat.SetFillStyle(3013)
+    g_stat.Draw("SAME E2")
+
+    drawn_signals = []
+    for idx, (base, h_sig) in enumerate(sorted(signal_hists.items())):
+        hs = h_sig.Clone(f"h_sig_scaled_{base}"); hs.SetDirectory(0)
+        ROOT.SetOwnership(hs, False)
+        hs.Scale(args.signal_scale)
+        color = SIGNAL_COLORS[idx % len(SIGNAL_COLORS)]
+        hs.SetLineColor(color); hs.SetLineWidth(3); hs.SetLineStyle(1); hs.SetFillStyle(0)
+        hs.Draw("HIST SAME")
+        drawn_signals.append((format_signal_label(base, args.signal_scale), hs))
+        _KEEPER.append(hs)
+
+    leg = ROOT.TLegend(0.55, 0.50, 0.92, 0.88)
+    leg.SetBorderSize(0); leg.SetFillStyle(0); leg.SetTextSize(0.035)
+    for g, _ in reversed(sorted_for_stack):
+        leg.AddEntry(group_hists[g], BACKGROUND_GROUPS[g][1], "f")
+    leg.AddEntry(g_stat, "Stat. Unc.", "f")
+    for lab, hs in drawn_signals:
+        leg.AddEntry(hs, lab, "l")
+    leg.Draw()
+    _KEEPER.append(leg)
+
+    latex = ROOT.TLatex(); latex.SetNDC()
+    latex.SetTextFont(61); latex.SetTextSize(0.045); latex.DrawLatex(0.12, 0.93, "CMS")
+    latex.SetTextFont(52); latex.SetTextSize(0.035); latex.DrawLatex(0.21, 0.93, "Work in progress")
+    latex.SetTextFont(42); latex.SetTextSize(0.030); latex.SetTextAlign(31)
+    latex.DrawLatex(0.90, 0.93, LUMI_LABEL)
+    latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
+    latex.DrawLatex(0.18, 0.82, "ee" if channel == "EE" else "#mu#mu")
+    latex.SetTextFont(42); latex.SetTextSize(0.060)
+    region_label = args.region.replace(channel + "_", "").replace("_", " ").capitalize() + " SR"
+    latex.DrawLatex(0.18, 0.75, region_label)
+    p1.RedrawAxis()
+
+    # Ratio pad — SR은 blind
+    p2.cd()
+    h_frame = h_dummy.Clone("h_frame"); h_frame.Reset()
+    ROOT.SetOwnership(h_frame, False)
+    h_frame.GetYaxis().SetTitle("Data / MC")
+    h_frame.SetMinimum(0.5); h_frame.SetMaximum(1.5)
+    h_frame.GetXaxis().SetTitle(args.xlabel if args.xlabel else args.var)
+    h_frame.GetXaxis().SetTitleSize(0.1); h_frame.GetXaxis().SetLabelSize(0.11)
+    h_frame.GetYaxis().SetTitleSize(0.1); h_frame.GetYaxis().SetLabelSize(0.11)
+    h_frame.GetYaxis().SetTitleOffset(0.45); h_frame.GetYaxis().SetNdivisions(505)
+    h_frame.GetXaxis().SetRangeUser(x_min, x_max)
+    h_frame.Draw("HIST")
+    bl = ROOT.TLatex(); bl.SetNDC(); bl.SetTextAlign(22); bl.SetTextSize(0.18)
+    bl.SetTextFont(62); bl.DrawLatex(0.5, 0.5, "Blinded")
+    _KEEPER.append(bl)
+    p2.RedrawAxis()
+
+    c.SaveAs(f"{out_name}_plot.png")
+    print(f">> Plot saved as {out_name}_plot.png")
+
+
+if __name__ == "__main__":
+    run_plot()
