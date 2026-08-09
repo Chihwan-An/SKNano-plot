@@ -19,6 +19,7 @@ BACKGROUND_GROUPS = {
     "DYJets":    [ROOT.kYellow,   "Drell-Yan"],
     "TT":        [ROOT.kRed,      "T#bar{T}+tW"],
     "Nonprompt": [ROOT.kGreen+2,  "Nonprompt"],
+    "QCD":       [ROOT.kOrange+1, "QCD (EM-enriched)"],
     "Others":    [ROOT.kBlue,     "Others"],
 }
 
@@ -30,7 +31,35 @@ SAMPLE_MAP = {
     "WJet":   "Nonprompt",
     "ST_tch": "Nonprompt",
     "ST_sch": "Nonprompt",
+    # QCD_PT-*_EMEnriched, pre-skimmed by skim/ with --cuts hnwr3sr and
+    # registered as Skim_HNWR3SR_QCD_PT-*. Its own group rather than a Nonprompt
+    # subgroup, so the multijet contribution can be read off the stack directly.
+    #
+    # EM-enriched ONLY -- the muon-enriched datasets are not on the KNU storage
+    # element (skim/README.md), so this constrains ELECTRON fakes. Do not read
+    # the MM regions' QCD yield as a muon-fake estimate.
+    "QCD":    "QCD",
 }
+
+# --split-nonprompt: Nonprompt(초록)를 구성 프로세스별로 채도 다른 초록으로 분리
+# (HT bin 은 같은 프로세스이므로 합침). 색은 진한 순서 고정 매핑.
+NONPROMPT_SUB_COLORS = {
+    "TTLJ":             ROOT.kGreen + 3,
+    "W+jets (M>120)":   ROOT.kGreen,
+    "W+jets (M<120)":   ROOT.kGreen - 6,
+    "Other nonprompt":  ROOT.kGreen - 9,
+}
+
+
+def nonprompt_subgroup(fname):
+    if "TTLJ" in fname:
+        return "TTLJ"
+    if "WJetM0_120" in fname:
+        return "W+jets (M<120)"
+    if "WJetM120" in fname:
+        return "W+jets (M>120)"
+    return "Other nonprompt"
+
 
 DATA_FILES = ["EGamma", "Muon", "SingleMuon"]
 # inclusive W+jets는 HT-binned(WJetM*HT*)와 중복이므로 제외
@@ -47,7 +76,7 @@ SIGNAL_COLORS = [ROOT.kMagenta, ROOT.kCyan+1, ROOT.kOrange+7, ROOT.kSpring+5,
                  ROOT.kViolet+2, ROOT.kTeal-1]
 
 # 기본으로 그릴 WR mass point (채널 접미사 EE/MM 은 region에서 자동 결정)
-DEFAULT_SIGNAL_POINTS = ["WR2000N100", "WR2000N1100", "WR4000N100", "WR4000N2100"]
+DEFAULT_SIGNAL_POINTS = ["WR2000N100", "WR2000N1100", "WR4000N100", "WR4000N2100", "WR6000N100"]
 
 REGIONS = ["EE_resolved", "MM_resolved", "EE_boosted", "MM_boosted",
            "EE_boosted_nolep", "MM_boosted_nolep"]
@@ -136,6 +165,14 @@ def run_plot():
                         help="쉼표 구분 WR mass point 목록, 'all'이면 채널의 모든 WR 파일")
     parser.add_argument("--weight",       type=str, default="weight_Central", help="MC weight 브랜치/수식")
     parser.add_argument("--show-sb",      action="store_true", default=False, help="빈별 S/sqrt(B) 출력")
+    parser.add_argument("--split-nonprompt", action="store_true", default=False,
+                        help="Nonprompt 를 구성 프로세스별 초록 채도로 분리해 쌓기")
+    parser.add_argument("--data",         action="store_true", default=False,
+                        help="데이터를 그려 Data/MC ratio 표시 (CR 용, blind 해제)")
+    parser.add_argument("--region-label", type=str, default=None,
+                        help="플롯에 표시할 region 라벨 (기본: region 이름에서 자동 생성)")
+    parser.add_argument("--ratio-ymin",   type=float, default=0.5, help="ratio pad y 최소")
+    parser.add_argument("--ratio-ymax",   type=float, default=1.5, help="ratio pad y 최대")
     args = parser.parse_args()
 
     ROOT.gROOT.SetBatch(True)
@@ -167,18 +204,45 @@ def run_plot():
         [s.strip() for s in args.signals.split(",") if s.strip()]
 
     group_hists  = {g: None for g in BACKGROUND_GROUPS}
+    np_sub       = {}   # --split-nonprompt 용 서브그룹 히스토그램
     signal_hists = {}
+    h_data       = None
 
     print(f"\n>> Region: {args.region}  (tree: {tree_name}),  var: {args.var}")
     print(f">> Input : {args.input}")
-    print("!! BLIND MODE: SR data is not drawn !!")
+    if args.data:
+        print(">> DATA MODE: Data/MC ratio 표시 (CR)")
+    else:
+        print("!! BLIND MODE: SR data is not drawn !!")
     print("=" * 85)
 
+    # 채널에 맞는 primary dataset 만 사용 (트리거 중복 방지)
+    data_pds = ["EGamma"] if channel == "EE" else ["Muon", "SingleMuon"]
+
     for fname in all_files:
-        base = fname.replace(".root", "").replace("Skim_20002_", "")
+        # strip any skim tag, not just Skim_20002_: QCD comes in as
+        # Skim_HNWR3SR_QCD_PT-*, and the display name / signal matching below
+        # both assume the bare sample alias.
+        base = re.sub(r"^Skim_[A-Za-z0-9]+_", "", fname.replace(".root", ""))
         path = os.path.join(args.input, fname)
 
         if any(df in fname for df in DATA_FILES):
+            if not args.data or not any(pd in fname for pd in data_pds):
+                continue
+            f = ROOT.TFile.Open(path)
+            if not f or f.IsZombie():
+                continue
+            hname = f"h_data_{base}_{ROOT.TUUID().AsString()[:8]}"
+            h = make_hist(f, tree_name, args.var, "1", args.cut, bins, hname)
+            f.Close()
+            if not h:
+                continue
+            print(f"  [DATA] {base:<40}: {h.Integral():12.2f} events")
+            if h_data is None:
+                h_data = h.Clone("h_data"); h_data.SetDirectory(0)
+                ROOT.SetOwnership(h_data, False)
+            else:
+                h_data.Add(h)
             continue
         if any(fname.endswith(ex) for ex in EXCLUDE_SAMPLES):
             continue
@@ -208,7 +272,17 @@ def run_plot():
             for key, grp in SAMPLE_MAP.items():
                 if key in fname:
                     matched = grp; break
-            print(f"  [MC  ] {base:<40}: {h.Integral():12.2f} events  -> {matched}")
+            if args.split_nonprompt and matched == "Nonprompt":
+                sub = nonprompt_subgroup(fname)
+                print(f"  [MC  ] {base:<40}: {h.Integral():12.2f} events  -> Nonprompt/{sub}")
+                if sub not in np_sub:
+                    np_sub[sub] = h.Clone(f"h_npsub_{sub}")
+                    np_sub[sub].SetDirectory(0)
+                    ROOT.SetOwnership(np_sub[sub], False)
+                else:
+                    np_sub[sub].Add(h)
+            else:
+                print(f"  [MC  ] {base:<40}: {h.Integral():12.2f} events  -> {matched}")
             if group_hists[matched] is None:
                 group_hists[matched] = h.Clone(f"h_group_{matched}")
                 group_hists[matched].SetDirectory(0)
@@ -232,18 +306,36 @@ def run_plot():
     for g in BACKGROUND_GROUPS:
         if group_hists[g]:
             print(f"  [GRP ] {g:<12}: {group_hists[g].Integral():12.2f}")
+    if np_sub:
+        for sub in sorted(np_sub, key=lambda s: np_sub[s].Integral(), reverse=True):
+            print(f"  [NP  ]   {sub:<18}: {np_sub[sub].Integral():12.2f}")
     print(f"  [GRP ] {'Total BKG':<12}: {h_total_mc.Integral():12.2f}")
+    if h_data:
+        print(f"  [GRP ] {'Data':<12}: {h_data.Integral():12.2f}"
+              f"  (Data/MC = {h_data.Integral()/h_total_mc.Integral():.3f})")
     print("=" * 85)
 
-    # Stack: yield 많은 순으로 아래에 쌓기
+    # Stack: yield 많은 순으로 위에 쌓기 (ascending 으로 Add).
+    # Nonprompt 분리 시에는 그룹 전체 yield 위치에 초록 블록을 통째로 두고,
+    # 블록 안에서도 많은 서브그룹이 블록 최상단에 오도록 ascending 으로 Add.
     valid = [(g, group_hists[g].Integral()) for g in BACKGROUND_GROUPS if group_hists[g]]
     sorted_for_stack = sorted(valid, key=lambda x: x[1], reverse=False)
     stack = ROOT.THStack("stack", "")
+    legend_items = []   # (hist, label) — 스택 아래→위 순서
     for g, _ in sorted_for_stack:
-        h = group_hists[g]
-        h.SetFillColor(BACKGROUND_GROUPS[g][0])
-        h.SetLineColor(BACKGROUND_GROUPS[g][0])
-        stack.Add(h)
+        if g == "Nonprompt" and np_sub:
+            for sub in sorted(np_sub, key=lambda s: np_sub[s].Integral()):
+                hs = np_sub[sub]
+                hs.SetFillColor(NONPROMPT_SUB_COLORS[sub])
+                hs.SetLineColor(NONPROMPT_SUB_COLORS[sub])
+                stack.Add(hs)
+                legend_items.append((hs, sub))
+        else:
+            h = group_hists[g]
+            h.SetFillColor(BACKGROUND_GROUPS[g][0])
+            h.SetLineColor(BACKGROUND_GROUPS[g][0])
+            stack.Add(h)
+            legend_items.append((h, BACKGROUND_GROUPS[g][1]))
     _KEEPER.extend([stack, h_total_mc])
 
     # Stat unc. band
@@ -272,8 +364,13 @@ def run_plot():
         print("-" * 100)
 
     # ── TSV ──
+    np_sub_cols = sorted(np_sub, key=lambda s: np_sub[s].Integral(), reverse=True)
     with open(f"{out_name}.tsv", "w") as tf:
         hdr = "Bin\tBinLow\tBinHigh\tMC_Total\tDYJets\tTT\tNonprompt\tOthers"
+        for sub in np_sub_cols:
+            hdr += f"\tNP_{sub.replace(' ', '_')}"
+        if h_data:
+            hdr += "\tData"
         for s in sorted(signal_hists):
             hdr += f"\t{s}"
         tf.write(hdr + "\n")
@@ -281,6 +378,9 @@ def run_plot():
             row = [i, h_total_mc.GetBinLowEdge(i), h_total_mc.GetBinLowEdge(i + 1),
                    h_total_mc.GetBinContent(i)]
             row += [(group_hists[g].GetBinContent(i) if group_hists[g] else 0.0) for g in BACKGROUND_GROUPS]
+            row += [np_sub[sub].GetBinContent(i) for sub in np_sub_cols]
+            if h_data:
+                row += [h_data.GetBinContent(i)]
             row += [signal_hists[s].GetBinContent(i) for s in sorted(signal_hists)]
             tf.write("\t".join(f"{v:.4f}" if isinstance(v, float) else str(v) for v in row) + "\n")
     print(f">> TSV saved as {out_name}.tsv")
@@ -297,7 +397,8 @@ def run_plot():
     if args.logy:
         p1.SetLogy()
     sig_max = max((h.GetMaximum() * args.signal_scale for h in signal_hists.values()), default=0)
-    y_max = args.ymax if args.ymax else max(h_total_mc.GetMaximum(), sig_max) * (100 if args.logy else 1.5)
+    data_max = h_data.GetMaximum() if h_data else 0
+    y_max = args.ymax if args.ymax else max(h_total_mc.GetMaximum(), sig_max, data_max) * (100 if args.logy else 1.5)
 
     h_dummy = h_total_mc.Clone("h_dummy"); h_dummy.Reset()
     ROOT.SetOwnership(h_dummy, False)
@@ -323,10 +424,19 @@ def run_plot():
         drawn_signals.append((format_signal_label(base, args.signal_scale), hs))
         _KEEPER.append(hs)
 
-    leg = ROOT.TLegend(0.55, 0.50, 0.92, 0.88)
-    leg.SetBorderSize(0); leg.SetFillStyle(0); leg.SetTextSize(0.035)
-    for g, _ in reversed(sorted_for_stack):
-        leg.AddEntry(group_hists[g], BACKGROUND_GROUPS[g][1], "f")
+    if h_data:
+        h_data.SetMarkerStyle(20); h_data.SetMarkerSize(0.9)
+        h_data.SetMarkerColor(ROOT.kBlack); h_data.SetLineColor(ROOT.kBlack)
+        h_data.Draw("SAME E1 X0")
+
+    n_leg = len(legend_items) + 1 + len(drawn_signals) + (1 if h_data else 0)
+    leg = ROOT.TLegend(0.55, max(0.40, 0.88 - 0.038 * n_leg), 0.92, 0.88)
+    leg.SetBorderSize(0); leg.SetFillStyle(0)
+    leg.SetTextSize(0.030 if n_leg > 9 else 0.035)
+    if h_data:
+        leg.AddEntry(h_data, "Data", "lep")
+    for h, lab in reversed(legend_items):
+        leg.AddEntry(h, lab, "f")
     leg.AddEntry(g_stat, "Stat. Unc.", "f")
     for lab, hs in drawn_signals:
         leg.AddEntry(hs, lab, "l")
@@ -341,25 +451,49 @@ def run_plot():
     latex.SetTextAlign(11); latex.SetTextFont(62); latex.SetTextSize(0.06)
     latex.DrawLatex(0.18, 0.82, "ee" if channel == "EE" else "#mu#mu")
     latex.SetTextFont(42); latex.SetTextSize(0.060)
-    region_label = args.region.replace(channel + "_", "").replace("_", " ").capitalize() + " SR"
+    region_label = args.region_label if args.region_label else \
+        args.region.replace(channel + "_", "").replace("_", " ").capitalize() + " SR"
+    if len(region_label) > 14:          # 긴 라벨은 legend 와 겹치지 않게 축소
+        latex.SetTextSize(0.040)
     latex.DrawLatex(0.18, 0.75, region_label)
     p1.RedrawAxis()
 
-    # Ratio pad — SR은 blind
+    # Ratio pad — 데이터 없으면 blind 문구, 있으면 Data/MC
     p2.cd()
     h_frame = h_dummy.Clone("h_frame"); h_frame.Reset()
     ROOT.SetOwnership(h_frame, False)
     h_frame.GetYaxis().SetTitle("Data / MC")
-    h_frame.SetMinimum(0.5); h_frame.SetMaximum(1.5)
+    h_frame.SetMinimum(args.ratio_ymin); h_frame.SetMaximum(args.ratio_ymax)
     h_frame.GetXaxis().SetTitle(args.xlabel if args.xlabel else args.var)
     h_frame.GetXaxis().SetTitleSize(0.1); h_frame.GetXaxis().SetLabelSize(0.11)
     h_frame.GetYaxis().SetTitleSize(0.1); h_frame.GetYaxis().SetLabelSize(0.11)
     h_frame.GetYaxis().SetTitleOffset(0.45); h_frame.GetYaxis().SetNdivisions(505)
     h_frame.GetXaxis().SetRangeUser(x_min, x_max)
     h_frame.Draw("HIST")
-    bl = ROOT.TLatex(); bl.SetNDC(); bl.SetTextAlign(22); bl.SetTextSize(0.18)
-    bl.SetTextFont(62); bl.DrawLatex(0.5, 0.5, "Blinded")
-    _KEEPER.append(bl)
+    if h_data:
+        # MC stat unc. band (1 ± rel.err)
+        g_ratio_band = ROOT.TGraphAsymmErrors(n_bins)
+        for i in range(1, n_bins + 1):
+            x = h_total_mc.GetBinCenter(i); w = h_total_mc.GetBinWidth(i) / 2.0
+            m = h_total_mc.GetBinContent(i)
+            rel = h_total_mc.GetBinError(i) / m if m > 0 else 0
+            g_ratio_band.SetPoint(i - 1, x, 1.0)
+            g_ratio_band.SetPointError(i - 1, w, w, rel, rel)
+        g_ratio_band.SetFillColorAlpha(ROOT.kGray + 2, 0.8); g_ratio_band.SetFillStyle(3013)
+        g_ratio_band.Draw("SAME E2")
+        h_ratio = h_data.Clone("h_ratio"); h_ratio.SetDirectory(0)
+        ROOT.SetOwnership(h_ratio, False)
+        h_ratio.Divide(h_total_mc)
+        h_ratio.SetMarkerStyle(20); h_ratio.SetMarkerSize(0.9)
+        h_ratio.SetMarkerColor(ROOT.kBlack); h_ratio.SetLineColor(ROOT.kBlack)
+        h_ratio.Draw("SAME E1 X0")
+        l_one = ROOT.TLine(x_min, 1.0, x_max, 1.0)
+        l_one.SetLineStyle(2); l_one.Draw("SAME")
+        _KEEPER.extend([g_ratio_band, h_ratio, l_one])
+    else:
+        bl = ROOT.TLatex(); bl.SetNDC(); bl.SetTextAlign(22); bl.SetTextSize(0.18)
+        bl.SetTextFont(62); bl.DrawLatex(0.5, 0.5, "Blinded")
+        _KEEPER.append(bl)
     p2.RedrawAxis()
 
     c.SaveAs(f"{out_name}_plot.png")

@@ -1,0 +1,79 @@
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "met_pt"
+
+>> Region: EE_resolved  (tree: SR_EE_BDTTree_resolved),  var: met_pt
+>> Input : /u/user/snu202527803/SKNanoOutput/presel_3SR/NoSyst/2022
+!! BLIND MODE: SR data is not drawn !!
+=====================================================================================
+  [MC  ] DYMLL120HT100to400                      :       305.55 events  -> DYJets
+  [MC  ] DYMLL120HT1500to2500                    :         1.04 events  -> DYJets
+  [MC  ] DYMLL120HT2500                          :         0.08 events  -> DYJets
+  [MC  ] DYMLL120HT400to800                      :        70.20 events  -> DYJets
+  [MC  ] DYMLL120HT40to70                        :         9.74 events  -> DYJets
+  [MC  ] DYMLL120HT70to100                       :        21.30 events  -> DYJets
+  [MC  ] DYMLL120HT800to1500                     :        11.57 events  -> DYJets
+  [MC  ] DYMLL50to120HT100to400                  :        10.51 events  -> DYJets
+  [MC  ] DYMLL50to120HT1500to2500                :         0.19 events  -> DYJets
+  [MC  ] DYMLL50to120HT2500                      :         0.01 events  -> DYJets
+  [MC  ] DYMLL50to120HT400to800                  :         8.54 events  -> DYJets
+  [MC  ] DYMLL50to120HT40to70                    :         0.00 events  -> DYJets
+  [MC  ] DYMLL50to120HT70to100                   :         0.00 events  -> DYJets
+  [MC  ] DYMLL50to120HT800to1500                 :         2.05 events  -> DYJets
+  [MC  ] ST_sch_antitop_Lep                      :         0.00 events  -> TT
+  [MC  ] ST_sch_top_Lep                          :         0.00 events  -> TT
+  [MC  ] ST_tW_antitop_Fullyhad                  :         0.00 events  -> TT
+  [MC  ] ST_tW_antitop_Lep                       :        67.91 events  -> TT
+  [MC  ] ST_tW_antitop_Semilep                   :         4.45 events  -> TT
+  [MC  ] ST_tW_top_Fullyhad                      :         0.00 events  -> TT
+  [MC  ] ST_tW_top_Lep                           :        66.30 events  -> TT
+  [MC  ] ST_tW_top_Semilep                       :         4.34 events  -> TT
+  [MC  ] ST_tch_antitop                          :         0.00 events  -> TT
+  [MC  ] ST_tch_top                              :         0.00 events  -> TT
+  [MC  ] TTLJ_powheg                             :        83.00 events  -> Nonprompt
+  [MC  ] TTLL_powheg                             :      1480.85 events  -> TT
+  [MC  ] WJetM0_120HT100to400                    :        37.04 events  -> Nonprompt
+  [MC  ] WJetM0_120HT1500to2500                  :         1.12 events  -> Nonprompt
+  [MC  ] WJetM0_120HT2500                        :         0.00 events  -> Nonprompt
+  [MC  ] WJetM0_120HT400to800                    :        39.41 events  -> Nonprompt
+  [MC  ] WJetM0_120HT40to100                     :         0.00 events  -> Nonprompt
+  [MC  ] WJetM0_120HT800to1500                   :        10.64 events  -> Nonprompt
+  [MC  ] WJetM120HT100to400                      :         0.79 events  -> Nonprompt
+  [MC  ] WJetM120HT1500to2500                    :         0.01 events  -> Nonprompt
+  [MC  ] WJetM120HT2500                          :         0.00 events  -> Nonprompt
+  [MC  ] WJetM120HT400to800                      :         0.26 events  -> Nonprompt
+  [MC  ] WJetM120HT40to100                       :         0.00 events  -> Nonprompt
+  [MC  ] WJetM120HT800to1500                     :         0.00 events  -> Nonprompt
+  [SIG ] WR2000N100EE                            :        51.78 events  (will be x1.0)
+  [SIG ] WR2000N1100EE                           :       422.96 events  (will be x1.0)
+  [SIG ] WR4000N100EE                            :         0.45 events  (will be x1.0)
+  [SIG ] WR4000N2100EE                           :         4.71 events  (will be x1.0)
+  [SIG ] WR6000N100EE                            :         0.07 events  (will be x1.0)
+  [MC  ] WWto2L2Nu                               :        36.13 events  -> Others
+  [MC  ] WWto4Q                                  :         0.00 events  -> Others
+  [MC  ] WWtoLNu2Q                               :         4.43 events  -> Others
+  [MC  ] WZto2L2Q                                :         5.52 events  -> Others
+  [MC  ] WZto3LNu                                :        14.43 events  -> Others
+  [MC  ] WZtoLNu2Q                               :         3.01 events  -> Others
+  [MC  ] ZZto2L2Nu                               :         1.86 events  -> Others
+  [MC  ] ZZto2L2Q                                :        19.00 events  -> Others
+  [MC  ] ZZto2Nu2Q                               :         0.00 events  -> Others
+  [MC  ] ZZto4L                                  :         2.10 events  -> Others
+  [MC  ] ttWtoLNu                                :         6.26 events  -> Others
+  [MC  ] ttWtoLNu_EWK                            :         0.59 events  -> Others
+  [MC  ] ttZtoLL_MLL4to50                        :         0.41 events  -> Others
+  [MC  ] ttZtoLL_MLL50toInf                      :         4.68 events  -> Others
+  [MC  ] ttZtoNuNu                               :         0.43 events  -> Others
+  [MC  ] ttZtoQQ                                 :         2.41 events  -> Others
+-------------------------------------------------------------------------------------
+  [GRP ] DYJets      :       440.78
+  [GRP ] TT          :      1623.86
+  [GRP ] Nonprompt   :       172.28
+  [GRP ] Others      :       101.26
+  [GRP ] Total BKG   :      2338.18
+=====================================================================================
+>> TSV saved as SR/EE_resolved/EE_resolved_met_pt.tsv
+>> Plot saved as SR/EE_resolved/EE_resolved_met_pt_plot.png

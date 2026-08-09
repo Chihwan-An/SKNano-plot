@@ -1,0 +1,78 @@
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "lt"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "lt"
+
+>> Region: EE_boosted_nolep  (tree: SR_EE_BDTTree_boosted_nolep),  var: lt
+>> Input : /u/user/snu202527803/SKNanoOutput/presel_3SR/NoSyst/2022
+!! BLIND MODE: SR data is not drawn !!
+=====================================================================================
+  [MC  ] DYMLL120HT100to400                      :       216.26 events  -> DYJets
+  [MC  ] DYMLL120HT1500to2500                    :         0.93 events  -> DYJets
+  [MC  ] DYMLL120HT2500                          :         0.07 events  -> DYJets
+  [MC  ] DYMLL120HT400to800                      :        79.94 events  -> DYJets
+  [MC  ] DYMLL120HT40to70                        :        29.12 events  -> DYJets
+  [MC  ] DYMLL120HT70to100                       :        16.37 events  -> DYJets
+  [MC  ] DYMLL120HT800to1500                     :        11.10 events  -> DYJets
+  [MC  ] DYMLL50to120HT100to400                  :      5204.61 events  -> DYJets
+  [MC  ] DYMLL50to120HT1500to2500                :        21.40 events  -> DYJets
+  [MC  ] DYMLL50to120HT2500                      :         1.48 events  -> DYJets
+  [MC  ] DYMLL50to120HT400to800                  :      2093.88 events  -> DYJets
+  [MC  ] DYMLL50to120HT40to70                    :         0.00 events  -> DYJets
+  [MC  ] DYMLL50to120HT70to100                   :         0.81 events  -> DYJets
+  [MC  ] DYMLL50to120HT800to1500                 :       273.73 events  -> DYJets
+  [MC  ] ST_sch_antitop_Lep                      :        14.49 events  -> TT
+  [MC  ] ST_sch_top_Lep                          :        27.24 events  -> TT
+  [MC  ] ST_tW_antitop_Fullyhad                  :         1.67 events  -> TT
+  [MC  ] ST_tW_antitop_Lep                       :       132.20 events  -> TT
+  [MC  ] ST_tW_antitop_Semilep                   :      1091.27 events  -> TT
+  [MC  ] ST_tW_top_Fullyhad                      :         1.73 events  -> TT
+  [MC  ] ST_tW_top_Lep                           :       132.74 events  -> TT
+  [MC  ] ST_tW_top_Semilep                       :      1107.24 events  -> TT
+  [MC  ] ST_tch_antitop                          :       232.07 events  -> TT
+  [MC  ] ST_tch_top                              :       440.04 events  -> TT
+  [MC  ] TTLJ_powheg                             :     16931.28 events  -> Nonprompt/TTLJ
+  [MC  ] TTLL_powheg                             :      2010.37 events  -> TT
+  [MC  ] WJetM0_120HT100to400                    :     50558.98 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM0_120HT1500to2500                  :       260.42 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM0_120HT2500                        :         1.91 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM0_120HT400to800                    :     22304.49 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM0_120HT40to100                     :         2.11 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM0_120HT800to1500                   :      3230.31 events  -> Nonprompt/W+jets (M<120)
+  [MC  ] WJetM120HT100to400                      :      1028.23 events  -> Nonprompt/W+jets (M>120)
+  [MC  ] WJetM120HT1500to2500                    :         5.98 events  -> Nonprompt/W+jets (M>120)
+  [MC  ] WJetM120HT2500                          :         0.05 events  -> Nonprompt/W+jets (M>120)
+  [MC  ] WJetM120HT400to800                      :       473.49 events  -> Nonprompt/W+jets (M>120)
+  [MC  ] WJetM120HT40to100                       :         1.93 events  -> Nonprompt/W+jets (M>120)
+  [MC  ] WJetM120HT800to1500                     :        70.97 events  -> Nonprompt/W+jets (M>120)
+  [SIG ] WR2000N100EE                            :       499.96 events  (will be x1.0)
+  [SIG ] WR2000N1100EE                           :        81.17 events  (will be x1.0)
+  [SIG ] WR4000N100EE                            :         8.61 events  (will be x1.0)
+  [SIG ] WR4000N2100EE                           :         0.85 events  (will be x1.0)
+  [SIG ] WR6000N100EE                            :         0.54 events  (will be x1.0)
+  [MC  ] WWto2L2Nu                               :       212.13 events  -> Others
+  [MC  ] WWto4Q                                  :         3.10 events  -> Others
+  [MC  ] WWtoLNu2Q                               :      1510.81 events  -> Others
+  [MC  ] WZto2L2Q                                :        45.18 events  -> Others
+  [MC  ] WZto3LNu                                :        39.50 events  -> Others
+  [MC  ] WZtoLNu2Q                               :       889.57 events  -> Others
+  [MC  ] ZZto2L2Nu                               :        24.92 events  -> Others
+  [MC  ] ZZto2L2Q                                :       118.69 events  -> Others
+  [MC  ] ZZto2Nu2Q                               :         0.00 events  -> Others
+  [MC  ] ZZto4L                                  :         1.96 events  -> Others
+  [MC  ] ttWtoLNu                                :        26.14 events  -> Others
+  [MC  ] ttWtoLNu_EWK                            :         1.98 events  -> Others
+  [MC  ] ttZtoLL_MLL4to50                        :         1.32 events  -> Others
+  [MC  ] ttZtoLL_MLL50toInf                      :         5.54 events  -> Others
+  [MC  ] ttZtoNuNu                               :         5.44 events  -> Others
+  [MC  ] ttZtoQQ                                 :        28.78 events  -> Others
+-------------------------------------------------------------------------------------
+  [GRP ] DYJets      :      7949.68
+  [GRP ] TT          :      5191.05
+  [GRP ] Nonprompt   :     94870.15
+  [GRP ] Others      :      2915.06
+  [NP  ]   W+jets (M<120)    :     76358.21
+  [NP  ]   TTLJ              :     16931.28
+  [NP  ]   W+jets (M>120)    :      1580.65
+  [GRP ] Total BKG   :    110925.93
+=====================================================================================
+>> TSV saved as SR/EE_boosted_nolep/EE_boosted_nolep_lt.tsv
+>> Plot saved as SR/EE_boosted_nolep/EE_boosted_nolep_lt_plot.png

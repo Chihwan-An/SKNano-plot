@@ -1,0 +1,79 @@
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "fatjet1_sdMass"
+Error in <TString::ReadBuffer>: found case with nwh=255 and nchars=-1
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "fatjet1_sdMass"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "fatjet1_sdMass"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "fatjet1_sdMass"
+Error in <TTreeFormula::Compile>:  Bad numerical expression : "fatjet1_sdMass"
+
+>> Region: EE_boosted  (tree: SR_EE_BDTTree_boosted),  var: fatjet1_sdMass
+>> Input : /u/user/snu202527803/SKNanoOutput/presel_3SR/NoSyst/2022
+!! BLIND MODE: SR data is not drawn !!
+=====================================================================================
+  [MC  ] DYMLL120HT100to400                      :       228.51 events  -> DYJets
+  [MC  ] DYMLL120HT1500to2500                    :         0.09 events  -> DYJets
+  [MC  ] DYMLL120HT2500                          :         0.01 events  -> DYJets
+  [MC  ] DYMLL120HT400to800                      :        22.16 events  -> DYJets
+  [MC  ] DYMLL120HT40to70                        :       167.75 events  -> DYJets
+  [MC  ] DYMLL120HT70to100                       :        90.11 events  -> DYJets
+  [MC  ] DYMLL120HT800to1500                     :         1.50 events  -> DYJets
+  [MC  ] DYMLL50to120HT100to400                  :        52.89 events  -> DYJets
+  [MC  ] DYMLL50to120HT1500to2500                :         0.15 events  -> DYJets
+  [MC  ] DYMLL50to120HT2500                      :         0.01 events  -> DYJets
+  [MC  ] DYMLL50to120HT400to800                  :        15.40 events  -> DYJets
+  [MC  ] DYMLL50to120HT40to70                    :         0.00 events  -> DYJets
+  [MC  ] DYMLL50to120HT70to100                   :         0.00 events  -> DYJets
+  [MC  ] DYMLL50to120HT800to1500                 :         2.06 events  -> DYJets
+  [MC  ] ST_sch_antitop_Lep                      :         0.00 events  -> TT
+  [MC  ] ST_sch_top_Lep                          :         0.00 events  -> TT
+  [MC  ] ST_tW_antitop_Fullyhad                  :         0.00 events  -> TT
+  [MC  ] ST_tW_antitop_Lep                       :        24.71 events  -> TT
+  [MC  ] ST_tW_antitop_Semilep                   :         5.05 events  -> TT
+  [MC  ] ST_tW_top_Fullyhad                      :         0.00 events  -> TT
+  [MC  ] ST_tW_top_Lep                           :        25.38 events  -> TT
+  [MC  ] ST_tW_top_Semilep                       :         5.28 events  -> TT
+  [MC  ] ST_tch_antitop                          :         0.00 events  -> TT
+  [MC  ] ST_tch_top                              :         3.80 events  -> TT
+  [MC  ] TTLJ_powheg                             :        53.65 events  -> Nonprompt
+  [MC  ] TTLL_powheg                             :       298.97 events  -> TT
+  [MC  ] WJetM0_120HT100to400                    :       200.10 events  -> Nonprompt
+  [MC  ] WJetM0_120HT1500to2500                  :         0.66 events  -> Nonprompt
+  [MC  ] WJetM0_120HT2500                        :         0.00 events  -> Nonprompt
+  [MC  ] WJetM0_120HT400to800                    :        73.39 events  -> Nonprompt
+  [MC  ] WJetM0_120HT40to100                     :         0.00 events  -> Nonprompt
+  [MC  ] WJetM0_120HT800to1500                   :         9.11 events  -> Nonprompt
+  [MC  ] WJetM120HT100to400                      :         3.57 events  -> Nonprompt
+  [MC  ] WJetM120HT1500to2500                    :         0.00 events  -> Nonprompt
+  [MC  ] WJetM120HT2500                          :         0.00 events  -> Nonprompt
+  [MC  ] WJetM120HT400to800                      :         0.79 events  -> Nonprompt
+  [MC  ] WJetM120HT40to100                       :         0.00 events  -> Nonprompt
+  [MC  ] WJetM120HT800to1500                     :         0.18 events  -> Nonprompt
+  [SIG ] WR2000N100EE                            :       341.52 events  (will be x1.0)
+  [SIG ] WR2000N1100EE                           :        50.91 events  (will be x1.0)
+  [SIG ] WR4000N100EE                            :         2.16 events  (will be x1.0)
+  [SIG ] WR4000N2100EE                           :         0.45 events  (will be x1.0)
+  [SIG ] WR6000N100EE                            :         0.22 events  (will be x1.0)
+  [MC  ] WWto2L2Nu                               :        46.91 events  -> Others
+  [MC  ] WWto4Q                                  :         0.00 events  -> Others
+  [MC  ] WWtoLNu2Q                               :         6.24 events  -> Others
+  [MC  ] WZto2L2Q                                :         2.96 events  -> Others
+  [MC  ] WZto3LNu                                :        17.62 events  -> Others
+  [MC  ] WZtoLNu2Q                               :         3.50 events  -> Others
+  [MC  ] ZZto2L2Nu                               :         5.20 events  -> Others
+  [MC  ] ZZto2L2Q                                :        11.10 events  -> Others
+  [MC  ] ZZto2Nu2Q                               :         0.00 events  -> Others
+  [MC  ] ZZto4L                                  :         4.01 events  -> Others
+  [MC  ] ttWtoLNu                                :         1.07 events  -> Others
+  [MC  ] ttWtoLNu_EWK                            :         0.00 events  -> Others
+  [MC  ] ttZtoLL_MLL4to50                        :         0.07 events  -> Others
+  [MC  ] ttZtoLL_MLL50toInf                      :         0.98 events  -> Others
+  [MC  ] ttZtoNuNu                               :         0.08 events  -> Others
+  [MC  ] ttZtoQQ                                 :         0.07 events  -> Others
+-------------------------------------------------------------------------------------
+  [GRP ] DYJets      :       580.63
+  [GRP ] TT          :       363.20
+  [GRP ] Nonprompt   :       341.46
+  [GRP ] Others      :        99.83
+  [GRP ] Total BKG   :      1385.11
+=====================================================================================
+>> TSV saved as SR/EE_boosted/EE_boosted_fatjet1_sdMass.tsv
+>> Plot saved as SR/EE_boosted/EE_boosted_fatjet1_sdMass_plot.png
