@@ -6,7 +6,8 @@ SRChargeSplit m(lljj) plots in out/Resolve/sig_chargesign/EE/other/Inclusive, bu
 import argparse, glob, os, sys
 import numpy as np
 import ROOT
-PC = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(PC, "../../BDT/SR/test")
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
+PC = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(NANO15, "BDT/SR/test")
 sys.path.insert(0, os.path.join(T, "scripts")); import chargeflip_ddss as dd
 ap = argparse.ArgumentParser()
 ap.add_argument("--dumps", default=f"{T}/data/chargeflip/dumps_boost")

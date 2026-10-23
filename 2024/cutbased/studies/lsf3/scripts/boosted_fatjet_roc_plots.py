@@ -12,12 +12,13 @@ import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 import mplhep as hep
 
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 ap = argparse.ArgumentParser()
 ap.add_argument("--sig-hists", default=f"{S}/hists_boosted_sig")
 ap.add_argument("--bkg-hists", default=f"{S}/hists_boosted_bkg")
 ap.add_argument("--xsec", default=f"{S}/condor/bkg_xsec.json")
 ap.add_argument("--out", default=f"{S}/fatjet_taggers/boosted_fatjet")
-ap.add_argument("--sig-json", default=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(S)))), "HNWR/data/Sample/2024"))
+ap.add_argument("--sig-json", default=os.path.join(NANO15, "HNWR/data/Sample/2024"))
 a = ap.parse_args()
 LUMI = 109.8
 NB = 200

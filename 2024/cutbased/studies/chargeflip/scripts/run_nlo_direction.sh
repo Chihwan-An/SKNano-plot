@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-repo=$(cd "$script_dir/../../../../../.." && pwd)
+repo=${SKNANO_HOME:-/data9/Users/achihwan/nano15/SKNanoAnalyzer}
 export SKNANO_HOME="$repo"
 export SKNANO_DATA="$repo/data/Run3_v15_Run2_v15"
 export SKNANO_INSTALLDIR="$repo/install/redhat"

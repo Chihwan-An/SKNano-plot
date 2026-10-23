@@ -23,6 +23,7 @@ import mplhep as hep
 import ROOT
 
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 sys.path.insert(0, os.path.dirname(os.path.dirname(S)))      # plot/cutbased, for config.py
 import config
 
@@ -30,7 +31,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--sig", default=f"{S}/trees_boosted_sig")
 ap.add_argument("--bkg", default=f"{S}/trees_boosted_bkg_full")
 ap.add_argument("--xsec", default=f"{S}/condor/bkg_xsec_all.json")
-ap.add_argument("--sig-json", default=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(S)))), "HNWR/data/Sample/2024"))
+ap.add_argument("--sig-json", default=os.path.join(NANO15, "HNWR/data/Sample/2024"))
 ap.add_argument("--out", default=f"{S}/fatjet_taggers/globalpart3_D/02_discriminant")
 ap.add_argument("--alpha-top", type=float, default=1.0)
 ap.add_argument("--alpha-qcd", type=float, default=1.0)

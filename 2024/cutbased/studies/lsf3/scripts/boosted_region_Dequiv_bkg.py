@@ -16,11 +16,12 @@ import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 import mplhep as hep
 
 S = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 ap = argparse.ArgumentParser()
 ap.add_argument("--sig", default=f"{S}/trees_boosted_sig")
 ap.add_argument("--bkg", default=f"{S}/trees_boosted_bkg_full")
 ap.add_argument("--xsec", default=f"{S}/condor/bkg_xsec_all.json")
-ap.add_argument("--sig-json", default=os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(S)))), "HNWR/data/Sample/2024"))
+ap.add_argument("--sig-json", default=os.path.join(NANO15, "HNWR/data/Sample/2024"))
 ap.add_argument("--out", default=f"{S}/fatjet_taggers/globalpart3_D/06_lsf3_equiv")
 ap.add_argument("--match", default="bkg", choices=["bkg", "sig"])
 ap.add_argument("--mass", type=int, default=3000, help="signal point quoted (and matched with --match sig)")

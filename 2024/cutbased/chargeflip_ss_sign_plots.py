@@ -11,9 +11,10 @@ Non-flip SS from MC (no flipped electron), split by the pair sign. Systematic ba
 import argparse, json, os, sys
 import numpy as np
 import ROOT
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import chargeflip_plots as cfp
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../BDT/SR/test/scripts"))
+sys.path.insert(0, os.path.join(NANO15, "BDT/SR/test/scripts"))
 import chargeflip_ddss as dd
 
 GROUPS = {"Flip": ("kOrange", "Charge flip (OS #times w)"), "DYJets": ("kYellow", "Drell-Yan non-flip"),

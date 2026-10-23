@@ -16,6 +16,7 @@ SR data_obs is Asimov -> blinded; CR data is real.
 import argparse, os, re, sys
 import numpy as np
 import ROOT
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config, layout, plotter
 import chargeflip_plots as cfp
@@ -23,7 +24,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "stu
 import chargeflip_ddss_dyonly as ddss      # the builder of the v3 EE SS templates: same selection, dumps, groups
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SCEN = os.path.join(HERE, "../../BDT/combine/scenarios/test")
+SCEN = os.path.join(NANO15, "BDT/combine/scenarios/test")
 GROUPS = {"Flip": ("kOrange", "Charge flip"), "DYJets": ("kYellow", "Drell-Yan"),
           "TT": ("kRed", "T#bar{T}+tW"), "Nonprompt": ("kGreen+2", "Nonprompt"), "Others": ("kBlue", "Others")}
 # card bin -> (region dir, output stem, xlabel, label2, blind)
@@ -117,7 +118,7 @@ def main():
     ap.add_argument("--signals", default="WR4000N2000,WR4000N200", help="shapes-file signal names without the channel suffix")
     ap.add_argument("--suffix", default="_limitbin")
     ap.add_argument("--rmin", type=float, default=0.0); ap.add_argument("--rmax", type=float, default=3.0)
-    ap.add_argument("--dumps", default=os.path.join(HERE, "../../BDT/SR/test/data/chargeflip/dumps_v4/all"),
+    ap.add_argument("--dumps", default=os.path.join(NANO15, "BDT/SR/test/data/chargeflip/dumps_v4/all"),
                     help="RFlav tree dumps behind the EE SS templates; used for the _noflip plots")
     ap.add_argument("--regions", default=None, help="comma list of card bins to draw (default: all)")
     ap.add_argument("--no-noflip", action="store_true", help="skip the EE SS plots without any charge-flip treatment")

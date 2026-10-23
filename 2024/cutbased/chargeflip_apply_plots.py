@@ -10,6 +10,7 @@ DY gen-SS/unmatched, TT without a flipped electron]. Same inputs/definitions as 
 import argparse, glob, json, os, re, sys
 import numpy as np
 import ROOT
+NANO15 = os.path.join(os.environ.get("SKNANO_HOME", "/data9/Users/achihwan/nano15/SKNanoAnalyzer"), "Nano15_Analyzers")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import chargeflip_plots as cfp
 
@@ -38,7 +39,7 @@ VARS = [  # (var, obj, edges, xlabel, stem suffix, logx)
 
 def sign_mode(a, d, isdata, sel, itc):
     """e+e+ / e-e- separately with the charge-split P_final (chargeflip_method_sign.py)."""
-    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../BDT/SR/test/scripts"))
+    sys.path.insert(0, os.path.join(NANO15, "BDT/SR/test/scripts"))
     import chargeflip_ddss as dd
     S = json.load(open(a.sign_json)); tcs = S["tc_order"]
     P = {1: np.nan_to_num(np.array(S["P_final"]["plus"])), -1: np.nan_to_num(np.array(S["P_final"]["minus"]))}
@@ -98,7 +99,7 @@ def main():
     a = ap.parse_args()
     ROOT.gROOT.SetBatch(True); ROOT.gStyle.SetOptStat(0); ROOT.gStyle.SetOptTitle(0)
     J = json.load(open(a.json))
-    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../BDT/SR/test/scripts"))
+    sys.path.insert(0, os.path.join(NANO15, "BDT/SR/test/scripts"))
     import chargeflip_ddss as dd
     NEW = dd.new_format(J)   # AN-style json (chargeflip_ptshift.py): P[eta6][pt7] x SF(barrel/endcap), 3 nuisances
     if not NEW:
