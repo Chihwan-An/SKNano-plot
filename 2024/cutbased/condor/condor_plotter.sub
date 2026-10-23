@@ -1,0 +1,21 @@
+universe = vanilla
+executable = $(exec_script)
+arguments = "$(jobargs)"
+
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased
+
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/$(jobname).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/$(jobname).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/condor.log
+
+# 컨테이너는 wrapper 가 직접 띄운다 (+singularityimage 를 쓰지 않는다).
+getenv = True
+
+request_memory = 4GB
+request_cpus = 1
+request_disk = 2GB
+
+notification = Never
+should_transfer_files = NO
+
+queue

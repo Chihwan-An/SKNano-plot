@@ -1,0 +1,15 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_dynew_job.sh
+arguments = "$(job)"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/dynew_$(job).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/dynew_$(job).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/condor.log
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = plot_dynew
+notification = Never
+should_transfer_files = NO
+queue job in (Resolve_sig_EE Resolve_sig_MM Boost_sig_EE Boost_sig_MM Resolve_DY_EE Resolve_DY_MM Boost_DY_EE Boost_DY_MM Resolve_FLV_EM Boost_FLV_EMJ Boost_FLV_MEJ)

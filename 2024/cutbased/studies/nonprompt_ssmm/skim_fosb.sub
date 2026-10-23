@@ -1,0 +1,14 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/nonprompt_ssmm/scripts/run_skim_fosb.sh
+arguments = "$(sample)"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/nonprompt_ssmm
+output = logs/condor/fosb_$(sample).out
+error  = logs/condor/fosb_$(sample).err
+log    = logs/condor/condor_fosb.log
+getenv = True
+request_memory = 4GB
+request_cpus = 1
+JobBatchName = HNWR_FOskim
+notification = Never
+should_transfer_files = NO
+queue sample from ready_fosb.txt

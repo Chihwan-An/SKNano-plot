@@ -1,0 +1,166 @@
+=== job Resolve_FLV_EM ===
+=== start Fri Aug 28 08:54:41 PM KST 2026 ===
+==============================================================================
+>> job Resolve_FLV_EM   region=Resolve/FLV   channel=MM   flavour=EM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav/2024
+>> Channel MM: 44 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   15 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      10 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+>> 입력 60개 5.2 GB -> /var/lib/condor/execute/dir_656690/inputs
+>> 복사 완료 4 s (1291 MB/s)
+   복사본 확인: MC 44, Data 16
+>> Systematics: 31 requested, 44 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/44), ResolvedDYReshapeBin2(14/44), ResolvedDYReshapeBin3(14/44), ResolvedDYReshapeBin4(14/44), ResolvedDYReshapeBin5(14/44), ResolvedDYReshapeBin6(14/44), BoostedDYReshapeBin1(14/44), BoostedDYReshapeBin2(14/44), BoostedDYReshapeBin3(14/44)   <- DY 전용이면 정상
+>> 35 plots from specs/Resolve_FLV_EM.txt
+==============================================================================
+
+>> FlavCR_Resolved_EM_ll_pt -> ResolveFLVEM_dilepton_pt
+   MC       3468.9   Data       3623.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/dilepton/Inclusive/ResolveFLVEM_dilepton_pt_plot.png
+
+>> FlavCR_Resolved_EM_leading_jet_pt -> ResolveFLVEM_leading_jet_pt
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_leading_jet_pt_plot.png
+
+>> FlavCR_Resolved_EM_subleading_jet_pt -> ResolveFLVEM_subleading_jet_pt
+   MC       3468.9   Data       3623.0   (100 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_subleading_jet_pt_plot.png
+
+>> FlavCR_Resolved_EM_mlljj -> ResolveFLVEM_mlljj
+   MC       3468.9   Data       3623.0   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_mlljj_plot.png
+
+>> FlavCR_Resolved_EM_mlljj -> ResolveFLVEM_mlljj_fine
+   MC       3468.9   Data       3623.0   (80 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_mlljj_fine_plot.png
+
+>> FlavCR_Resolved_EM_leading_lep_pt -> ResolveFLVEM_leading_lep_pt
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_leading_lep_pt_plot.png
+
+>> FlavCR_Resolved_EM_subleading_lep_pt -> ResolveFLVEM_subleading_lep_pt
+   MC       3468.9   Data       3623.0   (100 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_subleading_lep_pt_plot.png
+
+>> FlavCR_Resolved_EM_mass -> ResolveFLVEM_dilepton_mass
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/dilepton/Inclusive/ResolveFLVEM_dilepton_mass_plot.png
+
+>> FlavCR_Resolved_EM_eta -> ResolveFLVEM_dilepton_eta
+   MC       3466.3   Data       3619.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/dilepton/Inclusive/ResolveFLVEM_dilepton_eta_plot.png
+
+>> FlavCR_Resolved_EM_phi -> ResolveFLVEM_dilepton_phi
+   MC       3468.3   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/dilepton/Inclusive/ResolveFLVEM_dilepton_phi_plot.png
+
+>> FlavCR_Resolved_EM_leading_jet_eta -> ResolveFLVEM_leading_jet_eta
+   MC       3468.9   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_leading_jet_eta_plot.png
+
+>> FlavCR_Resolved_EM_leading_jet_phi -> ResolveFLVEM_leading_jet_phi
+   MC       3468.1   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_leading_jet_phi_plot.png
+
+>> FlavCR_Resolved_EM_subleading_jet_eta -> ResolveFLVEM_subleading_jet_eta
+   MC       3468.9   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_subleading_jet_eta_plot.png
+
+>> FlavCR_Resolved_EM_subleading_jet_phi -> ResolveFLVEM_subleading_jet_phi
+   MC       3468.0   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_subleading_jet_phi_plot.png
+
+>> FlavCR_Resolved_EM_j1j2_mass -> ResolveFLVEM_j1j2_mass
+   MC       3468.9   Data       3623.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_j1j2_mass_plot.png
+
+>> FlavCR_Resolved_EM_j1j2_pt -> ResolveFLVEM_j1j2_pt
+   MC       3468.9   Data       3623.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_j1j2_pt_plot.png
+
+>> FlavCR_Resolved_EM_j1j2_eta -> ResolveFLVEM_j1j2_eta
+   MC       3467.3   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_j1j2_eta_plot.png
+
+>> FlavCR_Resolved_EM_j1j2_phi -> ResolveFLVEM_j1j2_phi
+   MC       3467.8   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_j1j2_phi_plot.png
+
+>> FlavCR_Resolved_EM_l1j1j2_mass -> ResolveFLVEM_l1j1j2_mass
+   MC       1381.1   Data       1545.0   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l1j1j2_mass_plot.png
+
+>> FlavCR_Resolved_EM_l1j1j2_pt -> ResolveFLVEM_l1j1j2_pt
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l1j1j2_pt_plot.png
+
+>> FlavCR_Resolved_EM_l1j1j2_eta -> ResolveFLVEM_l1j1j2_eta
+   MC       3466.1   Data       3614.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l1j1j2_eta_plot.png
+
+>> FlavCR_Resolved_EM_l1j1j2_phi -> ResolveFLVEM_l1j1j2_phi
+   MC       3468.3   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l1j1j2_phi_plot.png
+
+>> FlavCR_Resolved_EM_l2j1j2_mass -> ResolveFLVEM_l2j1j2_mass
+   MC        723.4   Data        854.0   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l2j1j2_mass_plot.png
+
+>> FlavCR_Resolved_EM_l2j1j2_pt -> ResolveFLVEM_l2j1j2_pt
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l2j1j2_pt_plot.png
+
+>> FlavCR_Resolved_EM_l2j1j2_eta -> ResolveFLVEM_l2j1j2_eta
+   MC       3467.8   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l2j1j2_eta_plot.png
+
+>> FlavCR_Resolved_EM_l2j1j2_phi -> ResolveFLVEM_l2j1j2_phi
+   MC       3468.3   Data       3622.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_l2j1j2_phi_plot.png
+
+>> FlavCR_Resolved_EM_mlljj_pt -> ResolveFLVEM_mlljj_pt
+   MC       3468.9   Data       3623.0   (80 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_mlljj_pt_plot.png
+
+>> FlavCR_Resolved_EM_mlljj_eta -> ResolveFLVEM_mlljj_eta
+   MC       3456.8   Data       3613.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_mlljj_eta_plot.png
+
+>> FlavCR_Resolved_EM_mlljj_phi -> ResolveFLVEM_mlljj_phi
+   MC       3468.0   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet_lepton/Inclusive/ResolveFLVEM_mlljj_phi_plot.png
+
+>> FlavCR_Resolved_EM_leading_lep_eta -> ResolveFLVEM_leading_lep_eta
+   MC       3468.9   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_leading_lep_eta_plot.png
+
+>> FlavCR_Resolved_EM_leading_lep_phi -> ResolveFLVEM_leading_lep_phi
+   MC       3468.0   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_leading_lep_phi_plot.png
+
+>> FlavCR_Resolved_EM_subleading_lep_eta -> ResolveFLVEM_subleading_lep_eta
+   MC       3468.9   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_subleading_lep_eta_plot.png
+
+>> FlavCR_Resolved_EM_subleading_lep_phi -> ResolveFLVEM_subleading_lep_phi
+   MC       3468.2   Data       3623.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/lepton/Inclusive/ResolveFLVEM_subleading_lep_phi_plot.png
+
+>> FlavCR_Resolved_EM_jetnum -> ResolveFLVEM_jetnum
+   MC       3468.9   Data       3623.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/jet/Inclusive/ResolveFLVEM_jetnum_plot.png
+
+>> FlavCR_Resolved_EM_pvgood -> ResolveFLVEM_punum
+   MC       3468.9   Data       3623.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/FLV/E_Mu/pileup/Inclusive/ResolveFLVEM_punum_plot.png
+
+==============================================================================
+>> Resolve_FLV_EM: 35/35 plots, 0.4 min (0.6 s/plot)
+==============================================================================
+=== end Fri Aug 28 08:55:07 PM KST 2026 ===
+=== exit 0 ===

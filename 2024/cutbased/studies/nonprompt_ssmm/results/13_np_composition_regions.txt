@@ -1,0 +1,20 @@
+# Nonprompt composition per card region, Central MC, card mlljj range. input /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/cbv15dc_ht/input2024
+# columns: Nonprompt total | TTLJ  W+jets(HT)  ST t-ch  ST s-ch  ST s-ch powheg (fraction of Nonprompt) | other groups
+# ST t/s moved from the card's TT group to Nonprompt here. ST s-ch has two overlapping sets (default + powheg) in the
+# card linkfarm -> both are summed in the card (double counting); both are counted here too and shown separately.
+region         Nonprompt |           TTLJ         W+jets          ST t          ST s       ST s pw |    DYJets        TT   Others  NP/bkg
+bEESR             174.74 |   66.67 ( 38%)  107.10 ( 61%)   0.93 ( 1%)   0.03 ( 0%)   0.02 ( 0%) |     189.4     456.6     44.5  20.2%
+bMuMuSR            69.75 |   47.67 ( 68%)   20.09 ( 29%)   1.47 ( 2%)   0.39 ( 1%)   0.13 ( 0%) |     158.5     494.7     34.8   9.2%
+rEESR_OS           48.39 |   17.93 ( 37%)   29.20 ( 60%)   1.24 ( 3%)   0.00 ( 0%)   0.01 ( 0%) |     751.9    1411.8    125.2   2.1%
+rEESR_SS           39.01 |   12.81 ( 33%)   25.95 ( 67%)   0.25 ( 1%)   0.00 ( 0%)   0.00 ( 0%) |      30.7      41.2     18.3  30.2%
+rMuMuSR_OS         18.19 |    8.57 ( 47%)    9.19 ( 51%)   0.41 ( 2%)   0.00 ( 0%)   0.02 ( 0%) |     966.1    2022.5    157.7   0.6%
+rMuMuSR_SS         24.62 |   16.57 ( 67%)    7.44 ( 30%)   0.51 ( 2%)   0.02 ( 0%)   0.08 ( 0%) |       2.3       9.3     15.2  47.9%
+bDYEECR           187.82 |   88.00 ( 47%)   97.66 ( 52%)   1.81 ( 1%)   0.21 ( 0%)   0.12 ( 0%) |    2968.9      76.2    191.8   5.5%
+rDYEECR_OS         54.28 |   19.55 ( 36%)   33.96 ( 63%)   0.69 ( 1%)   0.03 ( 0%)   0.06 ( 0%) |   33265.6    1285.9    992.5   0.2%
+rDYEECR_SS         33.91 |   11.26 ( 33%)   21.45 ( 63%)   1.18 ( 3%)   0.01 ( 0%)   0.01 ( 0%) |     691.5      18.6     30.2   4.4%
+bDYMuMuCR         544.83 |  480.60 ( 88%)   51.23 (  9%)  10.63 ( 2%)   1.39 ( 0%)   0.98 ( 0%) |    2891.5     184.1    197.3  14.3%
+rDYMuMuCR_OS       93.29 |   78.11 ( 84%)   10.95 ( 12%)   3.77 ( 4%)   0.20 ( 0%)   0.26 ( 0%) |   47887.5    1822.3   1344.0   0.2%
+rDYMuMuCR_SS       44.87 |   39.86 ( 89%)    2.86 (  6%)   1.75 ( 4%)   0.21 ( 0%)   0.19 ( 0%) |       5.1      14.2     15.1  56.6%
+bFlvEMuCR          62.33 |   42.13 ( 68%)   19.50 ( 31%)   0.54 ( 1%)   0.09 ( 0%)   0.07 ( 0%) |       3.2     444.6     23.0  11.7%
+bFlvMuECR         191.43 |   78.30 ( 41%)  110.70 ( 58%)   2.19 ( 1%)   0.13 ( 0%)   0.11 ( 0%) |      16.0     510.0     34.5  25.5%
+rFlvCR            119.47 |   52.10 ( 44%)   65.16 ( 55%)   2.12 ( 2%)   0.03 ( 0%)   0.06 ( 0%) |      21.0    3229.2    175.9   3.4%

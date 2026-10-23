@@ -1,0 +1,73 @@
+# Resolve_sig / EE  tight-charge OS / SS versions of specs/Resolve_sig_EE.txt
+# hist SR_Resolved_EE_<OS|SS>_2e_tight_<var> -> output ResolveSREE_<OS|SS>_tight_<var> (layout: <obj>/OS_tight, SS_tight). Data stays blinded (SR_ prefix).
+# generated 2026-09-08; --ymax dropped (auto).
+--hist SR_Resolved_EE_OS_2e_tight_ll_pt --ymin 1 --output ResolveSREE_OS_tight_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Dilepton p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_ll_pt --ymin 1 --output ResolveSREE_SS_tight_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Dilepton p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_jet_pt --ymin 1 --output ResolveSREE_OS_tight_leading_jet_pt --xmin 0 --xmax 2000 --xlabel 'OS tight-charge Leading Jet p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_SS_2e_tight_leading_jet_pt --ymin 1 --output ResolveSREE_SS_tight_leading_jet_pt --xmin 0 --xmax 2000 --xlabel 'SS tight-charge Leading Jet p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_OS_2e_tight_subleading_jet_pt --ymin 1 --output ResolveSREE_OS_tight_subleading_jet_pt --xmin 0 --xmax 2000 --xlabel 'OS tight-charge Subleading Jet p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_SS_2e_tight_subleading_jet_pt --ymin 1 --output ResolveSREE_SS_tight_subleading_jet_pt --xmin 0 --xmax 2000 --xlabel 'SS tight-charge Subleading Jet p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_OS_2e_tight_mlljj --ymin 1 --output ResolveSREE_OS_tight_mlljj --xmin 800 --xmax 8000 --xlabel 'OS tight-charge m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_mlljj --ymin 1 --output ResolveSREE_SS_tight_mlljj --xmin 800 --xmax 8000 --xlabel 'SS tight-charge m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_mlljj --ymin 1 --output ResolveSREE_OS_tight_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'OS tight-charge m(lljj) (GeV)' --rebin 100 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_mlljj --ymin 1 --output ResolveSREE_SS_tight_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'SS tight-charge m(lljj) (GeV)' --rebin 100 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_lep_pt --ymin 1 --output ResolveSREE_OS_tight_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Leading Lepton p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_SS_2e_tight_leading_lep_pt --ymin 1 --output ResolveSREE_SS_tight_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Leading Lepton p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_OS_2e_tight_subleading_lep_pt --ymin 1 --output ResolveSREE_OS_tight_subleading_lep_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Subleading Lepton p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_SS_2e_tight_subleading_lep_pt --ymin 1 --output ResolveSREE_SS_tight_subleading_lep_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Subleading Lepton p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 50
+--hist SR_Resolved_EE_OS_2e_tight_mass --ymin 1 --output ResolveSREE_OS_tight_dilepton_mass --xmin 0 --xmax 2000 --xlabel 'OS tight-charge m(ll) (GeV)' --rmin 0.7 --rmax 1.3 --rebin 5
+--hist SR_Resolved_EE_SS_2e_tight_mass --ymin 1 --output ResolveSREE_SS_tight_dilepton_mass --xmin 0 --xmax 2000 --xlabel 'SS tight-charge m(ll) (GeV)' --rmin 0.7 --rmax 1.3 --rebin 5
+--hist SR_Resolved_EE_OS_2e_tight_eta --ymin 1e-1 --output ResolveSREE_OS_tight_dilepton_eta --xmin -5 --xmax 5 --xlabel 'OS tight-charge Dilepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_eta --ymin 1e-1 --output ResolveSREE_SS_tight_dilepton_eta --xmin -5 --xmax 5 --xlabel 'SS tight-charge Dilepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_phi --ymin 1e-1 --output ResolveSREE_OS_tight_dilepton_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Dilepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_phi --ymin 1e-1 --output ResolveSREE_SS_tight_dilepton_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Dilepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_jet_eta --ymin 1e-1 --output ResolveSREE_OS_tight_leading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Leading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_leading_jet_eta --ymin 1e-1 --output ResolveSREE_SS_tight_leading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Leading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_jet_phi --ymin 1e-1 --output ResolveSREE_OS_tight_leading_jet_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Leading Jet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_leading_jet_phi --ymin 1e-1 --output ResolveSREE_SS_tight_leading_jet_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Leading Jet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_subleading_jet_eta --ymin 1e-1 --output ResolveSREE_OS_tight_subleading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Subleading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_subleading_jet_eta --ymin 1e-1 --output ResolveSREE_SS_tight_subleading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Subleading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_subleading_jet_phi --ymin 1e-1 --output ResolveSREE_OS_tight_subleading_jet_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Subleading Jet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_subleading_jet_phi --ymin 1e-1 --output ResolveSREE_SS_tight_subleading_jet_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Subleading Jet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_j1j2_mass --ymin 1e-1 --output ResolveSREE_OS_tight_j1j2_mass --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Dijet Mass (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_j1j2_mass --ymin 1e-1 --output ResolveSREE_SS_tight_j1j2_mass --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Dijet Mass (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_j1j2_pt --ymin 1e-1 --output ResolveSREE_OS_tight_j1j2_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Dijet p_{T} (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_j1j2_pt --ymin 1e-1 --output ResolveSREE_SS_tight_j1j2_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Dijet p_{T} (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_j1j2_eta --ymin 1e-1 --output ResolveSREE_OS_tight_j1j2_eta --xmin -5 --xmax 5 --xlabel 'OS tight-charge Dijet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_j1j2_eta --ymin 1e-1 --output ResolveSREE_SS_tight_j1j2_eta --xmin -5 --xmax 5 --xlabel 'SS tight-charge Dijet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_j1j2_phi --ymin 1e-1 --output ResolveSREE_OS_tight_j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Dijet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_j1j2_phi --ymin 1e-1 --output ResolveSREE_SS_tight_j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Dijet #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l1j1j2_mass --ymin 1e-1 --output ResolveSREE_OS_tight_l1j1j2_mass --xmin 800 --xmax 8000 --xlabel 'OS tight-charge m(l1jj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l1j1j2_mass --ymin 1e-1 --output ResolveSREE_SS_tight_l1j1j2_mass --xmin 800 --xmax 8000 --xlabel 'SS tight-charge m(l1jj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l1j1j2_pt --ymin 1e-1 --output ResolveSREE_OS_tight_l1j1j2_pt --xmin 0 --xmax 2000 --xlabel 'OS tight-charge p_{T}(l1jj) (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l1j1j2_pt --ymin 1e-1 --output ResolveSREE_SS_tight_l1j1j2_pt --xmin 0 --xmax 2000 --xlabel 'SS tight-charge p_{T}(l1jj) (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l1j1j2_eta --ymin 1e-1 --output ResolveSREE_OS_tight_l1j1j2_eta --xmin -5 --xmax 5 --xlabel 'OS tight-charge #eta(l1jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l1j1j2_eta --ymin 1e-1 --output ResolveSREE_SS_tight_l1j1j2_eta --xmin -5 --xmax 5 --xlabel 'SS tight-charge #eta(l1jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l1j1j2_phi --ymin 1e-1 --output ResolveSREE_OS_tight_l1j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge #phi(l1jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l1j1j2_phi --ymin 1e-1 --output ResolveSREE_SS_tight_l1j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge #phi(l1jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l2j1j2_mass --ymin 1e-1 --output ResolveSREE_OS_tight_l2j1j2_mass --xmin 800 --xmax 8000 --xlabel 'OS tight-charge m(l2jj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l2j1j2_mass --ymin 1e-1 --output ResolveSREE_SS_tight_l2j1j2_mass --xmin 800 --xmax 8000 --xlabel 'SS tight-charge m(l2jj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l2j1j2_pt --ymin 1e-1 --output ResolveSREE_OS_tight_l2j1j2_pt --xmin 0 --xmax 2000 --xlabel 'OS tight-charge p_{T}(l2jj) (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l2j1j2_pt --ymin 1e-1 --output ResolveSREE_SS_tight_l2j1j2_pt --xmin 0 --xmax 2000 --xlabel 'SS tight-charge p_{T}(l2jj) (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l2j1j2_eta --ymin 1e-1 --output ResolveSREE_OS_tight_l2j1j2_eta --xmin -5 --xmax 5 --xlabel 'OS tight-charge #eta(l2jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l2j1j2_eta --ymin 1e-1 --output ResolveSREE_SS_tight_l2j1j2_eta --xmin -5 --xmax 5 --xlabel 'SS tight-charge #eta(l2jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_l2j1j2_phi --ymin 1e-1 --output ResolveSREE_OS_tight_l2j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge #phi(l2jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_l2j1j2_phi --ymin 1e-1 --output ResolveSREE_SS_tight_l2j1j2_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge #phi(l2jj)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_mlljj_pt --ymin 1e-1 --output ResolveSREE_OS_tight_mlljj_pt --xmin 0 --xmax 8000 --xlabel 'OS tight-charge WR p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 2
+--hist SR_Resolved_EE_SS_2e_tight_mlljj_pt --ymin 1e-1 --output ResolveSREE_SS_tight_mlljj_pt --xmin 0 --xmax 8000 --xlabel 'SS tight-charge WR p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 2
+--hist SR_Resolved_EE_OS_2e_tight_mlljj_eta --ymin 1e-1 --output ResolveSREE_OS_tight_mlljj_eta --xmin -5 --xmax 5 --xlabel 'OS tight-charge WR #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_mlljj_eta --ymin 1e-1 --output ResolveSREE_SS_tight_mlljj_eta --xmin -5 --xmax 5 --xlabel 'SS tight-charge WR #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_mlljj_phi --ymin 1e-1 --output ResolveSREE_OS_tight_mlljj_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge WR #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_mlljj_phi --ymin 1e-1 --output ResolveSREE_SS_tight_mlljj_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge WR #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_lep_eta --ymin 1e-1 --output ResolveSREE_OS_tight_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Leading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_leading_lep_eta --ymin 1e-1 --output ResolveSREE_SS_tight_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Leading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_leading_lep_phi --ymin 1e-1 --output ResolveSREE_OS_tight_leading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Leading Lepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_leading_lep_phi --ymin 1e-1 --output ResolveSREE_SS_tight_leading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Leading Lepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_subleading_lep_eta --ymin 1e-1 --output ResolveSREE_OS_tight_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Subleading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_subleading_lep_eta --ymin 1e-1 --output ResolveSREE_SS_tight_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Subleading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_subleading_lep_phi --ymin 1e-1 --output ResolveSREE_OS_tight_subleading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'OS tight-charge Subleading Lepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_subleading_lep_phi --ymin 1e-1 --output ResolveSREE_SS_tight_subleading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'SS tight-charge Subleading Lepton #phi' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_jetnum --ymin 1e-1 --output ResolveSREE_OS_tight_jetnum --xmin 0 --xmax 5 --xlabel 'OS tight-charge Number of Jets' --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_jetnum --ymin 1e-1 --output ResolveSREE_SS_tight_jetnum --xmin 0 --xmax 5 --xlabel 'SS tight-charge Number of Jets' --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_OS_2e_tight_pvgood --ymin 1e-1 --output ResolveSREE_OS_tight_punum --xmin 0 --xmax 80 --xlabel 'OS tight-charge Number of Pileup Vertices' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist SR_Resolved_EE_SS_2e_tight_pvgood --ymin 1e-1 --output ResolveSREE_SS_tight_punum --xmin 0 --xmax 80 --xlabel 'SS tight-charge Number of Pileup Vertices' --rebin 2 --rmin 0.7 --rmax 1.3

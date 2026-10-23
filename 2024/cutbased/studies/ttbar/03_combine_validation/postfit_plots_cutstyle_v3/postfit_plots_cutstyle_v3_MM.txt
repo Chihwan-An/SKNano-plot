@@ -1,0 +1,15 @@
+channel                data     postfit      prefit    d/post
+bMuMuSR               737.0       730.5       737.0    1.0089
+rMuMuSR_OS           3150.2      3188.1      3150.2    0.9881
+rMuMuSR_SS             41.3        44.8        41.3    0.9209
+rDYEECR_SS           1174.0      1157.1      1104.6    1.0146
+bDYEECR              3326.0      3323.0      3321.3    1.0009
+bDYMuMuCR            3815.0      3821.4      3760.1    0.9983
+bFlvEMuCR             472.0       471.9       513.1    1.0001
+bFlvMuECR             648.0       651.6       641.3    0.9945
+rDYEECR_OS          35120.0     35304.7     35542.4    0.9948
+rDYMuMuCR_OS        52218.0     52020.1     51106.8    1.0038
+rDYMuMuCR_SS           84.0        83.0        75.5    1.0119
+rFlvCR               3354.0      3329.9      3353.7    1.0072
+
+written to postfit_plots_cutstyle_v3/MM

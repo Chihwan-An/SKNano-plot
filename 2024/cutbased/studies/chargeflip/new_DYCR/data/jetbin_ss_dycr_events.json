@@ -1,0 +1,28 @@
+{
+ "source_directory": "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_dynew",
+ "keys": [
+  "channel",
+  "hasPair",
+  "isDYCR",
+  "isSS",
+  "nJet",
+  "m_l1l2",
+  "pt_l1l2",
+  "m_lljj",
+  "weight",
+  "l1_pt",
+  "l2_pt",
+  "l1_scEta",
+  "l2_scEta",
+  "l1_eta",
+  "l2_eta",
+  "l1_phi",
+  "l2_phi",
+  "l1_charge",
+  "l2_charge",
+  "l1_genChargeIdx",
+  "l2_genChargeIdx"
+ ],
+ "selection": "channel==11 & hasPair & 60<=m_l1l2<150 & (nJet==1 | isDYCR); EGamma data only; signal skipped",
+ "n": 8291189
+}

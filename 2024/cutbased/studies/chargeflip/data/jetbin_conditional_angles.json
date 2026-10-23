@@ -1,0 +1,102 @@
+{
+  "samples": [
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-120.root.npz",
+      "bytes": 281497668,
+      "mtime_ns": 1789655855218042287,
+      "selected": 161897
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz",
+      "bytes": 1322947226,
+      "mtime_ns": 1789656282219594600,
+      "selected": 210
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-1500to2500-MLL-120.root.npz",
+      "bytes": 24139751,
+      "mtime_ns": 1789655716272513374,
+      "selected": 26431
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120.root.npz",
+      "bytes": 22878485,
+      "mtime_ns": 1789655719517502371,
+      "selected": 68
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-2500-MLL-120.root.npz",
+      "bytes": 24866199,
+      "mtime_ns": 1789655717002510899,
+      "selected": 27640
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-2500-MLL-50to120.root.npz",
+      "bytes": 12622041,
+      "mtime_ns": 1789655713821521684,
+      "selected": 63
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-400to800-MLL-120.root.npz",
+      "bytes": 38201581,
+      "mtime_ns": 1789655729190469574,
+      "selected": 33988
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-400to800-MLL-50to120.root.npz",
+      "bytes": 151338565,
+      "mtime_ns": 1789655776862307946,
+      "selected": 135
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-40to70-MLL-120.root.npz",
+      "bytes": 341729223,
+      "mtime_ns": 1789655904878873921,
+      "selected": 71110
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-40to70-MLL-50to120.root.npz",
+      "bytes": 22792985,
+      "mtime_ns": 1789655734166452704,
+      "selected": 3
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-70to100-MLL-120.root.npz",
+      "bytes": 222463927,
+      "mtime_ns": 1789655833366116374,
+      "selected": 86911
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-70to100-MLL-50to120.root.npz",
+      "bytes": 156482348,
+      "mtime_ns": 1789655804771213323,
+      "selected": 3
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-800to1500-MLL-120.root.npz",
+      "bytes": 22510249,
+      "mtime_ns": 1789655745742413456,
+      "selected": 23763
+    },
+    {
+      "file": "tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120.root.npz",
+      "bytes": 28841841,
+      "mtime_ns": 1789655759599366476,
+      "selected": 47
+    }
+  ],
+  "source_directory": "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_boost",
+  "source_path_is_provenance_only": true,
+  "seed": 20260919,
+  "split": "same original-row split as study 12",
+  "axes": "channel,category,fold,mll,zpt,observable",
+  "features": [
+    "asymmetry",
+    "dphi",
+    "pt1",
+    "pt2",
+    "mll",
+    "zpt"
+  ],
+  "definition": "hasPair, OS, mll>=400, nominal DY; 1j / ge2j / SRtopology; no charge flip"
+}

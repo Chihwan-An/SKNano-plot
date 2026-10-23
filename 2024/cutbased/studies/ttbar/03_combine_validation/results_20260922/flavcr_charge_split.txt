@@ -1,0 +1,27 @@
+# resolved flavour CR (m_lljj > 800), input2024 히스토그램 직접 적분, 2026-09-22
+# 분류는 post_processor_chsplit.SAMPLE_MAP 그대로 (first match, "ST" 가 ST_tch/ST_sch 보다 먼저)
+# 검증: charge-incl MC total 3468.9 = 카드 rFlvCR prefit total_bkg 3468.9  (일치)
+
+group          EM (incl)       EM_OS       EM_SS   SS frac
+data              3623.0      3354.0       269.0    0.0742
+TT                3231.4      3178.1        53.3    0.0165
+DYJets              21.0        12.6         8.4    0.3990
+Nonprompt           53.2        25.7        27.5    0.5165
+Others             163.2       137.2        26.0    0.1591
+
+                 charge-incl     OS only     SS only
+data                  3623.0      3354.0       269.0
+TT MC                 3231.4      3178.1        53.3
+non-TT MC              237.5       175.6        61.9
+MC total              3468.9      3353.7       115.2
+data/MC                1.044       1.000       2.335
+
+naive beta = (data - nonTT)/TT
+  charge-incl (현재 rFlvCR) = 1.0477
+  OS only                   = 1.0001
+  SS only                   = 3.8834
+
+# 샘플별 SS 비율 (prompt 인지 fake 인지의 지표)
+TTLL_powheg*   SS/incl = 0.0151   (prompt dilepton -> OS)
+ST_tW*Lep*     SS/incl = 0.0119
+TTLJ*          SS/incl = 0.5182   (semileptonic = fake 1개 -> charge 무상관)

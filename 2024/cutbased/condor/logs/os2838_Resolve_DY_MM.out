@@ -1,0 +1,25 @@
+=== job Resolve_DY_MM (no copy) ===
+=== start Mon Sep 14 10:35:24 PM KST 2026 ===
+==============================================================================
+>> job Resolve_DY_MM   region=Resolve/DY   channel=MM   flavour=MM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav_DYCRCharge/2024
+>> Channel MM: 138 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT          24 : TTto2L2Nu_TuneCP5_p00, TTto2L2Nu_TuneCP5_p01, TTto2L2Nu_TuneCP5_p02, TTto2L2Nu_TuneCP5_p03, TTto2L2Nu_TuneCP5_p04, TTto2L2Nu_TuneCP5_p05, TTto2L2Nu_TuneCP5_p06, TTto2L2Nu_TuneCP5_p07, TTto2L2Nu_TuneCP5_p08, TTto2L2Nu_TuneCP5_p09, TTto2L2Nu_TuneCP5_p10, TTto2L2Nu_TuneCP5_p11, TTto2L2Nu_TuneCP5_p12, TTto2L2Nu_TuneCP5_p13, TTto2L2Nu_TuneCP5_p14, TTto2L2Nu_TuneCP5_p15, TTto2L2Nu_TuneCP5_p16, TTto2L2Nu_TuneCP5_p17, TTto2L2Nu_TuneCP5_p18, TTto2L2Nu_TuneCP5_p19, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   53 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q_p00, TTtoLNu2Q_p01, TTtoLNu2Q_p02, TTtoLNu2Q_p03, TTtoLNu2Q_p04, TTtoLNu2Q_p05, TTtoLNu2Q_p06, TTtoLNu2Q_p07, TTtoLNu2Q_p08, TTtoLNu2Q_p09, TTtoLNu2Q_p10, TTtoLNu2Q_p11, TTtoLNu2Q_p12, TTtoLNu2Q_p13, TTtoLNu2Q_p14, TTtoLNu2Q_p15, TTtoLNu2Q_p16, TTtoLNu2Q_p17, TTtoLNu2Q_p18, TTtoLNu2Q_p19, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200_p00, WtoLNu-4Jets_Bin-MLNu-120to200_p01, WtoLNu-4Jets_Bin-MLNu-120to200_p02, WtoLNu-4Jets_Bin-MLNu-120to200_p03, WtoLNu-4Jets_Bin-MLNu-120to200_p04, WtoLNu-4Jets_Bin-MLNu-120to200_p05, WtoLNu-4Jets_Bin-MLNu-120to200_p06, WtoLNu-4Jets_Bin-MLNu-120to200_p07, WtoLNu-4Jets_Bin-MLNu-120to200_p08, WtoLNu-4Jets_Bin-MLNu-120to200_p09, WtoLNu-4Jets_Bin-MLNu-120to200_p10, WtoLNu-4Jets_Bin-MLNu-120to200_p11, WtoLNu-4Jets_Bin-MLNu-120to200_p12, WtoLNu-4Jets_Bin-MLNu-120to200_p13, WtoLNu-4Jets_Bin-MLNu-120to200_p14, WtoLNu-4Jets_Bin-MLNu-120to200_p15, WtoLNu-4Jets_Bin-MLNu-120to200_p16, WtoLNu-4Jets_Bin-MLNu-120to200_p17, WtoLNu-4Jets_Bin-MLNu-120to200_p18, WtoLNu-4Jets_Bin-MLNu-120to200_p19, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      47 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu_p00, WZto3LNu_p01, WZto3LNu_p02, WZto3LNu_p03, WZto3LNu_p04, WZto3LNu_p05, WZto3LNu_p06, WZto3LNu_p07, WZto3LNu_p08, WZto3LNu_p09, WZto3LNu_p10, WZto3LNu_p11, WZto3LNu_p12, WZto3LNu_p13, WZto3LNu_p14, WZto3LNu_p15, WZto3LNu_p16, WZto3LNu_p17, WZto3LNu_p18, WZto3LNu_p19, WZtoLNu2Q, ZZto2L2Q, ZZto4L_p00, ZZto4L_p01, ZZto4L_p02, ZZto4L_p03, ZZto4L_p04, ZZto4L_p05, ZZto4L_p06, ZZto4L_p07, ZZto4L_p08, ZZto4L_p09, ZZto4L_p10, ZZto4L_p11, ZZto4L_p12, ZZto4L_p13, ZZto4L_p14, ZZto4L_p15, ZZto4L_p16, ZZto4L_p17, ZZto4L_p18
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+   -- 접두사 'Skim_HNWR_' 가 없는 파일 12개 제외 (다른 산출물)
+>> Systematics: 31 requested, 138 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/138), ResolvedDYReshapeBin2(14/138), ResolvedDYReshapeBin3(14/138), ResolvedDYReshapeBin4(14/138), ResolvedDYReshapeBin5(14/138), ResolvedDYReshapeBin6(14/138), BoostedDYReshapeBin1(14/138), BoostedDYReshapeBin2(14/138), BoostedDYReshapeBin3(14/138)   <- DY 전용이면 정상
+>> --match '_[OS]S_mlljj\\Z': 26 -> 2 plots
+>> 2 plots from specs/tightcharge/Resolve_DY_MM_alltc.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_DY_MM: 2/2 plots, 1.0 min (29.5 s/plot)
+==============================================================================
+=== end Mon Sep 14 10:36:28 PM KST 2026 ===
+=== exit 0 ===

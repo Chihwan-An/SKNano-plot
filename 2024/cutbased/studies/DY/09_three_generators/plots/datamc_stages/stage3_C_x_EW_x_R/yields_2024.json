@@ -1,0 +1,362 @@
+{
+ "Resolved_EE_mass_LO no corr.": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 28425.723529368686,
+  "data_over_mc": 1.177694396628316
+ },
+ "Resolved_EE_mass_LO x C shipped x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 33957.045129106154,
+  "data_over_mc": 0.9984823932578967
+ },
+ "Resolved_EE_mass_LO x C FxFx incl x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 33902.31843551383,
+  "data_over_mc": 0.9999879584201107
+ },
+ "Resolved_EE_mass_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 33902.31892494387,
+  "data_over_mc": 0.9999879449352858
+ },
+ "Resolved_EE_mass_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 33902.31817972578,
+  "data_over_mc": 0.9999879654676088
+ },
+ "Resolved_EE_mass_FxFx direct": {
+  "data": 36294.0,
+  "nondy": 2392.1186068493503,
+  "dy": 34635.09219528735,
+  "data_over_mc": 0.9801980547210328
+ },
+ "Resolved_EE_pt_LO no corr.": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 28425.264483782194,
+  "data_over_mc": 1.1777134118614248
+ },
+ "Resolved_EE_pt_LO x C shipped x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 33956.82091139584,
+  "data_over_mc": 0.9984896109425894
+ },
+ "Resolved_EE_pt_LO x C FxFx incl x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 33902.10612709912,
+  "data_over_mc": 0.9999948697569679
+ },
+ "Resolved_EE_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 33902.11724576395,
+  "data_over_mc": 0.9999945634102625
+ },
+ "Resolved_EE_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 33902.11655660881,
+  "data_over_mc": 0.9999945823981846
+ },
+ "Resolved_EE_pt_FxFx direct": {
+  "data": 36294.0,
+  "nondy": 2392.0800708967217,
+  "dy": 34634.065238431096,
+  "data_over_mc": 0.9802262616534548
+ },
+ "Resolved_EE_leading_jet_pt_LO no corr.": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 28425.142992882218,
+  "data_over_mc": 1.177718503202642
+ },
+ "Resolved_EE_leading_jet_pt_LO x C shipped x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 33956.655578488586,
+  "data_over_mc": 0.998494474926978
+ },
+ "Resolved_EE_leading_jet_pt_LO x C FxFx incl x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 33901.9320589801,
+  "data_over_mc": 0.9999999890968689
+ },
+ "Resolved_EE_leading_jet_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 33901.93218563306,
+  "data_over_mc": 0.9999999856072299
+ },
+ "Resolved_EE_leading_jet_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 33901.93133532746,
+  "data_over_mc": 1.0000000090354988
+ },
+ "Resolved_EE_leading_jet_pt_FxFx direct": {
+  "data": 36294.0,
+  "nondy": 2392.0683367381453,
+  "dy": 34635.06321193278,
+  "data_over_mc": 0.9802001527526578
+ },
+ "Resolved_EE_subleading_jet_pt_LO no corr.": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 28425.549373933376,
+  "data_over_mc": 1.1777010520006745
+ },
+ "Resolved_EE_subleading_jet_pt_LO x C shipped x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 33956.92286974117,
+  "data_over_mc": 0.9984857516633695
+ },
+ "Resolved_EE_subleading_jet_pt_LO x C FxFx incl x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 33902.19919471189,
+  "data_over_mc": 0.999991243792899
+ },
+ "Resolved_EE_subleading_jet_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 33902.19925164893,
+  "data_over_mc": 0.9999912422241531
+ },
+ "Resolved_EE_subleading_jet_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 33902.198476097365,
+  "data_over_mc": 0.9999912635923685
+ },
+ "Resolved_EE_subleading_jet_pt_FxFx direct": {
+  "data": 36294.0,
+  "nondy": 2392.1186058513713,
+  "dy": 34635.09219528735,
+  "data_over_mc": 0.9801980547474516
+ },
+ "Resolved_EE_mlljj_LO no corr.": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 28425.71922852823,
+  "data_over_mc": 1.1776945615328214
+ },
+ "Resolved_EE_mlljj_LO x C shipped x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 33957.04244835732,
+  "data_over_mc": 0.9984824672906828
+ },
+ "Resolved_EE_mlljj_LO x C FxFx incl x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 33902.31567038623,
+  "data_over_mc": 0.9999880350011389
+ },
+ "Resolved_EE_mlljj_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 33902.31618319409,
+  "data_over_mc": 0.9999880208722034
+ },
+ "Resolved_EE_mlljj_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 33902.3154371998,
+  "data_over_mc": 0.9999880414259156
+ },
+ "Resolved_EE_mlljj_FxFx direct": {
+  "data": 36294.0,
+  "nondy": 2392.1185924783967,
+  "dy": 34635.09219528735,
+  "data_over_mc": 0.9801980551014661
+ },
+ "Resolved_MM_mass_LO no corr.": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 38867.23436407116,
+  "data_over_mc": 1.2402467900198886
+ },
+ "Resolved_MM_mass_LO x C shipped x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 47892.62853979196,
+  "data_over_mc": 1.0216025826556192
+ },
+ "Resolved_MM_mass_LO x C FxFx incl x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.32044467824,
+  "data_over_mc": 1.0000243713537456
+ },
+ "Resolved_MM_mass_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.319621295355,
+  "data_over_mc": 1.0000243870973697
+ },
+ "Resolved_MM_mass_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.32071659243,
+  "data_over_mc": 1.0000243661545667
+ },
+ "Resolved_MM_mass_FxFx direct": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 47699.23283201456,
+  "data_over_mc": 1.0254763735665258
+ },
+ "Resolved_MM_pt_LO no corr.": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 38866.534403895035,
+  "data_over_mc": 1.2402442704797223
+ },
+ "Resolved_MM_pt_LO x C shipped x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 47892.22972430642,
+  "data_over_mc": 1.0215914203871208
+ },
+ "Resolved_MM_pt_LO x C FxFx incl x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 48996.927375464715,
+  "data_over_mc": 1.0000131619137054
+ },
+ "Resolved_MM_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 48996.940441067265,
+  "data_over_mc": 1.0000129120916517
+ },
+ "Resolved_MM_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 48996.94225312214,
+  "data_over_mc": 1.0000128774440997
+ },
+ "Resolved_MM_pt_FxFx direct": {
+  "data": 52301.0,
+  "nondy": 3303.3842523468866,
+  "dy": 47697.392202317715,
+  "data_over_mc": 1.0254941911814066
+ },
+ "Resolved_MM_leading_jet_pt_LO no corr.": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 38866.396525698525,
+  "data_over_mc": 1.240225279027787
+ },
+ "Resolved_MM_leading_jet_pt_LO x C shipped x kEW x R": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 47891.95938549159,
+  "data_over_mc": 1.0215777345375896
+ },
+ "Resolved_MM_leading_jet_pt_LO x C FxFx incl x kEW x R": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 48996.63898684666,
+  "data_over_mc": 0.9999999893647383
+ },
+ "Resolved_MM_leading_jet_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 48996.638168142614,
+  "data_over_mc": 1.000000005018735
+ },
+ "Resolved_MM_leading_jet_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 48996.63905267033,
+  "data_over_mc": 0.9999999881061594
+ },
+ "Resolved_MM_leading_jet_pt_FxFx direct": {
+  "data": 52300.0,
+  "nondy": 3303.3615693775378,
+  "dy": 47699.00452704728,
+  "data_over_mc": 1.0254426216446877
+ },
+ "Resolved_MM_subleading_jet_pt_LO no corr.": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 38866.99610977372,
+  "data_over_mc": 1.2402300838502713
+ },
+ "Resolved_MM_subleading_jet_pt_LO x C shipped x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 47892.43089325836,
+  "data_over_mc": 1.02158699381371
+ },
+ "Resolved_MM_subleading_jet_pt_LO x C FxFx incl x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.12236276138,
+  "data_over_mc": 1.00000903855889
+ },
+ "Resolved_MM_subleading_jet_pt_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.12087290553,
+  "data_over_mc": 1.0000090670455886
+ },
+ "Resolved_MM_subleading_jet_pt_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.121866890426,
+  "data_over_mc": 1.0000090480401602
+ },
+ "Resolved_MM_subleading_jet_pt_FxFx direct": {
+  "data": 52301.0,
+  "nondy": 3303.404915842846,
+  "dy": 47699.23283201456,
+  "data_over_mc": 1.025456766737464
+ },
+ "Resolved_MM_mlljj_LO no corr.": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 38867.22984244519,
+  "data_over_mc": 1.240246923001812
+ },
+ "Resolved_MM_mlljj_LO x C shipped x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 47892.62499224974,
+  "data_over_mc": 1.0216026534458407
+ },
+ "Resolved_MM_mlljj_LO x C FxFx incl x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.31687765081,
+  "data_over_mc": 1.0000244395576678
+ },
+ "Resolved_MM_mlljj_LO x C FxFx per-jet shape x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.316057728174,
+  "data_over_mc": 1.000024455235132
+ },
+ "Resolved_MM_mlljj_LO x C FxFx per-jet abs x kEW x R": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 48997.31715120873,
+  "data_over_mc": 1.0000244343270592
+ },
+ "Resolved_MM_mlljj_FxFx direct": {
+  "data": 52302.0,
+  "nondy": 3303.404915842846,
+  "dy": 47699.23283201456,
+  "data_over_mc": 1.0254763735665253
+ }
+}

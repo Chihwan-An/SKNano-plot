@@ -1,0 +1,13 @@
+# 2026-09-29: blind asymptotic limits over the full 114-point grid (cbv15_an2_ref_v3_ss3200), one point per job
+universe        = vanilla
+executable      = /usr/bin/bash
+arguments       = "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/03_combine_validation/run_blind_limit.sh $(TAG) $(CH) $(MP)"
+request_cpus    = 1
+request_memory  = 3072
+getenv          = True
+JobBatchName    = blind_cbv15_an2_ref_v3_ss3200_fullgrid
+log             = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/03_combine_validation/logs_condor/blind_fullgrid.$(Cluster).log
+output          = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/03_combine_validation/logs_condor/blind_fullgrid.$(Cluster).$(Process).out
+error           = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/03_combine_validation/logs_condor/blind_fullgrid.$(Cluster).$(Process).err
+should_transfer_files = NO
+queue TAG,CH,MP from /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/03_combine_validation/condor/jobs_blind_cbv15_an2_ref_v3_ss3200_fullgrid.txt

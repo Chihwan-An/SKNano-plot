@@ -1,0 +1,2 @@
+python EE.py --signal-scale 1.0 --hist "Obj_PU_boosted_WRMass_ee" --ymin 3 --ymax 1e5 --output BoostSREE_WRMass --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1400,1600,2000,2400,2800,3200,8000" --rmin 0.7 --rmax 1.3
+python MM.py --signal-scale 1.0 --hist "Obj_PU_SR_boosted_WRMass_mumu" --ymin 3 --ymax 1e5 --output BoostSRMM_WRMass --xmin 800 --xmax 8000 --xlabel "m(lJ) (GeV)" --bins "800,1000,1200,1400,1600,2000,2400,2800,3200,8000" --rmin 0.7 --rmax 1.3

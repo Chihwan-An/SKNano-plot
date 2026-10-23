@@ -1,0 +1,12 @@
+{
+  "analyzer": "HNWR_ChargeFlip",
+  "campaign": "",
+  "data_stream": "",
+  "era": "2024",
+  "errors_by_category": {},
+  "event_error_count": 0,
+  "failure_policy": "fail-fast",
+  "max_event_errors": 1,
+  "period": "",
+  "sample": "DYto2Mu_MLL4000to6000"
+}

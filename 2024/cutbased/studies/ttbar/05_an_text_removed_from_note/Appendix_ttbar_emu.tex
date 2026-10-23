@@ -1,0 +1,195 @@
+\section{Data-driven \texorpdfstring{$\ttbar$+tW}{ttbar+tW} estimate from the \texorpdfstring{$e\mu$}{e-mu} sideband}
+\label{app:emu_method}
+
+This appendix repeats, for 2024, the study of App.~J of Ref.~\cite{bib:AN19083}:
+the $\ttbar$+tW yield of a same-flavor region is estimated from the data of the
+$e\mu$ sideband with the same kinematics,
+%
+\begin{equation}
+  N_{\ttbar}(\text{same flavor}) =
+  \bigl[N_{\text{data}}(e\mu) - N_{\text{other bkg}}^{\text{MC}}(e\mu)\bigr]
+  \times R_{ee,\mu\mu/e\mu},
+  \label{eq:emu_method}
+\end{equation}
+%
+with the flavor ratio $R$ taken from the $\ttbar$+tW simulation. It is the
+method of the earlier analysis and serves here as a cross-check of the
+simultaneous fit of Sec.~\ref{subsec:top_draft}, which is the method used for
+the results; neither the ratios nor the closure uncertainties derived below
+enter the fit.
+
+The cut-based analyzer output contains no region below $\mlljj$ ($\mlJ$)
+$= 800\GeV$, so all regions of this appendix are rebuilt from the event-level
+output of the BDT preselection, which applies the same object and event
+selection without the mass requirements: $\mll > 400\GeV$ ($200\GeV$) and
+$\mlljj$ ($\mlJ$) $> 800\GeV$ define the resolved (boosted) high-mass regions,
+and $\mll > 200\GeV$ with $\mlljj$ ($\mlJ$) $< 800\GeV$ the low-mass control
+regions. In the resolved high-mass $e\mu$ region the $\ttbar$ simulation
+reproduces the cut-based histograms to $0.1\%$ in the number of selected
+events. The same-flavor data are used in the low-mass regions only; the
+signal regions remain blinded.
+
+\subsection{Signal contamination}
+The derivation assumes that the $e\mu$ sidebands are free of signal.
+Table~\ref{tab:emu_sigcont} gives the simulated signal yield relative to the
+total background for the mass points available in the preselection output.
+The resolved sideband and the sideband whose in-jet lepton differs in flavor
+from the signal leptons contain less than $0.1\%$ of signal for
+$\mWR \geq 3\TeV$. The $ee$ ($\mu\mu$) signal does populate the
+$e$+($\mu$-jet) ($\mu$+($e$-jet)) sideband, through a nonprompt lepton of
+the other flavor inside the \N{}-candidate jet: $0.6\%$ ($0.05\%$) at
+$(3000, 200)\GeV$ and $3.5\%$ ($1.0\%$) at $(2000, 200)\GeV$; the fractions
+at $\mWR = 1\TeV$, a mass excluded by the earlier searches, reach $36\%$.
+
+\begin{table}[htbp]
+  \centering
+  \topcaption{Signal yield in the high-mass $e\mu$ sidebands in percent of the
+    total simulated background, 2024, for the $ee$ (top) and $\mu\mu$ (bottom)
+    signal.}
+  \label{tab:emu_sigcont}
+  \small
+  \input{tables/05_backgrounds/2024/signal_contamination_2024}
+\end{table}
+
+\subsection{Flavor ratios}
+Figures~\ref{fig:emu_ratio_resolved}--\ref{fig:emu_ratio_boosted_ejet} show the
+ratio of the $\ttbar$+tW simulation in the same-flavor region to the $e\mu$
+sideband as a function of the reconstructed \PWR{} mass, in the low- and the
+high-mass regions, with a fit of a constant. The boosted $\mu\mu$ region is
+compared with the $e$+($\mu$-jet) sideband and the boosted $ee$ region with the
+$\mu$+($e$-jet) sideband, so that the lepton inside the jet has the same flavor
+in the numerator and the denominator. The fitted constants are collected in
+Table~\ref{tab:emu_ratio_fit}. The low- and high-mass values agree within
+$5\%$; the resolved $\mu\mu$ ratio and the low-mass boosted ratios are not
+well described by a constant ($\chi^{2}/\text{ndf}$ of $27/5$ to $29/5$), the
+ratio rising by a few percent with the mass.
+
+\begin{table}[htbp]
+  \centering
+  \topcaption{Constant fits of the same-flavor to $e\mu$ ratio of the
+    $\ttbar$+tW simulation, 2024, with statistical uncertainties.}
+  \label{tab:emu_ratio_fit}
+  \input{tables/05_backgrounds/2024/emu_ratio_fit_2024}
+\end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_resolved_low.png}
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_resolved_high.png}
+  \caption{Signal-region to $e\mu$-sideband ratio of the $\ttbar$+tW simulation
+    as a function of $\mlljj$ in the resolved category, 2024, in the low-mass
+    (left) and high-mass (right) regions.}
+  \label{fig:emu_ratio_resolved}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_boosted_mujet_low.png}
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_boosted_mujet_high.png}
+  \caption{Same as Fig.~\ref{fig:emu_ratio_resolved} as a function of $\mlJ$ in
+    the boosted category with a $\mu$-jet ($\mu\mu$ over $e$+($\mu$-jet)).}
+  \label{fig:emu_ratio_boosted_mujet}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_boosted_ejet_low.png}
+  \includegraphics[width=0.45\textwidth]{fig/05_backgrounds/2024/emu_method/ratio_boosted_ejet_high.png}
+  \caption{Same as Fig.~\ref{fig:emu_ratio_resolved} in the boosted category
+    with an $e$-jet ($ee$ over $\mu$+($e$-jet)).}
+  \label{fig:emu_ratio_boosted_ejet}
+\end{figure}
+
+\subsection{\texorpdfstring{$e\mu$}{e-mu} sidebands in data}
+Figure~\ref{fig:emu_sidebands} compares data and simulation in the three
+$e\mu$ sidebands, in the low- and the high-mass regions. The band contains the
+statistical and the weight-based systematic uncertainties (lepton, trigger,
+pileup and $\LSFiii$ scale factors); the jet and lepton energy scale and
+resolution variations are not available in this output.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Res_EM_low.png}
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Res_EM_high.png}\\
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_EMJ_low.png}
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_EMJ_high.png}\\
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_MEJ_low.png}
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_MEJ_high.png}
+  \caption{Reconstructed \PWR{} mass in the flavor sidebands, 2024: resolved
+    $e\mu$ (top), boosted $e$+($\mu$-jet) (middle) and boosted $\mu$+($e$-jet)
+    (bottom), in the low-mass (left) and high-mass (right) regions.}
+  \label{fig:emu_sidebands}
+\end{figure}
+
+\subsection{Closure in the low-mass regions}
+The method is tested in the low-mass same-flavor regions, where the
+$\ttbar$+tW prediction of Eq.~(\ref{eq:emu_method}), with the low-mass ratio of
+Table~\ref{tab:emu_ratio_fit}, is added to the simulated other backgrounds and
+compared with data (Fig.~\ref{fig:emu_lowmass_dd}).
+In the resolved regions, where the data-driven $\ttbar$+tW makes up $80\%$ of
+the prediction, the observed-to-predicted ratio is $1.02$ ($ee$) and $1.08$
+($\mu\mu$), and between $0.94$ and $1.11$ in every bin above $300\GeV$. The
+data-driven $\ttbar$+tW yield is $0.91$ of the simulated one. In the boosted
+regions the ratio is $1.52$ ($ee$) and $1.45$ ($\mu\mu$). There the
+data-driven $\ttbar$+tW is only $30\%$ ($38\%$) of the prediction, the rest
+being DY and nonprompt simulation, so the disagreement cannot be attributed to
+the $e\mu$ method: even a $60\%$ uncertainty on the data-driven component moves
+the prediction by $20\%$. \TODO{The boosted low-mass regions point to the DY and
+nonprompt modeling at low $\mlJ$, in line with the boosted DY CR2 closure of
+Sec.~\ref{subsubsec:dyvalidation_draft}; follow up before using these regions
+to assign an uncertainty.}
+
+Following the Run~2 study, Figs.~\ref{fig:emu_obs_pred_res_ee}--\ref{fig:emu_obs_pred_boost_mm}
+show the observed-to-predicted ratio when a systematic uncertainty between
+$5\%$ and $60\%$ is assigned to the data-driven $\ttbar$+tW component. In
+the resolved regions $15\%$ covers all bins above $300\GeV$ (Run~2:
+$20\%$); in the boosted regions no value in the scanned range covers the
+discrepancy, for the reason given above (Run~2: $30\%$).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/lowmass_dd_Res_EE.png}
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/lowmass_dd_Res_MM.png}\\
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/lowmass_dd_Boost_EE.png}
+  \includegraphics[width=0.40\textwidth]{fig/05_backgrounds/2024/emu_method/lowmass_dd_Boost_MM.png}
+  \caption{Reconstructed \PWR{} mass in the resolved (top) and boosted (bottom)
+    low-mass control regions for $ee$ (left) and $\mu\mu$ (right) events, 2024,
+    with the $\ttbar$+tW contribution estimated from the $e\mu$ sideband data.
+    The band contains the statistical uncertainty of the prediction and the
+    weight-based systematic uncertainties of the simulated backgrounds.}
+  \label{fig:emu_lowmass_dd}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig/05_backgrounds/2024/emu_method/obs_pred_Res_EE.png}
+  \caption{Observed-to-predicted ratio in the resolved low-mass $ee$ region
+    versus $\mlljj$, 2024, for a systematic uncertainty of $5\%$ to $60\%$ on
+    the data-driven $\ttbar$+tW estimate. Orange: statistical uncertainty of the
+    prediction; gray: statistical and systematic.}
+  \label{fig:emu_obs_pred_res_ee}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig/05_backgrounds/2024/emu_method/obs_pred_Res_MM.png}
+  \caption{Same as Fig.~\ref{fig:emu_obs_pred_res_ee} for the resolved low-mass
+    $\mu\mu$ region.}
+  \label{fig:emu_obs_pred_res_mm}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig/05_backgrounds/2024/emu_method/obs_pred_Boost_EE.png}
+  \caption{Same as Fig.~\ref{fig:emu_obs_pred_res_ee} for the boosted low-mass
+    $ee$ region, versus $\mlJ$.}
+  \label{fig:emu_obs_pred_boost_ee}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig/05_backgrounds/2024/emu_method/obs_pred_Boost_MM.png}
+  \caption{Same as Fig.~\ref{fig:emu_obs_pred_res_ee} for the boosted low-mass
+    $\mu\mu$ region, versus $\mlJ$.}
+  \label{fig:emu_obs_pred_boost_mm}
+\end{figure}

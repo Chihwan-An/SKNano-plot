@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "wall_seconds": 11.208963292,
+  "cpu_seconds": 11.295878999999999,
+  "events_per_second": 17842.863321957964,
+  "cpu_seconds_per_event": 5.6479395e-05,
+  "peak_rss_kib": 1367324,
+  "metadata": {
+    "analyzer": "HNWR_ChargeFlip",
+    "era": "2024",
+    "input_format": "rntuple"
+
+  },
+  "counters": {
+    "active_branches": 120,
+    "event_errors": 0,
+    "events_processed": 200000,
+    "input_files": 1,
+    "prefetch_bytes": 673569109,
+    "prefetch_clusters": 9,
+    "prefetch_ranges": 27,
+    "prefetch_window_clusters": 2,
+    "rntuple_file_opens": 1,
+    "rntuple_local_entry_advances": 200000,
+    "rntuple_read_calls": 0,
+    "rntuple_read_overhead_bytes": 0,
+    "rntuple_read_payload_bytes": 0,
+    "rntuple_read_wall_seconds": 0,
+    "rntuple_readv_calls": 0,
+    "rntuple_unzip_bytes": 0,
+    "rntuple_unzip_wall_seconds": 0
+
+  },
+  "phases": {
+    "correction": {"seconds": 2.1587478370000319, "calls": 282582},
+    "event_total": {"seconds": 11.101499667999949, "calls": 200000},
+    "header_io": {"seconds": 0.065247428000007074, "calls": 200000},
+    "rntuple_fill": {"seconds": 0.34190542800000356, "calls": 71863}
+  }
+}

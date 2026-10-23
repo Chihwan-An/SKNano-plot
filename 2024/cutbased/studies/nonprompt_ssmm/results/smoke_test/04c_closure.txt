@@ -1,0 +1,50 @@
+# closure: F map from SS Low (bkg noQCD, truth-nonprompt muons) applied to SS High.
+# target = iso-TT with >=1 truth-F muon. U-only iso-TT (no F, >=1 U) reported separately.
+
+## apply to SS High (bkg noQCD); bins [1600.0, 2000.0, 2400.0, 2800.0, 3200.0, 8000.0]
+target nonprompt iso-TT: 0.023 ± 0.023   per bin [0.0, 0.023000000044703484, 0.0, 0.0, 0.0]
+U-only iso-TT (not in target): 0.000
+FF, AR truth-F only                             : 0.185 ± 0.065(MC) ± 8.504(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.02, -0.0, 0.02, nan, 0.66]  chi2/ndf 0.44/4
+FF, AR all - PP (prompt-subtracted)             : 0.185 ± 0.065(MC) ± 0.207(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.72, -0.04, 0.78, nan, 0.67]  chi2/ndf 1.57/4
+FF, one-fake only (no LL)                       : 0.185 ± 0.065(MC) ± 1.716(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.12, -0.01, 0.1, nan, 0.65]  chi2/ndf 0.44/4
+full matrix (eps from P_lowSS), all SS events   : 0.177 ± 0.065(MC) ± nan(map)  pred/target 7.633   per bin [0.1, 0.021, 0.055, 0.0, 0.001]
+                                                  per-bin pull [2.2, -0.08, 1.29, nan, 1.0]  chi2/ndf 7.51/4
+
+## apply to SS High (bkg+QCD); bins [1600.0, 2000.0, 2400.0, 2800.0, 3200.0, 8000.0]
+target nonprompt iso-TT: 0.023 ± 0.023   per bin [0.0, 0.023000000044703484, 0.0, 0.0, 0.0]
+U-only iso-TT (not in target): 0.000
+FF, AR truth-F only                             : 0.185 ± 0.065(MC) ± 1.534(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.07, -0.02, 0.35, nan, 0.66]  chi2/ndf 0.57/4
+FF, AR all - PP (prompt-subtracted)             : 0.185 ± 0.065(MC) ± 0.758(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.26, -0.01, 0.22, nan, 0.62]  chi2/ndf 0.50/4
+FF, one-fake only (no LL)                       : 0.185 ± 0.065(MC) ± 0.539(map)  pred/target 8.017   per bin [0.108, 0.022, 0.055, 0.0, 0.001]
+                                                  per-bin pull [0.36, -0.02, 0.31, nan, 0.65]  chi2/ndf 0.65/4
+full matrix (eps from P_lowSS), all SS events   : 0.177 ± 0.065(MC) ± nan(map)  pred/target 7.633   per bin [0.1, 0.021, 0.055, 0.0, 0.001]
+                                                  per-bin pull [2.2, -0.08, 1.29, nan, 1.0]  chi2/ndf 7.51/4
+
+## apply to SS Low (bkg noQCD); bins [800.0, 1000.0, 1200.0, 1400.0, 1600.0]
+target nonprompt iso-TT: 0.314 ± 0.103   per bin [0.17399999499320984, 0.035999998450279236, 0.07999999821186066, 0.024000000208616257]
+U-only iso-TT (not in target): 0.000
+FF, AR truth-F only                             : 0.306 ± 0.062(MC) ± 0.655(map)  pred/target 0.974   per bin [0.147, 0.042, 0.081, 0.036]
+                                                  per-bin pull [-0.09, 0.06, 0.01, 0.09]  chi2/ndf 0.02/4
+FF, AR all - PP (prompt-subtracted)             : 0.305 ± 0.062(MC) ± 1.309(map)  pred/target 0.970   per bin [0.147, 0.041, 0.081, 0.036]
+                                                  per-bin pull [-0.08, 0.08, 0.0, 0.03]  chi2/ndf 0.01/4
+FF, one-fake only (no LL)                       : 0.307 ± 0.062(MC) ± 0.821(map)  pred/target 0.977   per bin [0.148, 0.042, 0.081, 0.036]
+                                                  per-bin pull [-0.06, 0.05, 0.01, 0.09]  chi2/ndf 0.01/4
+full matrix (eps from P_lowSS), all SS events   : 0.282 ± 0.061(MC) ± nan(map)  pred/target 0.896   per bin [0.134, 0.035, 0.08, 0.033]
+                                                  per-bin pull [-0.5, -0.04, -0.0, 0.33]  chi2/ndf 0.36/4
+
+## apply to SS Low (bkg+QCD); bins [800.0, 1000.0, 1200.0, 1400.0, 1600.0]
+target nonprompt iso-TT: 0.314 ± 0.103   per bin [0.17399999499320984, 0.035999998450279236, 0.07999999821186066, 0.024000000208616257]
+U-only iso-TT (not in target): 0.000
+FF, AR truth-F only                             : 0.306 ± 0.062(MC) ± 43.899(map)  pred/target 0.974   per bin [0.147, 0.042, 0.081, 0.036]
+                                                  per-bin pull [-0.0, 0.0, 0.0, 0.13]  chi2/ndf 0.02/4
+FF, AR all - PP (prompt-subtracted)             : 0.305 ± 0.062(MC) ± 0.561(map)  pred/target 0.970   per bin [0.147, 0.041, 0.081, 0.036]
+                                                  per-bin pull [-0.09, 0.05, 0.01, 0.19]  chi2/ndf 0.05/4
+FF, one-fake only (no LL)                       : 0.307 ± 0.062(MC) ± 0.624(map)  pred/target 0.977   per bin [0.148, 0.042, 0.081, 0.036]
+                                                  per-bin pull [-0.08, 0.06, 0.01, 0.15]  chi2/ndf 0.03/4
+full matrix (eps from P_lowSS), all SS events   : 0.282 ± 0.061(MC) ± nan(map)  pred/target 0.896   per bin [0.134, 0.035, 0.08, 0.033]
+                                                  per-bin pull [-0.5, -0.04, -0.0, 0.33]  chi2/ndf 0.36/4

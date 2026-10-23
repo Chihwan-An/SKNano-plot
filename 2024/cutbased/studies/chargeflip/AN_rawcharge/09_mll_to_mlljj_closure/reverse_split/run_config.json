@@ -1,0 +1,13 @@
+{
+  "validation_fold": 0,
+  "min_train_neff": 30,
+  "channels": [
+    "EE"
+  ],
+  "modes": [
+    "nominal"
+  ],
+  "kinds": [
+    "prompt_singleflip"
+  ]
+}

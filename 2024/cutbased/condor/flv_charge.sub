@@ -1,0 +1,18 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs_nocopy.sh
+arguments = "$(job) --spec $(spec) --input /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav_DYCRCharge/2024 --outdir $(outdir) --quiet"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased
+environment = "PLOT_SIGNAL_POINTS=MWR4000_N200,MWR4000_N2000"
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/flv_charge_$(job).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/flv_charge_$(job).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/condor.log
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = flv_charge
+notification = Never
+should_transfer_files = NO
+queue job,spec,outdir from (
+  Resolve_FLV_EM specs/rawcharge/Resolve_FLV_EM_charge.txt out/Resolve/FLV
+)

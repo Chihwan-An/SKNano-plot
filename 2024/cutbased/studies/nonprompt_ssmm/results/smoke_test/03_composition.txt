@@ -1,0 +1,192 @@
+# FO baseline, mll>400. Yields: signed sumw ± sqrt(sumw2) [raw entries]. MC only.
+# 'truth' is per muon: P prompt(+prompt tau), F nonprompt (b, b->c, c, nonprompt tau, light), U undetermined.
+
+## SS Full  (mlljj>800)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                              0.35±0.11 [13]               3.63±0.39 [118]                0.47±0.13 [15]                 0.05±0.04 [2]
+sum noQCD                       0.35±0.11 [13]               3.63±0.39 [118]                0.47±0.13 [15]                 0.05±0.04 [2]
+sum +QCD                        0.35±0.11 [13]               3.63±0.39 [118]                0.47±0.13 [15]                 0.05±0.04 [2]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                0.11 (30.6%)           0.00 (0.0%)         0.47 (100.0%)          0.03 (52.0%)
+PF                0.23 (64.5%)          3.62 (99.7%)           0.00 (0.0%)           0.00 (0.0%)
+PP                 0.02 (4.9%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.01 (0.3%)           0.00 (0.0%)          0.03 (48.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                0.11 (30.6%)           0.00 (0.0%)         0.47 (100.0%)          0.03 (52.0%)
+PF                0.23 (64.5%)          3.62 (99.7%)           0.00 (0.0%)           0.00 (0.0%)
+PP                 0.02 (4.9%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.01 (0.3%)           0.00 (0.0%)          0.03 (48.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.34
+   iso-TL: b direct(L)=2.47, b->c cascade(L)=1.10, nonprompt tau(L)=0.04, no gen mu(L)=0.01
+   iso-LT: b direct(L)=0.32, b->c cascade(L)=0.07, nonprompt tau(L)=0.06, c (no b)(L)=0.03
+   iso-LL: b direct(L)=0.03, no gen mu(L)=0.03
+   mu2 genPartFlav==0: 5 raw; (matchType, origin) counts: {(2, 4): 2, (0, 0): 2, (2, 1): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N200      TT: 9.162±0.169 S/B 25.828 S/(B+Q) 25.828;  TL: 8.197±0.157 S/B 2.260 S/(B+Q) 2.260;  LT: 0.173±0.023 S/B 0.366 S/(B+Q) 0.366;  LL: 0.036±0.009 S/B 0.674 S/(B+Q) 0.674;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+
+## SS Low  (800<mlljj<1600)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                              0.33±0.10 [12]                2.71±0.34 [87]                0.42±0.13 [13]                 0.05±0.04 [2]
+sum noQCD                       0.33±0.10 [12]                2.71±0.34 [87]                0.42±0.13 [13]                 0.05±0.04 [2]
+sum +QCD                        0.33±0.10 [12]                2.71±0.34 [87]                0.42±0.13 [13]                 0.05±0.04 [2]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                0.11 (32.7%)           0.00 (0.0%)         0.42 (100.0%)          0.03 (52.0%)
+PF                0.21 (62.0%)         2.71 (100.0%)           0.00 (0.0%)           0.00 (0.0%)
+PP                 0.02 (5.2%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)          0.03 (48.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                0.11 (32.7%)           0.00 (0.0%)         0.42 (100.0%)          0.03 (52.0%)
+PF                0.21 (62.0%)         2.71 (100.0%)           0.00 (0.0%)           0.00 (0.0%)
+PP                 0.02 (5.2%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)          0.03 (48.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.31
+   iso-TL: b direct(L)=1.81, b->c cascade(L)=0.85, nonprompt tau(L)=0.04
+   iso-LT: b direct(L)=0.27, b->c cascade(L)=0.07, nonprompt tau(L)=0.06, c (no b)(L)=0.03
+   iso-LL: b direct(L)=0.03, no gen mu(L)=0.03
+   mu2 genPartFlav==0: 4 raw; (matchType, origin) counts: {(2, 4): 2, (0, 0): 1, (2, 1): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N200      TT: 2.532±0.089 S/B 7.635 S/(B+Q) 7.635;  TL: 0.612±0.042 S/B 0.226 S/(B+Q) 0.226;  LT: 0.033±0.009 S/B 0.078 S/(B+Q) 0.078;  LL: 0.011±0.006 S/B 0.213 S/(B+Q) 0.213;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+
+## SS High  (mlljj>=1600)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                               0.02±0.02 [1]                0.92±0.20 [31]                 0.05±0.03 [2]                 0.00±0.00 [0]
+sum noQCD                        0.02±0.02 [1]                0.92±0.20 [31]                 0.05±0.03 [2]                 0.00±0.00 [0]
+sum +QCD                         0.02±0.02 [1]                0.92±0.20 [31]                 0.05±0.03 [2]                 0.00±0.00 [0]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.00 (0.0%)           0.00 (0.0%)         0.05 (100.0%)           0.00 (0.0%)
+PF               0.02 (100.0%)          0.91 (98.7%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.01 (1.3%)           0.00 (0.0%)           0.00 (0.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.00 (0.0%)           0.00 (0.0%)         0.05 (100.0%)           0.00 (0.0%)
+PF               0.02 (100.0%)          0.91 (98.7%)           0.00 (0.0%)           0.00 (0.0%)
+PU                 0.00 (0.0%)           0.01 (1.3%)           0.00 (0.0%)           0.00 (0.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.02
+   iso-TL: b direct(L)=0.66, b->c cascade(L)=0.25, no gen mu(L)=0.01
+   iso-LT: b direct(L)=0.05
+   iso-LL: 
+   mu2 genPartFlav==0: 1 raw; (matchType, origin) counts: {(0, 0): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR4000_N200      TT: 6.630±0.144 S/B 286.587 S/(B+Q) 286.587;  TL: 7.584±0.151 S/B 8.221 S/(B+Q) 8.221;  LT: 0.140±0.021 S/B 2.967 S/(B+Q) 2.967;  LL: 0.024±0.007 S/B nan S/(B+Q) nan;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+
+## OS Full  (mlljj>800)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                           98.42±2.06 [3130]               9.28±0.61 [325]                2.53±0.33 [77]                 0.22±0.09 [7]
+sum noQCD                    98.42±2.06 [3130]               9.28±0.61 [325]                2.53±0.33 [77]                 0.22±0.09 [7]
+sum +QCD                     98.42±2.06 [3130]               9.28±0.61 [325]                2.53±0.33 [77]                 0.22±0.09 [7]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.30 (0.3%)           0.00 (0.0%)          0.96 (38.1%)          0.03 (15.9%)
+PF                 0.46 (0.5%)          5.68 (61.2%)           0.00 (0.0%)          0.07 (30.9%)
+PP               97.62 (99.2%)          3.54 (38.2%)          1.52 (60.0%)          0.11 (53.2%)
+PU                 0.04 (0.0%)           0.06 (0.7%)           0.00 (0.0%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.05 (1.9%)           0.00 (0.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.30 (0.3%)           0.00 (0.0%)          0.96 (38.1%)          0.03 (15.9%)
+PF                 0.46 (0.5%)          5.68 (61.2%)           0.00 (0.0%)          0.07 (30.9%)
+PP               97.62 (99.2%)          3.54 (38.2%)          1.52 (60.0%)          0.11 (53.2%)
+PU                 0.04 (0.0%)           0.06 (0.7%)           0.00 (0.0%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.05 (1.9%)           0.00 (0.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.75, no gen mu(T)=0.04, b->c cascade(T)=0.01
+   iso-TL: b direct(L)=4.86, b->c cascade(L)=0.72, nonprompt tau(L)=0.09, no gen mu(L)=0.06
+   iso-LT: b direct(L)=0.86, b->c cascade(L)=0.10, no gen mu(L)=0.05
+   iso-LL: b direct(L)=0.08, c (no b)(L)=0.02
+   mu1 genPartFlav==0: 5 raw; (matchType, origin) counts: {(0, 0): 2, (2, 2): 1, (2, 3): 1, (2, 4): 1}
+   mu2 genPartFlav==0: 6 raw; (matchType, origin) counts: {(0, 0): 3, (2, 1): 2, (2, 3): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N200      TT: 9.821±0.175 S/B 0.100 S/(B+Q) 0.100;  TL: 8.104±0.156 S/B 0.873 S/(B+Q) 0.873;  LT: 0.260±0.029 S/B 0.103 S/(B+Q) 0.103;  LL: 0.024±0.008 S/B 0.110 S/(B+Q) 0.110;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+
+## OS Low  (800<mlljj<1600)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                           84.42±1.91 [2680]               7.39±0.55 [256]                2.05±0.31 [60]                 0.22±0.09 [7]
+sum noQCD                    84.42±1.91 [2680]               7.39±0.55 [256]                2.05±0.31 [60]                 0.22±0.09 [7]
+sum +QCD                     84.42±1.91 [2680]               7.39±0.55 [256]                2.05±0.31 [60]                 0.22±0.09 [7]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.27 (0.3%)           0.00 (0.0%)          0.96 (46.8%)          0.03 (15.9%)
+PF                 0.38 (0.5%)          4.66 (63.0%)           0.00 (0.0%)          0.07 (30.9%)
+PP               83.73 (99.2%)          2.67 (36.1%)          1.07 (52.0%)          0.11 (53.2%)
+PU                 0.04 (0.0%)           0.06 (0.8%)           0.00 (0.0%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.02 (1.2%)           0.00 (0.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.27 (0.3%)           0.00 (0.0%)          0.96 (46.8%)          0.03 (15.9%)
+PF                 0.38 (0.5%)          4.66 (63.0%)           0.00 (0.0%)          0.07 (30.9%)
+PP               83.73 (99.2%)          2.67 (36.1%)          1.07 (52.0%)          0.11 (53.2%)
+PU                 0.04 (0.0%)           0.06 (0.8%)           0.00 (0.0%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.02 (1.2%)           0.00 (0.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.65, no gen mu(T)=0.04, b->c cascade(T)=0.01
+   iso-TL: b direct(L)=3.95, b->c cascade(L)=0.61, nonprompt tau(L)=0.09, no gen mu(L)=0.06
+   iso-LT: b direct(L)=0.86, b->c cascade(L)=0.10, no gen mu(L)=0.02
+   iso-LL: b direct(L)=0.08, c (no b)(L)=0.02
+   mu1 genPartFlav==0: 4 raw; (matchType, origin) counts: {(2, 2): 1, (0, 0): 1, (2, 3): 1, (2, 4): 1}
+   mu2 genPartFlav==0: 6 raw; (matchType, origin) counts: {(0, 0): 3, (2, 1): 2, (2, 3): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N200      TT: 2.772±0.092 S/B 0.033 S/(B+Q) 0.033;  TL: 0.532±0.041 S/B 0.072 S/(B+Q) 0.072;  LT: 0.048±0.010 S/B 0.023 S/(B+Q) 0.023;  LL: 0.010±0.006 S/B 0.047 S/(B+Q) 0.047;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;
+
+## OS High  (mlljj>=1600)
+process                                 iso-TT                        iso-TL                        iso-LT                        iso-LL
+tW                            13.99±0.77 [450]                1.89±0.27 [69]                0.47±0.13 [17]                 0.00±0.00 [0]
+sum noQCD                     13.99±0.77 [450]                1.89±0.27 [69]                0.47±0.13 [17]                 0.00±0.00 [0]
+sum +QCD                      13.99±0.77 [450]                1.89±0.27 [69]                0.47±0.13 [17]                 0.00±0.00 [0]
+-- truth pair (lead,sub) fractions of bkg noQCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.03 (0.2%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PF                 0.07 (0.5%)          1.02 (53.9%)           0.00 (0.0%)           0.00 (0.0%)
+PP               13.89 (99.3%)          0.87 (46.1%)          0.45 (94.7%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.03 (5.3%)           0.00 (0.0%)
+-- truth pair (lead,sub) fractions of bkg+QCD per iso category:
+pair                    iso-TT                iso-TL                iso-LT                iso-LL
+FP                 0.03 (0.2%)           0.00 (0.0%)           0.00 (0.0%)           0.00 (0.0%)
+PF                 0.07 (0.5%)          1.02 (53.9%)           0.00 (0.0%)           0.00 (0.0%)
+PP               13.89 (99.3%)          0.87 (46.1%)          0.45 (94.7%)           0.00 (0.0%)
+UP                 0.00 (0.0%)           0.00 (0.0%)           0.03 (5.3%)           0.00 (0.0%)
+-- origin of nonprompt/undetermined muons (bkg noQCD), sumw by origin, muon T vs L:
+   iso-TT: b direct(T)=0.10
+   iso-TL: b direct(L)=0.91, b->c cascade(L)=0.10
+   iso-LT: no gen mu(L)=0.03
+   iso-LL: 
+   mu1 genPartFlav==0: 1 raw; (matchType, origin) counts: {(0, 0): 1}
+-- signal yields and raw S/B (B = bkg noQCD; B+Q with QCD):
+MWR3000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR4000_N200      TT: 7.048±0.149 S/B 0.504 S/(B+Q) 0.504;  TL: 7.572±0.151 S/B 4.011 S/(B+Q) 4.011;  LT: 0.213±0.027 S/B 0.449 S/(B+Q) 0.449;  LL: 0.014±0.005 S/B nan S/(B+Q) nan;
+MWR5000_N200      TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR3000_N1500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR4000_N2000     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;
+MWR5000_N2500     TT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  TL: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LT: 0.000±0.000 S/B 0.000 S/(B+Q) 0.000;  LL: 0.000±0.000 S/B nan S/(B+Q) nan;

@@ -1,0 +1,19 @@
+imax *
+jmax *
+kmax *
+------------------------------
+shapes * * shapes.root $CHANNEL/$PROCESS
+------------------------------
+bin SS_TT_Low SS_TT_High
+observation -1 -1
+------------------------------
+bin SS_TT_Low SS_TT_Low SS_TT_Low SS_TT_Low SS_TT_High SS_TT_High SS_TT_High SS_TT_High
+process sig prompt undet np sig prompt undet np
+process 0 1 2 3 0 1 2 3
+rate -1 -1 -1 -1 -1 -1 -1 -1
+------------------------------
+lumi lnN 1.014 1.014 1.014 - 1.014 1.014 1.014 -
+prompt_norm lnN - 1.10 - - - 1.10 - -
+undet_norm lnN - - 1.50 - - - 1.50 -
+np_fixed lnN - - - 1.180 - - - 1.180
+* autoMCStats 10

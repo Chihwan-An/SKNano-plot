@@ -1,0 +1,593 @@
+#ifndef HNWR_HNWR_BDT_presel_3SR_h
+#define HNWR_HNWR_BDT_presel_3SR_h
+
+#include <AnalyzerFramework/AnalyzerCore.h>
+#include <SystematicHelper.h>
+
+#include <TLorentzVector.h>
+
+#include <cstddef>
+#include <functional>
+#include <map>
+#include <memory>
+#include <string>
+#include <unordered_map>
+#include <variant>
+#include <vector>
+
+// ============================ 3SR TEST VARIANT =============================
+// Standalone copy of HNWR_BDT_presel implementing the THREE-signal-region
+// architecture (2026-08-06 study, see plots/HNWR/singnal_sample_test/
+// Get_efficiency/BDT/modified/RESULTS.md):
+//   SR_*_BDTTree_resolved      : lead tight (pT>130 e / >60 mu + trigger-safe) + sublead
+//                                "ResSub" (pT>20; e POG_LOOSE||HEEP, mu
+//                                Medium+MiniIsoLoose), mll>200, 4-object dR
+//                                with jets re-cleaned vs the sublead.
+//   SR_*_BDTTree_boosted       : !resolved, lead tight + AK8, captured SF pair
+//                                with mll>200 (LOOSE tier pT>53; e LooseNoIso
+//                                ||HEEP, mu POG_GLOBAL_HIGH_PT) and the
+//                                captured lepton INSIDE a fatjet (dR<0.8); that
+//                                fatjet is stored as fatjet1. This is exactly
+//                                Reproduce20_002_copy's boosted lepton selection
+//                                (:2491-2504, :2560) -- everything it applies on
+//                                top (dPhi(l,J)>2.0, LSF3>0.75, SDM>40, mlljj>800)
+//                                is signal selection and stays out, as BDT input.
+//   SR_*_BDTTree_boosted_nolep : !resolved, lead tight + AK8, NO extra loose
+//                                lepton (lepton-missing; BDT relies on AK8
+//                                internals), with mT(l1, MET) >= Boosted_NoLep_CR_mT_Max.
+//                                Defined in the SAME loose tier as the with-lep SR,
+//                                so the two are exact complements (2026-08-13).
+//   CR_NOLEP_*_BDTTree_boosted_nolep : same selection with mT(l1, MET) below that
+//                                threshold -- the W+jets / semileptonic-ttbar control
+//                                region for the lepton-missing SR (per-variation trees).
+//   capture lepton present but no in-fatjet mll>200 pair -> no SR (dropped).
+// DY/FLV boosted CRs keep the ORIGINAL loose (pT>53) pair definitions; CR_FLV
+// boosted additionally requires its OF sublead inside a fatjet (SR mirror), while
+// CR_DY boosted does not (the Z pair is resolved by construction). The resolved
+// DY/SS CRs follow the new resolved pair (CR mirrors SR).
+// ===========================================================================
+// Preselection version of Reproduce20_002_copy that writes per-category BDT
+// ntuples (BDTTree_resolved / BDTTree_boosted / BDTTree_boosted_nolep). Jet
+// energy systematics (JES/JER) are applied as object variations: the event is
+// re-looped per variation and an extra tree per variation is written
+// (BDTTree_<category>_<JES/JER>_<Up/Down>).
+//
+// SYSTEMATICS (2026-08-13): the full data/config/MCLRSM.yaml set is implemented, so this
+// analyzer does not need --userflags NoSyst to avoid SystematicHelper's throw on an
+// unresolved target. Object variations (evtLoopAgain, own tree set): JES, JER,
+// MuonScale, MuonRes, ElectronScale, ElectronRes. Weight variations (stored as
+// weight_<name>_Up/_Down branches on the Central tree): Pileup,
+// Electron{ID,Reco,Trig}, Muon{ID,Reco,Trig,Iso}, LSF, ScaleWeight_mu{F,R},
+// AlphaS, and the seven DY ZPtRw* targets (C(genZpT) MC-stat + 3 QCD theory,
+// EW(genZpT) 3 sources). PDF is retired as a weight target, as in
+// Reproduce20_002_copy. R(recoJetPt) is a branch (dy_jetpt_r), not a weight.
+//
+// ---------------------------------------------------------------------------
+// NanoAODv15 PORT NOTES (see docs/porting_v13_to_v15.md)
+//
+// * Objects are read-only event-scoped Views. Every place the v13 code held a
+//   `Lepton*` into a mutable RVec<Muon>/RVec<Electron> is now a `LepRef*` into
+//   one of the two stable per-event stores (fEleStore / fMuStore). LepRef keeps
+//   the flavour, the index into the corresponding ViewCollection and the
+//   VARIATION-APPLIED four-vector, so pointer-identity comparisons, pT ordering
+//   and all kinematics behave exactly as they did with `Lepton*`.
+// * Object variations are lanes, not mutations:
+//     AK4  -> SelectJetIndices/SelectJetViews(..., jesVar, jerVar)
+//     AK8  -> SelectFatJets(..., jesVar, jerVar) + SmearedPt*/JesPt*/SDMass* lanes
+//     mu   -> MuonView::HighPtPt()/HighPtScale{Up,Down}()/HighPtRes{Up,Down}()
+//     ele  -> ElectronView::Pt()/Scale{Up,Down}Pt()/Smear{Up,Down}Pt()
+// * The TTree output layer (NewTree/SetBranch/FillTrees) is gone. Every tree is
+//   an RNTuple booked once in initializeAnalyzer(); the ~850 branch values per
+//   tree live in a BDTBranches instance owned by this analyzer and are bound
+//   zero-copy with RNTupleHandle::Field(). Tree names and branch names are
+//   byte-identical to v13 so the downstream training code is unaffected.
+// ---------------------------------------------------------------------------
+class HNWR_BDT_presel_3SR : public AnalyzerCore {
+public:
+    HNWR_BDT_presel_3SR();
+    ~HNWR_BDT_presel_3SR();
+
+    void initializeAnalyzer() override;
+    void executeEvent() override;
+    void executeEventFromParameter();
+
+    std::unique_ptr<SystematicHelper> systHelper;
+
+    // DY correction userflags, mirroring Reproduce20_002_copy. Neither is the
+    // production default: C(gen Z pT) and R(reco jet pT) are both on.
+    //   NoDYCorr  both off      -> "before"
+    //   ZptOnly   C on, R off   -> "after"
+    // Mutually exclusive; setting both is fatal rather than a silent precedence rule.
+    bool NoDYCorr = false;
+    bool ZptOnly = false;
+    // --- FakeRate mode (userflag FakeRate, 2026-08-27) ---------------------------
+    // Electron fake-rate inputs for the boosted_nolep EE category. Adds two
+    // Central-only auxiliary trees and, to keep the run light, skips the main
+    // SR/CR fills (those come from the normal production):
+    //   SR_LNT_EE_BDTTree_boosted_nolep : the lepton-missing boosted selection with
+    //       the lead electron LOOSE-NOT-TIGHT (HEEP-loose && !HEEP), no other
+    //       loose lepton, no tight lepton -- the events f/(1-f) reweights.
+    //   FR_MR_EE_BDTTree_boosted_nolep  : fake-rate measurement region: exactly one
+    //       HEEP-loose electron (tight or not; ele1_passHEEP tells), a
+    //       back-to-back AK8 fatjet (|dPhi| > 2.5), MET < 30, mT(e,MET) < 50 and
+    //       m(e,J) < 800 (below the SR window). f = N(passHEEP)/N(all) per (pT, eta).
+    // HEEP-loose = HEEP with the shower-shape / H/E / track-iso / EM+Had-iso cuts
+    // relaxed (thresholds below); track matching, dxy, missing hits, ecal-driven
+    // stay, so Tight(HEEP) is a subset by construction.
+    bool FakeRateMode = false;
+    static constexpr float kHEEPLooseSieieEB = 0.014f;   // HEEP EB uses E2x5/E5x5; relaxed to a wide sieie
+    static constexpr float kHEEPLooseSieieEE = 0.045f;   // HEEP EE: 0.03
+    static constexpr float kHEEPLooseHoE = 0.15f;        // HEEP: 1/E+0.05 (EB), 5/E+0.05 (EE)
+    static constexpr float kHEEPLooseTrkIso = 20.f;      // HEEP: 5 GeV
+    static constexpr float kHEEPLooseEmHadScale = 2.f;   // x HEEP EM+Had depth1 iso cut
+    // LooseV2 (userflag, 2026-08-27 evening): trigger-matched loose. The
+    // single-electron paths admit different loose-not-tight classes per pT:
+    // Ele115_CaloIdVT_GsfTrkIdT applies shower-shape / H/E cuts at HLT (so
+    // below 200 GeV only isolation-failing candidates enter), Photon200 (>200)
+    // admits shape-failing ones too. Measured with the wide V1 definition, f
+    // does not transfer MR -> VR (step at exactly 200 GeV in the closure). V2
+    // keeps sieie / H/E at the HLT CaloIdVT level and relaxes ONLY the
+    // isolation, so the loose class is the same in every pT regime.
+    bool HEEPLooseV2 = false;
+    static constexpr float kHEEPLooseV2SieieEB = 0.011f;  // HLT CaloIdVT
+    static constexpr float kHEEPLooseV2SieieEE = 0.031f;
+    static constexpr float kHEEPLooseV2HoEEB = 0.10f;
+    static constexpr float kHEEPLooseV2HoEEE = 0.05f;
+    static constexpr float kHEEPLooseV2TrkIso = 30.f;      // isolation relaxed further than V1
+    static constexpr float kHEEPLooseV2EmHadScale = 4.f;
+    static constexpr float kFR_MaxMET = 30.f;
+    static constexpr float kFR_MaxMT = 50.f;
+    static constexpr float kFR_MinDPhi = 2.5f;
+    static constexpr float kFR_MaxMlJ = 800.f;
+    bool isPassHEEPLoose(const ElectronView &el) const;
+
+    // Gen particles, needed by GetGenZpT (the DY Z-pT corrections are gen level).
+    GenViewCollection gens;
+
+    // Signal decay-mode tag, set once per event in executeEvent (MC only).
+    // True if any LHE parton is a b (|PDG|=5) or top (|PDG|=6): WR*->tb decay.
+    // Written to every BDTTree as the "is_tb" branch (0 for light-quark/data/bkg).
+    bool sig_isTb = false;
+
+    // ======================================================================
+    //  Lepton reference: the v15 replacement for the v13 `Lepton*`.
+    //  Views cannot be mutated and cannot be pointed at, so the analyzer owns
+    //  two stable stores of LepRef (one per flavour, pT sorted) and passes
+    //  LepRef* around exactly where v13 passed Lepton*. `p4` already carries
+    //  the momentum-scale / resolution variation of the current systematic
+    //  iteration, which is what v13's Scale/SmearMuons+Electrons produced.
+    // ======================================================================
+    struct LepRef {
+        bool isEle = false;
+        std::size_t idx = 0;   // index into the ElectronViewCollection / MuonViewCollection
+        TLorentzVector p4;
+        float charge = 0.f;
+
+        inline bool IsElectron() const { return isEle; }
+        inline bool IsMuon() const { return !isEle; }
+        inline float Pt() const { return static_cast<float>(p4.Pt()); }
+        inline float Eta() const { return static_cast<float>(p4.Eta()); }
+        inline float Phi() const { return static_cast<float>(p4.Phi()); }
+        inline float M() const { return static_cast<float>(p4.M()); }
+        inline float Charge() const { return charge; }
+        inline float DeltaR(const TLorentzVector &o) const { return static_cast<float>(p4.DeltaR(o)); }
+        inline float DeltaPhi(const TLorentzVector &o) const { return static_cast<float>(p4.DeltaPhi(o)); }
+    };
+    static inline bool LepPtComparing(const LepRef *a, const LepRef *b) { return a->Pt() > b->Pt(); }
+
+    // Selected AK8 jet + its variation-applied four-vector and soft-drop mass.
+    // FatJetView has no projection wrapper (unlike SelectedJetView for AK4), so
+    // the lane choice is resolved here once and carried with the object.
+    struct FatJetRec {
+        FatJetView view;
+        TLorentzVector p4;
+        float sdmass = 0.f;
+        FatJetRec(const FatJetView &v, const TLorentzVector &p, float sd)
+            : view(v), p4(p), sdmass(sd) {}
+    };
+
+    struct Electrons {
+        std::vector<ElectronView::ElectronID> Electron_Tight_ID = {ElectronView::ElectronID::POG_HEEP};
+        std::vector<ElectronView::ElectronID> Electron_Loose_ID = {ElectronView::ElectronID::POG_LOOSE};
+        float Electron_MinPt = 53.;
+
+        RVec<TString> Ele_Trigger;
+        float Ele_Trigger_Safe_Pt_Cut = 0.;
+    } el_set;
+
+    struct Muons {
+        std::vector<MuonView::MuonID> Muon_Tight_ID = {MuonView::MuonID::POG_GLOBAL_HIGH_PT};
+        std::vector<MuonView::MuonID> Muon_Loose_ID = {MuonView::MuonID::POG_GLOBAL_HIGH_PT};
+        float Muon_MinPt = 53.;
+
+        RVec<TString> Muon_Trigger;
+        float Muon_Trigger_Safe_Pt_Cut = 0.;
+        float Muon_Iso_Cut = 0.1;
+    } mu_set;
+
+    struct Jets {
+        std::vector<JetView::JetID> Jet_ID = {JetView::JetID::TIGHTLEPVETO};
+        float Jet_MinPt = 40.;
+        float Jet_MaxEta = 2.5;
+    } jet_set;
+
+    struct FatJets {
+        FatJetView::ID FatJet_ID = FatJetView::ID::TIGHT;
+        float Fatjet_LSF = 0.75;
+        float FatJet_MinPt = 200.;
+        float FatJet_MaxEta = 2.5;
+        float FatJet_SDM = 40;
+    } fatjet_set;
+
+    // Electron ID helpers. In v13 these lived on the Electrons struct; they are
+    // members of the analyzer here because isPassLooseNoIso now has to read the
+    // raw NanoAOD branch Electron_vidNestedWPBitmap (ElectronView does not expose
+    // it), and that branch is a protected member of SKNanoLoader.
+    bool isPassCustomLooseID(const ElectronView &el) const;
+    bool isPassCustomTightID(const ElectronView &el) const;
+    bool isPassLooseNoIso(const ElectronView &el) const;
+
+    // ======================================================================
+    //  Corrections / systematics helpers, copied VERBATIM from
+    //  Reproduce20_002_copy.h so the two analyzers apply the identical set.
+    //  Keep them in sync: any retune in Reproduce20_002_copy must be mirrored here.
+    // ======================================================================
+
+    // Electron trigger scale factor: constant per era, split barrel/endcap at SC
+    // |eta| = 1.4442 (EGM high-pT trigger T&P, fit range pT > 130 GeV).
+    // Returns 1.0 for eras without a measurement (e.g. 2017).
+    float GetElectronTriggerSF_TnP(double eta, double pt, MyCorrection::variation var) const;
+
+    // High-pT electron ID scale factor from POG/EGM electronID_highPt.json.gz
+    // ("Electron-ID-SF", WP "Tight"), binned in (signed SC eta, pt).
+    // v15 PORT: MyCorrection has no GetElectronHighPtIDSF and the CAT cvmfs
+    // metadata carries no electronID_highPt.json.gz for the NanoAODv15 eras, so
+    // this wrapper is kept (the ElectronID nuisance stays wired) but returns 1.0.
+    float GetElectronHEEPIDSF_TnP(double eta, double pt, MyCorrection::variation var) const;
+
+    // LSF3 cut efficiency SF by in-fatjet lepton flavor: muon-in-fatjet 1.06 +- 0.10
+    // (from e-mujet flavor CR), electron-in-fatjet 1.11 +- 0.11 (from mu-ejet flavor CR).
+    // Applied only in the boosted with-lep SR and the boosted flavor CR.
+    float GetLSFSF(bool muonInFatJet, MyCorrection::variation var) const;
+
+    // DY corrections: C(genZpT) and EW(genZpT) are per-event scalars and go through
+    // the systematic machinery; R(recoJetPt) depends on the reco category and is
+    // stored as a branch instead (see the note in the .cc).
+    struct DYCorrections {
+        bool loaded = false;
+        bool apply = false;            // false for data and every non-DY sample
+        bool apply_r = false;          // R alone, so ZptOnly can leave C on
+
+        // C(genZpT): nominal plus the three theory variations, all on one binning
+        std::vector<double> zpt_edges;
+        std::map<std::string, std::vector<double>> zpt;   // key -> bin values
+        // MC statistical error of C, carried in the bin errors of the nominal.
+        std::vector<double> zpt_stat;
+
+        // R(jet pT), rebinned curves only.
+        std::vector<double> r_edges_res, r_val_res, r_sig_res;
+        std::vector<double> r_edges_boo, r_val_boo, r_sig_boo;
+        int n_nuis_res = 0, n_nuis_boo = 0;
+
+        // EW(genZpT): NLO EW correction from arXiv:1705.04664. Nominal in ew_val;
+        // the three uncertainty sources live in the bin ERRORS of hist_e1/e2/e3.
+        bool apply_ew = false;
+        std::vector<double> ew_edges;
+        std::vector<double> ew_val, ew_e1, ew_e2, ew_e3;
+    } dycorr;
+
+    bool IsDYSample() const;
+    void LoadDYCorrections();
+
+    // --- acceptance-only theory nuisances ---
+    // Inclusive normalisation K_var of each LHE weight index for THIS sample, read
+    // from the module's HNWR/data/TheoryNormK/<era>/TheoryNormK.json. Dividing by K cancels the
+    // inclusive cross-section change so muF/muR/alphaS carry acceptance alone.
+    // Empty when the sample has no entry -> GetTheoryNormK returns 1.
+    std::vector<float> theoryK_scale;   // 9 entries, index = 3*iR + iF
+    std::vector<float> theoryK_pdf;     // 103 entries, LHEPdfWeight member order
+    void LoadTheoryNormK();
+    float GetTheoryNormK(const std::vector<float> &K, int idx) const;
+
+    // --- PDF Hessian members as per-event weight branches -------------------
+    // A Hessian envelope is a quadrature sum over members OF THE OBSERVABLE,
+    // dN(bin) = sqrt(sum_i (N_i(bin) - N_0(bin))^2), so it cannot be carried by a
+    // per-event weight the way muF/muR/alphaS are: (sum_evt x)^2 != sum_evt x^2.
+    // The members therefore have to reach the fit binning individually. HNWR.cc
+    // does that for mlljj by writing PDFmem<i>/<region>_mlljj histograms under the
+    // RunXsecSyst userflag, but the BDT fits a SCORE, and the score is a function
+    // of the event kinematics that no PDF member changes -- only the weight moves.
+    // So the members ride along as weight_PDFmem001..100 on the Central SR trees
+    // and the envelope is formed at template time, on the score binning.
+    //
+    // Members 1..100 only: member 0 is the central one (LHEPdfWeight[0] == 1) and
+    // 101/102 are the alpha_S variations, which ARE a legitimate per-event weight
+    // and already live in weight_AlphaS_Up/Down.
+    //
+    // Each member is divided by its own inclusive normalisation K_i, exactly like
+    // the other three theory targets, so the envelope built from them is
+    // acceptance-only; the inclusive PDF error belongs to the theory band.
+    static constexpr int kNPDFMembers = 100;
+    // True when this sample has a 103-entry K table, i.e. it is a signal alias with
+    // the members present AND the normalisation needed to make them acceptance-only.
+    // Backgrounds have no entry -> no branches booked, no size paid.
+    bool fWritePDFMembers = false;
+    static std::string PDFMemberKey(int i);   // "PDFmem007" for i = 7
+
+    // LHEScaleWeight index that GetScaleVariation would read for this (muF, muR), or
+    // -1 if there is none. v15's AnalyzerCore dropped this getter, so the v13 body is
+    // reproduced verbatim here; the acceptance-only theory nuisances need the matching
+    // per-index normalisation and must not re-derive the 8- vs 9-element ordering.
+    int GetScaleVariationIndex(const MyCorrection::variation &muF_syst,
+                               const MyCorrection::variation &muR_syst) const;
+
+    // Gen Z pT through HNWRDY::FindGenZ (GenPart status-62 Z, else the leading
+    // status-1 OSSF e/mu pair) -- the definition C was derived with in DYGenZpT.
+    // -1 when no Z can be built; every DY target then returns 1.
+    float GetGenZpT() const;
+    // C for one variation key ("ZPTReweight", "ZPTReweight_QCDScaleUp", ...).
+    float GetZptWeight(float gen_zpt, const std::string &key) const;
+    // MC statistical error of C as an absolute sigma; 0 where C is undefined.
+    float GetZptStat(float gen_zpt) const;
+    // EW at nominal (which == 0) or shifted by dir*sigma of source `which` (1-3).
+    float GetZptEW(float gen_zpt, int which = 0, int dir = 0) const;
+    // R for a reco category; nuis_bin >= 0 shifts that one bin by dir*sigma.
+    float GetJetPtR(bool resolved, float pt, int nuis_bin = -1, int dir = 0) const;
+
+    std::vector<FatJetRec> Clean_Fatjet_with_tight_leptons(const std::vector<FatJetRec> &fatjets,
+                                                           const std::vector<const LepRef *> &tight_leps) const;
+    std::vector<std::size_t> Clean_jetidx_with_loose_leptons(const JetViewCollection &jets,
+                                                             const std::vector<const LepRef *> &loose_leps) const;
+
+    // Region-aware jet<->fatjet cross-cleaning (priority order: lepton > preferred object).
+    // Resolved keeps AK4 jets and drops overlapping fatjets; boosted keeps fatjets and
+    // drops overlapping AK4 jets. Overlap is defined by dR < dR_JetFatJet (AK8 cone).
+    std::vector<FatJetRec> Clean_Fatjet_with_jets(const std::vector<FatJetRec> &fatjets,
+                                                  const std::vector<SelectedJetView> &jets) const;
+    std::vector<SelectedJetView> Clean_jet_with_fatjets(const std::vector<SelectedJetView> &jets,
+                                                        const std::vector<FatJetRec> &fatjets) const;
+
+    float dR_Separation = 0.4;
+    float dR_JetFatJet = 0.8;
+
+    // Upper mT(lead lepton, MET) edge of the boosted_nolep control region. The
+    // lepton-missing category has no mll handle, so W+jets and semileptonic ttbar
+    // dominate it; both carry a real W -> l nu on the lead-lepton leg and are therefore
+    // capped by the Jacobian edge at m_W, while the signal lead lepton (WR -> l N) has
+    // no neutrino and is unbounded in mT.
+    //
+    // DISABLED (2026-08-10, second pass): the split removed ~77% (EE) / ~81% (MM) of the
+    // boosted_nolep background from the SR tree, and that tree is what the BDT trains on
+    // -- the classifier must see the low-mT bulk it is supposed to reject, and the mT cut
+    // is better applied downstream (offline, from the stored `met_mt_l1` branch) than
+    // baked into the training sample. Restore a positive value here to re-enable the
+    // SR/CR split; the nonprompt CR plots then read the CR_NOLEP trees instead of
+    // cutting on the SR tree.
+    // A NEGATIVE value disables the split entirely.
+    float Boosted_NoLep_CR_mT_Max = -1.f;
+
+    // ======================================================================
+    //  RNTuple output schema.
+    //  One BDTBranches instance per booked tree; every member name below is the
+    //  v13 branch name (the prefix -- ele1/mu2/jet3/fatjet1/l1l2/... -- is glued
+    //  on by the Bind* helpers, exactly as v13's fillElectron/fillJet/... did).
+    //  A field cannot be rebound after booking, so these instances must live for
+    //  the whole job: they are stored in fBranchStore, keyed by tree name.
+    // ======================================================================
+    static constexpr float fMissing = -999.f;
+    static constexpr int iMissing = -999;
+
+    struct EleBranches {
+        // Particle block (fillParticle in v13)
+        float pt = 0.f, eta = 0.f, phi = 0.f, mass = 0.f, charge = 0.f;
+        bool isFilled = false;
+        float dxy = 0.f, dxyErr = 0.f, dz = 0.f, dzErr = 0.f, ip3d = 0.f, sip3d = 0.f;
+        float pfRelIso03 = 0.f, miniPFRelIso = 0.f, scEta = 0.f;
+        float deltaEtaInSC = 0.f, deltaEtaInSeed = 0.f, deltaPhiInSC = 0.f, deltaPhiInSeed = 0.f;
+        float ecalPFClusterIso = 0.f, hcalPFClusterIso = 0.f;
+        float dr03EcalRecHitSumEt = 0.f, dr03HcalDepth1TowerSumEt = 0.f;
+        float dr03TkSumPt = 0.f, dr03TkSumPtHEEP = 0.f;
+        float hoe = 0.f, sieie = 0.f, eInvMinusPInv = 0.f, energyErr = 0.f, r9 = 0.f;
+        float rho = 0.f, scEtOverPt = 0.f;
+        bool convVeto = false;
+        int cutBased = 0;
+        bool cutBasedHEEP = false;
+        int lostHits = 0, seedGain = 0, tightCharge = 0, jetIdx = 0;
+        int vidNestedWPBitmap = 0, vidNestedWPBitmapHEEP = 0;
+        float mvaIso = 0.f, mvaNoIso = 0.f, mvaTTH = 0.f;
+        bool mvaIsoWP80 = false, mvaIsoWP90 = false, mvaIsoWPLoose = false;
+        bool mvaNoIsoWP80 = false, mvaNoIsoWP90 = false, mvaNoIsoWPLoose = false;
+        bool passLooseID = false, passHEEP = false;
+        int genPartFlav_truth = 0, genPartIdx_truth = 0;
+
+        void Reset() { *this = EleBranches(); }
+        void SetMissing();
+    };
+
+    struct MuBranches {
+        float pt = 0.f, eta = 0.f, phi = 0.f, mass = 0.f, charge = 0.f;
+        bool isFilled = false;
+        float dxy = 0.f, dxyErr = 0.f, dz = 0.f, dzErr = 0.f, ip3d = 0.f, sip3d = 0.f;
+        float pfRelIso03 = 0.f, pfRelIso04 = 0.f, miniPFRelIso = 0.f, tkRelIso = 0.f;
+        bool isTracker = false, isGlobal = false, isStandalone = false;
+        bool passLooseID = false, passTightID = false;
+        int tightCharge = 0, nTrackerLayers = 0;
+        int highPtId = 0, miniIsoId = 0, multiIsoId = 0, mvaMuId = 0;
+        int pfIsoId = 0, puppiIsoId = 0, tkIsoId = 0;
+        float softMva = 0.f, mvaLowPt = 0.f, mvaTTH = 0.f;
+        int jetIdx = 0, genPartFlav_truth = 0, genPartIdx_truth = 0;
+
+        void Reset() { *this = MuBranches(); }
+        void SetMissing();
+    };
+
+    struct JetBranches {
+        float pt = 0.f, eta = 0.f, phi = 0.f, mass = 0.f, charge = 0.f;
+        bool isFilled = false;
+        float rawPt = 0.f, originalPt = 0.f;
+        float deepJetB = 0.f, pnetB = 0.f, partB = 0.f;
+        float deepJetQG = 0.f, pnetQG = 0.f, partQG = 0.f;
+        int nConstituents = 0, nElectrons = 0, nMuons = 0, nSVs = 0;
+        float chHEF = 0.f, neHEF = 0.f, chEmEF = 0.f, neEmEF = 0.f, muEF = 0.f;
+
+        void Reset() { *this = JetBranches(); }
+        void SetMissing();
+    };
+
+    struct FatJetBranches {
+        float pt = 0.f, eta = 0.f, phi = 0.f, mass = 0.f, charge = 0.f;
+        bool isFilled = false;
+        float rawPt = 0.f, originalPt = 0.f, sdMass = 0.f, lsf3 = 0.f, area = 0.f;
+        int nConstituents = 0, nBHadrons = 0, nCHadrons = 0;
+        float pnetWithMassTvsQCD = 0.f, pnetWithMassWvsQCD = 0.f, pnetWithMassHbbvsQCD = 0.f;
+        float pnetXbbVsQCD = 0.f, pnetXqqVsQCD = 0.f, pnetQCD = 0.f;
+
+        void Reset() { *this = FatJetBranches(); }
+        void SetMissing();
+    };
+
+    // fillSameFlavorPair("l1l2", ...) -> m_l1l2, pt_l1l2, ..., met_mt_l1l2
+    struct PairBranches {
+        float m = 0.f, pt = 0.f, eta = 0.f, phi = 0.f, dR = 0.f, dPhi = 0.f;
+        float chargeProduct = 0.f, mjj = 0.f, ptjj = 0.f, dPhi_met = 0.f, met_mt = 0.f;
+
+        void Reset() { *this = PairBranches(); }
+        void SetMissing();
+    };
+
+    struct EventBranches {
+        bool passTrigMuon = false, passTrigElectron = false;
+        int nElectronRaw = 0, nMuonRaw = 0, nElectron = 0, nMuon = 0, nLepton = 0;
+        int nLooseElectron = 0, nLooseMuon = 0, nLooseLepton = 0;
+        int nBoostedExtraLooseLepton = 0, nBoostedCapLepton = 0;
+        int nExtraLooseElectron = 0, nExtraLooseMuon = 0;
+        int nVLExtraLooseElectron = 0, nVLExtraLooseMuon = 0;
+        int nTightElectron = 0, nTightMuon = 0, nTightLepton = 0;
+        int nJet = 0, nFatJet = 0, nBJetMedium = 0;
+        float maxBTag = 0.f;
+        int channel = 0;
+        float weight = 0.f;
+        int is_tb = 0;
+        float dy_jetpt_for_r = 0.f, dy_jetpt_r = 0.f;
+        // 1 when R(jet pT) is already folded into weight_Central and the
+        // weight_<syst> branches (2026-08-27, same treatment as HNWR.cc); readers
+        // must NOT multiply dy_jetpt_r again when this is set. Older productions
+        // lack the field (R only in the branch).
+        int dy_r_in_weight = 0;
+        bool passMllSR = false, passResolvedDR = false, passBoostedDRFail = false;
+        bool passDRLeadJetLep = false, passDRSubLeadJetLep = false;
+        bool passDRTwoLeptons = false, passDRTwoJets = false;
+        bool isResolvedCandidate = false, isBoostedCandidate = false;
+        bool isBoostedLepCandidate = false, isBoostedNoLepCandidate = false;
+        bool isResolvedDYCR = false, isResolvedFlavCR = false;
+        bool isBoostedDYCR = false, isBoostedFlavCR = false, isBoostedNoLepCR = false;
+        int category = 0, region = 0;
+        bool isSameFlavor = false;
+        float mll = 0.f, ptll = 0.f, etall = 0.f, phill = 0.f, dRll = 0.f, dPhill = 0.f;
+        float lepChargeProduct = 0.f;
+        float mjj = 0.f, ptjj = 0.f, dRjj = 0.f, dPhijj = 0.f;
+        float mlljj = 0.f, ptlljj = 0.f, ml1jj = 0.f, ml2jj = 0.f, ml3jj = 0.f;
+        float ml1fatjet = 0.f, ptl1fatjet = 0.f;
+        float dR_l1_j1 = 0.f, dR_l1_j2 = 0.f;
+        float dR_l2_j1 = 0.f, dR_l2_j2 = 0.f;
+        float dR_l3_j1 = 0.f, dR_l3_j2 = 0.f;
+        float minDR_lep_jet = 0.f;
+        float ht = 0.f, lt = 0.f, st = 0.f;
+        float met_pt = 0.f, met_phi = 0.f, met_px = 0.f, met_py = 0.f;
+        float met_over_ht = 0.f, met_over_lt = 0.f, met_over_st = 0.f;
+        float dPhi_met_l1 = 0.f, met_mt_l1 = 0.f;
+        float dPhi_met_l2 = 0.f, met_mt_l2 = 0.f;
+        float dPhi_met_l3 = 0.f, met_mt_l3 = 0.f;
+        float dPhi_met_j1 = 0.f, dPhi_met_j2 = 0.f, met_mt_ll = 0.f;
+        float dR_l1_fatjet1 = 0.f, dPhi_l1_fatjet1 = 0.f;
+        float dR_l2_fatjet1 = 0.f, dPhi_l2_fatjet1 = 0.f;
+        float dR_l3_fatjet1 = 0.f, dPhi_l3_fatjet1 = 0.f;
+
+        void Reset() { *this = EventBranches(); }
+    };
+
+    struct BDTBranches {
+        EventBranches evt;
+        EleBranches ele[2];
+        MuBranches mu[2];
+        JetBranches jet[4];
+        FatJetBranches fatjet[2];
+        EleBranches extraLooseEle[2];
+        MuBranches extraLooseMu[2];
+        EleBranches vlExtraLooseEle[2];
+        MuBranches vlExtraLooseMu[2];
+        PairBranches l1l2, l1l3, l2l3;
+        // Dynamic weight_<SystName> branches. std::map is used because its value
+        // addresses are stable for the lifetime of the node, which is what the
+        // zero-copy RNTuple binding requires. Keys are discovered once in
+        // initializeAnalyzer() from SystematicHelper::calculateWeight(dry_run=true).
+        std::map<std::string, float> weightBranches;
+
+        // v13's SetBranch scatter API left any branch that a given code path did
+        // not touch at its previous-event value. Zeroing here makes that hazard
+        // impossible: every entry starts from a defined state and only the paths
+        // that ran write into it.
+        void Reset();
+    };
+
+private:
+    using WeightFunctionMap =
+        std::unordered_map<std::string,
+                           std::variant<std::function<float(MyCorrection::variation, TString)>,
+                                        std::function<float()>>>;
+
+    // ---- per-event object state (event scoped; refreshed in executeEvent) ----
+    ElectronViewCollection fAllElectrons;
+    MuonViewCollection fAllMuons;
+    JetViewCollection fAllJets;
+    FatJetViewCollection fAllFatJets;
+
+    // Stable per-event lepton stores; LepRef* handed around the selection logic
+    // point into these two vectors (reserved before first push, never resized
+    // afterwards, so the pointers stay valid for the whole variation pass).
+    std::vector<LepRef> fEleStore;
+    std::vector<LepRef> fMuStore;
+
+    // ---- current object-variation lanes ----
+    enum class LepVariation { Nominal, MuScaleUp, MuScaleDown, MuResUp, MuResDown,
+                              EleScaleUp, EleScaleDown, EleResUp, EleResDown };
+    LepVariation fLepVar = LepVariation::Nominal;
+    MyCorrection::variation fJesVar = MyCorrection::variation::nom;
+    MyCorrection::variation fJerVar = MyCorrection::variation::nom;
+
+    float MuonVarPt(const MuonView &mu) const;
+    float ElectronVarPt(const ElectronView &el) const;
+    float FatJetVarPt(const FatJetView &fj) const;
+    float FatJetVarMass(const FatJetView &fj) const;
+    float FatJetVarSDMass(const FatJetView &fj) const;
+
+    // v15's GetTaggerResult throws for a tagger/score pair that is not stored in
+    // the sample, where v13's GetBTaggerResult/GetTaggerResult returned a value.
+    // These branches are BDT inputs, never cuts, so an unavailable score becomes
+    // -999 instead of killing the job.
+    float SafeJetTag(const SelectedJetView &jet, JetTagging::JetFlavTagger tagger,
+                     JetTagging::JetFlavTaggerScoreType score) const;
+    float SafeFatJetTag(const FatJetView &fj, JetTagging::FatJetTagger tagger,
+                        JetTagging::FatJetTaggerScoreType score) const;
+
+    // ---- RNTuple output ----
+    std::unordered_map<std::string, BDTBranches> fBranchStore;
+    std::unordered_map<std::string, RNTupleHandle> fOutputHandles;
+    std::vector<std::string> fCentralWeightKeys;
+
+    void BookBDTTree(const std::string &name, const std::vector<std::string> &weightKeys);
+    void BindBDTBranches(RNTupleHandle &h, BDTBranches &b);
+    void BindElectron(RNTupleHandle &h, const std::string &p, EleBranches &b);
+    void BindMuon(RNTupleHandle &h, const std::string &p, MuBranches &b);
+    void BindJet(RNTupleHandle &h, const std::string &p, JetBranches &b);
+    void BindFatJet(RNTupleHandle &h, const std::string &p, FatJetBranches &b);
+    void BindPair(RNTupleHandle &h, const std::string &p, PairBranches &b);
+    void BindEvent(RNTupleHandle &h, EventBranches &b);
+
+    void FillEleBranches(EleBranches &b, const LepRef *lep) const;
+    void FillMuBranches(MuBranches &b, const LepRef *lep) const;
+    void FillJetBranches(JetBranches &b, const SelectedJetView *jet) const;
+    void FillFatJetBranches(FatJetBranches &b, const FatJetRec *fj) const;
+};
+
+#endif

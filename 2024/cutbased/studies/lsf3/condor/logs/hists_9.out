@@ -1,0 +1,20 @@
+MM MWR6000 N3300: events 98355, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N3500: events 108230, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N3700: events 108225, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.1%
+MM MWR6000 N3900: events 98432, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N4100: events 100905, with fatjet 100.0%, with LSF>0.75 fatjet 99.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.1%
+MM MWR6000 N4300: events 98514, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N4500: events 100948, with fatjet 100.0%, with LSF>0.75 fatjet 99.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N4700: events 103560, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N4900: events 98587, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N5100: events 101166, with fatjet 100.0%, with LSF>0.75 fatjet 99.8%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR6000 N5300: events 98814, with fatjet 100.0%, with LSF>0.75 fatjet 99.7%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.3% / LSF 0.2%
+MM MWR6000 N5500: events 106217, with fatjet 100.0%, with LSF>0.75 fatjet 99.6%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.3% / LSF 0.3%
+MM MWR6000 N5700: events 98898, with fatjet 100.0%, with LSF>0.75 fatjet 99.3%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.4% / LSF 0.3%
+MM MWR6000 N5900: events 101255, with fatjet 100.0%, with LSF>0.75 fatjet 98.3%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.4% / LSF 0.3%
+MM MWR7000 N200: events 94808, with fatjet 90.2%, with LSF>0.75 fatjet 88.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 8.5% / LSF 7.4%
+MM MWR7000 N3500: events 98169, with fatjet 100.0%, with LSF>0.75 fatjet 99.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 0.2% / LSF 0.2%
+MM MWR8000 N100: events 58744, with fatjet 84.9%, with LSF>0.75 fatjet 83.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 8.0% / LSF 6.6%
+MM MWR8000 N300: events 103500, with fatjet 92.6%, with LSF>0.75 fatjet 90.5%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 5.7% / LSF 4.9%
+MM MWR8000 N500: events 97511, with fatjet 98.2%, with LSF>0.75 fatjet 95.9%; pass XWWqqev>0.5 all 0.0% / LSF 0.0%, XWWqqmv>0.5 all 3.3% / LSF 2.7%
+FATJET_TAGGER_HISTS_DONE

@@ -1,0 +1,12 @@
+
+l1 |eta_SC| bins [0.0, 0.5, 1.0, 1.4442, 1.566, 2.0, 2.5]  (bin 1.44-1.57 = gap)
+  data                1104     1146      873        0      737      643
+  native 1j MC      1158.8   1159.1    905.5      0.0    669.6    506.6   data/MC:  0.95  0.99  0.96     -  1.10  1.27   shape chi2/ndf (data stat only) = 38.5/4
+  transferred       1068.9   1128.0    895.6      0.0    712.3    594.7   data/MC:  1.03  1.02  0.97     -  1.03  1.08   shape chi2/ndf (data stat only) = 4.3/4
+  DY only: 2jxf / native 1j   0.88  0.96  0.98     -  1.12  1.32    endcap (|eta|>1.566) fraction: data 0.306, native MC 0.267, transferred 0.297
+
+l2 |eta_SC| bins [0.0, 0.5, 1.0, 1.4442, 1.566, 2.0, 2.5]  (bin 1.44-1.57 = gap)
+  data                1089     1116      879        0      781      638
+  native 1j MC      1120.3   1111.5    905.9      0.0    703.5    558.5   data/MC:  0.97  1.00  0.97     -  1.11  1.14   shape chi2/ndf (data stat only) = 17.8/4
+  transferred       1096.2   1072.7    913.6      0.0    712.6    604.3   data/MC:  0.99  1.04  0.96     -  1.10  1.06   shape chi2/ndf (data stat only) = 8.9/4
+  DY only: 2jxf / native 1j   0.97  0.95  1.01     -  1.02  1.16    endcap (|eta|>1.566) fraction: data 0.315, native MC 0.287, transferred 0.299

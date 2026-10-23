@@ -1,0 +1,217 @@
+{
+ "status": 0,
+ "covQual": 2,
+ "minNll": -6.415690175737808e-06,
+ "rateParams": {
+  "R_DY_Boosted_2024": {
+   "val": 0.9381,
+   "err": 0.0307,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_DY_Resolved_2024": {
+   "val": 0.8958,
+   "err": 0.0174,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_TT_Boosted_EE_2024": {
+   "val": 0.8496,
+   "err": 0.0799,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_TT_Boosted_MuMu_2024": {
+   "val": 0.8614,
+   "err": 0.0984,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_TT_Resolved_2024": {
+   "val": 0.9024,
+   "err": 0.0233,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  }
+ },
+ "pulls": [
+  [
+   2.75,
+   "JES_2024",
+   0.74
+  ],
+  [
+   2.41,
+   "ResolvedDYReshapeBin4",
+   0.92
+  ],
+  [
+   1.35,
+   "MuonTrig_2024",
+   0.85
+  ],
+  [
+   -1.28,
+   "ResolvedDYReshapeBin2",
+   0.9
+  ],
+  [
+   1.07,
+   "ResolvedDYReshapeBin5",
+   0.92
+  ],
+  [
+   0.9,
+   "MuonIso_2024",
+   0.89
+  ],
+  [
+   -0.81,
+   "ElectronID_2024",
+   0.8
+  ],
+  [
+   0.81,
+   "MuonReco_2024",
+   0.92
+  ],
+  [
+   0.77,
+   "BoostedDYReshapeBin3",
+   0.72
+  ],
+  [
+   0.74,
+   "FlipClosure_2024",
+   0.63
+  ],
+  [
+   -0.71,
+   "ResolvedDYReshapeBin1",
+   0.97
+  ],
+  [
+   -0.64,
+   "BoostedDYReshapeBin1",
+   0.85
+  ],
+  [
+   0.61,
+   "MuonID_2024",
+   0.94
+  ],
+  [
+   -0.42,
+   "ElectronTrig_2024",
+   0.97
+  ],
+  [
+   0.41,
+   "BoostedDYReshapeBin2",
+   0.83
+  ]
+ ],
+ "rateParam_correlations": {
+  "R_DY_Boosted_2024|R_DY_Resolved_2024": 0.197,
+  "R_DY_Boosted_2024|R_TT_Boosted_EE_2024": 0.105,
+  "R_DY_Boosted_2024|R_TT_Boosted_MuMu_2024": -0.038,
+  "R_DY_Boosted_2024|R_TT_Resolved_2024": 0.191,
+  "R_DY_Resolved_2024|R_TT_Boosted_EE_2024": 0.041,
+  "R_DY_Resolved_2024|R_TT_Boosted_MuMu_2024": 0.014,
+  "R_DY_Resolved_2024|R_TT_Resolved_2024": 0.541,
+  "R_TT_Boosted_EE_2024|R_TT_Boosted_MuMu_2024": 0.307,
+  "R_TT_Boosted_EE_2024|R_TT_Resolved_2024": 0.056,
+  "R_TT_Boosted_MuMu_2024|R_TT_Resolved_2024": 0.071
+ },
+ "channel_TT_yields": {
+  "rDYEECR_SS": {
+   "TT_prefit": 3.8,
+   "TT_postfit": 3.8,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 1157.7,
+   "data": 1174.0
+  },
+  "bDYEECR": {
+   "TT_prefit": 78.3,
+   "TT_postfit": 70.2,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 3324.0,
+   "data": 3326.0
+  },
+  "bDYMuMuCR": {
+   "TT_prefit": 197.1,
+   "TT_postfit": 179.6,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 3820.0,
+   "data": 3815.0
+  },
+  "bFlvEMuCR": {
+   "TT_prefit": 445.3,
+   "TT_postfit": 402.0,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 471.9,
+   "data": 472.0
+  },
+  "bFlvMuECR": {
+   "TT_prefit": 512.4,
+   "TT_postfit": 475.0,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 649.9,
+   "data": 648.0
+  },
+  "bMuMuSR": {
+   "TT_prefit": 496.7,
+   "TT_postfit": 454.8,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 800.3,
+   "data": 805.0
+  },
+  "rDYEECR_OS": {
+   "TT_prefit": 1286.7,
+   "TT_postfit": 1282.8,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 35303.5,
+   "data": 35120.0
+  },
+  "rDYMuMuCR_OS": {
+   "TT_prefit": 1826.5,
+   "TT_postfit": 1860.7,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 52021.0,
+   "data": 52218.0
+  },
+  "rDYMuMuCR_SS": {
+   "TT_prefit": 16.3,
+   "TT_postfit": 18.4,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 83.0,
+   "data": 84.0
+  },
+  "rFlvCR": {
+   "TT_prefit": 3178.1,
+   "TT_postfit": 3117.0,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 3329.8,
+   "data": 3354.0
+  },
+  "rMuMuSR_OS": {
+   "TT_prefit": 2022.9,
+   "TT_postfit": 2006.0,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 3187.7,
+   "data": 3150.2
+  },
+  "rMuMuSR_SS": {
+   "TT_prefit": 9.9,
+   "TT_postfit": 10.9,
+   "TT_postfit_err": 0.0,
+   "total_bkg_postfit": 44.8,
+   "data": 41.3
+  }
+ }
+}

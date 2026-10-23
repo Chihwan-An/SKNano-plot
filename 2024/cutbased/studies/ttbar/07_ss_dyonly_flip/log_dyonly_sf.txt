@@ -1,0 +1,29 @@
+/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-numpy/1.24.3-ac08ea497df571aa0b37dc29bb7a2045/lib/python3.9/site-packages/numpy/core/getlimits.py:518: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-numpy/1.24.3-ac08ea497df571aa0b37dc29bb7a2045/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+{
+ "rEESR_SS": {
+  "Flip": 38.30659511835701,
+  "Flip_raw_OS": 2284,
+  "Flip_nonDY_subtracted": 56.926054589368576,
+  "DYJets": 8.668728452256119,
+  "TT": 55.704144443619164,
+  "Others": 18.05477758459809,
+  "Nonprompt": 14.684241437979317,
+  "data_obs(pred)": 135.4184870368097,
+  "pred_total": 135.4184870368097
+ },
+ "rDYEECR_SS": {
+  "Flip": 1011.9486445341739,
+  "Flip_raw_OS": 35120,
+  "Flip_nonDY_subtracted": 44.44039697309547,
+  "DYJets": 17.75113511765062,
+  "TT": 24.16371151204133,
+  "Others": 36.78104792891194,
+  "Nonprompt": 13.947018257451157,
+  "data_obs": 1174.0,
+  "pred_total": 1104.591557350229
+ }
+}
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/07_ss_dyonly_flip/ddss_dyonly_sf.root

@@ -1,0 +1,40 @@
+# FOLOW 60<mll<300 any mlljj. L: TkRelIso>=0.1. MC noQCD, W+jets HT.
+# samples not complete / missing: ['WWZ', 'WZZ', 'WtoLNu_MLNu120toInf_HT800to1500', 'ZZZ']
+
+# mll 60-120: rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000       0.075±0.001 [7201/96054]   0.103±0.002 [5566/51783]   0.135±0.004 [2489/16407]    0.200±0.007 [1119/4813]
+
+# mll 120-200: rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000      0.059±0.001 [7312/133503]   0.082±0.002 [5474/66105]   0.115±0.003 [2586/20419]    0.161±0.006 [1137/6222]
+
+# mll 200-300: rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000       0.056±0.001 [4127/84291]   0.078±0.002 [3100/41710]   0.111±0.004 [1669/14072]     0.159±0.007 [849/4616]
+
+# mll 60-300: rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000     0.064±0.001 [18640/313848] 0.088±0.001 [14140/159598]   0.120±0.002 [6744/50898]   0.173±0.004 [3105/15651]
+
+# SR sideband (mll>200, not SR): rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000      0.057±0.001 [5789/119848]   0.078±0.002 [4434/60967]   0.109±0.003 [2409/20969]    0.160±0.006 [1286/7133]
+
+# SR SS (mll>400, mlljj>800): rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-0.8                    0.8-1.5                    1.5-2.0                    2.0-2.4
+53-4000         0.052±0.006 [481/9162]     0.072±0.007 [368/5357]     0.094±0.011 [195/2097]      0.200±0.025 [137/877]
+
+## MC closure: map -> SR SS (truth-F AR, same L definition)  pred / target(truth nonprompt iso-TT)
+  mll 60-120                       pred   38.12  target   28.75  ratio 1.326
+  mll 120-200                      pred   30.01  target   28.75  ratio 1.044
+  mll 200-300                      pred   28.75  target   28.75  ratio 1.000
+  mll 60-300                       pred   32.37  target   28.75  ratio 1.126
+  SR sideband (mll>200, not SR)    pred   28.87  target   28.75  ratio 1.004
+  SR SS (mll>400, mlljj>800)       pred   28.01  target   28.75  ratio 0.974
+
+## data calibration in the low-mll SS sideband (map = same window MC map)
+  mll 60-120   data: TT 286  prompt MC 58.6  obs 227.4  pred 196.6  obs/pred 1.157 | MC closure pred/truth 0.867 -> k = 1.003 ± 0.075(stat)
+  mll 120-200  data: TT 745  prompt MC 126.7  obs 618.3  pred 508.7  obs/pred 1.215 | MC closure pred/truth 1.098 -> k = 1.335 ± 0.059(stat)
+  mll 200-300  data: TT 408  prompt MC 71.4  obs 336.6  pred 298.5  obs/pred 1.127 | MC closure pred/truth 1.135 -> k = 1.279 ± 0.077(stat)
+  mll 60-300   data: TT 1439  prompt MC 256.8  obs 1182.2  pred 1051.3  obs/pred 1.125 | MC closure pred/truth 1.105 -> k = 1.243 ± 0.040(stat)

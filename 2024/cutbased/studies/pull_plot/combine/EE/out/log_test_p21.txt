@@ -1,0 +1,25 @@
+ <<< Combine >>> 
+ <<< v10.5.1 >>>
+>>> Random number generator seed is 123456
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 0.5
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 1
+>>> Method used is MultiDimFit
+Set Range of Parameter JES_2024 To : (-1,6)
+Set Default Value of Parameter r To : 0
+Set Default Value of Parameter mask_bEESR To : 0
+Set Default Value of Parameter mask_rEESR_OS To : 0
+Set Default Value of Parameter mask_rEESR_SS To : 0
+Set Default Value of Parameter mask_bDYEECR To : 0
+Set Default Value of Parameter mask_rDYEECR_OS To : 0
+Set Default Value of Parameter mask_rDYEECR_SS To : 0
+Set Default Value of Parameter mask_bDYMuMuCR To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_OS To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_SS To : 0
+Set Default Value of Parameter mask_bFlvEMuCR To : 0
+Set Default Value of Parameter mask_bFlvMuECR To : 0
+Set Default Value of Parameter mask_rFlvCR To : 0
+>>> 0 out of 12 channels masked
+
+Doing initial fit: 
+ POI: JES_2024= 5.54727 -> [-1,6]
+Point 21/36 JES_2024 = 3.18056

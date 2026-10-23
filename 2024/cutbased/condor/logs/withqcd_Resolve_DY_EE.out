@@ -1,0 +1,25 @@
+=== job Resolve_DY_EE (no copy) ===
+=== start Fri Oct  2 10:17:11 AM KST 2026 ===
+==============================================================================
+>> job Resolve_DY_EE   region=Resolve/DY   channel=EE   flavour=EE
+>> outdir out_withqcd/Resolve/DY
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots_QCDEE/2024
+>> Channel EE: 76 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   19 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu_MLNu0to120_HT100to400, WtoLNu_MLNu0to120_HT1500to2500, WtoLNu_MLNu0to120_HT2500toInf, WtoLNu_MLNu0to120_HT400to800, WtoLNu_MLNu0to120_HT40to100, WtoLNu_MLNu0to120_HT800to1500, WtoLNu_MLNu120toInf_HT100to400, WtoLNu_MLNu120toInf_HT1500to2500, WtoLNu_MLNu120toInf_HT2500toInf, WtoLNu_MLNu120toInf_HT400to800, WtoLNu_MLNu120toInf_HT40to100, WtoLNu_MLNu120toInf_HT800to1500
+   Others      14 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L, WWW, WWZ, WZZ, ZZZ
+   QCD         24 : QCD_Pt1000toInf_EMEnriched, QCD_Pt1000toInf_bcToE, QCD_Pt120to170_EMEnriched, QCD_Pt120to170_bcToE, QCD_Pt15to20_EMEnriched, QCD_Pt15to20_bcToE, QCD_Pt170to300_EMEnriched, QCD_Pt170to300_bcToE, QCD_Pt20to30_EMEnriched, QCD_Pt20to30_bcToE, QCD_Pt300to470_EMEnriched, QCD_Pt300to470_bcToE, QCD_Pt30to50_EMEnriched, QCD_Pt30to50_bcToE, QCD_Pt470to600_EMEnriched, QCD_Pt470to600_bcToE, QCD_Pt50to80_EMEnriched, QCD_Pt50to80_bcToE, QCD_Pt600to800_EMEnriched, QCD_Pt600to800_bcToE, QCD_Pt800to1000_EMEnriched, QCD_Pt800to1000_bcToE, QCD_Pt80to120_EMEnriched, QCD_Pt80to120_bcToE
+   -- 시그널 118개 제외 (config.SIGNAL_GLOBS)
+>> Systematics: 32 requested, 76 MC files
+   전체 커버  6: JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes
+   부분 커버   : Pileup(63/76), ElectronID(63/76), ElectronReco(63/76), ElectronTrig(63/76), ElectronChargeFlip(63/76), MuonID(63/76), MuonReco(63/76), MuonTrig(63/76), MuonIso(63/76), LSF(63/76), ZPtRw_MC_stat(63/76), ZPtRwQCDScale(63/76), ZPtRwQCDPDFError(63/76), ZPtRwQCDPDFAlphaS(63/76), ZPtRwEW1(63/76), ZPtRwEW2(63/76), ZPtRwEW3(63/76), ResolvedDYReshapeBin1(14/76), ResolvedDYReshapeBin2(14/76), ResolvedDYReshapeBin3(14/76), ResolvedDYReshapeBin4(14/76), ResolvedDYReshapeBin5(14/76), ResolvedDYReshapeBin6(14/76), BoostedDYReshapeBin1(14/76), BoostedDYReshapeBin2(14/76), BoostedDYReshapeBin3(14/76)   <- DY 전용이면 정상
+>> --match '_SS_mlljj(_fine)?\\Z': 2 -> 2 plots
+>> 2 plots from specs/withqcd/Resolve_DY_EE.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_DY_EE: 2/2 plots, 0.2 min (7.5 s/plot)
+==============================================================================
+=== end Fri Oct  2 10:17:31 AM KST 2026 ===
+=== exit 0 ===

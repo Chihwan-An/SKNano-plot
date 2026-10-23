@@ -1,0 +1,48 @@
+== cbv15_an2_ref_fixstream EE WR5000_N2500
+Expected  2.5%: r < 0.1933
+Expected 16.0%: r < 0.2873
+Expected 50.0%: r < 0.4668
+Expected 84.0%: r < 0.8054
+Expected 97.5%: r < 1.3667
+== cbv15_an2_ref_fixstream EE WR5000_N200
+Expected  2.5%: r < 0.2398
+Expected 16.0%: r < 0.3527
+Expected 50.0%: r < 0.5684
+Expected 84.0%: r < 0.9626
+Expected 97.5%: r < 1.5907
+== cbv15_an2_ref_fixstream MM WR5000_N2500
+Expected  2.5%: r < 0.1046
+Expected 16.0%: r < 0.1679
+Expected 50.0%: r < 0.2910
+Expected 84.0%: r < 0.5114
+Expected 97.5%: r < 0.8382
+== cbv15_an2_ref_fixstream MM WR5000_N200
+Expected  2.5%: r < 0.0486
+Expected 16.0%: r < 0.0761
+Expected 50.0%: r < 0.1323
+Expected 84.0%: r < 0.2389
+Expected 97.5%: r < 0.4011
+== cbv15_an2_ref EE WR5000_N2500
+Expected  2.5%: r < 0.1941
+Expected 16.0%: r < 0.2885
+Expected 50.0%: r < 0.4688
+Expected 84.0%: r < 0.8088
+Expected 97.5%: r < 1.3724
+== cbv15_an2_ref EE WR5000_N200
+Expected  2.5%: r < 0.2406
+Expected 16.0%: r < 0.3539
+Expected 50.0%: r < 0.5703
+Expected 84.0%: r < 0.9659
+Expected 97.5%: r < 1.5962
+== cbv15_an2_ref MM WR5000_N2500
+Expected  2.5%: r < 0.1046
+Expected 16.0%: r < 0.1679
+Expected 50.0%: r < 0.2910
+Expected 84.0%: r < 0.5114
+Expected 97.5%: r < 0.8382
+== cbv15_an2_ref MM WR5000_N200
+Expected  2.5%: r < 0.0482
+Expected 16.0%: r < 0.0760
+Expected 50.0%: r < 0.1328
+Expected 84.0%: r < 0.2387
+Expected 97.5%: r < 0.4026

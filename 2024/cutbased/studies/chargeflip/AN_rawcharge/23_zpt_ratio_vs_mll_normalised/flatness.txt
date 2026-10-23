@@ -1,0 +1,64 @@
+[EE] ge2j, reference m_ll 60-150:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+     150-200: c= 1.538  chi2/ndf=   195.9  range  0.85 ..  1.31
+     200-300: c= 1.460  chi2/ndf=   130.5  range  0.86 ..  1.33
+     300-400: c= 1.342  chi2/ndf=    47.7  range  0.84 ..  1.43
+     400-500: c= 1.273  chi2/ndf=    22.9  range  0.82 ..  1.46
+     500-700: c= 1.223  chi2/ndf=    13.3  range  0.83 ..  1.34
+    700-1000: c= 1.116  chi2/ndf=     5.3  range  0.87 ..  1.41
+      >=1000: c= 0.926  chi2/ndf=     2.6  range  0.85 ..  1.70
+[EE] ge2j, reference m_ll 150-200:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+      60-150: c= 0.609  chi2/ndf=   173.8  range  0.82 ..  1.25
+     200-300: c= 0.932  chi2/ndf=     2.8  range  0.92 ..  1.09
+     300-400: c= 0.844  chi2/ndf=     1.7  range  0.92 ..  1.13
+     400-500: c= 0.797  chi2/ndf=     1.9  range  0.93 ..  1.16
+     500-700: c= 0.748  chi2/ndf=     1.0  range  0.92 ..  1.10
+    700-1000: c= 0.667  chi2/ndf=     3.2  range  0.77 ..  1.21
+      >=1000: c= 0.511  chi2/ndf=     4.7  range  0.80 ..  1.88
+[EE] SRtopo, reference m_ll 60-150:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+     150-200: c= 2.636  chi2/ndf=     8.8  range  0.89 ..  1.11
+     200-300: c= 2.106  chi2/ndf=    52.5  range  0.69 ..  1.44
+     300-400: c= 1.395  chi2/ndf=   113.8  range  0.60 ..  2.19
+     400-500: c= 0.969  chi2/ndf=   130.8  range  0.53 ..  2.98
+     500-700: c= 0.522  chi2/ndf=   242.2  range  0.55 ..  7.03
+    700-1000: c= 0.264  chi2/ndf=   150.1  range  0.58 .. 17.14
+      >=1000: c= 0.206  chi2/ndf=    46.8  range  0.62 .. 28.19
+[EE] SRtopo, reference m_ll 150-200:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+      60-150: c= 0.374  chi2/ndf=     8.7  range  0.92 ..  1.14
+     200-300: c= 0.815  chi2/ndf=    20.1  range  0.73 ..  1.29
+     300-400: c= 0.560  chi2/ndf=    64.2  range  0.63 ..  1.88
+     400-500: c= 0.404  chi2/ndf=    89.8  range  0.53 ..  2.47
+     500-700: c= 0.222  chi2/ndf=   185.9  range  0.54 ..  5.71
+    700-1000: c= 0.114  chi2/ndf=   130.7  range  0.58 .. 13.70
+      >=1000: c= 0.087  chi2/ndf=    43.1  range  0.62 .. 22.97
+[MM] ge2j, reference m_ll 60-150:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+     150-200: c= 1.541  chi2/ndf=   248.7  range  0.86 ..  1.38
+     200-300: c= 1.459  chi2/ndf=   140.5  range  0.87 ..  1.28
+     300-400: c= 1.335  chi2/ndf=    57.5  range  0.85 ..  1.40
+     400-500: c= 1.263  chi2/ndf=    22.0  range  0.84 ..  1.31
+     500-700: c= 1.194  chi2/ndf=    16.4  range  0.83 ..  1.30
+    700-1000: c= 1.098  chi2/ndf=     1.5  range  0.94 ..  1.17
+      >=1000: c= 0.878  chi2/ndf=     4.3  range  0.79 ..  1.59
+[MM] ge2j, reference m_ll 150-200:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+      60-150: c= 0.609  chi2/ndf=   219.2  range  0.77 ..  1.25
+     200-300: c= 0.925  chi2/ndf=     4.5  range  0.95 ..  1.06
+     300-400: c= 0.836  chi2/ndf=     2.7  range  0.97 ..  1.10
+     400-500: c= 0.780  chi2/ndf=     1.3  range  0.92 ..  1.14
+     500-700: c= 0.728  chi2/ndf=     1.7  range  0.95 ..  1.11
+    700-1000: c= 0.641  chi2/ndf=     3.3  range  0.83 ..  1.22
+      >=1000: c= 0.487  chi2/ndf=     6.7  range  0.78 ..  2.17
+[MM] SRtopo, reference m_ll 60-150:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+     150-200: c= 2.597  chi2/ndf=    15.1  range  0.86 ..  1.12
+     200-300: c= 2.053  chi2/ndf=    70.8  range  0.73 ..  1.42
+     300-400: c= 1.424  chi2/ndf=   121.5  range  0.62 ..  1.99
+     400-500: c= 0.974  chi2/ndf=   156.0  range  0.56 ..  3.03
+     500-700: c= 0.524  chi2/ndf=   314.8  range  0.54 ..  6.39
+    700-1000: c= 0.296  chi2/ndf=   181.8  range  0.62 .. 14.47
+      >=1000: c= 0.186  chi2/ndf=    62.0  range  0.62 .. 23.33
+[MM] SRtopo, reference m_ll 150-200:  weighted-constant fit of r_k/r_ref over the 10 Z pT bins -> c, chi2/ndf, min..max of (r_k/r_ref)/c
+      60-150: c= 0.378  chi2/ndf=    14.5  range  0.91 ..  1.18
+     200-300: c= 0.807  chi2/ndf=    22.3  range  0.76 ..  1.25
+     300-400: c= 0.580  chi2/ndf=    61.2  range  0.65 ..  1.68
+     400-500: c= 0.407  chi2/ndf=   105.3  range  0.52 ..  2.50
+     500-700: c= 0.228  chi2/ndf=   235.1  range  0.56 ..  5.05
+    700-1000: c= 0.127  chi2/ndf=   157.0  range  0.56 .. 11.58
+      >=1000: c= 0.083  chi2/ndf=    56.3  range  0.63 .. 21.35

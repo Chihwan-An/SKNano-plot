@@ -1,0 +1,5 @@
+removed 235 git-temp dirs
+after:
+/dev/mapper/almalinux-root  196G   67G  119G  36% /
+2.5G	/tmp/claude-5596
+705

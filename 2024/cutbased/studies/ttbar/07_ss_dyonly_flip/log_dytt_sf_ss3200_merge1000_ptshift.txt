@@ -1,0 +1,27 @@
+{
+ "rEESR_SS": {
+  "Flip": 87.56495953517239,
+  "Flip_raw_OS": 2284,
+  "OS_yield": 2284.0,
+  "Flip_nonDY_subtracted": 6.115772013914762,
+  "DYJets": 8.668728452256119,
+  "TT": 5.704313159920275,
+  "Others": 18.05477758459809,
+  "Nonprompt": 14.684241437979317,
+  "data_obs(pred)": 134.67702016992618,
+  "pred_total": 134.67702016992618
+ },
+ "rDYEECR_SS": {
+  "Flip": 1015.3648330859077,
+  "Flip_raw_OS": 35120,
+  "OS_yield": 35120.0,
+  "Flip_nonDY_subtracted": 24.65388445022829,
+  "DYJets": 17.75113511765062,
+  "TT": 3.799969593528658,
+  "Others": 36.78104792891194,
+  "Nonprompt": 13.947018257451157,
+  "data_obs": 1174.0,
+  "pred_total": 1087.64400398345
+ }
+}
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/ttbar/07_ss_dyonly_flip/ddss_dytt_sf_ss3200_merge1000_ptshift.root

@@ -1,0 +1,16 @@
+=== WR8000 N7300 | Mon Jun 22 19:57:24 KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python3
+Found 10 file(s) for WR8000 N7300
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/4c2a6f43-c982-4b38-bdd6-508de92c7a33.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/54f0e33b-190c-481f-8b29-7e1c1df06e58.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/5e7f4aa2-5a47-4fac-bd8e-4d5e39b35097.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/7092b4cb-9188-4163-b1e6-394dda6295c3.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/761b70bb-d631-4df6-8cd3-420eb99cfad6.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/8312ac8f-77c5-4472-8eea-9d4cfb81f111.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/93c7a7c4-352c-4057-bd2c-0bed8537d7f0.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/a09cda6b-ef6e-4442-91f3-7fff9576aa8f.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/d2dbe252-b077-44e7-9adf-ed074da31069.root
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR8000_N7300_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/2560000/e9b3927a-5190-4951-a9b8-50b6c211d63f.root
+Saved 68000 events → /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/lhe_cache/WR8000_N7300.npz
+LHE < 800 GeV: 0/68000 = 0.00%
+=== Exit code: 0 | Mon Jun 22 19:57:47 KST 2026 ===

@@ -1,0 +1,16 @@
+{
+  "validation_fold": 1,
+  "min_train_neff": 30,
+  "channels": [
+    "EE",
+    "MM"
+  ],
+  "modes": [
+    "nominal",
+    "noDY"
+  ],
+  "kinds": [
+    "reco_all",
+    "prompt_singleflip"
+  ]
+}

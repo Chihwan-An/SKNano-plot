@@ -1,0 +1,17 @@
+imax 2
+jmax 2
+kmax *
+------------
+shapes * * shapes_A.root $CHANNEL/$PROCESS $CHANNEL/$PROCESS_$SYSTEMATIC
+------------
+bin          CR_EM SR_EE
+observation  -1    -1
+------------
+bin      CR_EM CR_EM SR_EE  SR_EE SR_EE
+process  Top   Other Signal Top   Other
+process  1     2     0      1     2
+rate     -1    -1    -1     -1    -1
+------------
+dummy lnN - - 1.0001 - -
+beta_top rateParam CR_EM Top 1 [0,5]
+beta_top rateParam SR_EE Top 1 [0,5]

@@ -1,0 +1,266 @@
+{
+ "DYto2L-4Jets_Bin-HT-100to400-MLL-120": {
+  "xsec": 4.383709336,
+  "sumW": 586525118.1059303,
+  "group": "DYJets",
+  "nfiles": 44
+ },
+ "DYto2L-4Jets_Bin-HT-100to400-MLL-50to120": {
+  "xsec": 234.878937,
+  "sumW": 596099804311.3335,
+  "group": "DYJets",
+  "nfiles": 506
+ },
+ "DYto2L-4Jets_Bin-HT-1500to2500-MLL-120": {
+  "xsec": 0.002199796,
+  "sumW": 19915.698334643617,
+  "group": "DYJets",
+  "nfiles": 7
+ },
+ "DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120": {
+  "xsec": 0.065423511,
+  "sumW": 1084303.5956919193,
+  "group": "DYJets",
+  "nfiles": 8
+ },
+ "DYto2L-4Jets_Bin-HT-2500-MLL-120": {
+  "xsec": 0.000157505,
+  "sumW": 1435.0619800965069,
+  "group": "DYJets",
+  "nfiles": 7
+ },
+ "DYto2L-4Jets_Bin-HT-2500-MLL-50to120": {
+  "xsec": 0.004370223,
+  "sumW": 37273.56312663108,
+  "group": "DYJets",
+  "nfiles": 8
+ },
+ "DYto2L-4Jets_Bin-HT-400to800-MLL-120": {
+  "xsec": 0.227254158,
+  "sumW": 3739594.3267149925,
+  "group": "DYJets",
+  "nfiles": 9
+ },
+ "DYto2L-4Jets_Bin-HT-400to800-MLL-50to120": {
+  "xsec": 8.7202477896,
+  "sumW": 1160819435.5668411,
+  "group": "DYJets",
+  "nfiles": 50
+ },
+ "DYto2L-4Jets_Bin-HT-40to70-MLL-120": {
+  "xsec": 7.558098461,
+  "sumW": 695194592.0467796,
+  "group": "DYJets",
+  "nfiles": 52
+ },
+ "DYto2L-4Jets_Bin-HT-40to70-MLL-50to120": {
+  "xsec": 480.2220383,
+  "sumW": 623666969726.099,
+  "group": "DYJets",
+  "nfiles": 510
+ },
+ "DYto2L-4Jets_Bin-HT-70to100-MLL-120": {
+  "xsec": 3.343509929,
+  "sumW": 273843518.52011967,
+  "group": "DYJets",
+  "nfiles": 44
+ },
+ "DYto2L-4Jets_Bin-HT-70to100-MLL-50to120": {
+  "xsec": 212.4379778,
+  "sumW": 236863780167.32947,
+  "group": "DYJets",
+  "nfiles": 347
+ },
+ "DYto2L-4Jets_Bin-HT-800to1500-MLL-120": {
+  "xsec": 0.027079397,
+  "sumW": 241668.0318439901,
+  "group": "DYJets",
+  "nfiles": 7
+ },
+ "DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120": {
+  "xsec": 0.898325608,
+  "sumW": 20932646.321234226,
+  "group": "DYJets",
+  "nfiles": 9
+ },
+ "TBbarQtoLNu-t-channel-4FS": {
+  "xsec": 47.241,
+  "sumW": 1715570842.2067833,
+  "group": "Nonprompt",
+  "nfiles": 79
+ },
+ "TBbartoLNu-s-channel": {
+  "xsec": 2.3600952,
+  "sumW": 91424457.20359659,
+  "group": "Nonprompt",
+  "nfiles": 55
+ },
+ "TBbartoLplusNuBbar-s-channel-4FS": {
+  "xsec": 2.3600952,
+  "sumW": 29602028.16144657,
+  "group": "Nonprompt",
+  "nfiles": 19
+ },
+ "TTLL_Bin-MLL-4to50": {
+  "xsec": 0.03949,
+  "sumW": 116919.58464071155,
+  "group": "Others",
+  "nfiles": 8
+ },
+ "TTLL_Bin-MLL-50": {
+  "xsec": 0.08646,
+  "sumW": 340956.55011084676,
+  "group": "Others",
+  "nfiles": 10
+ },
+ "TTLNu-EWK": {
+  "xsec": 0.01769,
+  "sumW": 53133.335307557136,
+  "group": "Others",
+  "nfiles": 8
+ },
+ "TTto2L2Nu_TuneCP5": {
+  "xsec": 98.03611310400001,
+  "sumW": 37820110815.09285,
+  "group": "TT",
+  "nfiles": 156
+ },
+ "TTtoLNu2Q": {
+  "xsec": 405.685352016,
+  "sumW": 161967471676.6117,
+  "group": "Nonprompt",
+  "nfiles": 158
+ },
+ "TWminusto2L2Nu": {
+  "xsec": 4.6651008780000005,
+  "sumW": 56972824.24992752,
+  "group": "TT",
+  "nfiles": 36
+ },
+ "TWminustoLNu2Q": {
+  "xsec": 19.304754462000002,
+  "sumW": 1035079856.7889595,
+  "group": "TT",
+  "nfiles": 51
+ },
+ "TbarBQtoLNu-t-channel-4FS": {
+  "xsec": 28.409760000000002,
+  "sumW": 517007976.63300323,
+  "group": "Nonprompt",
+  "nfiles": 50
+ },
+ "TbarBtoLNu-s-channel": {
+  "xsec": 1.3820175360000002,
+  "sumW": 36747125.55938959,
+  "group": "Nonprompt",
+  "nfiles": 45
+ },
+ "TbarBtoLminusNuB-s-channel-4FS": {
+  "xsec": 1.4771772,
+  "sumW": 11402994.301832676,
+  "group": "Nonprompt",
+  "nfiles": 14
+ },
+ "TbarWplusto2L2Nu": {
+  "xsec": 4.6651008780000005,
+  "sumW": 57087277.41358328,
+  "group": "TT",
+  "nfiles": 18
+ },
+ "TbarWplustoLNu2Q": {
+  "xsec": 19.304754462000002,
+  "sumW": 1059820009.4848328,
+  "group": "TT",
+  "nfiles": 51
+ },
+ "WWto2L2Nu": {
+  "xsec": 15.057,
+  "sumW": 2828732644.7281265,
+  "group": "Others",
+  "nfiles": 56
+ },
+ "WWtoLNu2Q": {
+  "xsec": 62.30769613259669,
+  "sumW": 13493841713.276768,
+  "group": "Others",
+  "nfiles": 66
+ },
+ "WZto2L2Q": {
+  "xsec": 3.615683701657459,
+  "sumW": 1786458941.3901196,
+  "group": "Others",
+  "nfiles": 52
+ },
+ "WZto3LNu": {
+  "xsec": 5.2425,
+  "sumW": 1221944303.0921807,
+  "group": "Others",
+  "nfiles": 60
+ },
+ "WZtoLNu2Q": {
+  "xsec": 36.29730598966071,
+  "sumW": 2283328935.031993,
+  "group": "Others",
+  "nfiles": 32
+ },
+ "WtoLNu-4Jets_Bin-MLNu-120to200": {
+  "xsec": 167.0,
+  "sumW": 161645273397.0231,
+  "group": "Nonprompt",
+  "nfiles": 495
+ },
+ "WtoLNu-4Jets_Bin-MLNu-1500to2500": {
+  "xsec": 0.006365,
+  "sumW": 1098229.6261223108,
+  "group": "Nonprompt",
+  "nfiles": 59
+ },
+ "WtoLNu-4Jets_Bin-MLNu-200to400": {
+  "xsec": 20.3,
+  "sumW": 3196449239.3107758,
+  "group": "Nonprompt",
+  "nfiles": 114
+ },
+ "WtoLNu-4Jets_Bin-MLNu-2500to4000": {
+  "xsec": 0.0003463,
+  "sumW": 30939.00608932483,
+  "group": "Nonprompt",
+  "nfiles": 50
+ },
+ "WtoLNu-4Jets_Bin-MLNu-4000to6000": {
+  "xsec": 1.075e-05,
+  "sumW": 1039.0101660327855,
+  "group": "Nonprompt",
+  "nfiles": 16
+ },
+ "WtoLNu-4Jets_Bin-MLNu-400to800": {
+  "xsec": 1.596,
+  "sumW": 270089151.57776976,
+  "group": "Nonprompt",
+  "nfiles": 108
+ },
+ "WtoLNu-4Jets_Bin-MLNu-6000": {
+  "xsec": 4.182e-07,
+  "sumW": 44.95887022568013,
+  "group": "Nonprompt",
+  "nfiles": 39
+ },
+ "WtoLNu-4Jets_Bin-MLNu-800to1500": {
+  "xsec": 0.1095,
+  "sumW": 12948156.239918053,
+  "group": "Nonprompt",
+  "nfiles": 77
+ },
+ "ZZto2L2Q": {
+  "xsec": 20.351416542872425,
+  "sumW": 1165248684.0179186,
+  "group": "Others",
+  "nfiles": 43
+ },
+ "ZZto4L": {
+  "xsec": 1.4697,
+  "sumW": 329198066.77729774,
+  "group": "Others",
+  "nfiles": 55
+ }
+}

@@ -1,0 +1,6 @@
+# Resolve_sig / EE: m(ll) of the raw-charge SS and OS resolved SR (2026-09-18). The sign-split SRChgM_/SR_ChgP_ histograms carry
+# only m(lljj), so m(ll) is shown per charge product (SR_Resolved_EE_{SS,OS}_mass; data blinded by the SR_ prefix).
+--hist SR_Resolved_EE_SS_mass --ymin 0.01 --output ResolveSREE_SS_Mll --xmin 400 --xmax 3000 --xlabel 'SS m(ll) (GeV)' --bins 400,450,500,600,700,800,1000,1200,1500,2000,3000 --rmin 0 --rmax 3
+--hist SR_Resolved_EE_OS_mass --ymin 0.01 --output ResolveSREE_OS_Mll --xmin 400 --xmax 3000 --xlabel 'OS m(ll) (GeV)' --bins 400,450,500,600,700,800,1000,1200,1500,2000,3000 --rmin 0 --rmax 3
+--hist SR_Resolved_EE_SS_mass --ymin 0.01 --output ResolveSREE_SS_Mll_fine --xmin 400 --xmax 1500 --xlabel 'SS m(ll) (GeV)' --rebin 50 --rmin 0 --rmax 3
+--hist SR_Resolved_EE_OS_mass --ymin 0.01 --output ResolveSREE_OS_Mll_fine --xmin 400 --xmax 1500 --xlabel 'OS m(ll) (GeV)' --rebin 50 --rmin 0 --rmax 3

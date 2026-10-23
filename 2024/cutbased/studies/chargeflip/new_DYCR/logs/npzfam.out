@@ -1,0 +1,33 @@
+=== apply --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew.json --folder SS_flip_an3
+eta binning: |eta| (4 bins)
+12 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/*/SS_flip_an3 ; DYCR SS: obs 1174  pred 1095.8 (flip 1048.6) obs/pred 1.071
+=== apply --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew.json --folder SS_flip_an3count
+eta binning: |eta| (4 bins)
+12 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/*/SS_flip_an3count ; DYCR SS: obs 1174  pred 1095.8 (flip 1048.6) obs/pred 1.071
+=== apply --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew_sf3roofit.json --folder SS_flip_an3roofit --ymin 0.1
+eta binning: |eta| (4 bins)
+12 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/*/SS_flip_an3roofit ; DYCR SS: obs 1174  pred 1112.3 (flip 1065.1) obs/pred 1.055
+=== apply --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew_sf3roofit.json --folder SS_flip_an3roofit --keep-tt --only ^(mlljj|dilepton_mass)$
+eta binning: |eta| (4 bins)
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+2 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/*/SS_flip_an3roofit_keepTT ; DYCR SS: obs 1174  pred 1106.7 (flip 1045.7) obs/pred 1.061
+=== apply --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew_sf3roofit.json --folder SS_flip_an3roofit --mlljj-window 1600,2800 --extra-vars --ymin 0.1
+| endcap-endcap | all | 93 | 80.5 | 79.4 | 1.2 | 0.4 | 1.15 |
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/SS_flip_an3roofit_mlljj1600to2800_yields.md
+THStack::BuildStack:0: RuntimeWarning: Histograms with a negative minimum may produce wrong plots
+19 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DY/EE/*/SS_flip_an3roofit_mlljj1600to2800 ; DYCR SS: obs 143  pred 123.4 (flip 119.9) obs/pred 1.159
+=== apply --region SR --json /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/json/ptshift_LO_dynew.json --folder SS_flip_an3
+eta binning: |eta| (4 bins)
+12 plots under /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/EE/*/SS_flip_an3 ; SR SS: obs blinded  pred 172.3 (flip 94.5)
+=== chargesign_mll
+TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
+TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
+TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
+| category | TT | DY | Others | Nonprompt | total MC | MWR4000_N2000 | MWR4000_N200 | MWR6000_N200 | MWR6000_N3000 |
+|---|---|---|---|---|---|---|---|---|---|
+| SS e^{+}e^{+} | 20.2 | 18.0 | 9.0 | 7.8 | 55.0 | 23.82 | 28.34 | 0.39 | 0.69 |
+| SS e^{-}e^{-} | 19.6 | 13.0 | 7.3 | 6.8 | 46.8 | 5.16 | 6.53 | 0.15 | 0.09 |
+| OS, leading e^{+} | 708.9 | 355.8 | 57.4 | 10.9 | 1133.1 | 19.61 | 23.44 | 0.39 | 0.54 |
+| OS, leading e^{-} | 701.4 | 403.2 | 63.7 | 10.3 | 1178.5 | 7.85 | 9.31 | 0.18 | 0.13 |
+CHARGESIGN_MLL_DONE
+NPZ_FAMILIES_DONE

@@ -1,0 +1,15 @@
+% Paste into tex/04_events.tex (or the BDT section), next to fig:selectionflow.
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{fig/04_events/selection_flow_bdt.pdf}
+  \caption{Decision flow of the BDT preselection. Green boxes are signal regions,
+  orange boxes control regions. Masses in \GeVns{}. Relative to the cut-based
+  selection of Fig.~\ref{fig:selectionflow}, the mass windows ($\mll>400$,
+  $\mlljj>800$, $\mlJ>800$), the AK8 lepton-subjet-fraction and soft-drop-mass
+  requirements, and the $|\Delta\phi(\ell,J)|$ requirement are not applied: these
+  quantities enter the BDT as input variables instead. A third signal region,
+  \texttt{boosted\_nolep}, collects boosted events in which no additional loose
+  lepton is reconstructed, so that the classifier must rely on the internal
+  structure of the AK8 jet.}
+  \label{fig:selectionflow_bdt}
+\end{figure}

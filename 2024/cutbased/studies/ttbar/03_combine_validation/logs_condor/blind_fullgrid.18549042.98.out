@@ -1,0 +1,6 @@
+rc=0
+Expected  2.5%: r < 47.0449
+Expected 16.0%: r < 68.1701
+Expected 50.0%: r < 108.5000
+Expected 84.0%: r < 185.4825
+Expected 97.5%: r < 317.5190

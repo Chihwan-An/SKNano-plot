@@ -1,0 +1,104 @@
+{
+ "DYto2L-4Jets_Bin-HT-100to400-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT100to400",
+  "xsec": 4.383709336,
+  "sumW": 586525118.1059303,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-100to400-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT100to400",
+  "xsec": 234.878937,
+  "sumW": 596099804311.3335,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-1500to2500-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT1500to2500",
+  "xsec": 0.002199796,
+  "sumW": 19915.698334643617,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT1500to2500",
+  "xsec": 0.065423511,
+  "sumW": 1084303.5956919193,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-2500-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT2500toInf",
+  "xsec": 0.000157505,
+  "sumW": 1435.0619800965069,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-2500-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT2500toInf",
+  "xsec": 0.004370223,
+  "sumW": 37273.56312663108,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-400to800-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT400to800",
+  "xsec": 0.227254158,
+  "sumW": 3739594.3267149925,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-400to800-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT400to800",
+  "xsec": 8.7202477896,
+  "sumW": 1160819435.5668411,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-40to70-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT40to70",
+  "xsec": 7.558098461,
+  "sumW": 695194592.0467796,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-40to70-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT40to70",
+  "xsec": 480.2220383,
+  "sumW": 623666969726.099,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-70to100-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT70to100",
+  "xsec": 3.343509929,
+  "sumW": 273843518.52011967,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-70to100-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT70to100",
+  "xsec": 212.4379778,
+  "sumW": 236863780167.32947,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-800to1500-MLL-120": {
+  "key": "DYto2L_MLL120toInf_HT800to1500",
+  "xsec": 0.027079397,
+  "sumW": 241668.0318439901,
+  "group": "DY"
+ },
+ "DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120": {
+  "key": "DYto2L_MLL50to120_HT800to1500",
+  "xsec": 0.898325608,
+  "sumW": 20932646.321234226,
+  "group": "DY"
+ },
+ "TTto2L2Nu_TuneCP5": {
+  "key": "TTLL_powheg",
+  "xsec": 98.03611310400001,
+  "sumW": 37820110815.09285,
+  "group": "TT"
+ },
+ "TWminusto2L2Nu": {
+  "key": "ST_tW_top_Lep",
+  "xsec": 4.6651008780000005,
+  "sumW": 56972824.24992752,
+  "group": "TT"
+ },
+ "TbarWplusto2L2Nu": {
+  "key": "ST_tW_antitop_Lep",
+  "xsec": 4.6651008780000005,
+  "sumW": 57087277.41358328,
+  "group": "TT"
+ }
+}

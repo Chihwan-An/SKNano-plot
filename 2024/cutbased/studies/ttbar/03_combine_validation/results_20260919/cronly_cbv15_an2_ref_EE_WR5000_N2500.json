@@ -1,0 +1,55 @@
+{
+ "status": 0,
+ "covQual": 2,
+ "minNll": 3.5573501519649926e-07,
+ "rateParams": {
+  "R_DY_Boosted_2024": {
+   "val": 0.9778,
+   "err": 0.0344,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_DY_Resolved_2024": {
+   "val": 0.9242,
+   "err": 0.028,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  },
+  "R_TT_Boosted_EE_2024": {
+   "val": 0.5,
+   "err": 0.0575,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": true
+  },
+  "R_TT_Boosted_MuMu_2024": {
+   "val": 0.5,
+   "err": 0.2073,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": true
+  },
+  "R_TT_Resolved_2024": {
+   "val": 1.4147,
+   "err": 0.0903,
+   "lo": 0.5,
+   "hi": 1.5,
+   "at_boundary": false
+  }
+ },
+ "largest_pulls": [],
+ "rateParam_correlations": {
+  "R_DY_Boosted_2024|R_DY_Resolved_2024": 0.369,
+  "R_DY_Boosted_2024|R_TT_Boosted_EE_2024": -0.003,
+  "R_DY_Boosted_2024|R_TT_Boosted_MuMu_2024": 0.001,
+  "R_DY_Boosted_2024|R_TT_Resolved_2024": 0.071,
+  "R_DY_Resolved_2024|R_TT_Boosted_EE_2024": -0.007,
+  "R_DY_Resolved_2024|R_TT_Boosted_MuMu_2024": 0.0,
+  "R_DY_Resolved_2024|R_TT_Resolved_2024": -0.023,
+  "R_TT_Boosted_EE_2024|R_TT_Boosted_MuMu_2024": -0.0,
+  "R_TT_Boosted_EE_2024|R_TT_Resolved_2024": -0.001,
+  "R_TT_Boosted_MuMu_2024|R_TT_Resolved_2024": 0.001
+ }
+}

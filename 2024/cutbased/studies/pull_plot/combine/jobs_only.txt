@@ -1,0 +1,15 @@
+EE base only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 0 16
+EE base only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 17 33
+EE base only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 34 50
+EE base onlyMuMuOS scan rDYMuMuCR_OS none 0 16
+EE base onlyMuMuOS scan rDYMuMuCR_OS none 17 33
+EE base onlyMuMuOS scan rDYMuMuCR_OS none 34 50
+EE base onlyEEOS scan rDYEECR_OS none 0 16
+EE base onlyEEOS scan rDYEECR_OS none 17 33
+EE base onlyEEOS scan rDYEECR_OS none 34 50
+EE base onlyFlv scan rFlvCR none 0 16
+EE base onlyFlv scan rFlvCR none 17 33
+EE base onlyFlv scan rFlvCR none 34 50
+EE slope only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 0 16
+EE slope only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 17 33
+EE slope only3res scan rFlvCR,rDYEECR_OS,rDYMuMuCR_OS none 34 50

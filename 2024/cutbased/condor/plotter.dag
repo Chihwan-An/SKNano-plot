@@ -1,0 +1,127 @@
+# HNWR 2024 배경 플롯 DAG — 19 plot jobs + 1 organize
+# make_dag.py 가 생성. 손으로 고치지 말고 make_dag.py 를 다시 돌릴 것.
+
+JOB Boost_DY_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DY_EE jobname="Boost_DY_EE"
+VARS Boost_DY_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DY_EE jobargs="Boost_DY_EE"
+
+JOB Boost_DY_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DY_MM jobname="Boost_DY_MM"
+VARS Boost_DY_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DY_MM jobargs="Boost_DY_MM"
+
+JOB Boost_DYCR1_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DYCR1_EE jobname="Boost_DYCR1_EE"
+VARS Boost_DYCR1_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DYCR1_EE jobargs="Boost_DYCR1_EE"
+
+JOB Boost_DYCR1_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DYCR1_MM jobname="Boost_DYCR1_MM"
+VARS Boost_DYCR1_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DYCR1_MM jobargs="Boost_DYCR1_MM"
+
+JOB Boost_DYCR2_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DYCR2_EE jobname="Boost_DYCR2_EE"
+VARS Boost_DYCR2_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DYCR2_EE jobargs="Boost_DYCR2_EE"
+
+JOB Boost_DYCR2_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_DYCR2_MM jobname="Boost_DYCR2_MM"
+VARS Boost_DYCR2_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_DYCR2_MM jobargs="Boost_DYCR2_MM"
+
+JOB Boost_FLV_EMJ /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_FLV_EMJ jobname="Boost_FLV_EMJ"
+VARS Boost_FLV_EMJ exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_FLV_EMJ jobargs="Boost_FLV_EMJ"
+
+JOB Boost_FLV_MEJ /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_FLV_MEJ jobname="Boost_FLV_MEJ"
+VARS Boost_FLV_MEJ exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_FLV_MEJ jobargs="Boost_FLV_MEJ"
+
+JOB Boost_sig_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_sig_EE jobname="Boost_sig_EE"
+VARS Boost_sig_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_sig_EE jobargs="Boost_sig_EE"
+
+JOB Boost_sig_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Boost_sig_MM jobname="Boost_sig_MM"
+VARS Boost_sig_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Boost_sig_MM jobargs="Boost_sig_MM"
+
+JOB Resolve_DY_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DY_EE jobname="Resolve_DY_EE"
+VARS Resolve_DY_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DY_EE jobargs="Resolve_DY_EE"
+
+JOB Resolve_DY_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DY_MM jobname="Resolve_DY_MM"
+VARS Resolve_DY_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DY_MM jobargs="Resolve_DY_MM"
+
+JOB Resolve_DYCR1_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DYCR1_EE jobname="Resolve_DYCR1_EE"
+VARS Resolve_DYCR1_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DYCR1_EE jobargs="Resolve_DYCR1_EE"
+
+JOB Resolve_DYCR1_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DYCR1_MM jobname="Resolve_DYCR1_MM"
+VARS Resolve_DYCR1_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DYCR1_MM jobargs="Resolve_DYCR1_MM"
+
+JOB Resolve_DYCR2_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DYCR2_EE jobname="Resolve_DYCR2_EE"
+VARS Resolve_DYCR2_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DYCR2_EE jobargs="Resolve_DYCR2_EE"
+
+JOB Resolve_DYCR2_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_DYCR2_MM jobname="Resolve_DYCR2_MM"
+VARS Resolve_DYCR2_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_DYCR2_MM jobargs="Resolve_DYCR2_MM"
+
+JOB Resolve_FLV_EM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_FLV_EM jobname="Resolve_FLV_EM"
+VARS Resolve_FLV_EM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_FLV_EM jobargs="Resolve_FLV_EM"
+
+JOB Resolve_sig_EE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_sig_EE jobname="Resolve_sig_EE"
+VARS Resolve_sig_EE exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_sig_EE jobargs="Resolve_sig_EE"
+
+JOB Resolve_sig_MM /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS Resolve_sig_MM jobname="Resolve_sig_MM"
+VARS Resolve_sig_MM exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs.sh"
+VARS Resolve_sig_MM jobargs="Resolve_sig_MM"
+
+# 모든 플롯 job 이 끝난 뒤 결과 정리
+JOB organize /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub
+VARS organize jobname="organize"
+VARS organize exec_script="/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_organize.sh"
+VARS organize jobargs=""
+
+PARENT Boost_DY_EE Boost_DY_MM Boost_DYCR1_EE Boost_DYCR1_MM Boost_DYCR2_EE Boost_DYCR2_MM Boost_FLV_EMJ Boost_FLV_MEJ Boost_sig_EE Boost_sig_MM Resolve_DY_EE Resolve_DY_MM Resolve_DYCR1_EE Resolve_DYCR1_MM Resolve_DYCR2_EE Resolve_DYCR2_MM Resolve_FLV_EM Resolve_sig_EE Resolve_sig_MM CHILD organize
+
+# 실패한 job 은 2 번까지 재시도
+RETRY Boost_DY_EE 2
+RETRY Boost_DY_MM 2
+RETRY Boost_DYCR1_EE 2
+RETRY Boost_DYCR1_MM 2
+RETRY Boost_DYCR2_EE 2
+RETRY Boost_DYCR2_MM 2
+RETRY Boost_FLV_EMJ 2
+RETRY Boost_FLV_MEJ 2
+RETRY Boost_sig_EE 2
+RETRY Boost_sig_MM 2
+RETRY Resolve_DY_EE 2
+RETRY Resolve_DY_MM 2
+RETRY Resolve_DYCR1_EE 2
+RETRY Resolve_DYCR1_MM 2
+RETRY Resolve_DYCR2_EE 2
+RETRY Resolve_DYCR2_MM 2
+RETRY Resolve_FLV_EM 2
+RETRY Resolve_sig_EE 2
+RETRY Resolve_sig_MM 2
+RETRY organize 2

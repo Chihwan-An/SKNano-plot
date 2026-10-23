@@ -1,0 +1,524 @@
+#ifndef HNWR_HNWR_h
+#define HNWR_HNWR_h
+
+#include <AnalyzerFramework/AnalyzerCore.h>
+#include <SystematicHelper.h>
+
+#include <cstddef>
+#include <map>
+#include <array>
+#include <memory>
+#include <string>
+#include <vector>
+
+// Cut-based W_R -> l N -> l l j j search (AN-25-020): resolved (two AK4) and
+// boosted (one AK8 carrying the merged N) categories, with DY / flavour control
+// regions and the full systematic set driven by data/config/MCLRSM.yaml.
+//
+// Ported from SKNanoAnalyzer-v13 `Reproduce20_002_copy`. Every cut, region
+// definition and histogram name is unchanged; what changed is only how the
+// objects are reached:
+//
+//   * v13 owned its objects (`RVec<Muon>`) and MUTATED them to apply an object
+//     systematic (ScaleMuons/SmearJets/...). v15 hands out immutable,
+//     event-scoped views with pre-computed correction lanes, so a systematic
+//     pass is now a choice of lane (see ObjectLanes below) rather than a
+//     rewritten collection.
+//   * v13's `RVec<Lepton*>` pointed into those owned objects. Here the selected
+//     leptons are flattened into LepCand once per pass, and every downstream
+//     cut reads LepCand.
+class HNWR : public AnalyzerCore {
+public:
+    HNWR();
+    ~HNWR();
+
+    void initializeAnalyzer() override;
+    void executeEvent() override;
+    void executeEventFromParameter();
+
+    bool RunSyst = false;
+    bool RunWRCut = false;
+    // DY correction userflags, for the before/after figures in
+    // fig/05_backgrounds/forAN/. Neither flag set is the production default:
+    // C(gen Z pT) and R(reco jet pT) both on.
+    //   NoDYCorr  both off        -> "before"
+    //   ZptOnly   C on, R off     -> "after"
+    // The two are mutually exclusive; setting both is a fatal error rather than
+    // a silent precedence rule, so a mislabelled output directory cannot happen.
+    bool NoDYCorr = false;
+    bool ZptOnly = false;
+    // C looked up per hadron-level jet multiplicity (0 / 1 / >= 2 GenJets, HNWRDY::CountGenJets)
+    // from the FxFx/LO derivation (make_dy_zpt_njet.py). ZptNJet: each multiplicity normalised to
+    // LO (shape only). ZptNJetAbs: the FxFx/LO normalisation of each multiplicity kept.
+    // The jet-inclusive FxFx/LO curve (same derivation, no multiplicity split): the like-for-like
+    // reference for ZptNJet. Without either flag the shipped powheg-based inclusive C is used.
+    bool ZptFxFxIncl = false;
+    bool ZptNJet = false;
+    bool ZptNJetAbs = false;
+    int dy_n_genjet = 0;          // of the current event; set where the gen Z pT is
+    bool SRAll = false;   // userflag SRAll: resolved SR filled for data too (default off)
+    // userflag SRChargeSplit (2026-09-14): WR-mass histograms of the resolved SR split into
+    // SS++ / SS-- / OS lead+ / OS lead- and of the boosted SR split by the leading (tight) lepton
+    // charge. Categories with a NEGATIVE leading lepton are filled for data (names SRChgM_...);
+    // positive-leading categories are MC only and named SR_ChgP_... (plotter blinds SR_*).
+    // Stored before the SRAll guard, so the existing SR histograms/cutflows never see data.
+    bool SRChargeSplit = false;
+    // userflag BoostNoLSF (2026-09-16): pick the boosted SR / Flavor CR away fatjet from the
+    // FULL fatjet collection instead of the LSF3 > 0.75 subset, and store the GlobalParT3
+    // XWW(qq e nu) / XWW(qq mu nu) scores of that fatjet so a tagger cut can be scanned
+    // offline in place of LSF3. The LSF3 cut-efficiency scale factor is dropped along with
+    // the cut. DY CR is unaffected -- it always took the away fatjet from the full collection.
+    bool BoostNoLSF = false;
+    // userflag DYCRCharge (2026-09-08): write the OS/SS x tight-charge variants of the
+    // DY CR histograms again (DYCR_<Resolved|Boosted>_<EE|MM>_<OS|SS>[_<0e|1e|2e>_tight | _tight | _not_tight]).
+    // They were dropped from the default output on 2026-08-27 to keep the files small;
+    // the charge-flip study needs them WITH the DY corrections (C x EW x R) applied, so
+    // they ride on the same fill lambdas / weights as the inclusive DY CR histograms.
+    bool DYCRCharge = false;
+    // userflag DYCRStudy: fill ONLY the DY CR blocks, three times per syst
+    // variation -- DYCR_Full/ (C*EW*R), DYCR_ZptOnly/ (C*EW), DYCR_NoCorr/ (none)
+    // -- with every systematic pass and weight variation as in a normal run, so
+    // the three treatments can be compared with their bands. SR/FlavCR/PDFmem
+    // fills are skipped. Output: $SKNANO_OUTPUT/HNWR/DYCRStudy/<era>/.
+    bool DYCRStudy = false;
+    // userflag DYCRSplit (2026-09-17): split the DY CR at m(ll) = 100 GeV into CR1
+    // (60-100) and CR2 (100-150) and write DYCR1_/DYCR2_ prefixed copies of the key
+    // DY CR histograms plus a 2D leading-(fat)jet-pT x m(lljj)/m(lJ) histogram. The
+    // jet-pT ratio R can then be derived in CR1 and applied to CR2 offline
+    // (AN2019_083 Fig. 27-30 closure). Rides on the same fill loop and weights as the
+    // inclusive DY CR, so with DYCRStudy all three treatments carry the split.
+    bool DYCRSplit = false;
+    // userflag WeightSystOnly (2026-09-17): MCLRSM_weightonly.yaml -- the weight-type
+    // nuisances of MCLRSM.yaml only (no evtLoopAgain object variations), i.e. one event
+    // loop. Central carries every nominal SF and the DY corrections as usual.
+    bool WeightSystOnly = false;
+    // C_nom * EW_nom of the current event (1 when not applied); set per event.
+    float dycr_cew_nom = 1.f;
+    float dycr_ew_nom = 1.f;      // EW_nom alone, so DYCRStudy can also show C without EW
+    // Remove AK8 jets overlapping (dR < 0.4) any tight lepton.
+    // HNWRAnalyzer does NOT do this, so it is off by default; flip to true to restore.
+    bool CleanFatjetWithTightLeptons = false;
+    std::unique_ptr<SystematicHelper> systHelper;
+
+    struct flags{
+        bool RunFake;
+        bool RunCF ;
+        bool RunSyst ;
+        bool PromptLeptononly ;
+        bool ApplyDYPtReweight ;
+        bool ApplyDYReshape ;
+        bool RunXsecSyst ;
+        bool Signal ;
+        bool CalculateAverageKFactor ;
+        bool SignalElectronOnly ;
+        bool SignalMuonOnly ;
+        bool UseJetPtRwg ;
+        bool UseDYCR1Reshape ;
+    } flag;
+
+    struct parameters{
+        std::map<std::string ,float> Zpt;
+
+        parameters(){
+            Zpt["ZPTReweight"] = 1.0;
+            Zpt["ZPTReweight_Up"] = 1.0;
+            Zpt["ZPTReweight_Down"] = 1.0;
+            Zpt["ZPTReweight_QCDScaleUp"] = 1.0;
+            Zpt["ZPTReweight_QCDScaleDown"] = 1.0;
+            Zpt["ZPTReweight_QCDPDFErrorUp"] = 1.0;
+            Zpt["ZPTReweight_QCDPDFErrorDown"] = 1.0;
+            Zpt["ZPTReweight_QCDPDFAlphaSUp"] = 1.0;
+            Zpt["ZPTReweight_QCDPDFAlphaSDown"] = 1.0;
+            Zpt["ZPtEWCorr"] = 1.0;
+            Zpt["ZPtEWCorr_E1Up"] = 1.0;
+            Zpt["ZPtEWCorr_E1Down"] = 1.0;
+            Zpt["ZPtEWCorr_E2Up"] = 1.0;
+            Zpt["ZPtEWCorr_E2Down"] = 1.0;
+            Zpt["ZPtEWCorr_E3Up"] = 1.0;
+            Zpt["ZPtEWCorr_E3Down"] = 1.0;
+        }
+    } param;
+
+    // ------------------------------------------------------------------------
+    // Object variation lanes.
+    //
+    // v13 applied the six object systematics by replacing the collection
+    // (`muons = ScaleMuons(muons, "up")`, `jets = SmearJets(...)`, ...) before
+    // any selection ran. v15 pre-computes every variation as a lane on the view
+    // and forbids mutation, so the pass name is decoded once into this struct
+    // and every momentum read below goes through the MuonLanePt / ElectronLanePt
+    // / FatJetLane* helpers. The AK4 lanes are passed straight to
+    // SelectJetIndices / SelectJetViews.
+    //
+    // Note the framework throws if JES and JER are both non-nominal; the yaml
+    // only ever turns on one at a time, exactly as in v13.
+    // ------------------------------------------------------------------------
+    struct ObjectLanes {
+        enum class MuonLane { Nominal, ScaleUp, ScaleDown, ResUp, ResDown };
+        enum class ElectronLane { Nominal, ScaleUp, ScaleDown, SmearUp, SmearDown };
+        MuonLane muon = MuonLane::Nominal;
+        ElectronLane electron = ElectronLane::Nominal;
+        MyCorrection::variation jes = MyCorrection::variation::nom;
+        MyCorrection::variation jer = MyCorrection::variation::nom;
+    };
+    // Decode the systematic name into the lanes it selects. DATA takes the
+    // nominal lane everywhere, mirroring v13's `if (!IsDATA)` guard around the
+    // whole variation block.
+    ObjectLanes LanesForSystematic(const std::string &this_syst) const;
+
+    float MuonLanePt(const MuonView &mu, const ObjectLanes &lanes) const;
+    float ElectronLanePt(const ElectronView &el, const ObjectLanes &lanes) const;
+    // AK4: the same lane SelectJetIndices / SelectJetViews project onto. Only
+    // needed for the JESJER_after_jetpt monitoring histogram, which runs over
+    // the whole collection rather than the selected one.
+    float JetLanePt(const JetView &jet, const ObjectLanes &lanes) const;
+    float FatJetLanePt(const FatJetView &fj, const ObjectLanes &lanes) const;
+    float FatJetLaneMass(const FatJetView &fj, const ObjectLanes &lanes) const;
+    // Soft-drop mass with the subjet JERC applied. NEVER FatJetView::SDMass(),
+    // which is the raw NanoAOD value: the nominal subjet smearing is not a
+    // no-op and m_SD > 40 GeV is a selection cut.
+    float FatJetLaneSDMass(const FatJetView &fj, const ObjectLanes &lanes) const;
+    TLorentzVector FatJetLaneP4(const FatJetView &fj, const ObjectLanes &lanes) const;
+
+    // ------------------------------------------------------------------------
+    // One selected lepton, flattened out of the read-only views.
+    //
+    // v13 kept `RVec<Lepton*>` pointing into its owned `RVec<Muon>` /
+    // `RVec<Electron>` and reached back for flavour-specific quantities with a
+    // C-style downcast (`((Electron*)LeadLep)->TightCharge()`). Views cannot be
+    // stored polymorphically and cannot be mutated, so the handful of fields
+    // the analysis actually reads are copied here once per pass. `p4` already
+    // carries the lane this pass selected, so every kinematic cut is unchanged.
+    // ------------------------------------------------------------------------
+    struct LepCand {
+        bool isMuon = false;
+        // Raw index into the GetAllMuonViews() / GetAllElectronViews()
+        // collection, for the raw-branch reads that have no view accessor.
+        std::size_t idx = 0;
+        TLorentzVector p4;
+        float charge = 0.f;
+        // Muon_tightCharge / Electron_tightCharge (v13 Muon/Electron::TightCharge()).
+        int tightCharge = 0;
+        // Supercluster eta; electrons only. The EGM scale factors are binned in
+        // it and it must never be the track eta.
+        float scEta = 0.f;
+        // Momentum the scale factors are evaluated at. For muons this is the
+        // NOMINAL high-pT lane, which is what v13's Muon::OriginalPt() meant --
+        // the varied passes moved Pt() but left OriginalPt() alone, so the SF
+        // did not move with the nuisance. For electrons v13 fed the varied pt
+        // straight in, so this equals p4.Pt() there.
+        float sfPt = 0.f;
+        // Full momentum p of the nominal high-pT lane; muons only. The reco SF
+        // (NUM_GlobalMuons_DEN_TrackerMuonProbes) is binned in p, not pt.
+        float sfMomentum = 0.f;
+
+        bool IsElectron() const { return !isMuon; }
+        bool IsMuon() const { return isMuon; }
+        float Pt() const { return p4.Pt(); }
+        float Eta() const { return p4.Eta(); }
+        float Phi() const { return p4.Phi(); }
+        float M() const { return p4.M(); }
+        float Charge() const { return charge; }
+        float TightCharge() const { return static_cast<float>(tightCharge); }
+        const TLorentzVector &P4() const { return p4; }
+        float DeltaR(const TLorentzVector &other) const { return p4.DeltaR(other); }
+        float DeltaR(const LepCand &other) const { return p4.DeltaR(other.p4); }
+        float DeltaPhi(const TLorentzVector &other) const { return p4.DeltaPhi(other); }
+        float DeltaPhi(const LepCand &other) const { return p4.DeltaPhi(other.p4); }
+    };
+
+    struct Electrons {
+        ElectronViewCollection AllElectrons;
+
+        std::string TriggerNameForSF_Electron ="WREGammaTrigger";
+        RVec<ElectronView::ElectronID> Electron_Tight_ID = {ElectronView::ElectronID::POG_HEEP};
+        RVec<ElectronView::ElectronID> Electron_Loose_ID = {ElectronView::ElectronID::POG_LOOSE};
+        //set to custom loose id
+        float Electron_MinPt = 53.;
+
+        RVec<std::string> Ele_Trigger;
+        float Ele_Trigger_Safe_Pt_Cut;
+
+        float Barrel_ID_SF_2023_C = 1.007;
+        float Barrel_ID_SF_2023_C_err = 0.004;
+        float Barrel_ID_SF_2023_D = 1.009;
+        float Barrel_ID_SF_2023_D_err = 0.005;
+
+        float Endcap_ID_SF_2023_C = 0.988;
+        float Endcap_ID_SF_2023_C_err = 0.005;
+        float Endcap_ID_SF_2023_D = 0.988;
+        float Endcap_ID_SF_2023_D_err = 0.004;
+
+        std::string Electron_FR_ID = "HNWR";
+        std::string Electron_FR_Key = "AwayJetPt40";
+        std::string Electron_CF_ID = "HNWRTight";
+        std::string Electron_CF_Key = "ZToLL";
+        bool Electron_UseMini = false;
+        bool Electron_UsePtCone = false;
+    }el_set;
+
+    // The three electron ID helpers were members of the `Electrons` struct in
+    // v13. They now live on the analyzer because two of the quantities they
+    // need (vidNestedWPBitmap, vidNestedWPBitmapHEEP, scEtOverPt) have no
+    // ElectronView accessor in v15 and must be read from the raw branches,
+    // which only a SKNanoLoader-derived class can see.
+    bool isPassCustomLooseID(const ElectronView& el) const;
+    bool isPassCustomTightID(const ElectronView& el , const HNWR::Electrons& eset) const;
+    // Loose ID without isolation (matches Python vidNestedWPBitmap with id_level=2, ignoring isolation)
+    bool isPassLooseNoIso(const ElectronView& el) const;
+
+    struct Muons {
+        MuonViewCollection AllMuons;
+
+        std::string TriggerNameForSF_Muon ="Mu50";
+        RVec<MuonView::MuonID> Muon_Tight_ID = {MuonView::MuonID::POG_GLOBAL_HIGH_PT};
+        RVec<MuonView::MuonID> Muon_Loose_ID = {MuonView::MuonID::POG_GLOBAL_HIGH_PT}; //Loose and tight only differ in isolation
+        float Muon_MinPt = 53.;
+
+        RVec<std::string> Muon_Trigger;
+        float Muon_Trigger_Safe_Pt_Cut;
+
+        float Muon_TkrelISO ;
+        float Muon_Iso_Cut = 0.1;
+        std::string Muon_IS_SF_Key = "HighPtMuonIDSF";
+        std::string Muon_Trigger_SF_Key = "POGHighPtLooseTrkIso";
+        std::string Muon_FR_ID = "HNWR";
+        std::string Muon_FR_Key = "AwayJetPt40";
+        std::string Muon_CF_ID = "HNWRTight";
+        std::string Muon_CF_Key = "ZToLL";
+        bool Muon_UseMini = false;
+        bool Muon_UsePtCone = false;
+        bool Muon_UseTuneP = true;
+    }mu_set;
+
+    struct Jets{
+        JetViewCollection AllJets;
+        //TString Jet_ID ="TIGHTLEPVETO";
+        RVec<JetView::JetID> Jet_ID = {JetView::JetID::TIGHTLEPVETO};
+        float Jet_MinPt = 40.;
+        float Jet_MaxEta = 2.5;
+    }jet_set;
+
+    struct FatJets{
+        FatJetViewCollection AllFatJets;
+        FatJetView::ID FatJet_ID = FatJetView::ID::TIGHT;
+        float Fatjet_LSF = 0.75;
+        float FatJet_MinPt = 200.;
+        float FatJet_MaxEta = 2.5;
+        float FatJet_SDM = 40;
+    }fatjet_set;
+
+    struct Gens{
+        GenViewCollection gens;
+    }gen_set;
+
+    struct LHECollection{
+        LHEViewCollection lhe_parts;
+    }lhe_set;
+
+    // Signal categorization flags (set per event in executeEvent)
+    bool sig_isSignal   = false;
+    bool sig_isOffshell = false;
+    bool sig_isOnshell  = false;
+    bool sig_isTb       = false;
+
+    // Compute the signal / offshell / onshell / tb flags from gens, LHE and sample name
+    void SetSignalFlags();
+    // Fill the signal SR cutflow copies (_offshell / _onshell / _tb) next to the base cutflow.
+    // Only fills for the Central systematic.
+    void FillSignalCutflow(const std::string &this_syst, bool isResolved, double binN, float weight);
+
+    // Electron trigger scale factor: constant per era, split barrel/endcap at SC
+    // |eta| = 1.4442 (EGM high-pT trigger T&P, fit range pT > 130 GeV).
+    // Returns 1.0 for eras without a measurement (e.g. 2017).
+    float GetElectronTriggerSF_TnP(double eta, double pt, MyCorrection::variation var) const;
+
+    // High-pT electron ID scale factor from POG/EGM electronID_highPt.json.gz
+    // ("Electron-ID-SF", WP "Tight"), binned in (signed SC eta, pt); pt bins start
+    // at 100 GeV with clamp flow. Returns 1.0 for eras without the JSON.
+    float GetElectronHEEPIDSF_TnP(double eta, double pt, MyCorrection::variation var) const;
+
+    // LSF3 cut efficiency SF by in-fatjet lepton flavor: muon-in-fatjet 1.06 +- 0.10
+    // (from e-mujet flavor CR), electron-in-fatjet 1.11 +- 0.11 (from mu-ejet flavor CR).
+    // Applied only in the boosted SR and boosted flavor CR.
+    float GetLSFSF(bool muonInFatJet, MyCorrection::variation var) const;
+
+    // Single-muon high-pT trigger scale factor, and the product over a set of
+    // muons.
+    //
+    // v13 had two entry points that did NOT agree: the single-Muon overload
+    // forwarded to GetMuonIDSF (cset_muon, evaluated at OriginalPt), while the
+    // RVec<Muon*> overload took a plain PRODUCT of per-muon values read out of
+    // cset_muon_trig_eff at the live, possibly scale-varied Pt(). v15 has one
+    // high-pT map (muon_HighPt.json.gz) that carries the NUM_HLT_DEN_* keys, so
+    // both call sites are unified onto it: the product is kept, and the momentum
+    // is the nominal high-pT lane, which is exactly what v13's single-muon path
+    // used. See the report accompanying this port.
+    float GetMuonHighPtTriggerSF(const std::vector<const LepCand *> &muons, MyCorrection::variation var) const;
+
+    // ------------------------------------------------------------------------
+    // Cleaning. v13 returned new owned collections; the view model has no owned
+    // objects, so these return the surviving RAW indices (jets, fat jets) or
+    // copies of the lightweight views. The dR definitions are unchanged.
+    // ------------------------------------------------------------------------
+    std::vector<std::size_t> Clean_Fatjet_with_tight_leptons(const FatJetViewCollection & fatjets, const std::vector<std::size_t> & fatjet_indices, const std::vector<const LepCand *> & tight_leps, const ObjectLanes & lanes) const;
+    std::vector<std::size_t> Clean_jet_with_loose_leptons(const JetViewCollection & jets, const std::vector<std::size_t> & jet_indices, const std::vector<const LepCand *> & loose_leps, const ObjectLanes & lanes) const;
+
+    std::vector<std::size_t> Clean_LSF_FatJet_with_jets(const std::vector<FatJetView> & fatjets, const SelectedJetViewCollection & jets, const ObjectLanes & lanes) const;
+    std::vector<FatJetView> Clean_Jets_with_fatjets(const SelectedJetViewCollection & jets, const std::vector<FatJetView> & fatjets, const ObjectLanes & lanes) const;
+
+    // ------------------------------------------------------------------------
+    // DY corrections. Three event weights on DY MC only:
+    //
+    //     w *= C(genZpT) * EW(genZpT) * R(recoLeadingJetPt)
+    //
+    // C is the gen-level NLO/LO Z-pT ratio, a per-event scalar, so it goes into
+    // `weight` through the systematic machinery and reaches every region.
+    // EW is the NLO electroweak correction of arXiv:1705.04664, also a
+    // per-event scalar on gen Z pT, applied through the same machinery.
+    // R is data-driven, from the DY CR, and depends on the reco category --
+    // resolved reads the leading AK4 pT, boosted the leading AK8 pT. The two
+    // categories are NOT exclusive here (is_Resolved_DY_* and is_Boosted_DY_*
+    // can both be set), so R must not be folded into `weight`; it multiplies the
+    // fill weight per block instead.
+    //
+    // Derivation: fig/05_backgrounds/scripts/make_dy_{zpt_nlo_lo,jetpt_ratio}.py.
+    // Both currently exist for 2022 and 2022EE only.
+    // ------------------------------------------------------------------------
+    struct DYCorrections {
+        bool loaded = false;
+        bool apply = false;            // false for data and every non-DY sample
+        // R only. `apply` gates both corrections; this gates R alone, so the
+        // ZptOnly userflag can leave C on. Meaningless when apply is false.
+        bool apply_r = false;
+
+        // C(genZpT): nominal plus the three theory variations, all on one binning
+        std::vector<double> zpt_edges;
+        std::map<std::string, std::vector<double>> zpt;   // key -> bin values
+
+        // MC statistical error of C. make_dy_zpt_nlo_lo.py keeps it in the bin
+        // errors of the nominal ZPTReweight histogram and nowhere else -- the
+        // ZPTReweight_Up/Down pair is the theory quadrature sum, not this.
+        std::vector<double> zpt_stat;
+
+        // The same three containers per GenJet multiplicity class (0, 1, >= 2), used instead of
+        // the ones above when by_njet is set.
+        struct ZptSet { std::vector<double> edges, stat; std::map<std::string, std::vector<double>> vals; };
+        std::array<ZptSet, 3> nj;
+        bool by_njet = false;
+
+        // R(jet pT), rebinned curves only. Native binning has R < 0 at high pT.
+        std::vector<double> r_edges_res, r_val_res, r_sig_res;
+        std::vector<double> r_edges_boo, r_val_boo, r_sig_boo;
+        // Userflag RFlav (2026-08-28): per-flavour curves (resolved_EE/MM,
+        // boosted_EE/MM directories of the same file) looked up by the lead
+        // lepton flavour instead of the flavour-combined ones. The combined R
+        // closes the resolved EE CR (1.01) but leaves MM at +8.5%; the presel
+        // per-flavour R' closes both. Index 1 = EE, 2 = MM; 0 = combined.
+        bool flav_split = false;
+        std::vector<double> r_edges_res_f[3], r_val_res_f[3], r_sig_res_f[3];
+        std::vector<double> r_edges_boo_f[3], r_val_boo_f[3], r_sig_boo_f[3];
+
+        // Number of usable bins per category, i.e. how many DYReshape nuisances
+        // there are. Bin 0 sits below the jet pT selection and is undefined.
+        int n_nuis_res = 0, n_nuis_boo = 0;
+
+        // EW(genZpT): NLO EW correction from arXiv:1705.04664, ported from
+        // SKFlatAnalyzer data/Run2Legacy_v4/<year>/HNWRDYPtReweight/ZPtEWCorr.root
+        // (identical for all years -- pure theory, era-independent). Nominal in
+        // ew_val; the three EW uncertainty sources of the paper live in the bin
+        // ERRORS of hist_e1/e2/e3, stored here as absolute sigmas.
+        bool apply_ew = false;
+        std::vector<double> ew_edges;
+        std::vector<double> ew_val, ew_e1, ew_e2, ew_e3;
+    } dycorr;
+
+    void LoadDYCorrections();
+
+    // --- acceptance-only theory nuisances ---------------------------------------------
+    // Inclusive normalisation K_var of each LHE weight index for THIS sample, read from
+    // the module's HNWR/data/TheoryNormK/<era>/TheoryNormK.json (produced by AN-25-020
+    // tables/06_systematics/theory_norm_split/make_theory_norm_k.py).
+    //
+    // LHEScaleWeight / LHEPdfWeight are w_var / w_nom, i.e. the inclusive cross-section
+    // change TIMES the acceptance change. These four nuisances are signal-only in the
+    // datacards, so by convention they must carry the acceptance alone -- the inclusive
+    // piece belongs in the theory band of the exclusion plot, not in the fit. Dividing an
+    // event weight by K_var cancels the inclusive part exactly: sum(w * R / K) == sum(w)
+    // before any selection, so only the shape / selection efficiency change survives.
+    //
+    // Empty when the sample has no entry -- every background (the table is signal-only,
+    // and the Runs-tree K it is built from assumes |genWeight| = const, which holds for
+    // the LO madgraph signal but not for amcatnlo backgrounds) and the signal aliases
+    // shipping only 101 PDF members. GetTheoryNormK then returns 1 and the weights keep
+    // their previous, un-normalised behaviour.
+    std::vector<float> theoryK_scale;   // 9 entries, index = 3*iR + iF (GetScaleVariationIndex)
+    std::vector<float> theoryK_pdf;     // 103 entries, LHEPdfWeight member order
+    void LoadTheoryNormK();
+
+    // userflag RunXsecSyst: also write PDFmem<i>/<region>_mlljj, one directory per PDF
+    // Hessian member. The PDF envelope is a quadrature sum over members OF THE OBSERVABLE
+    // -- sqrt(sum_i (N_i(bin) - N_0(bin))^2) -- and cannot be formed from a single
+    // per-event weight the way the PDF_Weight target does it. Members shift every event in
+    // the same direction, so the sum over events largely cancels; taking the envelope per
+    // event instead adds |shift| with no cancellation and overestimates by ~200x on
+    // WR4000 (measured 0.73 vs 0.0034 before selection, where closure demands 0).
+    // Keeping one histogram per member is exactly what SKFlat HNWRAnalyzer.C:1785 does.
+    bool RunXsecSyst = false;
+    // K for one index; 1 when unavailable, non-finite or non-positive (never 0 -- that
+    // would delete the event instead of leaving its weight alone).
+    float GetTheoryNormK(const std::vector<float> &K, int idx) const;
+
+    // Gen Z pT through HNWRDY::FindGenZ (GenPart status-62 Z, else the leading
+    // status-1 OSSF e/mu pair) -- the definition C was derived with in DYGenZpT.
+    // -1 when no Z can be built; every DY target then returns 1.
+    float GetGenZpT() const;
+
+    // C for one variation key ("ZPTReweight", "ZPTReweight_QCDScaleUp", ...).
+    // Clamps above the top edge; returns 1 for a non-finite or non-positive
+    // entry, never 0 -- a 0 would delete the event rather than leave it alone.
+    float GetZptWeight(float gen_zpt, const std::string &key) const;
+
+    // MC statistical error of C in the bin `gen_zpt` falls in, as an absolute
+    // (not relative) sigma. 0 where C itself is undefined, so that C +- sigma
+    // collapses back onto the nominal there.
+    float GetZptStat(float gen_zpt) const;
+
+    // EW correction at nominal (which == 0) or shifted by dir*sigma of EW
+    // uncertainty source `which` (1, 2 or 3; dir = +1/-1). Same clamping as
+    // GetZptWeight: below 30 GeV the first bin (~1.004) is used, above the top
+    // edge the last bin -- identical to the SKFlat HNWRAnalyzer clipping.
+    float GetZptEW(float gen_zpt, int which = 0, int dir = 0) const;
+
+    // R for a reco category. `nuis_bin` >= 0 shifts that one bin by
+    // `dir` * sigma and leaves the others at nominal, which is how the per-bin
+    // DYReshape nuisances are built; -1 is the nominal curve.
+    // `flav` (0 = combined, 1 = EE, 2 = MM) selects the per-flavour curve when
+    // the RFlav userflag is on; ignored otherwise.
+    float GetJetPtR(bool resolved, float pt, int nuis_bin = -1, int dir = 0, int flav = 0) const;
+
+    // DY samples the corrections apply to: the HT-binned LO set the background
+    // estimate uses. DYJets (amcatnloFXFX) is excluded -- it was the numerator
+    // when C was derived, so correcting it would be circular.
+    bool IsDYSample() const;
+
+
+    float dR_Separation = 0.4;
+    float FatJet_dR_Separation = 0.8;
+
+private:
+    // LHEScaleWeight index that GetScaleVariation would read for this (muF, muR), or -1
+    // if there is none (nominal, or an unexpected nLHEScaleWeight). Exposed so callers
+    // that need the matching per-index normalisation -- e.g. the acceptance-only theory
+    // nuisances, which divide by the inclusive K_var of that same index -- do not have to
+    // re-derive the 8- vs 9-element ordering and drift out of sync with the getter above.
+    //
+    // v15's AnalyzerCore dropped this helper (only GetScaleVariation survived), so the
+    // body is copied verbatim from v13 Analyzers/src/AnalyzerCore.cc.
+    int GetScaleVariationIndex(const MyCorrection::variation &muF_syst, const MyCorrection::variation &muR_syst) const;
+
+    // GetElectronHEEPIDSF_TnP warns once instead of once per event.
+    mutable bool fWarnedNoHEEPIDSF = false;
+};
+
+#endif

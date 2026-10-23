@@ -1,0 +1,37 @@
+Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/almalinux-root  196G  190G     0 100% /
+535M	/tmp/tmp.EsXdK2yVJL
+535M	/tmp/tmp.pNGxzKXLh0
+536M	/tmp/tmp.W0RRnfCMlu
+536M	/tmp/tmp.j1ievPCZKM
+536M	/tmp/tmp.nZSj39pRXy
+536M	/tmp/tmp.qqfRiW6khS
+537M	/tmp/tmp.kUGU5PrHpT
+538M	/tmp/tmp.oHqHGLdcVZ
+540M	/tmp/tmp.fgpSBB0xsn
+541M	/tmp/tmp.Iw77xJOFYT
+543M	/tmp/tmp.DNhHFjXlxV
+543M	/tmp/tmp.wULPFwIuLS
+545M	/tmp/tmp.jtNv79fugx
+545M	/tmp/tmp.tMPKyr7Eiw
+15G	/tmp/claude-5596
+/tmp/tmp.cdhJh5ny1W/objects/a1/tmp_obj_3lA9rb
+/tmp/tmp.YpNqvpQWDS/objects/a1/tmp_obj_7sUmnz
+/tmp/tmp.bfnJSvskZq/objects/a1/tmp_obj_ixJLBL
+/tmp/tmp.Iw77xJOFYT/objects/a1/tmp_obj_KniwEi
+/tmp/tmp.d0pez6Y6CA/objects/a1/tmp_obj_jzhudC
+/tmp/tmp.W0RRnfCMlu/objects/a1/tmp_obj_oMAWCn
+/tmp/tmp.6KyuH1zFDC/objects/a1/tmp_obj_8tJF7N
+/tmp/tmp.4zdpQHUAO6/objects/a1/tmp_obj_lY3SLX
+/tmp/tmp.dSDew17gH4/objects/a1/tmp_obj_N45ZOR
+/tmp/tmp.OkdXNyQQ43/objects/a1/tmp_obj_9CkHUG
+/tmp/tmp.MgpMPAhDoR/objects/a1/tmp_obj_43ono2
+/tmp/tmp.k8XDiWDOdW/objects/a1/tmp_obj_FTQr2C
+/tmp/tmp.Fx9L5uO7ve/objects/a1/tmp_obj_uyZMZy
+/tmp/tmp.2axhY60R4X/objects/a1/tmp_obj_raPPxN
+/tmp/tmp.GE8sA5KgPJ/objects/a1/tmp_obj_BdEapG
+/tmp/tmp.GEIzgHcjco/objects/a1/tmp_obj_vTxPTT
+/tmp/tmp.Q3RQkMujQ8/objects/a1/tmp_obj_6UUB72
+/tmp/tmp.BvamUywJs2/objects/a1/tmp_obj_spAVNO
+/tmp/tmp.ST0nkF01ex/objects/a1/tmp_obj_mICFez
+/tmp/tmp.Q8k9ioRvxf/objects/a1/tmp_obj_rSXMhM

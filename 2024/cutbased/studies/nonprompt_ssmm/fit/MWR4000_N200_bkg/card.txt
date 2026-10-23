@@ -1,0 +1,57 @@
+# Asimov prototype, signal MWR4000_N200, inj 0.0, data K_High 1.0
+imax *
+jmax *
+kmax *
+----------------------------------------
+shapes * * shapes.root $CHANNEL/$PROCESS
+----------------------------------------
+bin SS_TT_Low SS_TL_Low SS_LT_Low SS_LL_Low SS_TT_High SS_TL_High SS_LT_High SS_LL_High
+observation -1 -1 -1 -1 -1 -1 -1 -1
+----------------------------------------
+bin SS_TT_Low SS_TT_Low SS_TT_Low SS_TT_Low SS_TT_Low SS_TT_Low SS_TL_Low SS_TL_Low SS_TL_Low SS_TL_Low SS_TL_Low SS_TL_Low SS_LT_Low SS_LT_Low SS_LT_Low SS_LT_Low SS_LT_Low SS_LT_Low SS_LL_Low SS_LL_Low SS_LL_Low SS_LL_Low SS_LL_Low SS_LL_Low SS_TT_High SS_TT_High SS_TT_High SS_TT_High SS_TT_High SS_TT_High SS_TL_High SS_TL_High SS_TL_High SS_TL_High SS_TL_High SS_TL_High SS_LT_High SS_LT_High SS_LT_High SS_LT_High SS_LT_High SS_LT_High SS_LL_High SS_LL_High SS_LL_High SS_LL_High SS_LL_High SS_LL_High
+process sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF sig prompt undet np_PF np_FP np_FF
+process 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+rate -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+----------------------------------------
+lumi lnN 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - - 1.014 1.014 1.014 - - -
+prompt_norm lnN - 1.10 - - - - - 1.10 - - - - - 1.10 - - - - - 1.10 - - - - - 1.10 - - - - - 1.10 - - - - - 1.10 - - - - - 1.10 - - - -
+undet_norm lnN - - 1.50 - - - - - 1.50 - - - - - 1.50 - - - - - 1.50 - - - - - 1.50 - - - - - 1.50 - - - - - 1.50 - - - - - 1.50 - - -
+sig_iso_L lnN - - - - - - 1.05 - - - - - 1.05 - - - - - 1.05 - - - - - - - - - - - 1.05 - - - - - 1.05 - - - - - 1.05 - - - - -
+k_Low param 1.0 0.0727
+tau param 1.0 0.1646
+lam param 1.0 0.0200
+N_Low rateParam SS_*_Low np_* 1 [0,20]
+N_High rateParam SS_*_High np_* 1 [0,20]
+resp_SS_TT_Low_prompt rateParam SS_TT_Low prompt (@0*@0) lam
+resp_SS_TT_Low_np_PF rateParam SS_TT_Low np_PF (@0*@1) lam,k_Low
+resp_SS_TT_Low_np_FP rateParam SS_TT_Low np_FP (@0*@1) k_Low,lam
+resp_SS_TT_Low_np_FF rateParam SS_TT_Low np_FF (@0*@0) k_Low
+resp_SS_TL_Low_prompt rateParam SS_TL_Low prompt (@0*((1-@0*0.948338)/(1-0.948338))) lam
+resp_SS_TL_Low_np_PF rateParam SS_TL_Low np_PF (@0*((1-@1*0.074605)/(1-0.074605))) lam,k_Low
+resp_SS_TL_Low_np_FP rateParam SS_TL_Low np_FP (@0*((1-@1*0.948338)/(1-0.948338))) k_Low,lam
+resp_SS_TL_Low_np_FF rateParam SS_TL_Low np_FF (@0*((1-@0*0.176855)/(1-0.176855))) k_Low
+resp_SS_LT_Low_prompt rateParam SS_LT_Low prompt (((1-@0*0.948338)/(1-0.948338))*@0) lam
+resp_SS_LT_Low_np_PF rateParam SS_LT_Low np_PF (((1-@0*0.948338)/(1-0.948338))*@1) lam,k_Low
+resp_SS_LT_Low_np_FP rateParam SS_LT_Low np_FP (((1-@0*0.124601)/(1-0.124601))*@1) k_Low,lam
+resp_SS_LT_Low_np_FF rateParam SS_LT_Low np_FF (((1-@0*0.032684)/(1-0.032684))*@0) k_Low
+resp_SS_LL_Low_prompt rateParam SS_LL_Low prompt (((1-@0*0.948338)/(1-0.948338))*((1-@0*0.948338)/(1-0.948338))) lam
+resp_SS_LL_Low_np_PF rateParam SS_LL_Low np_PF (((1-@0*0.948338)/(1-0.948338))*((1-@1*0.074605)/(1-0.074605))) lam,k_Low
+resp_SS_LL_Low_np_FP rateParam SS_LL_Low np_FP (((1-@0*0.124601)/(1-0.124601))*((1-@1*0.948338)/(1-0.948338))) k_Low,lam
+resp_SS_LL_Low_np_FF rateParam SS_LL_Low np_FF (((1-@0*0.032684)/(1-0.032684))*((1-@0*0.176855)/(1-0.176855))) k_Low
+resp_SS_TT_High_prompt rateParam SS_TT_High prompt (@0*@0) lam
+resp_SS_TT_High_np_PF rateParam SS_TT_High np_PF (@0*(@1*@2)) lam,k_Low,tau
+resp_SS_TT_High_np_FP rateParam SS_TT_High np_FP ((@0*@1)*@2) k_Low,tau,lam
+resp_SS_TT_High_np_FF rateParam SS_TT_High np_FF ((@0*@1)*(@0*@1)) k_Low,tau
+resp_SS_TL_High_prompt rateParam SS_TL_High prompt (@0*((1-@0*0.944262)/(1-0.944262))) lam
+resp_SS_TL_High_np_PF rateParam SS_TL_High np_PF (@0*((1-(@1*@2)*0.065245)/(1-0.065245))) lam,k_Low,tau
+resp_SS_TL_High_np_FP rateParam SS_TL_High np_FP ((@0*@1)*((1-@2*0.944262)/(1-0.944262))) k_Low,tau,lam
+resp_SS_TL_High_np_FF rateParam SS_TL_High np_FF ((@0*@1)*((1-(@0*@1)*0.000059)/(1-0.000059))) k_Low,tau
+resp_SS_LT_High_prompt rateParam SS_LT_High prompt (((1-@0*0.944262)/(1-0.944262))*@0) lam
+resp_SS_LT_High_np_PF rateParam SS_LT_High np_PF (((1-@0*0.944262)/(1-0.944262))*(@1*@2)) lam,k_Low,tau
+resp_SS_LT_High_np_FP rateParam SS_LT_High np_FP (((1-(@0*@1)*0.159748)/(1-0.159748))*@2) k_Low,tau,lam
+resp_SS_LT_High_np_FF rateParam SS_LT_High np_FF (((1-(@0*@1)*0.264860)/(1-0.264860))*(@0*@1)) k_Low,tau
+resp_SS_LL_High_prompt rateParam SS_LL_High prompt (((1-@0*0.944262)/(1-0.944262))*((1-@0*0.944262)/(1-0.944262))) lam
+resp_SS_LL_High_np_PF rateParam SS_LL_High np_PF (((1-@0*0.944262)/(1-0.944262))*((1-(@1*@2)*0.065245)/(1-0.065245))) lam,k_Low,tau
+resp_SS_LL_High_np_FP rateParam SS_LL_High np_FP (((1-(@0*@1)*0.159748)/(1-0.159748))*((1-@2*0.944262)/(1-0.944262))) k_Low,tau,lam
+resp_SS_LL_High_np_FF rateParam SS_LL_High np_FF (((1-(@0*@1)*0.264860)/(1-0.264860))*((1-(@0*@1)*0.000059)/(1-0.000059))) k_Low,tau
+* autoMCStats 10

@@ -1,0 +1,8 @@
+# DY CR mumu SS, FO baseline, iso-TT. map mll 60-300 MC, |eta| [0, 0.8, 1.5, 2.0, 2.4], L<0.4, k=1.27
+# map f per |eta| bin: 0.166 0.204 0.247 0.305
+mlljj before: MC nonprompt      data 82  bkg 77.6 ± 2.6(stat)  Others 14.8  Nonprompt 43.9  TT+tW 13.9  DY 5.0
+mlljj after: data-driven fake   data 82  bkg 75.8 ± 4.7(stat)  Others 14.4  Fake (data) 56.8  Nonprompt 0.9  TT+tW 0.3  DY 3.5  (fake stat ±4.6)
+lead_pt before: MC nonprompt      data 82  bkg 78.0 ± 2.6(stat)  Others 14.8  Nonprompt 44.3  TT+tW 13.9  DY 5.0
+lead_pt after: data-driven fake   data 82  bkg 75.9 ± 4.7(stat)  Others 14.4  Fake (data) 56.8  Nonprompt 0.9  TT+tW 0.3  DY 3.6  (fake stat ±4.6)
+sub_pt before: MC nonprompt      data 82  bkg 78.0 ± 2.6(stat)  Others 14.8  Nonprompt 44.3  TT+tW 13.9  DY 5.0
+sub_pt after: data-driven fake   data 82  bkg 75.9 ± 4.7(stat)  Others 14.4  Fake (data) 56.8  Nonprompt 0.9  TT+tW 0.3  DY 3.6  (fake stat ±4.6)

@@ -1,0 +1,49 @@
+ <<< Combine >>> 
+ <<< v10.5.1 >>>
+>>> Random number generator seed is 123456
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 0.5
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 1
+>>> Method used is MultiDimFit
+Set Range of Parameter JES_2024 To : (-1,9)
+Set Default Value of Parameter r To : 0
+Set Default Value of Parameter mask_bEESR To : 1
+Set Default Value of Parameter mask_rEESR_OS To : 1
+Set Default Value of Parameter mask_rEESR_SS To : 1
+Set Default Value of Parameter mask_bDYEECR To : 1
+Set Default Value of Parameter mask_rDYEECR_OS To : 1
+Set Default Value of Parameter mask_rDYEECR_SS To : 1
+Set Default Value of Parameter mask_bDYMuMuCR To : 1
+Set Default Value of Parameter mask_rDYMuMuCR_OS To : 1
+Set Default Value of Parameter mask_rDYMuMuCR_SS To : 1
+Set Default Value of Parameter mask_bFlvEMuCR To : 1
+Set Default Value of Parameter mask_bFlvMuECR To : 1
+Set Default Value of Parameter mask_rFlvCR To : 0
+Set Default Value of Parameter R_DY_Boosted_2024 To : 1
+Set Default Value of Parameter R_DY_Resolved_2024 To : 1
+Set Default Value of Parameter R_TT_Boosted_EE_2024 To : 1
+Set Default Value of Parameter R_TT_Boosted_MuMu_2024 To : 1
+>>> 11 out of 12 channels masked
+
+Doing initial fit: 
+ POI: JES_2024= 7.23403 -> [-1,9]
+Point 0/51 JES_2024 = 2.23529
+Point 1/51 JES_2024 = 2.03922
+Point 2/51 JES_2024 = 1.84314
+Point 3/51 JES_2024 = 1.64706
+RooAbsMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (0.285526) to force MIGRAD to back out of this region. Error log follows.
+Parameter values: 	AlphaS_2024=-2.25301e-14	BoostedDYReshapeBin1=-2.25301e-14	BoostedDYReshapeBin2=-2.25301e-14	BoostedDYReshapeBin3=-2.25301e-14	CMS_lumi_2024=2.41156	DYNonFlipNorm_2024=-2.25313e-14	ElectronID_2024=1.5156	ElectronReco_2024=2.02498	ElectronRes_2024=-0.0649454	ElectronScale_2024=0.607205	ElectronTrig_2024=-2.46092e-14	FatJetJER_2024=-2.46092e-14	FatJetJES_2024=-2.46092e-14	FlipClosure_2024=-2.46092e-14	FlipPstat_2024=-2.46092e-14	FlipSF_barrel_2024=-2.46092e-14	FlipSF_endcap_2024=-2.46092e-14	JER_2024=-0.0465168	LSF_2024=6.00762e-14	MuonID_2024=0.605449	MuonIso_2024=0.50654	MuonReco_2024=0.65644	MuonScale_2024=-0.00375954	MuonTrig_2024=0.931826	NonPromptNorm_EE_Boosted_2024=5.9865e-14	NonPromptNorm_EE_Resolved_2024=5.9865e-14	NonPromptNorm_MM_Boosted_2024=5.9865e-14	NonPromptNorm_MM_Resolved_2024=5.9865e-14	NonPromptNorm_Resolved_2024=14.4364	OthersNorm_2024=397.054	Pileup_2024=-0.0679527	R_TT_Resolved_2024=0.882436	ResolvedDYReshapeBin1=0.00565459	ResolvedDYReshapeBin2=0.00832272	ResolvedDYReshapeBin3=0.00640782	ResolvedDYReshapeBin4=0.00294046	ResolvedDYReshapeBin5=0.000359585	ResolvedDYReshapeBin6=0.000154934	ScaleWeight_muF_2024=5.75838e-14	ScaleWeight_muR_2024=5.75838e-14	TTNonFlipNorm_2024=5.75838e-14	ZPtRwEW1=-4.68477e-06	ZPtRwEW2=0.00288563	ZPtRwEW3=-4.19825e-06	ZPtRwQCDPDFAlphaS=-0.00114776	ZPtRwQCDPDFError=-0.00400125	ZPtRwQCDScale=0.00180523	ZPtRw_MC_stat=0.00229356	prop_binbDYEECR_bin0=5.75838e-14	prop_binbDYEECR_bin1=5.75838e-14	prop_binbDYEECR_bin2=5.75838e-14	prop_binbDYEECR_bin3=5.75838e-14	prop_binbDYEECR_bin4=5.75838e-14	prop_binbDYMuMuCR_bin0=5.75838e-14	prop_binbDYMuMuCR_bin1=5.75838e-14	prop_binbDYMuMuCR_bin2=5.75838e-14	prop_binbDYMuMuCR_bin3=5.75838e-14	prop_binbDYMuMuCR_bin4=5.75838e-14	prop_binbEESR_bin0=5.75838e-14	prop_binbEESR_bin1=5.75838e-14	prop_binbEESR_bin2=5.75838e-14	prop_binbEESR_bin3=5.75838e-14	prop_binbEESR_bin4=5.75838e-14	prop_binbEESR_bin5_DYJets=8	prop_binbEESR_bin5_Nonprompt=2	prop_binbEESR_bin5_Others=6	prop_binbEESR_bin5_TT=2	prop_binbEESR_bin5_WR5000N2500EE=5.75838e-14	prop_binbFlvEMuCR_bin0=5.75838e-14	prop_binbFlvEMuCR_bin1=5.75838e-14	prop_binbFlvEMuCR_bin2=5.75838e-14	prop_binbFlvEMuCR_bin3=5.75838e-14	prop_binbFlvEMuCR_bin4=5.75838e-14	prop_binbFlvMuECR_bin0=5.75838e-14	prop_binbFlvMuECR_bin1=5.75838e-14	prop_binbFlvMuECR_bin2=5.75838e-14	prop_binbFlvMuECR_bin3=5.75838e-14	prop_binbFlvMuECR_bin4=5.75838e-14	prop_binrDYEECR_OS_bin0=5.75838e-14	prop_binrDYEECR_OS_bin1=5.75838e-14	prop_binrDYEECR_OS_bin2=5.75838e-14	prop_binrDYEECR_OS_bin3=5.75838e-14	prop_binrDYEECR_OS_bin4=5.75838e-14	prop_binrDYEECR_OS_bin5=5.75838e-14	prop_binrDYEECR_OS_bin6=5.75838e-14	prop_binrDYEECR_OS_bin7=5.75838e-14	prop_binrDYEECR_OS_bin8=5.75838e-14	prop_binrDYEECR_SS_bin0=5.75838e-14	prop_binrDYEECR_SS_bin1=5.75838e-14	prop_binrDYEECR_SS_bin2=5.75838e-14	prop_binrDYEECR_SS_bin3=5.75838e-14	prop_binrDYEECR_SS_bin4=5.75838e-14	prop_binrDYEECR_SS_bin5=5.75838e-14	prop_binrDYEECR_SS_bin6=5.75838e-14	prop_binrDYEECR_SS_bin7=5.75838e-14	prop_binrDYEECR_SS_bin8=5.75838e-14	prop_binrDYMuMuCR_OS_bin0=5.75838e-14	prop_binrDYMuMuCR_OS_bin1=5.75838e-14	prop_binrDYMuMuCR_OS_bin2=5.75838e-14	prop_binrDYMuMuCR_OS_bin3=5.75838e-14	prop_binrDYMuMuCR_OS_bin4=5.75838e-14	prop_binrDYMuMuCR_OS_bin5=5.75838e-14	prop_binrDYMuMuCR_OS_bin6=5.75838e-14	prop_binrDYMuMuCR_OS_bin7=5.75838e-14	prop_binrDYMuMuCR_OS_bin8=5.75838e-14	prop_binrDYMuMuCR_SS_bin0=5.75838e-14	prop_binrDYMuMuCR_SS_bin1=5.75838e-14	prop_binrDYMuMuCR_SS_bin2=5.75838e-14	prop_binrDYMuMuCR_SS_bin3=5.75838e-14	prop_binrDYMuMuCR_SS_bin4=5.75838e-14	prop_binrDYMuMuCR_SS_bin5=5.75838e-14	prop_binrDYMuMuCR_SS_bin6=5.75838e-14	prop_binrDYMuMuCR_SS_bin7=5.75838e-14	prop_binrDYMuMuCR_SS_bin8=5.75838e-14	prop_binrEESR_OS_bin0=5.75838e-14	prop_binrEESR_OS_bin1=5.75838e-14	prop_binrEESR_OS_bin10=5.75838e-14	prop_binrEESR_OS_bin11_DYJets=5.75838e-14	prop_binrEESR_OS_bin11_Others=2	prop_binrEESR_OS_bin11_TT=1	prop_binrEESR_OS_bin11_WR5000N2500EE=5.75838e-14	prop_binrEESR_OS_bin2=5.75838e-14	prop_binrEESR_OS_bin3=5.75838e-14	prop_binrEESR_OS_bin4=5.75838e-14	prop_binrEESR_OS_bin5=5.75838e-14	prop_binrEESR_OS_bin6=5.75838e-14	prop_binrEESR_OS_bin7=5.75838e-14	prop_binrEESR_OS_bin8=5.75838e-14	prop_binrEESR_OS_bin9=5.75838e-14	prop_binrEESR_SS_bin0=5.75838e-14	prop_binrEESR_SS_bin1=5.75838e-14	prop_binrEESR_SS_bin2=5.75838e-14	prop_binrEESR_SS_bin3=5.75838e-14	prop_binrEESR_SS_bin4=5.75838e-14	prop_binrEESR_SS_bin5=5.75838e-14	prop_binrEESR_SS_bin6=5.75838e-14	prop_binrEESR_SS_bin7_DYJets=2	prop_binrEESR_SS_bin7_Flip=6	prop_binrEESR_SS_bin7_Nonprompt=1	prop_binrEESR_SS_bin7_Others=5.75838e-14	prop_binrEESR_SS_bin7_TT=1	prop_binrEESR_SS_bin7_WR5000N2500EE=5.75838e-14	prop_binrEESR_SS_bin8_DYJets=3	prop_binrEESR_SS_bin8_Flip=8	prop_binrEESR_SS_bin8_Nonprompt=1	prop_binrEESR_SS_bin8_Others=5.75838e-14	prop_binrEESR_SS_bin8_WR5000N2500EE=5.75838e-14
+
+Point 4/51 JES_2024 = 1.45098
+Point 5/51 JES_2024 = 1.2549
+Point 6/51 JES_2024 = 1.05882
+Point 7/51 JES_2024 = 0.862745
+Point 8/51 JES_2024 = 0.666667
+Point 9/51 JES_2024 = 0.470588
+Point 10/51 JES_2024 = 0.27451
+Point 11/51 JES_2024 = 0.0784314
+Point 12/51 JES_2024 = -0.117647
+Point 13/51 JES_2024 = -0.313725
+Point 14/51 JES_2024 = -0.509804
+Point 15/51 JES_2024 = -0.705882
+Point 16/51 JES_2024 = -0.901961

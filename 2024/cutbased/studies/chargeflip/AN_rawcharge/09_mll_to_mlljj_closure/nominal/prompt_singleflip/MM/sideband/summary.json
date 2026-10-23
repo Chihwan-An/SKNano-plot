@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "mlljj": {
+    "status": "empty"
+  },
+  "mlljj_before": {
+    "status": "empty"
+  },
+  "mll": {
+    "status": "empty"
+  },
+  "training_mll_bins": [
+    [
+      150.0,
+      400.0
+    ]
+  ],
+  "training_neff_ss": [
+    2.145404602956249
+  ],
+  "factors": [
+    3.4187422158252434e-06
+  ],
+  "factor_errors": [
+    2.334120579088036e-06
+  ],
+  "mlljj_bins": []
+}

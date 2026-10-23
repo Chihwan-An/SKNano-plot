@@ -1,0 +1,25 @@
+=== job Resolve_sig_EE (no copy) ===
+=== start Mon Sep 14 09:34:56 PM KST 2026 ===
+==============================================================================
+>> job Resolve_sig_EE   region=Resolve/sig   channel=EE   flavour=EE
+>> outdir out/Resolve/sig_chargesign
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav_SRChargeSplit_plot/2024
+>> Channel EE: 118 MC, 16 Data files
+   DYJets      25 : DYto2L-4Jets_Bin-HT-100to400-MLL-120_p00, DYto2L-4Jets_Bin-HT-100to400-MLL-120_p01, DYto2L-4Jets_Bin-HT-100to400-MLL-120_p02, DYto2L-4Jets_Bin-HT-100to400-MLL-120_p03, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120_p00, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120_p01, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120_p02, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120_p03, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120_p00, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120_p01, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120_p00, DYto2L-4Jets_Bin-HT-2500-MLL-120_p00, DYto2L-4Jets_Bin-HT-2500-MLL-120_p01, DYto2L-4Jets_Bin-HT-2500-MLL-50to120_p00, DYto2L-4Jets_Bin-HT-400to800-MLL-120_p00, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120_p00, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120_p01, DYto2L-4Jets_Bin-HT-40to70-MLL-120_p00, DYto2L-4Jets_Bin-HT-40to70-MLL-120_p01, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120_p00, DYto2L-4Jets_Bin-HT-70to100-MLL-120_p01, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120_p00, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120_p00
+   TT          25 : TTto2L2Nu_TuneCP5_p00, TTto2L2Nu_TuneCP5_p01, TTto2L2Nu_TuneCP5_p02, TTto2L2Nu_TuneCP5_p03, TTto2L2Nu_TuneCP5_p04, TTto2L2Nu_TuneCP5_p05, TTto2L2Nu_TuneCP5_p06, TTto2L2Nu_TuneCP5_p07, TTto2L2Nu_TuneCP5_p08, TTto2L2Nu_TuneCP5_p09, TTto2L2Nu_TuneCP5_p10, TTto2L2Nu_TuneCP5_p11, TTto2L2Nu_TuneCP5_p12, TTto2L2Nu_TuneCP5_p13, TTto2L2Nu_TuneCP5_p14, TTto2L2Nu_TuneCP5_p15, TTto2L2Nu_TuneCP5_p16, TTto2L2Nu_TuneCP5_p17, TWminusto2L2Nu_p00, TWminusto2L2Nu_p01, TWminusto2L2Nu_p02, TWminustoLNu2Q_p00, TbarWplusto2L2Nu_p00, TbarWplusto2L2Nu_p01, TbarWplustoLNu2Q_p00
+   Nonprompt   41 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q_p00, TTtoLNu2Q_p01, TTtoLNu2Q_p02, TTtoLNu2Q_p03, TTtoLNu2Q_p04, TTtoLNu2Q_p05, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200_p00, WtoLNu-4Jets_Bin-MLNu-120to200_p01, WtoLNu-4Jets_Bin-MLNu-120to200_p02, WtoLNu-4Jets_Bin-MLNu-120to200_p03, WtoLNu-4Jets_Bin-MLNu-120to200_p04, WtoLNu-4Jets_Bin-MLNu-120to200_p05, WtoLNu-4Jets_Bin-MLNu-120to200_p06, WtoLNu-4Jets_Bin-MLNu-120to200_p07, WtoLNu-4Jets_Bin-MLNu-120to200_p08, WtoLNu-4Jets_Bin-MLNu-120to200_p09, WtoLNu-4Jets_Bin-MLNu-120to200_p10, WtoLNu-4Jets_Bin-MLNu-120to200_p11, WtoLNu-4Jets_Bin-MLNu-120to200_p12, WtoLNu-4Jets_Bin-MLNu-120to200_p13, WtoLNu-4Jets_Bin-MLNu-120to200_p14, WtoLNu-4Jets_Bin-MLNu-120to200_p15, WtoLNu-4Jets_Bin-MLNu-120to200_p16, WtoLNu-4Jets_Bin-MLNu-120to200_p17, WtoLNu-4Jets_Bin-MLNu-120to200_p18, WtoLNu-4Jets_Bin-MLNu-120to200_p19, WtoLNu-4Jets_Bin-MLNu-1500to2500_p00, WtoLNu-4Jets_Bin-MLNu-1500to2500_p01, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000_p00, WtoLNu-4Jets_Bin-MLNu-4000to6000_p00, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000_p00, WtoLNu-4Jets_Bin-MLNu-6000_p01, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      27 : TTLL_Bin-MLL-4to50_p00, TTLL_Bin-MLL-50_p00, TTLNu-EWK_p00, WWto2L2Nu_p00, WWto2L2Nu_p01, WWto2L2Nu_p02, WWto2L2Nu_p03, WWto2L2Nu_p04, WWtoLNu2Q_p00, WWtoLNu2Q_p01, WZto2L2Q_p00, WZto2L2Q_p01, WZto2L2Q_p02, WZto3LNu_p00, WZto3LNu_p01, WZto3LNu_p02, WZto3LNu_p03, WZto3LNu_p04, WZto3LNu_p05, WZtoLNu2Q_p00, ZZto2L2Q_p00, ZZto2L2Q_p01, ZZto4L_p00, ZZto4L_p01, ZZto4L_p02, ZZto4L_p03, ZZto4L_p04
+   -- 시그널 8개 제외 (config.SIGNAL_GLOBS)
+   !! SAMPLE_RULES 에 안 걸려 Others 로 넣은 파일 1개: TTLNu-EWK_p00
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=0.2 TeV, m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=6 TeV, m_{N}=0.2 TeV, m_{W_{R}}=6 TeV, m_{N}=3 TeV
+>> Systematics: 31 requested, 118 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(25/118), ResolvedDYReshapeBin2(25/118), ResolvedDYReshapeBin3(25/118), ResolvedDYReshapeBin4(25/118), ResolvedDYReshapeBin5(25/118), ResolvedDYReshapeBin6(25/118), BoostedDYReshapeBin1(25/118), BoostedDYReshapeBin2(25/118), BoostedDYReshapeBin3(25/118)   <- DY 전용이면 정상
+>> 4 plots from specs/chargesign/Resolve_sig_EE.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_sig_EE: 4/4 plots, 0.8 min (12.4 s/plot)
+==============================================================================
+=== end Mon Sep 14 09:35:53 PM KST 2026 ===
+=== exit 0 ===

@@ -1,0 +1,32 @@
+==  60-400
+OS: data  185715   MC  235661.0   data/MC  0.788   DYJets 187047.0  TT  43027.9  Nonprompt    352.8  Others   5233.2
+SS: data    4420   MC    3321.8   data/MC  1.331   DYJets   2329.3  TT    470.5  Nonprompt    284.5  Others    237.6
+Inclusive: data  190135   MC  238982.8   data/MC  0.796   DYJets 189376.3  TT  43498.4  Nonprompt    637.3  Others   5470.8
+==  60-150
+OS: data  151089   MC  195018.8   data/MC  0.775   DYJets 176764.0  TT  13578.2  Nonprompt    174.6  Others   4502.0
+SS: data    3049   MC    2480.0   data/MC  1.229   DYJets   2129.3  TT    118.6  Nonprompt    112.7  Others    119.4
+Inclusive: data  154138   MC  197498.8   data/MC  0.780   DYJets 178893.3  TT  13696.9  Nonprompt    287.2  Others   4621.5
+==  150-200
+OS: data   16490   MC   19183.1   data/MC  0.860   DYJets   5475.1  TT  13315.8  Nonprompt     80.1  Others    312.1
+SS: data     557   MC     359.1   data/MC  1.551   DYJets     93.2  TT    132.2  Nonprompt     83.6  Others     50.1
+Inclusive: data   17047   MC   19542.2   data/MC  0.872   DYJets   5568.3  TT  13448.0  Nonprompt    163.6  Others    362.3
+==  200-400
+OS: data   18136   MC   21459.0   data/MC  0.845   DYJets   4807.9  TT  16133.9  Nonprompt     98.2  Others    419.0
+SS: data     814   MC     482.7   data/MC  1.686   DYJets    106.8  TT    219.6  Nonprompt     88.3  Others     68.0
+Inclusive: data   18950   MC   21941.7   data/MC  0.864   DYJets   4914.7  TT  16353.6  Nonprompt    186.4  Others    487.0
+== _MM 60-400
+OS: data  270316   MC  331873.6   data/MC  0.815   DYJets 265955.3  TT  58081.6  Nonprompt    742.3  Others   7094.4
+SS: data    1292   MC    1206.3   data/MC  1.071   DYJets     54.8  TT    166.5  Nonprompt    791.4  Others    193.7
+Inclusive: data  271608   MC  333079.9   data/MC  0.815   DYJets 266010.0  TT  58248.2  Nonprompt   1533.7  Others   7288.1
+== _MM 60-150
+OS: data  220547   MC  276881.2   data/MC  0.797   DYJets 251811.5  TT  18435.7  Nonprompt    492.0  Others   6141.9
+SS: data     491   MC     484.4   data/MC  1.014   DYJets     29.7  TT     66.6  Nonprompt    313.0  Others     75.1
+Inclusive: data  221038   MC  277365.5   data/MC  0.797   DYJets 251841.2  TT  18502.2  Nonprompt    805.1  Others   6217.0
+== _MM 150-200
+OS: data   23556   MC   26029.5   data/MC  0.905   DYJets   7593.7  TT  17908.9  Nonprompt    120.2  Others    406.8
+SS: data     402   MC     351.9   data/MC  1.142   DYJets     14.5  TT     47.5  Nonprompt    238.4  Others     51.5
+Inclusive: data   23958   MC   26381.4   data/MC  0.908   DYJets   7608.2  TT  17956.4  Nonprompt    358.5  Others    458.3
+== _MM 200-400
+OS: data   26213   MC   28963.0   data/MC  0.905   DYJets   6550.1  TT  21737.1  Nonprompt    130.1  Others    545.7
+SS: data     399   MC     370.1   data/MC  1.078   DYJets     10.5  TT     52.5  Nonprompt    240.0  Others     67.1
+Inclusive: data   26612   MC   29333.0   data/MC  0.907   DYJets   6560.6  TT  21789.5  Nonprompt    370.1  Others    612.8

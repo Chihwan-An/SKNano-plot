@@ -1,0 +1,762 @@
+08/28/26 20:52:04 ******************************************************
+08/28/26 20:52:04 ** condor_scheduniv_exec.18026309.0 (CONDOR_DAGMAN) STARTING UP
+08/28/26 20:52:04 ** /usr/bin/condor_dagman
+08/28/26 20:52:04 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+08/28/26 20:52:04 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+08/28/26 20:52:04 ** $CondorVersion: 24.0.14 2025-10-31 BuildID: 847283 PackageID: 24.0.14-1 GitSHA: 2c5be6a1 $
+08/28/26 20:52:04 ** $CondorPlatform: x86_64_AlmaLinux9 $
+08/28/26 20:52:04 ** PID = 1027088 RealUID = 5596
+08/28/26 20:52:04 ** Log last touched time unavailable (No such file or directory)
+08/28/26 20:52:04 ******************************************************
+08/28/26 20:52:04 Using config source: /etc/condor/condor_config
+08/28/26 20:52:04 Using local config sources: 
+08/28/26 20:52:04    /etc/condor/config.d/00-security
+08/28/26 20:52:04    /etc/condor/config.d/10-stash-plugin.conf
+08/28/26 20:52:04    /etc/condor/config.d/concurrency.config
+08/28/26 20:52:04    /etc/condor/config.d/tamsa2master.config
+08/28/26 20:52:04    /etc/condor/condor_config.local
+08/28/26 20:52:04 config Macros = 1114, Sorted = 1114, StringBytes = 38872, TablesBytes = 40176
+08/28/26 20:52:04 CLASSAD_CACHING is ENABLED
+08/28/26 20:52:04 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+08/28/26 20:52:04 DaemonCore: No command port requested.
+08/28/26 20:52:04 DAGMAN_USE_STRICT setting: 1
+08/28/26 20:52:04 DAGMAN_VERBOSITY setting: 3
+08/28/26 20:52:04 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+08/28/26 20:52:04 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+08/28/26 20:52:04 DAGMAN_SUBMIT_DELAY setting: 0
+08/28/26 20:52:04 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+08/28/26 20:52:04 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+08/28/26 20:52:04 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+08/28/26 20:52:04 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+08/28/26 20:52:04 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+08/28/26 20:52:04 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+08/28/26 20:52:04 DAGMAN_DEFAULT_PRIORITY setting: 0
+08/28/26 20:52:04 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+08/28/26 20:52:04 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+08/28/26 20:52:04 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+08/28/26 20:52:04 DAGMAN_RETRY_NODE_FIRST setting: False
+08/28/26 20:52:04 DAGMAN_MAX_JOBS_IDLE setting: 1000
+08/28/26 20:52:04 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+08/28/26 20:52:04 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+08/28/26 20:52:04 DAGMAN_MAX_POST_SCRIPTS setting: 20
+08/28/26 20:52:04 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+08/28/26 20:52:04 DAGMAN_MUNGE_NODE_NAMES setting: True
+08/28/26 20:52:04 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+08/28/26 20:52:04 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+08/28/26 20:52:04 DAGMAN_ALWAYS_RUN_POST setting: False
+08/28/26 20:52:04 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+08/28/26 20:52:04 DAGMAN_CONDOR_RM_EXE setting: /usr/bin/condor_rm
+08/28/26 20:52:04 DAGMAN_USE_DIRECT_SUBMIT setting: True
+08/28/26 20:52:04 DAGMAN_PRODUCE_JOB_CREDENTIALS setting: True
+08/28/26 20:52:04 DAGMAN_DEFAULT_APPEND_VARS setting: False
+08/28/26 20:52:04 DAGMAN_INHERIT_ATTRS_PREFIX setting: 
+08/28/26 20:52:04 DAGMAN_INHERIT_ATTRS setting: 
+08/28/26 20:52:04 DAGMAN_ABORT_DUPLICATES setting: True
+08/28/26 20:52:04 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+08/28/26 20:52:04 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+08/28/26 20:52:04 DAGMAN_CHECK_QUEUE_INTERVAL setting: 28800
+08/28/26 20:52:04 DAGMAN_AUTO_RESCUE setting: True
+08/28/26 20:52:04 DAGMAN_MAX_RESCUE_NUM setting: 100
+08/28/26 20:52:04 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+08/28/26 20:52:04 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+08/28/26 20:52:04 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+08/28/26 20:52:04 DAGMAN_MAX_JOB_HOLDS setting: 100
+08/28/26 20:52:04 DAGMAN_HOLD_CLAIM_TIME setting: 20
+08/28/26 20:52:04 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+08/28/26 20:52:04 DAGMAN_REMOVE_NODE_JOBS setting: True
+08/28/26 20:52:04 DAGMAN_REMOVE_JOBS_AFTER_LIMIT_CHANGE setting: False
+08/28/26 20:52:04 DAGMAN will adjust edges after parsing
+08/28/26 20:52:04 argv[0] == "condor_scheduniv_exec.18026309.0"
+08/28/26 20:52:04 argv[1] == "-Lockfile"
+08/28/26 20:52:04 argv[2] == "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag.lock"
+08/28/26 20:52:04 argv[3] == "-Dag"
+08/28/26 20:52:04 argv[4] == "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag"
+08/28/26 20:52:04 argv[5] == "-CsdVersion"
+08/28/26 20:52:04 argv[6] == "$CondorVersion: 24.0.14 2025-10-31 BuildID: 847283 PackageID: 24.0.14-1 GitSHA: 2c5be6a1 $"
+08/28/26 20:52:04 argv[7] == "-dagman"
+08/28/26 20:52:04 argv[8] == "/usr/bin/condor_dagman"
+08/28/26 20:52:04 argv[9] == "-AutoRescue"
+08/28/26 20:52:04 argv[10] == "1"
+08/28/26 20:52:04 argv[11] == "-DoRescueFrom"
+08/28/26 20:52:04 argv[12] == "0"
+08/28/26 20:52:04 argv[13] == "-force"
+08/28/26 20:52:04 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+08/28/26 20:52:04 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+08/28/26 20:52:04 Workflow batch-id: <18026309.0>
+08/28/26 20:52:04 Workflow batch-name: <plotter.dag+18026309>
+08/28/26 20:52:04 Workflow accounting_group: <>
+08/28/26 20:52:04 Workflow accounting_group_user: <>
+08/28/26 20:52:04 Warning: failed to get attribute DAGNodeName
+08/28/26 20:52:04 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+08/28/26 20:52:04 Default node log file is: </data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag.nodes.log>
+08/28/26 20:52:04 DAG Lockfile will be written to /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag.lock
+08/28/26 20:52:04 DAG Input file is /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag
+08/28/26 20:52:04 Parsing 1 dagfiles
+08/28/26 20:52:04 Parsing /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag ...
+08/28/26 20:52:04 Adjusting edges
+08/28/26 20:52:04 Dag contains 20 total nodes
+08/28/26 20:52:04 Bootstrapping...
+08/28/26 20:52:04 Number of pre-completed nodes: 0
+08/28/26 20:52:04 MultiLogFiles: truncating log file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag.nodes.log
+08/28/26 20:52:04 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:52:04 Of 20 nodes total:
+08/28/26 20:52:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:52:04   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:52:04     0       0        0       0      19          1        0        0
+08/28/26 20:52:04 0 job proc(s) currently held
+08/28/26 20:52:04 DAGMan Runtime Statistics: [EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+08/28/26 20:52:04 Registering condor_event_timer...
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DY_EE job(s)...
+08/28/26 20:52:05 Submitting node Boost_DY_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026310.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DY_MM job(s)...
+08/28/26 20:52:05 Submitting node Boost_DY_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026311.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DYCR1_EE job(s)...
+08/28/26 20:52:05 Submitting node Boost_DYCR1_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026312.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DYCR1_MM job(s)...
+08/28/26 20:52:05 Submitting node Boost_DYCR1_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026313.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DYCR2_EE job(s)...
+08/28/26 20:52:05 Submitting node Boost_DYCR2_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026314.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_DYCR2_MM job(s)...
+08/28/26 20:52:05 Submitting node Boost_DYCR2_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026315.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_FLV_EMJ job(s)...
+08/28/26 20:52:05 Submitting node Boost_FLV_EMJ from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026316.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_FLV_MEJ job(s)...
+08/28/26 20:52:05 Submitting node Boost_FLV_MEJ from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026317.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_sig_EE job(s)...
+08/28/26 20:52:05 Submitting node Boost_sig_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026318.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Boost_sig_MM job(s)...
+08/28/26 20:52:05 Submitting node Boost_sig_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026319.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DY_EE job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DY_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026320.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DY_MM job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DY_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026321.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DYCR1_EE job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DYCR1_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026322.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DYCR1_MM job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DYCR1_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026323.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DYCR2_EE job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DYCR2_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026324.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_DYCR2_MM job(s)...
+08/28/26 20:52:05 Submitting node Resolve_DYCR2_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026325.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_FLV_EM job(s)...
+08/28/26 20:52:05 Submitting node Resolve_FLV_EM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026326.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_sig_EE job(s)...
+08/28/26 20:52:05 Submitting node Resolve_sig_EE from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026327.0.0)
+08/28/26 20:52:05 Submitting HTCondor Node Resolve_sig_MM job(s)...
+08/28/26 20:52:05 Submitting node Resolve_sig_MM from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:52:05 	assigned HTCondor ID (18026328.0.0)
+08/28/26 20:52:05 Just submitted 19 jobs this cycle...
+08/28/26 20:52:05 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:52:05 Of 20 nodes total:
+08/28/26 20:52:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:52:05   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:52:05     0       0       19       0       0          1        0        0
+08/28/26 20:52:05 0 job proc(s) currently held
+08/28/26 20:52:05 DAGMan Runtime Statistics: [EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.4050741195678711; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 0.4050741195678711; SubmitCycleTimeStd = 0.4050741195678711; SubmitCycleTimeSum = 0.4050741195678711; ]
+08/28/26 20:52:10 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:52:10 Reassigning the id of job Boost_DY_EE from (18026310.0.0) to (18026310.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 1
+08/28/26 20:52:10 Reassigning the id of job Boost_DY_MM from (18026311.0.0) to (18026311.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 2
+08/28/26 20:52:10 Reassigning the id of job Boost_DYCR1_EE from (18026312.0.0) to (18026312.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 3
+08/28/26 20:52:10 Reassigning the id of job Boost_DYCR1_MM from (18026313.0.0) to (18026313.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 4
+08/28/26 20:52:10 Reassigning the id of job Boost_DYCR2_EE from (18026314.0.0) to (18026314.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 5
+08/28/26 20:52:10 Reassigning the id of job Boost_DYCR2_MM from (18026315.0.0) to (18026315.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 6
+08/28/26 20:52:10 Reassigning the id of job Boost_FLV_EMJ from (18026316.0.0) to (18026316.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 7
+08/28/26 20:52:10 Reassigning the id of job Boost_FLV_MEJ from (18026317.0.0) to (18026317.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 8
+08/28/26 20:52:10 Reassigning the id of job Boost_sig_EE from (18026318.0.0) to (18026318.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 9
+08/28/26 20:52:10 Reassigning the id of job Boost_sig_MM from (18026319.0.0) to (18026319.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 10
+08/28/26 20:52:10 Reassigning the id of job Resolve_DY_EE from (18026320.0.0) to (18026320.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 11
+08/28/26 20:52:10 Reassigning the id of job Resolve_DY_MM from (18026321.0.0) to (18026321.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 12
+08/28/26 20:52:10 Reassigning the id of job Resolve_DYCR1_EE from (18026322.0.0) to (18026322.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 13
+08/28/26 20:52:10 Reassigning the id of job Resolve_DYCR1_MM from (18026323.0.0) to (18026323.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 14
+08/28/26 20:52:10 Reassigning the id of job Resolve_DYCR2_EE from (18026324.0.0) to (18026324.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 15
+08/28/26 20:52:10 Reassigning the id of job Resolve_DYCR2_MM from (18026325.0.0) to (18026325.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 16
+08/28/26 20:52:10 Reassigning the id of job Resolve_FLV_EM from (18026326.0.0) to (18026326.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 17
+08/28/26 20:52:10 Reassigning the id of job Resolve_sig_EE from (18026327.0.0) to (18026327.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 18
+08/28/26 20:52:10 Reassigning the id of job Resolve_sig_MM from (18026328.0.0) to (18026328.0.0)
+08/28/26 20:52:10 Event: ULOG_SUBMIT for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:52:05}
+08/28/26 20:52:10 Number of idle job procs: 19
+08/28/26 20:52:30 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 18
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 17
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 16
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 15
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 14
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 13
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 12
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 11
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 10
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 9
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 8
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 7
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 6
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 5
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 4
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 3
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 2
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 1
+08/28/26 20:52:30 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:52:26}
+08/28/26 20:52:30 Number of idle job procs: 0
+08/28/26 20:53:00 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 1
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 2
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 3
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 4
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 5
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 6
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 7
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_58@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4082 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_60@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4082 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_48@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4080 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_50@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_51@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_59@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4080 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 8
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 9
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 10
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_42@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 10
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_62@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4080 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 10
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_53@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4082 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 10
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00   Hold reason: Error from slot1_61@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4082 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 10
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:52:57}
+08/28/26 20:53:00 Number of idle job procs: 11
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 12
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 13
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 14
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 15
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 16
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 17
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 18
+08/28/26 20:53:00 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_44@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_46@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4081 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_47@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_49@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_55@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_56@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4079 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_57@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4080 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_54@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4083 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 Event: ULOG_JOB_HELD for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:52:58}
+08/28/26 20:53:00   Hold reason: Error from slot1_45@node-w20.localdomain: Job has gone over cgroup memory limit of 4096 megabytes. Last measured usage: 4082 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:00 Number of idle job procs: 19
+08/28/26 20:53:00 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:53:00 Of 20 nodes total:
+08/28/26 20:53:00  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:53:00   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:53:00     0       0       19       0       0          1        0        0
+08/28/26 20:53:00 19 job proc(s) currently held
+08/28/26 20:53:00 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.0559150522405451; EventCycleTimeCount = 11.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.796287536621094E-05; EventCycleTimeStd = 0.1267577421363308; EventCycleTimeSum = 0.6150655746459961; LogProcessCycleTimeAvg = 0.09664710362752278; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.05398011207580566; LogProcessCycleTimeStd = 0.04618860967468849; LogProcessCycleTimeSum = 0.2899413108825684; SleepCycleTimeAvg = 5.005147132006559; SleepCycleTimeCount = 11.0; SleepCycleTimeMax = 5.005289077758789; SleepCycleTimeMin = 5.005120992660522; SleepCycleTimeStd = 4.793363879074281E-05; SleepCycleTimeSum = 55.05661845207214; SubmitCycleTimeAvg = 0.03377264738082886; SubmitCycleTimeCount = 12.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.1169296392463135; SubmitCycleTimeSum = 0.4052717685699463; ]
+08/28/26 20:53:10 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:10 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:53:10}
+08/28/26 20:53:10 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:53:10}
+08/28/26 20:53:10 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:53:10}
+08/28/26 20:53:10 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:53:10 Of 20 nodes total:
+08/28/26 20:53:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:53:10   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:53:10     0       0       19       0       0          1        0        0
+08/28/26 20:53:10 16 job proc(s) currently held
+08/28/26 20:53:10 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.0548100471496582; EventCycleTimeCount = 13.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.1174371570025784; EventCycleTimeSum = 0.7125306129455566; LogProcessCycleTimeAvg = 0.07378208637237549; LogProcessCycleTimeCount = 4.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.05927473744156572; LogProcessCycleTimeSum = 0.295128345489502; SleepCycleTimeAvg = 5.005152023755587; SleepCycleTimeCount = 13.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003548702308113318; SleepCycleTimeSum = 65.06697630882263; SubmitCycleTimeAvg = 0.02895006111689976; SubmitCycleTimeCount = 14.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.1082559510861583; SubmitCycleTimeSum = 0.4053008556365967; ]
+08/28/26 20:53:15 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Number of idle job procs: 18
+08/28/26 20:53:15 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Number of idle job procs: 17
+08/28/26 20:53:15 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Number of idle job procs: 16
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:53:11}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:53:12}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:53:12}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:53:12}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:53:12}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:53:12}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:15 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:16 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:53:13}
+08/28/26 20:53:16 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:53:16 Of 20 nodes total:
+08/28/26 20:53:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:53:16   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:53:16     0       0       19       0       0          1        0        0
+08/28/26 20:53:16 0 job proc(s) currently held
+08/28/26 20:53:16 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.05178262506212507; EventCycleTimeCount = 14.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.1133971617866454; EventCycleTimeSum = 0.724956750869751; LogProcessCycleTimeAvg = 0.06392030715942383; LogProcessCycleTimeCount = 5.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.05586943994976092; LogProcessCycleTimeSum = 0.3196015357971191; SleepCycleTimeAvg = 5.005150590624128; SleepCycleTimeCount = 14.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003409904545151108; SleepCycleTimeSum = 70.07210826873779; SubmitCycleTimeAvg = 0.02702099482218424; SubmitCycleTimeCount = 15.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.1045852470523341; SubmitCycleTimeSum = 0.4053149223327637; ]
+08/28/26 20:53:36 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 15
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 14
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 13
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 12
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 11
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 10
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 9
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 8
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 7
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 6
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 5
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 4
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 3
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 2
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 1
+08/28/26 20:53:36 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:53:33}
+08/28/26 20:53:36 Number of idle job procs: 0
+08/28/26 20:53:51 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:51 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DYCR1_EE (18026312.0.0) {08/28/26 20:53:48}
+08/28/26 20:53:51 Number of idle job procs: 0
+08/28/26 20:53:51 Node Boost_DYCR1_EE job proc (18026312.0.0) completed successfully.
+08/28/26 20:53:51 Node Boost_DYCR1_EE job completed
+08/28/26 20:53:51 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:53:51 Of 20 nodes total:
+08/28/26 20:53:51  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:53:51   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:53:51     1       0       18       0       0          1        0        0
+08/28/26 20:53:51 0 job proc(s) currently held
+08/28/26 20:53:51 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03770875930786133; EventCycleTimeCount = 21.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.09409107481647809; EventCycleTimeSum = 0.7918839454650879; LogProcessCycleTimeAvg = 0.05161734989711216; LogProcessCycleTimeCount = 7.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.05085421585573096; LogProcessCycleTimeSum = 0.3613214492797852; SleepCycleTimeAvg = 5.005134196508498; SleepCycleTimeCount = 21.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.000278309255929218; SleepCycleTimeSum = 105.1078181266785; SubmitCycleTimeAvg = 0.01842936602505771; SubmitCycleTimeCount = 22.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.08635831670774054; SubmitCycleTimeSum = 0.4054460525512695; ]
+08/28/26 20:53:56 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:53:56 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:53:51}
+08/28/26 20:53:56 Number of idle job procs: 1
+08/28/26 20:53:56 Event: ULOG_JOB_HELD for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:53:51}
+08/28/26 20:53:56   Hold reason: Error from slot1_44@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6125 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:56 Number of idle job procs: 1
+08/28/26 20:53:56 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:53:51}
+08/28/26 20:53:56 Number of idle job procs: 2
+08/28/26 20:53:56 Event: ULOG_JOB_HELD for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:53:52}
+08/28/26 20:53:56   Hold reason: Error from slot1_42@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6125 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:53:56 Number of idle job procs: 2
+08/28/26 20:53:56 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:53:56 Of 20 nodes total:
+08/28/26 20:53:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:53:56   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:53:56     1       0       18       0       0          1        0        0
+08/28/26 20:53:56 2 job proc(s) currently held
+08/28/26 20:53:56 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03666103969920765; EventCycleTimeCount = 22.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.09195489374822716; EventCycleTimeSum = 0.8065428733825684; LogProcessCycleTimeAvg = 0.04658457636833191; LogProcessCycleTimeCount = 8.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04918670108846086; LogProcessCycleTimeSum = 0.3726766109466553; SleepCycleTimeAvg = 5.005134235728871; SleepCycleTimeCount = 22.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002716020729943759; SleepCycleTimeSum = 110.1129531860352; SubmitCycleTimeAvg = 0.01762869047081989; SubmitCycleTimeCount = 23.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.08446013672844259; SubmitCycleTimeSum = 0.4054598808288574; ]
+08/28/26 20:54:01 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DYCR1_EE (18026322.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Resolve_DYCR1_EE job proc (18026322.0.0) completed successfully.
+08/28/26 20:54:01 Node Resolve_DYCR1_EE job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DYCR1_MM (18026313.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Boost_DYCR1_MM job proc (18026313.0.0) completed successfully.
+08/28/26 20:54:01 Node Boost_DYCR1_MM job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DYCR2_EE (18026314.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Boost_DYCR2_EE job proc (18026314.0.0) completed successfully.
+08/28/26 20:54:01 Node Boost_DYCR2_EE job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DYCR2_MM (18026315.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Boost_DYCR2_MM job proc (18026315.0.0) completed successfully.
+08/28/26 20:54:01 Node Boost_DYCR2_MM job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DYCR1_MM (18026323.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Resolve_DYCR1_MM job proc (18026323.0.0) completed successfully.
+08/28/26 20:54:01 Node Resolve_DYCR1_MM job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DYCR2_EE (18026324.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Resolve_DYCR2_EE job proc (18026324.0.0) completed successfully.
+08/28/26 20:54:01 Node Resolve_DYCR2_EE job completed
+08/28/26 20:54:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DYCR2_MM (18026325.0.0) {08/28/26 20:54:00}
+08/28/26 20:54:01 Number of idle job procs: 2
+08/28/26 20:54:01 Node Resolve_DYCR2_MM job proc (18026325.0.0) completed successfully.
+08/28/26 20:54:01 Node Resolve_DYCR2_MM job completed
+08/28/26 20:54:01 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:01 Of 20 nodes total:
+08/28/26 20:54:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:01   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:01     8       0       11       0       0          1        0        0
+08/28/26 20:54:01 2 job proc(s) currently held
+08/28/26 20:54:01 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03586103605187457; EventCycleTimeCount = 23.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.08992259174172838; EventCycleTimeSum = 0.8248038291931152; LogProcessCycleTimeAvg = 0.04468483395046658; LogProcessCycleTimeCount = 9.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04636158226115701; LogProcessCycleTimeSum = 0.4021635055541992; SleepCycleTimeAvg = 5.00513365994329; SleepCycleTimeCount = 23.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002653718839087522; SleepCycleTimeSum = 115.1180741786957; SubmitCycleTimeAvg = 0.01689474781354268; SubmitCycleTimeCount = 24.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.0826818602057889; SubmitCycleTimeSum = 0.4054739475250244; ]
+08/28/26 20:54:06 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:06 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:54:01}
+08/28/26 20:54:06 Number of idle job procs: 3
+08/28/26 20:54:06 Event: ULOG_JOB_HELD for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:54:01}
+08/28/26 20:54:06   Hold reason: Error from slot1_50@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6126 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:06 Number of idle job procs: 3
+08/28/26 20:54:06 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:54:03}
+08/28/26 20:54:06 Number of idle job procs: 4
+08/28/26 20:54:06 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:54:03}
+08/28/26 20:54:06   Hold reason: Error from slot1_55@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:06 Number of idle job procs: 4
+08/28/26 20:54:06 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:54:03}
+08/28/26 20:54:06 Number of idle job procs: 5
+08/28/26 20:54:06 Event: ULOG_JOB_HELD for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:54:03}
+08/28/26 20:54:06   Hold reason: Error from slot1_53@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:06 Number of idle job procs: 5
+08/28/26 20:54:06 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:54:04}
+08/28/26 20:54:06 Number of idle job procs: 6
+08/28/26 20:54:06 Event: ULOG_JOB_HELD for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:54:04}
+08/28/26 20:54:06   Hold reason: Error from slot1_62@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6126 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:06 Number of idle job procs: 6
+08/28/26 20:54:06 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:54:05}
+08/28/26 20:54:06 Number of idle job procs: 7
+08/28/26 20:54:06 Event: ULOG_JOB_HELD for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:54:05}
+08/28/26 20:54:06   Hold reason: Error from slot1_61@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6126 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:06 Number of idle job procs: 7
+08/28/26 20:54:06 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:06 Of 20 nodes total:
+08/28/26 20:54:06  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:06   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:06     8       0       11       0       0          1        0        0
+08/28/26 20:54:06 7 job proc(s) currently held
+08/28/26 20:54:06 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03585328658421835; EventCycleTimeCount = 24.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.08794603787007706; EventCycleTimeSum = 0.8604788780212402; LogProcessCycleTimeAvg = 0.04307425022125244; LogProcessCycleTimeCount = 10.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04400584389658702; LogProcessCycleTimeSum = 0.4307425022125244; SleepCycleTimeAvg = 5.005169630050659; SleepCycleTimeCount = 24.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003137080871262606; SleepCycleTimeSum = 120.1240711212158; SubmitCycleTimeAvg = 0.01621959686279297; SubmitCycleTimeCount = 25.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.08101135914354854; SubmitCycleTimeSum = 0.4054899215698242; ]
+08/28/26 20:54:11 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:11 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:54:06}
+08/28/26 20:54:11 Number of idle job procs: 8
+08/28/26 20:54:11 Event: ULOG_JOB_HELD for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:54:06}
+08/28/26 20:54:11   Hold reason: Error from slot1_60@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:11 Number of idle job procs: 8
+08/28/26 20:54:11 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:54:08}
+08/28/26 20:54:11 Number of idle job procs: 9
+08/28/26 20:54:11 Event: ULOG_JOB_HELD for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:54:08}
+08/28/26 20:54:11   Hold reason: Error from slot1_51@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:11 Number of idle job procs: 9
+08/28/26 20:54:11 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:11 Of 20 nodes total:
+08/28/26 20:54:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:11   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:11     8       0       11       0       0          1        0        0
+08/28/26 20:54:11 9 job proc(s) currently held
+08/28/26 20:54:11 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03586331367492676; EventCycleTimeCount = 25.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.08609434955267692; EventCycleTimeSum = 0.8965828418731689; LogProcessCycleTimeAvg = 0.04028433019464666; LogProcessCycleTimeCount = 11.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04276076541233942; LogProcessCycleTimeSum = 0.4431276321411133; SleepCycleTimeAvg = 5.005155649185181; SleepCycleTimeCount = 25.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003149584856051822; SleepCycleTimeSum = 125.1288912296295; SubmitCycleTimeAvg = 0.01559634392078106; SubmitCycleTimeCount = 26.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.07943819136817314; SubmitCycleTimeSum = 0.4055049419403076; ]
+08/28/26 20:54:16 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:54:14}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:54:14}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:54:15}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:54:15}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:54:15}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:54:15}
+08/28/26 20:54:16 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:16 Number of idle job procs: 8
+08/28/26 20:54:16 Event: ULOG_EXECUTE for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:16 Number of idle job procs: 7
+08/28/26 20:54:16 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:16 Number of idle job procs: 6
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:16 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:16 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:16 Of 20 nodes total:
+08/28/26 20:54:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:16   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:16     8       0       11       0       0          1        0        0
+08/28/26 20:54:16 1 job proc(s) currently held
+08/28/26 20:54:16 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.03525499197152945; EventCycleTimeCount = 26.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.08441190071055153; EventCycleTimeSum = 0.9166297912597656; LogProcessCycleTimeAvg = 0.03834706544876099; LogProcessCycleTimeCount = 12.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04131940539737322; LogProcessCycleTimeSum = 0.4601647853851318; SleepCycleTimeAvg = 5.005154389601487; SleepCycleTimeCount = 26.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003086618527340992; SleepCycleTimeSum = 130.1340141296387; SubmitCycleTimeAvg = 0.01501925786336263; SubmitCycleTimeCount = 27.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.07795325080189568; SubmitCycleTimeSum = 0.405519962310791; ]
+08/28/26 20:54:21 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:21 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:54:16}
+08/28/26 20:54:21 Event: ULOG_JOB_EVICTED for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:54:18}
+08/28/26 20:54:21 Number of idle job procs: 7
+08/28/26 20:54:21 Event: ULOG_JOB_HELD for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:54:18}
+08/28/26 20:54:21   Hold reason: Error from slot1_54@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:21 Number of idle job procs: 7
+08/28/26 20:54:21 Event: ULOG_JOB_EVICTED for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:54:18}
+08/28/26 20:54:21 Number of idle job procs: 8
+08/28/26 20:54:21 Event: ULOG_JOB_HELD for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:54:18}
+08/28/26 20:54:21   Hold reason: Error from slot1_49@node-w20.localdomain: Job has gone over cgroup memory limit of 6144 megabytes. Last measured usage: 6127 megabytes.  Consider resubmitting with a higher request_memory.
+08/28/26 20:54:21 Number of idle job procs: 8
+08/28/26 20:54:21 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:21 Of 20 nodes total:
+08/28/26 20:54:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:21   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:21     8       0       11       0       0          1        0        0
+08/28/26 20:54:21 2 job proc(s) currently held
+08/28/26 20:54:21 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.0348396654482241; EventCycleTimeCount = 27.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 7.414817810058594E-05; EventCycleTimeStd = 0.0828008075063083; EventCycleTimeSum = 0.9406709671020508; LogProcessCycleTimeAvg = 0.03634544519277719; LogProcessCycleTimeCount = 13.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.04021322060341485; LogProcessCycleTimeSum = 0.4724907875061035; SleepCycleTimeAvg = 5.005158486189665; SleepCycleTimeCount = 27.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003034154621372982; SleepCycleTimeSum = 135.139279127121; SubmitCycleTimeAvg = 0.01448335817881993; SubmitCycleTimeCount = 28.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.0765485942391947; SubmitCycleTimeSum = 0.405534029006958; ]
+08/28/26 20:54:41 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 7
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 6
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 5
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 4
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 3
+08/28/26 20:54:41 Event: ULOG_EXECUTE for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:54:36}
+08/28/26 20:54:41 Number of idle job procs: 2
+08/28/26 20:54:51 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:54:51 Event: ULOG_JOB_RELEASED for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:54:46}
+08/28/26 20:54:51 Event: ULOG_JOB_RELEASED for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:54:47}
+08/28/26 20:54:51 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:54:51 Of 20 nodes total:
+08/28/26 20:54:51  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:54:51   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:54:51     8       0       11       0       0          1        0        0
+08/28/26 20:54:51 0 job proc(s) currently held
+08/28/26 20:54:51 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02954410061691747; EventCycleTimeCount = 33.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.07558338231192309; EventCycleTimeSum = 0.9749553203582764; LogProcessCycleTimeAvg = 0.03283611933390299; LogProcessCycleTimeCount = 15.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03839635823902079; LogProcessCycleTimeSum = 0.4925417900085449; SleepCycleTimeAvg = 5.005140412937511; SleepCycleTimeCount = 33.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.000285156961894353; SleepCycleTimeSum = 165.1696336269379; SubmitCycleTimeAvg = 0.01192996782415053; SubmitCycleTimeCount = 34.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.06946680739078094; SubmitCycleTimeSum = 0.4056189060211182; ]
+08/28/26 20:55:01 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:01 Event: ULOG_EXECUTE for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:54:56}
+08/28/26 20:55:01 Number of idle job procs: 1
+08/28/26 20:55:01 Event: ULOG_EXECUTE for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:54:56}
+08/28/26 20:55:01 Number of idle job procs: 0
+08/28/26 20:55:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DY_MM (18026311.0.0) {08/28/26 20:55:00}
+08/28/26 20:55:01 Number of idle job procs: 0
+08/28/26 20:55:01 Node Boost_DY_MM job proc (18026311.0.0) completed successfully.
+08/28/26 20:55:01 Node Boost_DY_MM job completed
+08/28/26 20:55:01 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_DY_EE (18026310.0.0) {08/28/26 20:55:01}
+08/28/26 20:55:01 Number of idle job procs: 0
+08/28/26 20:55:01 Node Boost_DY_EE job proc (18026310.0.0) completed successfully.
+08/28/26 20:55:01 Node Boost_DY_EE job completed
+08/28/26 20:55:01 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:01 Of 20 nodes total:
+08/28/26 20:55:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:01   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:01    10       0        9       0       0          1        0        0
+08/28/26 20:55:01 0 job proc(s) currently held
+08/28/26 20:55:01 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02826140948704311; EventCycleTimeCount = 35.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.07353667993317708; EventCycleTimeSum = 0.9891493320465088; LogProcessCycleTimeAvg = 0.03166329860687256; LogProcessCycleTimeCount = 16.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03738987973068791; LogProcessCycleTimeSum = 0.5066127777099609; SleepCycleTimeAvg = 5.005139705113002; SleepCycleTimeCount = 35.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002766586970441484; SleepCycleTimeSum = 175.1798896789551; SubmitCycleTimeAvg = 0.01126799980799357; SubmitCycleTimeCount = 36.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.06750962074764834; SubmitCycleTimeSum = 0.4056479930877686; ]
+08/28/26 20:55:06 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:06 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DY_MM (18026321.0.0) {08/28/26 20:55:01}
+08/28/26 20:55:06 Number of idle job procs: 0
+08/28/26 20:55:06 Node Resolve_DY_MM job proc (18026321.0.0) completed successfully.
+08/28/26 20:55:06 Node Resolve_DY_MM job completed
+08/28/26 20:55:06 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_sig_MM (18026319.0.0) {08/28/26 20:55:06}
+08/28/26 20:55:06 Number of idle job procs: 0
+08/28/26 20:55:06 Node Boost_sig_MM job proc (18026319.0.0) completed successfully.
+08/28/26 20:55:06 Node Boost_sig_MM job completed
+08/28/26 20:55:06 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:06 Of 20 nodes total:
+08/28/26 20:55:06  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:06   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:06    12       0        7       0       0          1        0        0
+08/28/26 20:55:06 0 job proc(s) currently held
+08/28/26 20:55:06 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02805831697252062; EventCycleTimeCount = 36.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.0724887858770932; EventCycleTimeSum = 1.010099411010742; LogProcessCycleTimeAvg = 0.03041176234974581; LogProcessCycleTimeCount = 17.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03656850753288201; LogProcessCycleTimeSum = 0.5169999599456787; SleepCycleTimeAvg = 5.005160821808709; SleepCycleTimeCount = 36.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0003006760915950764; SleepCycleTimeSum = 180.1857895851135; SubmitCycleTimeAvg = 0.0109638652286014; SubmitCycleTimeCount = 37.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.066591085989678; SubmitCycleTimeSum = 0.405663013458252; ]
+08/28/26 20:55:11 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:11 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_sig_EE (18026318.0.0) {08/28/26 20:55:07}
+08/28/26 20:55:11 Number of idle job procs: 0
+08/28/26 20:55:11 Node Boost_sig_EE job proc (18026318.0.0) completed successfully.
+08/28/26 20:55:11 Node Boost_sig_EE job completed
+08/28/26 20:55:11 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_FLV_EM (18026326.0.0) {08/28/26 20:55:07}
+08/28/26 20:55:11 Number of idle job procs: 0
+08/28/26 20:55:11 Node Resolve_FLV_EM job proc (18026326.0.0) completed successfully.
+08/28/26 20:55:11 Node Resolve_FLV_EM job completed
+08/28/26 20:55:11 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_sig_EE (18026327.0.0) {08/28/26 20:55:09}
+08/28/26 20:55:11 Number of idle job procs: 0
+08/28/26 20:55:11 Node Resolve_sig_EE job proc (18026327.0.0) completed successfully.
+08/28/26 20:55:11 Node Resolve_sig_EE job completed
+08/28/26 20:55:11 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_FLV_MEJ (18026317.0.0) {08/28/26 20:55:09}
+08/28/26 20:55:11 Number of idle job procs: 0
+08/28/26 20:55:11 Node Boost_FLV_MEJ job proc (18026317.0.0) completed successfully.
+08/28/26 20:55:11 Node Boost_FLV_MEJ job completed
+08/28/26 20:55:11 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_sig_MM (18026328.0.0) {08/28/26 20:55:09}
+08/28/26 20:55:11 Number of idle job procs: 0
+08/28/26 20:55:11 Node Resolve_sig_MM job proc (18026328.0.0) completed successfully.
+08/28/26 20:55:11 Node Resolve_sig_MM job completed
+08/28/26 20:55:11 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:11 Of 20 nodes total:
+08/28/26 20:55:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:11   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:11    17       0        2       0       0          1        0        0
+08/28/26 20:55:11 0 job proc(s) currently held
+08/28/26 20:55:11 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02779398737726985; EventCycleTimeCount = 37.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.07149298911770767; EventCycleTimeSum = 1.028377532958984; LogProcessCycleTimeAvg = 0.03004815843370226; LogProcessCycleTimeCount = 18.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03551018700573152; LogProcessCycleTimeSum = 0.5408668518066406; SleepCycleTimeAvg = 5.005159983763823; SleepCycleTimeCount = 37.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002965144483541133; SleepCycleTimeSum = 185.1909193992615; SubmitCycleTimeAvg = 0.01067573773233514; SubmitCycleTimeCount = 38.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.0657090517724177; SubmitCycleTimeSum = 0.4056780338287354; ]
+08/28/26 20:55:36 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:36 Event: ULOG_JOB_TERMINATED for HTCondor Node Resolve_DY_EE (18026320.0.0) {08/28/26 20:55:32}
+08/28/26 20:55:36 Number of idle job procs: 0
+08/28/26 20:55:36 Node Resolve_DY_EE job proc (18026320.0.0) completed successfully.
+08/28/26 20:55:36 Node Resolve_DY_EE job completed
+08/28/26 20:55:36 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:36 Of 20 nodes total:
+08/28/26 20:55:36  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:36   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:36    18       0        1       0       0          1        0        0
+08/28/26 20:55:36 0 job proc(s) currently held
+08/28/26 20:55:36 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02523472195579892; EventCycleTimeCount = 42.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06750082635667164; EventCycleTimeSum = 1.059858322143555; LogProcessCycleTimeAvg = 0.02885514811465615; LogProcessCycleTimeCount = 19.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03489930519731516; LogProcessCycleTimeSum = 0.5482478141784668; SleepCycleTimeAvg = 5.005156443232582; SleepCycleTimeCount = 42.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002780300240606854; SleepCycleTimeSum = 210.2165706157684; SubmitCycleTimeAvg = 0.00943609725597293; SubmitCycleTimeCount = 43.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.06177076232489831; SubmitCycleTimeSum = 0.4057521820068359; ]
+08/28/26 20:55:41 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:41 Event: ULOG_JOB_TERMINATED for HTCondor Node Boost_FLV_EMJ (18026316.0.0) {08/28/26 20:55:39}
+08/28/26 20:55:41 Number of idle job procs: 0
+08/28/26 20:55:41 Node Boost_FLV_EMJ job proc (18026316.0.0) completed successfully.
+08/28/26 20:55:41 Node Boost_FLV_EMJ job completed
+08/28/26 20:55:41 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:41 Of 20 nodes total:
+08/28/26 20:55:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:41   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:41    19       0        0       0       1          0        0        0
+08/28/26 20:55:41 0 job proc(s) currently held
+08/28/26 20:55:41 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02499396301979242; EventCycleTimeCount = 43.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06671108790163874; EventCycleTimeSum = 1.074740409851074; LogProcessCycleTimeAvg = 0.02771773338317871; LogProcessCycleTimeCount = 20.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03434723441078695; LogProcessCycleTimeSum = 0.5543546676635742; SleepCycleTimeAvg = 5.005155807317689; SleepCycleTimeCount = 43.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002747318515039069; SleepCycleTimeSum = 215.2216997146606; SubmitCycleTimeAvg = 0.009221981872211803; SubmitCycleTimeCount = 44.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.06106479151070088; SubmitCycleTimeSum = 0.4057672023773193; ]
+08/28/26 20:55:46 Submitting HTCondor Node organize job(s)...
+08/28/26 20:55:46 Submitting node organize from file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/condor_plotter.sub using direct job submission
+08/28/26 20:55:46 	assigned HTCondor ID (18026329.0.0)
+08/28/26 20:55:46 Just submitted 1 job this cycle...
+08/28/26 20:55:46 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:46 Of 20 nodes total:
+08/28/26 20:55:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:46   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:46    19       0        1       0       0          0        0        0
+08/28/26 20:55:46 0 job proc(s) currently held
+08/28/26 20:55:46 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02471866390921853; EventCycleTimeCount = 44.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06595609927939244; EventCycleTimeSum = 1.087621212005615; LogProcessCycleTimeAvg = 0.02771773338317871; LogProcessCycleTimeCount = 20.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03434723441078695; LogProcessCycleTimeSum = 0.5543546676635742; SleepCycleTimeAvg = 5.005155357447538; SleepCycleTimeCount = 44.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002715349001921521; SleepCycleTimeSum = 220.2268357276917; SubmitCycleTimeAvg = 0.00959418084886339; SubmitCycleTimeCount = 45.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.06041849699678585; SubmitCycleTimeSum = 0.4317381381988525; ]
+08/28/26 20:55:51 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:51 Reassigning the id of job organize from (18026329.0.0) to (18026329.0.0)
+08/28/26 20:55:51 Event: ULOG_SUBMIT for HTCondor Node organize (18026329.0.0) {08/28/26 20:55:46}
+08/28/26 20:55:51 Number of idle job procs: 1
+08/28/26 20:55:51 Event: ULOG_EXECUTE for HTCondor Node organize (18026329.0.0) {08/28/26 20:55:47}
+08/28/26 20:55:51 Number of idle job procs: 0
+08/28/26 20:55:56 Currently monitoring 1 HTCondor log file(s)
+08/28/26 20:55:56 Event: ULOG_JOB_TERMINATED for HTCondor Node organize (18026329.0.0) {08/28/26 20:55:54}
+08/28/26 20:55:56 Number of idle job procs: 0
+08/28/26 20:55:56 Node organize job proc (18026329.0.0) completed successfully.
+08/28/26 20:55:56 Node organize job completed
+08/28/26 20:55:56 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:56 Of 20 nodes total:
+08/28/26 20:55:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:56   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:56    20       0        0       0       0          0        0        0
+08/28/26 20:55:56 0 job proc(s) currently held
+08/28/26 20:55:56 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02453417881675388; EventCycleTimeCount = 46.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06454242464700506; EventCycleTimeSum = 1.128572225570679; LogProcessCycleTimeAvg = 0.02575289119373668; LogProcessCycleTimeCount = 22.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03328411791471406; LogProcessCycleTimeSum = 0.566563606262207; SleepCycleTimeAvg = 5.005153930705527; SleepCycleTimeCount = 46.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002655189455738645; SleepCycleTimeSum = 230.2370808124542; SubmitCycleTimeAvg = 0.009186617871548267; SubmitCycleTimeCount = 47.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.05912275899939731; SubmitCycleTimeSum = 0.4317710399627686; ]
+08/28/26 20:55:56 All jobs Completed!
+08/28/26 20:55:56 Note: 0 total node deferrals because of -MaxJobs limit (0)
+08/28/26 20:55:56 Note: 0 total node deferrals because of -MaxIdle limit (1000)
+08/28/26 20:55:56 Note: 0 total node deferrals because of node category throttles
+08/28/26 20:55:56 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+08/28/26 20:55:56 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+08/28/26 20:55:56 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+08/28/26 20:55:56 DAG status: 0 (DAG_STATUS_OK)
+08/28/26 20:55:56 Of 20 nodes total:
+08/28/26 20:55:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+08/28/26 20:55:56   ===     ===      ===     ===     ===        ===      ===      ===
+08/28/26 20:55:56    20       0        0       0       0          0        0        0
+08/28/26 20:55:56 0 job proc(s) currently held
+08/28/26 20:55:56 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02453417881675388; EventCycleTimeCount = 46.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06454242464700506; EventCycleTimeSum = 1.128572225570679; LogProcessCycleTimeAvg = 0.02575289119373668; LogProcessCycleTimeCount = 22.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03328411791471406; LogProcessCycleTimeSum = 0.566563606262207; SleepCycleTimeAvg = 5.005153930705527; SleepCycleTimeCount = 46.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002655189455738645; SleepCycleTimeSum = 230.2370808124542; SubmitCycleTimeAvg = 0.009186617871548267; SubmitCycleTimeCount = 47.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.05912275899939731; SubmitCycleTimeSum = 0.4317710399627686; ]
+08/28/26 20:55:56 Wrote metrics file /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/plotter.dag.metrics.
+08/28/26 20:55:56 DAGMan Runtime Statistics: [EventCycleTimeAvg = 0.02453417881675388; EventCycleTimeCount = 46.0; EventCycleTimeMax = 0.4131569862365723; EventCycleTimeMin = 6.508827209472656E-05; EventCycleTimeStd = 0.06454242464700506; EventCycleTimeSum = 1.128572225570679; LogProcessCycleTimeAvg = 0.02575289119373668; LogProcessCycleTimeCount = 22.0; LogProcessCycleTimeMax = 0.1456940174102783; LogProcessCycleTimeMin = 0.005187034606933594; LogProcessCycleTimeStd = 0.03328411791471406; LogProcessCycleTimeSum = 0.566563606262207; SleepCycleTimeAvg = 5.005153930705527; SleepCycleTimeCount = 46.0; SleepCycleTimeMax = 5.006041049957275; SleepCycleTimeMin = 5.004316806793213; SleepCycleTimeStd = 0.0002655189455738645; SleepCycleTimeSum = 230.2370808124542; SubmitCycleTimeAvg = 0.009186617871548267; SubmitCycleTimeCount = 47.0; SubmitCycleTimeMax = 0.4050741195678711; SubmitCycleTimeMin = 1.382827758789062E-05; SubmitCycleTimeStd = 0.05912275899939731; SubmitCycleTimeSum = 0.4317710399627686; ]
+08/28/26 20:55:56 **** condor_scheduniv_exec.18026309.0 (condor_DAGMAN) pid 1027088 EXITING WITH STATUS 0

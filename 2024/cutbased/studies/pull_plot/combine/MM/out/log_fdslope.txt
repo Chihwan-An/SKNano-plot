@@ -1,0 +1,23 @@
+ <<< Combine >>> 
+ <<< v10.5.1 >>>
+>>> Random number generator seed is 123456
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 0.5
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 1
+>>> Method used is FitDiagnostics
+Set Range of Parameter JES_2024 To : (-4,8)
+Set Default Value of Parameter r To : 0
+Set Default Value of Parameter mask_bMuMuSR To : 0
+Set Default Value of Parameter mask_rMuMuSR_OS To : 0
+Set Default Value of Parameter mask_rMuMuSR_SS To : 0
+Set Default Value of Parameter mask_bDYEECR To : 0
+Set Default Value of Parameter mask_rDYEECR_OS To : 0
+Set Default Value of Parameter mask_rDYEECR_SS To : 0
+Set Default Value of Parameter mask_bDYMuMuCR To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_OS To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_SS To : 0
+Set Default Value of Parameter mask_bFlvEMuCR To : 0
+Set Default Value of Parameter mask_bFlvMuECR To : 0
+Set Default Value of Parameter mask_rFlvCR To : 0
+>>> 0 out of 12 channels masked
+
+[WARNING]: Unable to determine uncertainties on all fit parameters in b-only fit. Have a look at https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/#fit-parameter-uncertainties for more information.

@@ -1,0 +1,1 @@
+--hist DYCR_Resolved_MM_SS_mlljj --ymin 1 --output ResolveDYMM_SS_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'SS m(lljj) (GeV)' --rmin 0 --rmax 3 --rebin 20

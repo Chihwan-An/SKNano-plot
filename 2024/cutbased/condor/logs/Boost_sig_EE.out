@@ -1,0 +1,123 @@
+=== job Boost_sig_EE ===
+=== start Fri Aug 28 08:54:41 PM KST 2026 ===
+==============================================================================
+>> job Boost_sig_EE   region=Boost/sig   channel=EE   flavour=EE
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav/2024
+>> Channel EE: 44 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   15 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      10 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=4 TeV, m_{N}=0.2 TeV
+>> 입력 62개 5.5 GB -> /var/lib/condor/execute/dir_656686/inputs
+>> 복사 완료 6 s (913 MB/s)
+   복사본 확인: MC 44, Data 16, 시그널 2
+>> Systematics: 31 requested, 44 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/44), ResolvedDYReshapeBin2(14/44), ResolvedDYReshapeBin3(14/44), ResolvedDYReshapeBin4(14/44), ResolvedDYReshapeBin5(14/44), ResolvedDYReshapeBin6(14/44), BoostedDYReshapeBin1(14/44), BoostedDYReshapeBin2(14/44), BoostedDYReshapeBin3(14/44)   <- DY 전용이면 정상
+>> 24 plots from specs/Boost_sig_EE.txt
+==============================================================================
+
+>> SR_Boosted_EE_ll_pt -> BoostSREE_Dilepton_pt  [BLIND]
+   MC        758.8   Data blinded   (160 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/dilepton/Inclusive/BoostSREE_Dilepton_pt_plot.png
+
+>> SR_Boosted_EE_leading_fatjet_pt -> BoostSREE_leading_fatjet_pt  [BLIND]
+   MC        758.8   Data blinded   (6 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_leading_fatjet_pt_plot.png
+
+>> SR_Boosted_EE_mlljj -> BoostSREE_WRMass  [BLIND]
+   MC        758.8   Data blinded   (5 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet_lepton/Inclusive/BoostSREE_WRMass_plot.png
+
+>> SR_Boosted_EE_mlljj -> BoostSREE_WRMass_fine  [BLIND]
+   MC        758.8   Data blinded   (80 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet_lepton/Inclusive/BoostSREE_WRMass_fine_plot.png
+
+>> SR_Boosted_EE_leading_lep_pt -> BoostSREE_leading_lep_pt  [BLIND]
+   MC        758.8   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_leading_lep_pt_plot.png
+
+>> SR_Boosted_EE_subleading_lep_pt -> BoostSREE_subleading_lep_pt  [BLIND]
+   MC        758.8   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_subleading_lep_pt_plot.png
+
+>> SR_Boosted_EE_eta -> BoostSREE_dilepton_eta  [BLIND]
+   MC        757.9   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/dilepton/Inclusive/BoostSREE_dilepton_eta_plot.png
+
+>> SR_Boosted_EE_phi -> BoostSREE_dilepton_phi  [BLIND]
+   MC        758.6   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/dilepton/Inclusive/BoostSREE_dilepton_phi_plot.png
+
+>> SR_Boosted_EE_fatjet_eta -> BoostSREE_fatjet_eta  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_fatjet_eta_plot.png
+
+>> SR_Boosted_EE_fatjet_phi -> BoostSREE_fatjet_phi  [BLIND]
+   MC        758.7   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_fatjet_phi_plot.png
+
+>> SR_Boosted_EE_fatjet_SDM -> BoostSREE_fatjet_SDM  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_fatjet_SDM_plot.png
+
+>> SR_Boosted_EE_mll -> BoostSREE_dilepton_mass  [BLIND]
+   MC        758.8   Data blinded   (400 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/dilepton/Inclusive/BoostSREE_dilepton_mass_plot.png
+
+>> SR_Boosted_EE_WR_pt -> BoostSREE_WR_pt  [BLIND]
+   MC        758.8   Data blinded   (400 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet_lepton/Inclusive/BoostSREE_WR_pt_plot.png
+
+>> SR_Boosted_EE_WR_eta -> BoostSREE_WR_eta  [BLIND]
+   MC        752.0   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet_lepton/Inclusive/BoostSREE_WR_eta_plot.png
+
+>> SR_Boosted_EE_WR_phi -> BoostSREE_WR_phi  [BLIND]
+   MC        758.6   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet_lepton/Inclusive/BoostSREE_WR_phi_plot.png
+
+>> SR_Boosted_EE_leading_lep_eta -> BoostSREE_leading_lep_eta  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_leading_lep_eta_plot.png
+
+>> SR_Boosted_EE_leading_lep_phi -> BoostSREE_leading_lep_phi  [BLIND]
+   MC        758.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_leading_lep_phi_plot.png
+
+>> SR_Boosted_EE_subleading_lep_eta -> BoostSREE_subleading_lep_eta  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_subleading_lep_eta_plot.png
+
+>> SR_Boosted_EE_subleading_lep_phi -> BoostSREE_subleading_lep_phi  [BLIND]
+   MC        758.6   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/lepton/Inclusive/BoostSREE_subleading_lep_phi_plot.png
+
+>> SR_Boosted_EE_fatjet_lsf3 -> BoostSREE_fatjet_lsf3  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_fatjet_lsf3_plot.png
+
+>> SR_Boosted_EE_deltaR_leadlep_fatjet -> BoostSREE_deltaR_leadlep_fatjet  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_deltaR_leadlep_fatjet_plot.png
+
+>> SR_Boosted_EE_dphi_leadlep_fatjet -> BoostSREE_dphi_leadlep_fatjet  [BLIND]
+   MC        758.8   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_dphi_leadlep_fatjet_plot.png
+
+>> SR_Boosted_EE_pvgood -> BoostSREE_punum  [BLIND]
+   MC        758.8   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/pileup/Inclusive/BoostSREE_punum_plot.png
+
+>> SR_Boosted_EE_jetnum -> BoostSREE_jetnum  [BLIND]
+   MC        758.8   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/sig/EE/jet/Inclusive/BoostSREE_jetnum_plot.png
+
+==============================================================================
+>> Boost_sig_EE: 24/24 plots, 0.4 min (0.9 s/plot)
+==============================================================================
+=== end Fri Aug 28 08:55:07 PM KST 2026 ===
+=== exit 0 ===

@@ -1,0 +1,55 @@
+# Boost_FLV / MEJ  (Boost/FLV)
+# label1=#mu e  label2=Boosted FLV CR
+# 한 줄이 플롯 하나. --channel/--outdir/--label1/--label2 는 run_specs.py 가 config 에서 채운다.
+--hist FlavCR_Boosted_MEJ_SS_leading_fatjet_pt --ymin 1e-1 --ymax 3e3 --output BoostFLVMEJ_SS_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel 'Same sign Leading Fat Jet p_{T} (GeV)' --bins 200,400,600,800,1000,2000 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_fatjet_SDM --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_fatjet_SDMass --xmin 0 --xmax 200 --xlabel 'Same sign Fat Jet Soft Drop Mass (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_leading_lep_eta --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'Same sign Leading Lepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_subleading_lep_eta --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'Same sign Subleading Lepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_fatjet_eta --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_fatjet_eta --xmin -2.5 --xmax 2.5 --xlabel 'Same sign Fat Jet #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_fatjet_phi --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_fatjet_phi --xmin -3.14 --xmax 3.14 --xlabel 'Same sign Fat Jet #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_deltaR_leadlep_fatjet --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_deltaR_leadlep_fatjet --xmin 0 --xmax 5 --xlabel 'Same sign #DeltaR(lead lep, fat jet)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_leadlep_lsf --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_leadlep_lsf --xmin 0.74 --xmax 1 --xlabel 'Same sign Lead Lep LSF' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_WR_pt --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_WR_pt --xmin 0 --xmax 1000 --xlabel 'Same sign WR p_{T} (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_mass --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_dilepton_mass --xmin 400 --xmax 2000 --xlabel 'Same sign m(ll) (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_eta --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_dilepton_eta --xmin -5 --xmax 5 --xlabel 'Same sign Dilepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_phi --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_dilepton_phi --xmin -3.14 --xmax 3.14 --xlabel 'Same sign Dilepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_WR_eta --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_WR_eta --xmin -5 --xmax 5 --xlabel 'Same sign WR #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_WR_phi --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_WR_phi --xmin -3.14 --xmax 3.14 --xlabel 'Same sign WR #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_leading_lep_phi --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_leading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'Same sign Leading Lepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_subleading_lep_phi --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_subleading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'Same sign Subleading Lepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_fatjet_lsf3 --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_fatjet_lsf3 --xmin 0.74 --xmax 1 --xlabel 'Same sign Fat Jet LSF3' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_dphi_leadlep_fatjet --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_dphi_leadlep_fatjet --xmin 0 --xmax 3.14 --xlabel 'Same sign #Delta#phi(lead lep, fat jet)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_pvgood --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_punum --xmin 0 --xmax 80 --xlabel 'Same sign Number of Pileup Vertices' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_jetnum --ymin 1e-1 --ymax 1e3 --output BoostFLVMEJ_SS_jetnum --xmin 0 --xmax 5 --xlabel 'Same sign Number of Jets' --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_mlljj --ymin 1 --ymax 2e3 --output BoostFLVMEJ_SS_mlljj --xmin 800 --xmax 4000 --xlabel 'Same sign m(lJ) (GeV)' --rmin 0.7 --rmax 1.3 --bins 800,1000,1200,1500,1800,8000
+--hist FlavCR_Boosted_MEJ_SS_mlljj --ymin 1 --ymax 2e3 --output BoostFLVMEJ_SS_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'Same sign m(lJ) (GeV)' --rmin 0.7 --rmax 1.3 --rebin 100
+--hist FlavCR_Boosted_MEJ_SS_ll_pt --ymin 1 --ymax 1e3 --output BoostFLVMEJ_SS_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'Same sign Dilepton p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_leading_lep_pt --ymin 1 --ymax 1e6 --output BoostFLVMEJ_SS_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'Same sign Leading Lepton p_{T} (GeV)' --bins 50,90,130,170,210,250,290,310,350,390,430,470,510,550,590,630,670,710,750,790,830,870,910,950,1000 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_subleading_lep_pt --ymin 1 --ymax 1e3 --output BoostFLVMEJ_SS_subleading_lep_pt --xmin 0 --xmax 500 --xlabel 'Same sign Subleading Lepton p_{T} (GeV)' --bins 50,70,90,110,130,150,170,190,210,230,250,270,290,310,330,350,370,390,410,430,450,470,490,500 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_SS_fatjet_pt --ymin 1 --ymax 1e3 --output BoostFLVMEJ_SS_fatjet_pt --xmin 0 --xmax 1000 --xlabel 'Same sign Fat Jet p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_leading_fatjet_pt --ymin 1e-1 --ymax 3e3 --output BoostFLVMEJ_OS_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel 'Other sign Leading Fat Jet p_{T} (GeV)' --bins 200,400,600,800,1000,2000 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_fatjet_SDM --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_fatjet_SDMass --xmin 0 --xmax 200 --xlabel 'Other sign Fat Jet Soft Drop Mass (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_leading_lep_eta --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'Other sign Leading Lepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_subleading_lep_eta --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'Other sign Subleading Lepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_fatjet_eta --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_fatjet_eta --xmin -2.5 --xmax 2.5 --xlabel 'Other sign Fat Jet #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_fatjet_phi --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_fatjet_phi --xmin -3.14 --xmax 3.14 --xlabel 'Other sign Fat Jet #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_deltaR_leadlep_fatjet --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_deltaR_leadlep_fatjet --xmin 0 --xmax 5 --xlabel 'Other sign #DeltaR(lead lep, fat jet)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_leadlep_lsf --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_leadlep_lsf --xmin 0.74 --xmax 1 --xlabel 'Other sign Lead Lep LSF' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_WR_pt --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_WR_pt --xmin 0 --xmax 1000 --xlabel 'Other sign WR p_{T} (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_mass --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_dilepton_mass --xmin 400 --xmax 2000 --xlabel 'Other sign m(ll) (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_eta --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_dilepton_eta --xmin -5 --xmax 5 --xlabel 'Other sign Dilepton #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_phi --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_dilepton_phi --xmin -3.14 --xmax 3.14 --xlabel 'Other sign Dilepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_WR_eta --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_WR_eta --xmin -5 --xmax 5 --xlabel 'Other sign WR #eta' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_WR_phi --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_WR_phi --xmin -3.14 --xmax 3.14 --xlabel 'Other sign WR #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_leading_lep_phi --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_leading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'Other sign Leading Lepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_subleading_lep_phi --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_subleading_lep_phi --xmin -3.14 --xmax 3.14 --xlabel 'Other sign Subleading Lepton #phi' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_fatjet_lsf3 --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_fatjet_lsf3 --xmin 0.74 --xmax 1 --xlabel 'Other sign Fat Jet LSF3' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_dphi_leadlep_fatjet --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_dphi_leadlep_fatjet --xmin 0 --xmax 3.14 --xlabel 'Other sign #Delta#phi(lead lep, fat jet)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_pvgood --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_punum --xmin 0 --xmax 80 --xlabel 'Other sign Number of Pileup Vertices' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_jetnum --ymin 1e-1 --ymax 1e5 --output BoostFLVMEJ_OS_jetnum --xmin 0 --xmax 5 --xlabel 'Other sign Number of Jets' --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_mlljj --ymin 1 --ymax 2e3 --output BoostFLVMEJ_OS_mlljj --xmin 800 --xmax 4000 --xlabel 'Other sign m(lJ) (GeV)' --rmin 0.7 --rmax 1.3 --bins 800,1000,1200,1500,1800,8000
+--hist FlavCR_Boosted_MEJ_OS_mlljj --ymin 1 --ymax 2e3 --output BoostFLVMEJ_OS_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'Other sign m(lJ) (GeV)' --rmin 0.7 --rmax 1.3 --rebin 100
+--hist FlavCR_Boosted_MEJ_OS_ll_pt --ymin 1 --ymax 1e5 --output BoostFLVMEJ_OS_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'Other sign Dilepton p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_leading_lep_pt --ymin 1 --ymax 1e6 --output BoostFLVMEJ_OS_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'Other sign Leading Lepton p_{T} (GeV)' --bins 50,90,130,170,210,250,290,310,350,390,430,470,510,550,590,630,670,710,750,790,830,870,910,950,1000 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_subleading_lep_pt --ymin 1 --ymax 1e5 --output BoostFLVMEJ_OS_subleading_lep_pt --xmin 0 --xmax 500 --xlabel 'Other sign Subleading Lepton p_{T} (GeV)' --bins 50,70,90,110,130,150,170,190,210,230,250,270,290,310,330,350,370,390,410,430,450,470,490,500 --rmin 0.7 --rmax 1.3
+--hist FlavCR_Boosted_MEJ_OS_fatjet_pt --ymin 1 --ymax 1e5 --output BoostFLVMEJ_OS_fatjet_pt --xmin 0 --xmax 1000 --xlabel 'Other sign Fat Jet p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3

@@ -1,0 +1,5 @@
+region,flavor,window_lo,window_hi,signal,background,asimov_z
+Boost,EE,5200,6800,0,0.00019301013,0
+Boost,MM,5200,6800,0.49728354,4.092559e-06,3.263384
+Resolve,EE,5200,6800,0,0.018086622,0
+Resolve,MM,5200,6800,0.018315478,0.023526647,0.10747985

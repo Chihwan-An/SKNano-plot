@@ -1,0 +1,81 @@
+--- /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/scripts/cbv15_dc_cards.py.bak_20260919	2026-09-17 22:43:15.196984617 +0900
++++ /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/scripts/cbv15_dc_cards.py	2026-09-19 00:35:08.150599540 +0900
+@@ -46,6 +46,7 @@
+ NO_FLIP = False        # --no-flip-sf: raw-charge SS/OS split, pure MC in the SS categories (no flip SF, no FlipSF nuisance)
+ SRC_MM = None
+ SRC_CR = None
++SRC_OV = None          # --shapes-override: file(s) searched BEFORE --shapes (2026-09-19, e.g. the data-stream-fixed CRs)
+ SRC_B = None           # --shapes-b: post_processor file holding the charge-split boosted regions
+ BOOST_SPLIT = False    # --boost-split
+ DROP_OS = False        # --drop-os
+@@ -93,7 +94,10 @@
+ 
+ 
+ def read_region(fi, fm, r):
+-    d = fi.Get(r)
++    d = None
++    for ov in FOV:                     # --shapes-override wins over every other source
++        if not d: d = ov.Get(r)
++    if not d: d = fi.Get(r)
+     for extra in [fm, FCR] + FB:
+         if not d and extra: d = extra.Get(r)
+     if not d: sys.exit(f"missing region {r}")
+@@ -109,6 +113,7 @@
+ 
+ 
+ FCR = None
++FOV = []     # --shapes-override (comma list)
+ FB = []      # --shapes-b may be a comma list (one post_processor file per region set)
+ LB_EDGE = {}
+ 
+@@ -116,7 +121,10 @@
+ def raw_bkg(fi, fm, r):
+     """1 GeV total MC background (sum, variance) of region r and its low edges."""
+     import numpy as np
+-    d = fi.Get(r)
++    d = None
++    for ov in FOV:
++        if not d: d = ov.Get(r)
++    if not d: d = fi.Get(r)
+     for extra in [fm, FCR] + FB:
+         if not d and extra: d = extra.Get(r)
+     if not d: sys.exit(f"missing region {r}")
+@@ -156,10 +164,11 @@
+ 
+ 
+ def build_shapes(src, out):
+-    global FCR, FB
++    global FCR, FB, FOV
+     fi = ROOT.TFile.Open(src); fm = ROOT.TFile.Open(SRC_MM) if SRC_MM else None
+     FCR = ROOT.TFile.Open(SRC_CR) if SRC_CR else None
+     FB = [ROOT.TFile.Open(x) for x in SRC_B.split(",")] if SRC_B else []
++    FOV = [ROOT.TFile.Open(x) for x in SRC_OV.split(",")] if SRC_OV else []
+     if LASTBIN_BKG is not None: lastbin_edges(fi, fm)
+     if LASTBIN_NEFF is not None: lastbin_neff_edges(fi, fm)
+     fo = ROOT.TFile.Open(out, "RECREATE")
+@@ -287,7 +296,7 @@
+ 
+ def main():
+     global MERGE_SS, SRC_MM, SRC_CR, DDSS, NO_FLIP, SF_TC2, SF_LT2, LASTBIN_BKG, EDGES, SS_TC2_ONLY
+-    global SRC_B, BOOST_SPLIT, DROP_OS, LASTBIN_NEFF, LASTBIN_NEFF_REG, FLIP_LNN
++    global SRC_OV, SRC_B, BOOST_SPLIT, DROP_OS, LASTBIN_NEFF, LASTBIN_NEFF_REG, FLIP_LNN
+     ap = argparse.ArgumentParser(); ap.add_argument("--shapes", required=True); ap.add_argument("--tag", default="cbv15_dc")
+     ap.add_argument("--shapes-mm", default=None, help="post_processor file holding rMuMuSR_OS / rMuMuSR_SS")
+     ap.add_argument("--shapes-cr", default=None, help="post_processor file holding the charge-split resolved DY CRs")
+@@ -298,6 +307,7 @@
+     ap.add_argument("--no-flip-sf", action="store_true", help="raw-charge SS/OS split with pure MC SS: SF=1, no FlipSF nuisance (implies --merge-ss)")
+     ap.add_argument("--ddss", default=None, help="chargeflip_ddss.py output: data-driven EE SS (implies --merge-ss layout)")
+     ap.add_argument("--ddss-b", default=None, help="chargeflip_boosted.py output: data-driven boosted EE SS (bEESR_SS, bDYEECR_SS); needs --boost-split")
++    ap.add_argument("--shapes-override", default=None, help="post_processor file(s, comma list) whose regions take precedence over --shapes/--shapes-mm/--shapes-cr/--shapes-b")
+     ap.add_argument("--shapes-b", default=None, help="post_processor file(s, comma list) holding bEESR_OS/SS, bMuMuSR_OS/SS, bDYEECR_OS/SS, bDYMuMuCR_OS/SS")
+     ap.add_argument("--boost-split", action="store_true", help="boosted SRs and boosted DY CRs split OS/SS (raw charge, MC SS); needs --shapes-b")
+     ap.add_argument("--drop-os", action="store_true", help="drop every *_OS SR region (SS-only limit); CRs unchanged")
+@@ -305,7 +315,7 @@
+     ap.add_argument("--lastbin-neff-regions", default="", help="comma list of SR regions for --lastbin-neff (e.g. bEESR_SS,bMuMuSR_SS)")
+     ap.add_argument("--flip-lnn", action="append", default=[], help="NAME=VALUE: extra lnN on the data-driven Flip process (repeatable)")
+     a = ap.parse_args()
+-    SRC_MM = a.shapes_mm; SRC_CR = a.shapes_cr; SRC_B = a.shapes_b
++    SRC_MM = a.shapes_mm; SRC_CR = a.shapes_cr; SRC_B = a.shapes_b; SRC_OV = a.shapes_override
+     BOOST_SPLIT = a.boost_split; DROP_OS = a.drop_os
+     LASTBIN_NEFF = a.lastbin_neff; LASTBIN_NEFF_REG = [x for x in a.lastbin_neff_regions.split(",") if x]
+     FLIP_LNN = [tuple(x.split("=", 1)) for x in a.flip_lnn]

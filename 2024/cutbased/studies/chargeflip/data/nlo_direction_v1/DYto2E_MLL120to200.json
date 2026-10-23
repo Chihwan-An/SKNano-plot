@@ -1,0 +1,20 @@
+{
+  "sample": "DYto2E_MLL120to200",
+  "sample_info": {
+    "isMC": 1,
+    "PD": "DYto2E_Bin-MLL-120to200_TuneCP5_13p6TeV_powheg-pythia8",
+    "xsec": 21.65,
+    "nmc": 48821981.0,
+    "sumsign": 48318755.0,
+    "sumW": 1057199849.6176147
+  },
+  "inputs": [
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-120to200_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-120to200_TuneCP5_13p6TeV_powheg-pythia8/251121_124031/0000/tree_1.root"
+  ],
+  "processed": 200000,
+  "processed_sum_sign": 197886.0,
+  "processed_sumw": 4329686.256225586,
+  "selected_rows": 32552,
+  "negative_rows": 188,
+  "note": "Bounded prefix of sorted raw files, not full production; no generator HT cut."
+}

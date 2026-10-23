@@ -1,0 +1,7 @@
+# Resolve_FLV / EM: raw-charge OS / SS split of the resolved e-mu flavour CR (2026-09-18, RFlav_DYCRCharge production).
+--hist FlavCR_Resolved_EM_OS_mass --ymin 0.1 --ymax 1e5 --output ResolveFLVEM_OS_Mll --xmin 400 --xmax 2000 --xlabel 'OS m(ll) (GeV)' --bins 400,450,500,600,700,800,1000,1200,1500,2000 --rmin 0 --rmax 2
+--hist FlavCR_Resolved_EM_SS_mass --ymin 0.1 --ymax 1e4 --output ResolveFLVEM_SS_Mll --xmin 400 --xmax 2000 --xlabel 'SS m(ll) (GeV)' --bins 400,450,500,600,700,800,1000,1200,1500,2000 --rmin 0 --rmax 3
+--hist FlavCR_Resolved_EM_OS_mass --ymin 0.1 --ymax 1e5 --output ResolveFLVEM_OS_Mll_fine --xmin 400 --xmax 1000 --xlabel 'OS m(ll) (GeV)' --rebin 25 --rmin 0 --rmax 2
+--hist FlavCR_Resolved_EM_SS_mass --ymin 0.1 --ymax 1e4 --output ResolveFLVEM_SS_Mll_fine --xmin 400 --xmax 1000 --xlabel 'SS m(ll) (GeV)' --rebin 25 --rmin 0 --rmax 3
+--hist FlavCR_Resolved_EM_OS_mlljj --ymin 0.1 --ymax 1e5 --output ResolveFLVEM_OS_mlljj --xmin 800 --xmax 4000 --xlabel 'OS m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0 --rmax 2
+--hist FlavCR_Resolved_EM_SS_mlljj --ymin 0.1 --ymax 1e4 --output ResolveFLVEM_SS_mlljj --xmin 800 --xmax 4000 --xlabel 'SS m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000 --rmin 0 --rmax 3

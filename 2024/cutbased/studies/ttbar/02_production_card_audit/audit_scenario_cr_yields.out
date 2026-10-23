@@ -1,0 +1,8 @@
+cbv15_an2_ref
+   rFlvCR     {'data_obs': 7182.0, 'TT': 3231.4, 'DYJets': 21.0, 'Nonprompt': 53.2, 'Others': 163.2}  data/MC 2.070  (data-nonTT)/TT 2.149
+   bFlvEMuCR  {'data_obs': 472.0, 'TT': 445.3, 'DYJets': 3.2, 'Nonprompt': 42.7, 'Others': 458.0}  data/MC 0.497  (data-nonTT)/TT -0.072
+   bFlvMuECR  {'data_obs': 648.0, 'TT': 512.4, 'DYJets': 16.0, 'Nonprompt': 79.8, 'Others': 600.1}  data/MC 0.536  (data-nonTT)/TT -0.093
+cbv15_an2_ref_fixstream
+   rFlvCR     {'data_obs': 3623.0, 'TT': 3231.4, 'DYJets': 21.0, 'Nonprompt': 53.2, 'Others': 163.2}  data/MC 1.044  (data-nonTT)/TT 1.048
+   bFlvEMuCR  {'data_obs': 472.0, 'TT': 445.3, 'DYJets': 3.2, 'Nonprompt': 42.7, 'Others': 22.0}  data/MC 0.920  (data-nonTT)/TT 0.908
+   bFlvMuECR  {'data_obs': 648.0, 'TT': 512.4, 'DYJets': 16.0, 'Nonprompt': 79.8, 'Others': 33.1}  data/MC 1.011  (data-nonTT)/TT 1.013

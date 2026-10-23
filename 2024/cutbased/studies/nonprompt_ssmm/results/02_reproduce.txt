@@ -1,0 +1,68 @@
+# sanity: SR_MM iso categories (must be all TT): Counter({'TT': 2737349})
+# sanity: SR_LL_MM iso categories (no TT, no LL expected): Counter({'TL': 366180, 'LT': 122403})
+# sanity: SR_LL_MM nLooseLepton values: [2]
+# sanity: SR_MM nLooseLepton values: Counter({2: 2640149, 3: 92710, 4: 4425, 5: 64, 6: 1})
+# sanity: ele1_isFilled any (SR_MM, SR_LL_MM): False, False
+# sanity: pT ordering mu1>=mu2: True, True
+
+## OS  mll>400 mlljj>800  weighted sum ± sqrt(sumw2) [raw]
+group                    iso-TT (SR_MM)                   iso-TL                   iso-LT                    TL+LT
+DYJets          691.37 ± 4.26 [76756]      21.23 ± 0.90 [3459]       5.10 ± 0.43 [1581]      26.33 ± 1.00 [5040]
+Nonprompt         18.40 ± 1.19 [2826]    137.73 ± 4.22 [18594]      34.17 ± 1.81 [7501]    171.89 ± 4.60 [26095]
+Others          159.88 ± 1.25 [40751]       9.92 ± 0.47 [1586]        2.16 ± 0.21 [463]      12.08 ± 0.52 [2049]
+TT             2025.01 ± 8.11 [96641]     171.22 ± 2.85 [6828]      63.58 ± 1.59 [2902]     234.80 ± 3.26 [9730]
+QCD                  1.98 ± 1.11 [95]     54.79 ± 14.09 [1745]       17.34 ± 6.37 [345]     72.13 ± 15.46 [2090]
+sum noQCD     2894.66 ± 9.32 [216974]    340.09 ± 5.20 [30467]    105.01 ± 2.46 [12447]    445.10 ± 5.75 [42914]
+sum +QCD     TT 2896.64   TL+LT 517.23   TL:LT = 3.24:1 (noQCD)
+iso-TT noQCD with nLooseLepton==2 (FO baseline): 2852.81 ± 9.26 [209200]  (all: 2894.66; removed 1.45%)
+  QCD MuEnriched: iso-TT 0.67 ± 0.20 [82]   TL+LT 42.89 ± 13.06 [1781]
+  QCD EMEnriched: iso-TT 0.02 ± 0.01 [4]   TL+LT 10.29 ± 6.27 [82]
+  QCD bcToE     : iso-TT 1.29 ± 1.10 [9]   TL+LT 18.95 ± 5.40 [227]
+  ST_sch_top_Lep            : iso-TT 0.000  TL+LT 0.050
+  ST_sch_top_Lep_powheg     : iso-TT 0.014  TL+LT 0.102
+  ST_sch_antitop_Lep        : iso-TT 0.000  TL+LT 0.023
+  ST_sch_antitop_Lep_powheg : iso-TT 0.004  TL+LT 0.048
+
+## SS  mll>400 mlljj>800  weighted sum ± sqrt(sumw2) [raw]
+group                    iso-TT (SR_MM)                   iso-TL                   iso-LT                    TL+LT
+DYJets              2.43 ± 0.37 [308]      10.90 ± 0.78 [1031]        3.40 ± 0.42 [499]      14.30 ± 0.89 [1530]
+Nonprompt         24.56 ± 1.85 [2080]    194.68 ± 4.72 [16506]      45.97 ± 2.30 [6212]    240.65 ± 5.25 [22718]
+Others           18.22 ± 0.31 [10965]        5.26 ± 0.35 [884]        0.97 ± 0.13 [298]       6.24 ± 0.38 [1182]
+TT                 10.38 ± 0.76 [344]      60.65 ± 1.95 [1839]       16.34 ± 1.02 [471]      76.99 ± 2.20 [2310]
+QCD                30.34 ± 25.86 [64]      21.27 ± 3.19 [1299]        6.68 ± 1.76 [276]      27.95 ± 3.64 [1575]
+sum noQCD        55.59 ± 2.06 [13697]    271.50 ± 5.18 [20260]      66.68 ± 2.55 [7480]    338.18 ± 5.77 [27740]
+sum +QCD     TT 85.93   TL+LT 366.13   TL:LT = 4.07:1 (noQCD)
+iso-TT noQCD with nLooseLepton==2 (FO baseline): 46.47 ± 1.98 [9596]  (all: 55.59; removed 16.40%)
+  QCD MuEnriched: iso-TT 29.11 ± 25.83 [55]   TL+LT 20.58 ± 2.67 [1326]
+  QCD EMEnriched: iso-TT 0.00 ± 0.00 [0]   TL+LT 2.00 ± 0.98 [55]
+  QCD bcToE     : iso-TT 1.23 ± 1.10 [9]   TL+LT 5.38 ± 2.27 [194]
+  ST_sch_top_Lep            : iso-TT 0.015  TL+LT 0.546
+  ST_sch_top_Lep_powheg     : iso-TT 0.072  TL+LT 0.372
+  ST_sch_antitop_Lep        : iso-TT 0.000  TL+LT 0.271
+  ST_sch_antitop_Lep_powheg : iso-TT 0.007  TL+LT 0.172
+
+## v3 card rMuMuSR_{OS,SS} vs ntuple iso-TT (SR_MM tree, all nLoose)
+  OS DYJets     ntuple    691.372  card 966.068  ratio 0.7157
+  OS Nonprompt  ntuple     18.403  card 8.781  ratio 2.0958
+  OS Others     ntuple    159.882  card 152.48  ratio 1.0485
+  OS TT         ntuple   2025.006  card 2022.882  ratio 1.0010
+  OS MWR3000_N200   ntuple     88.866  card 88.818  ratio 1.0005
+  OS MWR4000_N200   ntuple      9.938  card 9.911  ratio 1.0027
+  OS MWR5000_N200   ntuple      2.302  card 2.299  ratio 1.0014
+  OS MWR3000_N1500  ntuple    294.074  card 285.022  ratio 1.0318
+  OS MWR4000_N2000  ntuple     35.189  card 33.987  ratio 1.0354
+  OS MWR5000_N2500  ntuple      5.928  card 5.752  ratio 1.0306
+  OS MWR2000_N200   ntuple   1627.451  card 1624.67  ratio 1.0017
+  OS MWR1000_N200   ntuple  45941.691  card 45900.259  ratio 1.0009
+  SS DYJets     ntuple      2.433  card 2.252  ratio 1.0803
+  SS Nonprompt  ntuple     24.558  card 16.584  ratio 1.4809
+  SS Others     ntuple     18.220  card 12.541  ratio 1.4527
+  SS TT         ntuple     10.380  card 9.923  ratio 1.0461
+  SS MWR3000_N200   ntuple     85.280  card 85.179  ratio 1.0012
+  SS MWR4000_N200   ntuple      9.260  card 9.246  ratio 1.0015
+  SS MWR5000_N200   ntuple      2.035  card 2.031  ratio 1.0019
+  SS MWR3000_N1500  ntuple    288.523  card 278.675  ratio 1.0353
+  SS MWR4000_N2000  ntuple     34.707  card 33.536  ratio 1.0349
+  SS MWR5000_N2500  ntuple      5.956  card 5.752  ratio 1.0355
+  SS MWR2000_N200   ntuple   1442.929  card 1441.424  ratio 1.0010
+  SS MWR1000_N200   ntuple  39647.891  card 39628.224  ratio 1.0005

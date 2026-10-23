@@ -1,0 +1,2 @@
+source /cvmfs/cms.cern.ch/cmsset_default.sh; cd /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src; eval $(scramv1 runtime -sh); cd /tmp/claude-5596/-data9-Users-achihwan-25-020-AN-25-020/b8b0160d-1e48-4158-a446-356682ce195b/scratchpad/ttfit/fixture
+python3 /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/ttfit_validation/check_fixture.py /tmp/claude-5596/-data9-Users-achihwan-25-020-AN-25-020/b8b0160d-1e48-4158-a446-356682ce195b/scratchpad/ttfit/fixture | tail -22

@@ -1,0 +1,130 @@
+=== job Boost_FLV_MEJ ===
+=== start Fri Aug 28 08:54:21 PM KST 2026 ===
+==============================================================================
+>> job Boost_FLV_MEJ   region=Boost/FLV   channel=MM   flavour=MEJ
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav/2024
+>> Channel MM: 44 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   15 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      10 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+>> 입력 60개 5.2 GB -> /var/lib/condor/execute/dir_653944/inputs
+>> 복사 완료 25 s (208 MB/s)
+   복사본 확인: MC 44, Data 16
+>> Systematics: 31 requested, 44 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/44), ResolvedDYReshapeBin2(14/44), ResolvedDYReshapeBin3(14/44), ResolvedDYReshapeBin4(14/44), ResolvedDYReshapeBin5(14/44), ResolvedDYReshapeBin6(14/44), BoostedDYReshapeBin1(14/44), BoostedDYReshapeBin2(14/44), BoostedDYReshapeBin3(14/44)   <- DY 전용이면 정상
+>> 26 plots from specs/Boost_FLV_MEJ.txt
+==============================================================================
+
+>> FlavCR_Boosted_MEJ_leading_fatjet_pt -> BoostFLVMEJ_leading_fatjet_pt
+   MC        641.3   Data        648.0   (5 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_leading_fatjet_pt_plot.png
+
+>> FlavCR_Boosted_MEJ_fatjet_SDM -> BoostFLVMEJ_fatjet_SDMass
+   MC        641.3   Data        648.0   (2000 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_fatjet_SDMass_plot.png
+
+>> FlavCR_Boosted_MEJ_leading_lep_eta -> BoostFLVMEJ_leading_lep_eta
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_leading_lep_eta_plot.png
+
+>> FlavCR_Boosted_MEJ_subleading_lep_eta -> BoostFLVMEJ_subleading_lep_eta
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_subleading_lep_eta_plot.png
+
+>> FlavCR_Boosted_MEJ_fatjet_eta -> BoostFLVMEJ_fatjet_eta
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_fatjet_eta_plot.png
+
+>> FlavCR_Boosted_MEJ_fatjet_phi -> BoostFLVMEJ_fatjet_phi
+   MC        641.1   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_fatjet_phi_plot.png
+
+>> FlavCR_Boosted_MEJ_deltaR_leadlep_fatjet -> BoostFLVMEJ_deltaR_leadlep_fatjet
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_deltaR_leadlep_fatjet_plot.png
+
+>> FlavCR_Boosted_MEJ_leadlep_lsf -> BoostFLVMEJ_leadlep_lsf
+   MC        641.3   Data        648.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_leadlep_lsf_plot.png
+
+>> FlavCR_Boosted_MEJ_WR_pt -> BoostFLVMEJ_WR_pt
+   MC        641.3   Data        648.0   (200 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet_lepton/Inclusive/BoostFLVMEJ_WR_pt_plot.png
+
+>> FlavCR_Boosted_MEJ_mass -> BoostFLVMEJ_dilepton_mass
+   MC        641.3   Data        648.0   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/dilepton/Inclusive/BoostFLVMEJ_dilepton_mass_plot.png
+
+>> FlavCR_Boosted_MEJ_eta -> BoostFLVMEJ_dilepton_eta
+   MC        640.8   Data        647.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/dilepton/Inclusive/BoostFLVMEJ_dilepton_eta_plot.png
+
+>> FlavCR_Boosted_MEJ_phi -> BoostFLVMEJ_dilepton_phi
+   MC        641.1   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/dilepton/Inclusive/BoostFLVMEJ_dilepton_phi_plot.png
+
+>> FlavCR_Boosted_MEJ_WR_eta -> BoostFLVMEJ_WR_eta
+   MC        639.9   Data        645.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet_lepton/Inclusive/BoostFLVMEJ_WR_eta_plot.png
+
+>> FlavCR_Boosted_MEJ_WR_phi -> BoostFLVMEJ_WR_phi
+   MC        641.0   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet_lepton/Inclusive/BoostFLVMEJ_WR_phi_plot.png
+
+>> FlavCR_Boosted_MEJ_leading_lep_phi -> BoostFLVMEJ_leading_lep_phi
+   MC        641.2   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_leading_lep_phi_plot.png
+
+>> FlavCR_Boosted_MEJ_subleading_lep_phi -> BoostFLVMEJ_subleading_lep_phi
+   MC        641.0   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_subleading_lep_phi_plot.png
+
+>> FlavCR_Boosted_MEJ_fatjet_lsf3 -> BoostFLVMEJ_fatjet_lsf3
+   MC        641.3   Data        648.0   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_fatjet_lsf3_plot.png
+
+>> FlavCR_Boosted_MEJ_dphi_leadlep_fatjet -> BoostFLVMEJ_dphi_leadlep_fatjet
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_dphi_leadlep_fatjet_plot.png
+
+>> FlavCR_Boosted_MEJ_pvgood -> BoostFLVMEJ_punum
+   MC        641.3   Data        648.0   (16 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/pileup/Inclusive/BoostFLVMEJ_punum_plot.png
+
+>> FlavCR_Boosted_MEJ_jetnum -> BoostFLVMEJ_jetnum
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_jetnum_plot.png
+
+>> FlavCR_Boosted_MEJ_mlljj -> BoostFLVMEJ_mlljj
+   MC        641.3   Data        648.0   (5 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet_lepton/Inclusive/BoostFLVMEJ_mlljj_plot.png
+
+>> FlavCR_Boosted_MEJ_mlljj -> BoostFLVMEJ_mlljj_fine
+   MC        641.3   Data        648.0   (80 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet_lepton/Inclusive/BoostFLVMEJ_mlljj_fine_plot.png
+
+>> FlavCR_Boosted_MEJ_ll_pt -> BoostFLVMEJ_dilepton_pt
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/dilepton/Inclusive/BoostFLVMEJ_dilepton_pt_plot.png
+
+>> FlavCR_Boosted_MEJ_leading_lep_pt -> BoostFLVMEJ_leading_lep_pt
+   MC        641.3   Data        648.0   (24 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_leading_lep_pt_plot.png
+
+>> FlavCR_Boosted_MEJ_subleading_lep_pt -> BoostFLVMEJ_subleading_lep_pt
+   MC        641.3   Data        648.0   (23 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/lepton/Inclusive/BoostFLVMEJ_subleading_lep_pt_plot.png
+
+>> FlavCR_Boosted_MEJ_fatjet_pt -> BoostFLVMEJ_fatjet_pt
+   MC        641.3   Data        648.0   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Boost/FLV/Mu_E/jet/Inclusive/BoostFLVMEJ_fatjet_pt_plot.png
+
+==============================================================================
+>> Boost_FLV_MEJ: 26/26 plots, 0.8 min (1.7 s/plot)
+==============================================================================
+=== end Fri Aug 28 08:55:09 PM KST 2026 ===
+=== exit 0 ===

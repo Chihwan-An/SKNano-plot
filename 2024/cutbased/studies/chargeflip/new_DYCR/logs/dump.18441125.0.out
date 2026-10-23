@@ -1,0 +1,17 @@
+14 files: /gv0/Users/achihwan/SKNanoOutput_dynew/HNWR_ChargeFlip/RFlav_ZptNJet/2024 -> /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_dynew_dy
+Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-1500to2500-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-2500-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-2500-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-400to800-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-400to800-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-40to70-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-40to70-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-70to100-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-70to100-MLL-50to120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-800to1500-MLL-120.root 0 
+Skim_HNWR_DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120.root 0 
+DONE: 14/14 dumped (rc=4 means the sample has no CF_Tree, i.e. no event passed)
+DUMP_DONE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_dynew_dy

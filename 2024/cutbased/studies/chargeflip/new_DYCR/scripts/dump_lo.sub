@@ -1,0 +1,15 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/scripts/dump.sh
+arguments = $(indir) $(outdir)
+getenv = True
+request_memory = 12GB
+request_cpus = 8
+JobBatchName = cfdump_dynew
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/logs/dump.$(Cluster).$(Process).log
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/logs/dump.$(Cluster).$(Process).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/logs/dump.$(Cluster).$(Process).err
+should_transfer_files = NO
+queue indir, outdir from (
+  /gv0/Users/achihwan/SKNanoOutput_dynew/HNWR_ChargeFlip/RFlav_ZptNJet/2024 /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_dynew_dy
+
+)

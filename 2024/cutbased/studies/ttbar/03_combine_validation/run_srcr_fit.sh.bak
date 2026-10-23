@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Full CR+SR simultaneous fit, background-only (r=0 frozen). SR data_obs is Asimov (card: observation -1),
+# so the SR contributes pseudo-data at the prefit expectation and the fit stays blind.
+# Companion to run_cronly_fit.sh: same options, no channel masking, so the two can be compared directly.
+#   bash run_srcr_fit.sh <scenario tag> <EE|MM> <mass point, e.g. WR5000_N2500> [WORKDIR]
+set -uo pipefail
+TAG=$1; CH=$2; MP=$3; HERE=$(cd "$(dirname "$0")" && pwd); W=${4:-$HERE/work_srcr}/${TAG}_${CH}_${MP}
+SCEN=/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/$TAG
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+cd /data6/Users/achihwan/combine/CMSSW_14_1_0_pre4/src; eval $(scramv1 runtime -sh)
+mkdir -p $W; cd $W
+cp $SCEN/datacards/2024/$CH/card_$MP.txt card.txt
+sed -i "s#^shapes \(.*\) \(\S*shapes_2024_[^ ]*\.root\) #shapes \1 $SCEN/$(basename $SCEN/shapes_2024_*.root) #" card.txt
+BINS=$(awk '$1=="bin"{for(i=2;i<=NF;i++) print $i; exit}' card.txt)
+echo "all channels in fit: $(echo $BINS | tr '\n' ' ')"
+echo "  of which SR (Asimov data_obs): $(echo "$BINS" | grep SR | sort -u | tr '\n' ' ')"
+[ -f ws.root ] || text2workspace.py card.txt -o ws.root > t2w.log 2>&1 || { echo T2W_FAILED; tail -5 t2w.log; exit 1; }
+combine -M FitDiagnostics ws.root -n .SRCR --setParameters r=0 --freezeParameters r \
+  --skipSBFit --saveShapes --saveNormalizations --saveWithUncertainties \
+  --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance 0.1 --cminFallbackAlgo Minuit2,Migrad,0:0.5 --cminFallbackAlgo Minuit2,Migrad,0:1.0 > fit.log 2>&1
+echo "fit rc=$?"
+python3 - <<'PY'
+import ROOT, json
+ROOT.gROOT.SetBatch(True)
+f = ROOT.TFile.Open("fitDiagnostics.SRCR.root"); fb = f.Get("fit_b")
+if not fb or not fb.InheritsFrom("RooFitResult"):
+    raise SystemExit("FIT_FAILED: no fit_b in fitDiagnostics.SRCR.root (see fit.log)")
+out = {"status": fb.status(), "covQual": fb.covQual(), "minNll": fb.minNll(), "rateParams": {}, "pulls": []}
+pars = fb.floatParsFinal(); pre = f.Get("nuisances_prefit")
+for i in range(pars.getSize()):
+    p = pars.at(i); n = p.GetName()
+    if n.startswith(("R_TT", "R_DY")):
+        out["rateParams"][n] = {"val": round(p.getVal(), 4), "err": round(p.getError(), 4),
+                                "lo": p.getMin(), "hi": p.getMax(),
+                                "at_boundary": abs(p.getVal() - p.getMin()) < 1e-3 or abs(p.getVal() - p.getMax()) < 1e-3}
+    elif n != "r" and not n.startswith("prop_bin"):
+        # nuisances_prefit comes back empty in these files, so fall back to the standard-normal
+        # convention: a Gaussian-constrained nuisance is already in sigma units (prefit 0 +/- 1).
+        c, s = 0.0, 1.0
+        if pre:
+            q = pre.find(n)
+            if q and q.getError() > 0: c, s = q.getVal(), q.getError()
+        out["pulls"].append([round((p.getVal() - c) / s, 2), n, round(p.getError() / s, 2)])
+out["pulls"] = sorted(out["pulls"], key=lambda t: -abs(t[0]))[:15]
+cor = {}
+for a in out["rateParams"]:
+    for b in out["rateParams"]:
+        if a < b: cor[f"{a}|{b}"] = round(fb.correlation(a, b), 3)
+out["rateParam_correlations"] = cor
+# per-channel TT yields, prefit vs postfit, plus total background and the data the fit saw
+npre, npost = f.Get("norm_prefit"), f.Get("norm_fit_b")
+yld = {}
+if npost:
+    it = npost.createIterator(); v = it.Next()
+    while v:
+        ch, _, proc = v.GetName().partition("/")
+        if proc == "TT":
+            q = npre.find(v.GetName()) if npre else None
+            yld.setdefault(ch, {})["TT_prefit"] = round(q.getVal(), 1) if q else None
+            yld.setdefault(ch, {})["TT_postfit"] = round(v.getVal(), 1)
+            yld[ch]["TT_postfit_err"] = round(v.getError(), 1)
+        v = it.Next()
+for ch in yld:
+    tb = f.Get(f"shapes_fit_b/{ch}/total_background")
+    if tb: yld[ch]["total_bkg_postfit"] = round(tb.Integral(), 1)
+    d = f.Get(f"shapes_fit_b/{ch}/data")
+    if d: yld[ch]["data"] = round(sum(d.GetY()[i] for i in range(d.GetN())), 1)
+out["channel_TT_yields"] = yld
+json.dump(out, open("srcr_result.json", "w"), indent=1); print(json.dumps(out, indent=1))
+PY

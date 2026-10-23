@@ -1,0 +1,60 @@
+# DY CR EE SS: data vs OS x W + non-flip MC (ptshift_LO_dynew_sf2roofit.json)
+
+SF: barrel 1.457, endcap 1.468
+
+## total
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| DY CR | 1174 | 1056.7 | 47.2 (DYJets 17.3 TT 3.8 Nonprompt 13.5 Others 12.6) | 1103.8 | **1.064 ± 0.031** |
+
+## m_lljj bins
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| 800-1000 | 517 | 451.2 | 25.5 (DYJets 9.5 TT 1.7 Nonprompt 7.6 Others 6.7) | 476.7 | **1.085 ± 0.048** |
+| 1000-1200 | 270 | 252.5 | 9.2 (DYJets 3.4 TT 1.0 Nonprompt 2.0 Others 2.9) | 261.7 | **1.032 ± 0.063** |
+| 1200-1400 | 158 | 143.8 | 5.7 (DYJets 1.7 TT 0.6 Nonprompt 2.0 Others 1.4) | 149.5 | **1.057 ± 0.084** |
+| 1400-1600 | 78 | 83.1 | 3.1 (DYJets 1.3 TT 0.2 Nonprompt 0.9 Others 0.7) | 86.2 | **0.905 ± 0.102** |
+| 1600-2000 | 111 | 76.2 | 2.8 (DYJets 1.1 TT 0.3 Nonprompt 0.8 Others 0.6) | 79.0 | **1.405 ± 0.133** |
+| 2000-2400 | 22 | 29.8 | 0.5 (DYJets 0.1 TT 0.1 Nonprompt 0.2 Others 0.2) | 30.3 | **0.727 ± 0.155** |
+| 2400-2800 | 10 | 12.7 | 0.1 (DYJets 0.1 TT 0.0 Nonprompt 0.0 Others 0.0) | 12.8 | **0.781 ± 0.247** |
+| 2800-3200 | 4 | 3.8 | 0.1 (DYJets 0.0 TT 0.0 Nonprompt 0.0 Others 0.0) | 3.9 | **1.034 ± 0.517** |
+| 3200-8000 | 4 | 3.7 | 0.2 (DYJets 0.2 TT 0.0 Nonprompt 0.0 Others 0.0) | 3.9 | **1.029 ± 0.514** |
+
+## pair eta class (both legs' SF region)
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| barrel + barrel | 236 | 184.7 | 21.5 (DYJets 5.8 TT 1.8 Nonprompt 6.1 Others 7.7) | 206.2 | **1.145 ± 0.075** |
+| barrel + endcap | 296 | 270.0 | 14.0 (DYJets 4.8 TT 1.3 Nonprompt 4.6 Others 3.2) | 284.0 | **1.042 ± 0.061** |
+| endcap + endcap | 639 | 601.8 | 11.6 (DYJets 6.7 TT 0.7 Nonprompt 2.7 Others 1.6) | 613.4 | **1.042 ± 0.041** |
+
+## leading electron pT
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| pT1 60-100 | 258 | 224.2 | 17.2 (DYJets 4.6 TT 1.7 Nonprompt 8.0 Others 2.9) | 241.4 | **1.069 ± 0.067** |
+| pT1 100-150 | 331 | 312.2 | 13.7 (DYJets 5.7 TT 1.1 Nonprompt 3.1 Others 3.7) | 325.9 | **1.016 ± 0.056** |
+| pT1 150-250 | 421 | 361.4 | 10.8 (DYJets 4.5 TT 0.8 Nonprompt 1.5 Others 4.1) | 372.2 | **1.131 ± 0.055** |
+| pT1 250-2000 | 164 | 158.9 | 5.4 (DYJets 2.5 TT 0.2 Nonprompt 0.9 Others 1.9) | 164.3 | **0.998 ± 0.078** |
+
+## nJet
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| nJet 2 | 709 | 634.1 | 21.7 (DYJets 9.9 TT 1.2 Nonprompt 3.5 Others 7.1) | 655.8 | **1.081 ± 0.041** |
+| nJet 3 | 301 | 286.4 | 13.8 (DYJets 5.7 TT 1.4 Nonprompt 3.2 Others 3.5) | 300.3 | **1.002 ± 0.058** |
+| nJet 4+ | 164 | 136.1 | 11.6 (DYJets 1.7 TT 1.2 Nonprompt 6.8 Others 1.9) | 147.7 | **1.110 ± 0.087** |
+
+## m_ee
+
+| selection | SS data | flip (OS x W) | non-flip MC | pred | obs/pred |
+|---|---|---|---|---|---|
+| m_ee 60-80 | 55 | 34.2 | 7.3 (DYJets 2.6 TT 0.7 Nonprompt 2.0 Others 2.0) | 41.6 | **1.323 ± 0.178** |
+| m_ee 80-100 | 947 | 918.8 | 16.6 (DYJets 10.2 TT 0.9 Nonprompt 2.9 Others 2.7) | 935.4 | **1.012 ± 0.033** |
+| m_ee 100-120 | 74 | 62.9 | 9.2 (DYJets 1.7 TT 1.0 Nonprompt 3.5 Others 3.0) | 72.1 | **1.026 ± 0.119** |
+| m_ee 120-150 | 98 | 40.8 | 14.0 (DYJets 2.8 TT 1.2 Nonprompt 5.1 Others 4.9) | 54.8 | **1.789 ± 0.181** |
+
+SS data ++ fraction: 0.531
+

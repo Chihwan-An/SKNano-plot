@@ -1,0 +1,29 @@
+# Resolve_DY / MM  tight-charge OS / SS versions of specs/Resolve_DY_MM.txt
+# hist DYCR_Resolved_MM_<OS|SS>_tight_<var>  ->  output ResolveDYMM_<OS|SS>_tight_<var>  (layout: <obj>/OS_tight, SS_tight)
+# generated 2026-09-08 by chargeflip work; --ymax dropped (auto), SS ratio range widened.
+--hist DYCR_Resolved_MM_OS_tight_pt --ymin 1 --output ResolveDYMM_OS_tight_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Dilepton p_{T} (GeV)' --rmin 0.7 --rmax 1.3 --rebin 5
+--hist DYCR_Resolved_MM_SS_tight_pt --ymin 1 --output ResolveDYMM_SS_tight_dilepton_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Dilepton p_{T} (GeV)' --rmin 0 --rmax 3 --rebin 5
+--hist DYCR_Resolved_MM_OS_tight_leading_jet_pt --ymin 1 --output ResolveDYMM_OS_tight_leading_jet_pt --xmin 0 --xmax 2000 --xlabel 'OS tight-charge Leading Jet p_{T} (GeV)' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_leading_jet_pt --ymin 1 --output ResolveDYMM_SS_tight_leading_jet_pt --xmin 0 --xmax 2000 --xlabel 'SS tight-charge Leading Jet p_{T} (GeV)' --rebin 10 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_subleading_jet_pt --ymin 1 --output ResolveDYMM_OS_tight_subleading_jet_pt --xmin 0 --xmax 500 --xlabel 'OS tight-charge Subleading Jet p_{T} (GeV)' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_subleading_jet_pt --ymin 1 --output ResolveDYMM_SS_tight_subleading_jet_pt --xmin 0 --xmax 500 --xlabel 'SS tight-charge Subleading Jet p_{T} (GeV)' --rebin 2 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_mlljj --ymin 1 --output ResolveDYMM_OS_tight_mlljj --xmin 800 --xmax 4000 --xlabel 'OS tight-charge m(lljj) (GeV)' --rmin 0.7 --rmax 1.3 --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000
+--hist DYCR_Resolved_MM_SS_tight_mlljj --ymin 1 --output ResolveDYMM_SS_tight_mlljj --xmin 800 --xmax 4000 --xlabel 'SS tight-charge m(lljj) (GeV)' --rmin 0 --rmax 3 --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,8000
+--hist DYCR_Resolved_MM_OS_tight_mlljj --ymin 1 --output ResolveDYMM_OS_tight_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'OS tight-charge m(lljj) (GeV)' --rmin 0.7 --rmax 1.3 --rebin 20
+--hist DYCR_Resolved_MM_SS_tight_mlljj --ymin 1 --output ResolveDYMM_SS_tight_mlljj_fine --xmin 800 --xmax 4000 --xlabel 'SS tight-charge m(lljj) (GeV)' --rmin 0 --rmax 3 --rebin 20
+--hist DYCR_Resolved_MM_OS_tight_leading_lep_pt --ymin 1 --output ResolveDYMM_OS_tight_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'OS tight-charge Leading Lepton p_{T} (GeV)' --rebin 50 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_leading_lep_pt --ymin 1 --output ResolveDYMM_SS_tight_leading_lep_pt --xmin 0 --xmax 1000 --xlabel 'SS tight-charge Leading Lepton p_{T} (GeV)' --rebin 50 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_subleading_lep_pt --ymin 1 --output ResolveDYMM_OS_tight_subleading_lep_pt --xmin 0 --xmax 400 --xlabel 'OS tight-charge Subleading Lepton p_{T} (GeV)' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_subleading_lep_pt --ymin 1 --output ResolveDYMM_SS_tight_subleading_lep_pt --xmin 0 --xmax 400 --xlabel 'SS tight-charge Subleading Lepton p_{T} (GeV)' --rebin 10 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_mass --ymin 1 --output ResolveDYMM_OS_tight_dilepton_mass --xmin 60 --xmax 150 --xlabel 'OS tight-charge m(ll) (GeV)' --rebin 5 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_mass --ymin 1 --output ResolveDYMM_SS_tight_dilepton_mass --xmin 60 --xmax 150 --xlabel 'SS tight-charge m(ll) (GeV)' --rebin 5 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_leading_jet_eta --ymin 1 --output ResolveDYMM_OS_tight_leading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Leading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_leading_jet_eta --ymin 1 --output ResolveDYMM_SS_tight_leading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Leading Jet #eta' --rebin 2 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_subleading_jet_eta --ymin 1 --output ResolveDYMM_OS_tight_subleading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Subleading Jet #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_subleading_jet_eta --ymin 1 --output ResolveDYMM_SS_tight_subleading_jet_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Subleading Jet #eta' --rebin 2 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_leading_lep_eta --ymin 1 --output ResolveDYMM_OS_tight_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Leading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_leading_lep_eta --ymin 1 --output ResolveDYMM_SS_tight_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Leading Lepton #eta' --rebin 2 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_subleading_lep_eta --ymin 1 --output ResolveDYMM_OS_tight_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS tight-charge Subleading Lepton #eta' --rebin 2 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_subleading_lep_eta --ymin 1 --output ResolveDYMM_SS_tight_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS tight-charge Subleading Lepton #eta' --rebin 2 --rmin 0 --rmax 3
+--hist DYCR_Resolved_MM_OS_tight_jetnum --ymin 1 --output ResolveDYMM_OS_tight_jetnum --xmin 0 --xmax 5 --xlabel 'OS tight-charge Number of Jets' --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_MM_SS_tight_jetnum --ymin 1 --output ResolveDYMM_SS_tight_jetnum --xmin 0 --xmax 5 --xlabel 'SS tight-charge Number of Jets' --rmin 0 --rmax 3

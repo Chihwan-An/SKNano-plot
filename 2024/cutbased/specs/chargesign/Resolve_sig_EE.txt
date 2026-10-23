@@ -1,0 +1,5 @@
+# Resolve_sig / EE: SRChargeSplit WR mass (2026-09-14). Negative leading lepton -> SRChgM_* (data shown); positive -> SR_ChgP_* (blinded by the SR_ prefix).
+--hist SR_ChgP_Resolved_EE_SSpp_mlljj --ymin 0.01 --output ResolveSREE_SSpp_WRMass --xmin 800 --xmax 8000 --xlabel 'SS l^{+}l^{+} m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,4000,8000 --rmin 0 --rmax 3
+--hist SRChgM_Resolved_EE_SSmm_mlljj --ymin 0.01 --output ResolveSREE_SSmm_WRMass --xmin 800 --xmax 8000 --xlabel 'SS l^{-}l^{-} m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,4000,8000 --rmin 0 --rmax 3
+--hist SR_ChgP_Resolved_EE_OSleadP_mlljj --ymin 0.01 --output ResolveSREE_OSleadP_WRMass --xmin 800 --xmax 8000 --xlabel 'OS, leading l^{+} m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,3500,5000,8000 --rmin 0 --rmax 3
+--hist SRChgM_Resolved_EE_OSleadM_mlljj --ymin 0.01 --output ResolveSREE_OSleadM_WRMass --xmin 800 --xmax 8000 --xlabel 'OS, leading l^{-} m(lljj) (GeV)' --bins 800,1000,1200,1400,1600,2000,2400,2800,3200,3500,5000,8000 --rmin 0 --rmax 3

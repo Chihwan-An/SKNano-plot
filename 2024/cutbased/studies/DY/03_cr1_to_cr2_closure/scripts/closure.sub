@@ -1,0 +1,11 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/DY/03_cr1_to_cr2_closure/scripts/run_closure_zptnjet.sh
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+JobBatchName = dy_closure
+log = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/DY/03_cr1_to_cr2_closure/logs/closure.log
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/DY/03_cr1_to_cr2_closure/logs/closure.out
+error = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/DY/03_cr1_to_cr2_closure/logs/closure.err
+should_transfer_files = NO
+queue

@@ -1,0 +1,11 @@
+# Boost_sig / EE  (Boost/sig)
+# label1=ee  label2=Boosted SR
+# 한 줄이 플롯 하나. --channel/--outdir/--label1/--label2 는 run_specs.py 가 config 에서 채운다.
+--hist SR_Boosted_EE_SS_ll_pt --ymin 1e-1 --ymax 1e5 --output BoostSREE_SS_Dilepton_pt --xmin 0 --xmax 1000 --xlabel 'p_{T}^{ll} (GeV)' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_SS_leading_fatjet_pt --ymin 1e-1 --ymax 1e5 --output BoostSREE_SS_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel 'p_{T}^{J} (GeV)' --bins 0,200,400,600,800,1000,2000 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_SS_mlljj --ymin 1e-1 --ymax 1e5 --output BoostSREE_SS_WRMass --xmin 800 --xmax 8000 --xlabel 'm(lJ) (GeV)' --bins 800,1000,1200,1500,1800,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_SS_mlljj --ymin 1e-1 --ymax 1e5 --output BoostSREE_SS_WRMass_fine --xmin 800 --xmax 4000 --xlabel 'm(lJ) (GeV)' --rebin 100 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_OS_ll_pt --ymin 1e-1 --ymax 1e5 --output BoostSREE_OS_Dilepton_pt --xmin 0 --xmax 1000 --xlabel 'p_{T}^{ll} (GeV)' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_OS_leading_fatjet_pt --ymin 1e-1 --ymax 1e5 --output BoostSREE_OS_leading_fatjet_pt --xmin 0 --xmax 2000 --xlabel 'p_{T}^{J} (GeV)' --bins 0,200,400,600,800,1000,2000 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_OS_mlljj --ymin 1e-1 --ymax 1e5 --output BoostSREE_OS_WRMass --xmin 800 --xmax 8000 --xlabel 'm(lJ) (GeV)' --bins 800,1000,1200,1500,1800,8000 --rmin 0.7 --rmax 1.3
+--hist SR_Boosted_EE_OS_mlljj --ymin 1e-1 --ymax 1e5 --output BoostSREE_OS_WRMass_fine --xmin 800 --xmax 4000 --xlabel 'm(lJ) (GeV)' --rebin 100 --rmin 0.7 --rmax 1.3

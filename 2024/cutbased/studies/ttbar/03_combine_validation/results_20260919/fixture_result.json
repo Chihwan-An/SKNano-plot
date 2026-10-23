@@ -1,0 +1,44 @@
+{
+ "A": {
+  "beta": 1.2000000000356212,
+  "beta_err": 0.03598279130349924,
+  "status": 0,
+  "covQual": 3,
+  "SR_Top_postfit": [
+   48.0,
+   24.0,
+   12.0
+  ]
+ },
+ "B": {
+  "beta": 1.2000000000356212,
+  "beta_err": 0.03598279130349924,
+  "status": 0,
+  "covQual": 3,
+  "SR_Top_postfit": [
+   48.0,
+   24.0,
+   12.0
+  ]
+ },
+ "checks": {
+  "beta_recovered_1.2": true,
+  "SR_Top_48_24_12": true,
+  "masked_SR_obs_irrelevant": true,
+  "naive_stat_err": 0.03605551275463989,
+  "top_scaled_10pct_only": true
+ },
+ "scaling_beta_1_to_1.1": {
+  "n_exp_binCR_EM_proc_Top": 1.1,
+  "n_exp_binSR_EE_proc_Signal": 1.0,
+  "n_exp_binSR_EE_proc_Top": 1.1
+ },
+ "workspace": {
+  "mask_vars": [
+   "mask_CR_EM",
+   "mask_SR_EE"
+  ],
+  "n_beta_vars": 1
+ },
+ "PASS": true
+}

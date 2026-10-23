@@ -1,0 +1,48 @@
+# Auto-generated DAG file for 2024 plotting (6 jobs)
+
+JOB 2024_Boost_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Boost_DY jobname="2024_Boost_DY"
+VARS 2024_Boost_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Boost_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Boost/DY"
+
+JOB 2024_Boost_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Boost_FLV jobname="2024_Boost_FLV"
+VARS 2024_Boost_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Boost_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Boost/FLV"
+
+JOB 2024_Boost_sig /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Boost_sig jobname="2024_Boost_sig"
+VARS 2024_Boost_sig exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Boost_sig work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Boost/sig"
+
+JOB 2024_Resolve_DY /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Resolve_DY jobname="2024_Resolve_DY"
+VARS 2024_Resolve_DY exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Resolve_DY work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Resolve/DY"
+
+JOB 2024_Resolve_FLV /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Resolve_FLV jobname="2024_Resolve_FLV"
+VARS 2024_Resolve_FLV exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Resolve_FLV work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Resolve/FLV"
+
+JOB 2024_Resolve_sig /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_Resolve_sig jobname="2024_Resolve_sig"
+VARS 2024_Resolve_sig exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_plotter.sh"
+VARS 2024_Resolve_sig work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024/Resolve/sig"
+
+# Organize job (runs after all 2024 plotting jobs)
+JOB 2024_organize /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/condor_plotter.sub
+VARS 2024_organize jobname="2024_organize"
+VARS 2024_organize exec_script="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/condor_files/run_organize.sh"
+VARS 2024_organize work_dir="/data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/reproduce/syst_plotter/integrated/charge_inclusive_year_sep/2024"
+
+PARENT 2024_Boost_DY 2024_Boost_FLV 2024_Boost_sig 2024_Resolve_DY 2024_Resolve_FLV 2024_Resolve_sig CHILD 2024_organize
+
+# Retry failed jobs up to 2 times
+RETRY 2024_Boost_DY 2
+RETRY 2024_Boost_FLV 2
+RETRY 2024_Boost_sig 2
+RETRY 2024_Resolve_DY 2
+RETRY 2024_Resolve_FLV 2
+RETRY 2024_Resolve_sig 2
+RETRY 2024_organize 2

@@ -1,0 +1,41 @@
+before/after mlljj (resolved) / m_lJ (boosted) in CR1/CR2,
+syst_plotter format; after = DY x R_CR1 via exact G-decomposition
+R_CR1 source: /data9/Users/achihwan/25-020/AN-25-020/chihwan/fig/05_backgrounds/CR1_2_validation/jetpt_R/cr1_cr2_validation.json
+
+2022: 14 DY samples contributed
+2022EE: 14 DY samples contributed
+2023: 14 DY samples contributed
+2023BPix: 14 DY samples contributed
+== resolved CR1 EE   data 12429
+   beforeR  MC   12135.8   data/MC:  1.02  1.03  1.01  0.99  1.12  0.99  0.95  1.15  0.96
+   afterR   MC   12377.7   data/MC:  0.96  1.01  1.01  1.02  1.19  1.10  1.08  1.36  1.19
+
+== resolved CR1 MM   data 27866
+   beforeR  MC   26634.9   data/MC:  1.06  1.06  1.06  0.99  1.00  0.93  0.90  0.93  0.69
+   afterR   MC   27917.8   data/MC:  0.97  1.01  1.05  1.01  1.05  1.03  1.04  1.11  0.87
+
+== boosted CR1 EE   data 1505
+   beforeR  MC    1762.4   data/MC:  0.84  0.89  0.80  0.92  0.92
+   afterR   MC    1384.9   data/MC:  1.00  1.14  1.13  1.33  1.36
+
+== boosted CR1 MM   data 1990
+   beforeR  MC    2389.5   data/MC:  0.80  0.86  0.89  0.74  0.97
+   afterR   MC    1925.7   data/MC:  0.93  1.07  1.22  1.04  1.45
+
+== resolved CR2 EE   data 1160
+   beforeR  MC    1106.0   data/MC:  1.07  1.03  1.04  0.95  1.09  0.95  1.29  1.41  1.61
+   afterR   MC    1121.7   data/MC:  1.01  1.02  1.04  0.98  1.15  1.02  1.45  1.64  1.98
+
+== resolved CR2 MM   data 3240
+   beforeR  MC    3051.2   data/MC:  1.07  1.08  1.03  1.13  0.93  1.08  0.99  0.95  1.22
+   afterR   MC    3188.8   data/MC:  0.99  1.03  1.02  1.14  0.96  1.17  1.10  1.09  1.47
+
+== boosted CR2 EE   data 171
+   beforeR  MC     153.3   data/MC:  1.10  1.12  1.22  1.00  1.07
+   afterR   MC     129.2   data/MC:  1.25  1.32  1.55  1.34  1.43
+
+== boosted CR2 MM   data 203
+   beforeR  MC     224.9   data/MC:  1.01  0.85  0.89  0.54  0.77
+   afterR   MC     195.0   data/MC:  1.10  0.97  1.09  0.70  1.05
+
+json -> /data9/Users/achihwan/25-020/AN-25-020/chihwan/fig/05_backgrounds/CR1_2_validation/mlljj/cr1r_applied_mlljj.json

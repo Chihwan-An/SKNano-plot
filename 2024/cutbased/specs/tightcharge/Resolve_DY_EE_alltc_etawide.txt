@@ -1,0 +1,4 @@
+--hist DYCR_Resolved_EE_OS_leading_lep_eta --ymin 1 --output ResolveDYEE_OS_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS Leading Lepton #eta' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_EE_SS_leading_lep_eta --ymin 1 --output ResolveDYEE_SS_leading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS Leading Lepton #eta' --rebin 10 --rmin 0 --rmax 3
+--hist DYCR_Resolved_EE_OS_subleading_lep_eta --ymin 1 --output ResolveDYEE_OS_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'OS Subleading Lepton #eta' --rebin 10 --rmin 0.7 --rmax 1.3
+--hist DYCR_Resolved_EE_SS_subleading_lep_eta --ymin 1 --output ResolveDYEE_SS_subleading_lep_eta --xmin -2.5 --xmax 2.5 --xlabel 'SS Subleading Lepton #eta' --rebin 10 --rmin 0 --rmax 3

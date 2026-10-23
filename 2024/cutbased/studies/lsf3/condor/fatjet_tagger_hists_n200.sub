@@ -1,0 +1,12 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/lsf3/condor/fatjet_tagger_hists.sh
+arguments = "$(points)"
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/lsf3/condor/logs/hists200_$(Process).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/lsf3/condor/logs/hists200_$(Process).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/lsf3/condor/logs/hists200.log
+getenv = True
+request_memory = 8GB
+request_cpus = 4
+JobBatchName = fatjet_tagger_hists_n200
+should_transfer_files = NO
+queue points from /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/lsf3/condor/jobs_points_n200.txt

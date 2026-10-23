@@ -1,0 +1,5 @@
+2 files: /gv0/Users/achihwan/SKNanoOutput_dynew/HNWR_ChargeFlip/RFlav/2024 -> /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_fxfx
+DYto2E_MLL50_FxFx.root 0 
+DYto2Mu_MLL50_FxFx.root 0 
+DONE: 2/2 dumped (rc=4 means the sample has no CF_Tree, i.e. no event passed)
+DUMP_DONE /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_fxfx

@@ -1,0 +1,211 @@
+#!/usr/bin/env python3
+"""Prefit plots of exactly what goes into the limit: the per-region templates of a combine scenario's shapes file
+(same binning, same OS/SS split, EE SS = data-driven charge flip "Flip" + MC non-flip), drawn with plotter._draw.
+
+Band = template stat (+) shape systs (+) lnN from the card, before the fit (rateParams at 1). Shape systs are summed
+over processes per nuisance (correlated) and then in quadrature; each is 0.5*(Up-Down).
+SR data_obs is Asimov -> blinded; CR data is real.
+
+  out/<Boost|Resolve>/<sig|DY|FLV>/<flavour>/jet_lepton/<OS|SS|Inclusive>/<stem>_limitbin_plot.png (+ .tsv)
+    ./condor/in_container.sh python limit_template_plots.py [--scenario cbv15_an2_ref_v3_ss3200]
+  --flip-alt "<suffix>:<root>[,<suffix>:<root>...]" (2026-09-30): also draw the EE SS regions with the Flip template (and
+      its variations) taken from another chargeflip_ddss_dyonly.py output, e.g. _ptshift:<--pt-shift file>,
+      _osmc:<--os-mc --pt-shift file> -> <stem><suffix>; the SR data_obs is then the new prediction (Asimov).
+      <root>@TT also takes the nominal TT from that file (--flip-groups DY,TT: TT non-flip only; its variations dropped).
+"""
+import argparse, os, re, sys
+import numpy as np
+import ROOT
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config, layout, plotter
+import chargeflip_plots as cfp
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "studies/ttbar/07_ss_dyonly_flip"))
+import chargeflip_ddss_dyonly as ddss      # the builder of the v3 EE SS templates: same selection, dumps, groups
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SCEN = os.path.join(HERE, "../../BDT/combine/scenarios/test")
+GROUPS = {"Flip": ("kOrange", "Charge flip"), "DYJets": ("kYellow", "Drell-Yan"),
+          "TT": ("kRed", "T#bar{T}+tW"), "Nonprompt": ("kGreen+2", "Nonprompt"), "Others": ("kBlue", "Others")}
+# card bin -> (region dir, output stem, xlabel, label2, blind)
+REGIONS = {
+    "bEESR":        ("Boost/sig",   "BoostSREE_WRMass",          "m(lJ) (GeV)",              "Boosted SR", True),
+    "rEESR_OS":     ("Resolve/sig", "ResolveSREE_OS_mlljj",      "Opposite sign m(lljj) (GeV)", "Resolved SR OS", True),
+    "rEESR_SS":     ("Resolve/sig", "ResolveSREE_SS_mlljj",      "Same sign m(lljj) (GeV)",  "Resolved SR SS", True),
+    "bMuMuSR":      ("Boost/sig",   "BoostSRMM_WRMass",          "m(lJ) (GeV)",              "Boosted SR", True),
+    "rMuMuSR_OS":   ("Resolve/sig", "ResolveSRMM_OS_mlljj",      "Opposite sign m(lljj) (GeV)", "Resolved SR OS", True),
+    "rMuMuSR_SS":   ("Resolve/sig", "ResolveSRMM_SS_mlljj",      "Same sign m(lljj) (GeV)",  "Resolved SR SS", True),
+    "bDYEECR":      ("Boost/DY",    "BoostDYEE_WRMass",          "m(lJ) (GeV)",              "Boosted DY CR", False),
+    "rDYEECR_OS":   ("Resolve/DY",  "ResolveDYEE_OS_mlljj",      "Opposite sign m(lljj) (GeV)", "Resolved DY CR OS", False),
+    "rDYEECR_SS":   ("Resolve/DY",  "ResolveDYEE_SS_mlljj",      "Same sign m(lljj) (GeV)",  "Resolved DY CR SS", False),
+    "bDYMuMuCR":    ("Boost/DY",    "BoostDYMM_WRMass",          "m(lJ) (GeV)",              "Boosted DY CR", False),
+    "rDYMuMuCR_OS": ("Resolve/DY",  "ResolveDYMM_OS_mlljj",      "Opposite sign m(lljj) (GeV)", "Resolved DY CR OS", False),
+    # mu-mu SS in the DY window is nonprompt-dominated (Nonprompt 40 of 76), so it is labelled as the NP CR
+    "rDYMuMuCR_SS": ("Resolve/DY",  "ResolveDYMM_SS_mlljj",      "Same sign m(lljj) (GeV)",  "Resolved NP CR SS", False),
+    "bFlvEMuCR":    ("Boost/FLV",   "BoostFLVEMJ_WRMass",        "m(lJ) (GeV)",              "Boosted FLV CR", False),
+    "bFlvMuECR":    ("Boost/FLV",   "BoostFLVMEJ_WRMass",        "m(lJ) (GeV)",              "Boosted FLV CR", False),
+    "rFlvCR":       ("Resolve/FLV", "ResolveFLVEM_OS_mlljj",     "Opposite sign m(lljj) (GeV)", "Resolved FLV CR OS", False),
+}
+NOFLIP = ("rEESR_SS", "rDYEECR_SS")
+DUMP_KEYS = ["passResolved", "isDYCR", "m_l1l2", "m_lljj"] + [f"l{i}_{k}" for i in (1, 2)
+                                                             for k in ("pt", "scEta", "charge", "genChargeIdx")]
+LABEL1 = {"EE": "ee", "MM": "#mu#mu", "EM": "e#mu", "EMJ": "e#mu", "MEJ": "#mue"}
+
+
+def read_lnN(card):
+    """{(bin, process): [relative symmetric error of each lnN]} from one datacard."""
+    bins = procs = None; out = {}
+    for ln in open(card):
+        t = ln.split()
+        if not t: continue
+        if t[0] == "bin": bins_all = t[1:]           # the second "bin" line is the per-process one
+        if t[0] == "process" and procs is None: procs = t[1:]; bins = bins_all
+        if len(t) > 2 and t[1] == "lnN" and procs:
+            for b, p, v in zip(bins, procs, t[2:]):
+                if v == "-": continue
+                if "/" in v:
+                    lo, hi = (float(x) for x in v.split("/")); e = 0.5 * (hi - lo)
+                else:
+                    e = float(v) - 1.0
+                out.setdefault((b, p), []).append((t[0], e))
+    return out
+
+
+def draw(a, reg, stem, outdir, groups, tot, data, s2, sigs, blind, xlabel, label2, tag, label3=None):
+    tot.SetTitle("")
+    nb = tot.GetNbinsX(); edges = [tot.GetXaxis().GetBinLowEdge(i) for i in range(1, nb + 2)]
+    keeper = [tot, data] + [h for h in groups.values() if h]
+    g_syst, g_rb, g_rs = cfp.stat_graphs(tot, s2)
+    keeper += [g_syst, g_rb, g_rs]
+    # region label smaller than plotter's 0.06 and the legend pushed right, so "Resolved DY CR SS" clears it
+    box = (0.52, 0.50, 0.90, 0.88) if sigs else (0.58, 0.58, 0.92, 0.88)
+    args = type("A", (), dict(output=stem, logy=True, ymin=0.01 if blind else 0.1, ymax=None, rmin=a.rmin, rmax=a.rmax,
+                              xlabel=xlabel, hist=reg, label1=LABEL1.get(tag, tag), label2=label2,
+                              legend_box=box, legend_text_size=0.032 if sigs else 0.035, label2_size=0.045, label3=label3))()
+    plotter._draw(args, tot, data, groups, g_syst, g_rb, g_rs, edges[0], edges[-1], blind,
+                  os.path.join(outdir, stem), keeper, signal_hists=sigs)
+    with open(os.path.join(outdir, stem + ".tsv"), "w") as fo:
+        cols = [g for g in GROUPS if groups.get(g)]
+        fo.write("\t".join(["BinLow", "BinHigh", "MC_Total", "Data" + ("(Asimov)" if blind else "")] + cols
+                           + ["Stat", "Syst"] + [l for l, *_ in sigs]) + "\n")
+        for i in range(1, nb + 1):
+            fo.write("\t".join(f"{x:.4g}" for x in [edges[i - 1], edges[i], tot.GetBinContent(i), data.GetBinContent(i)]
+                               + [groups[g].GetBinContent(i) for g in cols] + [tot.GetBinError(i), np.sqrt(s2[i - 1])]
+                               + [h.GetBinContent(i) for _l, h, *_ in sigs]) + "\n")
+    print(f"{reg:14s} -> {os.path.relpath(outdir, a.out)}/{stem}  B={tot.Integral():.2f}  data={data.Integral():.1f}  "
+          + " ".join(f"{g}={h.Integral():.2f}" for g, h in groups.items() if h))
+
+
+class _FlipSwap:
+    """TDirectory-like view of a shapes-file region with every Flip* histogram (and the nominal histograms of the groups in
+    `groups`, e.g. TT when its flips are in the Flip template; their shape variations are dropped) taken from another file."""
+    def __init__(self, base, alt, groups=()):
+        self.base, self.alt, self.groups = base, alt, tuple(groups)
+    def _alt(self, n):
+        return n.startswith("Flip") or n in self.groups
+    def keys(self):
+        b = {k.GetName() for k in self.base.GetListOfKeys()
+             if not self._alt(k.GetName()) and not any(k.GetName().startswith(g + "_") for g in self.groups)}
+        return b | {k.GetName() for k in self.alt.GetListOfKeys() if self._alt(k.GetName())}
+    def Get(self, n):
+        return (self.alt if self._alt(n) else self.base).Get(n)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--scenario", default="cbv15_an2_ref_v3_ss3200")
+    ap.add_argument("--out", default=os.path.join(HERE, "out"))
+    ap.add_argument("--signals", default="WR4000N2000,WR4000N200", help="shapes-file signal names without the channel suffix")
+    ap.add_argument("--suffix", default="_limitbin")
+    ap.add_argument("--rmin", type=float, default=0.0); ap.add_argument("--rmax", type=float, default=3.0)
+    ap.add_argument("--dumps", default=os.path.join(HERE, "../../BDT/SR/test/data/chargeflip/dumps_v4/all"),
+                    help="RFlav tree dumps behind the EE SS templates; used for the _noflip plots")
+    ap.add_argument("--regions", default=None, help="comma list of card bins to draw (default: all)")
+    ap.add_argument("--no-noflip", action="store_true", help="skip the EE SS plots without any charge-flip treatment")
+    ap.add_argument("--flip-alt", default=None, help="suffix:root[,suffix:root] -- extra EE SS plots with the Flip template swapped")
+    a = ap.parse_args()
+    ROOT.gROOT.SetBatch(True); ROOT.gStyle.SetOptStat(0); ROOT.gErrorIgnoreLevel = ROOT.kWarning
+    ROOT.TH1.AddDirectory(False)
+    sdir = os.path.join(SCEN, a.scenario)
+    f = ROOT.TFile.Open(os.path.join(sdir, f"shapes_2024_{a.scenario}.root"))
+    lnN = {}
+    for ch in ("EE", "MM"):
+        lnN.update(read_lnN(os.path.join(sdir, f"datacards/2024/{ch}/card_WR4000_N2000.txt")))
+    sigstyle = [("kBlack", 1), ("kMagenta+2", 2), ("kCyan+2", 3)]
+    saved = config.BACKGROUND_GROUPS; config.BACKGROUND_GROUPS = GROUPS
+    noflip = []; altfiles = {}
+    try:
+        for reg, (rdir, stem0, xlabel, label2, blind) in REGIONS.items():
+            if a.regions and reg not in a.regions.split(","): continue
+            d0 = f.Get(reg)
+            if not d0: print("missing", reg); continue
+            variants = [("", d0, {k.GetName() for k in d0.GetListOfKeys()}, None)]
+            if a.flip_alt and reg in NOFLIP:
+                for item in a.flip_alt.split(","):
+                    suf, path = item.split(":", 1); swg = ()
+                    if "@" in path: path, g = path.split("@"); swg = tuple(g.split("+"))   # e.g. file.root@TT
+                    if path not in altfiles: altfiles[path] = ROOT.TFile.Open(path)   # keep the TFile alive
+                    alt = altfiles[path].Get(reg); sw = _FlipSwap(d0, alt, swg)
+                    variants.append((suf, sw, sw.keys(), None))
+            for vsuf, d, keys, vlabel in variants:
+              stem = stem0 + a.suffix + vsuf
+              tag, _ = layout.split_name(stem)
+              outdir = layout.resolve_outdir(os.path.join(a.out, rdir), stem)
+              ch = "EE" if tag == "EE" else "MM" if tag == "MM" else None
+              groups = {g: (d.Get(g).Clone(f"{reg}_{g}") if g in keys else None) for g in GROUPS}
+              tot = None
+              for g, h in groups.items():
+                  if h is None: continue
+                  h.SetDirectory(0)
+                  if h.Integral() <= 0: groups[g] = None; continue
+                  tot = h.Clone(f"{reg}_tot") if tot is None else (tot.Add(h), tot)[1]
+              nb = tot.GetNbinsX()
+              # shape systs: per nuisance, sum the signed half-difference over processes, then quadrature
+              s2 = np.zeros(nb); per = {}
+              for g, h in groups.items():
+                  if h is None: continue
+                  for k in keys:
+                      m = re.fullmatch(re.escape(g) + r"_(.+)Up", k)
+                      if not m or f"{g}_{m.group(1)}Down" not in keys: continue
+                      hu, hd = d.Get(k), d.Get(f"{g}_{m.group(1)}Down")
+                      v = np.array([0.5 * (hu.GetBinContent(i) - hd.GetBinContent(i)) for i in range(1, nb + 1)])
+                      per[m.group(1)] = per.get(m.group(1), 0) + v
+                  for name, e in lnN.get((reg, g), []):
+                      v = e * np.array([h.GetBinContent(i) for i in range(1, nb + 1)])
+                      per["lnN:" + name] = per.get("lnN:" + name, 0) + v
+              for v in per.values(): s2 += v * v
+              data = d.Get("data_obs").Clone(f"{reg}_data"); data.SetDirectory(0)
+              if vsuf and blind:     # swapped Flip: the Asimov data_obs is the new total
+                  data = tot.Clone(f"{reg}_data{vsuf}"); data.SetDirectory(0)
+              sigs = []
+              if ch:
+                  for i, s in enumerate(a.signals.split(",")):
+                      hs = d.Get(s + ch)
+                      if not hs: continue
+                      hs = hs.Clone(f"{reg}_{s}"); hs.SetDirectory(0)
+                      mw, mn = re.fullmatch(r"WR(\d+)N(\d+)", s).groups()
+                      sigs.append((config.signal_label(f"MWR{mw}_N{mn}"), hs, *sigstyle[i % len(sigstyle)]))
+              draw(a, reg, stem, outdir, groups, tot, data, s2, sigs, blind, xlabel, label2, tag)
+              if reg in NOFLIP and not a.no_noflip and not vsuf:
+                  noflip.append((reg, stem + "_noflip",
+                                 outdir, data, sigs, blind, xlabel, label2, tag, [tot.GetXaxis().GetBinLowEdge(i) for i in range(1, nb + 2)]))
+        # EE SS with no charge-flip treatment at all: every group straight from the SS MC (gen-flipped electrons
+        # included, no flip SF), same selection/binning as the template. Band = MC stat only.
+        if noflip:
+            dd = ddss.load(a.dumps, keys=DUMP_KEYS)
+            mc = (dd["grp"] != "DATA") & (dd["grp"] != "SIG") & dd["ss"]
+            for reg, stem, outdir, data, sigs, blind, xlabel, label2, tag, edges in noflip:
+                sel = ddss.SEL[reg](dd) & mc; groups = {"Flip": None}; tot = None
+                for src, g in ddss.GROUP.items():
+                    m = sel & (dd["grp"] == src)
+                    v, e = ddss.fill(dd["m_lljj"][m], dd["weight"][m], edges)
+                    h = ddss.th1(f"{reg}_nf_{g}", edges, v, e); h.SetDirectory(0)
+                    groups[g] = h if h.Integral() > 0 else None
+                    if groups[g]: tot = h.Clone(f"{reg}_nf_tot") if tot is None else (tot.Add(h), tot)[1]
+                draw(a, reg, stem, outdir, groups, tot, data, np.zeros(tot.GetNbinsX()), sigs, blind, xlabel,
+                     label2, tag, label3="SS MC, no flip corr.")
+    finally:
+        config.BACKGROUND_GROUPS = saved
+
+
+if __name__ == "__main__":
+    main()

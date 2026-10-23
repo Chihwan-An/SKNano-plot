@@ -1,0 +1,41 @@
+ <<< Combine >>> 
+ <<< v10.5.1 >>>
+>>> Random number generator seed is 123456
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 0.5
+Configured fallback algorithm, type Minuit2, algo Migrad, strategy 0, tolerance 1
+>>> Method used is MultiDimFit
+Set Range of Parameter JES_2024 To : (-1,9)
+Set Default Value of Parameter r To : 0
+Set Default Value of Parameter mask_bEESR To : 0
+Set Default Value of Parameter mask_rEESR_OS To : 0
+Set Default Value of Parameter mask_rEESR_SS To : 0
+Set Default Value of Parameter mask_bDYEECR To : 0
+Set Default Value of Parameter mask_rDYEECR_OS To : 0
+Set Default Value of Parameter mask_rDYEECR_SS To : 0
+Set Default Value of Parameter mask_bDYMuMuCR To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_OS To : 0
+Set Default Value of Parameter mask_rDYMuMuCR_SS To : 0
+Set Default Value of Parameter mask_bFlvEMuCR To : 0
+Set Default Value of Parameter mask_bFlvMuECR To : 0
+Set Default Value of Parameter mask_rFlvCR To : 1
+>>> 1 out of 12 channels masked
+
+Doing initial fit: 
+ POI: JES_2024= 4.92504 -> [-1,9]
+Point 0/51 JES_2024 = 2.23529
+Point 1/51 JES_2024 = 2.03922
+Point 2/51 JES_2024 = 1.84314
+Point 3/51 JES_2024 = 1.64706
+Point 4/51 JES_2024 = 1.45098
+Point 5/51 JES_2024 = 1.2549
+Point 6/51 JES_2024 = 1.05882
+Point 7/51 JES_2024 = 0.862745
+Point 8/51 JES_2024 = 0.666667
+Point 9/51 JES_2024 = 0.470588
+Point 10/51 JES_2024 = 0.27451
+Point 11/51 JES_2024 = 0.0784314
+Point 12/51 JES_2024 = -0.117647
+Point 13/51 JES_2024 = -0.313725
+Point 14/51 JES_2024 = -0.509804
+Point 15/51 JES_2024 = -0.705882
+Point 16/51 JES_2024 = -0.901961

@@ -1,0 +1,13 @@
+=== cutflow job: WR=8000 N=1500 ===
+=== Start: Thu Jul  2 08:28:05 PM KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_WR8000N1500.png
+[WARN] No mass window defined for WR8000. Skipping mlljj plot.
+[WARN] 'Central' key not found in /gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/DYMLL50to120HT70to100.root
+[WARN] 'Central' key not found in /gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/WJetM0_120HT40to100.root
+[WARN] 'Central' key not found in /gv0/Users/achihwan/SKNanoOutput/Reproduce20_002_copy/combined_22_23/2023/WJetM120HT40to100.root
+[INFO] Loaded background cutflows from 51 MC files
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_Z_WR8000N1500.png
+Saved: /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/cutflow/cutflow_output/cutflow_Z_WR8000N1500.csv
+=== End: Thu Jul  2 08:28:33 PM KST 2026 ===
+=== Exit code: 0 ===

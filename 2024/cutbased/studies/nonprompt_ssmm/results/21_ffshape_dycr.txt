@@ -1,0 +1,10 @@
+# DY CR mumu SS, data. map |eta| [0, 0.8, 1.5, 2.0, 2.4] f=0.166 0.204 0.247 0.305, L<0.4, k=1.27
+raw data TT: 29 20 9 9 4 6 2 1 1 1 0  total 82
+raw data TL: 31 29 12 16 10 8 12 2 4 0 0  total 124
+raw data LT: 27 9 4 15 7 9 2 2 0 0 0  total 75
+raw data LL: 11 10 5 5 4 3 1 1 2 1 0  total 43
+fake estimate per bin: 16.71±2.45 10.35±1.97 4.01±1.30 9.90±1.92 4.84±1.37 5.08±1.39 3.91±1.09 1.10±0.61 0.93±0.68 -0.07±0.06 -0.00±0.00
+data TT - prompt MC:   23.32 16.22 6.30 6.59 2.23 5.07 1.17 0.46 0.64 0.90 -0.05
+fit expo: pars [0.1906, 3.8704] chi2/ndf 26.18/8; integral per card bin 26.532 12.234 5.642 2.601 1.753 0.373 0.079 0.017 0.005  (sum 49.24, fake hist sum 56.76)
+fit power: pars [0.2712, 5.9568] chi2/ndf 42.50/8; integral per card bin 29.290 8.616 3.134 1.323 0.943 0.277 0.101 0.043 0.045  (sum 43.77, fake hist sum 56.76)
+fit dijet: pars [0.1495, 65.4037, -2.3263] chi2/ndf 23.25/7; integral per card bin 23.674 13.461 6.951 3.334 2.152 0.369 0.054 0.007 0.001  (sum 50.00, fake hist sum 56.76)

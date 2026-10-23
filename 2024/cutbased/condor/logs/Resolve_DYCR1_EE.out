@@ -1,0 +1,26 @@
+=== job Resolve_DYCR1_EE ===
+=== start Fri Aug 28 08:53:38 PM KST 2026 ===
+==============================================================================
+>> job Resolve_DYCR1_EE   region=Resolve/DYCR1   channel=EE   flavour=EE
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/DYCR1
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav/2024
+>> Channel EE: 44 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   15 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      10 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+>> 입력 60개 5.2 GB -> /var/lib/condor/execute/dir_644899/inputs
+>> 복사 완료 17 s (312 MB/s)
+   복사본 확인: MC 44, Data 16
+>> Systematics: 31 requested, 44 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/44), ResolvedDYReshapeBin2(14/44), ResolvedDYReshapeBin3(14/44), ResolvedDYReshapeBin4(14/44), ResolvedDYReshapeBin5(14/44), ResolvedDYReshapeBin6(14/44), BoostedDYReshapeBin1(14/44), BoostedDYReshapeBin2(14/44), BoostedDYReshapeBin3(14/44)   <- DY 전용이면 정상
+>> 0 plots from specs/Resolve_DYCR1_EE.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_DYCR1_EE: 0/0 plots, 0.3 min (17.9 s/plot)
+==============================================================================
+=== end Fri Aug 28 08:54:00 PM KST 2026 ===
+=== exit 0 ===

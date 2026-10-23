@@ -1,0 +1,13 @@
+nominal_OSdata_x_w                     flip     34.6 +-   1.3  + nonflip  14.1 =     48.7   obs 88   obs/pred 1.806 +- 0.193
+OSMC_x_w                               flip     43.7 +-   0.3  + nonflip  14.1 =     57.9   obs 88   obs/pred 1.521 +- 0.162
+OSMC_x_w_normalised_to_OSdata          flip     34.6 +-   0.2  + nonflip  14.1 =     48.7   obs 88   obs/pred 1.807 +- 0.193
+OSMC_x_w_noSF (closure of w on MC)     flip     29.5 +-   0.2  + nonflip  14.1 =     43.6   obs 88   obs/pred 2.017 +- 0.215
+rawMC_SS_flipped                       flip     28.9 +-   1.0  + nonflip  14.1 =     43.0   obs 88   obs/pred 2.044 +- 0.218
+OS data / OS MC in T = 0.7906   (OS MC by group: {'DY': 414.4, 'TT': 931.9, 'Nonprompt': 8.8, 'Others': 47.7})
+flip from OS MC x w by group: {'DY': 14.0, 'TT': 27.7, 'Nonprompt': 0.4, 'Others': 1.7} | MC truth flipped SS (no SF): {'DY': 9.1, 'TT': 18.5, 'Nonprompt': 0.0, 'Others': 1.3}
+m_lljj bin      obs   nominal  OSMCxw  OSMCxw(norm)   obs/nominal  obs/OSMC(norm)
+  400-  500      0       0.1      0.0       0.0       0.000      0.000
+  500-  600     10       6.0      7.0       5.9       1.668      1.707
+  600-  700     34      19.4     22.7      19.1       1.753      1.781
+  700-  800     44      23.2     28.1      23.7       1.893      1.853
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/studies/chargeflip/new_DYCR/29_sf2roofit/25_lowmlljj_mll400

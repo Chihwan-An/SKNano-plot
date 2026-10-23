@@ -1,0 +1,26 @@
+{
+  "sample": "DYto2E_MLL6000toInf",
+  "sample_info": {
+    "isMC": 1,
+    "PD": "DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8",
+    "xsec": 3.519e-08,
+    "nmc": 998101.0,
+    "sumsign": 998101.0,
+    "sumW": 0.035124569774673375
+  },
+  "inputs": [
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_1.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_10.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_11.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_12.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_13.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_14.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-6000_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_15.root"
+  ],
+  "processed": 200000,
+  "processed_sum_sign": 200000.0,
+  "processed_sumw": 0.007038279647986201,
+  "selected_rows": 126436,
+  "negative_rows": 0,
+  "note": "Bounded prefix of sorted raw files, not full production; no generator HT cut."
+}

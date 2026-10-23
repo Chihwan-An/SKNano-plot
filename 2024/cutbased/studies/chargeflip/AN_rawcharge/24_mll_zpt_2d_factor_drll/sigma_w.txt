@@ -1,0 +1,5 @@
+EE, OS, dR(ll)>0.4.  Sum w: 1-jet data | native 1-jet MC | 2j DY x f + 1j non-DY          <w> of DY: native 1j | 2j x f | 2j (no f)
+  m_ll 60-150     5959.44 +- 16.96 |   5120.55 (data/MC 1.164) |   8803.52 (data/MC 0.677)      0.01763 | 0.03080 | 0.03017   (data, all comps: 0.01842)
+  m_ll 150-400    1334.16 +-  8.21 |   1203.04 (data/MC 1.109) |   1764.73 (data/MC 0.756)      0.02323 | 0.04078 | 0.03662   (data, all comps: 0.02260)
+  m_ll >=400       182.05 +-  3.50 |    165.51 (data/MC 1.100) |    177.28 (data/MC 1.027)      0.03827 | 0.04268 | 0.04124   (data, all comps: 0.04043)
+  m_ll >=700        28.15 +-  1.47 |     24.30 (data/MC 1.159) |     24.23 (data/MC 1.162)      0.04608 | 0.04602 | 0.04595   (data, all comps: 0.05091)

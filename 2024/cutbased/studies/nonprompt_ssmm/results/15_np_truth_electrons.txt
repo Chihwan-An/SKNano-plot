@@ -1,0 +1,80 @@
+# rEESR_SS (SS, 2 tight e, 0 tight mu, mll>400, mlljj>800), FOEE truth tree. Weights: MC x DY R, no lepton SF.
+# P prompt right charge / FLIP prompt wrong charge / CONV prompt-photon conversion / F hadron origin / U unmatched
+
+## DY: rEESR_SS yield 34.960 [1811 raw]
+  truth pair (lead-sub): FLIP-P 0.40, P-FLIP 0.33, P-F 0.09, F-P 0.09, P-CONV 0.02, CONV-P 0.02, P-P 0.02, P-U 0.01, U-P 0.01
+  non-prompt/flipped electron is: lead 0.53, sub 0.47 (of 34.572)
+  its truth: prompt e, charge flipped 0.74, light 0.18, prompt-γ conv 0.05, none 0.02, inconcl. 0.01, c 0.01
+  NanoAOD genPartFlav: 1 prompt 0.74, 0 unmatched 0.17, 22 photon 0.06, 3 light 0.03
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.18
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): 0 0.02
+  its pT: 53-80 0.07  80-120 0.13  120-200 0.20  200-300 0.28  300-500 0.26  500-4000 0.06
+
+## ST s/t: rEESR_SS yield 0.254 [5 raw]
+  truth pair (lead-sub): F-P 1.59, P-F -0.59
+  non-prompt/flipped electron is: lead 1.59, sub -0.59 (of 0.254)
+  its truth: light 1.59, b -0.59
+  NanoAOD genPartFlav: 0 unmatched 1.00
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 1.10
+  its pT: 53-80 -0.59  80-120 0.59  120-200 0.49  200-300 0.00  300-500 0.51  500-4000 0.00
+
+## TTLJ: rEESR_SS yield 15.452 [172 raw]
+  truth pair (lead-sub): F-P 0.45, P-F 0.30, CONV-P 0.10, P-CONV 0.06, P-P 0.04, CONV-F 0.01, FLIP-P 0.01, U-P 0.01
+  non-prompt/flipped electron is: lead 0.61, sub 0.39 (of 15.176)
+  its truth: light 0.66, prompt-γ conv 0.18, b 0.11, prompt e, charge flipped 0.02, none 0.02, b->c 0.01, c 0.01
+  NanoAOD genPartFlav: 0 unmatched 0.57, 22 photon 0.25, 5 b 0.10, 3 light 0.07, 1 prompt 0.01, 4 c 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.63
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): 0 0.02
+  its pT: 53-80 0.21  80-120 0.17  120-200 0.33  200-300 0.16  300-500 0.12  500-4000 0.02
+
+## TTLL: rEESR_SS yield 39.214 [1826 raw]
+  truth pair (lead-sub): FLIP-P 0.47, P-FLIP 0.38, F-P 0.06, P-F 0.04, P-CONV 0.02, CONV-P 0.02
+  non-prompt/flipped electron is: lead 0.56, sub 0.44 (of 39.053)
+  its truth: prompt e, charge flipped 0.86, light 0.07, prompt-γ conv 0.04, np tau 0.02, b 0.01
+  NanoAOD genPartFlav: 1 prompt 0.83, 0 unmatched 0.07, 22 photon 0.05, 15 tau 0.03, 5 b 0.01, 3 light 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.09
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): 0 0.00
+  its pT: 53-80 0.13  80-120 0.21  120-200 0.37  200-300 0.21  300-500 0.07  500-4000 0.01
+
+## VV: rEESR_SS yield 15.114 [5887 raw]
+  truth pair (lead-sub): P-P 0.61, FLIP-P 0.14, P-FLIP 0.11, P-CONV 0.04, P-F 0.04, F-P 0.04, CONV-P 0.02
+  non-prompt/flipped electron is: lead 0.52, sub 0.48 (of 5.868)
+  its truth: prompt e, charge flipped 0.64, prompt-γ conv 0.16, light 0.15, np tau 0.03, inconcl. 0.01, c 0.01
+  NanoAOD genPartFlav: 1 prompt 0.63, 0 unmatched 0.17, 22 photon 0.17, 3 light 0.02, 15 tau 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.18
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): 211 0.00, -211 0.00
+  its pT: 53-80 0.10  80-120 0.15  120-200 0.25  200-300 0.23  300-500 0.21  500-4000 0.06
+
+## VVV: rEESR_SS yield 2.207 [1310 raw]
+  truth pair (lead-sub): P-P 0.90, P-F 0.03, P-FLIP 0.02, FLIP-P 0.02, P-CONV 0.01
+  non-prompt/flipped electron is: lead 0.34, sub 0.66 (of 0.213)
+  its truth: prompt e, charge flipped 0.50, np tau 0.19, prompt-γ conv 0.18, light 0.12, c 0.01
+  NanoAOD genPartFlav: 1 prompt 0.46, 0 unmatched 0.27, 22 photon 0.19, 3 light 0.04, 15 tau 0.03, 4 c 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.28
+  its pT: 53-80 0.15  80-120 0.17  120-200 0.29  200-300 0.29  300-500 0.07  500-4000 0.03
+
+## W+jets(HT): rEESR_SS yield 28.263 [987 raw]
+  truth pair (lead-sub): F-P 0.41, P-F 0.32, P-CONV 0.08, CONV-P 0.08, P-U 0.03, P-P 0.03, FLIP-F 0.02
+  non-prompt/flipped electron is: lead 0.53, sub 0.47 (of 28.426)
+  its truth: light 0.69, prompt-γ conv 0.16, prompt e, charge flipped 0.04, c 0.04, none 0.03, np tau 0.02, inconcl. 0.01
+  NanoAOD genPartFlav: 0 unmatched 0.67, 22 photon 0.23, 1 prompt 0.04, 3 light 0.04, 5 b 0.02
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.66
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): 0 0.03
+  its pT: 53-80 0.25  80-120 0.28  120-200 0.30  200-300 0.11  300-500 0.05  500-4000 0.02
+
+## tW: rEESR_SS yield 5.478 [140 raw]
+  truth pair (lead-sub): FLIP-P 0.34, P-FLIP 0.30, F-P 0.12, CONV-P 0.10, P-CONV 0.07, P-F 0.04, P-P 0.02
+  non-prompt/flipped electron is: lead 0.58, sub 0.42 (of 5.373)
+  its truth: prompt e, charge flipped 0.66, prompt-γ conv 0.18, light 0.16, np tau 0.01
+  NanoAOD genPartFlav: 1 prompt 0.63, 22 photon 0.19, 0 unmatched 0.14, 15 tau 0.02, 3 light 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.16
+  its pT: 53-80 0.11  80-120 0.23  120-200 0.29  200-300 0.22  300-500 0.10  500-4000 0.06
+
+## ttV: rEESR_SS yield 2.277 [1498 raw]
+  truth pair (lead-sub): P-P 0.94, FLIP-P 0.02, P-FLIP 0.02
+  non-prompt/flipped electron is: lead 0.55, sub 0.45 (of 0.129)
+  its truth: prompt e, charge flipped 0.68, np tau 0.13, prompt-γ conv 0.10, light 0.07, none 0.01, c 0.01, b 0.01
+  NanoAOD genPartFlav: 1 prompt 0.65, 22 photon 0.17, 0 unmatched 0.10, 3 light 0.04, 15 tau 0.04, 4 c 0.01, 5 b 0.01
+  hadron-origin via a photon (pi0/eta Dalitz, conversions in jets): 0.20
+  unmatched -> nearest gen particle pdgId (dR<0.3, pT>5): -13 0.01
+  its pT: 53-80 0.15  80-120 0.09  120-200 0.23  200-300 0.27  300-500 0.22  500-4000 0.04

@@ -1,0 +1,14 @@
+# SR mumu SS (FO baseline, mll>400, mlljj>800), blind. map mll 60-300 MC, |eta| [0, 0.8, 1.5, 2.0, 2.4], L<0.4, k=1.27
+# map f: 0.166 0.204 0.247 0.305
+mlljj before: MC nonprompt                 total 49.61 ± 2.01(stat)  Others 14.96  Nonprompt 23.72  TT+tW 8.78  DY 2.16
+   per-bin rel stat: 7% 8% 9% 13% 12% 18% 28% 22%
+mlljj after: data-driven fake (expected)   total 56.06 ± 3.97(stat)  Others 14.33  Fake (data-driven, exp.) 40.71  Nonprompt 0.15  TT+tW 0.84  DY 0.03
+   per-bin rel stat: 12% 14% 18% 24% 25% 39% 60% 118%
+lead_pt before: MC nonprompt                 total 49.61 ± 2.01(stat)  Others 14.96  Nonprompt 23.72  TT+tW 8.78  DY 2.16
+   per-bin rel stat: 21% 7% 7% 7% 13% 31%
+lead_pt after: data-driven fake (expected)   total 56.06 ± 3.97(stat)  Others 14.33  Fake (data-driven, exp.) 40.71  Nonprompt 0.15  TT+tW 0.84  DY 0.03
+   per-bin rel stat: 32% 13% 13% 13% 28% 74%
+sub_pt before: MC nonprompt                 total 49.62 ± 2.01(stat)  Others 14.96  Nonprompt 23.72  TT+tW 8.78  DY 2.17
+   per-bin rel stat: 9% 7% 7% 10% 18% 63%
+sub_pt after: data-driven fake (expected)   total 56.06 ± 3.97(stat)  Others 14.33  Fake (data-driven, exp.) 40.71  Nonprompt 0.15  TT+tW 0.84  DY 0.03
+   per-bin rel stat: 14% 13% 12% 19% 38% 258%

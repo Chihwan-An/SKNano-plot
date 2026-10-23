@@ -1,0 +1,7 @@
+normalization: shape-only | norm_min_pt: 50.0
+QCDScale       max|up| 0.87%  max|down| 0.49%   tail bins (250-350, 350-500, 500-1000): up [0.46 0.61 0.87]  down [-0.25 -0.32 -0.49]
+QCDPDFError    max|up| 0.82%  max|down| 0.89%   tail bins (250-350, 350-500, 500-1000): up [-0.67 -0.77 -0.82]  down [0.73 0.84 0.89]
+QCDPDFAlphaS   max|up| 0.25%  max|down| 0.53%   tail bins (250-350, 350-500, 500-1000): up [-0.14 -0.2  -0.25]  down [0.32 0.42 0.53]
+TOTAL          max|up| 1.36%  max|down| 1.36%   tail bins (250-350, 350-500, 500-1000): up [0.92 1.12 1.36]  down [-0.92 -1.12 -1.36]
+MC stat rel. error in the tail bins [%]: [0.17 0.33 0.68]
+C in the tail bins: [0.922 0.84  0.733]

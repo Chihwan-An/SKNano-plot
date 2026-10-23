@@ -1,0 +1,16 @@
+channel                data     postfit      prefit    d/post
+   rEESR_SS: out edge 3200 not in the fit binning -> 3132
+rEESR_SS              135.4       137.9       135.4    0.9820
+bEESR                 758.8       745.9       758.8    1.0172
+rEESR_OS             2304.5      2291.7      2304.5    1.0056
+rDYEECR_SS           1174.0      1158.2      1104.6    1.0136
+bDYEECR              3326.0      3327.9      3321.3    0.9994
+bDYMuMuCR            3815.0      3817.4      3760.1    0.9994
+bFlvEMuCR             472.0       480.8       513.1    0.9817
+bFlvMuECR             648.0       646.1       641.3    1.0030
+rDYEECR_OS          35120.0     35275.0     35542.4    0.9956
+rDYMuMuCR_OS        52218.0     52067.3     51106.8    1.0029
+rDYMuMuCR_SS           84.0        86.0        75.5    0.9773
+rFlvCR               3354.0      3361.3      3353.7    0.9978
+
+written to postfit_plots_cutstyle_v3/EE

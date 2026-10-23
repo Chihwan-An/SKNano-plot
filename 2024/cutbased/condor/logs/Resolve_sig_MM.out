@@ -1,0 +1,167 @@
+=== job Resolve_sig_MM ===
+=== start Fri Aug 28 08:54:41 PM KST 2026 ===
+==============================================================================
+>> job Resolve_sig_MM   region=Resolve/sig   channel=MM   flavour=MM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav/2024
+>> Channel MM: 44 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   15 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu-4Jets_Bin-MLNu-120to200, WtoLNu-4Jets_Bin-MLNu-1500to2500, WtoLNu-4Jets_Bin-MLNu-200to400, WtoLNu-4Jets_Bin-MLNu-2500to4000, WtoLNu-4Jets_Bin-MLNu-4000to6000, WtoLNu-4Jets_Bin-MLNu-400to800, WtoLNu-4Jets_Bin-MLNu-6000, WtoLNu-4Jets_Bin-MLNu-800to1500
+   Others      10 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L
+   -- 시그널 4개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=4 TeV, m_{N}=0.2 TeV
+>> 입력 62개 5.4 GB -> /var/lib/condor/execute/dir_656692/inputs
+>> 복사 완료 6 s (930 MB/s)
+   복사본 확인: MC 44, Data 16, 시그널 2
+>> Systematics: 31 requested, 44 MC files
+   전체 커버 22: Pileup, ElectronID, ElectronReco, ElectronTrig, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/44), ResolvedDYReshapeBin2(14/44), ResolvedDYReshapeBin3(14/44), ResolvedDYReshapeBin4(14/44), ResolvedDYReshapeBin5(14/44), ResolvedDYReshapeBin6(14/44), BoostedDYReshapeBin1(14/44), BoostedDYReshapeBin2(14/44), BoostedDYReshapeBin3(14/44)   <- DY 전용이면 정상
+>> 35 plots from specs/Resolve_sig_MM.txt
+==============================================================================
+
+>> SR_Resolved_MM_ll_pt -> ResolveSRMM_dilepton_pt  [BLIND]
+   MC       3191.5   Data blinded   (160 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/dilepton/Inclusive/ResolveSRMM_dilepton_pt_plot.png
+
+>> SR_Resolved_MM_leading_jet_pt -> ResolveSRMM_leading_jet_pt  [BLIND]
+   MC       3191.5   Data blinded   (160 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_leading_jet_pt_plot.png
+
+>> SR_Resolved_MM_subleading_jet_pt -> ResolveSRMM_subleading_jet_pt  [BLIND]
+   MC       3191.5   Data blinded   (160 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_subleading_jet_pt_plot.png
+
+>> SR_Resolved_MM_mlljj -> ResolveSRMM_mlljj  [BLIND]
+   MC       3191.5   Data blinded   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_mlljj_plot.png
+
+>> SR_Resolved_MM_mlljj -> ResolveSRMM_mlljj_fine  [BLIND]
+   MC       3191.5   Data blinded   (80 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_mlljj_fine_plot.png
+
+>> SR_Resolved_MM_leading_lep_pt -> ResolveSRMM_leading_lep_pt  [BLIND]
+   MC       3191.5   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_leading_lep_pt_plot.png
+
+>> SR_Resolved_MM_subleading_lep_pt -> ResolveSRMM_subleading_lep_pt  [BLIND]
+   MC       3191.5   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_subleading_lep_pt_plot.png
+
+>> SR_Resolved_MM_mass -> ResolveSRMM_dilepton_mass  [BLIND]
+   MC       3191.5   Data blinded   (400 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/dilepton/Inclusive/ResolveSRMM_dilepton_mass_plot.png
+
+>> SR_Resolved_MM_eta -> ResolveSRMM_dilepton_eta  [BLIND]
+   MC       3188.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/dilepton/Inclusive/ResolveSRMM_dilepton_eta_plot.png
+
+>> SR_Resolved_MM_phi -> ResolveSRMM_dilepton_phi  [BLIND]
+   MC       3191.0   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/dilepton/Inclusive/ResolveSRMM_dilepton_phi_plot.png
+
+>> SR_Resolved_MM_leading_jet_eta -> ResolveSRMM_leading_jet_eta  [BLIND]
+   MC       3191.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_leading_jet_eta_plot.png
+
+>> SR_Resolved_MM_leading_jet_phi -> ResolveSRMM_leading_jet_phi  [BLIND]
+   MC       3190.7   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_leading_jet_phi_plot.png
+
+>> SR_Resolved_MM_subleading_jet_eta -> ResolveSRMM_subleading_jet_eta  [BLIND]
+   MC       3191.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_subleading_jet_eta_plot.png
+
+>> SR_Resolved_MM_subleading_jet_phi -> ResolveSRMM_subleading_jet_phi  [BLIND]
+   MC       3190.7   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_subleading_jet_phi_plot.png
+
+>> SR_Resolved_MM_j1j2_mass -> ResolveSRMM_j1j2_mass  [BLIND]
+   MC       3191.5   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_j1j2_mass_plot.png
+
+>> SR_Resolved_MM_j1j2_pt -> ResolveSRMM_j1j2_pt  [BLIND]
+   MC       3191.5   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_j1j2_pt_plot.png
+
+>> SR_Resolved_MM_j1j2_eta -> ResolveSRMM_j1j2_eta  [BLIND]
+   MC       3190.1   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_j1j2_eta_plot.png
+
+>> SR_Resolved_MM_j1j2_phi -> ResolveSRMM_j1j2_phi  [BLIND]
+   MC       3191.0   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_j1j2_phi_plot.png
+
+>> SR_Resolved_MM_l1j1j2_mass -> ResolveSRMM_l1j1j2_mass  [BLIND]
+   MC       1243.0   Data blinded   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l1j1j2_mass_plot.png
+
+>> SR_Resolved_MM_l1j1j2_pt -> ResolveSRMM_l1j1j2_pt  [BLIND]
+   MC       3191.5   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l1j1j2_pt_plot.png
+
+>> SR_Resolved_MM_l1j1j2_eta -> ResolveSRMM_l1j1j2_eta  [BLIND]
+   MC       3189.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l1j1j2_eta_plot.png
+
+>> SR_Resolved_MM_l1j1j2_phi -> ResolveSRMM_l1j1j2_phi  [BLIND]
+   MC       3190.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l1j1j2_phi_plot.png
+
+>> SR_Resolved_MM_l2j1j2_mass -> ResolveSRMM_l2j1j2_mass  [BLIND]
+   MC        645.8   Data blinded   (9 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l2j1j2_mass_plot.png
+
+>> SR_Resolved_MM_l2j1j2_pt -> ResolveSRMM_l2j1j2_pt  [BLIND]
+   MC       3191.5   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l2j1j2_pt_plot.png
+
+>> SR_Resolved_MM_l2j1j2_eta -> ResolveSRMM_l2j1j2_eta  [BLIND]
+   MC       3190.9   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l2j1j2_eta_plot.png
+
+>> SR_Resolved_MM_l2j1j2_phi -> ResolveSRMM_l2j1j2_phi  [BLIND]
+   MC       3190.6   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_l2j1j2_phi_plot.png
+
+>> SR_Resolved_MM_mlljj_pt -> ResolveSRMM_mlljj_pt  [BLIND]
+   MC       3191.5   Data blinded   (400 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_mlljj_pt_plot.png
+
+>> SR_Resolved_MM_mlljj_eta -> ResolveSRMM_mlljj_eta  [BLIND]
+   MC       3151.4   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_mlljj_eta_plot.png
+
+>> SR_Resolved_MM_mlljj_phi -> ResolveSRMM_mlljj_phi  [BLIND]
+   MC       3190.7   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet_lepton/Inclusive/ResolveSRMM_mlljj_phi_plot.png
+
+>> SR_Resolved_MM_leading_lep_eta -> ResolveSRMM_leading_lep_eta  [BLIND]
+   MC       3191.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_leading_lep_eta_plot.png
+
+>> SR_Resolved_MM_leading_lep_phi -> ResolveSRMM_leading_lep_phi  [BLIND]
+   MC       3190.6   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_leading_lep_phi_plot.png
+
+>> SR_Resolved_MM_subleading_lep_eta -> ResolveSRMM_subleading_lep_eta  [BLIND]
+   MC       3191.5   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_subleading_lep_eta_plot.png
+
+>> SR_Resolved_MM_subleading_lep_phi -> ResolveSRMM_subleading_lep_phi  [BLIND]
+   MC       3190.9   Data blinded   (50 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/lepton/Inclusive/ResolveSRMM_subleading_lep_phi_plot.png
+
+>> SR_Resolved_MM_jetnum -> ResolveSRMM_jetnum  [BLIND]
+   MC       3191.5   Data blinded   (20 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/jet/Inclusive/ResolveSRMM_jetnum_plot.png
+
+>> SR_Resolved_MM_pvgood -> ResolveSRMM_punum  [BLIND]
+   MC       3191.5   Data blinded   (40 bins)
+   saved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig/MM/pileup/Inclusive/ResolveSRMM_punum_plot.png
+
+==============================================================================
+>> Resolve_sig_MM: 35/35 plots, 0.4 min (0.7 s/plot)
+==============================================================================
+=== end Fri Aug 28 08:55:09 PM KST 2026 ===
+=== exit 0 ===

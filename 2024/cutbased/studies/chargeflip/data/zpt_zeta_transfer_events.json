@@ -1,0 +1,22 @@
+{
+ "source_directory": "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_boost",
+ "keys": [
+  "channel",
+  "nJet",
+  "m_l1l2",
+  "pt_l1l2",
+  "m_lljj",
+  "weight",
+  "w_dy",
+  "l1_pt",
+  "l2_pt",
+  "l1_scEta",
+  "l2_scEta",
+  "l1_eta",
+  "l2_eta",
+  "l1_phi",
+  "l2_phi"
+ ],
+ "n": 28320881,
+ "selection": "hasPair & OS & m_ll>=60 & (nJet==1 | (nJet>=2 & passResolved & m_lljj>800)); data: stream-matched, 2-jet data only for m_ll<150"
+}

@@ -1,0 +1,31 @@
+{
+ "source": "/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/data/chargeflip/dumps_boost",
+ "selection": "MM, hasPair, nJet>=2, passResolved, m_ll>=200, m_lljj<800",
+ "keys": [
+  "channel",
+  "hasPair",
+  "isSS",
+  "nJet",
+  "m_l1l2",
+  "pt_l1l2",
+  "m_lljj",
+  "weight",
+  "j1_pt",
+  "j2_pt",
+  "j1_eta",
+  "j2_eta",
+  "l1_pt",
+  "l2_pt",
+  "l1_scEta",
+  "l2_scEta",
+  "l1_eta",
+  "l2_eta",
+  "l1_phi",
+  "l2_phi",
+  "l1_charge",
+  "l2_charge",
+  "l1_genChargeIdx",
+  "l2_genChargeIdx"
+ ],
+ "n": 1487864
+}

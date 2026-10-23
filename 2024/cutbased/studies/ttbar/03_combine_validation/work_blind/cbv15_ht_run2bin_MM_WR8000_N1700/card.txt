@@ -1,0 +1,89 @@
+# era=2024 signal=WR8000_N1700 cut-based v15 (RFlav+DYCRCharge, DY corr on): Run 2 layout -- charge-inclusive SR/DY CR, pure MC, Run 2 SR edges
+imax 9  number of channels
+jmax 4  number of processes minus 1
+kmax *
+--------------------------------------------------------------------------------
+shapes * bMuMuSR        /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  bMuMuSR/$PROCESS  bMuMuSR/$PROCESS_$SYSTEMATIC
+shapes * rMuMuSR        /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  rMuMuSR/$PROCESS  rMuMuSR/$PROCESS_$SYSTEMATIC
+shapes * bDYEECR        /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  bDYEECR/$PROCESS  bDYEECR/$PROCESS_$SYSTEMATIC
+shapes * rDYEECR        /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  rDYEECR/$PROCESS  rDYEECR/$PROCESS_$SYSTEMATIC
+shapes * bDYMuMuCR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  bDYMuMuCR/$PROCESS  bDYMuMuCR/$PROCESS_$SYSTEMATIC
+shapes * rDYMuMuCR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  rDYMuMuCR/$PROCESS  rDYMuMuCR/$PROCESS_$SYSTEMATIC
+shapes * bFlvEMuCR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  bFlvEMuCR/$PROCESS  bFlvEMuCR/$PROCESS_$SYSTEMATIC
+shapes * bFlvMuECR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  bFlvMuECR/$PROCESS  bFlvMuECR/$PROCESS_$SYSTEMATIC
+shapes * rFlvCR         /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_ht_run2bin/shapes_2024_cbv15_ht_run2bin.root  rFlvCR/$PROCESS  rFlvCR/$PROCESS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          bMuMuSR  rMuMuSR  bDYEECR  rDYEECR  bDYMuMuCR  rDYMuMuCR  bFlvEMuCR  bFlvMuECR  rFlvCR
+observation  -1  -1  3326  36294  3815  52302  472  648  3623
+--------------------------------------------------------------------------------
+bin      bMuMuSR  bMuMuSR  bMuMuSR  bMuMuSR  bMuMuSR  rMuMuSR  rMuMuSR  rMuMuSR  rMuMuSR  rMuMuSR  bDYEECR  bDYEECR  bDYEECR  bDYEECR  rDYEECR  rDYEECR  rDYEECR  rDYEECR  bDYMuMuCR  bDYMuMuCR  bDYMuMuCR  bDYMuMuCR  rDYMuMuCR  rDYMuMuCR  rDYMuMuCR  rDYMuMuCR  bFlvEMuCR  bFlvEMuCR  bFlvEMuCR  bFlvEMuCR  bFlvMuECR  bFlvMuECR  bFlvMuECR  bFlvMuECR  rFlvCR  rFlvCR  rFlvCR  rFlvCR
+process  WR8000N1700MM  DYJets  TT  Nonprompt  Others  WR8000N1700MM  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others
+process  0  1  2  3  4  0  1  2  3  4  1  2  3  4  1  2  3  4  1  2  3  4  1  2  3  4  1  2  3  4  1  2  3  4  1  2  3  4
+rate     -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+--------------------------------------------------------------------------------
+CMS_lumi_2024  lnN  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161
+Pileup_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+JER_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+JES_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+FatJetJES_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+FatJetJER_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+LSF_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronID_2024  shape  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronReco_2024  shape  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronTrig_2024  shape  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronScale_2024  shape  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronRes_2024  shape  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonID_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonIso_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonReco_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonTrig_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonScale_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+AlphaS_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ScaleWeight_muF_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ScaleWeight_muR_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ZPtRw_MC_stat  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDScale  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDPDFError  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDPDFAlphaS  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW1  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW2  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW3  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin1  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin2  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin3  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin4  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin5  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin6  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin1  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin2  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin3  shape  -  1.0  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+NonPromptNorm_EE_Boosted_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -
+NonPromptNorm_EE_Resolved_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+NonPromptNorm_MM_Boosted_2024  lnN  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -
+NonPromptNorm_MM_Resolved_2024  lnN  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -
+NonPromptNorm_Resolved_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -
+OthersNorm_2024  lnN  -  -  -  -  1.5  -  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5
+R_DY_Boosted_2024      rateParam bMuMuSR DYJets 1 [0.5,1.5]
+R_DY_Boosted_2024      rateParam bDYEECR DYJets 1 [0.5,1.5]
+R_DY_Boosted_2024      rateParam bDYMuMuCR DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rMuMuSR DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rDYEECR DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rDYMuMuCR DYJets 1 [0.5,1.5]
+R_TT_Boosted_EE_2024   rateParam bDYEECR TT 1 [0.5,1.5]
+R_TT_Boosted_EE_2024   rateParam bFlvEMuCR TT 1 [0.5,1.5]
+R_TT_Boosted_MuMu_2024 rateParam bMuMuSR TT 1 [0.5,1.5]
+R_TT_Boosted_MuMu_2024 rateParam bDYMuMuCR TT 1 [0.5,1.5]
+R_TT_Boosted_MuMu_2024 rateParam bFlvMuECR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rMuMuSR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rDYEECR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rDYMuMuCR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rFlvCR TT 1 [0.5,1.5]
+bMuMuSR autoMCStats 10 0 1
+rMuMuSR autoMCStats 10 0 1
+bDYEECR autoMCStats 0 0 1
+rDYEECR autoMCStats 0 0 1
+bDYMuMuCR autoMCStats 0 0 1
+rDYMuMuCR autoMCStats 0 0 1
+bFlvEMuCR autoMCStats 0 0 1
+bFlvMuECR autoMCStats 0 0 1
+rFlvCR autoMCStats 0 0 1

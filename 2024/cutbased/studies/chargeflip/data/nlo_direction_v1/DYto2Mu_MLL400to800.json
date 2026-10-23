@@ -1,0 +1,27 @@
+{
+  "sample": "DYto2Mu_MLL400to800",
+  "sample_info": {
+    "isMC": 1,
+    "PD": "DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8",
+    "xsec": 0.2691,
+    "nmc": 977500.0,
+    "sumsign": 976462.0,
+    "sumW": 263065.702055037
+  },
+  "inputs": [
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_1.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_10.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_11.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_12.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_13.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_14.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_15.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2Mu_Bin-MLL-400to800_TuneCP5_13p6TeV_powheg-pythia8/251121_124135/0000/tree_16.root"
+  ],
+  "processed": 200000,
+  "processed_sum_sign": 199754.0,
+  "processed_sumw": 53815.12670058012,
+  "selected_rows": 123091,
+  "negative_rows": 85,
+  "note": "Bounded prefix of sorted raw files, not full production; no generator HT cut."
+}

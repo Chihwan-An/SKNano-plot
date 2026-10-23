@@ -1,0 +1,85 @@
+=== Resolve_sig_MM :: --spec specs/rawcharge/Resolve_sig_MM.txt --input /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+==============================================================================
+>> job Resolve_sig_MM   region=Resolve/sig   channel=MM   flavour=MM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+>> Channel MM: 52 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   19 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu_MLNu0to120_HT100to400, WtoLNu_MLNu0to120_HT1500to2500, WtoLNu_MLNu0to120_HT2500toInf, WtoLNu_MLNu0to120_HT400to800, WtoLNu_MLNu0to120_HT40to100, WtoLNu_MLNu0to120_HT800to1500, WtoLNu_MLNu120toInf_HT100to400, WtoLNu_MLNu120toInf_HT1500to2500, WtoLNu_MLNu120toInf_HT2500toInf, WtoLNu_MLNu120toInf_HT400to800, WtoLNu_MLNu120toInf_HT40to100, WtoLNu_MLNu120toInf_HT800to1500
+   Others      14 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L, WWW, WWZ, WZZ, ZZZ
+   -- 시그널 118개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=4 TeV, m_{N}=0.2 TeV
+>> Systematics: 32 requested, 52 MC files
+   전체 커버 23: Pileup, ElectronID, ElectronReco, ElectronTrig, ElectronChargeFlip, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/52), ResolvedDYReshapeBin2(14/52), ResolvedDYReshapeBin3(14/52), ResolvedDYReshapeBin4(14/52), ResolvedDYReshapeBin5(14/52), ResolvedDYReshapeBin6(14/52), BoostedDYReshapeBin1(14/52), BoostedDYReshapeBin2(14/52), BoostedDYReshapeBin3(14/52)   <- DY 전용이면 정상
+>> 105 plots from specs/rawcharge/Resolve_sig_MM.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_sig_MM: 105/105 plots, 6.3 min (3.6 s/plot)
+==============================================================================
+=== Resolve_sig_MM :: --spec specs/Resolve_sig_MM.txt --input /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+==============================================================================
+>> job Resolve_sig_MM   region=Resolve/sig   channel=MM   flavour=MM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+>> Channel MM: 52 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   19 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu_MLNu0to120_HT100to400, WtoLNu_MLNu0to120_HT1500to2500, WtoLNu_MLNu0to120_HT2500toInf, WtoLNu_MLNu0to120_HT400to800, WtoLNu_MLNu0to120_HT40to100, WtoLNu_MLNu0to120_HT800to1500, WtoLNu_MLNu120toInf_HT100to400, WtoLNu_MLNu120toInf_HT1500to2500, WtoLNu_MLNu120toInf_HT2500toInf, WtoLNu_MLNu120toInf_HT400to800, WtoLNu_MLNu120toInf_HT40to100, WtoLNu_MLNu120toInf_HT800to1500
+   Others      14 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L, WWW, WWZ, WZZ, ZZZ
+   -- 시그널 118개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=4 TeV, m_{N}=0.2 TeV
+>> Systematics: 32 requested, 52 MC files
+   전체 커버 23: Pileup, ElectronID, ElectronReco, ElectronTrig, ElectronChargeFlip, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/52), ResolvedDYReshapeBin2(14/52), ResolvedDYReshapeBin3(14/52), ResolvedDYReshapeBin4(14/52), ResolvedDYReshapeBin5(14/52), ResolvedDYReshapeBin6(14/52), BoostedDYReshapeBin1(14/52), BoostedDYReshapeBin2(14/52), BoostedDYReshapeBin3(14/52)   <- DY 전용이면 정상
+>> 35 plots from specs/Resolve_sig_MM.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_sig_MM: 0/0 plots, 0.0 min (0.5 s/plot)   (이미 있어서 건너뜀 35)
+==============================================================================
+=== Resolve_sig_MM :: --spec specs/tightcharge/Resolve_sig_MM.txt --input /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+==============================================================================
+>> job Resolve_sig_MM   region=Resolve/sig   channel=MM   flavour=MM
+>> outdir /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/out/Resolve/sig
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+>> Channel MM: 52 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   19 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu_MLNu0to120_HT100to400, WtoLNu_MLNu0to120_HT1500to2500, WtoLNu_MLNu0to120_HT2500toInf, WtoLNu_MLNu0to120_HT400to800, WtoLNu_MLNu0to120_HT40to100, WtoLNu_MLNu0to120_HT800to1500, WtoLNu_MLNu120toInf_HT100to400, WtoLNu_MLNu120toInf_HT1500to2500, WtoLNu_MLNu120toInf_HT2500toInf, WtoLNu_MLNu120toInf_HT400to800, WtoLNu_MLNu120toInf_HT40to100, WtoLNu_MLNu120toInf_HT800to1500
+   Others      14 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L, WWW, WWZ, WZZ, ZZZ
+   -- 시그널 118개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=4 TeV, m_{N}=0.2 TeV
+>> Systematics: 32 requested, 52 MC files
+   전체 커버 23: Pileup, ElectronID, ElectronReco, ElectronTrig, ElectronChargeFlip, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/52), ResolvedDYReshapeBin2(14/52), ResolvedDYReshapeBin3(14/52), ResolvedDYReshapeBin4(14/52), ResolvedDYReshapeBin5(14/52), ResolvedDYReshapeBin6(14/52), BoostedDYReshapeBin1(14/52), BoostedDYReshapeBin2(14/52), BoostedDYReshapeBin3(14/52)   <- DY 전용이면 정상
+>> 70 plots from specs/tightcharge/Resolve_sig_MM.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_sig_MM: 70/70 plots, 0.6 min (0.6 s/plot)
+==============================================================================
+=== Resolve_sig_MM :: --spec specs/chargesign/Resolve_sig_MM.txt --input /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024 --outdir out/Resolve/sig_chargesign
+==============================================================================
+>> job Resolve_sig_MM   region=Resolve/sig   channel=MM   flavour=MM
+>> outdir out/Resolve/sig_chargesign
+>> Input: /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024
+>> Channel MM: 52 MC, 16 Data files
+   DYJets      14 : DYto2L-4Jets_Bin-HT-100to400-MLL-120, DYto2L-4Jets_Bin-HT-100to400-MLL-50to120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-120, DYto2L-4Jets_Bin-HT-1500to2500-MLL-50to120, DYto2L-4Jets_Bin-HT-2500-MLL-120, DYto2L-4Jets_Bin-HT-2500-MLL-50to120, DYto2L-4Jets_Bin-HT-400to800-MLL-120, DYto2L-4Jets_Bin-HT-400to800-MLL-50to120, DYto2L-4Jets_Bin-HT-40to70-MLL-120, DYto2L-4Jets_Bin-HT-40to70-MLL-50to120, DYto2L-4Jets_Bin-HT-70to100-MLL-120, DYto2L-4Jets_Bin-HT-70to100-MLL-50to120, DYto2L-4Jets_Bin-HT-800to1500-MLL-120, DYto2L-4Jets_Bin-HT-800to1500-MLL-50to120
+   TT           5 : TTto2L2Nu_TuneCP5, TWminusto2L2Nu, TWminustoLNu2Q, TbarWplusto2L2Nu, TbarWplustoLNu2Q
+   Nonprompt   19 : TBbarQtoLNu-t-channel-4FS, TBbartoLNu-s-channel, TBbartoLplusNuBbar-s-channel-4FS, TTtoLNu2Q, TbarBQtoLNu-t-channel-4FS, TbarBtoLNu-s-channel, TbarBtoLminusNuB-s-channel-4FS, WtoLNu_MLNu0to120_HT100to400, WtoLNu_MLNu0to120_HT1500to2500, WtoLNu_MLNu0to120_HT2500toInf, WtoLNu_MLNu0to120_HT400to800, WtoLNu_MLNu0to120_HT40to100, WtoLNu_MLNu0to120_HT800to1500, WtoLNu_MLNu120toInf_HT100to400, WtoLNu_MLNu120toInf_HT1500to2500, WtoLNu_MLNu120toInf_HT2500toInf, WtoLNu_MLNu120toInf_HT400to800, WtoLNu_MLNu120toInf_HT40to100, WtoLNu_MLNu120toInf_HT800to1500
+   Others      14 : TTLL_Bin-MLL-4to50, TTLL_Bin-MLL-50, TTLNu-EWK, WWto2L2Nu, WWtoLNu2Q, WZto2L2Q, WZto3LNu, WZtoLNu2Q, ZZto2L2Q, ZZto4L, WWW, WWZ, WZZ, ZZZ
+   -- 시그널 118개 제외 (config.SIGNAL_GLOBS)
+>> 시그널 오버레이: m_{W_{R}}=4 TeV, m_{N}=0.2 TeV, m_{W_{R}}=4 TeV, m_{N}=2 TeV, m_{W_{R}}=6 TeV, m_{N}=0.2 TeV, m_{W_{R}}=6 TeV, m_{N}=3 TeV
+>> Systematics: 32 requested, 52 MC files
+   전체 커버 23: Pileup, ElectronID, ElectronReco, ElectronTrig, ElectronChargeFlip, MuonID, MuonReco, MuonTrig, MuonIso, JER, JES, ElectronScale, ElectronRes, MuonScale, MuonRes, LSF, ZPtRw_MC_stat, ZPtRwQCDScale, ZPtRwQCDPDFError, ZPtRwQCDPDFAlphaS, ZPtRwEW1, ZPtRwEW2, ZPtRwEW3
+   부분 커버   : ResolvedDYReshapeBin1(14/52), ResolvedDYReshapeBin2(14/52), ResolvedDYReshapeBin3(14/52), ResolvedDYReshapeBin4(14/52), ResolvedDYReshapeBin5(14/52), ResolvedDYReshapeBin6(14/52), BoostedDYReshapeBin1(14/52), BoostedDYReshapeBin2(14/52), BoostedDYReshapeBin3(14/52)   <- DY 전용이면 정상
+>> 4 plots from specs/chargesign/Resolve_sig_MM.txt
+==============================================================================
+
+==============================================================================
+>> Resolve_sig_MM: 4/4 plots, 0.3 min (3.9 s/plot)
+==============================================================================
+=== done Resolve_sig_MM Fri Sep 25 01:05:18 PM KST 2026

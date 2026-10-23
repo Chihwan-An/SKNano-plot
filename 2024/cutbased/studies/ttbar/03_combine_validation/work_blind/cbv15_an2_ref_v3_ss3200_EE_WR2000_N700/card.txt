@@ -1,0 +1,104 @@
+# era=2024 signal=WR2000_N700 cut-based v15 (RFlav+DYCRCharge, DY corr on): resolved SR split OS/SS; EE SS data-driven flip (OS data x w) + MC non-flip; custom SR edges {'rEESR_SS': [800.0, 1000.0, 1200.0, 1400.0, 1600.0, 2000.0, 2400.0, 2800.0, 3132.0, 8000.0]}
+imax 12  number of channels
+jmax 5  number of processes minus 1
+kmax *
+--------------------------------------------------------------------------------
+shapes * bEESR          /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  bEESR/$PROCESS  bEESR/$PROCESS_$SYSTEMATIC
+shapes * rEESR_OS       /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rEESR_OS/$PROCESS  rEESR_OS/$PROCESS_$SYSTEMATIC
+shapes * rEESR_SS       /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rEESR_SS/$PROCESS  rEESR_SS/$PROCESS_$SYSTEMATIC
+shapes * bDYEECR        /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  bDYEECR/$PROCESS  bDYEECR/$PROCESS_$SYSTEMATIC
+shapes * rDYEECR_OS     /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rDYEECR_OS/$PROCESS  rDYEECR_OS/$PROCESS_$SYSTEMATIC
+shapes * rDYEECR_SS     /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rDYEECR_SS/$PROCESS  rDYEECR_SS/$PROCESS_$SYSTEMATIC
+shapes * bDYMuMuCR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  bDYMuMuCR/$PROCESS  bDYMuMuCR/$PROCESS_$SYSTEMATIC
+shapes * rDYMuMuCR_OS   /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rDYMuMuCR_OS/$PROCESS  rDYMuMuCR_OS/$PROCESS_$SYSTEMATIC
+shapes * rDYMuMuCR_SS   /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rDYMuMuCR_SS/$PROCESS  rDYMuMuCR_SS/$PROCESS_$SYSTEMATIC
+shapes * bFlvEMuCR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  bFlvEMuCR/$PROCESS  bFlvEMuCR/$PROCESS_$SYSTEMATIC
+shapes * bFlvMuECR      /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  bFlvMuECR/$PROCESS  bFlvMuECR/$PROCESS_$SYSTEMATIC
+shapes * rFlvCR         /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/combine/scenarios/test/cbv15_an2_ref_v3_ss3200/shapes_2024_cbv15_an2_ref_v3_ss3200.root  rFlvCR/$PROCESS  rFlvCR/$PROCESS_$SYSTEMATIC
+--------------------------------------------------------------------------------
+bin          bEESR  rEESR_OS  rEESR_SS  bDYEECR  rDYEECR_OS  rDYEECR_SS  bDYMuMuCR  rDYMuMuCR_OS  rDYMuMuCR_SS  bFlvEMuCR  bFlvMuECR  rFlvCR
+observation  -1  -1  -1  3326  35120  1174  3815  52218  84  472  648  3354
+--------------------------------------------------------------------------------
+bin      bEESR  bEESR  bEESR  bEESR  bEESR  rEESR_OS  rEESR_OS  rEESR_OS  rEESR_OS  rEESR_OS  rEESR_SS  rEESR_SS  rEESR_SS  rEESR_SS  rEESR_SS  rEESR_SS  bDYEECR  bDYEECR  bDYEECR  bDYEECR  rDYEECR_OS  rDYEECR_OS  rDYEECR_OS  rDYEECR_OS  rDYEECR_SS  rDYEECR_SS  rDYEECR_SS  rDYEECR_SS  rDYEECR_SS  bDYMuMuCR  bDYMuMuCR  bDYMuMuCR  bDYMuMuCR  rDYMuMuCR_OS  rDYMuMuCR_OS  rDYMuMuCR_OS  rDYMuMuCR_OS  rDYMuMuCR_SS  rDYMuMuCR_SS  rDYMuMuCR_SS  rDYMuMuCR_SS  bFlvEMuCR  bFlvEMuCR  bFlvEMuCR  bFlvEMuCR  bFlvMuECR  bFlvMuECR  bFlvMuECR  bFlvMuECR  rFlvCR  rFlvCR  rFlvCR  rFlvCR
+process  WR2000N700EE  DYJets  TT  Nonprompt  Others  WR2000N700EE  DYJets  TT  Nonprompt  Others  WR2000N700EE  Flip  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  Flip  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others  DYJets  TT  Nonprompt  Others
+process  0  2  3  4  5  0  2  3  4  5  0  1  2  3  4  5  2  3  4  5  2  3  4  5  1  2  3  4  5  2  3  4  5  2  3  4  5  2  3  4  5  2  3  4  5  2  3  4  5  2  3  4  5
+rate     -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1
+--------------------------------------------------------------------------------
+CMS_lumi_2024  lnN  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  -  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  -  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161  1.0161
+Pileup_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+JER_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+JES_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+FatJetJES_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+FatJetJER_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+LSF_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronID_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronReco_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronTrig_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronScale_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+ElectronRes_2024  shape  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonID_2024  shape  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonIso_2024  shape  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonReco_2024  shape  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonTrig_2024  shape  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+MuonScale_2024  shape  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0  1.0
+AlphaS_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ScaleWeight_muF_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ScaleWeight_muR_2024  shape  1.0  -  -  -  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+ZPtRw_MC_stat  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDScale  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDPDFError  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwQCDPDFAlphaS  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW1  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW2  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ZPtRwEW3  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin1  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin2  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin3  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin4  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin5  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+ResolvedDYReshapeBin6  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin1  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin2  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+BoostedDYReshapeBin3  shape  -  1.0  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  -  -  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -  1.0  -  -  -
+FlipPstat_2024  shape  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+FlipSF_barrel_2024  shape  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+FlipSF_endcap_2024  shape  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  1.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+FlipClosure_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  1.05  -  -  -  -  -  -  -  -  -  -  -  -  1.05  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+DYNonFlipNorm_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  1.5  -  -  -  -  -  -  -  -  -  -  -  -  1.5  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+TTNonFlipNorm_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  1.3  -  -  -  -  -  -  -  -  -  -  -  -  1.3  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+NonPromptNorm_EE_Boosted_2024  lnN  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -
+NonPromptNorm_EE_Resolved_2024  lnN  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -  2.0  -  -  -  -  -  -  -  2.0  -  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+NonPromptNorm_MM_Boosted_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  -  -
+NonPromptNorm_MM_Resolved_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -  -  -  2.0  -  -  -  -  -  -  -  -  -  -  -  -  -
+NonPromptNorm_Resolved_2024  lnN  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  2.0  -
+OthersNorm_2024  lnN  -  -  -  -  1.5  -  -  -  -  1.5  -  -  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5  -  -  -  1.5
+R_DY_Boosted_2024      rateParam bEESR DYJets 1 [0.5,1.5]
+R_DY_Boosted_2024      rateParam bDYEECR DYJets 1 [0.5,1.5]
+R_DY_Boosted_2024      rateParam bDYMuMuCR DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rEESR_OS DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rDYEECR_OS DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rDYMuMuCR_OS DYJets 1 [0.5,1.5]
+R_DY_Resolved_2024     rateParam rDYMuMuCR_SS DYJets 1 [0.5,1.5]
+R_TT_Boosted_EE_2024   rateParam bEESR TT 1 [0.5,1.5]
+R_TT_Boosted_EE_2024   rateParam bDYEECR TT 1 [0.5,1.5]
+R_TT_Boosted_EE_2024   rateParam bFlvEMuCR TT 1 [0.5,1.5]
+R_TT_Boosted_MuMu_2024 rateParam bDYMuMuCR TT 1 [0.5,1.5]
+R_TT_Boosted_MuMu_2024 rateParam bFlvMuECR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rEESR_OS TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rDYEECR_OS TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rDYMuMuCR_OS TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rFlvCR TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rEESR_SS TT 1 [0.5,1.5]
+R_TT_Resolved_2024     rateParam rDYEECR_SS TT 1 [0.5,1.5]
+bEESR autoMCStats 10 0 1
+rEESR_OS autoMCStats 10 0 1
+rEESR_SS autoMCStats 10 0 1
+bDYEECR autoMCStats 0 0 1
+rDYEECR_OS autoMCStats 0 0 1
+rDYEECR_SS autoMCStats 0 0 1
+bDYMuMuCR autoMCStats 0 0 1
+rDYMuMuCR_OS autoMCStats 0 0 1
+rDYMuMuCR_SS autoMCStats 0 0 1
+bFlvEMuCR autoMCStats 0 0 1
+bFlvMuECR autoMCStats 0 0 1
+rFlvCR autoMCStats 0 0 1

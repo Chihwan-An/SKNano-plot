@@ -1,0 +1,290 @@
+{
+ "Boosted_EE_mll_LO no corr.": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2995.867194411535,
+  "data_over_mc": 0.9654720301782491
+ },
+ "Boosted_EE_mll_LO x C shipped": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2294.168510175724,
+  "data_over_mc": 1.2124312437081286
+ },
+ "Boosted_EE_mll_LO x C FxFx incl": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2989.2660513389933,
+  "data_over_mc": 0.9673256014066594
+ },
+ "Boosted_EE_mll_LO x C FxFx per-jet shape": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2533.2083852044834,
+  "data_over_mc": 1.1152510277755225
+ },
+ "Boosted_EE_mll_LO x C FxFx per-jet abs": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 3056.690185188124,
+  "data_over_mc": 0.9487216740256581
+ },
+ "Boosted_EE_mll_FxFx direct": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2550.9052520245314,
+  "data_over_mc": 1.1086721787636424
+ },
+ "Boosted_EE_ll_pt_LO no corr.": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 2990.239392627109,
+  "data_over_mc": 0.9657670732870605
+ },
+ "Boosted_EE_ll_pt_LO x C shipped": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 2290.8834416462287,
+  "data_over_mc": 1.2123263435978084
+ },
+ "Boosted_EE_ll_pt_LO x C FxFx incl": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 2985.380882536649,
+  "data_over_mc": 0.967133521145455
+ },
+ "Boosted_EE_ll_pt_LO x C FxFx per-jet shape": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 2530.0746944692182,
+  "data_over_mc": 1.1149710539856041
+ },
+ "Boosted_EE_ll_pt_LO x C FxFx per-jet abs": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 3052.745345610757,
+  "data_over_mc": 0.9485256162616257
+ },
+ "Boosted_EE_ll_pt_FxFx direct": {
+  "data": 3321.0,
+  "nondy": 448.47796672200167,
+  "dy": 2543.7159850150347,
+  "data_over_mc": 1.1098879462917448
+ },
+ "Boosted_EE_leading_fatjet_pt_LO no corr.": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 2995.69094650961,
+  "data_over_mc": 0.965530178407152
+ },
+ "Boosted_EE_leading_fatjet_pt_LO x C shipped": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 2294.0411948656433,
+  "data_over_mc": 1.2125013159597273
+ },
+ "Boosted_EE_leading_fatjet_pt_LO x C FxFx incl": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 2989.1023855427666,
+  "data_over_mc": 0.9673804329338602
+ },
+ "Boosted_EE_leading_fatjet_pt_LO x C FxFx per-jet shape": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 2533.0757135257645,
+  "data_over_mc": 1.1153123201810822
+ },
+ "Boosted_EE_leading_fatjet_pt_LO x C FxFx per-jet abs": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 3056.5202097013735,
+  "data_over_mc": 0.9487761244040174
+ },
+ "Boosted_EE_leading_fatjet_pt_FxFx direct": {
+  "data": 3326.0,
+  "nondy": 449.0486114884074,
+  "dy": 2550.3585060685873,
+  "data_over_mc": 1.1088858129766037
+ },
+ "Boosted_EE_mlljj_LO no corr.": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2995.867194411535,
+  "data_over_mc": 0.965472030178249
+ },
+ "Boosted_EE_mlljj_LO x C shipped": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2294.1685101757244,
+  "data_over_mc": 1.2124312437081286
+ },
+ "Boosted_EE_mlljj_LO x C FxFx incl": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2989.266051338993,
+  "data_over_mc": 0.9673256014066592
+ },
+ "Boosted_EE_mlljj_LO x C FxFx per-jet shape": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2533.208385204484,
+  "data_over_mc": 1.1152510277755225
+ },
+ "Boosted_EE_mlljj_LO x C FxFx per-jet abs": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 3056.690185188124,
+  "data_over_mc": 0.9487216740256581
+ },
+ "Boosted_EE_mlljj_FxFx direct": {
+  "data": 3326.0,
+  "nondy": 449.07983257374394,
+  "dy": 2550.9052520245314,
+  "data_over_mc": 1.1086721787636424
+ },
+ "Boosted_MM_mll_LO no corr.": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 3205.120363782619,
+  "data_over_mc": 0.9251114927261375
+ },
+ "Boosted_MM_mll_LO x C shipped": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 2438.232696531506,
+  "data_over_mc": 1.1364517844503015
+ },
+ "Boosted_MM_mll_LO x C FxFx incl": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 3185.6315132057553,
+  "data_over_mc": 0.9295042493201001
+ },
+ "Boosted_MM_mll_LO x C FxFx per-jet shape": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 2716.3868548573255,
+  "data_over_mc": 1.0494914993795053
+ },
+ "Boosted_MM_mll_LO x C FxFx per-jet abs": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 3245.044171165864,
+  "data_over_mc": 0.9162411322335103
+ },
+ "Boosted_MM_mll_FxFx direct": {
+  "data": 3815.0,
+  "nondy": 918.7069046019517,
+  "dy": 2875.458568587899,
+  "data_over_mc": 1.0054912014136888
+ },
+ "Boosted_MM_ll_pt_LO no corr.": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 3196.7065792959443,
+  "data_over_mc": 0.9252280056366622
+ },
+ "Boosted_MM_ll_pt_LO x C shipped": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 2433.3512992235537,
+  "data_over_mc": 1.135974994784793
+ },
+ "Boosted_MM_ll_pt_LO x C FxFx incl": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 3179.8447321007043,
+  "data_over_mc": 0.9290351838283362
+ },
+ "Boosted_MM_ll_pt_LO x C FxFx per-jet shape": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 2711.688844343498,
+  "data_over_mc": 1.0488632789053096
+ },
+ "Boosted_MM_ll_pt_LO x C FxFx per-jet abs": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 3239.161570387208,
+  "data_over_mc": 0.9157790168081321
+ },
+ "Boosted_MM_ll_pt_FxFx direct": {
+  "data": 3807.0,
+  "nondy": 917.9548628643053,
+  "dy": 2870.1333413869143,
+  "data_over_mc": 1.0049924380661348
+ },
+ "Boosted_MM_leading_fatjet_pt_LO no corr.": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 3204.7657653485016,
+  "data_over_mc": 0.9252263323756151
+ },
+ "Boosted_MM_leading_fatjet_pt_LO x C shipped": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 2437.984853399016,
+  "data_over_mc": 1.136588941621877
+ },
+ "Boosted_MM_leading_fatjet_pt_LO x C FxFx incl": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 3185.313716917532,
+  "data_over_mc": 0.9296118456866049
+ },
+ "Boosted_MM_leading_fatjet_pt_LO x C FxFx per-jet shape": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 2716.1259681035053,
+  "data_over_mc": 1.0496122349490271
+ },
+ "Boosted_MM_leading_fatjet_pt_LO x C FxFx per-jet abs": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 3244.7156986758037,
+  "data_over_mc": 0.9163480296047025
+ },
+ "Boosted_MM_leading_fatjet_pt_FxFx direct": {
+  "data": 3815.0,
+  "nondy": 918.5496511124519,
+  "dy": 2873.771436229348,
+  "data_over_mc": 1.0059802195372902
+ },
+ "Boosted_MM_mlljj_LO no corr.": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 3205.120363782619,
+  "data_over_mc": 0.9251114927261375
+ },
+ "Boosted_MM_mlljj_LO x C shipped": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 2438.232696531505,
+  "data_over_mc": 1.1364517844503013
+ },
+ "Boosted_MM_mlljj_LO x C FxFx incl": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 3185.6315132057553,
+  "data_over_mc": 0.9295042493200999
+ },
+ "Boosted_MM_mlljj_LO x C FxFx per-jet shape": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 2716.386854857326,
+  "data_over_mc": 1.0494914993795053
+ },
+ "Boosted_MM_mlljj_LO x C FxFx per-jet abs": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 3245.044171165864,
+  "data_over_mc": 0.9162411322335101
+ },
+ "Boosted_MM_mlljj_FxFx direct": {
+  "data": 3815.0,
+  "nondy": 918.7069046019521,
+  "dy": 2875.458568587899,
+  "data_over_mc": 1.0054912014136885
+ }
+}

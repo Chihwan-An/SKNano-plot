@@ -1,0 +1,122 @@
+\subsection{Top quark background}
+\label{subsec:top_draft}
+
+The $\ttbar$ and tW processes are treated as one background (``$\ttbar$+tW'').
+As in the final Run~2 analysis~\cite{bib:AN19083}, its shape in every region is
+taken from simulation, and its normalization is measured in data: opposite-flavor
+($e\mu$) control regions with the signal-region kinematics are fit together
+with the signal regions, and the $\ttbar$+tW templates of a control region and
+of the signal region linked to it are multiplied by the same unconstrained
+rate parameter $\beta$,
+%
+\begin{equation}
+  \lambda_{c,i} = \mu\, S_{c,i}(\theta) + \beta_{g(c)}\, T_{c,i}(\theta)
+                  + \sum_k B_{k,c,i}(\theta),
+  \label{eq:top_model}
+\end{equation}
+%
+where $c$ runs over the channels, $i$ over the bins of $\mlljj$ ($\mlJ$),
+$T$ is the $\ttbar$+tW template of that channel, $B_k$ the other backgrounds,
+$S$ the signal and $\theta$ the nuisance parameters. Top quark decays are
+flavor symmetric, so the simulated ratio of the same-flavor to the $e\mu$
+yield, which enters through the templates themselves, provides the transfer
+from the control to the signal region; no explicit transfer factor is applied.
+The $e\mu$ data constrain $\beta$ through their Poisson terms, and $\beta$ stays
+a free parameter of the final fit, so its uncertainty and its correlations with
+the detector nuisances are propagated to the signal regions. The older method
+of scaling the $e\mu$ data by a constant flavor ratio is repeated for 2024 as a
+cross-check in App.~\ref{app:emu_method}.
+
+Table~\ref{tab:top_rateparams} lists the three rate parameters and the channels
+they connect. The resolved $e\mu$ region requires exactly one tight electron
+and one tight muon passing the resolved selection ($\mll > 400\GeV$,
+$\mlljj > 800\GeV$) and is recorded with the muon triggers; only the Muon
+data stream is used, since the same events are also present in the EGamma
+stream. The boosted regions require a tight lepton of one flavor and a loose
+lepton of the other flavor inside the AK8 jet: $e$+($\mu$-jet), recorded with
+the electron triggers, and $\mu$+($e$-jet), recorded with the muon triggers.
+In the present cards the boosted $ee$ signal region is linked to the
+$e$+($\mu$-jet) region and the boosted $\mu\mu$ signal region to the
+$\mu$+($e$-jet) region, i.e.\ the tight lepton and the trigger are kept and the
+lepton inside the jet changes flavor. This is the opposite of the Run~2 pairing,
+which keeps the flavor of the lepton inside the jet.
+\TODO{Decide between the two pairings: the simulated $ee$ signal populates the
+$e$+($\mu$-jet) region ($3.5\%$ of the background for
+$(\mWR, \mN) = (2000, 200)\GeV$, $0.6\%$ at $(3000, 200)\GeV$,
+Table~\ref{tab:emu_sigcont}) but not the $\mu$+($e$-jet) region.}
+The same-sign $ee$ signal region does not share $\beta$: its $\ttbar$+tW
+component is the data-driven charge-flip estimate of
+Sec.~\ref{subsec:chargeflip_draft} plus a small simulated non-flip part with a
+$30\%$ normalization uncertainty.
+
+\begin{table}[htbp]
+  \centering
+  \topcaption{Rate parameters of the $\ttbar$+tW background and the result of
+    the fit to the control-region data only (signal regions masked, $\mu = 0$),
+    2024. The fit is repeated with the $ee$ and with the $\mu\mu$ card, which
+    share all control regions and differ in the nuisance parameters of the
+    masked signal regions. The allowed range of every parameter is $[0.5, 1.5]$.}
+  \label{tab:top_rateparams}
+  \small
+  \begin{tabular}{llcc}
+    \hline
+    Parameter & Linked channels & $\hat\beta$ ($ee$ card) & $\hat\beta$ ($\mu\mu$ card) \\
+    \hline
+    \texttt{R\_TT\_Resolved} & resolved $e\mu$ CR, resolved DY CRs, resolved OS SR & $0.88 \pm 0.04$ & $0.88 \pm 0.03$ \\
+    \texttt{R\_TT\_Boosted\_EE} & $e$+($\mu$-jet) CR, boosted $ee$ DY CR, boosted $ee$ SR & $0.80 \pm 0.11$ & $0.80 \pm 0.10$ \\
+    \texttt{R\_TT\_Boosted\_MuMu} & $\mu$+($e$-jet) CR, boosted $\mu\mu$ DY CR, boosted $\mu\mu$ SR & $0.77 \pm 0.21$ & $0.77 \pm 0.15$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+The $\mlljj$ and $\mlJ$ distributions of the three control regions are shown in
+Fig.~\ref{fig:top_flavcr}. Before the fit the simulation describes the yields
+within $8\%$: data/simulation is $1.04$ in the resolved $e\mu$ region
+($3623$ events for $3469$ expected, of which $93\%$ $\ttbar$+tW), $0.92$ in the
+$e$+($\mu$-jet) and $1.01$ in the $\mu$+($e$-jet) region. In the resolved region
+the ratio rises with the mass, from $0.95$ at $800$--$1000\GeV$ to ${\sim}1.3$
+above $2\TeV$, a shape effect that a single $\beta$ cannot absorb.
+\TODO{Trace this slope (top-\pt modeling, jet energy scale) and decide whether a
+shape nuisance for the $\ttbar$+tW mass spectrum is needed.}
+
+In the fit to the control regions alone all parameters converge inside their
+range (fit status 0) with the values of Table~\ref{tab:top_rateparams}. The
+value of \texttt{R\_TT\_Resolved} below the simple ratio
+$(N_{\text{data}} - N_{\text{non-}\ttbar})/N_{\ttbar} = 1.05$ is a consequence of
+its correlation with the jet energy scale nuisance, which the high-statistics
+DY control regions pull to $+3.3\sigma$ and constrain to $0.5$ of its prior
+width; the jet energy scale raises all simulated yields, and the DY and
+$\ttbar$+tW rate parameters ($\texttt{R\_DY\_Resolved} = 0.85 \pm 0.02$,
+correlation $0.66$ with \texttt{R\_TT\_Resolved}) compensate. The product is
+what matters for the prediction: after the fit the total background of the
+resolved $e\mu$ region is $3616 \pm 55$ events for $3623$ observed, and the
+$\ttbar$+tW prediction propagated to the blinded resolved opposite-sign $ee$
+signal region is $1351 \pm 60$ events. \TODO{The over-constraint of the jet
+energy scale is a known feature of the present nuisance model and is followed
+up separately.}
+
+The implementation was validated on a synthetic two-channel example without
+systematic uncertainties, in which the control-region pseudo-data were generated
+with $\beta = 1.2$: the control-region-only fit returns
+$\hat\beta = 1.2000 \pm 0.0360$ (expected statistical precision $0.0361$), the
+$\ttbar$+tW prediction of the masked signal region scales to $1.2$ times its
+nominal value in every bin, a change of $\beta$ scales only the templates it
+is attached to, and replacing the masked signal-region pseudo-data leaves the
+result unchanged.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.32\textwidth]{fig/05_backgrounds/2024/emu_method/Res_EM_high.png}
+  \includegraphics[width=0.32\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_EMJ_high.png}
+  \includegraphics[width=0.32\textwidth]{fig/05_backgrounds/2024/emu_method/Boost_MEJ_high.png}
+  \caption{$\mlljj$ in the resolved $e\mu$ control region (left) and $\mlJ$ in
+    the boosted $e$+($\mu$-jet) (center) and $\mu$+($e$-jet) (right) control
+    regions, 2024, before the fit. The band contains the statistical and the
+    weight-based systematic uncertainties (lepton, trigger, pileup and
+    $\LSFiii$ scale factors); the jet and lepton energy scale and resolution
+    variations are not included.}
+  \label{fig:top_flavcr}
+\end{figure}
+
+% =====================================================================
+\clearpage

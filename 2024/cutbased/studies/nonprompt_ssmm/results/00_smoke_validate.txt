@@ -1,0 +1,3 @@
+# sample  ch  FO(TTcond)  FO(TTcond, nLooseMuon==2)  hist(same job)  ratio  | card-input hist  ratio(job/card)
+Skim_HNWR_WRtoNMutoMuMuJJ_MWR4000_N200                       OS       9.8838       9.8538       9.9115   0.99721 |       9.9115   1.00000
+Skim_HNWR_WRtoNMutoMuMuJJ_MWR4000_N200                       SS       9.2215       9.1932       9.2464   0.99731 |       9.2464   1.00000

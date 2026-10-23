@@ -1,0 +1,7 @@
+=== WR2000 N1700 | Mon Jun 22 19:57:24 KST 2026 ===
+Python: /data6/Users/achihwan/micromamba/envs/Nano/bin/python3
+Found 1 file(s) for WR2000 N1700
+  Reading /gv0/Users/achihwan/SKNano/Run3NanoAODv12/2023/WRtoNMutoMuMuJJ_MWR2000_N1700_TuneCP5_13p6TeV_madgraph-pythia8/NANOAODSIM/130X_mcRun3_2023_realistic_v15-v2/130000/e7795ee4-7a23-4ebe-8852-8552a58a28c9.root
+Saved 70000 events → /data6/Users/achihwan/SKNanoAnalyzer-v13/plots/HNWR/singnal_sample/Offshell_test/lhe_cache/WR2000_N1700.npz
+LHE < 800 GeV: 0/70000 = 0.00%
+=== Exit code: 0 | Mon Jun 22 19:57:33 KST 2026 ===

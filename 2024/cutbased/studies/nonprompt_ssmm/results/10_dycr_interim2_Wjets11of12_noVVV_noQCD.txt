@@ -1,0 +1,84 @@
+# resolved DY CR mumu: 60<=mll<150, mlljj>800, FO baseline (exactly 2 FO muons, no FO electron).
+# yields: signed sumw ± sqrt(sumw2) [raw]. Data weight 1. W+jets = HT set. 'noQCD' / '+QCD'.
+# events in skim: data 58509, MC 1764877
+
+## 1. validation: FO iso-TT (nTightMuon==2, nTightElectron==0) vs DYCR_Resolved_MM_mlljj
+  data      FO-TT    52274.000   hist    52302.000   ratio 0.9995
+  MC noQCD  FO-TT    51159.127   hist    51196.042   ratio 0.9993
+  MC QCD    FO-TT        0.000   hist        0.000   ratio nan
+
+## 2. data vs MC per charge x iso category (FO baseline)
+
+### SS
+category                                      TT                        TL                        LT                        LL
+TTLJ                            39.40±2.22 [445]        289.50±5.80 [3509]        142.03±4.14 [1683]          41.25±2.17 [500]
+TTLL                            11.32±0.57 [535]         81.65±1.55 [3832]         40.16±1.09 [1868]           7.43±0.48 [330]
+tW                                2.54±0.48 [46]          30.03±1.62 [520]          17.18±1.23 [287]            3.25±0.63 [45]
+ST s/t                            2.08±0.62 [56]          21.69±2.11 [432]          10.69±1.41 [253]            2.64±0.83 [45]
+ttV                             1.70±0.11 [1120]           0.50±0.06 [354]           0.26±0.04 [201]            0.12±0.03 [52]
+DY                               5.05±0.78 [112]         14.06±1.12 [1032]           8.07±0.71 [681]            0.82±0.30 [86]
+W+jets(HT)                       2.78±0.44 [310]         26.55±1.33 [6465]         18.28±0.98 [4159]           2.08±0.35 [711]
+VV                             12.30±0.21 [6110]           6.51±0.43 [681]           2.72±0.28 [308]            0.22±0.07 [27]
+MC noQCD                       77.17±2.60 [8734]       470.49±6.81 [16825]        239.38±4.83 [9440]         57.80±2.49 [1796]
+MC +QCD                        77.17±2.60 [8734]       470.49±6.81 [16825]        239.38±4.83 [9440]         57.80±2.49 [1796]
+data                             82.00±9.06 [82]        448.00±21.17 [448]        228.00±15.10 [228]        512.00±22.63 [512]
+data/MC noQCD                        1.063±0.123               0.952±0.047               0.952±0.066               8.858±0.547
+data/MC +QCD                         1.063±0.123               0.952±0.047               0.952±0.066               8.858±0.547
+truth pair (MC noQCD, fraction of sumw):
+  iso-TT: PF 0.48, FP 0.27, PP 0.24, UP 0.01
+  iso-TL: PF 0.95, PU 0.04
+  iso-LT: FP 0.93, UP 0.06
+  iso-LL: PF 0.52, FP 0.32, FF 0.13, PU 0.01, UP 0.01
+
+### OS
+category                                      TT                        TL                        LT                        LL
+TTLJ                            76.92±3.11 [926]        640.02±8.78 [7682]        245.51±5.46 [2931]          51.76±2.44 [618]
+TTLL                        1655.65±6.99 [78417]       285.33±2.92 [13346]        180.08±2.28 [8599]          20.38±0.78 [940]
+tW                            139.85±2.47 [4372]          50.68±2.09 [911]          25.42±1.43 [465]            4.58±0.65 [73]
+ST s/t                           4.23±0.91 [105]          30.27±2.38 [727]          12.90±1.64 [384]            2.30±0.65 [49]
+ttV                           73.42±0.94 [36874]          5.24±0.24 [2591]          3.33±0.19 [1670]           0.47±0.07 [259]
+DY                      47757.04±67.42 [1017617]     1473.68±11.15 [54519]       951.33±8.84 [40239]         65.40±1.94 [6472]
+W+jets(HT)                      10.87±1.30 [782]        93.69±2.95 [11036]         49.97±1.91 [7575]          3.67±0.43 [1044]
+VV                         1230.84±3.62 [353970]        42.36±0.74 [13243]         24.09±0.51 [8360]           2.45±0.16 [892]
+MC noQCD                50948.82±68.02 [1493063]    2621.28±15.15 [104055]     1492.62±11.03 [70223]       151.01±3.38 [10347]
+MC +QCD                 50948.82±68.02 [1493063]    2621.28±15.15 [104055]     1492.62±11.03 [70223]       151.01±3.38 [10347]
+data                     52059.00±228.16 [52059]      2459.00±49.59 [2459]      1294.00±35.97 [1294]      1046.00±32.34 [1046]
+data/MC noQCD                        1.022±0.005               0.938±0.020               0.867±0.025               6.926±0.264
+data/MC +QCD                         1.022±0.005               0.938±0.020               0.867±0.025               6.926±0.264
+truth pair (MC noQCD, fraction of sumw):
+  iso-TT: PP 1.00
+  iso-TL: PP 0.63, PF 0.36, PU 0.01
+  iso-LT: PP 0.73, FP 0.25, UP 0.01
+  iso-LL: PP 0.52, PF 0.24, FP 0.13, FF 0.09
+
+## 3. fake-factor method in the SS DY CR
+# F map, DY CR MC noQCD, SS+OS, truth F: rate r = T/(T+L), weighted; [raw nT/nL]; flag '!' = invalid (not clipped)
+pT \ |eta|                    0.0-1.2                    1.2-2.4
+53-60           0.052±0.004 [356/8929]     0.109±0.009 [301/2792]
+60-80          0.047±0.003 [706/17393]     0.115±0.007 [578/5378]
+80-120         0.063±0.003 [729/12997]     0.125±0.009 [445/3512]
+120-200         0.094±0.007 [445/5897]     0.169±0.016 [200/1206]
+200-4000        0.135±0.021 [168/1162]       0.192±0.049 [50/206]
+  SS|SR_MC_lowSS|noQCD           data: pred    34.16±1.78  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.537±0.082 | MC: pred 37.88  truth F 57.58 (F+U 58.84)  ratio 0.658±0.030 (F+U 0.644)
+  SS|SR_MC_lowSS|+QCD            data: pred    34.16±1.78  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.537±0.082 | MC: pred 37.88  truth F 57.58 (F+U 58.84)  ratio 0.658±0.030 (F+U 0.644)
+  SS|DYCR_MC_SS|noQCD            data: pred    52.15±2.52  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.819±0.123 | MC: pred 59.01  truth F 57.58 (F+U 58.84)  ratio 1.025±0.046 (F+U 1.003)
+  SS|DYCR_MC_SS|+QCD             data: pred    52.15±2.52  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.819±0.123 | MC: pred 59.01  truth F 57.58 (F+U 58.84)  ratio 1.025±0.046 (F+U 1.003)
+  SS|DYCR_MC_SSOS|noQCD          data: pred    49.47±2.27  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.777±0.116 | MC: pred 55.74  truth F 57.58 (F+U 58.84)  ratio 0.968±0.043 (F+U 0.947)
+  SS|DYCR_MC_SSOS|+QCD           data: pred    49.47±2.27  obs(data TT - prompt MC)    63.68±9.09  pred/obs 0.777±0.116 | MC: pred 55.74  truth F 57.58 (F+U 58.84)  ratio 0.968±0.043 (F+U 0.947)
+  OS|SR_MC_lowSS|noQCD           data: pred    35.93±5.73  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.029±0.007 | MC: pred 81.98  truth F 111.45 (F+U 116.85)  ratio 0.736±0.031 (F+U 0.702)
+  OS|SR_MC_lowSS|+QCD            data: pred    35.93±5.73  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.029±0.007 | MC: pred 81.98  truth F 111.45 (F+U 116.85)  ratio 0.736±0.031 (F+U 0.702)
+  OS|DYCR_MC_SS|noQCD            data: pred    58.14±8.04  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.047±0.011 | MC: pred 125.78  truth F 111.45 (F+U 116.85)  ratio 1.129±0.045 (F+U 1.076)
+  OS|DYCR_MC_SS|+QCD             data: pred    58.14±8.04  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.047±0.011 | MC: pred 125.78  truth F 111.45 (F+U 116.85)  ratio 1.129±0.045 (F+U 1.076)
+  OS|DYCR_MC_SSOS|noQCD          data: pred    60.10±6.78  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.049±0.011 | MC: pred 116.90  truth F 111.45 (F+U 116.85)  ratio 1.049±0.040 (F+U 1.000)
+  OS|DYCR_MC_SSOS|+QCD           data: pred    60.10±6.78  obs(data TT - prompt MC)  1227.03±238.06  pred/obs 0.049±0.011 | MC: pred 116.90  truth F 111.45 (F+U 116.85)  ratio 1.049±0.040 (F+U 1.000)
+
+## 4. OS (prompt dominated): fail fraction (TL+LT+LL)/all, data vs MC
+  OS data      fail    4799.00 / all   56858.00 = 0.0844  (raw 56858)
+  OS MC noQCD  fail    4264.91 / all   55213.74 = 0.0772  (raw 1677688)
+  OS MC +QCD   fail    4264.91 / all   55213.74 = 0.0772  (raw 1677688)
+  SS data      fail    1188.00 / all    1270.00 = 0.9354  (raw 1270)
+  SS MC noQCD  fail     767.68 / all     844.84 = 0.9087  (raw 36795)
+  SS MC +QCD   fail     767.68 / all     844.84 = 0.9087  (raw 36795)
+  OS per-muon T fraction by pT (data vs MC noQCD), both muons:
+    data  53-60: 0.9042±0.0028  60-80: 0.9204±0.0016  80-120: 0.9490±0.0012  120-200: 0.9716±0.0010  200-4000: 0.9866±0.0009
+    MC    53-60: 0.9364±0.0007  60-80: 0.9476±0.0004  80-120: 0.9593±0.0003  120-200: 0.9704±0.0003  200-4000: 0.9835±0.0003

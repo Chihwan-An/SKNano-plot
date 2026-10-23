@@ -1,0 +1,3 @@
+EE slope fdslope fitdiag all none 0 0
+MM slope fdslope fitdiag all none 0 0
+MM base fdbase fitdiag all none 0 0

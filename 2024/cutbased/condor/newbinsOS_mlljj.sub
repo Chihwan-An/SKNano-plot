@@ -1,0 +1,20 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/run_specs_nocopy.sh
+arguments = "$(job) --spec $(spec) --input /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav_DYCRCharge/2024 --match _OS_mlljj\Z --quiet"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/newbinsOS_$(job).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/newbinsOS_$(job).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/cutbased/condor/logs/condor.log
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = newbinsOS_mlljj
+notification = Never
+should_transfer_files = NO
+queue job,spec from (
+  Resolve_DY_EE specs/tightcharge/Resolve_DY_EE_alltc.txt
+  Resolve_DY_MM specs/tightcharge/Resolve_DY_MM_alltc.txt
+  Resolve_sig_EE specs/rawcharge/Resolve_sig_EE.txt
+  Resolve_sig_MM specs/rawcharge/Resolve_sig_MM.txt
+)

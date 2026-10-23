@@ -1,0 +1,38 @@
+{
+  "sample": "DYto2E_MLL800to1500",
+  "sample_info": {
+    "isMC": 1,
+    "PD": "DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8",
+    "xsec": 0.01915,
+    "nmc": 992750.0,
+    "sumsign": 992512.0,
+    "sumW": 19015.437942504883
+  },
+  "inputs": [
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_1.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_10.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_11.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_12.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_13.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_14.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_15.root",
+    "/gv0/DATA/SKNano/NanoAODv15_RNTuple/2024/DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/crab_MC_2024_DYto2E_Bin-MLL-800to1500_TuneCP5_13p6TeV_powheg-pythia8/251121_124134/0000/tree_16.root"
+  ],
+  "processed": 200000,
+  "processed_sumw": 3831.0519186258316,
+  "negative_events": 19,
+  "sources": {
+    "0": 0,
+    "1": 200000,
+    "2": 0,
+    "3": 0
+  },
+  "raw_ht_lt40": 112600,
+  "found_ht_lt40": 112600,
+  "root_version": "6.40.02",
+  "definition_sha256": "fc54b9b73d9d7092ff342711b9c7a8724f5b6676c4b07c5108cd3382a39acd6c",
+  "definition": "Hard-process last-copy gen Z (status62 preferred by identification); otherwise unique isHardProcess OSSF e/mu pair. Ambiguous/missing excluded and counted. Pre-FSR boson.",
+  "jets": "GenJet pt>40, abs eta<2.5 (primary) or <5 (cross-check); dR>=0.4 from prompt status1 gen e/mu, no lepton kinematic cuts.",
+  "cuts": "No HT, trigger, reconstructed object, lepton pt/eta, or SR cuts. All raw events retained in cache.",
+  "weights": "Plot with full signed genWeight*xsec/processed_sumw, no PU/SF/DY/CF/transfer."
+}
