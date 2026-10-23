@@ -1,0 +1,13 @@
+rEESR_SS    DY   OS MC x w(SF=1)    21.15 +- 0.22   flipped SS MC    22.26 +- 0.97   pred/truth 0.951
+    per bin pred/truth: 0.94 1.03 0.92 0.91 0.95 0.76 1.29 0.93 0.73
+rEESR_SS    DYTT  OS MC x w(SF=1)    55.31 +- 0.29   flipped SS MC    56.38 +- 1.42   pred/truth 0.981
+    per bin pred/truth: 0.98 0.99 1.06 0.91 0.98 0.84 0.92 1.28 0.78
+rEESR_SS    all  OS MC x w(SF=1)    59.49 +- 0.30   flipped SS MC    60.13 +- 1.43   pred/truth 0.989
+    per bin pred/truth: 0.98 1.01 1.07 0.94 0.99 0.83 0.88 1.11 0.83
+rDYEECR_SS  DY   OS MC x w(SF=1)   691.76 +- 1.65   flipped SS MC   684.32 +- 7.86   pred/truth 1.011
+    per bin pred/truth: 1.02 1.05 0.98 0.99 0.95 1.02 1.00 0.80 0.94
+rDYEECR_SS  DYTT  OS MC x w(SF=1)   704.91 +- 1.66   flipped SS MC   698.23 +- 7.88   pred/truth 1.010
+    per bin pred/truth: 1.01 1.05 0.98 0.99 0.95 1.02 1.00 0.81 0.93
+rDYEECR_SS  all  OS MC x w(SF=1)   721.82 +- 1.66   flipped SS MC   715.08 +- 7.90   pred/truth 1.009
+    per bin pred/truth: 1.01 1.05 0.98 0.99 0.96 1.01 1.01 0.81 0.93
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/ttbar/07_ss_dyonly_flip/osmc_sr_closure.json

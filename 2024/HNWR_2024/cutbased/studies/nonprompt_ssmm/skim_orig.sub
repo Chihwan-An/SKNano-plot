@@ -1,0 +1,14 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/nonprompt_ssmm/scripts/run_skim.sh
+arguments = "/gv0/Users/achihwan/SKNanoOutput/HNWR_BDT_presel_3SR/2024 $(sample) Central_SR_MM_BDTTree_resolved,Central_SR_LL_MM_BDTTree_resolved /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/nonprompt_ssmm/skim/orig"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/nonprompt_ssmm
+output = logs/condor/orig_$(sample).out
+error  = logs/condor/orig_$(sample).err
+log    = logs/condor/condor.log
+getenv = True
+request_memory = 4GB
+request_cpus = 1
+JobBatchName = HNWR_FOskim_orig
+notification = Never
+should_transfer_files = NO
+queue sample from condor_orig_samples.txt

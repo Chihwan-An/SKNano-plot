@@ -1,0 +1,78 @@
+65M	/tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT/4b9a1e44-7ecb-4c07-b840-c46dedc723e9
+175M	/tmp/claude-5596/scoretest/TTLL_powheg.root.tmp
+199M	/tmp/claude-5596/-data6-Users-achihwan-tauwiki-tau-wiki/a8d8bdda-81a2-4868-a129-57110cfe171a
+220M	/tmp/claude-5596/bash-edit-diff/11337705244271001567-4596277005356160299-fbe9286581f01761
+261M	/tmp/claude-5596/bash-edit-diff/1166741627842100313-4596277005356160299-e10714ce0a4a059c
+2.0G	/tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/9cf163b3-5a68-4ab5-9a91-310410132401
+3.1G	/tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-plot-cutbased-out-Resolve-DY/64579f89-5c1e-4471-87dc-eb0452f777a9
+8.3G	/tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3
+---
+316857805 2026-09-08_23:35 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf/tree_Skim_HNWR_TTto2L2Nu_TuneCP5.root.npz
+331753915 2026-09-21_13:33 /tmp/claude-5596/fxfx_one.root
+361484728 2026-09-09_17:26 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav/tree_Skim_HNWR_TTto2L2Nu_TuneCP5.root.npz
+366368903 2026-09-09_23:42 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav2/tree_Skim_HNWR_TTto2L2Nu_TuneCP5.root.npz
+404025206 2026-09-08_23:35 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+487568388 2026-09-09_17:25 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+494037425 2026-09-09_23:42 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav2/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+526357265 2026-09-10_18:59 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav3/tree_Skim_HNWR_TTto2L2Nu_TuneCP5.root.npz
+598377243 2026-09-10_21:27 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-plot-cutbased-out-Resolve-DY/64579f89-5c1e-4471-87dc-eb0452f777a9/scratchpad/cf_v4/tree_Skim_HNWR_TTto2L2Nu_TuneCP5.root.npz
+690484092 2026-09-10_18:59 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/3295a48c-4087-4dda-935b-4903b553f5e3/scratchpad/cf_rflav3/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+785926376 2026-09-10_21:27 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-plot-cutbased-out-Resolve-DY/64579f89-5c1e-4471-87dc-eb0452f777a9/scratchpad/cf_v4/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+948432308 2026-09-11_18:47 /tmp/claude-5596/-data9-Users-achihwan-nano15-SKNanoAnalyzer-Nano15-Analyzers-BDT-SR-test-docs-limitplots-manual/9cf163b3-5a68-4ab5-9a91-310410132401/scratchpad/cf_v4/tree_Skim_HNWR_DYto2L-4Jets_Bin-HT-100to400-MLL-50to120.root.npz
+---
+      1 achihwan 09-19_16:42 /tmp/tmp.eSpdCMwrN7
+      1 achihwan 09-19_16:42 /tmp/tmp.njfVbAnpWa
+      1 achihwan 09-19_16:42 /tmp/tmp.tFD7MGyLPS
+      1 achihwan 09-19_16:42 /tmp/tmp.ta6lRldiv3
+      1 achihwan 09-19_16:42 /tmp/tmp.ttStLinmnb
+      1 achihwan 09-19_16:42 /tmp/tmp.uuEHMpc2i8
+      1 achihwan 09-19_16:43 /tmp/tmp.3443hh9W63
+      1 achihwan 09-19_16:43 /tmp/tmp.3i85FM0L1Q
+      1 achihwan 09-19_16:43 /tmp/tmp.7JIfzrqgHb
+      1 achihwan 09-19_16:43 /tmp/tmp.DNXgVrnwjD
+      1 achihwan 09-19_16:43 /tmp/tmp.E3WPVJsx8W
+      1 achihwan 09-19_16:43 /tmp/tmp.LXtkx2rlVV
+      1 achihwan 09-19_16:43 /tmp/tmp.U02XW5gmGL
+      1 achihwan 09-19_16:43 /tmp/tmp.t87CbqtsUd
+      1 achihwan 09-19_16:44 /tmp/tmp.4SWgnuz6c3
+      1 achihwan 09-19_16:44 /tmp/tmp.9PZvzSi5QJ
+      1 achihwan 09-19_16:44 /tmp/tmp.fOmg0W79Qd
+      1 achihwan 09-19_16:44 /tmp/tmp.gehsNNqhj5
+      1 achihwan 09-19_18:54 /tmp/tmp.5F2kE2fuyz
+      1 achihwan 09-19_18:54 /tmp/tmp.UGbfWHM6jf
+      1 achihwan 09-19_18:54 /tmp/tmp.XnTh89LfBu
+      1 achihwan 09-19_18:54 /tmp/tmp.Yqw6FdFRQR
+      1 achihwan 09-19_18:54 /tmp/tmp.cLj2F084Fl
+      1 achihwan 09-19_18:54 /tmp/tmp.hnvK2LrQVp
+      1 achihwan 09-19_18:54 /tmp/tmp.huTNDIBVSh
+      1 achihwan 09-19_18:54 /tmp/tmp.iccLtyjX4g
+      1 achihwan 09-19_18:55 /tmp/tmp.HngyLdMLJw
+      1 achihwan 09-19_18:55 /tmp/tmp.KvfW3aPtz5
+      1 achihwan 09-19_18:55 /tmp/tmp.fcVaxu1bQv
+      1 achihwan 09-19_18:55 /tmp/tmp.wh8KfKFaCr
+      1 achihwan 09-19_18:56 /tmp/tmp.7HA39O6eUF
+      1 achihwan 09-19_18:56 /tmp/tmp.CGWws1cVY5
+      1 achihwan 09-19_18:56 /tmp/tmp.Jc8URsbQWy
+      1 achihwan 09-19_18:56 /tmp/tmp.LzuZx2oKQS
+      1 achihwan 09-19_18:56 /tmp/tmp.MECCAR8U8M
+      1 achihwan 09-19_18:56 /tmp/tmp.OZJPeeyk13
+      1 achihwan 09-19_18:56 /tmp/tmp.Pix0ij4hPZ
+      1 achihwan 09-19_18:56 /tmp/tmp.Tu1dVBPs6C
+      1 achihwan 09-19_18:56 /tmp/tmp.i22SldIqBI
+      1 achihwan 09-19_18:56 /tmp/tmp.jMneRtpmBl
+      1 achihwan 09-19_18:56 /tmp/tmp.lODP8DARL4
+      1 achihwan 09-19_18:56 /tmp/tmp.rJDs6ANf8i
+      1 achihwan 09-19_18:58 /tmp/tmp.7bKakIIxF7
+      1 achihwan 09-19_18:58 /tmp/tmp.G6uKTsMIYo
+      1 achihwan 09-19_18:58 /tmp/tmp.OkdXNyQQ43
+      1 achihwan 09-19_18:58 /tmp/tmp.WULujYVUKR
+      1 achihwan 09-19_18:58 /tmp/tmp.e8aoynexDu
+      1 achihwan 09-19_18:58 /tmp/tmp.odcK2z3UQe
+      1 achihwan 09-19_18:58 /tmp/tmp.pYkQkc0fX8
+      1 achihwan 09-19_18:58 /tmp/tmp.wvze3UjhtK
+n tmp dirs: 940
+111G	합계
+index
+index.lock
+objects
+10423 /bin/bash -c source /home/achihwan/.claude/shell-snapshots/snapshot-bash-1790039242642-zpo8y8.sh 2>/dev/null || true && shopt -u extglob 2>/dev/null || true && { \builtin unalias -- 'unsetenv'; \builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'O=/data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/chargeflip/new_DYCR/logs/tmpcheck2.txt; { du -sh /tmp/claude-5596/*/* 2>/dev/null | sort -h | tail -8; echo ---; find /tmp/claude-5596 -type f -size +100M -printf '"'"'%s %TY-%Tm-%Td_%TH:%TM %p\n'"'"' 2>/dev/null | sort -n | tail -12; echo ---; ls -ld --time-style=+%m-%d_%H:%M /tmp/tmp.* 2>/dev/null | awk '"'"'{print $3,$6,$7}'"'"' | sort | uniq -c | sort -k3 | tail -50 | head -60; echo "n tmp dirs: $(ls -d /tmp/tmp.* 2>/dev/null | wc -l)"; du -sch /tmp/tmp.* 2>/dev/null | tail -1; ls /tmp/tmp.EsXdK2yVJL; pgrep -af "apptainer|singularity" | head -5; } > $O 2>&1; true' < /dev/null && pwd -P >| /tmp/claude-efe3-cwd

@@ -1,0 +1,14 @@
+base = /gv0/Users/achihwan/SKNanoOutput/HNWR
+dy-base = /gv0/Users/achihwan/SKNanoOutput/jet_pt_reweight/ZptOnly_EWSF   prefix = 'Skim_HNWR_'
+2024: files used per group: data_e=16, data_m=16, dy=14, nondy_Others=20, nondy_TT=2, nondy_WJets=8
+2024: 14 DY samples from /gv0/Users/achihwan/SKNanoOutput/jet_pt_reweight/ZptOnly_EWSF
+rbins resolved_EE: R = 1.817 1.513 1.287 1.147 1.078 0.780
+rbins resolved_MM: R = 1.802 1.547 1.329 1.181 1.058 0.927
+rbins boosted_EE: R = 1.385 1.245 1.130
+rbins boosted_MM: R = 1.252 1.183 1.008
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/DY/07_jetpt_overlay/plots/dy_jetpt_overlay_rbins_2024.pdf/.png
+fine resolved_EE: R = 2.094 1.938 1.745 1.695 1.540 1.463 1.379 1.310 1.208 1.157 1.120 1.078 0.790 0.772 0.638
+fine resolved_MM: R = 1.903 1.850 1.774 1.707 1.528 1.520 1.431 1.345 1.248 1.204 1.121 1.058 0.974 0.852 0.583
+fine boosted_EE: R = 1.493 1.597 1.278 1.258 1.263 1.213 1.148 1.060 1.097
+fine boosted_MM: R = 1.474 1.308 1.096 1.214 1.171 1.202 1.052 0.921 0.794
+wrote /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/DY/07_jetpt_overlay/plots/dy_jetpt_overlay_fine_2024.pdf/.png

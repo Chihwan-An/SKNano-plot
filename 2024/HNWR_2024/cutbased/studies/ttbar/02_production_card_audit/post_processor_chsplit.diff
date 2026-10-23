@@ -1,0 +1,33 @@
+--- /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/cbv15/post_processor_chsplit.py.bak_20260919_datastream	2026-09-17 22:26:55.698240215 +0900
++++ /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/BDT/SR/test/cbv15/post_processor_chsplit.py	2026-09-19 00:13:13.402938008 +0900
+@@ -245,12 +245,17 @@
+     "rFlvCR": {
+         "hist": "FlavCR_Resolved_EM_mlljj",
+         "bins": [800,1000,1200,1400,1600,2000,2400,2800,3200,8000],
+-        "data": ["EGamma", "Muon", "SingleMuon"],
++        # 2026-09-19: Muon stream only. The resolved e-mu CR requires the muon trigger (HNWR.cc), so the
++        # EGamma stream holds the SAME events again (3559 of the 3623 Muon-stream events): summing both
++        # doubled data_obs (7182 vs MC 3469). Same choice as plot/HNWR_2024/cutbased/config.py and make_cr_template.py.
++        "data": ["Muon", "SingleMuon"],
+         "sig_channel": None,
+     },
+ }
+ 
+ EXCLUDE_KEYWORDS = ["Skim", "skim"]
++# every data-stream pattern used by any region (see classify_file)
++ALL_DATA_PATTERNS = sorted({pat for cfg in REGION_CONFIG.values() for pat in cfg["data"]})
+ 
+ 
+ # ── Helpers ───────────────────────────────────────────────────────────────────
+@@ -281,6 +286,11 @@
+ 
+     if any(pat in fname_base for pat in data_patterns):
+         return "data", "data_obs"
++    # 2026-09-19: a data file of a stream this region does not use (e.g. Muon* in an EGamma-only region) is
++    # not MC. Without this guard it fell through to the "Others" default below and its raw event counts were
++    # added to the Others template (bFlvEMuCR: Others 22 -> 458; rDYMuMuCR_OS: +2663; boosted SRs too).
++    if any(pat in fname_base for pat in ALL_DATA_PATTERNS):
++        return None, None
+ 
+     group = "Others"
+     for key, grp in SAMPLE_MAP.items():

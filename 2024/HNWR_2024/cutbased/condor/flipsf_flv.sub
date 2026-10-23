@@ -1,0 +1,22 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/run_specs_nocopy.sh
+arguments = "$(job) --spec $(spec) --input $(indir) --outdir $(outdir) --quiet"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased
+environment = "PLOT_SIGNAL_POINTS=MWR4000_N200,MWR4000_N2000"
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/flipsf_flv_$(tag).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/flipsf_flv_$(tag).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/condor.log
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = flipsf_flv
+notification = Never
+should_transfer_files = NO
+# 2026-09-25: resolved e-mu flavour CR OS/SS before (FlipSF production = no flip SF on e-mu) / after (FlipSFEM MC + data links)
+#DONE before# queue job,spec,indir,outdir,tag from (
+#DONE before#   Resolve_FLV_EM specs/rawcharge/Resolve_FLV_EM_charge.txt /gv0/Users/achihwan/SKNanoOutput/HNWR/RFlav_DYCRCharge_SRChargeSplit_ZptNJet_FlipSF/2024 out/flipsf_flv/before before
+#DONE before# )
+#DONE before# queue job,spec,indir,outdir,tag from (
+  Resolve_FLV_EM specs/rawcharge/Resolve_FLV_EM_charge.txt /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots/2024 out/flipsf_flv/after after
+)

@@ -1,0 +1,12 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/chargeflip/new_DYCR/scripts/run_chain.sh
+arguments = $(stage)
+getenv = True
+request_memory = 24GB
+request_cpus = 1
+JobBatchName = cf_newDYCR
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/chargeflip/new_DYCR/logs/chain_$(stage).log
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/chargeflip/new_DYCR/logs/chain_$(stage).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/studies/chargeflip/new_DYCR/logs/chain_$(stage).err
+should_transfer_files = NO
+queue stage in (lowmlljj60)

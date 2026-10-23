@@ -1,0 +1,22 @@
+# 2026-10-01: Resolved SR SS m_lljj (+fine) with QCD MC stacked (PLOT_WITH_QCD=1).
+# input = FlipSFEM_combined_for_plots + QCD (EE: EM+bcToE, MM: Mu). Output lands in out_withqcd/,
+# then moved to out/Resolve/sig/<ch>/jet_lepton/SS/withQCD/.
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/run_specs_nocopy.sh
+arguments = "$(job) --spec specs/withqcd/$(job).txt --input /gv0/Users/achihwan/SKNanoOutput/HNWR/FlipSFEM_combined_for_plots_QCD$(ch)/2024 --outdir out_withqcd/Resolve/sig --match _SS_mlljj(_fine)?\Z --quiet"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/withqcd_$(job).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/withqcd_$(job).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/condor.log
+getenv = True
+environment = "PLOT_WITH_QCD=1"
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = withqcd_sr_ss
+notification = Never
+should_transfer_files = NO
+queue job,ch from (
+  Resolve_sig_EE EE
+  Resolve_sig_MM MM
+)

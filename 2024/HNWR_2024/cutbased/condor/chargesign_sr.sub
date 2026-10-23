@@ -1,0 +1,21 @@
+universe = vanilla
+executable = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/run_specs_nocopy.sh
+arguments = "$(job) --spec $(spec) --input /gv0/Users/achihwan/SKNanoOutput/HNWR/backup/RFlav_SRChargeSplit_plot/2024 --outdir $(outdir) --quiet"
+initialdir = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased
+environment = "PLOT_SIGNAL_POINTS=MWR4000_N200,MWR4000_N2000,MWR6000_N200,MWR6000_N3000"
+output = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/chargesign_$(job).out
+error  = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/chargesign_$(job).err
+log    = /data9/Users/achihwan/nano15/SKNanoAnalyzer/Nano15_Analyzers/plot/HNWR_2024/cutbased/condor/logs/condor.log
+getenv = True
+request_memory = 8GB
+request_cpus = 1
+request_disk = 4GB
+JobBatchName = chargesign_sr
+notification = Never
+should_transfer_files = NO
+queue job,spec,outdir from (
+  Resolve_sig_EE specs/chargesign/Resolve_sig_EE.txt out/Resolve/sig_chargesign
+  Resolve_sig_MM specs/chargesign/Resolve_sig_MM.txt out/Resolve/sig_chargesign
+  Boost_sig_EE specs/chargesign/Boost_sig_EE.txt out/Boost/sig_chargesign
+  Boost_sig_MM specs/chargesign/Boost_sig_MM.txt out/Boost/sig_chargesign
+)

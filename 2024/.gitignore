@@ -9,6 +9,9 @@ __pycache__/
 *.log
 *.npz
 *.pdf
-cutbased/out/
-cutbased/out_*/
-cutbased/DY/
+# out/: keep only the png plots
+HNWR_2024/cutbased/out/**
+!HNWR_2024/cutbased/out/**/
+!HNWR_2024/cutbased/out/**/*.png
+HNWR_2024/cutbased/out_*/
+HNWR_2024/cutbased/DY/
